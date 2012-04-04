@@ -1,0 +1,4 @@
+permalink: /:title
+exclude:
+- README.md
+
