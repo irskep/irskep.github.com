@@ -74,9 +74,12 @@ body {
 .archive {
   ul {
     border-top: 1px solid @grayLight;
-    margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 5px;
+
+    li {
+      margin-top: 1em;
+    }
   }
 }
 
@@ -86,21 +89,25 @@ body {
   h1 a, h2 a {
     color: black;
   }
-}
 
-.post-date {
-  margin-top: 10px;
-  margin-bottom: 1em;
-  font-size: 18px;
-}
-
-.post-content {
-  p {
+  .post-content {
     font-size: 14px;
     line-height: 1.5em;
 
     a {
       color: red;
     }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5em;
+    }
+
   }
+}
+
+.post-date {
+  margin-top: 10px;
+  margin-bottom: 1em;
+  font-size: 18px;
 }

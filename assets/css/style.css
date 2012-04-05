@@ -4048,9 +4048,11 @@ body {
 }
 .archive ul {
   border-top: 1px solid #999999;
-  margin-top: 5px;
   margin-bottom: 5px;
   padding-top: 5px;
+}
+.archive ul li {
+  margin-top: 1em;
 }
 .post,
 .post-index {
@@ -4063,15 +4065,22 @@ body {
 .post-index h2 a {
   color: black;
 }
+.post .post-content,
+.post-index .post-content {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.post .post-content a,
+.post-index .post-content a {
+  color: red;
+}
+.post .post-content p,
+.post-index .post-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
 .post-date {
   margin-top: 10px;
   margin-bottom: 1em;
   font-size: 18px;
-}
-.post-content p {
-  font-size: 14px;
-  line-height: 1.5em;
-}
-.post-content p a {
-  color: red;
 }

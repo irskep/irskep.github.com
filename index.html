@@ -18,7 +18,7 @@ title: Home
     <ul class="unstyled">
     {% for post in site.posts %}
       <li>
-      <span class="archive-post-date">{{ post.date | date_to_string }}</span> -
+      <span class="archive-post-date">{{ post.date | date_to_string }}</span><br>
       <a class="archive-post-title" href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
