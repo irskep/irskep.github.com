@@ -687,12 +687,16 @@ a.thumbnail:hover{border-color:#0088cc;-webkit-box-shadow:0 1px 4px rgba(0, 105,
 .hide{display:none;}
 .show{display:block;}
 .invisible{visibility:hidden;}
-body{background-image:url("../img/type.png");background-image:url("../img/dark_mosaic.png");background-image:url("../img/black_linen_v2.png");background-image:url("../img/darth_stripe.png");background-image:url("../img/black_paper.png");background-image:url("../img/px_by_Gre3g.png");padding-top:74px;}
+body{background-image:url("../img/px_by_Gre3g.png");padding-top:74px;}
 .navbar .brand{font-family:'Ropa Sans',sans-serif;font-size:36px;}
 .container{color:white;}
 .content-box{background-color:rgba(255, 255, 255, 0.1);padding:10px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin-bottom:20px;}.content-box h1 a,.content-box h2 a{color:white;}
 .content-box a{color:white;}
-.github h2,.blog-post h2{border-top:1px solid #999999;margin-top:5px;margin-bottom:5px;}
+.github h2,.post-index h2{border-top:1px solid #999999;margin-top:5px;margin-bottom:5px;}
 .headshot{margin-bottom:20px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}.headshot img{display:block;margin:auto;width:100%;max-width:340px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 .quote{margin-bottom:20px;}
 .footer{text-align:center;padding:10px;color:#999999;}.footer a{color:white;}
+.archive ul{border-top:1px solid #999999;margin-top:5px;margin-bottom:5px;padding-top:5px;}
+.post,.post-index{background-color:#e6e6e6;color:black;}.post h1 a,.post-index h1 a,.post h2 a,.post-index h2 a{color:black;}
+.post-date{margin-top:10px;margin-bottom:1em;font-size:18px;}
+.post-content p{font-size:14px;line-height:1.5em;}.post-content p a{color:red;}

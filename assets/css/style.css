@@ -3989,11 +3989,6 @@ a.thumbnail:hover {
   visibility: hidden;
 }
 body {
-  background-image: url("../img/type.png");
-  background-image: url("../img/dark_mosaic.png");
-  background-image: url("../img/black_linen_v2.png");
-  background-image: url("../img/darth_stripe.png");
-  background-image: url("../img/black_paper.png");
   background-image: url("../img/px_by_Gre3g.png");
   padding-top: 74px;
 }
@@ -4020,7 +4015,7 @@ body {
   color: white;
 }
 .github h2,
-.blog-post h2 {
+.post-index h2 {
   border-top: 1px solid #999999;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -4050,4 +4045,33 @@ body {
 }
 .footer a {
   color: white;
+}
+.archive ul {
+  border-top: 1px solid #999999;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+.post,
+.post-index {
+  background-color: #e6e6e6;
+  color: black;
+}
+.post h1 a,
+.post-index h1 a,
+.post h2 a,
+.post-index h2 a {
+  color: black;
+}
+.post-date {
+  margin-top: 10px;
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+.post-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.post-content p a {
+  color: red;
 }

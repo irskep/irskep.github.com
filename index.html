@@ -1,129 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Steve Johnson Internet Disambiguation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Python coder just out of college, no one famous or anything like that.">
-    <meta name="author" content="Steve Johnson">
+---
+layout: default
+title: Home
+---
+<div class="span6">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-    <!--<link href='http://fonts.googleapis.com/css?family=Ropa+Sans'
-    rel='stylesheet' type='text/css'>-->
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="/">Steve Johnson! Web Site! Astounding!</a>
-        </div>
-      </div>
+  <div class="content-box post-index">
+    {% assign first_post = site.posts.first %}
+    <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
+    <div class="post-date">{{ first_post.date | date_to_string }}</div>
+    <div class="post-content">
+      {{ first_post.content }}
     </div>
+  </div>
 
-    <div class="container">
+  <div class="content-box archive">
+    <h1>Every Post Ever</h1>
+    <ul class="unstyled">
+    {% for post in site.posts %}
+      <li>
+      <span class="archive-post-date">{{ post.date | date_to_string }}</span> -
+      <a class="archive-post-title" href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
 
-      <div class="row">
+</div>
 
-        <div class="span3">
-
-          <div class="headshot">
-            <img src="assets/img/headshot_enormous.jpg" alt="YYYEEEEAAAAAHHH!!!">
-          </div>
-
-          <div class="quote">
-            I'm Steve Johnson. Deal with it.
-          </div>
-
-          <div class="content-box">
-            <h1>Social</h1>
-            <ul class="unstyled">
-              <li>
-                <a href="http://www.twitter.com/irskep">Twitter</a>
-              </li>
-              <li>
-                <a href="http://news.ycombinator.com/user?id=stevejohnson">Hacker News</a>
-              </li>
-              <li>
-                <a href="http://stackoverflow.com/users/8061/steve-johnson">Stack Overflow</a>
-              </li>
-              <li>
-                <a href="http://www.linkedin.com/pub/steve-johnson/11/900/567">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="content-box">
-            <h1>Games</h1>
-            <ul class="unstyled">
-              <li>
-                <a href="http://www.steveasleep.com/artack">Artack</a>
-              </li>
-              <li>
-                <a href="http://www.steveasleep.com/gw0rp">gw0rp</a>
-              </li>
-              <li>
-                <a href="http://www.steveasleep.com/escort_wing">Escort Wing</a>
-              </li>
-              <li>
-                <a href="http://www.steveasleep.com/spacetrain">Space Train</a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="span6">
-
-          <div class="content-box">
-            <h1><a href="http://stevejohnson.posterous.com/">Blog</a></h1>
-            <div class="blog-post">
-              <h2><a href="/">A Post</a></h2>
-              <p>Hello</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="span3">
-          <div class="github content-box">
-            <h1>Github</h1>
-            <div id="github-loading" class="loading">Loading...</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row footer">
-        <p>
-          This site uses
-          <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a>,
-          <a herf="http://subtlepatterns.com/">subtlepatterns.com</a>
-          <a href="http://gre3g.livejournal.com/">(3px tile by Gre3g)</a>, and
-          <a href="http://www.google.com/webfonts/specimen/Ropa+Sans">Ropa Sans
-            by Botio Nikoltchev</a>.
-          For everything else, there's MasterCard.
-        </p>
-      </div>
-
-    </div> <!-- /container -->
-
-    <script src="assets/js/jquery-1.7.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
-</html>
+<div class="span3">
+  <div class="github content-box">
+    <h1>Github</h1>
+    <div id="github-loading" class="loading">Loading...</div>
+  </div>
+</div>

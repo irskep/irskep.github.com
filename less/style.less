@@ -1,11 +1,11 @@
 @import "bootstrap.less";
 
 body {
-  background-image: url("../img/type.png");
-  background-image: url("../img/dark_mosaic.png");
-  background-image: url("../img/black_linen_v2.png");
-  background-image: url("../img/darth_stripe.png");
-  background-image: url("../img/black_paper.png");
+//  background-image: url("../img/type.png");
+//  background-image: url("../img/dark_mosaic.png");
+//  background-image: url("../img/black_linen_v2.png");
+//  background-image: url("../img/darth_stripe.png");
+//  background-image: url("../img/black_paper.png");
   background-image: url("../img/px_by_Gre3g.png");
   padding-top: 74px;
 }
@@ -36,7 +36,7 @@ body {
   }
 }
 
-.github, .blog-post {
+.github, .post-index {
   h2 {
     border-top: 1px solid @grayLight;
     margin-top: 5px;
@@ -68,5 +68,39 @@ body {
 
   a {
     color: white;
+  }
+}
+
+.archive {
+  ul {
+    border-top: 1px solid @grayLight;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+  }
+}
+
+.post, .post-index {
+  background-color: rgb(230,230,230);
+  color: black;
+  h1 a, h2 a {
+    color: black;
+  }
+}
+
+.post-date {
+  margin-top: 10px;
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
+.post-content {
+  p {
+    font-size: 14px;
+    line-height: 1.5em;
+
+    a {
+      color: red;
+    }
   }
 }
