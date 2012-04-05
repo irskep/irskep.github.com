@@ -16,5 +16,6 @@ Now I live in a bastion of maintainable CSS (well, [LESS](http://lesscss.org/))
 and control all my own data. Goodbye walled gardens, slow servers, and complex
 templating engines. Hello git and Markdown.
 
-The old blog is still up, but I moved all of the stuff worth keeping over here.
-Maybe one day I'll manage to write about something other than programming here.
+The [old blog](http://stevejohnson.posterous.com/) is still up, but I moved all
+of the stuff worth keeping over here.  Maybe one day I'll manage to write about
+something other than programming here.
