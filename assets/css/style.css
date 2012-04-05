@@ -4072,12 +4072,16 @@ body {
 }
 .post .post-content a,
 .post-index .post-content a {
-  color: red;
+  color: #a00;
 }
 .post .post-content p,
 .post-index .post-content p {
   font-size: 14px;
   line-height: 1.5em;
+}
+.post img,
+.post-index img {
+  margin-bottom: 1em;
 }
 .post-date {
   margin-top: 10px;

@@ -19,7 +19,7 @@ css:
 
 img:
 	mkdir -p assets/img
-	cp img/* assets/img/
+	cp -r img/* assets/img/
 
 bootstrap_js:
 	mkdir -p assets/js
