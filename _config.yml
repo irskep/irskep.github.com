@@ -1,4 +1,6 @@
 permalink: /:title
+pygments: true
+markdown: redcarpet
 exclude:
 - README.md
 
