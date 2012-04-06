@@ -4,9 +4,10 @@ $ ->
   load_repos()
 
 load_repos = () ->
-  $.getJSON(
-    'https://api.github.com/users/irskep/repos?callback=?',
-    jsonp=populate_repos)
+  if $('#github-loading').length > 0
+    $.getJSON(
+      'https://api.github.com/users/irskep/repos?callback=?',
+      jsonp=populate_repos)
 
 populate_repos = (response) ->
   $('#github-loading').remove()
@@ -25,7 +26,8 @@ populate_repos = (response) ->
     'splatterboard',
     'jist',
     'rum',
-    'regex_compiler'
+    'regex_compiler',
+    'schemutt'
   ]
 
   shown_repos = []

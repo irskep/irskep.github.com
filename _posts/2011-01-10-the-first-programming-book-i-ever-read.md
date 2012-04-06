@@ -1,6 +1,8 @@
 ---
 title: The First Programming Book I Ever Read
 layout: post
+category: post
+tags: programming
 ---
 
 Over the holidays someone gave me a copy of the first programming book I ever

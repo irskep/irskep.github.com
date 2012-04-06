@@ -1,7 +1,8 @@
 ---
 title: "If It Can't Be Done with Git and Text Files, It's Not Worth Doing"
 layout: post
-category: meta
+category: post
+tags: meta
 ---
 
 I am fed up with blogging sites. Since around 2003 (middle school), I've been

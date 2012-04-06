@@ -1,6 +1,8 @@
 ---
 title: Space Train Postmortem
 layout: post
+category: post
+tags: gamedev college programming
 ---
 
 With the end of a semester just past, my course projects are all bubbling up in

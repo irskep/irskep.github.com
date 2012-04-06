@@ -8,6 +8,7 @@ title: Home
     {% assign first_post = site.posts.first %}
     <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
     <div class="post-date">{{ first_post.date | date_to_string }}</div>
+    {{ first_post.categories }}
     <div class="post-content">
       {{ first_post.content }}
     </div>
@@ -17,10 +18,12 @@ title: Home
     <h1>Every Post Ever</h1>
     <ul class="unstyled">
     {% for post in site.posts %}
-      <li>
-      <span class="archive-post-date">{{ post.date | date_to_string }}</span><br>
-      <a class="archive-post-title" href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+      {% if post.categories contains 'post' %}
+        <li>
+        <span class="archive-post-date">{{ post.date | date_to_string }}</span><br>
+        <a class="archive-post-title" href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
     {% endfor %}
     </ul>
   </div>

@@ -1,6 +1,8 @@
 ---
 title: My Dislocated Patella
 layout: post
+category: post
+tags: meta
 ---
 
 *Post from the future - in 2009 I dislocated my

@@ -9,13 +9,15 @@
 
   load_repos = function() {
     var jsonp;
-    return $.getJSON('https://api.github.com/users/irskep/repos?callback=?', jsonp = populate_repos);
+    if ($('#github-loading').length > 0) {
+      return $.getJSON('https://api.github.com/users/irskep/repos?callback=?', jsonp = populate_repos);
+    }
   };
 
   populate_repos = function(response) {
     var jsonp, repo, shown_repo_names, shown_repos, _i, _j, _k, _len, _len2, _len3, _ref, _results;
     $('#github-loading').remove();
-    shown_repo_names = ['Space-Train', 'steveasleep', 'zhang-shasha', 'lizardwizard', 'kod', 'thesis_papers', 'ct', 'mrjob', 'boto', 'Tron', 'irskep_dotfiles', 'splatterboard', 'jist', 'rum', 'regex_compiler'];
+    shown_repo_names = ['Space-Train', 'steveasleep', 'zhang-shasha', 'lizardwizard', 'kod', 'thesis_papers', 'ct', 'mrjob', 'boto', 'Tron', 'irskep_dotfiles', 'splatterboard', 'jist', 'rum', 'regex_compiler', 'schemutt'];
     shown_repos = [];
     _ref = response.data;
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {

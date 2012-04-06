@@ -1,6 +1,8 @@
 ---
 title: Advice for Tech Recruiters at Universities
 layout: post
+category: post
+tags: recruiting college
 ---
 
 I attended half a dozen information sessions by companies trying to hire
