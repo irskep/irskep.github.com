@@ -8,7 +8,6 @@ title: Home
     {% assign first_post = site.posts.first %}
     <h1><a href="{{ first_post.url }}">{{ first_post.title }}</a></h1>
     <div class="post-date">{{ first_post.date | date_to_string }}</div>
-    {{ first_post.categories }}
     <div class="post-content">
       {{ first_post.content }}
     </div>
