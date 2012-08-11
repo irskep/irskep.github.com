@@ -10,9 +10,9 @@ various states of completion. One of these is a point-and-click adventure game
 called *[Space Train: Terror on the Mustachio
 Express](http://www.steveasleep.com/spacetrain)*, developed by a team of
 students from the [Cleveland Institute of Art](http://www.cia.edu/) and [Case
-Western Reserve University](http://www.case.edu). It features a dynamic,
-event-driven level scripting engine that supports characters, items, inventory,
-dialogue, and more. The engine is written in Python using my game programming
+Western Reserve University](http://www.case.edu). Its technical components
+include an event-driven level scripting system, characters, items, inventory,
+dialogue, and more.  The engine is written in Python using my game programming
 weapon of choice, the [pyglet](http:/www.pyglet.org) library. The plot:
 
 > Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
@@ -23,8 +23,8 @@ weapon of choice, the [pyglet](http:/www.pyglet.org) library. The plot:
 
 Sounds grand, right? We thought so too, but in typical student fashion we
 failed to account for one thing: **adventure games take a lot of work to
-make.** And so the game is only twenty minutes long. Even so, we all learned
-from the experience.
+make.** As a result, the game is only about twenty minutes long. Even so, we
+all learned from the experience.
 
 ## The Course
 
@@ -93,25 +93,24 @@ Here are some of the stages of the game's artistic development:
 
 ## Lessons Learned
 
-The Space Train team is the largest I have ever worked with, much less managed.
-The only thing that prepared me for filling that role was my work with the
-[CWRU Hacker Society](http://hacsoc.org/), and that is still a different kind
-of experience. There is nothing in the curriculum at CWRU that could have
-directly given me insight into how to effectively manage this team. The
-organization of the team was arrived at via trial and error by its members.
-Naturally, we all learned a lot from the experience.
+I had never been in a managerial position before. My experience organizing
+[CWRU Hacker Society](http://hacsoc.org/) helped, but that was more cat herding
+than game building. By the end of the course the team had worked out a process
+by trial and error that seemed to produce results, but by the time we found
+that process, it was really too late to save the game.
 
 ### Schedule
 
-We spent far too much time thinking up random characters and not enough time
-fitting them into a big picture. We should have started writing level scripts
-to work from by the third week. That would have made it easier for us to give
-the artists specific tasks, a problem we had early on.
+We spent too much time thinking up random characters and not enough time
+fitting them into a big picture. We should have started writing
+pseudo-screenplays or storyboards to work from by the third week. That would
+have made it easier for us to give the artists specific tasks, a problem we had
+early on.
 
-Early level scripts would have given us the opportunity to implement parts
-of the levels, which would have helped us develop a scripting API. For most of
-the semester, we worked with an ad-hoc API. We ended up redesigning it in the
-last week because we were just sick of it.
+Storyboards would have given us the opportunity to implement parts of the
+levels, which would have helped us develop a scripting API. For most of the
+semester, we worked with an ad-hoc API. We ended up redesigning it in the last
+week because it wasn't working for us anymore.
 
 ### Adventure Games Are Hard to Make
 
@@ -142,7 +141,9 @@ I've always felt uncomfortable with the way course project groups are formed.
 Usually they form around ideas, not around teams, and that was explicitly the
 case with this course. This means that team dynamics are a total crapshoot, and
 if things go south, you're locked in for three months and your success is
-irrevocably chained together.
+irrevocably chained together. By the end of the course, we effectively had two
+programmers and four artists, with four other people functioning as dead
+weight.
 
 ### Conspicuously Absent From This List:
 
