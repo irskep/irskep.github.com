@@ -147,8 +147,8 @@ weight.
 
 ### Conspicuously Absent From This List:
 
-Anything related to code. We really powered through the engine and never got
-bitten by any major design flaws. The game's source code is [on
+Significant code issues. We really powered through the engine and never got
+hindered by any major design flaws. The game's source code is [on
 Github](http://www.github.com/irskep/Space-Train). It's not beautiful, but it
 worked well enough for us.
 
