@@ -26,6 +26,7 @@ bootstrap_js:
 	mkdir -p assets/js
 	cp js/jquery-1.7.2.min.js assets/js/jquery-1.7.2.min.js
 	cp js/literallycanvas.thin.min.js assets/js/literallycanvas.js
+	cp js/underscore.js assets/js/underscore.js
 
 js:
 	coffee --compile -o assets/js coffee/*
