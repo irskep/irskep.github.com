@@ -16,6 +16,7 @@ css:
 	lessc --compress ${BOOTSTRAP_RESPONSIVE_LESS} > assets/css/bootstrap-responsive.min.css
 	lessc ${STYLE} > assets/css/style.css
 	lessc --compress ${STYLE} > assets/css/style.min.css
+	cat less/literally.css less/colorpicker.css > assets/css/lc.css
 
 img:
 	mkdir -p assets/img

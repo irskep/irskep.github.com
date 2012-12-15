@@ -4373,3 +4373,9 @@ body {
   margin-bottom: 1em;
   font-size: 18px;
 }
+.literally {
+  width: 100%;
+}
+.literally canvas {
+  height: 400px;
+}
