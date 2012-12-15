@@ -18,6 +18,3 @@ Canvas](http://literallycanvas.com/), an open source HTML5 drawing widget. You
 can try it right here!
 
 <div class="literally"><canvas></canvas></div>
-<script type="text/javascript">
-    $('.literally').literallycanvas();
-</script>
