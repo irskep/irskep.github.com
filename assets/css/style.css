@@ -4375,7 +4375,5 @@ body {
 }
 .literally {
   width: 100%;
-}
-.literally canvas {
-  height: 400px;
+  height: 300px;
 }
