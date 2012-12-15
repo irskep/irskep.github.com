@@ -24,11 +24,6 @@ img:
 bootstrap_js:
 	mkdir -p assets/js
 	cp js/jquery-1.7.2.min.js assets/js/jquery-1.7.2.min.js
-	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js > assets/js/bootstrap.js
-	uglifyjs -nc assets/js/bootstrap.js > assets/js/bootstrap.min.tmp.js
-	echo "/**\n* Bootstrap.js by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > assets/js/copyright.js
-	cat assets/js/copyright.js assets/js/bootstrap.min.tmp.js > assets/js/bootstrap.min.js
-	rm assets/js/copyright.js assets/js/bootstrap.min.tmp.js
 
 js:
 	coffee --compile -o assets/js coffee/*

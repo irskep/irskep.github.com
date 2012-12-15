@@ -1,9 +1,6 @@
 $ = jQuery
 
 $ ->
-  load_repos()
-
-load_repos = () ->
   if $('#github-loading').length > 0
     $.getJSON(
       'https://api.github.com/users/irskep/repos?callback=?',
@@ -18,16 +15,15 @@ populate_repos = (response) ->
     'lizardwizard',
     'kod',
     'thesis_papers',
-    'ct',
     'mrjob',
     'boto',
     'Tron',
     'irskep_dotfiles',
     'splatterboard',
     'jist',
-    'rum',
     'regex_compiler',
-    'schemutt'
+    'schemutt',
+    'literallycanvas',
   ]
 
   shown_repos = []
@@ -35,16 +31,16 @@ populate_repos = (response) ->
     if shown_repo_names.indexOf(repo.name) != -1
       shown_repos.push(repo)
 
-  shown_repos.sort((a, b) -> b.updated_at.localeCompare(a.updated_at))
+  shown_repos.sort (a, b) -> b.updated_at.localeCompare(a.updated_at)
 
   for repo in shown_repos
-    $('.github').append("
+    $('.github').append "
     <div class=\"github-item\" id=\"repo-#{repo.name}\">
       <h2><a href=\"#{repo.html_url}\">#{repo.name}</a></h2>
       <p class=\"github-description\">#{repo.description}</p>
       <span class=\"github-forks\">#{repo.forks} forks</span><br>
       <span class=\"github-watchers\">#{repo.watchers} watchers</span><br>
-    </div>")
+    </div>"
 
   for repo in shown_repos
     if repo.fork
@@ -60,8 +56,8 @@ rewrite_repo = (response) ->
 
   repo = response.data
 
-  elem.append("
+  elem.append "
     <h2><a href=\"#{repo.parent.html_url}\">#{repo.parent.name}</a></h2>
     <p class=\"github-description\">#{repo.parent.description}</p>
     <span class=\"github-forks\">#{repo.parent.forks} forks</span><br>
-    <span class=\"github-watchers\">#{repo.parent.watchers} watchers</span><br>")
+    <span class=\"github-watchers\">#{repo.parent.watchers} watchers</span><br>"
