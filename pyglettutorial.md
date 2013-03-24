@@ -64,7 +64,7 @@ look at the project in various stages of completion on [its Github page][13].
  [1]: http://www.python.org/
  [2]: http://pyglet.org/doc/programming_guide
  [3]: http://www.pyohio.org/
- [9]: mailto:steve.johnson.public@gmail.com
+ [9]: mailto:steve+support@steveasleep.com
  [10]: http://www.pygame.org/
  [11]: http://www.pyglet.org/
  [12]: http://www.panda3d.org/
