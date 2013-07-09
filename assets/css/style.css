@@ -4349,6 +4349,10 @@ body {
   font-size: 14px;
   line-height: 1.5em;
 }
+.post .post-content img,
+.post-index .post-content img {
+  max-width: 100%;
+}
 .post img,
 .post-index img {
   margin-bottom: 1em;
