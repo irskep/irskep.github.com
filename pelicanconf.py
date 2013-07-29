@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import sys
+sys.path.append('.')
+print sys.path
+from md_shy import HyphenExtension
 
 STATIC_PATHS = ['img', 'downloads', 'css', 'js']
 
@@ -52,8 +56,9 @@ CATEGORY_URL = ARTICLE_URL
 CATEGORY_SAVE_AS = '%s/index.html' % CATEGORY_URL
 TAG_URL = ARTICLE_URL
 TAG_SAVE_AS = '%s/index.html' % TAG_URL
-MD_EXTENSIONS = ([
-    'codehilite(css_class=highlight)', 'extra', 'sane_lists', 'toc'])
+MD_EXTENSIONS = [
+    'codehilite(css_class=highlight)', 'extra', 'sane_lists', 'toc',
+    HyphenExtension()]
 
 TEMPLATE_PAGES = {
     '404.html': '404.html',
