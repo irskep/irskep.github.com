@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 STATIC_PATHS = ['img', 'downloads']
 
 AUTHOR = u'Steve Johnson'
-SITENAME = u"Steve Johnson's Partial Creative Output"
+SITENAME = u"Steve Johnson’s Partial Creative Output"
 SITEURL = ''
 
 DEFAULT_CATEGORY = 'Blog'
