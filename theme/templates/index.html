@@ -8,12 +8,12 @@
     <h2>Articles</h2>
   {% endblock %}
 
-  <ol id="post-list">
+  <ul id="post-list">
 
     {% for article in articles_page.object_list %}
       <li>
-        {{ post_header(article) }}
         <article class="hentry">
+          {{ post_header(article) }}
           <div class="entry-content">
             {% if loop.first %}
               {{ article.content }}
@@ -27,7 +27,7 @@
       </li>
     {% endfor %}
 
-  </ol><!-- /#posts-list -->
+  </ul><!-- /#posts-list -->
 
   {% include 'pagination.html' %}
 
