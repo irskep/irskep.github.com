@@ -10,9 +10,11 @@ SITEURL = ''
 
 DEFAULT_CATEGORY = 'Blog'
 
-TIMEZONE = 'Europe/Paris'
-
+TIMEZONE = 'US/Pacific'
 DEFAULT_LANG = u'en'
+DATE_FORMATS = {
+    'en': '%d %b %Y',
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -29,6 +31,13 @@ SOCIAL = (
     ('LinkedIn', 'http://www.linkedin.com/pub/steve-johnson/11/900/567'),
 )
 TWITTER_USERNAME = 'irskep'
+
+MENUITEMS = (
+    ('Games', '/games'),
+    ('Open Source', '/open-source'),
+    ('Pyglet tutorial', '/pyglettutorial'),
+    ('The New Dork Times', 'http://steveasleep.com/newdorktimes'),
+)
 
 DEFAULT_PAGINATION = False
 
@@ -48,6 +57,7 @@ TEMPLATE_PAGES = {
 }
 
 DISPLAY_PAGES_ON_MENU = False
+DEFAULT_PAGINATION = False
 
 TYPOGRIFY = True
 
