@@ -1,39 +1,88 @@
-BOOTSTRAP = ./css/bootstrap.css
-BOOTSTRAP_LESS = ./less/bootstrap.less
-STYLE = ./less/style.less
-BOOTSTRAP_RESPONSIVE = ./css/bootstrap-responsive.css
-BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
-LESS_COMPRESSOR ?= `which lessc`
-WATCHR ?= `which watchr`
+PY=python
+PELICAN=pelican
+PELICANOPTS=
 
-all: css img js bootstrap_js
+BASEDIR=$(CURDIR)
+INPUTDIR=$(BASEDIR)/content
+OUTPUTDIR=$(BASEDIR)/output
+CONFFILE=$(BASEDIR)/pelicanconf.py
+PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-css:
-	mkdir -p assets/css
-	lessc ${BOOTSTRAP_LESS} > assets/css/bootstrap.css
-	lessc --compress ${BOOTSTRAP_LESS} > assets/css/bootstrap.min.css
-	lessc ${BOOTSTRAP_RESPONSIVE_LESS} > assets/css/bootstrap-responsive.css
-	lessc --compress ${BOOTSTRAP_RESPONSIVE_LESS} > assets/css/bootstrap-responsive.min.css
-	lessc ${STYLE} > assets/css/style.css
-	lessc --compress ${STYLE} > assets/css/style.min.css
-	cat less/literally.css less/colorpicker.css > assets/css/lc.css
+FTP_HOST=localhost
+FTP_USER=anonymous
+FTP_TARGET_DIR=/
 
-img:
-	mkdir -p assets/img
-	cp -r img/* assets/img/
+SSH_HOST=localhost
+SSH_PORT=22
+SSH_USER=root
+SSH_TARGET_DIR=/var/www
 
-bootstrap_js:
-	mkdir -p assets/js
-	cp js/jquery-1.7.2.min.js assets/js/jquery-1.7.2.min.js
-	cp js/literallycanvas.thin.min.js assets/js/literallycanvas.js
-	cp js/underscore.js assets/js/underscore.js
+S3_BUCKET=my_s3_bucket
 
-js:
-	coffee --compile -o assets/js coffee/*
+DROPBOX_DIR=~/Dropbox/Public/
 
-watch:
-	echo "Watching less files..."; \
-	watchr -e "watch('less/.*\.less') { system 'make' }"
+help:
+	@echo 'Makefile for a pelican Web site                                        '
+	@echo '                                                                       '
+	@echo 'Usage:                                                                 '
+	@echo '   make html                        (re)generate the web site          '
+	@echo '   make clean                       remove the generated files         '
+	@echo '   make regenerate                  regenerate files upon modification '
+	@echo '   make publish                     generate using production settings '
+	@echo '   make serve                       serve site at http://localhost:8000'
+	@echo '   make devserver                   start/restart develop_server.sh    '
+	@echo '   make stopserver                  stop local server                  '
+	@echo '   ssh_upload                       upload the web site via SSH        '
+	@echo '   rsync_upload                     upload the web site via rsync+ssh  '
+	@echo '   dropbox_upload                   upload the web site via Dropbox    '
+	@echo '   ftp_upload                       upload the web site via FTP        '
+	@echo '   s3_upload                        upload the web site via S3         '
+	@echo '   github                           upload the web site via gh-pages   '
+	@echo '                                                                       '
 
 
-.PHONY: watch css img js
+html: clean $(OUTPUTDIR)/index.html
+
+$(OUTPUTDIR)/%.html:
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+clean:
+	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
+
+regenerate: clean
+	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+
+serve:
+	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+
+devserver:
+	$(BASEDIR)/develop_server.sh restart
+
+stopserver:
+	kill -9 `cat pelican.pid`
+	kill -9 `cat srv.pid`
+	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
+
+publish:
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+
+ssh_upload: publish
+	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+
+rsync_upload: publish
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
+
+dropbox_upload: publish
+	cp -r $(OUTPUTDIR)/* $(DROPBOX_DIR)
+
+ftp_upload: publish
+	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
+
+s3_upload: publish
+	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed
+
+github: publish
+	ghp-import $(OUTPUTDIR)
+	git push origin gh-pages
+
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload github

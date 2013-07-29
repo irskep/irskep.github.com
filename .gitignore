@@ -3,3 +3,5 @@
 .DS_Store
 .site/
 _site/
+output/
+*.pid
