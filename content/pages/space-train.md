@@ -1,5 +1,6 @@
 Title: Space Train
 Tags: games
+Category: Games
 
 <img class="center" src="|filename|/img/content/space_train_logo.png"/>
 

@@ -1,4 +1,5 @@
 Title: Music
+Category: Games
 
 This music is all under the [Creative Commons
 Attribution-Nomcommercial-Share-Alike

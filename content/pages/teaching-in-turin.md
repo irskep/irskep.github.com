@@ -1,5 +1,4 @@
 Title: Teaching in Turin
-Status: draft
 
 A few weeks ago I returned from teaching "big data analysis with MapReduce" at
 Big Dive in Turin, Italy. Big Dive is a technology training program about data

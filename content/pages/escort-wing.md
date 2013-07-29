@@ -1,5 +1,6 @@
 Title: Escort Wing
 Tags: games
+Category: Games
 
 [![Screenshot](|filename|/img/escort_wing_thumb.jpg)](http://owoho.com/EscortWing/page3/files/page3-1001-full.html)
 

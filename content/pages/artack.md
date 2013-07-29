@@ -1,5 +1,6 @@
 Title: Artack
 Tags: games
+Category: Games
 
 [![Screenshot](|filename|/img/artack_thumb.png)](|filename|/img/artack.png)
 
