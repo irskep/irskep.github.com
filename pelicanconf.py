@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-STATIC_PATHS = ['img', 'downloads']
+STATIC_PATHS = ['img', 'downloads', 'css', 'js']
 
 AUTHOR = u'Steve Johnson'
 SITENAME = u"Steve Johnson’s Partial Creative Output"
@@ -52,6 +52,8 @@ CATEGORY_URL = ARTICLE_URL
 CATEGORY_SAVE_AS = '%s/index.html' % CATEGORY_URL
 TAG_URL = ARTICLE_URL
 TAG_SAVE_AS = '%s/index.html' % TAG_URL
+MD_EXTENSIONS = ([
+    'codehilite(css_class=highlight)', 'extra', 'sane_lists', 'toc'])
 
 TEMPLATE_PAGES = {
     '404.html': '404.html',
