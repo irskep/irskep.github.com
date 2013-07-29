@@ -1,11 +1,7 @@
----
-title: gw0rp
-layout: post
-category: static
-tags: games
----
+Title: gw0rp
+Tags: games
 
-[![Screenshot](http://filer.case.edu/srj15/screenshots/gw0rp_thumb.jpg)](http://filer.case.edu/srj15/screenshots/gw0rp.jpg)
+[![Screenshot](|filename|/img/gw0rp_thumb.jpg)](|filename|/img/gw0rp.jpg)
 
 Build your ship out of spare parts and blast your enemies into oblivion. Solve
 simple puzzles to reach your destination.

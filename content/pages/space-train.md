@@ -1,11 +1,7 @@
----
-title: Space Train
-layout: post
-category: static
-tags: games
----
+Title: Space Train
+Tags: games
 
-<img class="center" src="/assets/img/content/space_train_logo.png"/>
+<img class="center" src="|filename|/img/content/space_train_logo.png"/>
 
 Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
 Stanislov Slavinsky, is reading his poetry live on the nearby Planet Deux, a
@@ -13,7 +9,7 @@ short hop by space train from Inga’s home. She wants nothing more than to see
 Stanislav in person, so she catches the Mustachio Express to Planet Deux.
 Little does she know it will be a bumpy ride...
 
-<img class="left" src="/assets/img/content/space_train_inga.png"/>
+<img class="left" src="|filename|/img/content/space_train_inga.png"/>
 
 Space Train is a short point-and-click adventure game developed over the course
 of a semester by students at the [Cleveland Institute of
@@ -35,7 +31,7 @@ and Knut Hybinette, Cleveland Institute of Art.
 The Team
 --------
 
-<img class="right" src="/assets/img/content/space_train_workman.png"/>
+<img class="right" src="|filename|/img/content/space_train_workman.png"/>
 
 - **Steve Johnson**: Lead programmer, screenplay, music, engine, UI
 - **[Kelsey Bass](http://taxidermyrobot.blogspot.com/)**: Lead artist, character design/line work/animation

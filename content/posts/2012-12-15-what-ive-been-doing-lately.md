@@ -1,9 +1,5 @@
----
-title: What I've Been Doing Lately
-layout: post
-category: static
-tags: literallycanvas startups job life yelp
----
+Title: What I've Been Doing Lately
+Tags: literallycanvas, startups, job, life, yelp
 
 Two months ago I started my new job at Graffiti Labs (we make
 [Buildy](http://playbuildy.com)) after working at Yelp for almost a year and a

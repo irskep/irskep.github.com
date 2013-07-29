@@ -1,7 +1,7 @@
 Title: Escort Wing
 Tags: games
 
-[![Screenshot](http://filer.case.edu/srj15/screenshots/Escort_thumb.jpg)](http://owoho.com/EscortWing/page3/files/page3-1001-full.html)
+[![Screenshot](|filename|/img/escort_wing_thumb.jpg)](http://owoho.com/EscortWing/page3/files/page3-1001-full.html)
 
 Escort a convoy of supply ships across hostile waters with your futuristic
 airborne fighter.

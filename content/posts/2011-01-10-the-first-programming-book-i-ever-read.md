@@ -1,15 +1,11 @@
----
-title: The First Programming Book I Ever Read
-layout: post
-category: post
-tags: programming
----
+Title: The First Programming Book I Ever Read
+Tags: programming
 
 Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
 nine years old.
 
-![Book cover](/assets/img/content/basic_programming_for_kids.jpg "**BASIC
+![Book cover](|filename|/img/content/basic_programming_for_kids.jpg "**BASIC
 Programming for Kids** by Roz Ault")
 
 The first thing you need to know is that since it was published in 1983, I

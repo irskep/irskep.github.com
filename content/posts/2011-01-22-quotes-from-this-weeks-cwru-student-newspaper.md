@@ -1,9 +1,6 @@
----
-title: Quotes from This Week's CWRU Student Newspaper
-layout: post
-category: post
-tags: college
----
+Title: Quotes from This Week's CWRU Student Newspaper
+Tags: college
+
 "Woe are the student groups that try to reserve rooms on this campus." –
 *Editorial*
 

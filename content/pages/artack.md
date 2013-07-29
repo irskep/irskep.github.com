@@ -1,11 +1,7 @@
----
-title: Artack
-layout: post
-category: static
-tags: games
----
+Title: Artack
+Tags: games
 
-[![Screenshot](http://filer.case.edu/srj15/screenshots/Artack_thumb.png)](http://filer.case.edu/srj15/screenshots/Artack.png)
+[![Screenshot](|filename|/img/artack_thumb.png)](|filename|/img/artack.png)
 
 Pencil-drawn invaders from outer space are attacking the bottom of a sheet of
 notebook paper. Destroy them for the sake of the motherland!
@@ -16,4 +12,4 @@ I collaborated with Kemal Zhang of [Zhang Games](http://www.zhanggames.com/)
 for a three-week competition held by [iDevGames](http://www.idevgames.com/) in
 June 2006.
 
-[Download Artack for OS X (PPC only)](http://filer.case.edu/srj15/download/Artack.zip)
+[Download Artack for OS X (PPC only)](|filename|/downloads/Artack.zip)

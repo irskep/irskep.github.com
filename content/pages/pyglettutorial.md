@@ -1,5 +1,5 @@
 Title: Pyglet Tutorial
-Tags: tutorial
+Tags: pyglet, tutorial
 
 Writing programs in [Python][1] is fun. Writing games is fun. **Writing games
 in Python** is fun! Unfortunately, tutorials to help people get started are

@@ -1,9 +1,5 @@
----
-title: A Sneak Preview of my Master's Thesis
-layout: post
-category: static
-tags: college ipad
----
+Title: A Sneak Preview of my Master's Thesis
+Tags: college, ipad
 
 [150 pages of insanity](http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf)
 

@@ -1,16 +1,12 @@
----
-title: Space Train Postmortem
-layout: post
-category: post
-tags: gamedev college programming
----
+Title: Space Train Postmortem
+Tags: gamedev college programming
 
 With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called *[Space Train: Terror on the Mustachio
-Express](http://www.steveasleep.com/spacetrain)*, developed by a team of
-students from the [Cleveland Institute of Art](http://www.cia.edu/) and [Case
-Western Reserve University](http://www.case.edu). Its technical components
+Express](http:/www.steveasleep.com/spacetrain)*, developed by a team of
+students from the [Cleveland Institute of Art](http:/www.cia.edu/) and [Case
+Western Reserve University](http:/www.case.edu). Its technical components
 include an event-driven level scripting system, characters, items, inventory,
 dialogue, and more.  The engine is written in Python using my game programming
 weapon of choice, the [pyglet](http:/www.pyglet.org) library. The plot:
@@ -33,7 +29,7 @@ Cleveland Institute of Art and Case Western Reserve University. Teams of 6-12
 artists and programmers collaborate to produce some sort of game. At the end of
 the course, the teams present to their peers and to Electronic Arts staff for
 questions and critique. The course is currently taught by Dr. Marc Buchner
-(CWRU) and [Knut Hybinette](http://www.knuthybinette.com/) (CIA).
+(CWRU) and [Knut Hybinette](http:/www.knuthybinette.com/) (CIA).
 
 The other two games made this semester were Kalotai, a location-aware monster
 collection/battle game for Android, and Louder Than Words, a platformer with
@@ -45,9 +41,7 @@ We all arrived at 8:30 AM on the first day of class, heavily caffeinated.
 Everyone put ideas on a white board and then divided into three teams based on
 interest. My team ended up with four programmers and six artists, with me as
 team leader. We immediately decided on some basics and began working on a
-schedule. By 9:45, we had drawn something like this:
-
-![White board diagram](http://dl.dropbox.com/u/360865/spacetrain/diagram.png)
+schedule. By 9:45, we had drawn a crazy whiteboard diagram.
 
 It was already clear that we would make the best game ever. The drawing was so
 good we didn't even need a design document. We wrote one anyway because it was
@@ -59,8 +53,8 @@ The class was only scheduled to meet for an hour every week, which was far from
 enough time to get anything done. Most of our communication was done on Fridays
 in a classroom when we met to give status updates, brainstorm new directions,
 and work on the schedule. During the week, we communicated via a mailing list,
-shared files using a [Dropbox](http://www.dropbox.com) shared folder, and
-pushed code back and forth with [git](http://www.git-scm.org/)
+shared files using a [Dropbox](http:/www.dropbox.com) shared folder, and
+pushed code back and forth with [git](http:/www.git-scm.org/)
 
 At the halfway point, we presented our work to the class. Our demo revealed
 some significant issues, none of which were technical: the character art lacked
@@ -79,22 +73,22 @@ slick demo.
 
 Here are some screenshots of the game:
 
-[![Screenshot 1](/assets/img/content/space_train_thumb_1.png)](/assets/img/content/space_train_screenshot_1.png)
-[![Screenshot 2](/assets/img/content/space_train_thumb_2.png)](/assets/img/content/space_train_screenshot_2.png)
-[![Screenshot 3](/assets/img/content/space_train_thumb_3.png)](/assets/img/content/space_train_screenshot_3.png)
+[![Screenshot 1](|filename|/img/content/space_train_thumb_1.png)](|filename|/img/content/space_train_screenshot_1.png)
+[![Screenshot 2](|filename|/img/content/space_train_thumb_2.png)](|filename|/img/content/space_train_screenshot_2.png)
+[![Screenshot 3](|filename|/img/content/space_train_thumb_3.png)](|filename|/img/content/space_train_screenshot_3.png)
 
 Here are some of the stages of the game's artistic development:
 
-[![Concept Art](/assets/img/content/space_train_art_1_thumb.png)](/assets/img/content/space_train_art_1.png)
-[![Line Art](/assets/img/content/space_train_art_2_thumb.png)](/assets/img/content/space_train_art_2.png)
-[![Flat Color](/assets/img/content/space_train_art_3_thumb.png)](/assets/img/content/space_train_art_3.png)
-[![Object/Furniture Design](/assets/img/content/space_train_art_4_thumb.png)](/assets/img/content/space_train_art_4.png)
-[![Rendered Art](/assets/img/content/space_train_art_5_thumb.png)](/assets/img/content/space_train_art_5.png)
+[![Concept Art](|filename|/img/content/space_train_art_1_thumb.png)](|filename|/img/content/space_train_art_1.png)
+[![Line Art](|filename|/img/content/space_train_art_2_thumb.png)](|filename|/img/content/space_train_art_2.png)
+[![Flat Color](|filename|/img/content/space_train_art_3_thumb.png)](|filename|/img/content/space_train_art_3.png)
+[![Object/Furniture Design](|filename|/img/content/space_train_art_4_thumb.png)](|filename|/img/content/space_train_art_4.png)
+[![Rendered Art](|filename|/img/content/space_train_art_5_thumb.png)](|filename|/img/content/space_train_art_5.png)
 
 ## Lessons Learned
 
 I had never been in a managerial position before. My experience organizing
-[CWRU Hacker Society](http://hacsoc.org/) helped, but that was more cat herding
+[CWRU Hacker Society](http:/hacsoc.org/) helped, but that was more cat herding
 than game building. By the end of the course the team had worked out a process
 by trial and error that seemed to produce results, but by the time we found
 that process, it was really too late to save the game.
@@ -149,14 +143,14 @@ weight.
 
 Significant code issues. We really powered through the engine and never got
 hindered by any major design flaws. The game's source code is [on
-Github](http://www.github.com/irskep/Space-Train). It's not beautiful, but it
+Github](http:/www.github.com/irskep/Space-Train). It's not beautiful, but it
 worked well enough for us.
 
 ## The Team
 
 * **Steve Johnson**: Lead programmer, screenplay, music, engine, UI
-* **[Kelsey Bass](http://taxidermyrobot.blogspot.com/)**: Lead artist, character design/line work/animation
-* **[Fred Hatfull](http://www.fredhatfull.com/)**: Level scripting, engine, UI
+* **[Kelsey Bass](http:/taxidermyrobot.blogspot.com/)**: Lead artist, character design/line work/animation
+* **[Fred Hatfull](http:/www.fredhatfull.com/)**: Level scripting, engine, UI
 * **Liz Keegan**: Environments, objects
 * **Tyler Goeringer**: Level scripting, engine
 * **Susie Kim**: Objects
@@ -168,5 +162,5 @@ worked well enough for us.
 Kelsey did caricatures of the team for the credit sequence. Here's mine for you
 to compare to my photo at the top of this page:
 
-![Caricature](/assets/img/content/space_train_caricature.png)
+![Caricature](|filename|/img/content/space_train_caricature.png)
 
