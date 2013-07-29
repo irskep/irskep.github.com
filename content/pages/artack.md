@@ -1,6 +1,7 @@
 Title: Artack
 Tags: games
 Category: Games
+Date: 2006-07-01
 
 [![Screenshot](|filename|/img/artack_thumb.png)](|filename|/img/artack.png)
 

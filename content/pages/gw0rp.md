@@ -1,5 +1,6 @@
 Title: gw0rp
 Tags: games
+Date: 2009-12-01
 
 [![Screenshot](|filename|/img/gw0rp_thumb.jpg)](|filename|/img/gw0rp.jpg)
 
