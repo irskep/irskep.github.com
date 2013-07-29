@@ -8,6 +8,8 @@ AUTHOR = u'Steve Johnson'
 SITENAME = u"Steve Johnson's Partial Creative Output"
 SITEURL = ''
 
+DEFAULT_CATEGORY = 'Blog'
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
@@ -18,14 +20,15 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('The Buildy Blog', 'http://blog.playbuildy.com/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('Twitter', 'http://twitter.com/irskep'),
+    ('Stack Overflow', 'http://stackoverflow.com/users/8061/steve-johnson'),
+    ('LinkedIn', 'http://www.linkedin.com/pub/steve-johnson/11/900/567'),
+)
+TWITTER_USERNAME = 'irskep'
 
 DEFAULT_PAGINATION = False
 
@@ -35,5 +38,17 @@ ARTICLE_URL = '{slug}'
 ARTICLE_SAVE_AS = '%s/index.html' % ARTICLE_URL
 PAGE_URL = ARTICLE_URL
 PAGE_SAVE_AS = '%s/index.html' % PAGE_URL
+CATEGORY_URL = ARTICLE_URL
+CATEGORY_SAVE_AS = '%s/index.html' % CATEGORY_URL
+TAG_URL = ARTICLE_URL
+TAG_SAVE_AS = '%s/index.html' % TAG_URL
+
+TEMPLATE_PAGES = {
+    '404.html': '404.html',
+}
 
 DISPLAY_PAGES_ON_MENU = False
+
+TYPOGRIFY = True
+
+THEME = 'theme'
