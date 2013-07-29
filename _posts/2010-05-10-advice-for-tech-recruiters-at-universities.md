@@ -86,7 +86,7 @@ we are in college: to set us up for success after graduation. If I think
 working for you would hold me back intellectually, then why would I work for
 you?
 
-## Me Something
+## Teach Me Something
 
 The companies that are most sought after by students are the ones who offer
 more than just a sales pitch. If you give a workshop, presentation, or
