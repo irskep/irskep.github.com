@@ -1,7 +1,7 @@
 Title: Games I've written
 Slug: games
 
-* [Escort Wing](<|filename|escort_wing.md>) (2005)
+* [Escort Wing](<|filename|escort-wing.md>) (2005)
 * [Artack](<|filename|artack.md>) (2006)
 * [Elite Bungie Chopper Squadron](http://www.pyweek.org/e/idg/) (2009)
 * [gw0rp](<|filename|gw0rp.md>) (2009)
