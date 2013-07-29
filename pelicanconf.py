@@ -29,7 +29,11 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = False
 
+ARTICLE_DIR = 'posts'
+
 ARTICLE_URL = '{slug}'
 ARTICLE_SAVE_AS = '%s/index.html' % ARTICLE_URL
 PAGE_URL = ARTICLE_URL
 PAGE_SAVE_AS = '%s/index.html' % PAGE_URL
+
+DISPLAY_PAGES_ON_MENU = False
