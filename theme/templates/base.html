@@ -5,6 +5,7 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
     <link rel="stylesheet" href="{{ SITEURL }}/static/css/reset.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/static/css/pygments.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/static/css/style.css" />
 
     <meta charset="utf-8" />
@@ -34,14 +35,6 @@
     {% endif %}
 
     <script src="{{ SITEURL }}/static/js/hyphenate.js"></script>
-    <script type="text/javascript">
-      Hyphenator.config({
-        displaytogglebox:true,
-        remoteloading:false,
-        safecopy:false
-      });
-      Hyphenator.run();
-    </script>
 
   {% endblock head %}
 </head>

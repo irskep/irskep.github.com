@@ -14,10 +14,12 @@ canvas { display: none; }
 /* base styles */
 
 $backgroundColor: rgb(240, 240, 240);
+$codeBackgroundColor: rgb(250, 250, 250);
 $bodyColor: rgb(40, 40, 40);
 $linkColor: rgb(60, 60, 80);
 $separatorColor: lighten($bodyColor, 50%);
 $bannerFontSize: 2rem;
+$paragraphSpacing: 0.75rem;
 
 @mixin body-font {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -40,8 +42,13 @@ a, a:visited, a:active {
   color: $linkColor;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1, h2, h3, h4, h5, h6 {
   @include title-font;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: $linkColor;
   text-decoration: none;
 
@@ -52,7 +59,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 p {
-  margin-bottom: 0.75rem;
+  margin-bottom: $paragraphSpacing;
+}
+
+pre {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  background-color: $codeBackgroundColor;
+  padding: 0.25rem 0;
+  margin-bottom: $paragraphSpacing;
 }
 
 /* layout */
@@ -129,10 +144,6 @@ p {
       clear: none;
     }
   }
-}
-
-.article h2 {
-  margin-bottom: 0.75rem;
 }
 
 

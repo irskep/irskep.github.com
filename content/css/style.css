@@ -13,8 +13,12 @@ html {
 a, a:visited, a:active {
   color: #3c3c50; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #3c3c50;
   text-decoration: none; }
   h1 a:visited, h1 a:active, h2 a:visited, h2 a:active, h3 a:visited, h3 a:active, h4 a:visited, h4 a:active, h5 a:visited, h5 a:active, h6 a:visited, h6 a:active {
@@ -22,6 +26,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none; }
 
 p {
+  margin-bottom: 0.75rem; }
+
+pre {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  background-color: #fafafa;
+  padding: 0.25rem 0;
   margin-bottom: 0.75rem; }
 
 /* layout */
@@ -74,9 +85,6 @@ p {
   display: block;
   float: right;
   clear: none; }
-
-.article h2 {
-  margin-bottom: 0.75rem; }
 
 #pagefooter {
   margin-top: 2rem;
