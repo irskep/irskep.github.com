@@ -75,6 +75,9 @@ p {
   float: right;
   clear: none; }
 
+.article h2 {
+  margin-bottom: 0.75rem; }
+
 #pagefooter {
   margin-top: 2rem;
   margin-bottom: 3rem;

@@ -5,25 +5,23 @@
 {% block content %}
   <section id="content">
 
-  {% block content_title %}
-    <!--<h2>Articles</h2>-->
-  {% endblock %}
+    {% block content_title %}
+      <!--<h2>Articles</h2>-->
+    {% endblock %}
 
-  {% set first_article = articles_page.object_list[0] %}
-  {% set article = first_article %}
-  <article class="featured-article">
-    {{ post_header(article) }}
-    {{ post_content(article) }}
-  </article>
+    {% set first_article = articles_page.object_list[0] %}
+    {% set article = first_article %}
+    <article class="article featured-article">
+      {{ post_header(article) }}
+      {{ post_content(article) }}
+    </article>
 
 
-  <ul id="post-list">
-
-    {% for article in articles_page.object_list[1:] %}
-      <li>{{ post_header(article) }}</li>
-    {% endfor %}
-
-  </ul><!-- /#posts-list -->
+    <ul id="post-list">
+      {% for article in articles_page.object_list[1:] %}
+        <li>{{ post_header(article) }}</li>
+      {% endfor %}
+    </ul>
 
   {% include 'pagination.html' %}
 

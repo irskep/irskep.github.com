@@ -1,10 +1,6 @@
 {% extends "base.html" %}
-{% from "macros.html" import post_header with context %}
-{% from "macros.html" import post_content with context %}
+{% from "macros.html" import whole_post with context %}
 
 {% block content %}
-<section id="content" class="body article">
-  {{ post_header(article) }}
-  {{ post_content(article) }}
-</section>
+  <section id="content" class="body">{{ whole_post(article) }}</section>
 {% endblock %}

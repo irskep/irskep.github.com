@@ -26,3 +26,10 @@
 {% macro post_content(article) -%}
   <div class="entry-content hyphenate">{{ article.content }}</div>
 {%- endmacro %}
+
+{% macro whole_post(article) -%}
+  <article class="article">
+    {{ post_header(article) }}
+    {{ post_content(article) }}
+  </article>
+{%- endmacro %}
