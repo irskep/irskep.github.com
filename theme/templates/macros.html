@@ -1,5 +1,5 @@
 {% macro post_header(article) %}
-  <header>
+  <header class="article-header">
     <h2 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
         {{ article.title }}
@@ -22,3 +22,7 @@
     </div>
   </header>
 {% endmacro %}
+
+{% macro post_content(article) -%}
+  <div class="entry-content hyphenate">{{ article.content }}</div>
+{%- endmacro %}

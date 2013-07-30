@@ -32,6 +32,17 @@
     {% if TAG_FEED_RSS and tag %}
       <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
+
+    <script src="{{ SITEURL }}/static/js/hyphenate.js"></script>
+    <script type="text/javascript">
+      Hyphenator.config({
+        displaytogglebox:true,
+        remoteloading:false,
+        safecopy:false
+      });
+      Hyphenator.run();
+    </script>
+
   {% endblock head %}
 </head>
 

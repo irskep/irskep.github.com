@@ -55,27 +55,27 @@ p {
 #content > h2 {
   margin-bottom: 1rem; }
 
-#post-list li.first-entry {
-  border-bottom: 1px solid #a8a8a8;
-  margin-bottom: 1rem; }
-#post-list article {
+.featured-article {
+  margin-bottom: 2rem; }
+
+#post-list li {
   margin-bottom: 1em; }
-  #post-list article header:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden; }
-  #post-list article header .entry-title {
-    width: 20rem;
-    float: left; }
-  #post-list article header .post-info time {
-    display: block;
-    float: right;
-    clear: none; }
+
+.article-header:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+.article-header .entry-title {
+  width: 20rem;
+  float: left; }
+.article-header .post-info time {
+  display: block;
+  float: right;
+  clear: none; }
 
 #pagefooter {
-  border-top: 1px solid #a8a8a8;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
   padding-top: 1rem; }

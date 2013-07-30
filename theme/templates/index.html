@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% from "macros.html" import post_header with context %}
+{% from "macros.html" import post_content with context %}
 
 {% block content %}
   <section id="content">
@@ -8,25 +9,18 @@
     <!--<h2>Articles</h2>-->
   {% endblock %}
 
+  {% set first_article = articles_page.object_list[0] %}
+  {% set article = first_article %}
+  <article class="featured-article">
+    {{ post_header(article) }}
+    {{ post_content(article) }}
+  </article>
+
+
   <ul id="post-list">
 
-    {% for article in articles_page.object_list %}
-      {% set classes="" %}
-      {% if loop.first %}{% set classes="first-entry" %}{% endif %}
-      <li class="{{ classes }}">
-        <article class="hentry">
-          {{ post_header(article) }}
-          <div class="entry-content">
-            {% if loop.first %}
-              {{ article.content }}
-            {#
-            {% else %}
-              {{ article.summary }}
-            #}
-            {% endif %}
-          </div><!-- /.entry-content -->
-        </article>
-      </li>
+    {% for article in articles_page.object_list[1:] %}
+      <li>{{ post_header(article) }}</li>
     {% endfor %}
 
   </ul><!-- /#posts-list -->
