@@ -41,7 +41,6 @@ MENUITEMS = (
     ('Open Source', '/open-source'),
     ('The Nest', 'http://thenestmusic.com/'),
     ('Pyglet tutorial', '/pyglettutorial'),
-    ('The New Dork Times', 'http://steveasleep.com/newdorktimes'),
 )
 
 DEFAULT_PAGINATION = False

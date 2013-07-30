@@ -63,6 +63,9 @@ stopserver:
 	kill -9 `cat srv.pid`
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
+watch-scss:
+	sass --watch $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css $(INPUTDIR)/css/style.scss:$(OUTPUTDIR)/static/css/style.css
+
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 

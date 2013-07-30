@@ -1,0 +1,142 @@
+/* re-add when ready */
+canvas { display: none; }
+
+@mixin clear-contents {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+/* base styles */
+
+$backgroundColor: rgb(240, 240, 240);
+$bodyColor: rgb(40, 40, 40);
+$linkColor: rgb(60, 60, 80);
+$separatorColor: lighten($bodyColor, 50%);
+$bannerFontSize: 2rem;
+
+@mixin body-font {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+@mixin title-font {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: 120%;
+  line-height: 135%;
+  @include body-font;
+
+  background-color: $backgroundColor;
+  color: $bodyColor;
+}
+
+a, a:visited, a:active {
+  color: $linkColor;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  @include title-font;
+  color: $linkColor;
+  text-decoration: none;
+
+  &:visited, &:active {
+    color: $linkColor;
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+/* layout */
+
+#banner, #menu, #content, #pagefooter {
+  width: 30rem;
+  margin: auto;
+}
+
+// banner
+
+#banner {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  h1 {
+    font-size: $bannerFontSize;
+    line-height: $bannerFontSize * 1.35;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// menu
+
+#menu {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  ul { @include clear-contents; }
+
+  li {
+    float: left;
+  }
+
+  li+li {
+    margin-left: 1em;
+  }
+}
+
+// article list
+
+#content > h2 {
+  margin-bottom: 1rem;
+}
+
+#post-list {
+
+  li {
+    &.first-entry {
+      border-bottom: 1px solid $separatorColor;
+      margin-bottom: 1rem;
+    }
+  }
+
+  article {
+    margin-bottom: 1em;
+
+    header {
+      @include clear-contents;
+
+      .entry-title {
+        width: 20rem;
+        float: left;
+      }
+
+      .post-info {
+        time {
+          display: block;
+          float: right;
+          clear: none;
+        }
+      }
+
+    }
+  }
+}
+
+// footer
+#pagefooter {
+  border-top: 1px solid $separatorColor;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}

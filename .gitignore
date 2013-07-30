@@ -5,3 +5,5 @@
 _site/
 output/
 *.pid
+.sass-cache/
+old/

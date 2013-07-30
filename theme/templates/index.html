@@ -5,13 +5,15 @@
   <section id="content">
 
   {% block content_title %}
-    <h2>Articles</h2>
+    <!--<h2>Articles</h2>-->
   {% endblock %}
 
   <ul id="post-list">
 
     {% for article in articles_page.object_list %}
-      <li>
+      {% set classes="" %}
+      {% if loop.first %}{% set classes="first-entry" %}{% endif %}
+      <li class="{{ classes }}">
         <article class="hentry">
           {{ post_header(article) }}
           <div class="entry-content">

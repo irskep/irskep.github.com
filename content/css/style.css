@@ -1,2 +1,81 @@
 /* re-add when ready */
-canvas { display: none; }
+canvas {
+  display: none; }
+
+/* base styles */
+html {
+  font-size: 120%;
+  line-height: 135%;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  background-color: #f0f0f0;
+  color: #282828; }
+
+a, a:visited, a:active {
+  color: #3c3c50; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #3c3c50;
+  text-decoration: none; }
+  h1 a:visited, h1 a:active, h2 a:visited, h2 a:active, h3 a:visited, h3 a:active, h4 a:visited, h4 a:active, h5 a:visited, h5 a:active, h6 a:visited, h6 a:active {
+    color: #3c3c50;
+    text-decoration: none; }
+
+p {
+  margin-bottom: 0.75rem; }
+
+/* layout */
+#banner, #menu, #content, #pagefooter {
+  width: 30rem;
+  margin: auto; }
+
+#banner {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  #banner h1 {
+    font-size: 2rem;
+    line-height: 2.7rem; }
+  #banner a {
+    text-decoration: none; }
+
+#menu {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  #menu ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden; }
+  #menu li {
+    float: left; }
+  #menu li + li {
+    margin-left: 1em; }
+
+#content > h2 {
+  margin-bottom: 1rem; }
+
+#post-list li.first-entry {
+  border-bottom: 1px solid #a8a8a8;
+  margin-bottom: 1rem; }
+#post-list article {
+  margin-bottom: 1em; }
+  #post-list article header:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden; }
+  #post-list article header .entry-title {
+    width: 20rem;
+    float: left; }
+  #post-list article header .post-info time {
+    display: block;
+    float: right;
+    clear: none; }
+
+#pagefooter {
+  border-top: 1px solid #a8a8a8;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem; }

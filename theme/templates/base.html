@@ -39,13 +39,13 @@
   <header id="banner" class="body">
     <h1>
       <a href="{{ SITEURL }}">
-        {{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>
+        <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
+        Steve Johnson&rsquo;s<br>partial creative output
       </a>
     </h1>
   </header><!-- /#banner -->
 
   <nav id="menu">
-    <h2>Navigation</h2>
     <ul>
       {% for title, link in MENUITEMS %}
         <li><a href="{{ link }}">{{ title }}</a></li>
@@ -65,8 +65,11 @@
   </nav><!-- /#menu -->
   {% block content %}
   {% endblock %}
-  <footer id="contentinfo" class="body">
-  </footer><!-- /#contentinfo -->
+  <footer id="pagefooter" class="body">
+    Stephen R. Johnson<br>
+    <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
+    San Francisco, California
+  </footer><!-- /#pagefooter -->
 
   <script type="text/javascript">
 
