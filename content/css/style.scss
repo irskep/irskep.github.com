@@ -135,13 +135,13 @@ pre {
   .entry-title {
     width: 20rem;
     float: left;
+    margin-top: 0;
   }
 
   .post-info {
     time {
       display: block;
       float: right;
-      clear: none;
     }
   }
 }

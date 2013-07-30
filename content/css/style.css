@@ -80,11 +80,11 @@ pre {
   visibility: hidden; }
 .article-header .entry-title {
   width: 20rem;
-  float: left; }
+  float: left;
+  margin-top: 0; }
 .article-header .post-info time {
   display: block;
-  float: right;
-  clear: none; }
+  float: right; }
 
 #pagefooter {
   margin-top: 2rem;
