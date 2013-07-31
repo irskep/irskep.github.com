@@ -20,6 +20,7 @@ $linkColor: rgb(60, 60, 80);
 $separatorColor: lighten($bodyColor, 50%);
 $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
+$headerVerticalSpacing: $paragraphSpacing;
 
 @mixin body-font {
   // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -28,9 +29,12 @@ $paragraphSpacing: 0.75rem;
 }
 
 @mixin title-font {
-  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+}
+
+@mixin title-font-2 {
+  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin banner-font {
@@ -52,8 +56,8 @@ a, a:visited, a:active {
 
 h1, h2, h3, h4, h5, h6 {
   @include title-font;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: $headerVerticalSpacing;
+  margin-bottom: $headerVerticalSpacing;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -140,6 +144,13 @@ article ul {
   }
 }
 
+// footer
+#pagefooter {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
 // article styling
 
 .article-header {
@@ -159,10 +170,18 @@ article ul {
   }
 }
 
+// page styling
 
-// footer
-#pagefooter {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  padding-top: 1rem;
+.page {
+  h1 {
+    border-top: 1px solid $separatorColor;
+    padding-top: $headerVerticalSpacing;
+    font-weight: normal;
+    @include title-font-2;
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }

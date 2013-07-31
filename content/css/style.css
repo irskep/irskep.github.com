@@ -77,6 +77,11 @@ article ul {
 #post-list li {
   margin-bottom: 1em; }
 
+#pagefooter {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem; }
+
 .article-header:after {
   clear: both;
   content: ".";
@@ -91,7 +96,11 @@ article ul {
   display: block;
   float: right; }
 
-#pagefooter {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  padding-top: 1rem; }
+.page h1 {
+  border-top: 1px solid #a8a8a8;
+  padding-top: 0.75rem;
+  font-weight: normal;
+  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem; }
+.page h2 {
+  font-size: 1.2rem; }
