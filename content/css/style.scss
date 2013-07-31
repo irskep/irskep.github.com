@@ -168,6 +168,11 @@ article ul {
       float: right;
     }
   }
+
+  // article h1 == page h2 (pages can have more subsections)
+  h1 {
+    font-size: 1.2rem;
+  }
 }
 
 // page styling

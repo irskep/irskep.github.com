@@ -95,6 +95,8 @@ article ul {
 .article-header .post-info time {
   display: block;
   float: right; }
+.article-header h1 {
+  font-size: 1.2rem; }
 
 .page h1 {
   border-top: 1px solid #a8a8a8;
