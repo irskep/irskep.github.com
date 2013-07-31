@@ -216,7 +216,8 @@ The player should be an instance or subclass of pyglet.sprite.Sprite, like so:
     :::python
     from game import resources
     ...
-    player_ship = pyglet.sprite.Sprite(img=resources.player_image, x=400, y=300)
+    player_ship = pyglet.sprite.Sprite(
+        img=resources.player_image, x=400, y=300)
 
 To get the player to draw on the screen, add a line to on_draw():
 
@@ -237,8 +238,8 @@ Loading the asteroids is a little more complicated, since we'll need to place mo
         for i in range(num_asteroids):
             asteroid_x = random.randint(0, 800)
             asteroid_y = random.randint(0, 600)
-            new_asteroid = pyglet.sprite.Sprite(img=resources.asteroid_image, 
-                                                x=asteroid_x, y=asteroid_y)
+            new_asteroid = pyglet.sprite.Sprite(
+                img=resources.asteroid_image, x=asteroid_x, y=asteroid_y)
             new_asteroid.rotation = random.randint(0, 360)
             asteroids.append(new_asteroid)
         return asteroids
@@ -250,7 +251,9 @@ All we are doing here is making a few new sprites with random positions. There's
     ...
     def distance(point_1=(0, 0), point_2=(0, 0)):
         """Returns the distance between two points"""
-        return math.sqrt((point_1[0]-point_2[0])**2+(point_1[1]-point_2[1])**2)
+        return math.sqrt(
+            (point_1[0] - point_2[0]) ** 2 +
+            (point_1[1] - point_2[1]) ** 2)
 
 To check new asteroids agains the player's position, we need to pass the player's position into the asteroids() function and keep regenerating new coordinates until the asteroid is far enough away. Pyglet sprites keep track of their position both as a tuple (Sprite.position) and as x and y attributes (Sprite.x and Sprite.y). To keep our code short, we'll just pass the position tuple into the function.
 
@@ -262,8 +265,8 @@ To check new asteroids agains the player's position, we need to pass the player'
             while distance((asteroid_x, asteroid_y), player_position) < 100:
                 asteroid_x = random.randint(0, 800)
                 asteroid_y = random.randint(0, 600)
-            new_asteroid = pyglet.sprite.Sprite(img=resources.asteroid_image, 
-                                                x=asteroid_x, y=asteroid_y)
+            new_asteroid = pyglet.sprite.Sprite(
+                img=resources.asteroid_image, x=asteroid_x, y=asteroid_y)
             new_asteroid.rotation = random.randint(0, 360)
             asteroids.append(new_asteroid)
         return asteroids
@@ -305,7 +308,8 @@ To create a new batch, simply call pyglet.graphics.Batch():
 To make an object a member of a batch, just pass the batch into its constructor as the batch keyword argument:
 
     :::python
-    score_label = pyglet.text.Label(text="Score: 0", x=10, y=575, batch=main_batch)
+    score_label = pyglet.text.Label(
+        text="Score: 0", x=10, y=575, batch=main_batch)
 
 Add the batch keyword argument to each graphical object created in asteroids.py.
 
@@ -314,9 +318,9 @@ To use the batch with the asteroid sprites, we'll need to pass the batch into th
     :::python
     def asteroids(num_asteroids, player_position, batch=None):
         ...
-        new_asteroid = pyglet.sprite.Sprite(img=resources.asteroid_image, 
-                                                x=asteroid_x, y=asteroid_y,
-                                                batch=batch)
+        new_asteroid = pyglet.sprite.Sprite(
+            img=resources.asteroid_image, x=asteroid_x, y=asteroid_y,
+            batch=batch)
 
 asteroids = load.asteroids(3, player_ship.position, main_batch)
 
@@ -339,9 +343,9 @@ The function for creating the icons is almost exactly the same as the one for cr
     def player_lives(num_icons, batch=None):
         player_lives = []
         for i in range(num_icons):
-            new_sprite = pyglet.sprite.Sprite(img=resources.player_image, 
-                                            x=785-i*30, y=585, 
-                                            batch=batch)
+            new_sprite = pyglet.sprite.Sprite(
+                img=resources.player_image, x=785-i*30, y=585,
+                batch=batch)
             new_sprite.scale = 0.5
             player_lives.append(new_sprite)
         return player_lives
@@ -583,8 +587,8 @@ Now the image is ready to be used by the player class. If you're still confused 
 The engine sprite needs to be initialized with all the same arguments as Player, except that it needs a different image and must be initially invisible. The code for creating it belongs in Player.\_\_init\_\_() and is very straightforward:
 
     :::python
-    self.engine_sprite = pyglet.sprite.Sprite(img=resources.engine_image, 
-                                            *args, **kwargs)
+    self.engine_sprite = pyglet.sprite.Sprite(
+        img=resources.engine_image, *args, **kwargs)
     self.engine_sprite.visible = False
 
 To make the engine sprite appear only while the player is thrusting, we need to add some logic to the if self.key_handler[key.UP] block in the update() method.
@@ -662,7 +666,9 @@ We need to add three things to the PhysicalObject class: the dead attribute, the
     import pyglet, math
 
     def distance(point_1=(0, 0), point_2=(0, 0)):
-        return math.sqrt((point_1[0]-point_2[0])**2+(point_1[1]-point_2[1])**2)
+        return math.sqrt(
+            (point_1[0] - point_2[0]) ** 2 +
+            (point_1[1] - point_2[1]) ** 2)
 
 Remember to call from util import distance in load.py. Now we can write PhysicalObject.collides_with() without duplicating code.
 
@@ -671,7 +677,8 @@ Remember to call from util import distance in load.py. Now we can write Physical
     {% highlight python %}
     def collides_with(self, other_object):
         collision_distance = self.image.width/2 + other_object.image.width/2
-        actual_distance = util.distance(self.position, other_object.position)
+        actual_distance = util.distance(
+            self.position, other_object.position)
         
         return (actual_distance <= collision_distance)
 
@@ -753,19 +760,21 @@ First, make a new submodule of game called bullet.py and start a simple subclass
         """Bullets fired by the player"""
 
         def __init__(self, *args, **kwargs):
-            super(Bullet, self).__init__(resources.bullet_image, *args, **kwargs)
+            super(Bullet, self).__init__(
+                resources.bullet_image, *args, **kwargs)
 
 To get bullets to disappear after a time, we could keep track of our own age and lifespan attributes, or we could let pyglet do all the work for us. I don't know about you, but I prefer the second option. First, we need to write a function to call at the end of a bullet's life:
 
     :::python
     def die(self, dt):
-        self.dead = True</pre>
+        self.dead = True
 
 Now we need to tell pyglet to call it after half a second or so. We can do this as soon as the object is initialized by adding a call to pyglet.clock.schedule_once() to the constructor:
 
     :::python
     def __init__(self, *args, **kwargs):
-        super(Bullet, self).__init__(resources.bullet_image, *args, **kwargs)
+        super(Bullet, self).__init__(
+            resources.bullet_image, *args, **kwargs)
         pyglet.clock.schedule_once(self.die, 0.5)
 
 There's still more work to be done on the Bullet class, but before we do any more work on the class itself, let's get them on the screen.
@@ -780,8 +789,9 @@ The Player class will be the only class that fires bullets, so let's open it up,
 
     class Player(physicalobject.PhysicalObject):
         def __init__(self, *args, **kwargs):
-            super(Player, self).__init__(img=resources.player_image, *args, **kwargs)
-            ....
+            super(Player, self).__init__(
+                img=resources.player_image, *args, **kwargs)
+            ...
             self.bullet_speed = 700.0
 
 Now we can write the code to create a new bullet and send it hurling off into space. First, we need to resurrect the on\_key\_press() event handler:
@@ -810,9 +820,16 @@ Next, calculate the bullet's position and instantiate it:
 Set its velocity using almost the same equations:
 
     :::python
-        bullet_vx = self.velocity_x + math.cos(angle_radians) * self.bullet_speed
-        bullet_vy = self.velocity_y + math.sin(angle_radians) * self.bullet_speed
-        new_bullet.velocity_x, new_bullet.velocity_y = bullet_vx, bullet_vy
+        bullet_vx = (
+            self.velocity_x +
+            math.cos(angle_radians) * self.bullet_speed
+        )
+        bullet_vy = (
+            self.velocity_y +
+            math.sin(angle_radians) * self.bullet_speed
+        )
+        new_bullet.velocity_x = bullet_vx
+        new_bullet.velocity_y = bullet_vy
 
 Finally, add it to the new\_objects list so that the main loop will pick it up and add it to game\_objects.
 
@@ -883,7 +900,8 @@ Create a new submodule of game called asteroid.py. Write the usual constructor t
 
     class Asteroid(physicalobject.PhysicalObject):
         def __init__(self, *args, **kwargs):
-            super(Asteroid, self).__init__(resources.asteroid_image, *args, **kwargs)
+            super(Asteroid, self).__init__(
+                resources.asteroid_image, *args, **kwargs)
 
 Now we need to write a new handle\_collision\_with() method. It should create a random number of new, smaller asteroids with random velocities. However, it should only do that if it's big enough. An asteroid should divide at most twice, and if we scale it down by half each time, then an asteroid should stop dividing when it's 1/4 the size of a new asteroid.
 
@@ -904,10 +922,13 @@ Now we can say that if it's supposed to die, and it's big enough, then we should
             if self.dead and self.scale > 0.25:
                 num_asteroids = random.randint(2, 3)
                 for i in xrange(num_asteroids):
-                    new_asteroid = Asteroid(x=self.x, y=self.y, batch=self.batch)
+                    new_asteroid = Asteroid(
+                        x=self.x, y=self.y, batch=self.batch)
                     new_asteroid.rotation = random.randint(0, 360)
-                    new_asteroid.velocity_x = random.random()*70 + self.velocity_x
-                    new_asteroid.velocity_y = random.random()*70 + self.velocity_y
+                    new_asteroid.velocity_x = (
+                        random.random() * 70 + self.velocity_x)
+                    new_asteroid.velocity_y = (
+                        random.random() * 70 + self.velocity_y)
                     new_asteroid.scale = self.scale * 0.5
                     self.new_objects.append(new_asteroid)
 
@@ -917,7 +938,8 @@ Add the attribute in the constructor:
 
     :::python
         def __init__(self, *args, **kwargs):
-            super(Asteroid, self).__init__(resources.asteroid_image, *args, **kwargs)
+            super(Asteroid, self).__init__(
+                resources.asteroid_image, *args, **kwargs)
             self.rotate_speed = random.random() * 100.0 - 50.0
 
 Then write the update() method:
@@ -936,7 +958,8 @@ The last thing we need to do is go over to load.py and have the asteroid() metho
         ...
         for i in range(num_asteroids):
             ...
-            new_asteroid = asteroid.Asteroid(x=asteroid_x, y=asteroid_y, batch=batch)
+            new_asteroid = asteroid.Asteroid(
+                x=asteroid_x, y=asteroid_y, batch=batch)
             ...
         return asteroids
 
