@@ -168,7 +168,7 @@ called at the module level. Also, note that zero degrees points directly to the
 right in pyglet, so the images are all drawn with their front pointing to the
 right.
 
-To access the images from `asteroids.py,` we need to use something like
+To access the images from `asteroids.py`, we need to use something like
 `from game import resources`, which we'll get into in the next section.
 
 ## Initializing objects
@@ -334,7 +334,8 @@ To make an object a member of a batch, just pass the batch into its constructor 
     score_label = pyglet.text.Label(
         text="Score: 0", x=10, y=575, batch=main_batch)
 
-Add the batch keyword argument to each graphical object created in asteroids.py.
+Add the batch keyword argument to each graphical object created in
+`asteroids.py`.
 
 To use the batch with the asteroid sprites, we'll need to pass the batch into
 the `game.load.asteroid()` function, then just add it as a keyword argument to
@@ -934,7 +935,7 @@ the `PhysicalObject` class:
         ....
         self.new_objects = []
 
-To add a new object, all we have to do is put something in `new_objects,` and
+To add a new object, all we have to do is put something in `new_objects`, and
 the main loop will see it, add it to the `game_objects` list, and clear
 `new_objects`.
 
