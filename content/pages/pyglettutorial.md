@@ -1,6 +1,7 @@
 Title: Pyglet Tutorial
 Tags: pyglet, tutorial
 Slug: pyglettutorial
+Date: 2009-06-23
 
 Writing programs in [Python][1] is fun. Writing games is fun. **Writing games
 in Python** is fun! Unfortunately, tutorials to help people get started are
@@ -19,7 +20,7 @@ width="480" height="350" allowscriptaccess="always"
 allowfullscreen="true"></embed>  
   
 
-## Table of Contents
+# Table of Contents
 
 *   Introduction
 *   [Part 1: Basic Graphics](#part1)
@@ -28,27 +29,27 @@ allowfullscreen="true"></embed>
 *   [Part 4: Collision Response](#part4)
 *   [Part 5: Next Steps](#part5)
 
-## Introduction
+# Introduction
 
-### Who is this document for?
+## Who is this document for?
 
 This document was written for people who know how to write simple Python
 programs and run them. That should be all you need. If that's all you have and
 this document confuses you, then you should [email me][9] and I'll try to fix
 it.
 
-### Why use Python for games?
+## Why use Python for games?
 
 The same reason you use Python for anything else. It's easy, it makes sense,
 and there are great libraries available.
 
-### Speaking of libraries, what's available?
+## Speaking of libraries, what's available?
 
 *   [PyGame][10]
 *   [pyglet][11]
 *   [Panda3D][12]
 
-### Which one should I use?
+## Which one should I use?
 
 My personal opinion is that pyglet is the cleanest and fastest, but PyGame has
 also been used to do some cool things. Panda3D is more sophisticated, geared
@@ -69,21 +70,21 @@ look at the project in various stages of completion on [its Github page][13].
  [13]: http://github.com/irskep/pyglettutorial
 
 <a name="part1"> </a>
-## Part 1: Basic Graphics
+# Part 1: Basic Graphics
 
 The first version of our Asteroids clone will simply show a score of zero, a
 label showing the name of the program, three randomly placed asteroids, and the
 player's ship. Nothing will move.
 
-### Setting Up
+## Setting Up
 
-#### Installing Pyglet
+### Installing Pyglet
 
 Download pyglet from http://pyglet.org/download.html and choose the
 distribution for your platform. The process is different for each platform, but
 simple on all of them, since pyglet has no external dependencies.
 
-#### Setting Up the Files
+### Setting Up the Files
 
 Since I wrote this example in stages, I'm putting the folder with the images,
 called 'resources,' outside the example folders. Each example folder contains a
@@ -99,7 +100,7 @@ like this:
             game/
                 __init__.py
 
-#### Getting a Window
+### Getting a Window
 
 To set up a window, simply import pyglet, create a new instance of pyglet.window.Window, and call pyglet.app.run().
 
@@ -113,7 +114,7 @@ To set up a window, simply import pyglet, create a new instance of pyglet.window
 When you run the code above, you should see a window full of junk that goes
 away when you press Esc.
 
-#### Loading and Displaying an Image
+### Loading and Displaying an Image
 
 Let's create a separate submodule of game to hold resources, calling it resources.py.
 
@@ -137,7 +138,7 @@ images:
     bullet_image = pyglet.resource.image("bullet.png")
     asteroid_image = pyglet.resource.image("asteroid.png")
 
-#### Centering the Images
+### Centering the Images
 
 Pyglet will draw all images from their lower left corner by default. We don't
 want this behavior for our images, which need to rotate around their centers.
@@ -164,14 +165,14 @@ right.
 To access the images from asteroids.py, we need to use something like from game
 import resources, which we'll get into in the next section.
 
-### Initializing Objects
+## Initializing Objects
 
 We want to put some labels at the top of the window to give the player some
 information about the score and the current level. Eventually, we will have a
 score display, the name of the level, and a row of icons representing the
 number of remaining lives.
 
-#### Making the Labels
+### Making the Labels
 
 To make a text label in pyglet, just initialize a pyglet.text.Label object:
 
@@ -182,7 +183,7 @@ To make a text label in pyglet, just initialize a pyglet.text.Label object:
 
 Notice that the second label is centered using the anchor_x attribute.
 
-#### Drawing the Labels
+### Drawing the Labels
 
 We want pyglet to call a custom function whenever the window is drawn. To make
 that happen, we need to either subclass Window and override the on_draw()
@@ -207,7 +208,7 @@ Now we can fill the method with the functions necessary to draw our labels. Befo
 
 Now when you run asteroids.py, you should get a window with a score of zero in the upper left corner and a centered label reading "Version 1: Static Graphics" at the top of the screen.
 
-#### Making the Player and Asteroid Sprites
+### Making the Player and Asteroid Sprites
 
 The player should be an instance or subclass of pyglet.sprite.Sprite, like so:
 
@@ -285,13 +286,13 @@ The asteroids variable now contains a list of sprites. Drawing them on the scree
             asteroid.draw()
 
 <a name="part2"> </a>
-## Part 2: Basic Motion
+# Part 2: Basic Motion
 
 In the second version of the example, we'll introduce a simpler, faster way to draw all of the game objects, as well as add row of icons indicating the number of lives left. We'll also write some code to make the player and the asteroids obey the laws of physics.
 
-### More Graphics
+## More Graphics
 
-#### Drawing with Batches
+### Drawing with Batches
 
 Calling each object's draw() method manually can become cumbersome and tedious if there are many different kinds of objects. Graphics batches simplify drawing by letting you draw all your objects with a single function call. All you need to do is create a batch, pass it into each object you want to draw, and call the batch's draw() method.
 
@@ -325,7 +326,7 @@ Now you can replace those five lines of draw() calls with just one:
 
 Now when you run asteroids.py, it should look exactly the same.
 
-#### Displaying Little Ship Icons
+### Displaying Little Ship Icons
 
 To show how many lives the player has left, we'll need to draw a little row of icons in the upper right corner of the screen. Since we'll be making more than one using the same template, let's create a function called player_lives() in the load module to generate them.
 
@@ -346,11 +347,11 @@ The function for creating the icons is almost exactly the same as the one for cr
 
 The player icon is 50x50 pixels, so half that size will be 25x25. We want to put a little bit of space between each icon, so we create them at 30-pixel intervals starting from the right side of the screen and moving to the left. Note that like the asteroids() function, player_lives() takes a batch argument. A None value specifies no batch.
 
-### Making Things Move
+## Making Things Move
 
 The game would be pretty boring if nothing on the screen ever moved. To achieve motion, we'll need to write our own set of classes to handle frame-by-frame movement calculations. We'll also need to write a Player class to respond to keyboard input.
 
-#### Creating the Basic Motion Class
+### Creating the Basic Motion Class
 
 Since every visible object is represented by at least one Sprite, we may as well make our basic motion class a subclass of pyglet.sprite.Sprite. Another approach would be to have our class inherit from object and have a sprite attribute, but I find that simply subclassing Sprite provides more convenient notation.
 
@@ -403,7 +404,7 @@ To make the asteroids use our new motion code, just import the physicalobject mo
         new_asteroid.velocity_y = random.random()*40
         ...
 
-#### Writing the Game Update Function
+### Writing the Game Update Function
 
 To call each object's update() method every frame, we first need to have a list of those objects. For now, we can just declare it after setting up all the other objects:
 
@@ -419,7 +420,7 @@ Now we can write a simple function to iterate over the list:
 
 The update() function takes a dt parameter because it is still not the source of the actual time step.
 
-#### Calling the Update Function
+### Calling the Update Function
 
 We need to update the objects at least once per frame. What's a frame? Well, most screens have a maximum refresh rate of 60 hertz. If we set our loop to run at exactly 60 hertz, though, the motion will look a little jerky because it won't match the screen exactly. Instead, we should have it update twice as fast, 120 times per second, to get smooth animation.
 
@@ -432,7 +433,7 @@ Putting this line above pyglet.app.run() in the if \_\_name\_\_ == '\_\_main\_\_
 
 Now when you run asteroids.py, you should see your formerly static asteroids drifting serenely across the screen, reappearing on the other side when they slide off the edge.
 
-#### Writing the Player Class
+### Writing the Player Class
 
 In addition to obeying the basic laws of physics, the player object needs to respond to keyboard input. Start by creating a game.player module, importing the appropriate modules, and subclassing PhysicalObject:
 
@@ -508,7 +509,7 @@ First, we convert the angle to radians so that math.cos() and math.sin() will ge
 
 We now have a complete Player class. If we add it to the game and tell pyglet that it's an event handler, we should be good to go.
 
-#### Integrating the Player Class
+### Integrating the Player Class
 
 The first thing we need to do is make player_ship an instance of Player:
 
@@ -525,11 +526,11 @@ Now we need to tell pyglet that player\_ship is an event handler. To do that, we
 That's it! Now you should be able to run the game and move the player with the arrow keys.
 
 <a name="part3"> </a>
-## Part 3: Giving the Player Something to Do
+# Part 3: Giving the Player Something to Do
 
 In any good game, there needs to be something working against the player. In the case of Asteroids, it's the threat of collision with, well, an asteroid. Collision detection requires a lot of infrastructure in the code, so this section will focus on making it work. We'll also clean up the player class and show some visual feedback for thrusting.
 
-### Simplifying Player Input
+## Simplifying Player Input
 
 Right now, the Player class handles all of its own keyboard events. It spends 13 lines of code doing nothing but setting boolean values in a dictionary. One would think that there would be a better way, and there is: pyglet.window.key.KeyStateHandler. This handy class automatically does what we have been doing manually: it tracks the state of every key on the keyboard.
 
@@ -555,11 +556,11 @@ Since Player now relies on key_handler to read the keyboard, we need to change t
 
 Now we can remove the on\_key\_press() and on\_key\_release() methods from the class. It's just that simple. If you need to see a list of key constants, you can check the API documentation under pyglet.window.key.
 
-### Adding an Engine Flame
+## Adding an Engine Flame
 
 Without visual feedback, it can be difficult to tell if the ship is actually thrusting forward or not, especially for an observer just watching someone else play the game. One way to provide visual feedback is to show an engine flame behind the player while the player is thrusting.
 
-#### Loading the Flame Image
+### Loading the Flame Image
 
 The player will now be made of two sprites. There's nothing preventing us from letting a Sprite own another Sprite, so we'll just give Player an engine_sprite attribute and update it every frame. For our purposes, this approach will be the simplest and most scalable.
 
@@ -576,7 +577,7 @@ To get the flame to draw behind the player, we need to move the flame image's ce
 
 Now the image is ready to be used by the player class. If you're still confused about anchor points, experiment with the values for engine_image's anchor point when you finish this section.
 
-#### Creating and Drawing the Flame
+### Creating and Drawing the Flame
 
 The engine sprite needs to be initialized with all the same arguments as Player, except that it needs a different image and must be initially invisible. The code for creating it belongs in Player.\_\_init\_\_() and is very straightforward:
 
@@ -606,7 +607,7 @@ To make the sprite appear at the player's position, we also need to update its p
     else:
         self.engine_sprite.visible = False
 
-#### Cleaning Up After Death
+### Cleaning Up After Death
 
 When the player is inevitably smashed to bits by an asteroid, he will disappear from the screen. However, simply removing the Player instance from the game_objects list is not enough for it to be removed from the graphics batch. To do that, we need to call its delete() method. Normally a Sprite's own delete() method will work fine without modifications, but our subclass has its own Sprite which must also be deleted when the Player instance is deleted. To get both to die gracefully, we must write a simple delete() method:
 
@@ -617,11 +618,11 @@ When the player is inevitably smashed to bits by an asteroid, he will disappear 
 
 The Player class is now cleaned up and ready to go.
 
-### Checking For Collisions
+## Checking For Collisions
 
 To make objects disappear from the screen, we'll need to manipulate the game_objects list. Every object will need to check every other object's position against its own, and each object will have to decide whether or not it should be removed from the list. The game loop will then check for dead objects and remove them from the list.
 
-#### Checking All Object Pairs
+### Checking All Object Pairs
 
 We need to check every object against every other object. The simplest method is to use nested loops. This method will be inefficient for a large number of objects, but it will work for our purposes. We can use one easy optimization and avoid checking the same pair of objects twice. Here's the setup for the loops, which belongs in update(). It simply iterates over all object pairs without doing anything.
 
@@ -652,7 +653,7 @@ Now all that remains is for us to go through the list and remove dead objects:
 
 As you can see, it simply calls the object's delete() method to remove it from any batches, then it removes it from the list. If you haven't used list comprehensions much, the above code might look like it's removing objects from the list while traversing it. Fortunately, the list comprehension is evaluated before the loop actually runs, so there should be no problems.
 
-#### Implementing the Collision Functions
+### Implementing the Collision Functions
 
 We need to add three things to the PhysicalObject class: the dead attribute, the collides\_with() method, and the handle\_collision\_with() method. The collides\_with() method will need to use the distance() function, so let's start by moving that function into its own submodule of game, called util.py:
 
@@ -684,19 +685,19 @@ One last thing: set self.dead = False in PhysicalObject.\_\_init\_\_().
 And that's it! You should be able to zip around the screen, engine blazing away. If you hit something, both you and the thing you collided with should disappear from the screen. There's still no game, but we are clearly making progress.
 
 <a name="part4"> </a>
-## Part 4: Collision Response
+# Part 4: Collision Response
 
 In this section, we'll add bullets. This new feature will require us to start adding things to the game_objects list during the game, as well as have objects check each others' types to make a decision about whether or not they should die.
 
-### Adding Objects During Play
+## Adding Objects During Play
 
-#### How?
+### How?
 
 We handled object removal with a boolean flag. Adding objects will be a little bit more complicated. For one thing, an object can't just say "Add me to the list!" It has to come from somewhere. For another thing, an object might want to add more than one other object at a time.
 
 There are a few ways to solve this problem. To avoid circular references, keep our constructors nice and short, and avoid adding extra modules, we'll have each object keep a list of new child objects to be added to game_objects.
 
-#### Tweaking the Game Loop
+### Tweaking the Game Loop
 
 The simplest way to check objects for children and add those children to the list is to add two lines of code to the game\_objects loop. We haven't implemented the new\_objects attribute yet, but when we do, it will be a list of objects to add.
 
@@ -724,7 +725,7 @@ Declare a to\_add list just below the loop and add new objects to it instead. At
 
     game_objects.extend(to_add)
 
-#### Putting the Attribute in PhysicalObject
+### Putting the Attribute in PhysicalObject
 
 As mentioned before, all we have to do is declare a new_objects attribute in the PhysicalObject class:
 
@@ -735,9 +736,9 @@ As mentioned before, all we have to do is declare a new_objects attribute in the
 
 To add a new object, all we have to do is put something in new\_objects, and the main loop will see it, add it to the game\_objects list, and clear new_objects.
 
-### Adding Bullets
+## Adding Bullets
 
-#### Writing the Bullet Class
+### Writing the Bullet Class
 
 For the most part, bullets act like any other PhysicalObject, but they have two differences, at least in this game: they only collide with some objects, and they disappear from the screen after a couple of seconds to prevent the player from flooding the screen with bullets.
 
@@ -768,7 +769,7 @@ Now we need to tell pyglet to call it after half a second or so. We can do this 
 
 There's still more work to be done on the Bullet class, but before we do any more work on the class itself, let's get them on the screen.
 
-#### Firing Bullets
+### Firing Bullets
 
 The Player class will be the only class that fires bullets, so let's open it up, import the bullet module, and add a bullet_speed attribute to its constructor:
 
@@ -819,13 +820,13 @@ Finally, add it to the new\_objects list so that the main loop will pick it up a
 
 At this point, you should be able to fire bullets out of the front of your ship. There's just one problem: as soon as you fire, your ship disappears. You may have noticed earlier that asteroids also disappear when they touch each other. To fix this problem, we'll need to start customizing each class's handle\_collision\_with() method.
 
-### Customizing Collision Behavior
+## Customizing Collision Behavior
 
 There are five kinds of collisions in the current version of the game: bullet-asteroid, bullet-player, asteroid-player, bullet-bullet, and asteroid-asteroid. There would be many more in a more complex game.
 
 In general, objects of the same type should not be destroyed when they collide, so we can generalize that behavior in PhysicalObject. Other interactions will require a little more work.
 
-#### Letting Twins Ignore Each Other
+### Letting Twins Ignore Each Other
 
 To let two asteroids or two bullets pass each other by without a word of acknowledgement (or a dramatic explosion), we just need to check if their classes are equal in the PhysicalObject.handle\_collision\_with() method:
 
@@ -836,7 +837,7 @@ To let two asteroids or two bullets pass each other by without a word of acknowl
         else:
             self.dead = True
 
-#### Customizing Bullet Collisions
+### Customizing Bullet Collisions
 
 Since bullet collision behavior can vary so wildly across objects, let's add a reacts\_to\_bullets attribute to PhysicalObjects which the Bullet class can check to determine if it should register a collision or not. We should also add an is_bullet attribute so we can check the collision properly from both objects.
 
@@ -867,11 +868,11 @@ Then, insert a bit of code in PhysicalObject.collides_with() to ignore bullets u
 
 Finally, set self.reacts\_to\_bullets = False in Player.\_\_init\_\_(). The Bullet class is completely finished! Now let's make something happen when a bullet hits an asteroid.
 
-### Making Asteroids Explode
+## Making Asteroids Explode
 
 Asteroids is challenging to players because every time you shoot an asteroid, it turns into more asteroids. We need to mimic that behavior if we want our game to be any fun. We've already done most of the hard parts. All that remains is to make another subclass of PhysicalObject and write a custom handle\_collision\_with() method, along with a couple of maintenance tweaks.
 
-#### Writing the Asteroid Class
+### Writing the Asteroid Class
 
 Create a new submodule of game called asteroid.py. Write the usual constructor to pass a specific image to the superclass, passing along any other parameters.
 
@@ -941,7 +942,7 @@ The last thing we need to do is go over to load.py and have the asteroid() metho
 Now we're looking at something resembling a game. There are just a few more things left to do before we can pat ourselves on the back.
 
 <a name="part5"> </a>
-## Part 5: Next Steps
+# Part 5: Next Steps
 
 I bet you thought I was going to tell you how to finish the game. Well, I'm not going to, and here's why:
 
@@ -951,10 +952,10 @@ I bet you thought I was going to tell you how to finish the game. Well, I'm not 
 
 So instead of walking you through a standard refactoring session, I'm going to leave it as an exercise for you to do the following:
 
-*   Make the Score counter mean something
-*   Let the player restart the level if they die
-*   Implement lives and a Game over screen
-*   Add particle effects using [Lepton][1] or your own particle engine
+1.  Make the Score counter mean something
+2.  Let the player restart the level if they die
+3.  Implement lives and a Game over screen
+4.  Add particle effects using [Lepton][1] or your own particle engine
 
 Good luck. If you have trouble, you can try emailing me. I don't get much email from strangers, so I'll be happy to help you. Maybe your question will help me fill out this tutorial.
 
