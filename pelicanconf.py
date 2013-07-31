@@ -37,6 +37,7 @@ SOCIAL = (
 TWITTER_USERNAME = 'irskep'
 
 MENUITEMS = (
+    ('Articles', '/'),
     ('Games', '/games'),
     ('Open Source', '/open-source'),
     ('The Nest', 'http://thenestmusic.com/'),
@@ -64,6 +65,7 @@ TEMPLATE_PAGES = {
 }
 
 DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_PAGINATION = False
 
 TYPOGRIFY = True
