@@ -6,7 +6,7 @@ canvas {
 html {
   font-size: 120%;
   line-height: 135%;
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f0f0f0;
   color: #282828; }
 
@@ -14,7 +14,8 @@ a, a:visited, a:active {
   color: #3c3c50; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem; }
 
@@ -33,7 +34,8 @@ pre {
   line-height: 1rem;
   background-color: #fafafa;
   padding: 0.25rem 0;
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.75rem;
+  font-family: Inconsolata, monospace, sans-serif; }
 
 /* layout */
 #banner, #menu, #content, #pagefooter {
@@ -45,7 +47,8 @@ pre {
   margin-bottom: 2em; }
   #banner h1 {
     font-size: 2rem;
-    line-height: 2.7rem; }
+    line-height: 2.7rem;
+    font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   #banner a {
     text-decoration: none; }
 

@@ -22,11 +22,19 @@ $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
 
 @mixin body-font {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  // font-family: 'Vollkorn', Garamond, "Hoefler Text", serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin title-font {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+@mixin banner-font {
+  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -68,6 +76,7 @@ pre {
   background-color: $codeBackgroundColor;
   padding: 0.25rem 0;
   margin-bottom: $paragraphSpacing;
+  font-family: Inconsolata, monospace, sans-serif;
 }
 
 /* layout */
@@ -86,6 +95,7 @@ pre {
   h1 {
     font-size: $bannerFontSize;
     line-height: $bannerFontSize * 1.35;
+    @include banner-font;
   }
 
   a {
