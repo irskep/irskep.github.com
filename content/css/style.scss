@@ -97,6 +97,10 @@ article ul {
   list-style-type: disc;
 }
 
+p {
+  text-rendering: optimizeLegibility;
+}
+
 /* layout */
 
 #banner, #menu, #content, #pagefooter {
