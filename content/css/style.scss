@@ -22,6 +22,7 @@ $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
 $headerVerticalSpacing: $paragraphSpacing;
 $prePadding: 0.5rem;
+$inlineCodeForegroundColor: rgb(80, 80, 80);
 
 @mixin body-font {
   // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -75,11 +76,18 @@ p, ul, ol, pre {
   margin-bottom: $paragraphSpacing;
 }
 
+pre, code, kbd, samp {
+  font-family: Inconsolata, monospace, sans-serif;
+  background-color: $codeBackgroundColor;
+}
+
+code {
+  color: $inlineCodeForegroundColor;
+}
+
 pre {
   font-size: 0.8rem;
   line-height: 1rem;
-  background-color: $codeBackgroundColor;
-  font-family: Inconsolata, monospace, sans-serif;
   margin-left: -$prePadding;
   margin-right: -$prePadding;
   padding: $prePadding $prePadding;

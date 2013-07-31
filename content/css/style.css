@@ -29,11 +29,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 p, ul, ol, pre {
   margin-bottom: 0.75rem; }
 
+pre, code, kbd, samp {
+  font-family: Inconsolata, monospace, sans-serif;
+  background-color: #fafafa; }
+
+code {
+  color: #505050; }
+
 pre {
   font-size: 0.8rem;
   line-height: 1rem;
-  background-color: #fafafa;
-  font-family: Inconsolata, monospace, sans-serif;
   margin-left: -0.5rem;
   margin-right: -0.5rem;
   padding: 0.5rem 0.5rem; }
