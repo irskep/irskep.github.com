@@ -6,9 +6,11 @@
       </a>
     </h2>
     <div class="post-info">
-      <time class="published" datetime="{{ article.date.isoformat() }}">
-        {{ article.locale_date }}
-      </time>
+      {% if article.date %}
+        <time class="published" datetime="{{ article.date.isoformat() }}">
+          {{ article.locale_date }}
+        </time>
+      {% endif %}
       {#
       {% if article.author %}
         <address class="vcard author">

@@ -1,9 +1,12 @@
 {% extends "base.html" %}
+{% from "macros.html" import post_header with context %}
+
 {% block title %}{{ page.title }}{%endblock%}
+
 {% block content %}
   <section id="content" class="body">
     <article class="page hyphenate">
-      <h1>{{ page.title }}</h1>
+      {{ post_header(page) }}
       {% import 'translations.html' as translations with context %}
       {{ translations.translations_for(page) }}
 
