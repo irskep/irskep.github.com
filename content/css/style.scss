@@ -21,6 +21,7 @@ $separatorColor: lighten($bodyColor, 50%);
 $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
 $headerVerticalSpacing: $paragraphSpacing;
+$prePadding: 0.5rem;
 
 @mixin body-font {
   // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -78,8 +79,10 @@ pre {
   font-size: 0.8rem;
   line-height: 1rem;
   background-color: $codeBackgroundColor;
-  padding: 0.25rem 0;
   font-family: Inconsolata, monospace, sans-serif;
+  margin-left: -$prePadding;
+  margin-right: -$prePadding;
+  padding: $prePadding $prePadding;
 }
 
 article ul {

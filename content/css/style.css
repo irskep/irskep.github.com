@@ -33,8 +33,10 @@ pre {
   font-size: 0.8rem;
   line-height: 1rem;
   background-color: #fafafa;
-  padding: 0.25rem 0;
-  font-family: Inconsolata, monospace, sans-serif; }
+  font-family: Inconsolata, monospace, sans-serif;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding: 0.5rem 0.5rem; }
 
 article ul {
   list-style-type: disc; }
