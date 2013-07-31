@@ -1,4 +1,4 @@
-Title: One thousand Hacker News readers put 250,000 objects in Buildy
+Title: One thousand users put 250,000 objects in Buildy in 18 hours
 Slug: 1k-hacker-news-readers-on-buildy
 
 We posted Buildy on Hacker News and it was on the front page for 17 hours. I
