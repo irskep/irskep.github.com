@@ -39,6 +39,7 @@ $inlineCodeForegroundColor: rgb(80, 80, 80);
 
 @mixin title-font {
   font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 @mixin title-font-2 {

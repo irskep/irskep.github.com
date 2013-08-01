@@ -18,6 +18,7 @@ a, a:visited, a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem; }
 
@@ -109,7 +110,8 @@ p {
 .article-header .post-info time {
   display: block;
   float: right;
-  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
 
 .article h1 {
   font-size: 1.2rem;
