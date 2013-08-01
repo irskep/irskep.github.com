@@ -11,6 +11,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 SITEURL = 'http://steveasleep.com'
+SITEURL = 'http://steveasleep.com/beta'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -22,3 +23,8 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 GOOGLE_ANALYTICS = "UA-4517625-1"
+
+MENUITEMS = [
+    (a, SITEURL + b if b.startswith('/') else b)
+    for a, b in MENUITEMS
+]
