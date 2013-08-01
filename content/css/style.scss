@@ -27,7 +27,8 @@ $inlineCodeForegroundColor: rgb(80, 80, 80);
 @mixin body-font {
   // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   // font-family: 'Vollkorn', Garamond, "Hoefler Text", serif;
-  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Gentium Basic', Garamond, "Hoefler Text", serif;
+  // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin title-font {
