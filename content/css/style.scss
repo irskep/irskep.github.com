@@ -27,13 +27,18 @@ $inlineCodeForegroundColor: rgb(80, 80, 80);
 @mixin body-font {
   // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   // font-family: 'Vollkorn', Garamond, "Hoefler Text", serif;
-  font-family: 'Gentium Basic', Garamond, "Hoefler Text", serif;
+  // font-family: 'Gentium Basic', Garamond, "Hoefler Text", serif;
   // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+
+  strong {
+    font-weight: normal;
+  }
 }
 
 @mixin title-font {
   font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
 }
 
 @mixin title-font-2 {
@@ -42,6 +47,10 @@ $inlineCodeForegroundColor: rgb(80, 80, 80);
 
 @mixin banner-font {
   font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin mono-font {
+  font-family: Inconsolata, monospace, sans-serif;
 }
 
 html {
@@ -78,7 +87,7 @@ p, ul, ol, pre {
 }
 
 pre, code, kbd, samp {
-  font-family: Inconsolata, monospace, sans-serif;
+  @include mono-font;
   background-color: $codeBackgroundColor;
 }
 
@@ -176,17 +185,26 @@ p {
     width: 20rem;
     float: left;
     margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
   }
 
   .post-info {
     time {
       display: block;
       float: right;
+      @include title-font;
     }
   }
+}
 
+.article {
   // article h1 == page h2 (pages can have more subsections)
   h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  h2 {
     font-size: 1.2rem;
   }
 }
@@ -200,9 +218,15 @@ p {
     font-weight: normal;
     @include title-font-2;
     font-size: 1.4rem;
+    font-weight: bold;
   }
 
   h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  h3 {
     font-size: 1.2rem;
   }
 }
