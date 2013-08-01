@@ -87,31 +87,31 @@ p {
 .featured-article {
   margin-bottom: 2rem; }
 
-#post-list li {
-  margin-bottom: 1em; }
-
 #pagefooter {
   margin-top: 2rem;
   margin-bottom: 3rem;
   padding-top: 1rem; }
 
-.article-header:after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden; }
-.article-header .entry-title {
-  width: 20rem;
-  float: left;
-  margin-top: 0;
-  font-size: 1.0rem;
-  font-weight: normal; }
-.article-header .post-info time {
-  display: block;
-  float: right;
-  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal; }
+.article-header {
+  margin-bottom: 1em; }
+  .article-header:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden; }
+  .article-header .entry-title {
+    width: 20rem;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.0rem;
+    font-weight: normal; }
+  .article-header .post-info time {
+    display: block;
+    float: right;
+    font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
 
 .article h1 {
   font-size: 1.2rem;
