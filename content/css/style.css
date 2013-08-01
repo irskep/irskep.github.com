@@ -55,7 +55,8 @@ p {
 /* layout */
 header#banner, nav#menu, section#content, footer#pagefooter {
   width: 30rem;
-  margin: auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 #banner {
   margin-top: 2em;
@@ -85,7 +86,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   margin-bottom: 1rem; }
 
 .featured-article {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 #pagefooter {
   margin-top: 2rem;
