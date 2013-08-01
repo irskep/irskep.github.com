@@ -155,13 +155,13 @@ p {
 
 // article list
 
-#content > h2 {
+#content > h2 { // this applies to the now-invisible Articles heading
   margin-bottom: 1rem;
 }
 
 .featured-article {
   // border-bottom: 1px solid $separatorColor;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 #post-list {
@@ -182,7 +182,7 @@ p {
 .article-header {
   @include clear-contents;
 
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 
   .entry-title {
     width: 20rem;
