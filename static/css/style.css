@@ -53,7 +53,7 @@ p {
   text-rendering: optimizeLegibility; }
 
 /* layout */
-#banner, #menu, #content, #pagefooter {
+header#banner, nav#menu, section#content, footer#pagefooter {
   width: 30rem;
   margin: auto; }
 
