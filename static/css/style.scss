@@ -1,0 +1,207 @@
+/* re-add when ready */
+canvas { display: none; }
+
+@mixin clear-contents {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+/* base styles */
+
+$backgroundColor: rgb(240, 240, 240);
+$codeBackgroundColor: rgb(250, 250, 250);
+$bodyColor: rgb(40, 40, 40);
+$linkColor: rgb(60, 60, 80);
+$separatorColor: lighten($bodyColor, 50%);
+$bannerFontSize: 2rem;
+$paragraphSpacing: 0.75rem;
+$headerVerticalSpacing: $paragraphSpacing;
+$prePadding: 0.5rem;
+$inlineCodeForegroundColor: rgb(80, 80, 80);
+
+@mixin body-font {
+  // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  // font-family: 'Vollkorn', Garamond, "Hoefler Text", serif;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin title-font {
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+@mixin title-font-2 {
+  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin banner-font {
+  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: 120%;
+  line-height: 135%;
+  @include body-font;
+
+  background-color: $backgroundColor;
+  color: $bodyColor;
+}
+
+a, a:visited, a:active {
+  color: $linkColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include title-font;
+  margin-top: $headerVerticalSpacing;
+  margin-bottom: $headerVerticalSpacing;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: $linkColor;
+  text-decoration: none;
+
+  &:visited, &:active {
+    color: $linkColor;
+    text-decoration: none;
+  }
+}
+
+p, ul, ol, pre {
+  margin-bottom: $paragraphSpacing;
+}
+
+pre, code, kbd, samp {
+  font-family: Inconsolata, monospace, sans-serif;
+  background-color: $codeBackgroundColor;
+}
+
+code {
+  color: $inlineCodeForegroundColor;
+}
+
+pre {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-left: -$prePadding;
+  margin-right: -$prePadding;
+  padding: $prePadding $prePadding;
+}
+
+article ul {
+  list-style-type: disc;
+}
+
+p {
+  text-rendering: optimizeLegibility;
+}
+
+/* layout */
+
+#banner, #menu, #content, #pagefooter {
+  width: 30rem;
+  margin: auto;
+}
+
+// banner
+
+#banner {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  h1 {
+    font-size: $bannerFontSize;
+    line-height: $bannerFontSize * 1.35;
+    @include banner-font;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// menu
+
+#menu {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  ul { @include clear-contents; }
+
+  li {
+    float: left;
+  }
+
+  li+li {
+    margin-left: 1em;
+  }
+}
+
+// article list
+
+#content > h2 {
+  margin-bottom: 1rem;
+}
+
+.featured-article {
+  // border-bottom: 1px solid $separatorColor;
+  margin-bottom: 2rem;
+}
+
+#post-list {
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+// footer
+#pagefooter {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+// article styling
+
+.article-header {
+  @include clear-contents;
+
+  .entry-title {
+    width: 20rem;
+    float: left;
+    margin-top: 0;
+  }
+
+  .post-info {
+    time {
+      display: block;
+      float: right;
+    }
+  }
+
+  // article h1 == page h2 (pages can have more subsections)
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+// page styling
+
+.page {
+  h1 {
+    border-top: 1px solid $separatorColor;
+    padding-top: $headerVerticalSpacing;
+    font-weight: normal;
+    @include title-font-2;
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
