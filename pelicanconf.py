@@ -10,7 +10,7 @@ STATIC_PATHS = ['img', 'downloads', 'css', 'js']
 
 AUTHOR = u'Steve Johnson'
 SITENAME = u"Steve Johnson’s Partial Creative Output"
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
 
 DEFAULT_CATEGORY = 'Blog'
 
