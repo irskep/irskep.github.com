@@ -25,9 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #3c3c50;
   text-decoration: none; }
-  h1 a:visited, h1 a:active, h2 a:visited, h2 a:active, h3 a:visited, h3 a:active, h4 a:visited, h4 a:active, h5 a:visited, h5 a:active, h6 a:visited, h6 a:active {
+  h1 a:visited, h1 a:active, h1 a:hover, h2 a:visited, h2 a:active, h2 a:hover, h3 a:visited, h3 a:active, h3 a:hover, h4 a:visited, h4 a:active, h4 a:hover, h5 a:visited, h5 a:active, h5 a:hover, h6 a:visited, h6 a:active, h6 a:hover {
     color: #3c3c50;
-    text-decoration: none; }
+    text-decoration: underline; }
 
 p, ul, ol, pre {
   margin-bottom: 0.75rem; }
