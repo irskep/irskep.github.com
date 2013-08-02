@@ -66,6 +66,9 @@ stopserver:
 watch-scss:
 	sass --watch $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css $(INPUTDIR)/css/style.scss:$(OUTPUTDIR)/static/css/style.css
 
+watch-coffee:
+	coffee -o $(INPUTDIR)/js --watch --compile $(INPUTDIR)/coffee/main.coffee
+
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
