@@ -10,7 +10,4 @@ half. During that time, I did a lot of work on
 Now I spend my days using the Chrome web tools to make a collaborative sandbox
 web game. I have a few technical blog posts over at the [Buildy
 Blog](http://blog.playbuildy.com/). I also work on [Literally
-Canvas](http://literallycanvas.com/), an open source HTML5 drawing widget. You
-can try it right on this page:
-
-<div class="literally"><canvas></canvas></div>
+Canvas](http://literallycanvas.com/), an open source HTML5 drawing widget.
