@@ -120,10 +120,16 @@ p {
 
 /* layout */
 
-header#banner, nav#menu, section#content, footer#pagefooter {
-  width: 30rem;
+#pagecontainer {
+  width: 100%;
+  max-width: 30rem;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1rem;
+}
+
+header#banner, nav#menu, section#content, footer#pagefooter {
+  width: calc(100% - 2rem);
 }
 
 // banner
@@ -155,8 +161,8 @@ header#banner, nav#menu, section#content, footer#pagefooter {
     float: left;
   }
 
-  li+li {
-    margin-left: 1em;
+  li {
+    margin-right: 1em;
   }
 }
 
@@ -192,7 +198,8 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   margin-bottom: 1rem;
 
   .entry-title {
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
     float: left;
     margin-top: 0;
     margin-bottom: 0;

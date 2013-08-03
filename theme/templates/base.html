@@ -47,40 +47,42 @@
 </head>
 
 <body id="index" class="home">
-  <header id="banner" class="body">
-    <h1>
-      <a href="{{ SITEURL }}">
-        <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
-        Steve Johnson&rsquo;s<br>partial creative output
-      </a>
-    </h1>
-  </header><!-- /#banner -->
+  <div id="pagecontainer">
+    <header id="banner" class="body">
+      <h1>
+        <a href="{{ SITEURL }}">
+          <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
+          Steve Johnson&rsquo;s<br>partial creative output
+        </a>
+      </h1>
+    </header><!-- /#banner -->
 
-  <nav id="menu">
-    <ul>
-      {% for title, link in MENUITEMS %}
-        <li><a href="{{ link }}">{{ title }}</a></li>
-      {% endfor %}
-      {% if DISPLAY_PAGES_ON_MENU %}
-        {% for p in PAGES %}
-          <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+    <nav id="menu">
+      <ul>
+        {% for title, link in MENUITEMS %}
+          <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
-      {% else %}
-        {% if DISPLAY_CATEGORIES_ON_MENU %}
-          {% for cat, null in categories %}
-            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for p in PAGES %}
+            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
           {% endfor %}
+        {% else %}
+          {% if DISPLAY_CATEGORIES_ON_MENU %}
+            {% for cat, null in categories %}
+              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endfor %}
+          {% endif %}
         {% endif %}
-      {% endif %}
-    </ul>
-  </nav><!-- /#menu -->
-  {% block content %}
-  {% endblock %}
-  <footer id="pagefooter" class="body">
-    Stephen R. Johnson<br>
-    <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
-    San Francisco, California
-  </footer><!-- /#pagefooter -->
+      </ul>
+    </nav><!-- /#menu -->
+    {% block content %}
+    {% endblock %}
+    <footer id="pagefooter" class="body">
+      Stephen R. Johnson<br>
+      <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
+      San Francisco, California
+    </footer><!-- /#pagefooter -->
+  </div>
 
   <script type="text/javascript">
 

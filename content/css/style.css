@@ -56,10 +56,15 @@ p {
   text-rendering: optimizeLegibility; }
 
 /* layout */
-header#banner, nav#menu, section#content, footer#pagefooter {
-  width: 30rem;
+#pagecontainer {
+  width: 100%;
+  max-width: 30rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 1rem; }
+
+header#banner, nav#menu, section#content, footer#pagefooter {
+  width: calc(100% - 2rem); }
 
 #banner {
   margin-top: 2em;
@@ -82,8 +87,8 @@ header#banner, nav#menu, section#content, footer#pagefooter {
     visibility: hidden; }
   #menu li {
     float: left; }
-  #menu li + li {
-    margin-left: 1em; }
+  #menu li {
+    margin-right: 1em; }
 
 #content > h2 {
   margin-bottom: 1rem; }
@@ -105,7 +110,8 @@ header#banner, nav#menu, section#content, footer#pagefooter {
     height: 0;
     visibility: hidden; }
   .article-header .entry-title {
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
     float: left;
     margin-top: 0;
     margin-bottom: 0;
