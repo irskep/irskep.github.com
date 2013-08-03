@@ -7,7 +7,7 @@ print sys.path
 from md_shy import HyphenExtension
 
 STATIC_PATHS = ['img', 'downloads', 'css', 'js']
-COPY_FILES = (
+FILES_TO_COPY = (
     ('css/style.css', 'css/style.css'),
     ('CNAME', 'CNAME'),
 )
