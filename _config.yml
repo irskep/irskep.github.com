@@ -1,7 +1,0 @@
-permalink: /:title
-pygments: true
-markdown: redcarpet
-relative_permalinks: false
-exclude:
-- README.md
-
