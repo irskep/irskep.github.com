@@ -9,7 +9,7 @@ biting social commentary remains as relevant as ever.
 Earlier this year I came across my personal archives of all nine issues of the
 New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
-years ago:
+years ago, lovingly typeset in its original Times New Roman:
 
 **[The New Dork Times – Digital Edition](http://steveasleep.com/newdorktimes/)**
 
