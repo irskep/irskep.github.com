@@ -13,6 +13,9 @@ Little does she know it will be a bumpy ride...
 
 <img class="left" src="|filename|/img/content/space_train_inga.png"/>
 
+**[Read the
+postmortem](|filename|/posts/2010-12-13-space-train-postmortem.md)**
+
 Space Train is a short point-and-click adventure game developed over the course
 of a semester by students at the [Cleveland Institute of
 Art](http://www.cia.edu/) and [Case Western Reserve
@@ -27,8 +30,6 @@ characters.
 
 The project was supervised by Dr. Marc Buchner, Case Western Reserve University
 and Knut Hybinette, Cleveland Institute of Art.
-
-[Postmortem](|filename|/posts/2010-12-13-space-train-postmortem.md)
 
 The Team
 --------
