@@ -1,0 +1,145 @@
+@import "bootstrap.less";
+@import "pygments-default.less";
+
+body {
+  background-image: url("../img/px_by_Gre3g.png");
+  padding-top: 74px;
+}
+
+.navbar .brand {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 36px;
+}
+
+.container {
+  color: white;
+}
+
+.content-box {
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px;
+  .border-radius(3px);
+}
+
+.content-box, .content-box-clear {
+  margin-bottom: 20px;
+
+  h1, h2 {
+    a {
+      color: white;
+    }
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.content-box-clear {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.github, .post-index {
+  h2 {
+    border-top: 1px solid @grayLight;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.headshot {
+  margin-bottom: 20px;
+  .border-radius(3px);
+
+  img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 340px;
+    .border-radius(3px);
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  color: @grayLight;
+
+  a {
+    color: white;
+  }
+}
+
+.archive {
+  ul {
+    border-top: 1px solid @grayLight;
+    margin-bottom: 5px;
+    padding-top: 5px;
+
+    li {
+      margin-top: 1em;
+    }
+  }
+}
+
+.post, .post-index {
+  background-color: rgb(230,230,230);
+  color: black;
+  h1 a, h2 a {
+    color: black;
+  }
+
+  .post-content {
+    font-size: 14px;
+    line-height: 1.5em;
+
+    a {
+      color: #a00;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5em;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+  }
+
+  img {
+    margin-bottom: 1em;
+  }
+
+  img.left {
+    float: left;
+    margin-right: 1em;
+  }
+
+  img.right {
+    float: right;
+    margin-left: 1em;
+  }
+
+  img.center {
+    margin: auto;
+    margin-bottom: 1em;
+  }
+
+  pre {
+  }
+}
+
+.post-date {
+  margin-top: 10px;
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
+.literally {
+    width: 100%;
+    height: 300px;
+}
