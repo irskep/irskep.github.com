@@ -18,5 +18,5 @@ Slug: open-source
 * I've contributed code to the Elastic MapReduce part of
   [boto](https://github.com/boto/boto), the Python library for working with
   Amazon Web Services.
-* I once sent a patch to the Mac version of [Löve2D](http://love2d.org)
+* I once sent a patch to the Mac version of [LÖVE](http://love2d.org)
   because I like to see good libraries succeed.
