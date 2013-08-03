@@ -14,4 +14,6 @@ I collaborated with Kemal Zhang of [Zhang Games](http://www.zhanggames.com/)
 for a three-week competition held by [iDevGames](http://www.idevgames.com/) in
 June 2006.
 
+Artack is written in BlitzMax, a BASIC-like layer over C++.
+
 [Download Artack for OS X (PPC only)](|filename|/downloads/Artack.zip)

@@ -19,11 +19,11 @@ distant planets for strip mining purposes. When he finds an inhabited planet,
 he must defend himself against hostile forces while finding suitable mining
 strategies. Excitement! Astoundment! Stickiness! Cybernetic beings!
 
-Gw0rp was an entry in the [uDevGames 2009 contest](http://www.udevgames.com/).
+Gw0rp was an entry in the [uDevGames 2009 contest](http://www.udevgames.com/). 
 It took second place in Story and third in Originality. Calvin Eiber and I
-executed the concept with reasonable competency. There are a handful of nasty
-bugs, and the game itself is flawed and doesn't live up to its potential, but
-we hope to improve it in the future.
+executed the concept with reasonable competency, but the game design is
+significantly flawed and there are a handful of major bugs. I hope to
+eventually revisit this concept in another form.
 
 If you want more details about the development process and my opinion of the
 game, you can [read the

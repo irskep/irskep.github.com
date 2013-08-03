@@ -1,10 +1,11 @@
 Title: Space Train Postmortem
 Tags: gamedev college programming
+Slug: spacetrain
 
 With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called *[Space Train: Terror on the Mustachio
-Express](http:/www.steveasleep.com/spacetrain)*, developed by a team of
+Express](|filename|/pages/space-train.md)*, developed by a team of
 students from the [Cleveland Institute of Art](http:/www.cia.edu/) and [Case
 Western Reserve University](http:/www.case.edu). Its technical components
 include an event-driven level scripting system, characters, items, inventory,
