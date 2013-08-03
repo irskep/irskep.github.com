@@ -59,12 +59,13 @@ devserver:
 	$(BASEDIR)/develop_server.sh restart
 
 stopserver:
-	kill -9 `cat pelican.pid`
-	kill -9 `cat srv.pid`
+	-kill -9 `cat pelican.pid`
+	-kill -9 `cat srv.pid`
+	-./devserver.sh stop
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 watch-scss:
-	sass --watch $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css $(INPUTDIR)/css/style.scss:$(OUTPUTDIR)/static/css/style.css
+	sass --watch $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css
 
 watch-coffee:
 	coffee -o $(INPUTDIR)/js --watch --compile $(INPUTDIR)/coffee/main.coffee

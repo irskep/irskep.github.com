@@ -7,6 +7,9 @@ print sys.path
 from md_shy import HyphenExtension
 
 STATIC_PATHS = ['img', 'downloads', 'css', 'js']
+COPY_FILES = (
+    ('css/style.css', 'css/style.css'),
+)
 
 AUTHOR = u'Steve Johnson'
 SITENAME = u"Steve Johnson’s Partial Creative Output"
