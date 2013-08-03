@@ -1,6 +1,10 @@
 Title: If It Can't Be Done with Git and Text Files, It's Not Worth Doing
 Tags: meta
 
+*As of August 2013, I'm using Pelican as my static site generator, Sass to
+compile my entirely-hand-written CSS, and some new design knowledge. It's
+better. Still git and text files, of course.*
+
 I am fed up with blogging sites. Since around 2003 (middle school), I've been
 through plain HTML, HTML with CSS, Blogger, Wordpress, Posterous, Django,
 Flask, and custom Python on Google App Engine. Now you're reading a set of
@@ -13,11 +17,11 @@ Now I live in a bastion of maintainable CSS (well, [LESS](http://lesscss.org/))
 and control all my own data. Goodbye walled gardens, slow servers, and complex
 templating engines. Hello git and Markdown.
 
-The [old blog](http://stevejohnson.posterous.com/) is still up*, but I moved
+The [old blog](http://stevejohnson.posterous.com/) is still up[^1], but I moved
 all of the stuff worth keeping over here.  Maybe one day I'll manage to write
 about something other than programming here.
 
 Edit from July 2013: I replaced Jekyll with Pelican and LESS with Sass because
 I'm more familiar with them.
 
-* No it's not. Posterous folded.
+[^1]: No it's not. Posterous folded.
