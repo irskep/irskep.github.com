@@ -4,12 +4,14 @@ $bodyColor: rgb(40, 40, 40);
 $linkColor: rgb(60, 60, 80);
 $linkHoverColor: rgb(80, 80, 250);
 $separatorColor: lighten($bodyColor, 50%);
+$inlineCodeForegroundColor: rgb(80, 80, 80);
+
 $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
-$headerVerticalSpacing: $paragraphSpacing;
 $prePadding: 0.5rem;
-$inlineCodeForegroundColor: rgb(80, 80, 80);
 $pageComponentSpacing: 2rem;
+$headerVerticalSpacing: $paragraphSpacing;
+$listVerticalSpacing: 0.5rem;
 
 /* re-add when ready */
 canvas { display: none; }
@@ -112,6 +114,10 @@ pre {
 
 article ul {
   list-style-type: disc;
+
+  li {
+    margin-bottom: $listVerticalSpacing;
+  }
 }
 
 p {
