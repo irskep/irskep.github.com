@@ -82,7 +82,13 @@
     <footer id="pagefooter" class="body">
       Stephen R. Johnson<br>
       <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
-      San Francisco, California
+      San Francisco, California<br>
+      {% if FEED_ALL_RSS %}
+        <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" class="social-link">
+          <img src="{{ SITEURL }}/static/img/rss.png" alt="RSS"></a>
+      {% endif %}
+      <a href="http://twitter.com/irskep" class="social-link">
+        <img src="{{ SITEURL }}/static/img/twitter.png" alt="Twitter"></a>
     </footer><!-- /#pagefooter -->
   </div>
 

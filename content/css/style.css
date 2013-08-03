@@ -111,6 +111,11 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   margin-top: 2rem;
   margin-bottom: 3rem;
   padding-top: 1rem; }
+  #pagefooter .social-link img {
+    margin-top: 0.75rem;
+    max-height: 1.1rem;
+    margin-right: 0.5rem;
+    opacity: 0.8; }
 
 .article-header {
   margin-bottom: 1rem; }
