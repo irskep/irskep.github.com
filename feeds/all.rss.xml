@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Steve Johnson’s Partial Creative Output</title><link>http://steveasleep.com/beta/</link><description></description><atom:link href="http://steveasleep.com/beta/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 02 Aug 2013 00:00:00 -0700</lastBuildDate><item><title>The New Dork Times</title><link>http://steveasleep.com/beta/the-new-dork-times</link><description>&lt;p&gt;The best writing of my life was produced in 1997 when I was eight years old,
+sitting at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times.
+Although it ran for only nine issues published between 1997 and 1999, its
+biting social commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
+&lt;p&gt;Earlier this year I came across my personal archives of all nine issues of the
+New Dork Times and decided they were worth two hours of attention to bring to a
+modern digital audience. I now present to you an online time capsule from 16
+years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I could only spare to hours from my normal archival duties of scanning bad
+comics I drew when I was 7, so please forgive some shortcuts I took with the
+layout and&amp;nbsp;styling.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Fri, 02 Aug 2013 00:00:00 -0700</pubDate><guid>tag:steveasleep.com/beta,2013-08-02:the-new-dork-times</guid><category>humor</category><category>projects</category></item><item><title>What I’ve been doing lately</title><link>http://steveasleep.com/beta/what-ive-been-doing-lately</link><description>&lt;p&gt;Two months ago I started my new job at Graffiti Labs after working at Yelp for
+almost a year and a half. During that time, I did a lot of work on
+&lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
+&lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
+web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
+Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Sat, 15 Dec 2012 00:00:00 -0800</pubDate><guid>tag:steveasleep.com/beta,2012-12-15:what-ive-been-doing-lately</guid><category>literallycanvas</category><category>startups</category><category>meta</category><category>yelp</category></item><item><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link>http://steveasleep.com/beta/rendering-buildys-satellite-view</link><description>&lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
+combination of technologies we use to render and display enormous zoomed out
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Wed, 21 Nov 2012 00:00:00 -0800</pubDate><guid>tag:steveasleep.com/beta,2012-11-21:rendering-buildys-satellite-view</guid></item><item><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link>http://steveasleep.com/beta/1k-hacker-news-readers-on-buildy</link><description>&lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Wed, 14 Nov 2012 00:00:00 -0800</pubDate><guid>tag:steveasleep.com/beta,2012-11-14:1k-hacker-news-readers-on-buildy</guid></item><item><title>My Master’s Thesis</title><link>http://steveasleep.com/beta/my-masters-thesis</link><description>&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+interspersed with content, but my willpower wanes with each passing month.
+Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Mon, 16 Apr 2012 00:00:00 -0700</pubDate><guid>tag:steveasleep.com/beta,2012-04-16:my-masters-thesis</guid><category>college</category><category>ipad</category><category>thesis</category></item><item><title>If It Can’t Be Done with Git and Text Files, It’s Not Worth Doing</title><link>http://steveasleep.com/beta/if-it-cant-be-done-with-git-and-text-files-its-not-worth-doing</link><description>&lt;p&gt;&lt;em&gt;As of August 2013, I&amp;#8217;m using Pelican as my static site generator, Sass to
+compile my entirely-hand-written &lt;span class="caps"&gt;CSS&lt;/span&gt;, and some new design knowledge. It&amp;#8217;s
+better. Still git and text files, of&amp;nbsp;course.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I am fed up with blogging sites. Since around 2003 (middle school), I&amp;#8217;ve been
+through plain &lt;span class="caps"&gt;HTML&lt;/span&gt;, &lt;span class="caps"&gt;HTML&lt;/span&gt; with &lt;span class="caps"&gt;CSS&lt;/span&gt;, Blogger, Wordpress, Posterous, Django,
+Flask, and custom Python on Google App Engine. Now you&amp;#8217;re reading a set of
+static files generated by &lt;a href="http://jekyllrb.com/"&gt;jekyll&lt;/a&gt;, with assistance from
+&lt;a href="http://coffeescript.org/"&gt;CoffeeScript&lt;/a&gt; and &lt;a href="http://twitter.github.com/bootstrap"&gt;Twitter
+Bootstrap&lt;/a&gt;. I&amp;#8217;m so trendy I can barely
+stand it! Resize your browser window. I dare&amp;nbsp;you.&lt;/p&gt;
+&lt;p&gt;Now I live in a bastion of maintainable &lt;span class="caps"&gt;CSS&lt;/span&gt; (well, &lt;a href="http://lesscss.org/"&gt;&lt;span class="caps"&gt;LESS&lt;/span&gt;&lt;/a&gt;)
+and control all my own data. Goodbye walled gardens, slow servers, and complex
+templating engines. Hello git and&amp;nbsp;Markdown.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="http://stevejohnson.posterous.com/"&gt;old blog&lt;/a&gt; is still up&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, but I moved
+all of the stuff worth keeping over here.  Maybe one day I&amp;#8217;ll manage to write
+about something other than programming&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;Edit from July 2013: I replaced Jekyll with Pelican and &lt;span class="caps"&gt;LESS&lt;/span&gt; with Sass because
+I&amp;#8217;m more familiar with&amp;nbsp;them.&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;No it&amp;#8217;s not. Posterous folded.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Thu, 05 Apr 2012 00:00:00 -0700</pubDate><guid>tag:steveasleep.com/beta,2012-04-05:if-it-cant-be-done-with-git-and-text-files-its-not-worth-doing</guid><category>meta</category></item><item><title>Quotes from This Week’s CWRU Student Newspaper</title><link>http://steveasleep.com/beta/quotes-from-this-weeks-cwru-student-newspaper</link><description>&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Woe are the student groups that try to reserve rooms on this campus.&amp;#8221; –
+&lt;em&gt;Editorial&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;It&amp;#8217;s a lot of fun. Living in the house is pretty sweet.&amp;#8221; – Fraterinity member,
+quoted in &lt;em&gt;Zeta Beta Tau fraternity moves into new&amp;nbsp;home&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;There are very few ways to get out of actually paying off student loans,
+including joining the Peace Corps, AmeriCorps, some teaching programs, or the
+military, or by dying.&amp;#8221; – Bill Boyer, &lt;em&gt;Simplify your student loan&amp;nbsp;debt&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;We screened [Time Bandits] off of possibly the last print of this film in the
+world.&amp;#8221; – Lars Benthien, quoted in &lt;em&gt;Surprises abound at Film Socity&amp;#8217;s 36th
+Annual Sci-Fi Movie&amp;nbsp;Marathon&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;In real life, a date should involve monetary compensation for time spent.&amp;#8221; –
+&lt;em&gt;Sex and&amp;nbsp;Dating&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;One of the chief complaints from students is that there are never enough
+employers looking to hire non-engineers or business majors. &lt;strong&gt;We&amp;#8217;re not sure who
+these employers are (or if they&amp;#8217;re hiring), but we hope that the Career Center
+will find them 2011.&lt;/strong&gt;&amp;#8221; – &lt;em&gt;Editorial&lt;/em&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Sat, 22 Jan 2011 00:00:00 -0800</pubDate><guid>tag:steveasleep.com/beta,2011-01-22:quotes-from-this-weeks-cwru-student-newspaper</guid><category>college</category></item><item><title>The First Programming Book I Ever Read</title><link>http://steveasleep.com/beta/the-first-programming-book-i-ever-read</link><description>&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
+read. In rereading it, I found almost as much as when I first experienced it at
+nine years&amp;nbsp;old.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/beta/static/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
+&lt;p&gt;The first thing you need to know is that since it was published in 1983, I
+didn&amp;#8217;t know how to find an interpreter for the code in 1999. All examples were
+run via thought experiment. Because of this fact, I think that this book did
+more to get me excited about the idea of programming than it did to impart
+knowledge. In this way, I think it follows a higher-level version of the &amp;#8220;give
+a man a fish&amp;#8230;&amp;#8221;&amp;nbsp;saying.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This book will teach you how to write simple programs in &lt;span class="caps"&gt;BASIC&lt;/span&gt; for your
+computer. Its purpose, however, is not to make you a programmer. Its purpose
+is to help you understand computers, to think about how computers can help
+you in all kinds of ways, and to discover how much fun you can have when you
+learn how to talk to&amp;nbsp;computers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="content"&gt;Content&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/strong&gt; explains how to write simple &lt;span class="caps"&gt;BASIC&lt;/span&gt; programs for
+The Apple &lt;span class="caps"&gt;II&lt;/span&gt;+/e, Atari 400/800, Commodore 64/&lt;span class="caps"&gt;PET&lt;/span&gt;/&lt;span class="caps"&gt;VIC&lt;/span&gt; 20, &lt;span class="caps"&gt;TI&lt;/span&gt; 99/4A, Timex
+Sinclair 1000, and &lt;span class="caps"&gt;TRS&lt;/span&gt;-80. (The programs still run in Chipmunk Basic.) The fact
+that such a book could be written for ten different platforms is a testament to
+the ubiquity of &lt;span class="caps"&gt;BASIC&lt;/span&gt; in personal computers at the time, but the book does
+spend a lot of time explaining special cases and how to rewrite the examples so
+that they run on some of the platforms. (Apparently the Timex Sinclair 1000 was
+an awful&amp;nbsp;machine.)&lt;/p&gt;
+&lt;p&gt;It begins with a 30-page chapter on how to type and use the prompts on the
+various platforms. Then the language is taught over ten chapters, with
+exercises at the end of each chapter. There is a final chapter with some
+example programs, and then appendices for reference, troubleshooting, editing,
+and information about computers in&amp;nbsp;general.&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s a quick example to refresh your &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;memory:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
+&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; 
+&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;JUMP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt; 
+&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; 
+&lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;CLAP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt; 
+&lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; 
+&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; 
+&lt;span class="n"&gt;&lt;span class="caps"&gt;RUN&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After rereading the book cover to cover, I have only two new thoughts. First,
+that the author did a good job of conveying the joy of computing to young
+readers. Second, that the &lt;span class="caps"&gt;BASIC&lt;/span&gt; language was an awful mess but succeeded for
+very good&amp;nbsp;reasons.&lt;/p&gt;
+&lt;h2 id="review-positive"&gt;Review:&amp;nbsp;Positive&lt;/h2&gt;
+&lt;p&gt;This is a good book. I&amp;#8217;m glad I found it when I went looking for it. Here&amp;#8217;s an
+example that follows a description of what variables&amp;nbsp;are:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can put variables in a program, like&amp;nbsp;this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
+&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;What will that program print? Run it and see if you guessed correctly. Notice
+that lines 10 and 20 don&amp;#8217;t make anything happen on the screen when you run
+the program. They tell the program to do something &lt;em&gt;inside&lt;/em&gt; the computer, but
+only the word &lt;span class="caps"&gt;PRINT&lt;/span&gt; makes a message appear on the&amp;nbsp;screen.&lt;/p&gt;
+&lt;p&gt;Now change lines 10 and 20 to give the variables some different&amp;nbsp;values.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It&amp;#8217;s a small, self-contained, understandable example with a concise, complete
+explanation and an invitation to experiment. In this way, it mirrors the style
+of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/index"&gt;Learn Python The Hard
+Way&lt;/a&gt;. It never blames the reader for
+being wrong, and in fact seems to encourage the reader to forgive his or her
+own mistakes while writing&amp;nbsp;programs.&lt;/p&gt;
+&lt;p&gt;So yes, it&amp;#8217;s a good book. But about this &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;thing&amp;#8230;&lt;/p&gt;
+&lt;h2 id="basic-sucked-but-worse-was-better"&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Sucked, But Worse Was&amp;nbsp;Better&lt;/h2&gt;
+&lt;p&gt;Seriously, what is this crap? Specifying a line number for each statement
+before the program is finished? &lt;span class="caps"&gt;REM&lt;/span&gt;? &lt;em&gt;No proper functions?&lt;/em&gt; How did anyone
+survive&amp;nbsp;this?&lt;/p&gt;
+&lt;p&gt;Oh, the alternative was to use assembly, or to slip into an &lt;span class="caps"&gt;AI&lt;/span&gt; laboratory.&amp;nbsp;Right.&lt;/p&gt;
+&lt;p&gt;The two great things about &lt;span class="caps"&gt;BASIC&lt;/span&gt; as it existed in personal computers was that
+it was &lt;em&gt;extremely&lt;/em&gt; simple, and it was &lt;em&gt;everywhere&lt;/em&gt;. Ault was able to describe
+almost the entire language with extensive examples in a hundred pages of large
+print, and those pages covered the vast majority of PCs on the market at the&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;The reason I was able to understand the book without actually using a computer
+was because of the simplicity of &lt;span class="caps"&gt;BASIC&lt;/span&gt; and because of Ault&amp;#8217;s ability to explain
+it using terms no more complex than necessary. At this point I should mention
+that this book may not actually be the very first programming book I read, but
+it was certainly the first one I understood. I really don&amp;#8217;t&amp;nbsp;remember.&lt;/p&gt;
+&lt;h2 id="and-also-worse"&gt;&amp;#8230;And Also&amp;nbsp;Worse&lt;/h2&gt;
+&lt;p&gt;Before rereading this book, I had mostly forgotten what &lt;span class="caps"&gt;BASIC&lt;/span&gt; really was, and
+didn&amp;#8217;t necessarily agree with the statement that &lt;span class="caps"&gt;BASIC&lt;/span&gt; causes brain damage. Now
+I agree wholeheartedly, and I speak from experience. &lt;span class="caps"&gt;BASIC&lt;/span&gt; crippled me for&amp;nbsp;years.&lt;/p&gt;
+&lt;p&gt;At its core, &lt;span class="caps"&gt;BASIC&lt;/span&gt; is a crappy way to express a state machine. The syntax
+encourages tight, unreadable balls of spaghetti. &lt;code&gt;GOSUB&lt;/code&gt; is a poor way to break
+out functions. Most of the punctuation feels very ad&amp;nbsp;hoc.&lt;/p&gt;
+&lt;p&gt;I can&amp;#8217;t help but contrast this mess with Scheme. All other concerns aside,
+Scheme makes a great teaching language because there is almost no syntax and
+code is inherently hierarchical. Beginners simply learn new words. Everything
+else is&amp;nbsp;gravy.&lt;/p&gt;
+&lt;p&gt;But I didn&amp;#8217;t learn Scheme, I learned &lt;span class="caps"&gt;BASIC&lt;/span&gt; and stuck with it for about six
+years. I went from &lt;a href="http://www.truebasic.com/"&gt;TrueBASIC&lt;/a&gt; to &lt;a href="http://www.vellios.com/2010/06/06/basic-compiler-opensourced/"&gt;Visual
+MacStandardBasic&lt;/a&gt;
+to &lt;a href="http://web.archive.org/web/20080321015004/www.iit.edu/~sarimar/GDS/metal.html"&gt;&lt;span class="caps"&gt;METAL&lt;/span&gt;
+&lt;span class="caps"&gt;BASIC&lt;/span&gt;&lt;/a&gt;
+to &lt;a href="http://www.blitzmax.com/"&gt;BlitzMax&lt;/a&gt;. I would occasionally try to learn a
+new language, but would quickly become frustrated with the lack of easy-to-use
+IDEs and graphics libraries. (During this period I was writing nothing but&amp;nbsp;games.)&lt;/p&gt;
+&lt;p&gt;Languages like &lt;span class="caps"&gt;METAL&lt;/span&gt; &lt;span class="caps"&gt;BASIC&lt;/span&gt; had few features and libraries, but for me that was
+as much of a strength as it was a weakness. Rather than spending hours
+searching for which giant package to import, I could browse a complete list of
+commands less than twenty pages long to find what I needed, modules and
+namespaces be damned. When I was done writing a game, I could click &amp;#8220;Compile&amp;#8221;
+and email it to my friends instead of asking them to download Joe Shmoe Player
+3000 or tearing my hair out over config files. (For this reason, I think
+Processing and BlitzMax are currently the best platforms to learn game
+programming&amp;nbsp;with.)&lt;/p&gt;
+&lt;p&gt;I spent so much time in the game bubble that I missed out on many early
+opportunities to learn new language&amp;nbsp;concepts.&lt;/p&gt;
+&lt;h2 id="what-everyone-knows-is-wrong-today"&gt;What Everyone Knows Is Wrong&amp;nbsp;Today&lt;/h2&gt;
+&lt;p&gt;Today&amp;#8217;s popular languages are objectively better than &lt;span class="caps"&gt;BASIC&lt;/span&gt; in every way.
+Features, syntax, libraries, the works. But for a kid who wants to write games
+by typing into a window and clicking &lt;span class="caps"&gt;COMPILE&lt;/span&gt; or &lt;span class="caps"&gt;RUN&lt;/span&gt;, the language options are
+limited to Processing, BlitzMax, and whatever GameMaker uses. None of these
+are real-world languages, so anyone starting out with them will not have a
+smooth transition to the next stage in their development as a master of&amp;nbsp;technology.&lt;/p&gt;
+&lt;p&gt;I won&amp;#8217;t bother rehashing what others have said about this problem or yearn for
+the days of the &lt;span class="caps"&gt;BASIC&lt;/span&gt;-prompt-as-main-interface. I&amp;#8217;ll just say this: make better
+tools, write more books and&amp;nbsp;tutorials.&lt;/p&gt;
+&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.inventwithpython.com/"&gt;Invent Your Own Computer Games with Python&lt;/a&gt;
+is comparable to &lt;em&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/em&gt;. Better, even. Python&amp;#8217;s tools are
+not ideal for children, but they are good enough to teach programming&amp;nbsp;with.&lt;/p&gt;
+&lt;p&gt;Here are some ways to create games with a good write/run/distribute tool, but
+not necessarily with good documentation for those new to&amp;nbsp;programming:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.processing.org/"&gt;Processing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blitzmax.com/"&gt;BlitzMax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.yoyogames.com/make"&gt;GameMaker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Mon, 10 Jan 2011 00:00:00 -0800</pubDate><guid>tag:steveasleep.com/beta,2011-01-10:the-first-programming-book-i-ever-read</guid><category>programming</category></item><item><title>Space Train Postmortem</title><link>http://steveasleep.com/beta/space-train-postmortem</link><description>&lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
+various states of completion. One of these is a point-and-click adventure game
+called &lt;em&gt;&lt;a href="http://steveasleep.com/beta/space-train"&gt;Space Train: Terror on the Mustachio
+Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
+students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case
+Western Reserve University&lt;/a&gt;. Its technical components
+include an event-driven level scripting system, characters, items, inventory,
+dialogue, and more.  The engine is written in Python using my game programming
+weapon of choice, the &lt;a href="http:/www.pyglet.org"&gt;pyglet&lt;/a&gt; library. The&amp;nbsp;plot:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
+Stanislov Slavinsky, is reading his poetry live on the nearby Planet Deux, a
+short hop by space train from Inga&amp;#8217;s home. She wants nothing more than to see
+Stanislav in person, so she catches the Mustachio Express to Planet Deux.
+Little does she know it will be a bumpy&amp;nbsp;ride&amp;#8230;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sounds grand, right? We thought so too, but in typical student fashion we
+failed to account for one thing: &lt;strong&gt;adventure games take a lot of work to
+make.&lt;/strong&gt; As a result, the game is only about twenty minutes long. Even so, we
+all learned from the&amp;nbsp;experience.&lt;/p&gt;
+&lt;h2 id="the-course"&gt;The&amp;nbsp;Course&lt;/h2&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;&lt;span class="caps"&gt;EECS&lt;/span&gt; 390 - Advanced Game Development Project&amp;#8221; is a joint course between the
+Cleveland Institute of Art and Case Western Reserve University. Teams of 6-12
+artists and programmers collaborate to produce some sort of game. At the end of
+the course, the teams present to their peers and to Electronic Arts staff for
+questions and critique. The course is currently taught by Dr. Marc Buchner
+(&lt;span class="caps"&gt;CWRU&lt;/span&gt;) and &lt;a href="http://www.knuthybinette.com/"&gt;Knut Hybinette&lt;/a&gt;&amp;nbsp;(&lt;span class="caps"&gt;CIA&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;The other two games made this semester were Kalotai, a location-aware monster
+collection/battle game for Android, and Louder Than Words, a platformer with
+branching story lines based on a morality&amp;nbsp;system.&lt;/p&gt;
+&lt;h2 id="how-it-went-down"&gt;How It Went&amp;nbsp;Down&lt;/h2&gt;
+&lt;p&gt;We all arrived at 8:30 &lt;span class="caps"&gt;AM&lt;/span&gt; on the first day of class, heavily caffeinated.
+Everyone put ideas on a white board and then divided into three teams based on
+interest. My team ended up with four programmers and six artists, with me as
+team leader. We immediately decided on some basics and began working on a
+schedule. By 9:45, we had drawn a crazy whiteboard&amp;nbsp;diagram.&lt;/p&gt;
+&lt;p&gt;It was already clear that we would make the best game ever. The drawing was so
+good we didn&amp;#8217;t even need a design document. We wrote one anyway because it was
+a course requirement. We spent the next month and a half developing the
+environments and the characters, fleshing out plot points, and writing the game&amp;nbsp;engine.&lt;/p&gt;
+&lt;p&gt;The class was only scheduled to meet for an hour every week, which was far from
+enough time to get anything done. Most of our communication was done on Fridays
+in a classroom when we met to give status updates, brainstorm new directions,
+and work on the schedule. During the week, we communicated via a mailing list,
+shared files using a &lt;a href="http:/www.dropbox.com"&gt;Dropbox&lt;/a&gt; shared folder, and
+pushed code back and forth with &lt;a href="http:/www.git-scm.org/"&gt;git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;At the halfway point, we presented our work to the class. Our demo revealed
+some significant issues, none of which were technical: the character art lacked
+a consistent style, the story was not cohesive, and there were no clear puzzle
+designs. The characters we did have were shallow and stereotyped. This was not
+a good situation to be in for a story-based and art-heavy&amp;nbsp;game!&lt;/p&gt;
+&lt;p&gt;We immediately changed our art and story development processes. Rather than
+have three or four artists take characters all the way from concept to final
+execution, we split all character work into line work, coloring, and shading,
+and assigned one artist to each stage of the pipeline. Rather than working from
+a vague, error-prone shared idea of a partially-recorded story, I spent a few
+hours writing detailed scripts for each level we planned to implement. We
+followed this process to the end, and it worked beautifully. We had a very
+slick&amp;nbsp;demo.&lt;/p&gt;
+&lt;p&gt;Here are some screenshots of the&amp;nbsp;game:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/beta/static/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/beta/static/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/beta/static/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/beta/static/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/beta/static/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/beta/static/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here are some of the stages of the game&amp;#8217;s artistic&amp;nbsp;development:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/beta/static/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/beta/static/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/beta/static/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/beta/static/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/beta/static/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/beta/static/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/beta/static/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/beta/static/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/beta/static/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/beta/static/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="lessons-learned"&gt;Lessons&amp;nbsp;Learned&lt;/h2&gt;
+&lt;p&gt;I had never been in a managerial position before. My experience organizing
+&lt;a href="http:/hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt; helped, but that was more cat herding
+than game building. By the end of the course the team had worked out a process
+by trial and error that seemed to produce results, but by the time we found
+that process, it was really too late to save the&amp;nbsp;game.&lt;/p&gt;
+&lt;h3 id="schedule"&gt;Schedule&lt;/h3&gt;
+&lt;p&gt;We spent too much time thinking up random characters and not enough time
+fitting them into a big picture. We should have started writing
+pseudo-screenplays or storyboards to work from by the third week. That would
+have made it easier for us to give the artists specific tasks, a problem we had
+early&amp;nbsp;on.&lt;/p&gt;
+&lt;p&gt;Storyboards would have given us the opportunity to implement parts of the
+levels, which would have helped us develop a scripting &lt;span class="caps"&gt;API&lt;/span&gt;. For most of the
+semester, we worked with an ad-hoc &lt;span class="caps"&gt;API&lt;/span&gt;. We ended up redesigning it in the last
+week because it wasn&amp;#8217;t working for us&amp;nbsp;anymore.&lt;/p&gt;
+&lt;h3 id="adventure-games-are-hard-to-make"&gt;Adventure Games Are Hard to&amp;nbsp;Make&lt;/h3&gt;
+&lt;p&gt;Almost every game I have ever made has involved bullets. That usually means
+those bullets are heading for a relatively small number of enemy types, are
+flying over relatively simple pre-rendered or procedurally generated terrain,
+and have very simple animations. In an adventure game, everything the player
+sees has a unique design and multiple animations. The average screen time of a
+given image is minutes or less. Even though we were working with six artists,
+we were barely able to finish our 20 minutes of play&amp;nbsp;time.&lt;/p&gt;
+&lt;h3 id="communication-is-key"&gt;Communication is&amp;nbsp;Key&lt;/h3&gt;
+&lt;p&gt;We encouraged communication by providing as many useful collaboration tools as
+possible. Without constant communication, Space Train would have been a total&amp;nbsp;failure.&lt;/p&gt;
+&lt;p&gt;By keeping all live game assets in a shared Dropbox folder, we guaranteed
+instant availability of the artists&amp;#8217; work without using a cumbersome email
+system or an artist-unfriendly version control system. Our consistent meeting
+format was usually effective at giving everyone concrete goals for the week.
+Git, of course, is the ideal code collaboration tool. The mailing list filled
+in any&amp;nbsp;gaps.&lt;/p&gt;
+&lt;h3 id="course-project-group-dynamics-are-weird"&gt;Course Project Group Dynamics are&amp;nbsp;Weird&lt;/h3&gt;
+&lt;p&gt;I&amp;#8217;ve always felt uncomfortable with the way course project groups are formed.
+Usually they form around ideas, not around teams, and that was explicitly the
+case with this course. This means that team dynamics are a total crapshoot, and
+if things go south, you&amp;#8217;re locked in for three months and your success is
+irrevocably chained together. By the end of the course, we effectively had two
+programmers and four artists, with four other people functioning as dead&amp;nbsp;weight.&lt;/p&gt;
+&lt;h3 id="conspicuously-absent-from-this-list"&gt;Conspicuously Absent From This&amp;nbsp;List:&lt;/h3&gt;
+&lt;p&gt;Significant code issues. We really powered through the engine and never got
+hindered by any major design flaws. The game&amp;#8217;s source code is &lt;a href="http:/www.github.com/irskep/Space-Train"&gt;on
+Github&lt;/a&gt;. It&amp;#8217;s not beautiful, but it
+worked well enough for&amp;nbsp;us.&lt;/p&gt;
+&lt;h2 id="the-team"&gt;The&amp;nbsp;Team&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Steve Johnson&lt;/strong&gt;: Lead programmer, screenplay, music, engine,&amp;nbsp;&lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http:/taxidermyrobot.blogspot.com/"&gt;Kelsey Bass&lt;/a&gt;&lt;/strong&gt;: Lead artist, character design/line&amp;nbsp;work/animation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http:/www.fredhatfull.com/"&gt;Fred Hatfull&lt;/a&gt;&lt;/strong&gt;: Level scripting, engine,&amp;nbsp;&lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Liz Keegan&lt;/strong&gt;: Environments,&amp;nbsp;objects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tyler Goeringer&lt;/strong&gt;: Level scripting,&amp;nbsp;engine&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Susie Kim&lt;/strong&gt;:&amp;nbsp;Objects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Drew Carrow&lt;/strong&gt;: Character design,&amp;nbsp;environment/objects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sean Murphy&lt;/strong&gt;: Sound, pause&amp;nbsp;screen&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dylan Carrow&lt;/strong&gt;: Coloring,&amp;nbsp;objects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vincent Pizarski&lt;/strong&gt;: Character design, coloring,&amp;nbsp;exteriors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kelsey did caricatures of the team for the credit sequence. Here&amp;#8217;s mine for you
+to compare to my photo at the top of this&amp;nbsp;page:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/beta/static/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Mon, 13 Dec 2010 00:00:00 -0800</pubDate><guid>tag:steveasleep.com/beta,2010-12-13:space-train-postmortem</guid><category>gamedev college programming</category></item><item><title>Advice for Tech Recruiters at Universities</title><link>http://steveasleep.com/beta/advice-for-tech-recruiters-at-universities</link><description>&lt;p&gt;I attended half a dozen information sessions by companies trying to hire
+interns in the 2009-2010 academic year. Most of them were seeking the same
+thing: bright students with technical backgrounds, generally Computer Science
+majors. Some did it very effectively, with good presentations and knowledgeable
+representatives who could answer questions and give advice. Others did little
+to impress or inform, leaving students with bad impressions. At my school,
+there are far more open positions than there are students qualified or willing
+to fill them, so companies really have to market themselves in order to attract
+good&amp;nbsp;employees.&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t think a bad info session is necessarily an indicator of a bad company.
+An info session can do good for both the student and the company, but
+ultimately it is like a résumé: uneventful unless you fail. As a student who
+has been looking for a new job every year for the past three years, here are
+some requests I have for companies giving info sessions on college campuses
+with the intention of making them more helpful for&amp;nbsp;everyone.&lt;/p&gt;
+&lt;h2 id="send-an-engineer"&gt;Send an&amp;nbsp;Engineer&lt;/h2&gt;
+&lt;p&gt;The most frustrating aspect of many info sessions is the absence of a person
+who can answer questions about the day-to-day activities of software developers
+at the company. Since software engineering is a discipline in which it is
+common for interns to do work comparable to work that full time employees do,
+it is important for us to be able to ask questions about the nature of that
+work and get answers formed from experience. If I can&amp;#8217;t ask about your
+development process, testing methods, software and system architecture, and
+office culture, then how can I distinguish you from other companies who make
+similar&amp;nbsp;products?&lt;/p&gt;
+&lt;h2 id="know-your-product"&gt;Know Your&amp;nbsp;Product&lt;/h2&gt;
+&lt;p&gt;I am surprised when I see recruiters falter at basic questions about products
+or demos, but it happens often enough that it almost shouldn&amp;#8217;t be a surprise
+anymore. Even if there isn&amp;#8217;t an engineer present, recruiters should be
+expecting certain kinds of questions from the tech-oriented audience that they
+intentionally attracted. I am referring to queries about features of the
+product, basic back end information, and future&amp;nbsp;plans.&lt;/p&gt;
+&lt;h2 id="dont-focus-on-the-perks"&gt;Don&amp;#8217;t Focus on the&amp;nbsp;Perks&lt;/h2&gt;
+&lt;p&gt;Yes, college students like to party. But we don&amp;#8217;t like to party because the
+party is some kind of sacred ritual, we like it because our friends are there.
+If your office parties are great, then it must be because of the people.
+Instead of talking about parties, talk about people! Focusing on perks like
+these is like saying that flying is better than driving because of the
+complementary&amp;nbsp;drinks.&lt;/p&gt;
+&lt;p&gt;Some kinds of perks, like location, are similar across most companies. We
+understand that your company is located in a beautiful city with history and
+landmarks, but so are most other companies (except Epic). Isn&amp;#8217;t America&amp;nbsp;wonderful?&lt;/p&gt;
+&lt;h2 id="dont-force-hipness"&gt;Don&amp;#8217;t Force&amp;nbsp;Hipness&lt;/h2&gt;
+&lt;p&gt;Tasteful graphic design and informal attitudes are wonderful, but please back
+it up with substance. Words with extra Zs, overuse of &amp;#8220;Gen Y lingo,&amp;#8221; and overt
+ego stroking can make your pitch seem a little creepy. Do you really want to
+attract the people who respond best when addressed as&amp;nbsp;&amp;#8220;Genius?&amp;#8221;&lt;/p&gt;
+&lt;h2 id="get-me-invested-in-your-company"&gt;Get Me Invested In Your&amp;nbsp;Company&lt;/h2&gt;
+&lt;p&gt;During the academic year, we work long hours and stretch our minds to the
+breaking point. We do this because our work is crucial to our lives and we are
+surrounded by people who are working as hard as we are. We can put this energy
+and motivation into your company, but it&amp;#8217;s not free. You need to get us&amp;nbsp;invested.&lt;/p&gt;
+&lt;p&gt;What does your company make? What is special about how you make it? How is your
+company changing the world? Why is your team uniquely amazing? Knowing the
+answers to these questions will help us understand why we should respect you
+and desire to work with you. When we do come to work for you, that storm of
+motivation will be channeled directly into your&amp;nbsp;products.&lt;/p&gt;
+&lt;h2 id="tell-me-what-ill-learn"&gt;Tell Me What I&amp;#8217;ll&amp;nbsp;Learn&lt;/h2&gt;
+&lt;p&gt;Many recruiters seem to think that all students are after is a paycheck,
+parties, and &amp;#8220;work experience.&amp;#8221; This is not the case at all. Keep in mind why
+we are in college: to set us up for success after graduation. If I think
+working for you would hold me back intellectually, then why would I work for&amp;nbsp;you?&lt;/p&gt;
+&lt;h2 id="teach-me-something"&gt;Teach Me&amp;nbsp;Something&lt;/h2&gt;
+&lt;p&gt;The companies that are most sought after by students are the ones who offer
+more than just a sales pitch. If you give a workshop, presentation, or
+demonstration of a piece of technology your company uses, you may attract more
+students who are interested in learning more about that technology and would be
+a good fit for your company. In addition, you showcase the technical prowess of
+your company and the knowledge of the students&amp;#8217; potential future&amp;nbsp;coworkers.&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s all for now! If you&amp;#8217;re coming to Case Western, be sure to get in touch
+with the &lt;a href="http://hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Mon, 10 May 2010 00:00:00 -0700</pubDate><guid>tag:steveasleep.com/beta,2010-05-10:advice-for-tech-recruiters-at-universities</guid><category>recruiting</category><category>college</category></item><item><title>My Dislocated Patella</title><link>http://steveasleep.com/beta/my-dislocated-patella</link><description>&lt;p&gt;In 2009 I dislocated my
+&lt;a href="http://en.wikipedia.org/wiki/Patella"&gt;patella&lt;/a&gt;. It sucked, but I had worked at
+a medical imaging software company the previous summer, so I made sure to get
+my hands on the &lt;span class="caps"&gt;MRI&lt;/span&gt; images. Here they&amp;nbsp;are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://dl.getdropbox.com/u/360865/knee/front.mov"&gt;front&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dl.getdropbox.com/u/360865/knee/side.mov"&gt;side&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dl.getdropbox.com/u/360865/knee/top.mov"&gt;back&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Thu, 24 Sep 2009 00:00:00 -0700</pubDate><guid>tag:steveasleep.com/beta,2009-09-24:my-dislocated-patella</guid><category>meta</category></item></channel></rss>

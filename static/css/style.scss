@@ -209,6 +209,12 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   margin-top: $pageComponentSpacing;
   margin-bottom: 3rem;
   padding-top: 1rem;
+
+  .social-links {
+    text-align: right;
+    font-size: 0.8rem;
+    float: right;
+  }
 }
 
 // article styling
