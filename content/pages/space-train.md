@@ -28,7 +28,7 @@ characters.
 The project was supervised by Dr. Marc Buchner, Case Western Reserve University
 and Knut Hybinette, Cleveland Institute of Art.
 
-[Postmortem](/space-train-postmortem)
+[Postmortem](|filename|/posts/2010-12-13-space-train-postmortem.md)
 
 The Team
 --------

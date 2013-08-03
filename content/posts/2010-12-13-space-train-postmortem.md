@@ -1,6 +1,6 @@
 Title: Space Train Postmortem
 Tags: gamedev college programming
-Slug: spacetrain
+Slug: space-train-postmortem
 
 With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
