@@ -1,0 +1,277 @@
+$backgroundColor: rgb(240, 240, 240);
+$codeBackgroundColor: rgb(250, 250, 250);
+$bodyColor: rgb(40, 40, 40);
+$linkColor: rgb(60, 60, 80);
+$linkHoverColor: rgb(80, 80, 250);
+$separatorColor: lighten($bodyColor, 50%);
+$inlineCodeForegroundColor: rgb(80, 80, 80);
+
+$bannerFontSize: 2rem;
+$paragraphSpacing: 0.75rem;
+$prePadding: 0.5rem;
+$pageComponentSpacing: 2rem;
+$headerVerticalSpacing: $paragraphSpacing;
+$listVerticalSpacing: 0.5rem;
+$blockQuoteFontSize: 0.9rem;
+$blockQuoteLineHeight: 1.2rem;
+
+/* re-add when ready */
+canvas { display: none; }
+
+@mixin clear-contents {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+/* base styles */
+
+@mixin body-font {
+  // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  // font-family: 'Vollkorn', Garamond, "Hoefler Text", serif;
+  // font-family: 'Gentium Basic', Garamond, "Hoefler Text", serif;
+  // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+
+  strong {
+    font-weight: normal;
+  }
+}
+
+@mixin blockquote-font {
+  // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // font-weight: normal;
+  @include body-font;
+}
+
+@mixin title-font {
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+@mixin title-font-2 {
+  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin banner-font {
+  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin mono-font {
+  font-family: Inconsolata, monospace, sans-serif;
+}
+
+html {
+  font-size: 120%;
+  line-height: 135%;
+  @include body-font;
+
+  background-color: $backgroundColor;
+  color: $bodyColor;
+}
+
+a, a:visited, a:active {
+  color: $linkColor;
+}
+
+a:hover {
+  color: $linkHoverColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include title-font;
+  margin-top: $headerVerticalSpacing;
+  margin-bottom: $headerVerticalSpacing;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: $linkColor;
+  text-decoration: none;
+
+  &:visited, &:active, &:hover {
+    color: $linkColor;
+    text-decoration: underline;
+  }
+}
+
+p, ul, ol, pre {
+  margin-bottom: $paragraphSpacing;
+}
+
+pre, code, kbd, samp {
+  @include mono-font;
+  background-color: $codeBackgroundColor;
+}
+
+code {
+  color: $inlineCodeForegroundColor;
+}
+
+pre {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  margin-left: -$prePadding;
+  margin-right: -$prePadding;
+  padding: $prePadding $prePadding;
+}
+
+article ul {
+  list-style-type: disc;
+
+  li {
+    margin-bottom: $listVerticalSpacing;
+  }
+}
+
+p {
+  text-rendering: optimizeLegibility;
+}
+
+article blockquote {
+  margin-left: 2em;
+  @include blockquote-font;
+  font-size: $blockQuoteFontSize;
+  line-height: $blockQuoteLineHeight;
+}
+
+/* layout */
+
+#pagecontainer {
+  width: 100%;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+header#banner, nav#menu, section#content, footer#pagefooter {
+  width: calc(100% - 2rem);
+}
+
+// banner
+
+#banner {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  h1 {
+    font-size: $bannerFontSize;
+    line-height: $bannerFontSize * 1.35;
+    @include banner-font;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// menu
+
+#menu {
+  margin-top: $pageComponentSpacing;
+  margin-bottom: $pageComponentSpacing;
+
+  ul { @include clear-contents; }
+
+  li {
+    float: left;
+  }
+
+  li {
+    margin-right: 1em;
+  }
+}
+
+// article list
+
+#content > h2 { // this applies to the now-invisible Articles heading
+  margin-bottom: 1rem;
+}
+
+.featured-article {
+  // border-bottom: 1px solid $separatorColor;
+  margin-bottom: $pageComponentSpacing;
+}
+
+#post-list {
+  li {
+    // I dunno, something
+  }
+}
+
+// footer
+#pagefooter {
+  margin-top: $pageComponentSpacing;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+
+  .social-links {
+    text-align: right;
+    font-size: 0.8rem;
+    float: right;
+  }
+}
+
+// article styling
+
+.article-header {
+  @include clear-contents;
+
+  margin-bottom: 1rem;
+
+  .entry-title {
+    width: 100%;
+    max-width: 20rem;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.0rem;
+    font-weight: normal;
+  }
+
+  .post-info {
+    time {
+      display: block;
+      float: right;
+      @include title-font;
+    }
+  }
+}
+
+.article {
+  // article h1 == page h2 (pages can have more subsections)
+  h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+// page styling
+
+.page {
+  h1 {
+    border-top: 1px solid $separatorColor;
+    padding-top: $headerVerticalSpacing;
+    font-weight: normal;
+    @include title-font-2;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
