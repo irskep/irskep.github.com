@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Partial Creative Output</title><link href="http://steveasleep.com/beta/" rel="alternate"></link><link href="http://steveasleep.com/beta/feeds/blog.atom.xml" rel="self"></link><id>http://steveasleep.com/beta/</id><updated>2012-12-15T00:00:00-08:00</updated><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/beta/what-ive-been-doing-lately" rel="alternate"></link><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com/beta,2012-12-15:what-ive-been-doing-lately</id><summary type="html">&lt;p&gt;Two months ago I started my new job at Graffiti Labs after working at Yelp for
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Partial Creative Output</title><link href="http://steveasleep.com/beta/" rel="alternate"></link><link href="http://steveasleep.com/beta/feeds/blog.atom.xml" rel="self"></link><id>http://steveasleep.com/beta/</id><updated>2013-08-02T00:00:00-07:00</updated><entry><title>The New Dork Times</title><link href="http://steveasleep.com/beta/the-new-dork-times" rel="alternate"></link><updated>2013-08-02T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com/beta,2013-08-02:the-new-dork-times</id><summary type="html">&lt;p&gt;The best writing of my life was produced in 1997 when I was eight years old,
+sitting at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times.
+Although it ran for only nine issues published between 1997 and 1999, its
+biting social commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
+&lt;p&gt;Earlier this year I came across my personal archives of all nine issues of the
+New Dork Times and decided they were worth two hours of attention to bring to a
+modern digital audience. I now present to you an online time capsule from 16
+years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I could only spare to hours from my normal archival duties of scanning bad
+comics I drew when I was 7, so please forgive some shortcuts I took with the
+layout and&amp;nbsp;styling.&lt;/p&gt;</summary><category term="humor"></category><category term="projects"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/beta/what-ive-been-doing-lately" rel="alternate"></link><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com/beta,2012-12-15:what-ive-been-doing-lately</id><summary type="html">&lt;p&gt;Two months ago I started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;

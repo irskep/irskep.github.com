@@ -51,6 +51,8 @@ pre {
 
 article ul {
   list-style-type: disc; }
+  article ul li {
+    margin-bottom: 0.5rem; }
 
 p {
   text-rendering: optimizeLegibility; }
