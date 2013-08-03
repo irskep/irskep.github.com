@@ -12,6 +12,8 @@ $prePadding: 0.5rem;
 $pageComponentSpacing: 2rem;
 $headerVerticalSpacing: $paragraphSpacing;
 $listVerticalSpacing: 0.5rem;
+$blockQuoteFontSize: 0.9rem;
+$blockQuoteLineHeight: 1.2rem;
 
 /* re-add when ready */
 canvas { display: none; }
@@ -39,6 +41,11 @@ canvas { display: none; }
   strong {
     font-weight: normal;
   }
+}
+
+@mixin blockquote-font {
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 @mixin title-font {
@@ -122,6 +129,14 @@ article ul {
 
 p {
   text-rendering: optimizeLegibility;
+}
+
+article blockquote {
+  margin-left: 2em;
+  @include blockquote-font;
+  font-size: $blockQuoteFontSize;
+  line-height: $blockQuoteLineHeight;
+  font-style: italic;
 }
 
 /* layout */

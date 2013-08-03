@@ -57,6 +57,14 @@ article ul {
 p {
   text-rendering: optimizeLegibility; }
 
+article blockquote {
+  margin-left: 2em;
+  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  font-style: italic; }
+
 /* layout */
 #pagecontainer {
   width: 100%;
