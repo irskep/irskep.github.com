@@ -27,7 +27,9 @@ eventually revisit this concept in another form.
 
 If you want more details about the development process and my opinion of the
 game, you can [read the
-postmortem](http://www.idevgames.com/articles/gw0rp_postmortem).
+postmortem](http://www.idevgames.com/articles/gw0rp_postmortem), with the
+caveat that I was really burned out when I wrote it. I hope to get around to
+writing a more balanced version.
 
 A few months after uDG ended, I started work on a rewrite called Gluball
 ([source](http://www.github.com/irskep/gluball)), which is far from complete

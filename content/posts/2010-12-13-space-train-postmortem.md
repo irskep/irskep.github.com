@@ -30,7 +30,7 @@ Cleveland Institute of Art and Case Western Reserve University. Teams of 6-12
 artists and programmers collaborate to produce some sort of game. At the end of
 the course, the teams present to their peers and to Electronic Arts staff for
 questions and critique. The course is currently taught by Dr. Marc Buchner
-(CWRU) and [Knut Hybinette](http:/www.knuthybinette.com/) (CIA).
+(CWRU) and [Knut Hybinette](http://www.knuthybinette.com/) (CIA).
 
 The other two games made this semester were Kalotai, a location-aware monster
 collection/battle game for Android, and Louder Than Words, a platformer with
