@@ -37,7 +37,7 @@ help:
 	@echo '                                                                       '
 
 
-html: clean $(OUTPUTDIR)/index.html
+html: clean compile-scss compile-coffee $(OUTPUTDIR)/index.html
 
 $(OUTPUTDIR)/%.html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -63,10 +63,16 @@ stopserver:
 watch-scss:
 	sass --watch $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css
 
+compile-scss:
+	sass --update $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css
+
 watch-coffee:
 	coffee -o $(INPUTDIR)/js --watch --compile $(INPUTDIR)/coffee/main.coffee
 
-publish:
+compile-coffee:
+	coffee -o $(INPUTDIR)/js --compile $(INPUTDIR)/coffee/main.coffee
+
+publish: compile-scss compile-coffee
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 deploy-beta: publish
