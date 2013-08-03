@@ -1,4 +1,5 @@
 Title: Résumé
+Date: 2012-09-01
 
 **[Print Version](http://dl.dropbox.com/u/360865/Stephen%20Johnson%20Resume.pdf)**
 
