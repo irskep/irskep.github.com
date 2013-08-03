@@ -59,11 +59,12 @@ p {
 
 article blockquote {
   margin-left: 2em;
-  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
   font-size: 0.9rem;
-  line-height: 1.2rem;
-  font-style: italic; }
+  line-height: 1.2rem; }
+  article blockquote strong {
+    font-weight: normal; }
 
 /* layout */
 #pagecontainer {

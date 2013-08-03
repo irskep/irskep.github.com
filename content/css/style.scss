@@ -44,8 +44,9 @@ canvas { display: none; }
 }
 
 @mixin blockquote-font {
-  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // font-weight: normal;
+  @include body-font;
 }
 
 @mixin title-font {
@@ -136,7 +137,6 @@ article blockquote {
   @include blockquote-font;
   font-size: $blockQuoteFontSize;
   line-height: $blockQuoteLineHeight;
-  font-style: italic;
 }
 
 /* layout */
