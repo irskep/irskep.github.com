@@ -16,6 +16,9 @@ html {
 a, a:visited, a:active {
   color: #3c3c50; }
 
+a:hover {
+  color: #5050fa; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -25,9 +28,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #3c3c50;
   text-decoration: none; }
-  h1 a:visited, h1 a:active, h2 a:visited, h2 a:active, h3 a:visited, h3 a:active, h4 a:visited, h4 a:active, h5 a:visited, h5 a:active, h6 a:visited, h6 a:active {
+  h1 a:visited, h1 a:active, h1 a:hover, h2 a:visited, h2 a:active, h2 a:hover, h3 a:visited, h3 a:active, h3 a:hover, h4 a:visited, h4 a:active, h4 a:hover, h5 a:visited, h5 a:active, h5 a:hover, h6 a:visited, h6 a:active, h6 a:hover {
     color: #3c3c50;
-    text-decoration: none; }
+    text-decoration: underline; }
 
 p, ul, ol, pre {
   margin-bottom: 0.75rem; }
@@ -53,9 +56,15 @@ p {
   text-rendering: optimizeLegibility; }
 
 /* layout */
+#pagecontainer {
+  width: 100%;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem; }
+
 header#banner, nav#menu, section#content, footer#pagefooter {
-  width: 30rem;
-  margin: auto; }
+  width: calc(100% - 2rem); }
 
 #banner {
   margin-top: 2em;
@@ -78,14 +87,14 @@ header#banner, nav#menu, section#content, footer#pagefooter {
     visibility: hidden; }
   #menu li {
     float: left; }
-  #menu li + li {
-    margin-left: 1em; }
+  #menu li {
+    margin-right: 1em; }
 
 #content > h2 {
   margin-bottom: 1rem; }
 
 .featured-article {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 #pagefooter {
   margin-top: 2rem;
@@ -101,7 +110,8 @@ header#banner, nav#menu, section#content, footer#pagefooter {
     height: 0;
     visibility: hidden; }
   .article-header .entry-title {
-    width: 20rem;
+    width: 100%;
+    max-width: 20rem;
     float: left;
     margin-top: 0;
     margin-bottom: 0;
