@@ -81,6 +81,6 @@ deploy-beta: publish
 
 deploy-prod: publish
 	ghp-import $(OUTPUTDIR)
-	git push origin gh-pages:master
+	git push origin gh-pages:master -f
 
 .PHONY: html help clean regenerate serve devserver publish deploy-beta deploy-prod

@@ -9,6 +9,7 @@ from md_shy import HyphenExtension
 STATIC_PATHS = ['img', 'downloads', 'css', 'js']
 COPY_FILES = (
     ('css/style.css', 'css/style.css'),
+    ('CNAME', 'CNAME'),
 )
 
 AUTHOR = u'Steve Johnson'
