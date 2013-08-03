@@ -80,15 +80,16 @@
     {% block content %}
     {% endblock %}
     <footer id="pagefooter" class="body">
+      <div class="social-links">
+        {% if FEED_ALL_RSS %}
+          <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
+        {% endif %}
+        <br>
+        <a href="http://twitter.com/irskep">Twitter</a>
+      </div>
       Stephen R. Johnson<br>
       <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
-      San Francisco, California<br>
-      {% if FEED_ALL_RSS %}
-        <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" class="social-link">
-          <img src="{{ SITEURL }}/static/img/rss.png" alt="RSS"></a>
-      {% endif %}
-      <a href="http://twitter.com/irskep" class="social-link">
-        <img src="{{ SITEURL }}/static/img/twitter.png" alt="Twitter"></a>
+      San Francisco, California
     </footer><!-- /#pagefooter -->
   </div>
 

@@ -210,11 +210,10 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   margin-bottom: 3rem;
   padding-top: 1rem;
 
-  .social-link img, {
-    margin-top: $paragraphSpacing;
-    max-height: 1.1rem;
-    margin-right: 0.5rem;
-    opacity: 0.8;
+  .social-links {
+    text-align: right;
+    font-size: 0.8rem;
+    float: right;
   }
 }
 
