@@ -3,8 +3,6 @@
 from __future__ import unicode_literals
 import sys
 sys.path.append('.')
-print sys.path
-from md_shy import HyphenExtension
 
 STATIC_PATHS = ['img', 'downloads', 'css', 'js']
 FILES_TO_COPY = (
@@ -40,31 +38,30 @@ TWITTER_USERNAME = 'irskep'
 
 MENUITEMS = (
     ('Articles', '/'),
-    ('Games', '/games'),
-    ('Open Source', '/open-source'),
+    ('Games', '/games.html'),
+    ('Open Source', '/open-source.html'),
     ('The Nest', 'http://thenestmusic.com/'),
-    ('Pyglet tutorial', '/pyglettutorial'),
+    ('Pyglet tutorial', '/pyglettutorial.html'),
 )
 
 DEFAULT_PAGINATION = False
 
 ARTICLE_DIR = 'posts'
 
-ARTICLE_URL = '{slug}'
-ARTICLE_SAVE_AS = '%s/index.html' % ARTICLE_URL
-PAGE_URL = ARTICLE_URL
-PAGE_SAVE_AS = '%s/index.html' % PAGE_URL
-CATEGORY_URL = ARTICLE_URL
+# this always has to be .html so /pyglettutorial.html doesn't break
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = PAGE_URL
+
+ARTICLE_URL = '{slug}.html'
+ARTICLE_SAVE_AS = ARTICLE_URL
+
+CATEGORY_URL = '{slug}'
 CATEGORY_SAVE_AS = '%s/index.html' % CATEGORY_URL
-TAG_URL = ARTICLE_URL
+TAG_URL = '{slug}'
 TAG_SAVE_AS = '%s/index.html' % TAG_URL
 MD_EXTENSIONS = [
     'codehilite(css_class=highlight)', 'extra', 'sane_lists', 'toc',
     ]
-
-TEMPLATE_PAGES = {
-    '404.html': '404.html',
-}
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
