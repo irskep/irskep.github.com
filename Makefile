@@ -57,7 +57,7 @@ devserver:
 stopserver:
 	-kill -9 `cat pelican.pid`
 	-kill -9 `cat srv.pid`
-	-./developer_server.sh stop
+	-./develop_server.sh stop
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 watch-scss:
