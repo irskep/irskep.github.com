@@ -55,7 +55,7 @@ enough time to get anything done. Most of our communication was done on Fridays
 in a classroom when we met to give status updates, brainstorm new directions,
 and work on the schedule. During the week, we communicated via a mailing list,
 shared files using a [Dropbox](http:/www.dropbox.com) shared folder, and
-pushed code back and forth with [git](http:/www.git-scm.org/)
+pushed code back and forth with [git](http:/www.git-scm.org/).
 
 At the halfway point, we presented our work to the class. Our demo revealed
 some significant issues, none of which were technical: the character art lacked
