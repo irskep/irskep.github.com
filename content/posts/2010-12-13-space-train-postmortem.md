@@ -152,7 +152,7 @@ worked well enough for us.
 * **Steve Johnson**: Lead programmer, screenplay, music, engine, UI
 * **[Kelsey Bass](http:/taxidermyrobot.blogspot.com/)**: Lead artist, character design/line work/animation
 * **[Fred Hatfull](http:/www.fredhatfull.com/)**: Level scripting, engine, UI
-* **Liz Keegan**: Environments, objects
+* **[Liz Keegan](http://www.ekeegan.com/)**: Environments, objects
 * **Tyler Goeringer**: Level scripting, engine
 * **Susie Kim**: Objects
 * **Drew Carrow**: Character design, environment/objects

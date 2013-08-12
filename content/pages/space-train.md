@@ -11,11 +11,12 @@ short hop by space train from Inga’s home. She wants nothing more than to see
 Stanislav in person, so she catches the Mustachio Express to Planet Deux.
 Little does she know it will be a bumpy ride...
 
-<img class="left" src="|filename|/img/content/space_train_inga.png"/>
-
 **[Read the
 postmortem](|filename|/posts/2010-12-13-space-train-postmortem.md)**
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/EbnmXJOJUT4" frameborder="0" allowfullscreen></iframe>
+
+<img class="right" src="|filename|/img/content/space_train_inga.png"/>
 Space Train is a short point-and-click adventure game developed over the course
 of a semester by students at the [Cleveland Institute of
 Art](http://www.cia.edu/) and [Case Western Reserve
@@ -37,7 +38,8 @@ The Team
 <img class="right" src="|filename|/img/content/space_train_workman.png"/>
 
 - **Steve Johnson**: Lead programmer, screenplay, music, engine, UI
-- **[Kelsey Bass](http://taxidermyrobot.blogspot.com/)**: Lead artist, character design/line work/animation
+- **[Kelsey Bass](http://taxidermyrobot.blogspot.com/)**: Lead artist,
+  character design/<wbr>line work/<wbr>animation
 - **[Fred Hatfull](http://www.fredhatfull.com)**: Level scripting, engine, UI
 - **Liz Keegan**: Environments, objects
 - **Tyler Goeringer**: Level scripting, engine
