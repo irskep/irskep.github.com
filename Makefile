@@ -22,19 +22,19 @@ S3_BUCKET=my_s3_bucket
 DROPBOX_DIR=~/Dropbox/Public/
 
 help:
-	@echo 'Makefile for a pelican Web site                                        '
-	@echo '                                                                       '
-	@echo 'Usage:                                                                 '
-	@echo '   make html                        (re)generate the web site          '
-	@echo '   make clean                       remove the generated files         '
-	@echo '   make regenerate                  regenerate files upon modification '
-	@echo '   make publish                     generate using production settings '
-	@echo '   make serve                       serve site at http://localhost:8000'
-	@echo '   make devserver                   start/restart develop_server.sh    '
-	@echo '   make stopserver                  stop local server                  '
-	@echo '   deploy-beta                      upload to /beta via gh-pages'
-	@echo '   deploy-prod                      upload to /via gh-pages'
-	@echo '                                                                       '
+	@echo 'Makefile for a pelican Web site                                    '
+	@echo '                                                                   '
+	@echo 'Usage:                                                             '
+	@echo '   make html                    (re)generate the web site          '
+	@echo '   make clean                   remove the generated files         '
+	@echo '   make regenerate              regenerate files upon modification '
+	@echo '   make publish                 generate using production settings '
+	@echo '   make serve                   serve site at http://localhost:8000'
+	@echo '   make devserver               start/restart develop_server.sh    '
+	@echo '   make stopserver              stop local server                  '
+	@echo '   deploy-beta                  upload to /beta via gh-pages'
+	@echo '   deploy-prod                  upload to /via gh-pages'
+	@echo '                                                                   '
 
 
 html: clean compile-scss compile-coffee $(OUTPUTDIR)/index.html
@@ -61,7 +61,8 @@ stopserver:
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 watch-scss:
-	sass --watch $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css
+	sass --watch $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css \
+		$(INPUTDIR)/css/style.scss:$(OUTPUTDIR)/static/css/style.css
 
 compile-scss:
 	sass --update $(INPUTDIR)/css/style.scss:$(INPUTDIR)/css/style.css
