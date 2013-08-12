@@ -159,7 +159,9 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 .article h2 {
   font-size: 1.2rem; }
 .article .entry-content a {
-  color: #3c3cb4; }
+  color: #3c3c8c; }
+  .article .entry-content a:hover {
+    color: #5050fa; }
 
 .page h1 {
   border-top: 1px solid #a8a8a8;
@@ -174,4 +176,6 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 .page h3 {
   font-size: 1.2rem; }
 .page .page-content a {
-  color: #3c3cb4; }
+  color: #3c3c8c; }
+  .page .page-content a:hover {
+    color: #5050fa; }
