@@ -54,6 +54,9 @@ article ul {
   article ul li {
     margin-bottom: 0.5rem; }
 
+article iframe {
+  margin-bottom: 0.75rem; }
+
 p {
   text-rendering: optimizeLegibility; }
 
@@ -65,6 +68,18 @@ article blockquote {
   line-height: 1.2rem; }
   article blockquote strong {
     font-weight: normal; }
+
+.left {
+  float: left;
+  padding-right: 1rem; }
+
+.right {
+  float: right;
+  padding-left: 1rem; }
+
+.center {
+  display: block;
+  margin: auto; }
 
 /* layout */
 #pagecontainer {
@@ -158,5 +173,5 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   font-weight: bold; }
 .page h3 {
   font-size: 1.2rem; }
-.page .entry-content a {
+.page .page-content a {
   color: #3c3cb4; }

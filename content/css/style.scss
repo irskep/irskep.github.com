@@ -129,6 +129,10 @@ article ul {
   }
 }
 
+article iframe {
+  margin-bottom: $paragraphSpacing;
+}
+
 p {
   text-rendering: optimizeLegibility;
 }
@@ -139,6 +143,10 @@ article blockquote {
   font-size: $blockQuoteFontSize;
   line-height: $blockQuoteLineHeight;
 }
+
+.left { float: left; padding-right: 1rem; }
+.right { float: right; padding-left: 1rem; }
+.center { display: block; margin: auto; }
 
 /* layout */
 
@@ -277,5 +285,5 @@ header#banner, nav#menu, section#content, footer#pagefooter {
     font-size: 1.2rem;
   }
 
-  .entry-content a { color: $bodyLinkColor; }
+  .page-content a { color: $bodyLinkColor; }
 }
