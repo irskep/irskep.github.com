@@ -143,6 +143,8 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   font-weight: bold; }
 .article h2 {
   font-size: 1.2rem; }
+.article .entry-content a {
+  color: #3c3cb4; }
 
 .page h1 {
   border-top: 1px solid #a8a8a8;
@@ -156,3 +158,5 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   font-weight: bold; }
 .page h3 {
   font-size: 1.2rem; }
+.page .entry-content a {
+  color: #3c3cb4; }
