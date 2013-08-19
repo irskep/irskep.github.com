@@ -8,9 +8,8 @@ category of Ludum Dare 26.
 while for the 4+ MB of user data to download, so give it a minute or two.
 
 Of all my programming escapades over the past couple of years, I'm most proud
-of this one. Here's a comprehensive collection of my thoughts about it.
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
+of this one. Here's a comprehensive collection of my thoughts about it,
+including a discussions of the technical aspects.
 
 ## Conception
 
@@ -23,6 +22,8 @@ most of which were single player pseudo-roguelikes. Instead, I picked a vague
 idea: a web-based multiplayer world where you dig out rooms underground in a
 grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
 the rest as I went along.
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
 
 You can do a few things:
 
@@ -42,9 +43,22 @@ you, you can see their dot and any content they add, all live-updated.
 
 ![screenshot](http://www.ludumdare.com/compo/wp-content/uploads/2013/05/2m-300x207.png)
 
-## That sounds weird. How did it do?
+## Competition results
 
-Voting’s still in progress, but I do have some user responses and some numbers.
+It placed 6th in the Innovation category out of 2,346 games. The rest of the
+category scores aren't as impressive as raw numbers but are still nice in terms
+of the number of games:
+
+Category   | Ranking | Score
+---------- | --------|------
+Innovation | #6      | 4.38
+Mood       | #210    | 3.36
+Overall    | #238    | 3.51
+Audio      | #464    | 2.85
+Theme      | #492    | 3.60
+Humor      | #549    | 2.23
+Graphics   | #650    | 2.92
+Fun        | #769    | 2.75
 
 People tend to have one of two viewpoints. They’re either like
 [wrongcoder](http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&uid=22915):
@@ -67,7 +81,7 @@ said it “felt a bit like geocaching,” which really tickles me.
 The numbers are encouraging as well. When I checked earlier today, there were
 **3,019 rooms dug by 147 users.** 54% of players dug 5 or more rooms, with some
 people digging over 100 rooms. 11% had a note on them. 18% had a stamp. So
-people were definitely doing more than running around and bumping into walls!
+people were definitely doing more than running around and bumping into walls.
 
 At first I was surprised that more rooms had stamps than notes, since you have
 to be level 2 to write a note, and level 3 to place a stamp. But it was pointed
@@ -77,8 +91,8 @@ pieces!
 
 I got a friendly nod from a post on [Indie Statik's Ludum Dare
 highlights](http://indiestatik.com/2013/04/29/ludum-dare-26/). They compared We
-Dreamers to Peter Molyneux’s game Curiosity, which I have mixed feelings about,
-but it’s still nice to be noticed. They have a [second highlights
+Dreamers to Peter Molyneux’s game Curiosity. I'm not sure if that's a
+compliment, but it’s still nice to be noticed. They have a [second highlights
 post](http://indiestatik.com/2013/05/02/ludum-dare-25-part-2/) as well.
 
 ## Technical details
@@ -106,7 +120,7 @@ realtime – it’s also perfect for turn-based games. I hope to try something
 head-to-head next time.
 
 Now for a longer answer to StuStutheBoo’s question. Although Firebase was
-essential to having the technical ability to build this kind of online
+essential to having the technical capability to build this kind of online
 experience, it was even more important that I knew my tools extremely well. My
 day job is to work on [Buildy](http://playbuildy.com/), an online multiplayer
 realtime building sandbox where you can make just about anything. For LD26, I
@@ -140,30 +154,37 @@ it. We Dreamers would have had 30% more code and been 30% buggier without it.
 ## Downsides and difficulties
 
 There’s another, secret reason why I was able to write We Dreamers so fast: I
-didn’t give a damn about scale. I had no idea how much data users would
-generate (currently 2.8 MB) or how well browsers would deal with 6000+ DOM
-elements moving around (not very well). Buildy partitions its worlds into
-squares, so it’s easy to only load a piece at a time. We Dreamers has no such
-wisdom, so every user loads the entire world when the page loads. Threeish
-megabytes isn’t so bad for a game, but DOM performance turned out to be a huge
-issue once things got big. To help players deal with the speed, I now provide a
-stripped down version that web browsers can handle better.
+didn’t give more than a passing thought about scale. I had no idea how much
+data users would generate (currently ~4 MB) or how well browsers would deal
+with 6000+ DOM elements moving around (not very well). Buildy partitions its
+worlds into squares, so it’s easy to only load a piece at a time. We Dreamers
+has no such wisdom, so every user loads the entire world when the page loads.
+Threeish megabytes isn’t so bad for a game, but DOM performance turned out to
+be a huge issue once things got big. To help players deal with the speed, I now
+provide a stripped down version that web browsers can handle better.
+
+I chose to do all the rendering via styled `<div>`s because I wanted to spend
+as little time as possible on drawing code. I gambled that web browsers would
+be smart enough to efficiently clip offscreen nodes. It almost worked, but I
+really should have used `<canvas>`. It wouldn't have been much more work.
 
 I had a tiny bit of trouble with cross-browser compatibility.
 `requestAnimationFrame` still hasn’t been un-prefixed in Firefox or Safari.
 Safari didn’t like any of the CSS gradient variants I tried either, so the
 doors are all white when viewed in that browser. In the end, though, I was able
-to make it widely compatible and consistent.
+to make it widely compatible and consistent. (This is another issue that would
+have been avoided had I used `<canvas>`.)
 
-There was one aspect of distributed computing I did have to deal with: syncing
-the time across all clients to get the color harvesting to look right. I
-thought I was being clever by using a public web service that gives you the
-current time in JSON. Unfortunately it’s hosted on Google App Engine and blew
-through its quota soon after voting started, so now all the players’ clocks are
-wrong anyway. It doesn’t affect the game much, but I should have seen it
-coming.
+Despite using Firebase, here was one aspect of distributed computing I did have
+to deal with: syncing the time across all clients to get the color harvesting
+to look right. I thought I was being clever by using a public web service that
+gives you the current time in JSON. Unfortunately it’s hosted on Google App
+Engine and blew through its quota soon after voting started, so now all the
+players’ clocks are wrong anyway. It doesn’t affect the game much, but I should
+have seen it coming.
 
 ## In closing,
 
 I had a fun and intense time this year. Of my three attempts to date, We
-Dreamers is far and away my best Ludum Dare effort yet.
+Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
+another round in August for LD27.
