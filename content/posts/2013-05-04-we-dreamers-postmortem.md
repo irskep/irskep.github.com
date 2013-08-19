@@ -2,6 +2,18 @@ Title: How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turne
 Tags: gamedev programming ludumdare
 Slug: we-dreamers-postmortem
 
+We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+category of Ludum Dare 26.
+[You can play it here.](http://steveasleep.com/we_dreamers_2) It may take a
+while for the 4+ MB of user data to download, so give it a minute or two.
+
+Of all my programming escapades over the past couple of years, I'm most proud
+of this one. Here's a comprehensive collection of my thoughts about it.
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
+
+## Conception
+
 During the final voting round for Ludum Dare 26, I spent a couple of hours
 coming up with good ideas for every possible theme…except minimalism. No way
 that would get through, right?
@@ -11,10 +23,6 @@ most of which were single player pseudo-roguelikes. Instead, I picked a vague
 idea: a web-based multiplayer world where you dig out rooms underground in a
 grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
 the rest as I went along.
-
-[Here’s the game.](http://steveasleep.com/we_dreamers_2)
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
 
 You can do a few things:
 
