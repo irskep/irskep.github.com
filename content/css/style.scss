@@ -31,13 +31,17 @@ canvas { display: none; }
 
 /* base styles */
 
+@mixin body-font-weight {
+  font-weight: lighter;
+}
+
 @mixin body-font {
   // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   // font-family: 'Vollkorn', Garamond, "Hoefler Text", serif;
   // font-family: 'Gentium Basic', Garamond, "Hoefler Text", serif;
   // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
+  @include body-font-weight;
 
   strong {
     font-weight: normal;
@@ -136,8 +140,21 @@ article ul {
   }
 }
 
-article iframe {
+article iframe, table {
   margin-bottom: $paragraphSpacing;
+}
+
+table {
+  $thHorzSpacing: 1rem;
+  th {
+    text-align: left;
+    font-weight: normal;
+    padding-right: $thHorzSpacing;
+  }
+  td {
+    @include body-font-weight;
+    padding-right: $thHorzSpacing;
+  }
 }
 
 p {

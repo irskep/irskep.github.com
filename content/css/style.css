@@ -54,8 +54,16 @@ article ul {
   article ul li {
     margin-bottom: 0.5rem; }
 
-article iframe {
+article iframe, table {
   margin-bottom: 0.75rem; }
+
+table th {
+  text-align: left;
+  font-weight: normal;
+  padding-right: 1rem; }
+table td {
+  font-weight: lighter;
+  padding-right: 1rem; }
 
 p {
   text-rendering: optimizeLegibility; }
