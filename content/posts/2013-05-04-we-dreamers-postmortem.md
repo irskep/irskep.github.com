@@ -183,6 +183,13 @@ Engine and blew through its quota soon after voting started, so now all the
 players’ clocks are wrong anyway. It doesn’t affect the game much, but I should
 have seen it coming.
 
+There was one last issue that I was always aware of but never had time to deal
+with: access controls. There are no API-level restrictions on who can edit what
+data. At least one person exploited it to leave me an amusing note, but
+fortunately there were no abusers. Firebase has the ability to use access
+controls, but I didn't have time to learn their API. Another reason to know
+my tools really well, I suppose.
+
 ## In closing,
 
 I had a fun and intense time this year. Of my three attempts to date, We
