@@ -10,7 +10,202 @@ years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I could only spare to hours from my normal archival duties of scanning bad
 comics I drew when I was 7, so please forgive some shortcuts I took with the
-layout and&amp;nbsp;styling.&lt;/p&gt;</summary><category term="humor"></category><category term="projects"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;Two months ago I started my new job at Graffiti Labs after working at Yelp for
+layout and&amp;nbsp;styling.&lt;/p&gt;</summary><category term="humor"></category><category term="projects"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><updated>2013-05-04T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+category of Ludum Dare 26.
+&lt;a href="http://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; It may take a
+while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or&amp;nbsp;two.&lt;/p&gt;
+&lt;p&gt;Of all my programming escapades over the past couple of years, I&amp;#8217;m most proud
+of this one. Here&amp;#8217;s a comprehensive collection of my thoughts about it,
+including a discussions of the technical&amp;nbsp;aspects.&lt;/p&gt;
+&lt;h2 id="conception"&gt;Conception&lt;/h2&gt;
+&lt;p&gt;During the final voting round for Ludum Dare 26, I spent a couple of hours
+coming up with good ideas for every possible theme…except minimalism. No way
+that would get through,&amp;nbsp;right?&lt;/p&gt;
+&lt;p&gt;When that theme was chosen, and I had to throw out all of my wonderful schemes,
+most of which were single player pseudo-roguelikes. Instead, I picked a vague
+idea: a web-based multiplayer world where you dig out rooms underground in a
+grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
+the rest as I went&amp;nbsp;along.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can do a few&amp;nbsp;things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Move with the arrow keys or&amp;nbsp;&lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Harvest color with&amp;nbsp;space.&lt;/li&gt;
+&lt;li&gt;Dig out new rooms by bumping into walls. You need color to do this. The new 
+   room will be the color of your dot, which is affected by the color in your&amp;nbsp;bucket.&lt;/li&gt;
+&lt;li&gt;Dump color with r, g, and b (or 1, 2, and 3) to change the color of your&amp;nbsp;dot.&lt;/li&gt;
+&lt;li&gt;Leave notes on rooms (if you are level 2) that appear at the bottom of the 
+   screen when you enter the&amp;nbsp;room.&lt;/li&gt;
+&lt;li&gt;Put down big block letters (if you are level 3) that you can use to spell 
+   [sometimes naughty]&amp;nbsp;words.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You gain levels by adding content. If anyone else is online at the same time as
+you, you can see their dot and any content they add, all&amp;nbsp;live-updated.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="screenshot" src="http://www.ludumdare.com/compo/wp-content/uploads/2013/05/2m-300x207.png" /&gt;&lt;/p&gt;
+&lt;h2 id="competition-results"&gt;Competition&amp;nbsp;results&lt;/h2&gt;
+&lt;p&gt;It placed 6th in the Innovation category out of 2,346 games. The rest of the
+category scores aren&amp;#8217;t as impressive as raw numbers but are still nice in terms
+of the number of&amp;nbsp;games:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Category&lt;/th&gt;
+&lt;th&gt;Ranking&lt;/th&gt;
+&lt;th&gt;Score&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Innovation&lt;/td&gt;
+&lt;td&gt;#6&lt;/td&gt;
+&lt;td&gt;4.38&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mood&lt;/td&gt;
+&lt;td&gt;#210&lt;/td&gt;
+&lt;td&gt;3.36&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Overall&lt;/td&gt;
+&lt;td&gt;#238&lt;/td&gt;
+&lt;td&gt;3.51&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Audio&lt;/td&gt;
+&lt;td&gt;#464&lt;/td&gt;
+&lt;td&gt;2.85&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Theme&lt;/td&gt;
+&lt;td&gt;#492&lt;/td&gt;
+&lt;td&gt;3.60&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Humor&lt;/td&gt;
+&lt;td&gt;#549&lt;/td&gt;
+&lt;td&gt;2.23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Graphics&lt;/td&gt;
+&lt;td&gt;#650&lt;/td&gt;
+&lt;td&gt;2.92&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fun&lt;/td&gt;
+&lt;td&gt;#769&lt;/td&gt;
+&lt;td&gt;2.75&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;People tend to have one of two viewpoints. They’re either like
+&lt;a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;amp;uid=22915"&gt;wrongcoder&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Neat. Quite unique. Technologically a marvel for the available time. To be
+honest, though, I don’t get the purpose of&amp;nbsp;it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;or they’re like &lt;a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;amp;uid=8308"&gt;BlennosoftGames&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is something very cheerful about this game. As far as I can tell you
+don’t “win” you just smile&amp;nbsp;:)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Most players were in the second category, so I’m very happy with how it turned
+out. People seem to understand what I’m trying to do: create a virtual canvas
+where contribution is easy, bad behavior is difficult, and quirky things can be
+found given a few minutes’ exploration.
+&lt;a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;amp;uid=11022"&gt;Hegemege&lt;/a&gt;
+said it “felt a bit like geocaching,” which really tickles&amp;nbsp;me.&lt;/p&gt;
+&lt;p&gt;The numbers are encouraging as well. When I checked earlier today, there were
+&lt;strong&gt;3,019 rooms dug by 147 users.&lt;/strong&gt; 54% of players dug 5 or more rooms, with some
+people digging over 100 rooms. 11% had a note on them. 18% had a stamp. So
+people were definitely doing more than running around and bumping into&amp;nbsp;walls.&lt;/p&gt;
+&lt;p&gt;At first I was surprised that more rooms had stamps than notes, since you have
+to be level 2 to write a note, and level 3 to place a stamp. But it was pointed
+out to me that a stamp is just one letter, and you have to think a lot less to
+put one down. Want to spell &lt;span class="caps"&gt;DOG&lt;/span&gt; &lt;span class="caps"&gt;FART&lt;/span&gt; in huge letters? It’s only seven easy&amp;nbsp;pieces!&lt;/p&gt;
+&lt;p&gt;I got a friendly nod from a post on &lt;a href="http://indiestatik.com/2013/04/29/ludum-dare-26/"&gt;Indie Statik&amp;#8217;s Ludum Dare
+highlights&lt;/a&gt;. They compared We
+Dreamers to Peter Molyneux’s game Curiosity. I&amp;#8217;m not sure if that&amp;#8217;s a
+compliment, but it’s still nice to be noticed. They have a &lt;a href="http://indiestatik.com/2013/05/02/ludum-dare-25-part-2/"&gt;second highlights
+post&lt;/a&gt; as&amp;nbsp;well.&lt;/p&gt;
+&lt;h2 id="technical-details"&gt;Technical&amp;nbsp;details&lt;/h2&gt;
+&lt;p&gt;You might be wondering, like
+&lt;a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;amp;uid=20822"&gt;StuStutheBloo&lt;/a&gt;
+in We Dreamers’s comments, &lt;strong&gt;“How did you even put this together in the time&amp;nbsp;available?”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The short answer is that I used &lt;a href="https://www.firebase.com/"&gt;Firebase&lt;/a&gt;, “a cloud
+database designed to power real-time, collaborative applications.” Put another
+way, it’s a magic, event-driven Javascript object that updates instantly across
+all clients. I didn’t have to write a server, or even deal with much
+multiplayer logic at all; I just designed all interactive objects to listen to
+Firebase events. The only thing special about the dot you control, as opposed
+to those controlled by others and displayed on your screen, is that your client
+is updating a Firebase subtree for your data. Those updates are reflected
+instantly for you, and very quickly for everyone&amp;nbsp;else.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;If you want to try your hand at a multiplayer online game for Ludum Dare, I
+strongly recommend that you try Firebase.&lt;/strong&gt; There are half a dozen two-player
+games I haven’t been able to rate because I’d need to have another person
+sitting next to me to play with. You don’t even need to get all crazy and
+realtime – it’s also perfect for turn-based games. I hope to try something
+head-to-head next&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;Now for a longer answer to StuStutheBoo’s question. Although Firebase was
+essential to having the technical capability to build this kind of online
+experience, it was even more important that I knew my tools extremely well. My
+day job is to work on &lt;a href="http://playbuildy.com/"&gt;Buildy&lt;/a&gt;, an online multiplayer
+realtime building sandbox where you can make just about anything. For &lt;span class="caps"&gt;LD26&lt;/span&gt;, I
+brought out the same tools we use to make Buildy: &lt;span class="caps"&gt;HTML5&lt;/span&gt;, &lt;span class="caps"&gt;CSS&lt;/span&gt;,
+&lt;a href="http://coffeescript.org/"&gt;Coffeescript&lt;/a&gt;, &lt;a href="http://gruntjs.com/"&gt;Grunt&lt;/a&gt;,
+&lt;a href="https://github.com/raimohanska/bacon.js"&gt;Bacon.js&lt;/a&gt;,
+&lt;a href="http://www.schillmania.com/projects/soundmanager2/"&gt;SoundManager2&lt;/a&gt;,
+&lt;a href="http://jquery.com/"&gt;jQuery&lt;/a&gt;, &lt;a href="http://craig.is/killing/mice"&gt;Mousetrap&lt;/a&gt;, and
+&lt;a href="http://underscorejs.org/"&gt;underscore.js&lt;/a&gt;. The whole game is a bunch of static
+files hosted on Github Pages, just like the rest of steveasleep.com.  To
+deploy, all I had to do was push to the &lt;code&gt;gh-pages&lt;/code&gt; branch.&lt;/p&gt;
+&lt;p&gt;I didn’t do anything I hadn’t done before. All of the rendering is just styled
+&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements. I’m familiar with each of those Javascript libraries. I’m
+comfortable with the Chrome dev tools. Static files are incredibly easy to
+deploy and serve without paying a dime. As a result of using all these familiar
+pieces, I spent almost no time debugging simple (or even complicated)&amp;nbsp;issues.&lt;/p&gt;
+&lt;p&gt;If you’re looking for advice about how to do Ludum Dare well, here’s mine:
+&lt;strong&gt;learn your tools.&lt;/strong&gt; Make sure you know how to write, run, and deploy your
+game.  Don’t give yourself any surprises. (Python developers have a
+particularly tough time with this one. There are still a few that ask you to
+install PyGame to play and rate their game. I sympathize, having used py2app
+for&amp;nbsp;&lt;span class="caps"&gt;LD19&lt;/span&gt;.)&lt;/p&gt;
+&lt;p&gt;If you spend any time in Javascript, try to get your head around
+&lt;a href="https://github.com/raimohanska/bacon.js"&gt;Bacon.js&lt;/a&gt;. It can decrease game logic
+complexity by quite a lot if you’re willing to invest your brain resources in
+it. We Dreamers would have had 30% more code and been 30% buggier without&amp;nbsp;it.&lt;/p&gt;
+&lt;h2 id="downsides-and-difficulties"&gt;Downsides and&amp;nbsp;difficulties&lt;/h2&gt;
+&lt;p&gt;There’s another, secret reason why I was able to write We Dreamers so fast: I
+didn’t give more than a passing thought about scale. I had no idea how much
+data users would generate (currently ~4 &lt;span class="caps"&gt;MB&lt;/span&gt;) or how well browsers would deal
+with 6000+ &lt;span class="caps"&gt;DOM&lt;/span&gt; elements moving around (not very well). Buildy partitions its
+worlds into squares, so it’s easy to only load a piece at a time. We Dreamers
+has no such wisdom, so every user loads the entire world when the page loads.
+Threeish megabytes isn’t so bad for a game, but &lt;span class="caps"&gt;DOM&lt;/span&gt; performance turned out to
+be a huge issue once things got big. To help players deal with the speed, I now
+provide a stripped down version that web browsers can handle&amp;nbsp;better.&lt;/p&gt;
+&lt;p&gt;I chose to do all the rendering via styled &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;s because I wanted to spend
+as little time as possible on drawing code. I gambled that web browsers would
+be smart enough to efficiently clip offscreen nodes. It almost worked, but I
+really should have used &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt;. It wouldn&amp;#8217;t have been much more&amp;nbsp;work.&lt;/p&gt;
+&lt;p&gt;I had a tiny bit of trouble with cross-browser compatibility.
+&lt;code&gt;requestAnimationFrame&lt;/code&gt; still hasn’t been un-prefixed in Firefox or Safari.
+Safari didn’t like any of the &lt;span class="caps"&gt;CSS&lt;/span&gt; gradient variants I tried either, so the
+doors are all white when viewed in that browser. In the end, though, I was able
+to make it widely compatible and consistent. (This is another issue that would
+have been avoided had I used &lt;code&gt;&amp;lt;canvas&amp;gt;&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Despite using Firebase, here was one aspect of distributed computing I did have
+to deal with: syncing the time across all clients to get the color harvesting
+to look right. I thought I was being clever by using a public web service that
+gives you the current time in &lt;span class="caps"&gt;JSON&lt;/span&gt;. Unfortunately it’s hosted on Google App
+Engine and blew through its quota soon after voting started, so now all the
+players’ clocks are wrong anyway. It doesn’t affect the game much, but I should
+have seen it&amp;nbsp;coming.&lt;/p&gt;
+&lt;h2 id="in-closing"&gt;In&amp;nbsp;closing,&lt;/h2&gt;
+&lt;p&gt;I had a fun and intense time this year. Of my three attempts to date, We
+Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
+another round in August for&amp;nbsp;&lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="gamedev programming ludumdare"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;Two months ago I started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
