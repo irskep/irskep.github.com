@@ -7,6 +7,8 @@ $linkHoverColor: rgb(80, 80, 250);
 $separatorColor: lighten($bodyColor, 50%);
 $inlineCodeForegroundColor: rgb(80, 80, 80);
 
+$pageWidth: 32rem;
+
 $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
 $prePadding: 0.5rem;
@@ -176,7 +178,7 @@ article blockquote {
 
 #pagecontainer {
   width: 100%;
-  max-width: 30rem;
+  max-width: $pageWidth;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;

@@ -92,7 +92,7 @@ article blockquote {
 /* layout */
 #pagecontainer {
   width: 100%;
-  max-width: 30rem;
+  max-width: 32rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem; }
