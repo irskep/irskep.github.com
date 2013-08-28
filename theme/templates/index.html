@@ -1,29 +1,33 @@
 {% extends "base.html" %}
-{% from "macros.html" import post_header with context %}
-{% from "macros.html" import post_content with context %}
+{%- from "macros.html" import post_header with context %}
+{%- from "macros.html" import post_content with context %}
 
-{% block content %}
+{%- block content %}
   <section id="content">
 
-    {% block content_title %}
+    {%- block content_title %}
       <!--<h2>Articles</h2>-->
-    {% endblock %}
+    {%- endblock %}
 
-    {% set first_article = articles_page.object_list[0] %}
-    {% set article = first_article %}
+    {%- set these_articles = articles_page.object_list %}
+    {%- if not category %}
+      {%- set these_articles = FIND_MAIN_PAGE_CATEGORY(categories) %}
+    {%- endif %}
+    {%- set first_article = these_articles[0] %}
+    {%- set article = first_article %}
     <article class="article featured-article">
-      {{ post_header(article) }}
-      {{ post_content(article) }}
+      {{- post_header(article) }}
+      {{- post_content(article) }}
     </article>
 
 
     <ul id="post-list">
-      {% for article in articles_page.object_list[1:] %}
+      {%- for article in these_articles[1:] %}
         <li>{{ post_header(article) }}</li>
-      {% endfor %}
+      {%- endfor %}
     </ul>
 
-  {% include 'pagination.html' %}
+  {%- include 'pagination.html' %}
 
   </section><!-- /#content -->
-{% endblock content %}
+{%- endblock content %}

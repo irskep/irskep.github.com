@@ -38,9 +38,9 @@ TWITTER_USERNAME = 'irskep'
 
 MENUITEMS = (
     ('Articles', '/'),
+    ('Side Channel', '/side-channel'),
     ('Games', '/games.html'),
     ('Open Source', '/open-source.html'),
-    ('The Nest', 'http://thenestmusic.com/'),
     ('Pyglet tutorial', '/pyglettutorial.html'),
 )
 
@@ -70,3 +70,8 @@ DEFAULT_PAGINATION = False
 TYPOGRIFY = True
 
 THEME = 'theme'
+
+FIND_MAIN_PAGE_CATEGORY = lambda categories: [
+    articles for category, articles in categories
+    if category == 'Articles'
+][0]
