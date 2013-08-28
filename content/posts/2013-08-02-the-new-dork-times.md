@@ -1,4 +1,5 @@
 Title: The New Dork Times
+Category: Articles
 Tags: humor, projects
 
 The best writing of my life was produced in 1997 when I was eight years old,

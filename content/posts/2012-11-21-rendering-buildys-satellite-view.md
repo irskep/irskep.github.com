@@ -1,4 +1,5 @@
 Title: Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL
+Category: Articles
 Slug: rendering-buildys-satellite-view
 
 A world in Buildy can be hundreds of square miles. I [wrote about the

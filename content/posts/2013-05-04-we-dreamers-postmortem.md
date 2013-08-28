@@ -1,4 +1,5 @@
 Title: How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out
+Category: Articles
 Tags: gamedev programming ludumdare
 Slug: we-dreamers-postmortem
 

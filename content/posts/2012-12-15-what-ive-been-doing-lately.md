@@ -1,4 +1,5 @@
 Title: What I've been doing lately
+Category: Side Channel
 Tags: literallycanvas, startups, meta, yelp
 
 Two months ago I started my new job at Graffiti Labs after working at Yelp for

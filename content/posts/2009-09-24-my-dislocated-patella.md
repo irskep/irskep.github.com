@@ -1,4 +1,5 @@
 Title: My Dislocated Patella
+Category: Side Channel
 Tags: meta
 
 In 2009 I dislocated my

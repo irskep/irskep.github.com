@@ -1,4 +1,5 @@
 Title: Quotes from This Week's CWRU Student Newspaper
+Category: Side Channel
 Tags: college
 
 "Woe are the student groups that try to reserve rooms on this campus." –

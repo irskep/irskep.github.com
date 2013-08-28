@@ -1,4 +1,5 @@
 Title: If It Can't Be Done with Git and Text Files, It's Not Worth Doing
+Category: Side Channel
 Tags: meta
 
 *As of August 2013, I'm using Pelican as my static site generator, Sass to

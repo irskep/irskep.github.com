@@ -1,4 +1,5 @@
 Title: My Master's Thesis
+Category: Side Channel
 Tags: college, ipad, thesis
 
 For a while I thought I was going to rewrite these 150 pages of filler
