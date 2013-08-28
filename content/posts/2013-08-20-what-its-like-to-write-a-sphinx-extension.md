@@ -1,6 +1,7 @@
 Title: What It's Like to Write a Sphinx Extension
 Tags: programming python sphinx mrjob
 Slug: what-its-like-to-write-a-sphinx-extension
+Status: draft
 
 Why I wanted to write a Sphinx extension
 ========================================
