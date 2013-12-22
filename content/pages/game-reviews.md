@@ -3,7 +3,16 @@ Slug: game-reviews
 
 Derek Sivers reviews [books](http://sivers.org/book). I review games.
 
-## High Art
+### Navigation
+
+* [High art](#high-art)
+* [Very good](#very-good)
+* [If you need something to do](#if-you-need-something-to-do)
+* [Insufficiently entertaining](#insufficiently-entertaining)
+* [Avoid](#avoid)
+
+<a name="high-art"> </a>
+## High art
 
 (The best part is, most of these are at least a year or two old, so they go on
 sale often.)
@@ -69,6 +78,7 @@ Finished: 2x
 Plan to replay: no
 
 
+<a name="high-art"> </a>
 ## Very good
 
 (For some subset of people.)
@@ -156,7 +166,7 @@ Plan to replay: if the occasion arises
 
 ### Frozen Synapse
 
-Fascinating concept. A- execution.
+Fascinating concept. A-minus execution.
 
 Good if you like: turn-based tactics.
 
@@ -336,6 +346,7 @@ it being utterly entertaining.
 Plan to replay: maybe
 
 
+<a name="if-you-need-something-to-do"> </a>
 ## If you need something to do
 
 (Get it in a bundle.)
@@ -446,6 +457,7 @@ Arkanoid: The RPG. Another in the "really good Gameboy game" category.
 Very physical-feeling puzzle game. Also very zen.
 
 
+<a name="insufficiently-entertaining"> </a>
 ## Insufficiently entertaining
 
 (I can see how other people would enjoy these games.)
@@ -561,6 +573,7 @@ it up again it was boring and tedious.
 Good platformer, but I want more than just good platforming.
 
 
+<a name="avoid"> </a>
 ## Avoid
 
 ### BIT.TRIP FATE
