@@ -188,6 +188,10 @@ Creepy adventure game. Good for the experience, but quite unsatisfying on
 several levels. I think the lack of satisfaction is also part of the
 experience...but I don't find that explanation satisfying.
 
+Finished: yes
+
+Plan to replay: no
+
 ### Hotline Miami
 
 Violent. Mysterious. Awesome.
