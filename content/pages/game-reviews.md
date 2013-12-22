@@ -59,10 +59,29 @@ Finished: close (22 hours)
 
 Plan to replay: yes
 
+### The Secret of Monkey Island
+
+The old version, without voice acting. One of the best adventure games ever
+made.
+
+Finished: 2x
+
+Plan to replay: no
+
 
 ## Very good
 
 (For some subset of people.)
+
+### Aquaria
+
+Excellent design, storytelling, and visuals. I got worn out about a third of
+the way through it and stopped, but that was about 8 hours of play. I do
+recommend it even though I didn't finish.
+
+Finished: no
+
+Plan to replay: I actually tried but couldn't get into it again
 
 ### Avadon: The Black Fortress
 
@@ -85,6 +104,8 @@ Anything from Spiderweb is worth your time if you like old-school RPGs.
 Finished: no, but who cares
 
 Plan to replay: yes
+
+The entirety of this review also applies to Avernum 4 and 5.
 
 ### The Binding of Isaac
 
@@ -219,6 +240,11 @@ Plan to replay: no
 Nice stealth game. Great controller support. Performance issues on OS X.
 
 I only played 90 minutes, but I'll probably get back to it later.
+
+### Minecraft before they added food
+
+Yeah, I'm a hipster. The current version is just bewildering to me. I just want
+to explore caves!
 
 ### Monaco
 
@@ -406,6 +432,11 @@ Plan to replay: maybe
 
 Conventional tower defense. Not really my scene.
 
+### Voxatron
+
+Looked cool, but that didn't translate to good gameplay. Jump and shoot, jump
+and shoot.
+
 ### Wizorb
 
 Arkanoid: The RPG. Another in the "really good Gameboy game" category.
@@ -475,6 +506,15 @@ it's generally a sensory overload.
 ### English Country Tune
 
 Spatial decision tree puzzles. Graphics are very basic. Bored after 15 minutes.
+
+### Escape Velocity (original, Override, Nova)
+
+I played these games collectively for probably 200 hours, so what are they
+doing in here? They don't stand the test of time. They are boring and
+unbalanced.
+
+But making mods was amazing and fun, and why I learned so much about resource
+forks in Mac OS <= 9.
 
 ### Hammerfight
 
