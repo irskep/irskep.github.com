@@ -3,6 +3,8 @@ Slug: game-reviews
 
 Derek Sivers reviews [books](http://sivers.org/book). I review games.
 
+By making this list, I improve my understanding of what makes me like a game.
+
 ### Navigation
 
 * [High art](#high-art)
@@ -64,7 +66,9 @@ Plan to replay: maybe in five years
 Few games have sucked me in so fast for so long. Rogue Legacy is immaculately
 balanced, plentiful in variety, nice to look at, and joyfully humorous.
 
-Finished: close (22 hours)
+Good if you like: action roguelikes, dying a lot, waving your sword around
+
+Finished: in progress (22 hours)
 
 Plan to replay: yes
 
@@ -591,7 +595,7 @@ Confusing, bizarre, unsatisfying. Nothing to do with rhythm.
 
 ### Shank
 
-Misogynist drivel.
+Good fighting mechanics ruined by misogynist drivel.
 
 ### Super Meat Boy on OS X
 
