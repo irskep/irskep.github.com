@@ -7,7 +7,7 @@ html {
   font-size: 120%;
   line-height: 135%;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   background-color: #f0f0f0;
   color: #282828; }
   html strong {
@@ -22,8 +22,8 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem; }
+  margin-top: 1.5em;
+  margin-bottom: 0.75em; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #3c3c50;
@@ -62,7 +62,7 @@ table th {
   font-weight: normal;
   padding-right: 1rem; }
 table td {
-  font-weight: lighter;
+  font-weight: 300;
   padding-right: 1rem; }
 
 p {
@@ -71,7 +71,7 @@ p {
 article blockquote {
   margin-left: 2em;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.2rem; }
   article blockquote strong {
@@ -173,7 +173,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 
 .page h1 {
   border-top: 1px solid #a8a8a8;
-  padding-top: 0.75rem;
+  padding-top: 1.5em;
   font-weight: normal;
   font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;

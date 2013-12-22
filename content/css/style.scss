@@ -13,7 +13,8 @@ $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
 $prePadding: 0.5rem;
 $pageComponentSpacing: 2rem;
-$headerVerticalSpacing: $paragraphSpacing;
+$headerVerticalSpacingTop: 1.5em;
+$headerVerticalSpacingBottom: 0.75em;
 $listVerticalSpacing: 0.5rem;
 $blockQuoteFontSize: 0.9rem;
 $blockQuoteLineHeight: 1.2rem;
@@ -34,7 +35,7 @@ canvas { display: none; }
 /* base styles */
 
 @mixin body-font-weight {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 @mixin body-font {
@@ -99,8 +100,8 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   @include title-font;
-  margin-top: $headerVerticalSpacing;
-  margin-bottom: $headerVerticalSpacing;
+  margin-top: $headerVerticalSpacingTop;
+  margin-bottom: $headerVerticalSpacingBottom;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -295,7 +296,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 .page {
   h1 {
     border-top: 1px solid $separatorColor;
-    padding-top: $headerVerticalSpacing;
+    padding-top: $headerVerticalSpacingTop;
     font-weight: normal;
     @include title-font-2;
     font-size: 1.4rem;
