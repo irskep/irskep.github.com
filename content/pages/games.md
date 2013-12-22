@@ -1,6 +1,8 @@
 Title: Games I've written
 Slug: games
 
+(I also track my [opinions of games](<|filename|game-reviews.md>).)
+
 Game programming is the hobby I always told myself would never become a
 [job](|filename|/posts/2012-12-15-what-ive-been-doing-lately.md). I've been
 making games almost exactly as long as I've been programming, and many of them
