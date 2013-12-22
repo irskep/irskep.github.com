@@ -287,7 +287,7 @@ Plan to replay: no, once was plenty
 Fantastic story and world. Platforming sometimes finicky. Twice as long as you
 expect, which is very good.
 
-Good if you like: Tim Schafer dialog, weird things happening
+Good if you like: Tim Schafer dialogue, weird things happening
 
 Finished: yes
 
