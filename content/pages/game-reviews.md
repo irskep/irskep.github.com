@@ -527,10 +527,15 @@ Spatial decision tree puzzles. Graphics are very basic. Bored after 15 minutes.
 
 I played these games collectively for probably 200 hours, so what are they
 doing in here? They don't stand the test of time. They are boring and
-unbalanced.
+unbalanced by today's space combat standards.
 
 But making mods was amazing and fun, and why I learned so much about resource
 forks in Mac OS <= 9.
+
+Despite my complaints about its dated combat, I haven't yet found a game that
+has the same kind of slow-paced space fight and enormous story. There's room
+for a game like that today, but it would probably need to have better AI and be
+in 3D.
 
 ### Hammerfight
 
