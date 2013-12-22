@@ -3,8 +3,6 @@ Slug: game-reviews
 
 Derek Sivers reviews [books](http://sivers.org/book). I review games.
 
-By making this list, I improve my understanding of what makes me like a game.
-
 ### Navigation
 
 * [High art](#high-art)
