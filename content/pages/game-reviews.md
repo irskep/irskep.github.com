@@ -579,7 +579,7 @@ It's fun to watch old movies. It's less fun to do a thousand fetch quests.
 ### Uplink
 
 I got really into this for a couple of weeks in high school, but when I picked
-it up again it was boring and tedious.
+it up again last year it was boring and tedious.
 
 ### VVVVV
 
