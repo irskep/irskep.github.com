@@ -532,7 +532,7 @@ doing in here? They don't stand the test of time. They are boring and
 unbalanced by today's space combat standards.
 
 But making mods was amazing and fun, and why I learned so much about resource
-forks in Mac OS <= 9.
+forks in Mac OS ≤ 9.
 
 Despite my complaints about its dated combat, I haven't yet found a game that
 has the same kind of slow-paced space fight and enormous story. There's room
