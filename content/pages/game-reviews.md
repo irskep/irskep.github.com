@@ -558,6 +558,9 @@ Mediocre "early access" toy. Bad controls and bad UI. Try again in two years.
 
 Monotonous. There are better roguelikes.
 
+*After reading reviews of Grimrock, I'm convinced I should give it another
+shot.*
+
 ### Rochard
 
 Fun for a while, but the mechanics are pretty shallow.
