@@ -71,7 +71,9 @@ TYPOGRIFY = True
 
 THEME = 'theme'
 
-FIND_MAIN_PAGE_CATEGORY = lambda categories: [
-    articles for category, articles in categories
-    if category == 'Articles'
-][0]
+MAIN_PAGE_CATEGORY_NAME = 'Articles'
+def GET_MAIN_PAGE_ARTICLES(categories):
+    for category, articles in categories:
+        if category == MAIN_PAGE_CATEGORY_NAME:
+            return articles
+    return []

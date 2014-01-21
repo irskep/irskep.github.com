@@ -2,17 +2,21 @@
 {%- from "macros.html" import post_header with context %}
 {%- from "macros.html" import post_content with context %}
 
+  {%- if not category %}
+    {%- set category = MAIN_PAGE_CATEGORY_NAME %}
+    {%- set these_articles = GET_MAIN_PAGE_ARTICLES(
+      categories) %}
+  {%- else -%}
+    {%- set these_articles = articles_page.object_list %}
+  {%- endif %}
+
 {%- block content %}
   <section id="content">
 
     {%- block content_title %}
-      <!--<h2>Articles</h2>-->
+      <h1 class="category-title">{{ category }}</h1>
     {%- endblock %}
 
-    {%- set these_articles = articles_page.object_list %}
-    {%- if not category %}
-      {%- set these_articles = FIND_MAIN_PAGE_CATEGORY(categories) %}
-    {%- endif %}
     {%- set first_article = these_articles[0] %}
     {%- set article = first_article %}
     <article class="article featured-article">
