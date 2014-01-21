@@ -279,15 +279,14 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   }
 }
 
+// article h1 == page h2 (pages can have more subsections)
+.article h1, h1.category-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .article {
-  // article h1 == page h2 (pages can have more subsections)
-  h1 {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
+  h2 { font-size: 1.2rem; }
   .entry-content a { @include body-link-styles; }
 }
 
