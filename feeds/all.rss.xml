@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Steve Johnson’s Partial Creative Output</title><link>http://steveasleep.com/</link><description></description><atom:link href="http://steveasleep.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 02 Aug 2013 00:00:00 -0700</lastBuildDate><item><title>The New Dork Times</title><link>http://steveasleep.com/the-new-dork-times.html</link><description>&lt;p&gt;The best writing of my life was produced in 1997 when I was eight years old,
-sitting at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times.
-Although it ran for only nine issues published between 1997 and 1999, its
-biting social commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Steve Johnson’s Partial Creative Output</title><link>http://steveasleep.com/</link><description></description><atom:link href="http://steveasleep.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 02 Aug 2013 00:00:00 -0700</lastBuildDate><item><title>The New Dork Times</title><link>http://steveasleep.com/the-new-dork-times.html</link><description>&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
+ran for only nine issues published between 1997 and 1999, its biting social
+commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
 &lt;p&gt;Earlier this year I came across my personal archives of all nine issues of the
 New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
 years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I could only spare to hours from my normal archival duties of scanning bad
-comics I drew when I was 7, so please forgive some shortcuts I took with the
-layout and&amp;nbsp;styling.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Fri, 02 Aug 2013 00:00:00 -0700</pubDate><guid>tag:steveasleep.com,2013-08-02:the-new-dork-times.html</guid><category>humor</category><category>projects</category></item><item><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link>http://steveasleep.com/we-dreamers-postmortem.html</link><description>&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Johnson</dc:creator><pubDate>Fri, 02 Aug 2013 00:00:00 -0700</pubDate><guid>tag:steveasleep.com,2013-08-02:the-new-dork-times.html</guid><category>humor</category><category>projects</category></item><item><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link>http://steveasleep.com/we-dreamers-postmortem.html</link><description>&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
 &lt;a href="http://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; It may take a
 while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or&amp;nbsp;two.&lt;/p&gt;
