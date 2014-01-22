@@ -31,6 +31,7 @@ LINKS = (('The Buildy Blog', 'http://blog.playbuildy.com/'),)
 # Social widget
 SOCIAL = (
     ('Twitter', 'http://twitter.com/irskep'),
+    ('Last.fm', 'http://www.last.fm/user/irskep'),
     ('Stack Overflow', 'http://stackoverflow.com/users/8061/steve-johnson'),
     ('LinkedIn', 'http://www.linkedin.com/pub/steve-johnson/11/900/567'),
 )
