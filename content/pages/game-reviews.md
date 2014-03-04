@@ -550,7 +550,8 @@ in 3D.
 
 ### Hack, Slash, Loot
 
-Combat, story, and graphics all too simplistic.
+Combat, story, and graphics all too simplistic. Baby's First Roguelike. I am
+not a baby.
 
 ### Hammerfight
 
