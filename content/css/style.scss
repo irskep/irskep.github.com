@@ -12,7 +12,7 @@ $pageWidth: 32rem;
 $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
 $prePadding: 0.5rem;
-$pageComponentSpacing: 2rem;
+$pageComponentSpacing: 4rem;
 $headerVerticalSpacingTop: 1.5em;
 $headerVerticalSpacingBottom: 0.75em;
 $listVerticalSpacing: 0.5rem;
@@ -209,7 +209,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 // menu
 
 #menu {
-  margin-top: $pageComponentSpacing;
+  margin-top: 2rem;
   margin-bottom: $pageComponentSpacing;
 
   ul { @include clear-contents; }

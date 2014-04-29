@@ -112,7 +112,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 
 #menu {
   margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem; }
   #menu ul:after {
     clear: both;
     content: ".";
@@ -128,10 +128,10 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   margin-bottom: 1rem; }
 
 .featured-article {
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem; }
 
 #pagefooter {
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
   padding-top: 1rem; }
   #pagefooter .social-links {
