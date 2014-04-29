@@ -13,14 +13,7 @@ tutorial.
 
 The [pyglet programming guide][2] is a great resource, but it won't really help
 you if you've never written a game before. This tutorial will walk you through
-the steps of writing a simple Asteroids clone. This tutorial was also presented
-as a talk at [PyOhio][3]. If you just want a broad overview, you can watch the
-talk, which lasts about 40 minutes. Otherwise, you can read the text version,
-which is much more in-depth.
-
-<embed src="http://blip.tv/play/AYGa8XAC" type="application/x-shockwave-flash"
-width="480" height="350" allowscriptaccess="always"
-allowfullscreen="true"></embed>  
+the steps of writing a simple Asteroids clone.
   
 
 # Table of Contents
