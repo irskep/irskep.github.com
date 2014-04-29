@@ -31,6 +31,7 @@ LINKS = (('The Buildy Blog', 'http://blog.playbuildy.com/'),)
 # Social widget
 SOCIAL = (
     ('Twitter', 'http://twitter.com/irskep'),
+    ('Last.fm', 'http://www.last.fm/user/irskep'),
     ('Stack Overflow', 'http://stackoverflow.com/users/8061/steve-johnson'),
     ('LinkedIn', 'http://www.linkedin.com/pub/steve-johnson/11/900/567'),
 )
@@ -71,7 +72,9 @@ TYPOGRIFY = True
 
 THEME = 'theme'
 
-FIND_MAIN_PAGE_CATEGORY = lambda categories: [
-    articles for category, articles in categories
-    if category == 'Articles'
-][0]
+MAIN_PAGE_CATEGORY_NAME = 'Articles'
+def GET_MAIN_PAGE_ARTICLES(categories):
+    for category, articles in categories:
+        if category == MAIN_PAGE_CATEGORY_NAME:
+            return articles
+    return []

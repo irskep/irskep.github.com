@@ -32,8 +32,7 @@ help:
 	@echo '   make serve                   serve site at http://localhost:8000'
 	@echo '   make devserver               start/restart develop_server.sh    '
 	@echo '   make stopserver              stop local server                  '
-	@echo '   deploy-beta                  upload to /beta via gh-pages'
-	@echo '   deploy-prod                  upload to /via gh-pages'
+	@echo '   deploy	                   upload to /via gh-pages'
 	@echo '                                                                   '
 
 
@@ -76,11 +75,7 @@ compile-coffee:
 publish: compile-scss compile-coffee
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-deploy-beta: publish
-	ghp-import $(OUTPUTDIR)
-	git push beta gh-pages
-
-deploy-prod: publish
+deploy: publish
 	ghp-import $(OUTPUTDIR) -b master
 	git push origin master:master
 

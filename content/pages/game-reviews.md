@@ -80,7 +80,7 @@ Finished: 2x
 Plan to replay: no
 
 
-<a name="high-art"> </a>
+<a name="very-good"> </a>
 ## Very good
 
 (For some subset of people.)
@@ -322,6 +322,15 @@ Finished: doesn't matter
 
 Plan to replay: yes
 
+### The Swapper
+
+Mechanically simple puzzle platformer with stunning atmosphere, plot, and
+visuals. The developers made very good choices about where to spend their time.
+
+Finished: yes, 3 hours
+
+Plan to replay: no, once was enough
+
 ### Sword & Sworcery EP
 
 Dreamlike adventure game. The soundtrack makes it.
@@ -532,12 +541,17 @@ doing in here? They don't stand the test of time. They are boring and
 unbalanced by today's space combat standards.
 
 But making mods was amazing and fun, and why I learned so much about resource
-forks in Mac OS <= 9.
+forks in Mac OS ≤ 9.
 
 Despite my complaints about its dated combat, I haven't yet found a game that
 has the same kind of slow-paced space fight and enormous story. There's room
 for a game like that today, but it would probably need to have better AI and be
 in 3D.
+
+### Hack, Slash, Loot
+
+Combat, story, and graphics all too simplistic. Baby's First Roguelike. I am
+not a baby.
 
 ### Hammerfight
 
@@ -557,6 +571,9 @@ Mediocre "early access" toy. Bad controls and bad UI. Try again in two years.
 ### Legend of Grimrock
 
 Monotonous. There are better roguelikes.
+
+*After reading reviews of Grimrock, I'm convinced I should give it another
+shot.*
 
 ### Rochard
 
