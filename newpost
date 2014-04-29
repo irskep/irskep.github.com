@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+import os
+import re
+import sys
+from datetime import date
+
+
+title = sys.argv[1]
+slug = re.sub(r'[^\w\s-]', '', title.lower().replace(' ', '-'))
+
+fmt_kwargs = {
+  'title': title,
+  'date_string': date.today().strftime("%Y-%m-%d"),
+  'slug': slug,
+}
+
+filename = "{date_string}-{slug}.md".format(**fmt_kwargs)
+path = os.path.join('content', 'posts', filename)
+
+with open(path, 'w') as f:
+  f.write("""Title: {title}
+Category: Articles
+Tags: FIXME
+Slug: {slug}
+""".format(**fmt_kwargs))
+
+os.execlp('subl', 'subl', path)
