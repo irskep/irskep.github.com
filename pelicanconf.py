@@ -4,14 +4,10 @@ from __future__ import unicode_literals
 import sys
 sys.path.append('.')
 
-STATIC_PATHS = ['img', 'downloads', 'css', 'js']
-FILES_TO_COPY = (
-    ('css/style.css', 'css/style.css'),
-    ('CNAME', 'CNAME'),
-)
+STATIC_PATHS = ['img', 'downloads', 'css', 'js', 'css/style.css', 'CNAME']
 
 AUTHOR = u'Steve Johnson'
-SITENAME = u"Steve Johnson’s Partial Creative Output"
+SITENAME = u"Steve Johnson’s Web Presence"
 SITEURL = 'http://localhost:8000'
 
 DEFAULT_CATEGORY = 'Blog'
@@ -25,23 +21,10 @@ DATE_FORMATS = {
 # Feed generation is usually not desired when developing
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 
-# Blogroll
-LINKS = (('The Buildy Blog', 'http://blog.playbuildy.com/'),)
-
-# Social widget
-SOCIAL = (
-    ('Twitter', 'http://twitter.com/irskep'),
-    ('Last.fm', 'http://www.last.fm/user/irskep'),
-    ('Stack Overflow', 'http://stackoverflow.com/users/8061/steve-johnson'),
-    ('LinkedIn', 'http://www.linkedin.com/pub/steve-johnson/11/900/567'),
-)
-TWITTER_USERNAME = 'irskep'
-
 MENUITEMS = (
-    ('Articles', '/'),
-    ('Side Channel', '/side-channel'),
+    ('Read me', '/'),
     ('Games', '/games.html'),
-    ('Open Source', '/open-source.html'),
+    ('Open source', '/open-source.html'),
     ('Pyglet tutorial', '/pyglettutorial.html'),
 )
 
@@ -71,10 +54,3 @@ DEFAULT_PAGINATION = False
 TYPOGRIFY = True
 
 THEME = 'theme'
-
-MAIN_PAGE_CATEGORY_NAME = 'Articles'
-def GET_MAIN_PAGE_ARTICLES(categories):
-    for category, articles in categories:
-        if category == MAIN_PAGE_CATEGORY_NAME:
-            return articles
-    return []

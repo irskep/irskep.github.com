@@ -1,5 +1,5 @@
 Title: The First Programming Book I Ever Read
-Category: Articles
+Category: Crappy Articles
 Tags: programming
 
 Over the holidays someone gave me a copy of the first programming book I ever

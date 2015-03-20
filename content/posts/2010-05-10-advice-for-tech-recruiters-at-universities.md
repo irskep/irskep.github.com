@@ -1,5 +1,5 @@
 Title: Advice for Tech Recruiters at Universities
-Category: Articles
+Category: Crappy Articles
 Tags: recruiting, college
 
 I attended half a dozen information sessions by companies trying to hire

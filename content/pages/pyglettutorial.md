@@ -3,8 +3,9 @@ Tags: pyglet, tutorial
 Slug: pyglettutorial
 Date: 2009-06-23
 
-*This tutorial was revised and reformatted recently.
-[Email me](mailto:steve+pyglet@steveasleep.com) if you find any problems.*
+*This tutorial was written in 2009 and will not be updated. It remains online
+because the only thing worse than an out-of-date page is a dead link. I do not
+recommend learning pyglet anymore given its lack of maintenance.*
 
 Writing programs in [Python][1] is fun. Writing games is fun. **Writing games
 in Python** is fun! Unfortunately, tutorials to help people get started are
@@ -14,7 +15,7 @@ tutorial.
 The [pyglet programming guide][2] is a great resource, but it won't really help
 you if you've never written a game before. This tutorial will walk you through
 the steps of writing a simple Asteroids clone.
-  
+
 
 # Table of Contents
 

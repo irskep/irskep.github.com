@@ -5,16 +5,18 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 
     <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
 
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic&subset=latin,latin-ext' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="{{ SITEURL }}/static/css/reset.css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/static/css/pygments.css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/static/css/style.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/css/reset.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/css/pygments.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/css/style.css" />
 
+    <!--
     <meta charset="utf-8" />
     {% if FEED_ALL_ATOM %}
       <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
@@ -40,10 +42,11 @@
     {% if TAG_FEED_RSS and tag %}
       <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
+    -->
 
-    <script src="{{ SITEURL }}/static/js/hyphenate.js"></script>
+    <script src="{{ SITEURL }}/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="{{ SITEURL }}/static/js/main.js"></script>
+    <script src="{{ SITEURL }}/js/main.js"></script>
 
   {% endblock head %}
 </head>
@@ -54,7 +57,8 @@
       <h1>
         <a href="{{ SITEURL }}">
           <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
-          Steve Johnson&rsquo;s<br>partial creative output
+          <!--Steve Johnson&rsquo;s<br>partial creative output-->
+          Steve Johnson&rsquo;s<br>Web Presence
         </a>
       </h1>
     </header><!-- /#banner -->
@@ -81,9 +85,11 @@
     {% endblock %}
     <footer id="pagefooter" class="body">
       <div class="social-links">
+        <!--
         {% if FEED_ALL_RSS %}
           <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
         {% endif %}
+        -->
         <br>
         <a href="http://twitter.com/irskep">Twitter</a><br>
         <a href="http://www.last.fm/user/irskep">Last.fm</a><br>

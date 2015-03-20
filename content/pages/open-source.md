@@ -8,7 +8,8 @@ Slug: open-source
   working with Hadoop as measured by Github stars.
 * [Literally Canvas](http://literallycanvas.com) is an extensible HTML5 
   drawing widget. I'm trying to bring in-browser doodling to the masses in
-  terms of both developers and users.
+  terms of both developers and users. It's the first thing I've started that's
+  become reasonably popular.
 * [Tron](http://github.com/Yelp/tron) is a centralized system for
   managing periodic batch processes and services across a cluster. I
   maintained Tron for a while at Yelp and wrote much of the documentation.
