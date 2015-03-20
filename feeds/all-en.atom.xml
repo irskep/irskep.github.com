@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Partial Creative Output</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all-en.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2014-06-07T00:00:00-07:00</updated><entry><title>Important iOS 8 and Yosemite features eclipsed by other news</title><link href="http://steveasleep.com/wwdc-2014-notes.html" rel="alternate"></link><updated>2014-06-07T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-06-07:wwdc-2014-notes.html</id><summary type="html">&lt;p&gt;So much information was packed into this year&amp;#8217;s &lt;span class="caps"&gt;WWDC&lt;/span&gt; keynote that some cool
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all-en.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2014-06-07T00:00:00-07:00</updated><entry><title>Important iOS 8 and Yosemite features eclipsed by other news</title><link href="http://steveasleep.com/wwdc-2014-notes.html" rel="alternate"></link><updated>2014-06-07T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-06-07:wwdc-2014-notes.html</id><summary type="html">&lt;p&gt;So much information was packed into this year&amp;#8217;s &lt;span class="caps"&gt;WWDC&lt;/span&gt; keynote that some cool
 features aren&amp;#8217;t making it into the news. Swift is great and all, but here are
 some other things that excite&amp;nbsp;me.&lt;/p&gt;
 &lt;p&gt;First, JavaScript can now be JITed in web views outside Safari on iOS. That
@@ -305,7 +305,7 @@ these employers are (or if they&amp;#8217;re hiring), but we hope that the Caree
 will find them 2011.&lt;/strong&gt;&amp;#8221; – &lt;em&gt;Editorial&lt;/em&gt;&lt;/p&gt;</summary><category term="college"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><updated>2011-01-10T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
 nine years&amp;nbsp;old.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/static/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
 &lt;p&gt;The first thing you need to know is that since it was published in 1983, I
 didn&amp;#8217;t know how to find an interpreter for the code in 1999. All examples were
 run via thought experiment. Because of this fact, I think that this book did
@@ -498,15 +498,15 @@ hours writing detailed scripts for each level we planned to implement. We
 followed this process to the end, and it worked beautifully. We had a very
 slick&amp;nbsp;demo.&lt;/p&gt;
 &lt;p&gt;Here are some screenshots of the&amp;nbsp;game:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://steveasleep.com/static/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/static/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/static/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/static/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here are some of the stages of the game&amp;#8217;s artistic&amp;nbsp;development:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://steveasleep.com/static/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/static/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/static/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/static/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/static/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/static/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="lessons-learned"&gt;Lessons&amp;nbsp;Learned&lt;/h2&gt;
 &lt;p&gt;I had never been in a managerial position before. My experience organizing
 &lt;a href="http:/hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt; helped, but that was more cat herding
@@ -567,7 +567,7 @@ worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Kelsey did caricatures of the team for the credit sequence. Here&amp;#8217;s mine for you
 to compare to my photo at the top of this&amp;nbsp;page:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/static/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="gamedev college programming"></category></entry><entry><title>Advice for Tech Recruiters at Universities</title><link href="http://steveasleep.com/advice-for-tech-recruiters-at-universities.html" rel="alternate"></link><updated>2010-05-10T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-05-10:advice-for-tech-recruiters-at-universities.html</id><summary type="html">&lt;p&gt;I attended half a dozen information sessions by companies trying to hire
+&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="gamedev college programming"></category></entry><entry><title>Advice for Tech Recruiters at Universities</title><link href="http://steveasleep.com/advice-for-tech-recruiters-at-universities.html" rel="alternate"></link><updated>2010-05-10T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-05-10:advice-for-tech-recruiters-at-universities.html</id><summary type="html">&lt;p&gt;I attended half a dozen information sessions by companies trying to hire
 interns in the 2009-2010 academic year. Most of them were seeking the same
 thing: bright students with technical backgrounds, generally Computer Science
 majors. Some did it very effectively, with good presentations and knowledgeable

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Partial Creative Output</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/articles.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2014-06-07T00:00:00-07:00</updated><entry><title>Important iOS 8 and Yosemite features eclipsed by other news</title><link href="http://steveasleep.com/wwdc-2014-notes.html" rel="alternate"></link><updated>2014-06-07T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-06-07:wwdc-2014-notes.html</id><summary type="html">&lt;p&gt;So much information was packed into this year&amp;#8217;s &lt;span class="caps"&gt;WWDC&lt;/span&gt; keynote that some cool
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/articles.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2014-06-07T00:00:00-07:00</updated><entry><title>Important iOS 8 and Yosemite features eclipsed by other news</title><link href="http://steveasleep.com/wwdc-2014-notes.html" rel="alternate"></link><updated>2014-06-07T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-06-07:wwdc-2014-notes.html</id><summary type="html">&lt;p&gt;So much information was packed into this year&amp;#8217;s &lt;span class="caps"&gt;WWDC&lt;/span&gt; keynote that some cool
 features aren&amp;#8217;t making it into the news. Swift is great and all, but here are
 some other things that excite&amp;nbsp;me.&lt;/p&gt;
 &lt;p&gt;First, JavaScript can now be JITed in web views outside Safari on iOS. That
@@ -250,143 +250,7 @@ Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
 another round in August for&amp;nbsp;&lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="gamedev programming ludumdare"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><updated>2012-11-21T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-21:rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
 combination of technologies we use to render and display enormous zoomed out
 world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><updated>2012-11-14T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-14:1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><updated>2011-01-10T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
-read. In rereading it, I found almost as much as when I first experienced it at
-nine years&amp;nbsp;old.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/static/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
-&lt;p&gt;The first thing you need to know is that since it was published in 1983, I
-didn&amp;#8217;t know how to find an interpreter for the code in 1999. All examples were
-run via thought experiment. Because of this fact, I think that this book did
-more to get me excited about the idea of programming than it did to impart
-knowledge. In this way, I think it follows a higher-level version of the &amp;#8220;give
-a man a fish&amp;#8230;&amp;#8221;&amp;nbsp;saying.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This book will teach you how to write simple programs in &lt;span class="caps"&gt;BASIC&lt;/span&gt; for your
-computer. Its purpose, however, is not to make you a programmer. Its purpose
-is to help you understand computers, to think about how computers can help
-you in all kinds of ways, and to discover how much fun you can have when you
-learn how to talk to&amp;nbsp;computers.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="content"&gt;Content&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/strong&gt; explains how to write simple &lt;span class="caps"&gt;BASIC&lt;/span&gt; programs for
-The Apple &lt;span class="caps"&gt;II&lt;/span&gt;+/e, Atari 400/800, Commodore 64/&lt;span class="caps"&gt;PET&lt;/span&gt;/&lt;span class="caps"&gt;VIC&lt;/span&gt; 20, &lt;span class="caps"&gt;TI&lt;/span&gt; 99/4A, Timex
-Sinclair 1000, and &lt;span class="caps"&gt;TRS&lt;/span&gt;-80. (The programs still run in Chipmunk Basic.) The fact
-that such a book could be written for ten different platforms is a testament to
-the ubiquity of &lt;span class="caps"&gt;BASIC&lt;/span&gt; in personal computers at the time, but the book does
-spend a lot of time explaining special cases and how to rewrite the examples so
-that they run on some of the platforms. (Apparently the Timex Sinclair 1000 was
-an awful&amp;nbsp;machine.)&lt;/p&gt;
-&lt;p&gt;It begins with a 30-page chapter on how to type and use the prompts on the
-various platforms. Then the language is taught over ten chapters, with
-exercises at the end of each chapter. There is a final chapter with some
-example programs, and then appendices for reference, troubleshooting, editing,
-and information about computers in&amp;nbsp;general.&lt;/p&gt;
-&lt;p&gt;Here&amp;#8217;s a quick example to refresh your &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;memory:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; 
-&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;JUMP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt; 
-&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; 
-&lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;CLAP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt; 
-&lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; 
-&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; 
-&lt;span class="n"&gt;&lt;span class="caps"&gt;RUN&lt;/span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;After rereading the book cover to cover, I have only two new thoughts. First,
-that the author did a good job of conveying the joy of computing to young
-readers. Second, that the &lt;span class="caps"&gt;BASIC&lt;/span&gt; language was an awful mess but succeeded for
-very good&amp;nbsp;reasons.&lt;/p&gt;
-&lt;h2 id="review-positive"&gt;Review:&amp;nbsp;Positive&lt;/h2&gt;
-&lt;p&gt;This is a good book. I&amp;#8217;m glad I found it when I went looking for it. Here&amp;#8217;s an
-example that follows a description of what variables&amp;nbsp;are:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You can put variables in a program, like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;What will that program print? Run it and see if you guessed correctly. Notice
-that lines 10 and 20 don&amp;#8217;t make anything happen on the screen when you run
-the program. They tell the program to do something &lt;em&gt;inside&lt;/em&gt; the computer, but
-only the word &lt;span class="caps"&gt;PRINT&lt;/span&gt; makes a message appear on the&amp;nbsp;screen.&lt;/p&gt;
-&lt;p&gt;Now change lines 10 and 20 to give the variables some different&amp;nbsp;values.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It&amp;#8217;s a small, self-contained, understandable example with a concise, complete
-explanation and an invitation to experiment. In this way, it mirrors the style
-of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/index"&gt;Learn Python The Hard
-Way&lt;/a&gt;. It never blames the reader for
-being wrong, and in fact seems to encourage the reader to forgive his or her
-own mistakes while writing&amp;nbsp;programs.&lt;/p&gt;
-&lt;p&gt;So yes, it&amp;#8217;s a good book. But about this &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;thing&amp;#8230;&lt;/p&gt;
-&lt;h2 id="basic-sucked-but-worse-was-better"&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Sucked, But Worse Was&amp;nbsp;Better&lt;/h2&gt;
-&lt;p&gt;Seriously, what is this crap? Specifying a line number for each statement
-before the program is finished? &lt;span class="caps"&gt;REM&lt;/span&gt;? &lt;em&gt;No proper functions?&lt;/em&gt; How did anyone
-survive&amp;nbsp;this?&lt;/p&gt;
-&lt;p&gt;Oh, the alternative was to use assembly, or to slip into an &lt;span class="caps"&gt;AI&lt;/span&gt; laboratory.&amp;nbsp;Right.&lt;/p&gt;
-&lt;p&gt;The two great things about &lt;span class="caps"&gt;BASIC&lt;/span&gt; as it existed in personal computers was that
-it was &lt;em&gt;extremely&lt;/em&gt; simple, and it was &lt;em&gt;everywhere&lt;/em&gt;. Ault was able to describe
-almost the entire language with extensive examples in a hundred pages of large
-print, and those pages covered the vast majority of PCs on the market at the&amp;nbsp;time.&lt;/p&gt;
-&lt;p&gt;The reason I was able to understand the book without actually using a computer
-was because of the simplicity of &lt;span class="caps"&gt;BASIC&lt;/span&gt; and because of Ault&amp;#8217;s ability to explain
-it using terms no more complex than necessary. At this point I should mention
-that this book may not actually be the very first programming book I read, but
-it was certainly the first one I understood. I really don&amp;#8217;t&amp;nbsp;remember.&lt;/p&gt;
-&lt;h2 id="and-also-worse"&gt;&amp;#8230;And Also&amp;nbsp;Worse&lt;/h2&gt;
-&lt;p&gt;Before rereading this book, I had mostly forgotten what &lt;span class="caps"&gt;BASIC&lt;/span&gt; really was, and
-didn&amp;#8217;t necessarily agree with the statement that &lt;span class="caps"&gt;BASIC&lt;/span&gt; causes brain damage. Now
-I agree wholeheartedly, and I speak from experience. &lt;span class="caps"&gt;BASIC&lt;/span&gt; crippled me for&amp;nbsp;years.&lt;/p&gt;
-&lt;p&gt;At its core, &lt;span class="caps"&gt;BASIC&lt;/span&gt; is a crappy way to express a state machine. The syntax
-encourages tight, unreadable balls of spaghetti. &lt;code&gt;GOSUB&lt;/code&gt; is a poor way to break
-out functions. Most of the punctuation feels very ad&amp;nbsp;hoc.&lt;/p&gt;
-&lt;p&gt;I can&amp;#8217;t help but contrast this mess with Scheme. All other concerns aside,
-Scheme makes a great teaching language because there is almost no syntax and
-code is inherently hierarchical. Beginners simply learn new words. Everything
-else is&amp;nbsp;gravy.&lt;/p&gt;
-&lt;p&gt;But I didn&amp;#8217;t learn Scheme, I learned &lt;span class="caps"&gt;BASIC&lt;/span&gt; and stuck with it for about six
-years. I went from &lt;a href="http://www.truebasic.com/"&gt;TrueBASIC&lt;/a&gt; to &lt;a href="http://www.vellios.com/2010/06/06/basic-compiler-opensourced/"&gt;Visual
-MacStandardBasic&lt;/a&gt;
-to &lt;a href="http://web.archive.org/web/20080321015004/www.iit.edu/~sarimar/GDS/metal.html"&gt;&lt;span class="caps"&gt;METAL&lt;/span&gt;
-&lt;span class="caps"&gt;BASIC&lt;/span&gt;&lt;/a&gt;
-to &lt;a href="http://www.blitzmax.com/"&gt;BlitzMax&lt;/a&gt;. I would occasionally try to learn a
-new language, but would quickly become frustrated with the lack of easy-to-use
-IDEs and graphics libraries. (During this period I was writing nothing but&amp;nbsp;games.)&lt;/p&gt;
-&lt;p&gt;Languages like &lt;span class="caps"&gt;METAL&lt;/span&gt; &lt;span class="caps"&gt;BASIC&lt;/span&gt; had few features and libraries, but for me that was
-as much of a strength as it was a weakness. Rather than spending hours
-searching for which giant package to import, I could browse a complete list of
-commands less than twenty pages long to find what I needed, modules and
-namespaces be damned. When I was done writing a game, I could click &amp;#8220;Compile&amp;#8221;
-and email it to my friends instead of asking them to download Joe Shmoe Player
-3000 or tearing my hair out over config files. (For this reason, I think
-Processing and BlitzMax are currently the best platforms to learn game
-programming&amp;nbsp;with.)&lt;/p&gt;
-&lt;p&gt;I spent so much time in the game bubble that I missed out on many early
-opportunities to learn new language&amp;nbsp;concepts.&lt;/p&gt;
-&lt;h2 id="what-everyone-knows-is-wrong-today"&gt;What Everyone Knows Is Wrong&amp;nbsp;Today&lt;/h2&gt;
-&lt;p&gt;Today&amp;#8217;s popular languages are objectively better than &lt;span class="caps"&gt;BASIC&lt;/span&gt; in every way.
-Features, syntax, libraries, the works. But for a kid who wants to write games
-by typing into a window and clicking &lt;span class="caps"&gt;COMPILE&lt;/span&gt; or &lt;span class="caps"&gt;RUN&lt;/span&gt;, the language options are
-limited to Processing, BlitzMax, and whatever GameMaker uses. None of these
-are real-world languages, so anyone starting out with them will not have a
-smooth transition to the next stage in their development as a master of&amp;nbsp;technology.&lt;/p&gt;
-&lt;p&gt;I won&amp;#8217;t bother rehashing what others have said about this problem or yearn for
-the days of the &lt;span class="caps"&gt;BASIC&lt;/span&gt;-prompt-as-main-interface. I&amp;#8217;ll just say this: make better
-tools, write more books and&amp;nbsp;tutorials.&lt;/p&gt;
-&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://www.inventwithpython.com/"&gt;Invent Your Own Computer Games with Python&lt;/a&gt;
-is comparable to &lt;em&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/em&gt;. Better, even. Python&amp;#8217;s tools are
-not ideal for children, but they are good enough to teach programming&amp;nbsp;with.&lt;/p&gt;
-&lt;p&gt;Here are some ways to create games with a good write/run/distribute tool, but
-not necessarily with good documentation for those new to&amp;nbsp;programming:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.processing.org/"&gt;Processing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blitzmax.com/"&gt;BlitzMax&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.yoyogames.com/make"&gt;GameMaker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
 Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
@@ -446,15 +310,15 @@ hours writing detailed scripts for each level we planned to implement. We
 followed this process to the end, and it worked beautifully. We had a very
 slick&amp;nbsp;demo.&lt;/p&gt;
 &lt;p&gt;Here are some screenshots of the&amp;nbsp;game:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://steveasleep.com/static/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/static/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/static/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/static/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here are some of the stages of the game&amp;#8217;s artistic&amp;nbsp;development:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://steveasleep.com/static/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/static/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/static/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/static/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/static/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/static/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/static/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="lessons-learned"&gt;Lessons&amp;nbsp;Learned&lt;/h2&gt;
 &lt;p&gt;I had never been in a managerial position before. My experience organizing
 &lt;a href="http:/hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt; helped, but that was more cat herding
@@ -515,74 +379,4 @@ worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Kelsey did caricatures of the team for the credit sequence. Here&amp;#8217;s mine for you
 to compare to my photo at the top of this&amp;nbsp;page:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/static/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="gamedev college programming"></category></entry><entry><title>Advice for Tech Recruiters at Universities</title><link href="http://steveasleep.com/advice-for-tech-recruiters-at-universities.html" rel="alternate"></link><updated>2010-05-10T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-05-10:advice-for-tech-recruiters-at-universities.html</id><summary type="html">&lt;p&gt;I attended half a dozen information sessions by companies trying to hire
-interns in the 2009-2010 academic year. Most of them were seeking the same
-thing: bright students with technical backgrounds, generally Computer Science
-majors. Some did it very effectively, with good presentations and knowledgeable
-representatives who could answer questions and give advice. Others did little
-to impress or inform, leaving students with bad impressions. At my school,
-there are far more open positions than there are students qualified or willing
-to fill them, so companies really have to market themselves in order to attract
-good&amp;nbsp;employees.&lt;/p&gt;
-&lt;p&gt;I don&amp;#8217;t think a bad info session is necessarily an indicator of a bad company.
-An info session can do good for both the student and the company, but
-ultimately it is like a résumé: uneventful unless you fail. As a student who
-has been looking for a new job every year for the past three years, here are
-some requests I have for companies giving info sessions on college campuses
-with the intention of making them more helpful for&amp;nbsp;everyone.&lt;/p&gt;
-&lt;h2 id="send-an-engineer"&gt;Send an&amp;nbsp;Engineer&lt;/h2&gt;
-&lt;p&gt;The most frustrating aspect of many info sessions is the absence of a person
-who can answer questions about the day-to-day activities of software developers
-at the company. Since software engineering is a discipline in which it is
-common for interns to do work comparable to work that full time employees do,
-it is important for us to be able to ask questions about the nature of that
-work and get answers formed from experience. If I can&amp;#8217;t ask about your
-development process, testing methods, software and system architecture, and
-office culture, then how can I distinguish you from other companies who make
-similar&amp;nbsp;products?&lt;/p&gt;
-&lt;h2 id="know-your-product"&gt;Know Your&amp;nbsp;Product&lt;/h2&gt;
-&lt;p&gt;I am surprised when I see recruiters falter at basic questions about products
-or demos, but it happens often enough that it almost shouldn&amp;#8217;t be a surprise
-anymore. Even if there isn&amp;#8217;t an engineer present, recruiters should be
-expecting certain kinds of questions from the tech-oriented audience that they
-intentionally attracted. I am referring to queries about features of the
-product, basic back end information, and future&amp;nbsp;plans.&lt;/p&gt;
-&lt;h2 id="dont-focus-on-the-perks"&gt;Don&amp;#8217;t Focus on the&amp;nbsp;Perks&lt;/h2&gt;
-&lt;p&gt;Yes, college students like to party. But we don&amp;#8217;t like to party because the
-party is some kind of sacred ritual, we like it because our friends are there.
-If your office parties are great, then it must be because of the people.
-Instead of talking about parties, talk about people! Focusing on perks like
-these is like saying that flying is better than driving because of the
-complementary&amp;nbsp;drinks.&lt;/p&gt;
-&lt;p&gt;Some kinds of perks, like location, are similar across most companies. We
-understand that your company is located in a beautiful city with history and
-landmarks, but so are most other companies (except Epic). Isn&amp;#8217;t America&amp;nbsp;wonderful?&lt;/p&gt;
-&lt;h2 id="dont-force-hipness"&gt;Don&amp;#8217;t Force&amp;nbsp;Hipness&lt;/h2&gt;
-&lt;p&gt;Tasteful graphic design and informal attitudes are wonderful, but please back
-it up with substance. Words with extra Zs, overuse of &amp;#8220;Gen Y lingo,&amp;#8221; and overt
-ego stroking can make your pitch seem a little creepy. Do you really want to
-attract the people who respond best when addressed as&amp;nbsp;&amp;#8220;Genius?&amp;#8221;&lt;/p&gt;
-&lt;h2 id="get-me-invested-in-your-company"&gt;Get Me Invested In Your&amp;nbsp;Company&lt;/h2&gt;
-&lt;p&gt;During the academic year, we work long hours and stretch our minds to the
-breaking point. We do this because our work is crucial to our lives and we are
-surrounded by people who are working as hard as we are. We can put this energy
-and motivation into your company, but it&amp;#8217;s not free. You need to get us&amp;nbsp;invested.&lt;/p&gt;
-&lt;p&gt;What does your company make? What is special about how you make it? How is your
-company changing the world? Why is your team uniquely amazing? Knowing the
-answers to these questions will help us understand why we should respect you
-and desire to work with you. When we do come to work for you, that storm of
-motivation will be channeled directly into your&amp;nbsp;products.&lt;/p&gt;
-&lt;h2 id="tell-me-what-ill-learn"&gt;Tell Me What I&amp;#8217;ll&amp;nbsp;Learn&lt;/h2&gt;
-&lt;p&gt;Many recruiters seem to think that all students are after is a paycheck,
-parties, and &amp;#8220;work experience.&amp;#8221; This is not the case at all. Keep in mind why
-we are in college: to set us up for success after graduation. If I think
-working for you would hold me back intellectually, then why would I work for&amp;nbsp;you?&lt;/p&gt;
-&lt;h2 id="teach-me-something"&gt;Teach Me&amp;nbsp;Something&lt;/h2&gt;
-&lt;p&gt;The companies that are most sought after by students are the ones who offer
-more than just a sales pitch. If you give a workshop, presentation, or
-demonstration of a piece of technology your company uses, you may attract more
-students who are interested in learning more about that technology and would be
-a good fit for your company. In addition, you showcase the technical prowess of
-your company and the knowledge of the students&amp;#8217; potential future&amp;nbsp;coworkers.&lt;/p&gt;
-&lt;p&gt;That&amp;#8217;s all for now! If you&amp;#8217;re coming to Case Western, be sure to get in touch
-with the &lt;a href="http://hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt;.&lt;/p&gt;</summary><category term="recruiting"></category><category term="college"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="gamedev college programming"></category></entry></feed>

@@ -210,7 +210,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 
 #menu {
   margin-top: 2rem;
-  margin-bottom: $pageComponentSpacing;
+  margin-bottom: 2rem;
 
   ul { @include clear-contents; }
 

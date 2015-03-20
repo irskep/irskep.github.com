@@ -112,7 +112,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 
 #menu {
   margin-top: 2rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
   #menu ul:after {
     clear: both;
     content: ".";
