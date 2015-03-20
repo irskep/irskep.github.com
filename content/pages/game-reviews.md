@@ -1,7 +1,7 @@
 Title: Very short game reviews
 Slug: game-reviews
 
-Derek Sivers reviews [books](http://sivers.org/book). I review games.
+I write these down so I don't bother my friends with them.
 
 ### Navigation
 
@@ -13,9 +13,6 @@ Derek Sivers reviews [books](http://sivers.org/book). I review games.
 
 <a name="high-art"> </a>
 ## High art
-
-(The best part is, most of these are at least a year or two old, so they go on
-sale often.)
 
 ### Bastion
 
@@ -58,6 +55,16 @@ Much better with a controller.
 Finished: yes, and yes. And yes. (12 hours)
 
 Plan to replay: maybe in five years
+
+### Dungeon of the Endless
+
+Some of the most original, yet familiar gameplay I've ever seen. Despite it
+being "smaller," I've played this game more than Endless Legend, the 4X game
+from the same studio.
+
+Finished: see FTL
+
+Plan to replay: 55 hours and counting
 
 ### Rogue Legacy
 
@@ -145,6 +152,15 @@ keep me engaged.
 Finished: no
 
 Plan to replay: no
+
+### Creeper World 3
+
+A real-time strategy game about graphs. It is intensely nerdy, explores its
+whole gameplay idea space, and is pretty damn fun.
+
+Finished: no
+
+Plan to replay: yes
 
 ### Darwinia
 
@@ -295,6 +311,16 @@ Finished: yes
 
 Plan to replay: maybe in five years
 
+### Shovel Knight
+
+Among the glut of polished indie platformers, this one stands out. I think of
+it as Rogue Legacy with handmade levels. If I had the time for twitchy games,
+I'd play more of this.
+
+Finished: no
+
+Plan to replay: maybe
+
 ### Solar 2
 
 For once, a physics-based game I actually like! Utterly charming. The final
@@ -344,6 +370,13 @@ This is a platformer, but it's also art.
 Finished: yes, 61m
 
 Plan to replay: no
+
+### Trace Vector
+
+I'm a sucker for well-made retro arcade games. Trace Vector is simple,
+original, and pretty.
+
+Finished: no, but I will.
 
 ### The Walking Dead
 
@@ -501,6 +534,11 @@ Maybe it's more fun on a phone. I played it on a Mac.
 Controller setup is bad and not configurable. (I hate D-pads.) Keyboard control
 is awkward. As a fan of Super Hexagon, I can see myself getting into this a lot
 for a week or two, but without good controls I can't.
+
+### The Bridge
+
+The art style is interesting, but it's slow and lacks variety in gameplay or
+graphics.
 
 ### Broken Sword 1: Shadow of the Templars
 
