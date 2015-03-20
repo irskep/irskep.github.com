@@ -26,6 +26,7 @@ MENUITEMS = (
     ('Games', '/games.html'),
     ('Open source', '/open-source.html'),
     ('Pyglet tutorial', '/pyglettutorial.html'),
+    ('The Nest', 'http://thenestmusic.com'),
 )
 
 DEFAULT_PAGINATION = False
