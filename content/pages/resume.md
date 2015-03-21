@@ -1,51 +1,42 @@
 Title: Résumé
-Date: 2012-09-01
+Date: 2015-03-20
+no_header: True
 
-**[Print Version](http://dl.dropbox.com/u/360865/Stephen%20Johnson%20Resume.pdf)**
+*I updated this recently; single-page print version forthcoming.*
 
-### Education
+# What I want
 
-B.S. and M.S. in Computer Science from Case Western Reserve University  
-(2011 and 2012 respectively, GPA 3.66)
+I want to make something people love and fight the gradual decline of society.
 
-### Day Jobs
+# Experience
 
-**Yelp, Inc:** Spam Warrior, May 2011 - Present
+## Game & web developer, [Buildy](http://playbuild.com) — 2012-present
 
-* Major contributions to [mrjob](http://www.github.com/yelp/mrjob) framework (run Python MapReduce jobs on Hadoop or Amazon Elastic MapReduce)
-* Co-maintainer of [Tron](http://www.github.com/yelp/tron) distributed batch scheduler
-* Improved batch job infrastructure for cost and productivity benefits
+Designed and developed an HTML5 game about building creatively in an isometric world. Contributed to game design. Worked with server-side Python, JavaScript, Salt Stack, nearly every HTML5 technology, React, web page performance, more JavaScript, UI design, Pyramid-based admin site, SQLAlchemy, iOS (Obj-C and Swift), large codebase evolution, self-awareness, humility.
 
-**Apple, Inc:** Intern, Objective-C Runtime Team, Summer 2010
+## Maintainer, [Literally Canvas](http://literallycanvas.com) — 2012-present
 
-* Implemented new runtime analysis tools for Xcode Instruments and used them to uncover bugs in software under development
+Designed, implemented, and documented an HTML5-based drawing tool that can be used as a JavaScript library. Worked as a freelancer to add features when approached.
 
-**MIMvista:** Intern, Summer 2009
+## Spam warrior, [Yelp](http://yelp.com) — 2011-2012
 
-* Prototyped new product "[MIMcloud](http://www.mimcloud.com/)" in Grails to allow clinicians and patients to store and share medical image data securely
-* Developed beta version of MIMcloud for Google App Engine, including Amazon S3 integration, Java applet, HTML, CSS, and Javascript
+Worked on mrjob, the leading Python framework for writing Hadoop jobs, eventually becoming the primary maintainer. Developed MapReduce-based spam filters. Created a new admin web app for the spam team. Briefly maintained the Tron distributed batch scheduler. Fought with Amazon Web Services a lot.
 
-### Buzzwords
+## iOS developer, Cooper Legal Group — 2011 & 2015
 
-**Languages:** Python 2, Python 3, Go, C, Objective-C, Java  
-**Frameworks:** Cocoa (iOS and Mac OS X), Django, Pyramid, Google App Engine  
-**Technologies:** HTML/CSS, OpenGL, SQL, Hadoop, Amazon Web Services (S3, EMR)  
+Wrote an iPad app to browse the US Patent Office and view/manage individual documents. Began working on a new version from scratch in 2015. (Freelance both times.)
 
-### Potpourri
+## Obj-C Runtime Intern, Apple — 2010
+Implemented a new runtime analysis tool for Xcode Instruments and used it to uncover bugs in software under development. The visual object graph in the Leaks instrument resembles a simplified version of the project, though I doubt it’s the same code.
 
-**[Web Presence](http://www.steveasleep.com):** Project showcase built on Google App Engine with Github and Posterous integration; regularly updated blog with original content
+## Hobby game development — 2003-Present
 
-**PathCase for iPad (Master's Thesis):** Designed and implemented touch-based interface for viewing metabolic pathway graphs
+Wrote about a dozen games of varying size in BASIC, Python, and JavaScript. See [Games](/games.html) for details.
 
-**[Space Train](http://www.steveasleep.com/spacetrain)**
+# Education
 
-* Managed 3 programmers and 7 artists in 3-month adventure game project
-* Designed event-driven point-and-click adventure game engine with scripting API and graphical level editor
+Case Western Reserve University, Cleveland, Ohio — B.S. & M.S. in Computer Science, 2012
 
-**Community**
+# Proficiencies
 
-* Co-organizer and regular speaker for CWRU Hacker Society, which hosts weekly tech talks and fosters collaboration between members on projects (2008-2012)
-* Contributions to open source projects [Kod](http://kodapp.com/), [boto](https://github.com/boto/boto), [mrjob](https://github.com/yelp/mrjob), [Tron](https://github.com/yelp/tron), and [Löve2D](https://love2d.org/)
-* Author of popular Python game programming tutorial, speaker at PyOhio 2009
-* Taught 3-month game programming course for high school students
-* Regular participant in [uDevGames](http://www.udevgames.com/) and [Ludum Dare](http://ludumdare.com/compo/) game programming competitions
+Python, JavaScript, Objective-C, and Swift. Any given Python web framework, though I favor Pyramid. Amazon Web Services, particularly S3 and Elastic MapReduce.  MySQL. Mac OS X, Linux. Writing, and a compulsion to document. Willingness to learn. Playing drums and bass guitar.

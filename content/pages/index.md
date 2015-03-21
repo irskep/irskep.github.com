@@ -3,6 +3,7 @@ URL:
 save_as: index.html
 Date: 2015-03-19
 Slug: changelog
+no_header: True
 
 # Writing
 

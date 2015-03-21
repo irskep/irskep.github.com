@@ -6,7 +6,9 @@
 {% block content %}
   <section id="content" class="body">
     <article class="page">
-      {{ post_header(page) }}
+      {% if not page.metadata.no_header %}
+        {{ post_header(page) }}
+      {% endif %}
       <div class="page-content hyphenate">
         {% import 'translations.html' as translations with context %}
         {{ translations.translations_for(page) }}
