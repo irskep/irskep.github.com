@@ -2,7 +2,7 @@ Title: Résumé
 Date: 2015-03-20
 no_header: True
 
-*I updated this recently; single-page print version forthcoming.*
+[PDF version](/downloads/Steve_Johnson_resume.pdf)
 
 # What I want
 
@@ -12,7 +12,7 @@ I want to make something people love and fight the gradual decline of society.
 
 ## Game & web developer, [Buildy](http://playbuild.com) — 2012-present
 
-Designed and developed an HTML5 game about building creatively in an isometric world. Contributed to game design. Worked with server-side Python, JavaScript, Salt Stack, nearly every HTML5 technology, React, web page performance, more JavaScript, UI design, Pyramid-based admin site, SQLAlchemy, iOS (Obj-C and Swift), large codebase evolution, self-awareness, humility.
+Developed an HTML5 game about building creatively in an isometric world. Contributed to game and UI design. Worked with server-side Python, JavaScript, Salt Stack, nearly every HTML5 technology, React.js, web page performance, more JavaScript, Pyramid-based admin site, SQLAlchemy, iOS (Obj-C and Swift), large codebase evolution, self-awareness, humility.
 
 ## Maintainer, [Literally Canvas](http://literallycanvas.com) — 2012-present
 
@@ -26,10 +26,10 @@ Worked on mrjob, the leading Python framework for writing Hadoop jobs, eventuall
 
 Wrote an iPad app to browse the US Patent Office and view/manage individual documents. Began working on a new version from scratch in 2015. (Freelance both times.)
 
-## Obj-C Runtime Intern, Apple — 2010
+## Obj-C Runtime intern, Apple — 2010
 Implemented a new runtime analysis tool for Xcode Instruments and used it to uncover bugs in software under development. The visual object graph in the Leaks instrument resembles a simplified version of the project, though I doubt it’s the same code.
 
-## Hobby game development — 2003-Present
+## Hobbist game developer — 2003-Present
 
 Wrote about a dozen games of varying size in BASIC, Python, and JavaScript. See [Games](/games.html) for details.
 
