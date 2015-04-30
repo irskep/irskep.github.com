@@ -35,7 +35,9 @@ I don't maintain a blog, but I do have...
 
 # History
 
-2015-04-20: The Nest EP will be released
+2015-04-25: [Slam Jamsen's Salvage Operation EP](http://slamjamsen.bandcamp.com) released
+
+2015-04-20: [The Nest EP](http://jams.thenestmusic.com) released
 
 2015-03-19: Replaced barren blog with changelog
 
