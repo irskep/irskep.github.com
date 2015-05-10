@@ -12,7 +12,11 @@ I want to make something people love and fight the gradual decline of society.
 
 ## Game & web developer, [Buildy](http://playbuild.com) — 2012-present
 
-Developed an HTML5 game about building creatively in an isometric world. Contributed to game and UI design. Worked with server-side Python, JavaScript, Salt Stack, nearly every HTML5 technology, React.js, web page performance, more JavaScript, Pyramid-based admin site, SQLAlchemy, iOS (Obj-C and Swift), large codebase evolution, self-awareness, humility.
+Developed an HTML5 game about building creatively in an isometric world.
+Contributed to game and UI design. Worked with server-side Python, JavaScript,
+Salt Stack, nearly every HTML5 technology, React.js, web page performance, more
+JavaScript, Pyramid-based admin site, SQLAlchemy, iOS (Obj-C and Swift),
+evolution of a large codebase over time.
 
 ## Maintainer, [Literally Canvas](http://literallycanvas.com) — 2012-present
 
