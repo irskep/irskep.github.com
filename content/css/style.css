@@ -51,8 +51,11 @@ pre {
 
 article ul {
   list-style-type: disc; }
-  article ul li {
-    margin-bottom: 0.5rem; }
+
+article li {
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem; }
 
 article iframe, table {
   margin-bottom: 0.75rem; }
@@ -188,3 +191,5 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   color: #3c3c8c; }
   .page .page-content a:hover {
     color: #5050fa; }
+
+/*# sourceMappingURL=style.css.map */
