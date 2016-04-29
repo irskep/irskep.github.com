@@ -4,9 +4,9 @@ canvas {
 
 /* base styles */
 html {
-  font-size: 120%;
-  line-height: 135%;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 115%;
+  line-height: 140%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   background-color: #f0f0f0;
   color: #282828; }
@@ -73,7 +73,7 @@ p {
 
 article blockquote {
   margin-left: 2em;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.2rem; }
@@ -95,7 +95,7 @@ article blockquote {
 /* layout */
 #pagecontainer {
   width: 100%;
-  max-width: 32rem;
+  max-width: 36rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem; }
@@ -152,17 +152,14 @@ header#banner, nav#menu, section#content, footer#pagefooter {
     visibility: hidden; }
   .article-header .entry-title {
     width: 100%;
-    max-width: 20rem;
-    float: left;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.0rem;
     font-weight: normal; }
   .article-header .post-info time {
     display: block;
-    float: right;
     font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: normal; }
+    font-weight: normal;
+    font-size: 80%; }
 
 .article h1, h1.category-title {
   font-size: 1.2rem;
