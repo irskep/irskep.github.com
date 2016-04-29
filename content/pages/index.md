@@ -23,6 +23,8 @@ I don't maintain a blog, but I do have...
 
 ## Other stuff
 
+[Announcement of the Computer Words project](/computer-words-announcement.html)
+
 [Account of a trip I took to Italy to teach mrjob](/teaching-in-turin.html)
 
 [The New Dork Times](http://steveasleep.com/newdorktimes/)
