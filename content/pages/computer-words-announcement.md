@@ -10,7 +10,7 @@ like to be understood. Documentation is what takes software from “something
 `@irskep` put on GitHub” to something you can actually use.
 
 But I’m not happy with the available tools. Open source documentation for young
-projects tends to fall into one of three modes if the have it at all:
+projects tends to fall into one of three modes if they have it at all:
 
 1. A GitHub wiki
 2. A directory of Markdown files
