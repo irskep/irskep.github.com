@@ -1,6 +1,6 @@
 Title: Why I wrote a new documentation system, and why you might like it
 Tags: computer-words
-Slug: computer-words
+Slug: computer-words-announcement
 Date: 2016-04-29
 
 TL;DR [Computer Words](http://steveasleep.com/computerwords)
