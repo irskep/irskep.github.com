@@ -67,25 +67,49 @@
         
 
         <p><span class="caps">TL</span>;<span class="caps">DR</span> <a href="http://steveasleep.com/computerwords">Computer&nbsp;Words</a></p>
-<p>I write a lot of documentation. I do it for two reasons: I like writing, and I like to be understood. Documentation is what takes software from “something @irskep put on GitHub” to something you can actually&nbsp;use.</p>
-<p>But I’m not happy with the available tools. Open source documentation for young projects tends to fall into one of three modes if the have it at&nbsp;all:</p>
+<p>I write a lot of documentation. I do it for two reasons: I like writing, and I
+like to be understood. Documentation is what takes software from “something
+<code>@irskep</code> put on GitHub” to something you can actually&nbsp;use.</p>
+<p>But I’m not happy with the available tools. Open source documentation for young
+projects tends to fall into one of three modes if the have it at&nbsp;all:</p>
 <ol>
 <li>A GitHub&nbsp;wiki</li>
 <li>A directory of Markdown&nbsp;files</li>
-<li>A proper web site, but requires a tool no one wants to install or a syntax no one knows, except one&nbsp;maintainer</li>
+<li>A proper web site, but requires a tool no one wants to install or a syntax
+   no one knows, except one&nbsp;maintainer</li>
 </ol>
-<p>Some ecosystems have good, fairly well known tools (see Python and Sphinx), but with the prevalence of Markdown and the convenience of hosting Markdown files on GitHub, I suspect people have been tending toward the solutions with less&nbsp;friction.</p>
-<p>I want it to be easier to produce good documentation sites (without GitHub branding), with a bare-minimum learning curve and a sky&#8217;s-the-limit plugin architecture, so that more projects have  better&nbsp;documentation.</p>
-<p>I think I&#8217;ve succeeded. <a href="http://steveasleep.com/computerwords">Computer Words</a> is a tool written in Python 3 that lets you turn your <a href="https://github.com/irskep/computerwords/tree/master/docs">directory of Markdown files</a> into a <a href="http://steveasleep.com/computerwords">beautiful web site</a>. It vaguely resembles <a href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> in its design, so it has the potential for powerful plugins, but I did my best to keep it small and easy to&nbsp;use.</p>
+<p>Some ecosystems have good, fairly well known tools (see Python and Sphinx), but
+with the prevalence of Markdown and the convenience of hosting Markdown files
+on GitHub, I suspect people have been tending toward the solutions with less&nbsp;friction.</p>
+<p>I want it to be easier to produce good documentation sites (without GitHub
+branding), with a bare-minimum learning curve and a sky&#8217;s-the-limit plugin
+architecture, so that more projects have  better&nbsp;documentation.</p>
+<p>I think I&#8217;ve succeeded. <a href="http://steveasleep.com/computerwords">Computer Words</a>
+is a tool written in Python 3 that lets you turn your <a href="https://github.com/irskep/computerwords/tree/master/docs">directory of Markdown
+files</a> into a
+<a href="http://steveasleep.com/computerwords">beautiful web site</a>. It vaguely
+resembles <a href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> in its design, so it
+has the potential for powerful plugins, but I did my best to keep it small and
+easy to&nbsp;use.</p>
 <p>If your docs are currently in Markdown, these features might interest&nbsp;you:</p>
 <ul>
-<li>All extensions use <span class="caps">HTML</span> tag syntax, so your editor&#8217;s syntax highlighting won&#8217;t break. Other tools may or may not like it, depending on how they parse <span class="caps">HTML</span> within&nbsp;Markdown.</li>
-<li>Semantic linking. Rather than baking an <span class="caps">HTML</span> reference into your links, define a <code>&lt;heading-alias name="blah" /&gt;</code> above any heading and insert a link to that heading with the correct name as <code>&lt;heading-link name="blah" /&gt;</code>.</li>
+<li>All extensions use <span class="caps">HTML</span> tag syntax, so your editor&#8217;s syntax highlighting
+  won&#8217;t break. Other tools may or may not like it, depending on how they parse <span class="caps">HTML</span> within&nbsp;Markdown.</li>
+<li>Semantic linking. Rather than baking an <span class="caps">HTML</span> reference into your links,
+  define a <code>&lt;heading-alias name="blah" /&gt;</code> above any heading and insert a link
+  to that heading with the correct name as <code>&lt;heading-link name="blah" /&gt;</code>.</li>
 <li>Automatic multi-document table of contents auto-generated from your&nbsp;headings.</li>
-<li>A reasonable configuration can be as short as 4 obvious lines copied from the Computer Words home&nbsp;page.</li>
+<li>A reasonable configuration can be as short as 4 obvious lines copied from the
+  Computer Words home&nbsp;page.</li>
 </ul>
-<p>If you want to auto-generate docs from a programming language besides Python, and you are willing to write a docstring parser for your language (in your language!), I would love to help you. The interchange format is very&nbsp;simple.</p>
-<p>If you currently use Sphinx and reStructuredText, you should probably keep doing that, but you might also want to read the <a href="http://steveasleep.com/computerwords/related_work.html">Related Work</a> and <a href="http://steveasleep.com/computerwords/faq.html">Frequently Anticipated Criticisms</a> sections of the&nbsp;docs.</p>
+<p>If you want to auto-generate docs from a programming language besides Python,
+and you are willing to write a docstring parser for your language (in your
+language!), I would love to help you. The interchange format is very&nbsp;simple.</p>
+<p>If you currently use Sphinx and reStructuredText, you should probably keep
+doing that, but you might also want to read the <a href="http://steveasleep.com/computerwords/related_work.html">Related
+Work</a> and <a href="http://steveasleep.com/computerwords/faq.html">Frequently
+Anticipated Criticisms</a> sections
+of the&nbsp;docs.</p>
       </div>
     </article>
   </section>

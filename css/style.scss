@@ -137,10 +137,12 @@ pre {
 
 article ul {
   list-style-type: disc;
+}
 
-  li {
-    margin-bottom: $listVerticalSpacing;
-  }
+article li {
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: $listVerticalSpacing;
 }
 
 article iframe, table {
