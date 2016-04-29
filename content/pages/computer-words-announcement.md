@@ -17,7 +17,7 @@ Some ecosystems have good, fairly well known tools (see Python and Sphinx), but 
 
 I want it to be easier to produce good documentation sites (without GitHub branding), with a bare-minimum learning curve and a sky's-the-limit plugin architecture, so that more projects have  better documentation.
 
-I think I've succeeded. [Computer Words](http://steveasleep.com/computerwords) is a tool written in Python 3 that lets you turn your [directory of Markdown files](https://github.com/irskep/computerwords/tree/master/docs) into a [beautiful web site]([Computer Words](http://steveasleep.com/computerwords). It vaguely resembles [Sphinx](http://www.sphinx-doc.org/en/stable/) in its design, so it has the potential for powerful plugins, but I did my best to keep it small and easy to use.
+I think I've succeeded. [Computer Words](http://steveasleep.com/computerwords) is a tool written in Python 3 that lets you turn your [directory of Markdown files](https://github.com/irskep/computerwords/tree/master/docs) into a [beautiful web site](http://steveasleep.com/computerwords). It vaguely resembles [Sphinx](http://www.sphinx-doc.org/en/stable/) in its design, so it has the potential for powerful plugins, but I did my best to keep it small and easy to use.
 
 If your docs are currently in Markdown, these features might interest you:
 
