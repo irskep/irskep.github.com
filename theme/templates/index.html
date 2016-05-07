@@ -1,3 +1,45 @@
 {% extends "base.html" %}
 
-<!-- replaced by content/pages/index.md -->
+{% block content %}
+<article class="home-page">
+
+{% block content_title %}
+<header class="article-header">
+    <h1 class="entry-title">Posts</h1>
+</header>
+{% endblock %}
+
+<ul class="article-summary-list">
+  {% for article in articles_page.object_list %}
+    <li>
+      <header class="article-header">
+        <div class="post-info">
+          {% if article.date %}
+            <time class="published" datetime="{{ article.date.isoformat() }}">
+              {{ article.locale_date }}
+            </time>
+          {% endif %}
+        </div>
+
+        <h2 class="entry-title">
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+            {{ article.title }}
+          </a>
+        </h2>
+      </header>
+      <div class="entry-content">
+        {{ article.summary }}
+        <p class="read-more">
+          <a href="{{ SITEURL }}/{{ article.url }}">Read &rarr;</a>
+        </p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+
+</article>
+{% endblock content %}

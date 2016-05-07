@@ -31,7 +31,9 @@ MENUITEMS = (
 
 DEFAULT_PAGINATION = False
 
-ARTICLE_DIR = 'posts'
+ARTICLE_PATHS = [
+    'posts'
+]
 
 # this always has to be .html so /pyglettutorial.html doesn't break
 PAGE_URL = '{slug}.html'

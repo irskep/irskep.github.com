@@ -1,7 +1,6 @@
 Title: Why I wrote a new documentation system, and why you might like it
-Tags: computer-words
+Tags: computer-words projects
 Slug: computer-words-announcement
-Date: 2016-04-29
 
 TL;DR [Computer Words](http://steveasleep.com/computerwords)
 
@@ -29,10 +28,11 @@ architecture, so that more projects have  better documentation.
 I think I've succeeded. [Computer Words](http://steveasleep.com/computerwords)
 is a tool written in Python 3 that lets you turn your [directory of Markdown
 files](https://github.com/irskep/computerwords/tree/master/docs) into a
-[beautiful web site](http://steveasleep.com/computerwords). It vaguely
-resembles [Sphinx](http://www.sphinx-doc.org/en/stable/) in its design, so it
-has the potential for powerful plugins, but I did my best to keep it small and
-easy to use.
+[beautiful web site](http://steveasleep.com/computerwords), without
+sacrificing important features like semantic cross-referencing.
+It vaguely resembles [Sphinx](http://www.sphinx-doc.org/en/stable/) in its
+design, so it has the potential for powerful plugins, but I did my best to
+keep it small and easy to use.
 
 If your docs are currently in Markdown, these features might interest you:
 

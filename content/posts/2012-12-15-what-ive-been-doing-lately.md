@@ -2,7 +2,7 @@ Title: What I've been doing lately
 Category: Side Channel
 Tags: literallycanvas, startups, meta, yelp
 
-Two months ago I started my new job at Graffiti Labs after working at Yelp for
+I recently started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 [mrjob](http://mrjob.readthedocs.org/) and
 [tron](http://packages.python.org/tron/).
