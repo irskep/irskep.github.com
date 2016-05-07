@@ -3,6 +3,8 @@ Category: Articles
 Tags: gamedev programming ludumdare
 Slug: we-dreamers-postmortem
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
+
 We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
 [You can play it here.](http://steveasleep.com/we_dreamers_2) It may take a
@@ -23,8 +25,6 @@ most of which were single player pseudo-roguelikes. Instead, I picked a vague
 idea: a web-based multiplayer world where you dig out rooms underground in a
 grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
 the rest as I went along.
-
-<iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
 
 You can do a few things:
 

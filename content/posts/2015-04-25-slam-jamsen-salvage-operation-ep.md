@@ -3,6 +3,8 @@ Category: Articles
 Tags: music
 Slug: slam-jamsen-salvage-operation-ep
 
+[![Salvage Operation EP album art](https://f4.bcbits.com/img/a2439303327_16.jpg)](http://slamjamsen.com/)
+
 Graffiti Labs is shutting down next month. I'll be spending June looking for
 a new job *(edit: found one!)* and honing my audio engineering skills.
 

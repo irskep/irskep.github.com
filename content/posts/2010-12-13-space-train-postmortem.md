@@ -3,6 +3,8 @@ Category: Articles
 Tags: gamedev college programming
 Slug: space-train-postmortem
 
+![Space Train logo](|filename|/img/content/space_train_logo.png)
+
 With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called *[Space Train: Terror on the Mustachio

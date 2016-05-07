@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 /* re-add when ready */
 canvas {
   display: none; }
@@ -95,14 +101,16 @@ article blockquote {
 
 /* layout */
 #pagecontainer {
+  position: relative;
   width: 100%;
-  max-width: 36rem;
+  max-width: 38rem;
+  max-width: calc($pageWidth - 2rem);
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem; }
 
 header#banner, nav#menu, section#content, footer#pagefooter {
-  width: calc(100% - 2rem); }
+  width: 100%; }
 
 #banner {
   margin-top: 2em;
