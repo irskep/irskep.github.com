@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/all.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Why I wrote a new documentation system, and why you might like it</title><link href="http://localhost:8000/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Why I wrote a new documentation system, and why you might like it</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I write a lot of documentation. I do it for two reasons: I like writing, and I
 like to be understood. Documentation is what takes software from “something
 &lt;code&gt;@irskep&lt;/code&gt; put on GitHub” to something you can actually&amp;nbsp;use.&lt;/p&gt;
@@ -43,7 +43,8 @@ language!), I would love to help you. The interchange format is very&amp;nbsp;si
 doing that, but you might also want to read the &lt;a href="http://steveasleep.com/computerwords/related_work.html"&gt;Related
 Work&lt;/a&gt; and &lt;a href="http://steveasleep.com/computerwords/faq.html"&gt;Frequently
 Anticipated Criticisms&lt;/a&gt; sections
-of the&amp;nbsp;docs.&lt;/p&gt;</summary><category term="computer-words projects"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://localhost:8000/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2015-04-25:slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
+of the&amp;nbsp;docs.&lt;/p&gt;</summary><category term="computer-words projects"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://steveasleep.com/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-25:slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
 a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineering&amp;nbsp;skills.&lt;/p&gt;
 &lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation
 &lt;span class="caps"&gt;EP&lt;/span&gt;!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -53,9 +54,11 @@ a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineerin
 &lt;p&gt;Four of the tracks on this &lt;span class="caps"&gt;EP&lt;/span&gt; come from that process. Duty Calls was made for Escort Wing, a game designed and mostly programmed by Will Hogben. Glue Me Together and The Creature Sneaks were made for gw0rp, my entry into uDevGames 2008. Catastrophe Prelude was never used for anything, but written for a nonexistent&amp;nbsp;game.&lt;/p&gt;
 &lt;p&gt;In 2007, I built a Blue Man Group-style &lt;span class="caps"&gt;PVC&lt;/span&gt; instrument for a science competition. Once built, it was too tempting to pass up making music with it, so I wrote Parakeet in the E.R., Unsolved, and a few more songs that don’t appear on this &lt;span class="caps"&gt;EP&lt;/span&gt;. Those tracks also feature my classmates Amanda Andrews with bizarro-world guitar parts, and Eric Baize with an ocarina. My brother Phil played the bluesy intro to Unsolved. “Wheeee!” was made in the same batch, but doesn’t feature the &lt;span class="caps"&gt;PVC&lt;/span&gt;&amp;nbsp;instrument.&lt;/p&gt;
 &lt;p&gt;That just leaves The Five Dollar Song, which I’ll just say was mostly written and played by Phil, with contributions from me, around&amp;nbsp;2005.&lt;/p&gt;
-&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://localhost:8000/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2015-04-20:the-nest-ep.html</id><summary type="html">&lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
-&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://localhost:8000/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2014-04-29:anthony-presti-album.html</id><summary type="html">&lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
-&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://localhost:8000/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2013-08-02:the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://steveasleep.com/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-20:the-nest-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
+&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://steveasleep.com/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-04-29:anthony-presti-album.html</id><summary type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
+&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-08-02:the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
 at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
 ran for only nine issues published between 1997 and 1999, its biting social
 commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
@@ -63,7 +66,7 @@ commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
 New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
 years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><category term="humor"></category><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="http://localhost:8000/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2013-07-28:teaching-in-turin.html</id><summary type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><category term="humor"></category><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="http://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-07-28:teaching-in-turin.html</id><summary type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
 Big Dive in Turin, Italy. Big Dive is a technology training program about data
 science (applied statistics), visualization (displaying data in an
 understandable way), and computer programming. Most of the students are in some
@@ -78,7 +81,7 @@ some very expensive plane tickets, I boarded a plane. 18 exhausting hours
 later, I met Alessandro Molina, one of my hosts. He took me to dinner and then
 to my hotel, where I collapsed for the&amp;nbsp;night.&lt;/p&gt;
 &lt;p&gt;My hotel was on the river. If I walked for 60 seconds, I saw&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="River" src="http://localhost:8000/img/turin/river.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="River" src="http://steveasleep.com/img/turin/river.jpg" /&gt;&lt;/p&gt;
 &lt;h1 id="monday"&gt;Monday&lt;/h1&gt;
 &lt;p&gt;I woke up in time to order breakfast at a restaurant where none of the staff
 spoke English. Pointing, gesturing, and pronunciation mangling was involved. My
@@ -86,7 +89,7 @@ stomach full, I walked to Big Dive early to get acquainted with the people and
 the building, and to finish my notes and slides for the day. The walk between
 my hotel and the Big Dive building (below) was consistently nice the whole
 week despite the&amp;nbsp;heat.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Big Dive building" src="http://localhost:8000/img/turin/bigdive_building.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Big Dive building" src="http://steveasleep.com/img/turin/bigdive_building.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Two hours later I was ready to teach, but no lesson plan survives contact with
 students. Having written much of the software they were learning, I was used to
 just knowing things and don’t have much of a beginner’s mind about it anymore.
@@ -95,7 +98,7 @@ proficient physics&amp;nbsp;PhD.&lt;/p&gt;
 &lt;p&gt;By the end of the day, though, most students seemed to understand all the
 relevant concepts. For dinner, Alessandro took me to Eataly, a well-known
 collection of restaurants with authentic dishes from across Italy. I had&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Pasta" src="http://localhost:8000/img/turin/eataly.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pasta" src="http://steveasleep.com/img/turin/eataly.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;After dinner, we had Italian ice cream. What’s &amp;#8220;ice cream&amp;#8221; in Italian?
 &amp;#8220;Gelato.&amp;#8221; I should also mention that &amp;#8220;coffee&amp;#8221; in Italy is straight espresso in
 a tiny cup, &amp;#8220;American-style&amp;#8221; coffee is espresso and water (&amp;#8220;Americano,&amp;#8221; same as
@@ -107,10 +110,10 @@ linguistic&amp;nbsp;shenanigans.&lt;/p&gt;
 &lt;p&gt;On Tuesday morning I went to the Egyptian museum. I enjoyed myself with an
 English audio tour and don’t have much else to say about it. Here’s a cool
 photo of a&amp;nbsp;sarcophagus.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Marching band" src="http://localhost:8000/img/turin/egyptian_museum.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/egyptian_museum.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;On my way out, I came across this police marching band. I think some kind of
 ceremony was beginning, but I never figured it&amp;nbsp;out.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Marching band" src="http://localhost:8000/img/turin/marching_band.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/marching_band.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;I had too much coffee before teaching my second class and experienced an
 intense caffeine crash at the end. I imagine the students were more than a
 little confused about some of the&amp;nbsp;material.&lt;/p&gt;
@@ -119,7 +122,7 @@ Alessandro’s coworkers. I ate a large amount of delicious food and drank a
 large amount of delicious beer. Afterward, we found one of his friends and
 enjoyed ourselves at a nearby bar until bed time. Here’s a quick snap of the
 inside of the&amp;nbsp;tavern:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Marching band" src="http://localhost:8000/img/turin/taverna.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/taverna.jpg" /&gt;&lt;/p&gt;
 &lt;h1 id="wednesday"&gt;Wednesday&lt;/h1&gt;
 &lt;p&gt;My last class of the week was in the morning. This one went much better than
 the last, and by the end of the day I was confident that everyone understood
@@ -127,9 +130,9 @@ all the relevant technology. After class we all went to lunch, with gelato for
 dessert. Then I resumed my tourist activities by going to the Mole
 Antonelliana, which houses the Museum of Cinema. It’s the tallest brick
 building in the world. Here’s the&amp;nbsp;outside:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://localhost:8000/img/turin/mole_antonelliana.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://steveasleep.com/img/turin/mole_antonelliana.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;I took the elevator to the&amp;nbsp;top:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://localhost:8000/img/turin/mole_antonelliana_view.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://steveasleep.com/img/turin/mole_antonelliana_view.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;I didn’t get any photographs of the inside of the museum, but it’s amazing.
 Most of the interior is a single huge room stretching up into the spire. The
 main exhibits are little rooms on the edges, and the special exhibit is a ramp
@@ -149,7 +152,7 @@ the course of the evening I solidified my friendship with the group (all the
 students were there) and had a lot of interesting discussions about sports,
 culture, movies, and personal lives. At the end of the night, I finally felt
 like I had actual new&amp;nbsp;friends.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Most of the students" src="http://localhost:8000/img/turin/all_the_students.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Most of the students" src="http://steveasleep.com/img/turin/all_the_students.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Seth, a friend of a student, was visiting and needed something to do on Friday.
 We agreed to be tourists together. His family moved to Canada from Bulgaria
 when he was young, and now he&amp;#8217;s studying at a university in a European country
@@ -157,9 +160,9 @@ I can&amp;#8217;t&amp;nbsp;remember.&lt;/p&gt;
 &lt;h1 id="friday"&gt;Friday&lt;/h1&gt;
 &lt;p&gt;Seth and I met at 11 to see the royal palace. I can confirm that it was both
 royal and&amp;nbsp;palacious.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Palace dining room" src="http://localhost:8000/img/turin/palace_dining_room.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Palace dining room" src="http://steveasleep.com/img/turin/palace_dining_room.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Here’s a cheesy tourist shot of me outside a different&amp;nbsp;palace:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Cheesy tourist shot" src="http://localhost:8000/img/turin/cheesy_tourist_shot.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cheesy tourist shot" src="http://steveasleep.com/img/turin/cheesy_tourist_shot.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;After the palace, we visited the Royal Armory and the Archaeology Museum. We
 weren’t allowed to take photos, so…there aren’t any&amp;nbsp;photos.&lt;/p&gt;
 &lt;p&gt;We had lunch at a hip baked potato joint (Did I mention Yelp is near useless in
@@ -167,7 +170,7 @@ Turin?), followed by &amp;#8220;coffee with cream,&amp;#8221; i.e. espresso with
 cream on top. Our stomachs full, Seth and I crossed the river to walk up a big
 hill to a church. The view from there should give a better idea of the size of
 the Mole Antonelliana, and how few really tall buildings there are in&amp;nbsp;Turin.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="View from across the river" src="http://localhost:8000/img/turin/across_the_river.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="View from across the river" src="http://steveasleep.com/img/turin/across_the_river.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Having just hiked up and down a big hill, lesser travelers might have gone for
 a nap. But Seth and I are urbanites accustomed to hoofing it across the city at
 all times of day, so we opted to walk the length of a nearby park instead. It
@@ -177,11 +180,13 @@ the whole way. After we had walked for a few hours, incuding through a
 recreation of a medieval village, we got gelato and then parted&amp;nbsp;ways.&lt;/p&gt;
 &lt;p&gt;Later that evening, I boarded a tram. But it wasn&amp;#8217;t an ordinary tram; it was a
 moving gourmet&amp;nbsp;restaurant!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The magic tram" src="http://localhost:8000/img/turin/magic_tram.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The magic tram" src="http://steveasleep.com/img/turin/magic_tram.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Even though no one on the train spoke English, I managed to order red wine and
 enjoyed my dinner immensely. (One of the reasons I chose this event in the
 first place was its fixed menu.) It was an appropriate end to a great&amp;nbsp;week.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="On top of the world" src="http://localhost:8000/img/turin/return_trip.jpg" /&gt;&lt;/p&gt;</summary></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://localhost:8000/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+&lt;p&gt;&lt;img alt="On top of the world" src="http://steveasleep.com/img/turin/return_trip.jpg" /&gt;&lt;/p&gt;</summary></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
 &lt;a href="http://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; It may take a
 while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or&amp;nbsp;two.&lt;/p&gt;
@@ -197,8 +202,6 @@ most of which were single player pseudo-roguelikes. Instead, I picked a vague
 idea: a web-based multiplayer world where you dig out rooms underground in a
 grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
 the rest as I went&amp;nbsp;along.&lt;/p&gt;
-&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
 &lt;p&gt;You can do a few&amp;nbsp;things:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Move with the arrow keys or &lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
@@ -382,25 +385,27 @@ my tools really well, I&amp;nbsp;suppose.&lt;/p&gt;
 &lt;h2 id="in-closing"&gt;In&amp;nbsp;closing,&lt;/h2&gt;
 &lt;p&gt;I had a fun and intense time this year. Of my three attempts to date, We
 Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
-another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="gamedev programming ludumdare"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://localhost:8000/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
+another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="gamedev programming ludumdare"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
 web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
 Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
-Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><category term="literallycanvas"></category><category term="startups"></category><category term="meta"></category><category term="yelp"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://localhost:8000/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2012-11-21:rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><category term="literallycanvas"></category><category term="startups"></category><category term="meta"></category><category term="yelp"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-21:rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
 combination of technologies we use to render and display enormous zoomed out
-world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://localhost:8000/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2012-11-14:1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>My Master’s Thesis</title><link href="http://localhost:8000/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2012-04-16:my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-14:1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>My Master’s Thesis</title><link href="http://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-16:my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
 interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="college"></category><category term="ipad"></category><category term="thesis"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://localhost:8000/the-first-programming-book-i-ever-read.html" rel="alternate"></link><published>2011-01-10T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="college"></category><category term="ipad"></category><category term="thesis"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><published>2011-01-10T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
 nine years&amp;nbsp;old.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Book cover" src="http://localhost:8000/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
 &lt;p&gt;The first thing you need to know is that since it was published in 1983, I
 didn&amp;#8217;t know how to find an interpreter for the code in 1999. All examples were
 run via thought experiment. Because of this fact, I think that this book did
@@ -533,9 +538,10 @@ not necessarily with good documentation for those new to&amp;nbsp;programming:&l
 &lt;li&gt;&lt;a href="http://www.processing.org/"&gt;Processing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blitzmax.com/"&gt;BlitzMax&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.yoyogames.com/make"&gt;GameMaker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://localhost:8000/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
+&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
-called &lt;em&gt;&lt;a href="http://localhost:8000/space-train.html"&gt;Space Train: Terror on the Mustachio
+called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
 Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
 students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case
 Western Reserve University&lt;/a&gt;. Its technical components
@@ -593,15 +599,15 @@ hours writing detailed scripts for each level we planned to implement. We
 followed this process to the end, and it worked beautifully. We had a very
 slick&amp;nbsp;demo.&lt;/p&gt;
 &lt;p&gt;Here are some screenshots of the&amp;nbsp;game:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://localhost:8000/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://localhost:8000/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://localhost:8000/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://localhost:8000/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here are some of the stages of the game&amp;#8217;s artistic&amp;nbsp;development:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://localhost:8000/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://localhost:8000/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://localhost:8000/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://localhost:8000/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://localhost:8000/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://localhost:8000/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="lessons-learned"&gt;Lessons&amp;nbsp;Learned&lt;/h2&gt;
 &lt;p&gt;I had never been in a managerial position before. My experience organizing
 &lt;a href="http:/hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt; helped, but that was more cat herding
@@ -662,4 +668,4 @@ worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Kelsey did caricatures of the team for the credit sequence. Here&amp;#8217;s mine for you
 to compare to my photo at the top of this&amp;nbsp;page:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Caricature" src="http://localhost:8000/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="gamedev college programming"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="gamedev college programming"></category></entry></feed>

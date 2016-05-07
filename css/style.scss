@@ -7,7 +7,7 @@ $linkHoverColor: rgb(80, 80, 250);
 $separatorColor: lighten($bodyColor, 50%);
 $inlineCodeForegroundColor: rgb(80, 80, 80);
 
-$pageWidth: 36rem;
+$pageWidth: 38rem;
 
 $bannerFontSize: 2rem;
 $paragraphSpacing: 0.75rem;
@@ -18,6 +18,9 @@ $headerVerticalSpacingBottom: 0.75em;
 $listVerticalSpacing: 0.5rem;
 $blockQuoteFontSize: 0.9rem;
 $blockQuoteLineHeight: 1.2rem;
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
 
 /* re-add when ready */
 canvas { display: none; }
@@ -181,15 +184,19 @@ article blockquote {
 /* layout */
 
 #pagecontainer {
+  position: relative;
   width: 100%;
   max-width: $pageWidth;
+  max-width: calc($pageWidth - 2rem);
   margin-left: auto;
   margin-right: auto;
   padding: 0 1rem;
 }
 
 header#banner, nav#menu, section#content, footer#pagefooter {
-  width: calc(100% - 2rem);
+  width: 100%;
+}
+#pagecontainer {
 }
 
 // banner
