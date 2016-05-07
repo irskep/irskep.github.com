@@ -1,44 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2014-06-07T00:00:00-07:00</updated><entry><title>Important iOS 8 and Yosemite features eclipsed by other news</title><link href="http://steveasleep.com/wwdc-2014-notes.html" rel="alternate"></link><updated>2014-06-07T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-06-07:wwdc-2014-notes.html</id><summary type="html">&lt;p&gt;So much information was packed into this year&amp;#8217;s &lt;span class="caps"&gt;WWDC&lt;/span&gt; keynote that some cool
-features aren&amp;#8217;t making it into the news. Swift is great and all, but here are
-some other things that excite&amp;nbsp;me.&lt;/p&gt;
-&lt;p&gt;First, JavaScript can now be JITed in web views outside Safari on iOS. That
-makes a huge difference to apps like &lt;em&gt;(ahem)&lt;/em&gt; &lt;a href="http://playbuildy.com/"&gt;Buildy&lt;/a&gt;
-that really need the speed boost. WebGL is also enabled by default on iOS and
-&lt;span class="caps"&gt;OS&lt;/span&gt; X. These factors together mean huge advances in &lt;span class="caps"&gt;HTML5&lt;/span&gt; games on iOS. (And I
-guess &lt;span class="caps"&gt;OS&lt;/span&gt; X Safari too, but who uses&amp;nbsp;that?)&lt;/p&gt;
-&lt;p&gt;Second, iOS apps can share login data with Safari, so you don&amp;#8217;t need to log in
-twice if you switch between the app and the web site. While it&amp;#8217;s rare that I
-run into this kind of situation, it&amp;#8217;s going to be really helpful when I&amp;nbsp;do.&lt;/p&gt;
-&lt;p&gt;Finally, JavaScript has been added as an alternative to AppleScript. I&amp;#8217;ve long
-considered AppleScript a killer technology, but the syntax is so obtuse that
-I&amp;#8217;ve never used it. While I&amp;#8217;m not a huge fan of JavaScript as a language, it
-sure as hell beats AppleScript. The phrase &amp;#8220;always bet on &lt;span class="caps"&gt;JS&lt;/span&gt;&amp;#8221; has never
-resonated with me, but I do believe it applies to &lt;span class="caps"&gt;JS&lt;/span&gt; being used to do more
-kinds of&amp;nbsp;things.&lt;/p&gt;
-&lt;p&gt;We should all thank the revised &lt;span class="caps"&gt;WWDC&lt;/span&gt; &lt;span class="caps"&gt;NDA&lt;/span&gt; that I&amp;#8217;m allowed to talk about this
-stuff to my tens of potential&amp;nbsp;readers.&lt;/p&gt;</summary><category term="apple"></category></entry><entry><title>Notes to myself about recording music</title><link href="http://steveasleep.com/notes-to-myself-about-recording-music.html" rel="alternate"></link><updated>2014-04-29T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-04-29:notes-to-myself-about-recording-music.html</id><summary type="html">&lt;p&gt;I just returned from recording an album with my band &lt;a href="http://mysterymarch.com"&gt;Mystery March&lt;/a&gt; (not to
-be confused with my other band, &lt;a href="http://thenestmusic.com"&gt;The Nest&lt;/a&gt;). Here&amp;#8217;s some advice for myself
-that would have helped avoid a few problems. I play bass in this&amp;nbsp;band.&lt;/p&gt;
-&lt;h1 id="dont-cheat-posture-or-positioning"&gt;Don&amp;#8217;t cheat posture or&amp;nbsp;positioning&lt;/h1&gt;
-&lt;p&gt;If you play for an entire day without positioning your wrist correctly, the
-following morning you will get intense hand cramps trying to do the same thing.
-Being pedantic about your wrists will avoid the problem in both&amp;nbsp;situations.&lt;/p&gt;
-&lt;h1 id="stretch-often"&gt;Stretch&amp;nbsp;often&lt;/h1&gt;
-&lt;p&gt;Sitting in the exact same position for hours will get uncomfortable regardless
-of how correctly you&amp;#8217;re sitting. Get up and move your&amp;nbsp;body.&lt;/p&gt;
-&lt;h1 id="change-your-damn-battery"&gt;Change your damn&amp;nbsp;battery&lt;/h1&gt;
-&lt;p&gt;If you go into the studio with a dead battery in your instrument and don&amp;#8217;t
-notice until you&amp;#8217;ve done eight tracks, you&amp;#8217;ll have to re-record all those
-parts. Keep extra batteries in your case and change them regularly. (Yes, this
-is really basic and I&amp;#8217;m a huge&amp;nbsp;idiot.)&lt;/p&gt;
-&lt;h1 id="figure-out-which-songs-need-vocal-overdubs-in-advance"&gt;Figure out which songs need vocal overdubs in&amp;nbsp;advance&lt;/h1&gt;
-&lt;p&gt;If you just say &amp;#8220;Oh, we&amp;#8217;ll look at all the tracks later and remember which
-ones need backing vocals,&amp;#8221; you will definitely forget at least one and have to
-record those parts later outside the studio. So get some paper and write them&amp;nbsp;down.&lt;/p&gt;
-&lt;h1 id="lose-track-of-time-but-dont-stop-moving"&gt;Lose track of time, but don&amp;#8217;t stop&amp;nbsp;moving&lt;/h1&gt;
-&lt;p&gt;There&amp;#8217;s no point worrying about exactly how many hours are left, or what day
-it is. Keep working and sleep&amp;nbsp;well.&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><updated>2013-08-02T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-08-02:the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/all.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Why I wrote a new documentation system, and why you might like it</title><link href="http://localhost:8000/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I write a lot of documentation. I do it for two reasons: I like writing, and I
+like to be understood. Documentation is what takes software from “something
+&lt;code&gt;@irskep&lt;/code&gt; put on GitHub” to something you can actually&amp;nbsp;use.&lt;/p&gt;
+&lt;p&gt;But I’m not happy with the available tools. Open source documentation for young
+projects tends to fall into one of three modes if they have it at&amp;nbsp;all:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A GitHub&amp;nbsp;wiki&lt;/li&gt;
+&lt;li&gt;A directory of Markdown&amp;nbsp;files&lt;/li&gt;
+&lt;li&gt;A proper web site, but requires a tool no one wants to install or a syntax
+   no one knows, except one&amp;nbsp;maintainer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some ecosystems have good, fairly well known tools (see Python and Sphinx), but
+with the prevalence of Markdown and the convenience of hosting Markdown files
+on GitHub, I suspect people have been tending toward the solutions with less&amp;nbsp;friction.&lt;/p&gt;
+&lt;p&gt;I want it to be easier to produce good documentation sites (without GitHub
+branding), with a bare-minimum learning curve and a sky&amp;#8217;s-the-limit plugin
+architecture, so that more projects have  better&amp;nbsp;documentation.&lt;/p&gt;
+&lt;p&gt;I think I&amp;#8217;ve succeeded. &lt;a href="http://steveasleep.com/computerwords"&gt;Computer Words&lt;/a&gt;
+is a tool written in Python 3 that lets you turn your &lt;a href="https://github.com/irskep/computerwords/tree/master/docs"&gt;directory of Markdown
+files&lt;/a&gt; into a
+&lt;a href="http://steveasleep.com/computerwords"&gt;beautiful web site&lt;/a&gt;, without
+sacrificing important features like semantic cross-referencing.
+It vaguely resembles &lt;a href="http://www.sphinx-doc.org/en/stable/"&gt;Sphinx&lt;/a&gt; in its
+design, so it has the potential for powerful plugins, but I did my best to
+keep it small and easy to&amp;nbsp;use.&lt;/p&gt;
+&lt;p&gt;If your docs are currently in Markdown, these features might interest&amp;nbsp;you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;All extensions use &lt;span class="caps"&gt;HTML&lt;/span&gt; tag syntax, so your editor&amp;#8217;s syntax highlighting
+  won&amp;#8217;t break. Other tools may or may not like it, depending on how they parse &lt;span class="caps"&gt;HTML&lt;/span&gt; within&amp;nbsp;Markdown.&lt;/li&gt;
+&lt;li&gt;Semantic linking. Rather than baking an &lt;span class="caps"&gt;HTML&lt;/span&gt; reference into your links,
+  define a &lt;code&gt;&amp;lt;heading-alias name="blah" /&amp;gt;&lt;/code&gt; above any heading and insert a link
+  to that heading with the correct name as &lt;code&gt;&amp;lt;heading-link name="blah" /&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Automatic multi-document table of contents auto-generated from your&amp;nbsp;headings.&lt;/li&gt;
+&lt;li&gt;A reasonable configuration can be as short as 4 obvious lines copied from the
+  Computer Words home&amp;nbsp;page.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to auto-generate docs from a programming language besides Python,
+and you are willing to write a docstring parser for your language (in your
+language!), I would love to help you. The interchange format is very&amp;nbsp;simple.&lt;/p&gt;
+&lt;p&gt;If you currently use Sphinx and reStructuredText, you should probably keep
+doing that, but you might also want to read the &lt;a href="http://steveasleep.com/computerwords/related_work.html"&gt;Related
+Work&lt;/a&gt; and &lt;a href="http://steveasleep.com/computerwords/faq.html"&gt;Frequently
+Anticipated Criticisms&lt;/a&gt; sections
+of the&amp;nbsp;docs.&lt;/p&gt;</summary><category term="computer-words projects"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://localhost:8000/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2015-04-25:slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
+a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineering&amp;nbsp;skills.&lt;/p&gt;
+&lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation
+&lt;span class="caps"&gt;EP&lt;/span&gt;!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is a collection of “bedroom tapes” made between 2005 and 2009. The popular vision of a budding high school rock musician is a guitarist sitting on a bed writing bad love songs, but in my case, I was at a desk with a low-end Mac and a &lt;span class="caps"&gt;MIDI&lt;/span&gt; keyboard, sharing the room with two more computers and a treadmill, writing bad video game&amp;nbsp;soundtracks.&lt;/p&gt;
+&lt;p&gt;Since the rise of the 4-track, the cost of making decent home recordings has fallen at different rates for different genres. As a so-so piano student and early-to-mid-‘00s Mac user, my options were limited at first to &lt;span class="caps"&gt;MIDI&lt;/span&gt; editors. When Apple’s Garageband program came out, and I finally got a copy, I discovered the world of software&amp;nbsp;synthesizers.&lt;/p&gt;
+&lt;p&gt;Video game development was my other major hobby at the time, so it seemed obvious that I should write my own soundtracks. (Otherwise, I wouldn’t have soundtracks at all, given my $0 budget.) My modus operandi was to constantly write songs for soundtracks for games that didn’t exist yet, and pull out the best ones from my catalogue when I actually made a&amp;nbsp;game.&lt;/p&gt;
+&lt;p&gt;Four of the tracks on this &lt;span class="caps"&gt;EP&lt;/span&gt; come from that process. Duty Calls was made for Escort Wing, a game designed and mostly programmed by Will Hogben. Glue Me Together and The Creature Sneaks were made for gw0rp, my entry into uDevGames 2008. Catastrophe Prelude was never used for anything, but written for a nonexistent&amp;nbsp;game.&lt;/p&gt;
+&lt;p&gt;In 2007, I built a Blue Man Group-style &lt;span class="caps"&gt;PVC&lt;/span&gt; instrument for a science competition. Once built, it was too tempting to pass up making music with it, so I wrote Parakeet in the E.R., Unsolved, and a few more songs that don’t appear on this &lt;span class="caps"&gt;EP&lt;/span&gt;. Those tracks also feature my classmates Amanda Andrews with bizarro-world guitar parts, and Eric Baize with an ocarina. My brother Phil played the bluesy intro to Unsolved. “Wheeee!” was made in the same batch, but doesn’t feature the &lt;span class="caps"&gt;PVC&lt;/span&gt;&amp;nbsp;instrument.&lt;/p&gt;
+&lt;p&gt;That just leaves The Five Dollar Song, which I’ll just say was mostly written and played by Phil, with contributions from me, around&amp;nbsp;2005.&lt;/p&gt;
+&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://localhost:8000/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2015-04-20:the-nest-ep.html</id><summary type="html">&lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
+&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://localhost:8000/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2014-04-29:anthony-presti-album.html</id><summary type="html">&lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
+&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://localhost:8000/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2013-08-02:the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
 at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
 ran for only nine issues published between 1997 and 1999, its biting social
 commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
@@ -46,7 +63,125 @@ commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
 New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
 years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><category term="humor"></category><category term="projects"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><updated>2013-05-04T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><category term="humor"></category><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="http://localhost:8000/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2013-07-28:teaching-in-turin.html</id><summary type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
+Big Dive in Turin, Italy. Big Dive is a technology training program about data
+science (applied statistics), visualization (displaying data in an
+understandable way), and computer programming. Most of the students are in some
+type of grad school. The tools they learn at Big Dive are helpful for
+processing and presenting data for scientific&amp;nbsp;purposes.&lt;/p&gt;
+&lt;p&gt;I was there to teach &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt;, a programming tool
+that makes it easy to run code on lots of computers at once so analyses can be
+run in minutes or hours rather than days. I was tapped to teach the course
+because I worked on it while I was at&amp;nbsp;Yelp.&lt;/p&gt;
+&lt;p&gt;After the nail-biting process of getting my passport on short notice and buying
+some very expensive plane tickets, I boarded a plane. 18 exhausting hours
+later, I met Alessandro Molina, one of my hosts. He took me to dinner and then
+to my hotel, where I collapsed for the&amp;nbsp;night.&lt;/p&gt;
+&lt;p&gt;My hotel was on the river. If I walked for 60 seconds, I saw&amp;nbsp;this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="River" src="http://localhost:8000/img/turin/river.jpg" /&gt;&lt;/p&gt;
+&lt;h1 id="monday"&gt;Monday&lt;/h1&gt;
+&lt;p&gt;I woke up in time to order breakfast at a restaurant where none of the staff
+spoke English. Pointing, gesturing, and pronunciation mangling was involved. My
+stomach full, I walked to Big Dive early to get acquainted with the people and
+the building, and to finish my notes and slides for the day. The walk between
+my hotel and the Big Dive building (below) was consistently nice the whole
+week despite the&amp;nbsp;heat.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Big Dive building" src="http://localhost:8000/img/turin/bigdive_building.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Two hours later I was ready to teach, but no lesson plan survives contact with
+students. Having written much of the software they were learning, I was used to
+just knowing things and don’t have much of a beginner’s mind about it anymore.
+Additionally, their skill sets ranged from almost no programming knowledge to
+proficient physics&amp;nbsp;PhD.&lt;/p&gt;
+&lt;p&gt;By the end of the day, though, most students seemed to understand all the
+relevant concepts. For dinner, Alessandro took me to Eataly, a well-known
+collection of restaurants with authentic dishes from across Italy. I had&amp;nbsp;this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pasta" src="http://localhost:8000/img/turin/eataly.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;After dinner, we had Italian ice cream. What’s &amp;#8220;ice cream&amp;#8221; in Italian?
+&amp;#8220;Gelato.&amp;#8221; I should also mention that &amp;#8220;coffee&amp;#8221; in Italy is straight espresso in
+a tiny cup, &amp;#8220;American-style&amp;#8221; coffee is espresso and water (&amp;#8220;Americano,&amp;#8221; same as
+you can get at any American coffee shop), and drip-brewed coffee is really
+nowhere to be found. Strange and redundant language crossings abound,
+apparently. I found out later that World War &lt;span class="caps"&gt;II&lt;/span&gt; plays a part in those
+linguistic&amp;nbsp;shenanigans.&lt;/p&gt;
+&lt;h1 id="tuesday"&gt;Tuesday&lt;/h1&gt;
+&lt;p&gt;On Tuesday morning I went to the Egyptian museum. I enjoyed myself with an
+English audio tour and don’t have much else to say about it. Here’s a cool
+photo of a&amp;nbsp;sarcophagus.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://localhost:8000/img/turin/egyptian_museum.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;On my way out, I came across this police marching band. I think some kind of
+ceremony was beginning, but I never figured it&amp;nbsp;out.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://localhost:8000/img/turin/marching_band.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;I had too much coffee before teaching my second class and experienced an
+intense caffeine crash at the end. I imagine the students were more than a
+little confused about some of the&amp;nbsp;material.&lt;/p&gt;
+&lt;p&gt;For dinner, I was taken to an old school Italian tavern with Puria, one of
+Alessandro’s coworkers. I ate a large amount of delicious food and drank a
+large amount of delicious beer. Afterward, we found one of his friends and
+enjoyed ourselves at a nearby bar until bed time. Here’s a quick snap of the
+inside of the&amp;nbsp;tavern:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://localhost:8000/img/turin/taverna.jpg" /&gt;&lt;/p&gt;
+&lt;h1 id="wednesday"&gt;Wednesday&lt;/h1&gt;
+&lt;p&gt;My last class of the week was in the morning. This one went much better than
+the last, and by the end of the day I was confident that everyone understood
+all the relevant technology. After class we all went to lunch, with gelato for
+dessert. Then I resumed my tourist activities by going to the Mole
+Antonelliana, which houses the Museum of Cinema. It’s the tallest brick
+building in the world. Here’s the&amp;nbsp;outside:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://localhost:8000/img/turin/mole_antonelliana.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;I took the elevator to the&amp;nbsp;top:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://localhost:8000/img/turin/mole_antonelliana_view.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;I didn’t get any photographs of the inside of the museum, but it’s amazing.
+Most of the interior is a single huge room stretching up into the spire. The
+main exhibits are little rooms on the edges, and the special exhibit is a ramp
+that spirals up the inner&amp;nbsp;walls.&lt;/p&gt;
+&lt;p&gt;Puria took me to dinner again. I had a pasta dish and half a&amp;nbsp;lobster.&lt;/p&gt;
+&lt;h1 id="thursday"&gt;Thursday&lt;/h1&gt;
+&lt;p&gt;Although my classes were over, I had to go to Big Dive once more to help answer
+questions while the students worked on their final projects. From 10:30 &lt;span class="caps"&gt;AM&lt;/span&gt;
+until 6:30 &lt;span class="caps"&gt;PM&lt;/span&gt;, excluding lunch, I sat in the event space and read Wikipedia.
+Once in a while someone would ask me for&amp;nbsp;help.&lt;/p&gt;
+&lt;p&gt;We all had to leave at 6:30 so they could close the building, even though most
+students weren’t finished with their projects. Everyone agreed to meet half a
+mile away in a couple of hours for aperitivos, i.e. happy hour with&amp;nbsp;food.&lt;/p&gt;
+&lt;p&gt;I arrived first because I thought I might get lost and padded my departure
+time. Half an hour later everyone had arrived and we walked to the bar. Over
+the course of the evening I solidified my friendship with the group (all the
+students were there) and had a lot of interesting discussions about sports,
+culture, movies, and personal lives. At the end of the night, I finally felt
+like I had actual new&amp;nbsp;friends.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Most of the students" src="http://localhost:8000/img/turin/all_the_students.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Seth, a friend of a student, was visiting and needed something to do on Friday.
+We agreed to be tourists together. His family moved to Canada from Bulgaria
+when he was young, and now he&amp;#8217;s studying at a university in a European country
+I can&amp;#8217;t&amp;nbsp;remember.&lt;/p&gt;
+&lt;h1 id="friday"&gt;Friday&lt;/h1&gt;
+&lt;p&gt;Seth and I met at 11 to see the royal palace. I can confirm that it was both
+royal and&amp;nbsp;palacious.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Palace dining room" src="http://localhost:8000/img/turin/palace_dining_room.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Here’s a cheesy tourist shot of me outside a different&amp;nbsp;palace:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cheesy tourist shot" src="http://localhost:8000/img/turin/cheesy_tourist_shot.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;After the palace, we visited the Royal Armory and the Archaeology Museum. We
+weren’t allowed to take photos, so…there aren’t any&amp;nbsp;photos.&lt;/p&gt;
+&lt;p&gt;We had lunch at a hip baked potato joint (Did I mention Yelp is near useless in
+Turin?), followed by &amp;#8220;coffee with cream,&amp;#8221; i.e. espresso with heaps of whipped
+cream on top. Our stomachs full, Seth and I crossed the river to walk up a big
+hill to a church. The view from there should give a better idea of the size of
+the Mole Antonelliana, and how few really tall buildings there are in&amp;nbsp;Turin.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="View from across the river" src="http://localhost:8000/img/turin/across_the_river.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Having just hiked up and down a big hill, lesser travelers might have gone for
+a nap. But Seth and I are urbanites accustomed to hoofing it across the city at
+all times of day, so we opted to walk the length of a nearby park instead. It
+reminded me of Golden Gate Park in San Francisco because of its length, general
+atmosphere, and proximity to the water. There were beautiful views of the river
+the whole way. After we had walked for a few hours, incuding through a
+recreation of a medieval village, we got gelato and then parted&amp;nbsp;ways.&lt;/p&gt;
+&lt;p&gt;Later that evening, I boarded a tram. But it wasn&amp;#8217;t an ordinary tram; it was a
+moving gourmet&amp;nbsp;restaurant!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The magic tram" src="http://localhost:8000/img/turin/magic_tram.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Even though no one on the train spoke English, I managed to order red wine and
+enjoyed my dinner immensely. (One of the reasons I chose this event in the
+first place was its fixed menu.) It was an appropriate end to a great&amp;nbsp;week.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="On top of the world" src="http://localhost:8000/img/turin/return_trip.jpg" /&gt;&lt;/p&gt;</summary></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://localhost:8000/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
 &lt;a href="http://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; It may take a
 while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or&amp;nbsp;two.&lt;/p&gt;
@@ -66,7 +201,7 @@ the rest as I went&amp;nbsp;along.&lt;/p&gt;
 
 &lt;p&gt;You can do a few&amp;nbsp;things:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Move with the arrow keys or&amp;nbsp;&lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Move with the arrow keys or &lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
 &lt;li&gt;Harvest color with&amp;nbsp;space.&lt;/li&gt;
 &lt;li&gt;Dig out new rooms by bumping into walls. You need color to do this. The new 
    room will be the color of your dot, which is affected by the color in your&amp;nbsp;bucket.&lt;/li&gt;
@@ -206,7 +341,7 @@ pieces, I spent almost no time debugging simple (or even complicated)&amp;nbsp;i
 game.  Don’t give yourself any surprises. (Python developers have a
 particularly tough time with this one. There are still a few that ask you to
 install PyGame to play and rate their game. I sympathize, having used py2app
-for&amp;nbsp;&lt;span class="caps"&gt;LD19&lt;/span&gt;.)&lt;/p&gt;
+for &lt;span class="caps"&gt;LD19&lt;/span&gt;.)&lt;/p&gt;
 &lt;p&gt;If you spend any time in Javascript, try to get your head around
 &lt;a href="https://github.com/raimohanska/bacon.js"&gt;Bacon.js&lt;/a&gt;. It can decrease game logic
 complexity by quite a lot if you’re willing to invest your brain resources in
@@ -247,65 +382,25 @@ my tools really well, I&amp;nbsp;suppose.&lt;/p&gt;
 &lt;h2 id="in-closing"&gt;In&amp;nbsp;closing,&lt;/h2&gt;
 &lt;p&gt;I had a fun and intense time this year. Of my three attempts to date, We
 Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
-another round in August for&amp;nbsp;&lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="gamedev programming ludumdare"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;Two months ago I started my new job at Graffiti Labs after working at Yelp for
+another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="gamedev programming ludumdare"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://localhost:8000/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
 web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
 Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
-Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><category term="literallycanvas"></category><category term="startups"></category><category term="meta"></category><category term="yelp"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><updated>2012-11-21T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-21:rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><category term="literallycanvas"></category><category term="startups"></category><category term="meta"></category><category term="yelp"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://localhost:8000/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2012-11-21:rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
 combination of technologies we use to render and display enormous zoomed out
-world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><updated>2012-11-14T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-14:1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>My Master’s Thesis</title><link href="http://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><updated>2012-04-16T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-16:my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://localhost:8000/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2012-11-14:1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>My Master’s Thesis</title><link href="http://localhost:8000/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2012-04-16:my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
 interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="college"></category><category term="ipad"></category><category term="thesis"></category></entry><entry><title>If It Can’t Be Done with Git and Text Files, It’s Not Worth Doing</title><link href="http://steveasleep.com/if-it-cant-be-done-with-git-and-text-files-its-not-worth-doing.html" rel="alternate"></link><updated>2012-04-05T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-05:if-it-cant-be-done-with-git-and-text-files-its-not-worth-doing.html</id><summary type="html">&lt;p&gt;&lt;em&gt;As of August 2013, I&amp;#8217;m using Pelican as my static site generator, Sass to
-compile my entirely-hand-written &lt;span class="caps"&gt;CSS&lt;/span&gt;, and some new design knowledge. It&amp;#8217;s
-better. Still git and text files, of&amp;nbsp;course.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I am fed up with blogging sites. Since around 2003 (middle school), I&amp;#8217;ve been
-through plain &lt;span class="caps"&gt;HTML&lt;/span&gt;, &lt;span class="caps"&gt;HTML&lt;/span&gt; with &lt;span class="caps"&gt;CSS&lt;/span&gt;, Blogger, Wordpress, Posterous, Django,
-Flask, and custom Python on Google App Engine. Now you&amp;#8217;re reading a set of
-static files generated by &lt;a href="http://jekyllrb.com/"&gt;jekyll&lt;/a&gt;, with assistance from
-&lt;a href="http://coffeescript.org/"&gt;CoffeeScript&lt;/a&gt; and &lt;a href="http://twitter.github.com/bootstrap"&gt;Twitter
-Bootstrap&lt;/a&gt;. I&amp;#8217;m so trendy I can barely
-stand it! Resize your browser window. I dare&amp;nbsp;you.&lt;/p&gt;
-&lt;p&gt;Now I live in a bastion of maintainable &lt;span class="caps"&gt;CSS&lt;/span&gt; (well, &lt;a href="http://lesscss.org/"&gt;&lt;span class="caps"&gt;LESS&lt;/span&gt;&lt;/a&gt;)
-and control all my own data. Goodbye walled gardens, slow servers, and complex
-templating engines. Hello git and&amp;nbsp;Markdown.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="http://stevejohnson.posterous.com/"&gt;old blog&lt;/a&gt; is still up&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;, but I moved
-all of the stuff worth keeping over here.  Maybe one day I&amp;#8217;ll manage to write
-about something other than programming&amp;nbsp;here.&lt;/p&gt;
-&lt;p&gt;Edit from July 2013: I replaced Jekyll with Pelican and &lt;span class="caps"&gt;LESS&lt;/span&gt; with Sass because
-I&amp;#8217;m more familiar with&amp;nbsp;them.&lt;/p&gt;
-&lt;div class="footnote"&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;No it&amp;#8217;s not. Posterous folded.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</summary><category term="meta"></category></entry><entry><title>Quotes from This Week’s CWRU Student Newspaper</title><link href="http://steveasleep.com/quotes-from-this-weeks-cwru-student-newspaper.html" rel="alternate"></link><updated>2011-01-22T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-22:quotes-from-this-weeks-cwru-student-newspaper.html</id><summary type="html">&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Woe are the student groups that try to reserve rooms on this campus.&amp;#8221; –
-&lt;em&gt;Editorial&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;It&amp;#8217;s a lot of fun. Living in the house is pretty sweet.&amp;#8221; – Fraterinity member,
-quoted in &lt;em&gt;Zeta Beta Tau fraternity moves into new&amp;nbsp;home&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;There are very few ways to get out of actually paying off student loans,
-including joining the Peace Corps, AmeriCorps, some teaching programs, or the
-military, or by dying.&amp;#8221; – Bill Boyer, &lt;em&gt;Simplify your student loan&amp;nbsp;debt&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;We screened [Time Bandits] off of possibly the last print of this film in the
-world.&amp;#8221; – Lars Benthien, quoted in &lt;em&gt;Surprises abound at Film Socity&amp;#8217;s 36th
-Annual Sci-Fi Movie&amp;nbsp;Marathon&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;In real life, a date should involve monetary compensation for time spent.&amp;#8221; –
-&lt;em&gt;Sex and&amp;nbsp;Dating&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;One of the chief complaints from students is that there are never enough
-employers looking to hire non-engineers or business majors. &lt;strong&gt;We&amp;#8217;re not sure who
-these employers are (or if they&amp;#8217;re hiring), but we hope that the Career Center
-will find them 2011.&lt;/strong&gt;&amp;#8221; – &lt;em&gt;Editorial&lt;/em&gt;&lt;/p&gt;</summary><category term="college"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><updated>2011-01-10T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="college"></category><category term="ipad"></category><category term="thesis"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://localhost:8000/the-first-programming-book-i-ever-read.html" rel="alternate"></link><published>2011-01-10T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
 nine years&amp;nbsp;old.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Book cover" src="http://localhost:8000/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
 &lt;p&gt;The first thing you need to know is that since it was published in 1983, I
 didn&amp;#8217;t know how to find an interpreter for the code in 1999. All examples were
 run via thought experiment. Because of this fact, I think that this book did
@@ -334,14 +429,14 @@ exercises at the end of each chapter. There is a final chapter with some
 example programs, and then appendices for reference, troubleshooting, editing,
 and information about computers in&amp;nbsp;general.&lt;/p&gt;
 &lt;p&gt;Here&amp;#8217;s a quick example to refresh your &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;memory:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; 
-&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;JUMP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt; 
-&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; 
-&lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;CLAP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt; 
-&lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; 
-&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; 
-&lt;span class="n"&gt;&lt;span class="caps"&gt;RUN&lt;/span&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;NEW
+10 FOR J = 1 TO 5 
+20 PRINT &amp;quot;JUMP&amp;quot;;J 
+30 FOR C = 1 TO 3 
+40 PRINT &amp;quot;CLAP&amp;quot;;C 
+50 NEXT C 
+60 NEXT J 
+RUN
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -354,10 +449,10 @@ very good&amp;nbsp;reasons.&lt;/p&gt;
 example that follows a description of what variables&amp;nbsp;are:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You can put variables in a program, like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;NEW
+10 N = 2
+20 X = 5
+30 PRINT N + X
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -438,9 +533,9 @@ not necessarily with good documentation for those new to&amp;nbsp;programming:&l
 &lt;li&gt;&lt;a href="http://www.processing.org/"&gt;Processing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blitzmax.com/"&gt;BlitzMax&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.yoyogames.com/make"&gt;GameMaker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
+&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://localhost:8000/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:localhost:8000,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
-called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
+called &lt;em&gt;&lt;a href="http://localhost:8000/space-train.html"&gt;Space Train: Terror on the Mustachio
 Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
 students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case
 Western Reserve University&lt;/a&gt;. Its technical components
@@ -464,7 +559,7 @@ Cleveland Institute of Art and Case Western Reserve University. Teams of 6-12
 artists and programmers collaborate to produce some sort of game. At the end of
 the course, the teams present to their peers and to Electronic Arts staff for
 questions and critique. The course is currently taught by Dr. Marc Buchner
-(&lt;span class="caps"&gt;CWRU&lt;/span&gt;) and &lt;a href="http://www.knuthybinette.com/"&gt;Knut Hybinette&lt;/a&gt;&amp;nbsp;(&lt;span class="caps"&gt;CIA&lt;/span&gt;).&lt;/p&gt;
+(&lt;span class="caps"&gt;CWRU&lt;/span&gt;) and &lt;a href="http://www.knuthybinette.com/"&gt;Knut Hybinette&lt;/a&gt; (&lt;span class="caps"&gt;CIA&lt;/span&gt;).&lt;/p&gt;
 &lt;p&gt;The other two games made this semester were Kalotai, a location-aware monster
 collection/battle game for Android, and Louder Than Words, a platformer with
 branching story lines based on a morality&amp;nbsp;system.&lt;/p&gt;
@@ -498,15 +593,15 @@ hours writing detailed scripts for each level we planned to implement. We
 followed this process to the end, and it worked beautifully. We had a very
 slick&amp;nbsp;demo.&lt;/p&gt;
 &lt;p&gt;Here are some screenshots of the&amp;nbsp;game:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://localhost:8000/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://localhost:8000/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
+&lt;a href="http://localhost:8000/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://localhost:8000/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
+&lt;a href="http://localhost:8000/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://localhost:8000/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here are some of the stages of the game&amp;#8217;s artistic&amp;nbsp;development:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://localhost:8000/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://localhost:8000/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://localhost:8000/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://localhost:8000/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://localhost:8000/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://localhost:8000/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://localhost:8000/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://localhost:8000/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
+&lt;a href="http://localhost:8000/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://localhost:8000/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="lessons-learned"&gt;Lessons&amp;nbsp;Learned&lt;/h2&gt;
 &lt;p&gt;I had never been in a managerial position before. My experience organizing
 &lt;a href="http:/hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt; helped, but that was more cat herding
@@ -554,9 +649,9 @@ Github&lt;/a&gt;. It&amp;#8217;s not beautiful, but it
 worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;h2 id="the-team"&gt;The&amp;nbsp;Team&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Steve Johnson&lt;/strong&gt;: Lead programmer, screenplay, music, engine,&amp;nbsp;&lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Steve Johnson&lt;/strong&gt;: Lead programmer, screenplay, music, engine, &lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="http:/taxidermyrobot.blogspot.com/"&gt;Kelsey Bass&lt;/a&gt;&lt;/strong&gt;: Lead artist, character design/line&amp;nbsp;work/animation&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="http:/www.fredhatfull.com/"&gt;Fred Hatfull&lt;/a&gt;&lt;/strong&gt;: Level scripting, engine,&amp;nbsp;&lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http:/www.fredhatfull.com/"&gt;Fred Hatfull&lt;/a&gt;&lt;/strong&gt;: Level scripting, engine, &lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="http://www.ekeegan.com/"&gt;Liz Keegan&lt;/a&gt;&lt;/strong&gt;: Environments,&amp;nbsp;objects&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Tyler Goeringer&lt;/strong&gt;: Level scripting,&amp;nbsp;engine&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Susie Kim&lt;/strong&gt;:&amp;nbsp;Objects&lt;/li&gt;
@@ -567,82 +662,4 @@ worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Kelsey did caricatures of the team for the credit sequence. Here&amp;#8217;s mine for you
 to compare to my photo at the top of this&amp;nbsp;page:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="gamedev college programming"></category></entry><entry><title>Advice for Tech Recruiters at Universities</title><link href="http://steveasleep.com/advice-for-tech-recruiters-at-universities.html" rel="alternate"></link><updated>2010-05-10T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-05-10:advice-for-tech-recruiters-at-universities.html</id><summary type="html">&lt;p&gt;I attended half a dozen information sessions by companies trying to hire
-interns in the 2009-2010 academic year. Most of them were seeking the same
-thing: bright students with technical backgrounds, generally Computer Science
-majors. Some did it very effectively, with good presentations and knowledgeable
-representatives who could answer questions and give advice. Others did little
-to impress or inform, leaving students with bad impressions. At my school,
-there are far more open positions than there are students qualified or willing
-to fill them, so companies really have to market themselves in order to attract
-good&amp;nbsp;employees.&lt;/p&gt;
-&lt;p&gt;I don&amp;#8217;t think a bad info session is necessarily an indicator of a bad company.
-An info session can do good for both the student and the company, but
-ultimately it is like a résumé: uneventful unless you fail. As a student who
-has been looking for a new job every year for the past three years, here are
-some requests I have for companies giving info sessions on college campuses
-with the intention of making them more helpful for&amp;nbsp;everyone.&lt;/p&gt;
-&lt;h2 id="send-an-engineer"&gt;Send an&amp;nbsp;Engineer&lt;/h2&gt;
-&lt;p&gt;The most frustrating aspect of many info sessions is the absence of a person
-who can answer questions about the day-to-day activities of software developers
-at the company. Since software engineering is a discipline in which it is
-common for interns to do work comparable to work that full time employees do,
-it is important for us to be able to ask questions about the nature of that
-work and get answers formed from experience. If I can&amp;#8217;t ask about your
-development process, testing methods, software and system architecture, and
-office culture, then how can I distinguish you from other companies who make
-similar&amp;nbsp;products?&lt;/p&gt;
-&lt;h2 id="know-your-product"&gt;Know Your&amp;nbsp;Product&lt;/h2&gt;
-&lt;p&gt;I am surprised when I see recruiters falter at basic questions about products
-or demos, but it happens often enough that it almost shouldn&amp;#8217;t be a surprise
-anymore. Even if there isn&amp;#8217;t an engineer present, recruiters should be
-expecting certain kinds of questions from the tech-oriented audience that they
-intentionally attracted. I am referring to queries about features of the
-product, basic back end information, and future&amp;nbsp;plans.&lt;/p&gt;
-&lt;h2 id="dont-focus-on-the-perks"&gt;Don&amp;#8217;t Focus on the&amp;nbsp;Perks&lt;/h2&gt;
-&lt;p&gt;Yes, college students like to party. But we don&amp;#8217;t like to party because the
-party is some kind of sacred ritual, we like it because our friends are there.
-If your office parties are great, then it must be because of the people.
-Instead of talking about parties, talk about people! Focusing on perks like
-these is like saying that flying is better than driving because of the
-complementary&amp;nbsp;drinks.&lt;/p&gt;
-&lt;p&gt;Some kinds of perks, like location, are similar across most companies. We
-understand that your company is located in a beautiful city with history and
-landmarks, but so are most other companies (except Epic). Isn&amp;#8217;t America&amp;nbsp;wonderful?&lt;/p&gt;
-&lt;h2 id="dont-force-hipness"&gt;Don&amp;#8217;t Force&amp;nbsp;Hipness&lt;/h2&gt;
-&lt;p&gt;Tasteful graphic design and informal attitudes are wonderful, but please back
-it up with substance. Words with extra Zs, overuse of &amp;#8220;Gen Y lingo,&amp;#8221; and overt
-ego stroking can make your pitch seem a little creepy. Do you really want to
-attract the people who respond best when addressed as&amp;nbsp;&amp;#8220;Genius?&amp;#8221;&lt;/p&gt;
-&lt;h2 id="get-me-invested-in-your-company"&gt;Get Me Invested In Your&amp;nbsp;Company&lt;/h2&gt;
-&lt;p&gt;During the academic year, we work long hours and stretch our minds to the
-breaking point. We do this because our work is crucial to our lives and we are
-surrounded by people who are working as hard as we are. We can put this energy
-and motivation into your company, but it&amp;#8217;s not free. You need to get us&amp;nbsp;invested.&lt;/p&gt;
-&lt;p&gt;What does your company make? What is special about how you make it? How is your
-company changing the world? Why is your team uniquely amazing? Knowing the
-answers to these questions will help us understand why we should respect you
-and desire to work with you. When we do come to work for you, that storm of
-motivation will be channeled directly into your&amp;nbsp;products.&lt;/p&gt;
-&lt;h2 id="tell-me-what-ill-learn"&gt;Tell Me What I&amp;#8217;ll&amp;nbsp;Learn&lt;/h2&gt;
-&lt;p&gt;Many recruiters seem to think that all students are after is a paycheck,
-parties, and &amp;#8220;work experience.&amp;#8221; This is not the case at all. Keep in mind why
-we are in college: to set us up for success after graduation. If I think
-working for you would hold me back intellectually, then why would I work for&amp;nbsp;you?&lt;/p&gt;
-&lt;h2 id="teach-me-something"&gt;Teach Me&amp;nbsp;Something&lt;/h2&gt;
-&lt;p&gt;The companies that are most sought after by students are the ones who offer
-more than just a sales pitch. If you give a workshop, presentation, or
-demonstration of a piece of technology your company uses, you may attract more
-students who are interested in learning more about that technology and would be
-a good fit for your company. In addition, you showcase the technical prowess of
-your company and the knowledge of the students&amp;#8217; potential future&amp;nbsp;coworkers.&lt;/p&gt;
-&lt;p&gt;That&amp;#8217;s all for now! If you&amp;#8217;re coming to Case Western, be sure to get in touch
-with the &lt;a href="http://hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt;.&lt;/p&gt;</summary><category term="recruiting"></category><category term="college"></category></entry><entry><title>My Dislocated Patella</title><link href="http://steveasleep.com/my-dislocated-patella.html" rel="alternate"></link><updated>2009-09-24T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2009-09-24:my-dislocated-patella.html</id><summary type="html">&lt;p&gt;In 2009 I dislocated my
-&lt;a href="http://en.wikipedia.org/wiki/Patella"&gt;patella&lt;/a&gt;. It sucked, but I had worked at
-a medical imaging software company the previous summer, so I made sure to get
-my hands on the &lt;span class="caps"&gt;MRI&lt;/span&gt; images. Here they&amp;nbsp;are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://dl.getdropbox.com/u/360865/knee/front.mov"&gt;front&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://dl.getdropbox.com/u/360865/knee/side.mov"&gt;side&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://dl.getdropbox.com/u/360865/knee/top.mov"&gt;back&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="meta"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Caricature" src="http://localhost:8000/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="gamedev college programming"></category></entry></feed>

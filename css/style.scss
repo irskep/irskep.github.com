@@ -228,18 +228,24 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 
 // article list
 
-#content > h2 { // this applies to the now-invisible Articles heading
-  margin-bottom: 1rem;
-}
+article.home-page {
 
-.featured-article {
-  // border-bottom: 1px solid $separatorColor;
-  margin-bottom: $pageComponentSpacing;
-}
+  ul.article-summary-list {
+    margin: 0;
+    padding: 0;
 
-#post-list {
-  li {
-    // I dunno, something
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-top: 2rem;
+      margin-bottom: 2rem;
+      border-top: 1px solid $separatorColor;
+
+      .read-more {
+        text-align: right;
+      }
+    }
   }
 }
 

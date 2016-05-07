@@ -64,6 +64,7 @@ table th {
   text-align: left;
   font-weight: normal;
   padding-right: 1rem; }
+
 table td {
   font-weight: 300;
   padding-right: 1rem; }
@@ -127,11 +128,18 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   #menu li {
     margin-right: 1em; }
 
-#content > h2 {
-  margin-bottom: 1rem; }
-
-.featured-article {
-  margin-bottom: 4rem; }
+article.home-page ul.article-summary-list {
+  margin: 0;
+  padding: 0; }
+  article.home-page ul.article-summary-list li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid #a8a8a8; }
+    article.home-page ul.article-summary-list li .read-more {
+      text-align: right; }
 
 #pagefooter {
   margin-top: 4rem;
@@ -167,6 +175,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 
 .article h2 {
   font-size: 1.2rem; }
+
 .article .entry-content a {
   color: #3c3c8c; }
   .article .entry-content a:hover {
@@ -179,14 +188,15 @@ header#banner, nav#menu, section#content, footer#pagefooter {
   font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   font-weight: bold; }
+
 .page h2 {
   font-size: 1.2rem;
   font-weight: bold; }
+
 .page h3 {
   font-size: 1.2rem; }
+
 .page .page-content a {
   color: #3c3c8c; }
   .page .page-content a:hover {
     color: #5050fa; }
-
-/*# sourceMappingURL=style.css.map */
