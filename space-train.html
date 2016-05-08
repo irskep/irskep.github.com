@@ -10,48 +10,54 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
 
     <!--
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson’s Web Presence Full RSS Feed" />
+      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Full Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson’s Web Presence Full RSS Feed" />
     -->
 
-    <script src="http://steveasleep.com/js/hyphenate.js"></script>
+    <script src="http://localhost:8000/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://steveasleep.com/js/main.js"></script>
+    <script src="http://localhost:8000/js/main.js"></script>
 
 </head>
 
-<body id="index" class="home">
+<body>
+  <header id="banner" class="body">
+    <h1>
+      <a href="http://localhost:8000">
+        <!--Steve Johnson’s Web Presence <strong></strong>-->
+        <!--Steve Johnson&rsquo;s<br>partial creative output-->
+        Steve Johnson&rsquo;s<br>Web Presence
+      </a>
+    </h1>
+  </header>
+
   <div id="pagecontainer">
-    <header id="banner" class="body">
-      <h1>
-        <a href="http://steveasleep.com">
-          <!--Steve Johnson’s Web Presence <strong></strong>-->
-          <!--Steve Johnson&rsquo;s<br>partial creative output-->
-          Steve Johnson&rsquo;s<br>Web Presence
-        </a>
-      </h1>
-    </header><!-- /#banner -->
 
     <nav id="menu">
       <ul>
-          <li><a href="http://steveasleep.com/">Read me</a></li>
-          <li><a href="http://steveasleep.com/games.html">Games</a></li>
-          <li><a href="http://steveasleep.com/open-source.html">Open source</a></li>
-          <li><a href="http://steveasleep.com/pyglettutorial.html">Pyglet tutorial</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/pyglettutorial.html">Pyglet tutorial</a></li>
+          <li><a href="http://computerwords.com/">Computer Words</a></li>
+          <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+          <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
+          <li><a href="/games.html">Games</a></li>
           <li><a href="http://thenestmusic.com">The Nest</a></li>
+          <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
+          <li><a href="/music.html">Other music</a></li>
       </ul>
-    </nav><!-- /#menu -->
+    </nav>
+
   <section id="content" class="body">
     <article class="page">
           <header class="article-header">
     <h2 class="entry-title">
-      <a href="http://steveasleep.com/space-train.html" rel="bookmark" title="Permalink to Space Train">
+      <a href="http://localhost:8000/space-train.html" rel="bookmark" title="Permalink to Space Train">
         Space&nbsp;Train
       </a>
     </h2>
@@ -65,16 +71,16 @@
       <div class="page-content hyphenate">
         
 
-        <p><img class="center" src="http://steveasleep.com/img/content/space_train_logo.png"/></p>
+        <p><img class="center" src="http://localhost:8000/img/content/space_train_logo.png"/></p>
 <p>Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
 Stanislov Slavinsky, is reading his poetry live on the nearby Planet Deux, a
 short hop by space train from Inga’s home. She wants nothing more than to see
 Stanislav in person, so she catches the Mustachio Express to Planet Deux.
 Little does she know it will be a bumpy&nbsp;ride&#8230;</p>
-<p><strong><a href="http://steveasleep.com/space-train-postmortem.html">Read the&nbsp;postmortem</a></strong></p>
+<p><strong><a href="http://localhost:8000/space-train-postmortem.html">Read the&nbsp;postmortem</a></strong></p>
 <iframe width="560" height="315" src="//www.youtube.com/embed/EbnmXJOJUT4" frameborder="0" allowfullscreen></iframe>
 
-<p><img class="right" src="http://steveasleep.com/img/content/space_train_inga.png"/>
+<p><img class="right" src="http://localhost:8000/img/content/space_train_inga.png"/>
 Space Train is a short point-and-click adventure game developed over the course
 of a semester by students at the <a href="http://www.cia.edu/">Cleveland Institute of
 Art</a> and <a href="http://www.case.edu/">Case Western Reserve
@@ -87,7 +93,7 @@ showcase for the artists who put so much love into the environments and&nbsp;cha
 <p>The project was supervised by Dr. Marc Buchner, Case Western Reserve University
 and Knut Hybinette, Cleveland Institute of&nbsp;Art.</p>
 <h2 id="the-team">The&nbsp;Team</h2>
-<p><img class="right" src="http://steveasleep.com/img/content/space_train_workman.png"/></p>
+<p><img class="right" src="http://localhost:8000/img/content/space_train_workman.png"/></p>
 <ul>
 <li><strong>Steve Johnson</strong>: Lead programmer, screenplay, music, engine, <span class="caps">UI</span></li>
 <li><strong><a href="http://taxidermyrobot.blogspot.com/">Kelsey Bass</a></strong>: Lead artist,
@@ -107,10 +113,11 @@ and Knut Hybinette, Cleveland Institute of&nbsp;Art.</p>
       </div>
     </article>
   </section>
+
     <footer id="pagefooter" class="body">
       <div class="social-links">
         <!--
-          <a href="http://steveasleep.com/feeds/all.rss.xml">RSS</a>
+          <a href="http://localhost:8000/feeds/all.rss.xml">RSS</a>
         -->
         <a href="http://github.com/irskep">GitHub</a><br>
         <a href="http://twitter.com/irskep">Twitter</a><br>
@@ -120,6 +127,23 @@ and Knut Hybinette, Cleveland Institute of&nbsp;Art.</p>
       <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
       San Francisco, California
     </footer><!-- /#pagefooter -->
+
+    <nav id="sidebar">
+      <ul>
+          <h1>Writing</h1>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/pyglettutorial.html">Pyglet tutorial</a></li>
+          <h1>Projects</h1>
+            <li><a href="http://computerwords.com/">Computer Words</a></li>
+            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+            <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
+            <li><a href="/games.html">Games</a></li>
+          <h1>Music</h1>
+            <li><a href="http://thenestmusic.com">The Nest</a></li>
+            <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
+            <li><a href="/music.html">Other music</a></li>
+      </ul>
+    </nav>
   </div>
 
   <script type="text/javascript">

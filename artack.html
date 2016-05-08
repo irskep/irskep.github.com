@@ -10,48 +10,54 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
 
     <!--
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson’s Web Presence Full RSS Feed" />
+      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Full Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson’s Web Presence Full RSS Feed" />
     -->
 
-    <script src="http://steveasleep.com/js/hyphenate.js"></script>
+    <script src="http://localhost:8000/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://steveasleep.com/js/main.js"></script>
+    <script src="http://localhost:8000/js/main.js"></script>
 
 </head>
 
-<body id="index" class="home">
+<body>
+  <header id="banner" class="body">
+    <h1>
+      <a href="http://localhost:8000">
+        <!--Steve Johnson’s Web Presence <strong></strong>-->
+        <!--Steve Johnson&rsquo;s<br>partial creative output-->
+        Steve Johnson&rsquo;s<br>Web Presence
+      </a>
+    </h1>
+  </header>
+
   <div id="pagecontainer">
-    <header id="banner" class="body">
-      <h1>
-        <a href="http://steveasleep.com">
-          <!--Steve Johnson’s Web Presence <strong></strong>-->
-          <!--Steve Johnson&rsquo;s<br>partial creative output-->
-          Steve Johnson&rsquo;s<br>Web Presence
-        </a>
-      </h1>
-    </header><!-- /#banner -->
 
     <nav id="menu">
       <ul>
-          <li><a href="http://steveasleep.com/">Read me</a></li>
-          <li><a href="http://steveasleep.com/games.html">Games</a></li>
-          <li><a href="http://steveasleep.com/open-source.html">Open source</a></li>
-          <li><a href="http://steveasleep.com/pyglettutorial.html">Pyglet tutorial</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/pyglettutorial.html">Pyglet tutorial</a></li>
+          <li><a href="http://computerwords.com/">Computer Words</a></li>
+          <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+          <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
+          <li><a href="/games.html">Games</a></li>
           <li><a href="http://thenestmusic.com">The Nest</a></li>
+          <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
+          <li><a href="/music.html">Other music</a></li>
       </ul>
-    </nav><!-- /#menu -->
+    </nav>
+
   <section id="content" class="body">
     <article class="page">
           <header class="article-header">
     <h2 class="entry-title">
-      <a href="http://steveasleep.com/artack.html" rel="bookmark" title="Permalink to Artack">
+      <a href="http://localhost:8000/artack.html" rel="bookmark" title="Permalink to Artack">
         Artack
       </a>
     </h2>
@@ -65,7 +71,7 @@
       <div class="page-content hyphenate">
         
 
-        <p><a href="http://steveasleep.com/img/artack.png"><img alt="Screenshot" src="http://steveasleep.com/img/artack_thumb.png" /></a></p>
+        <p><a href="http://localhost:8000/img/artack.png"><img alt="Screenshot" src="http://localhost:8000/img/artack_thumb.png" /></a></p>
 <p>Pencil-drawn invaders from outer space are attacking the bottom of a sheet of
 notebook paper. Destroy them for the sake of the&nbsp;motherland!</p>
 <p>In other words, it&#8217;s a Galaxian clone with graphics drawn in colored&nbsp;pencil.</p>
@@ -73,14 +79,15 @@ notebook paper. Destroy them for the sake of the&nbsp;motherland!</p>
 for a three-week competition held by <a href="http://www.idevgames.com/">iDevGames</a> in
 June&nbsp;2006.</p>
 <p>Artack is written in BlitzMax, a <span class="caps">BASIC</span>-like layer over&nbsp;C++.</p>
-<p><a href="http://steveasleep.com/downloads/Artack.zip">Download Artack for <span class="caps">OS</span> X (<span class="caps">PPC</span>&nbsp;only)</a></p>
+<p><a href="http://localhost:8000/downloads/Artack.zip">Download Artack for <span class="caps">OS</span> X (<span class="caps">PPC</span>&nbsp;only)</a></p>
       </div>
     </article>
   </section>
+
     <footer id="pagefooter" class="body">
       <div class="social-links">
         <!--
-          <a href="http://steveasleep.com/feeds/all.rss.xml">RSS</a>
+          <a href="http://localhost:8000/feeds/all.rss.xml">RSS</a>
         -->
         <a href="http://github.com/irskep">GitHub</a><br>
         <a href="http://twitter.com/irskep">Twitter</a><br>
@@ -90,6 +97,23 @@ June&nbsp;2006.</p>
       <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
       San Francisco, California
     </footer><!-- /#pagefooter -->
+
+    <nav id="sidebar">
+      <ul>
+          <h1>Writing</h1>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/pyglettutorial.html">Pyglet tutorial</a></li>
+          <h1>Projects</h1>
+            <li><a href="http://computerwords.com/">Computer Words</a></li>
+            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+            <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
+            <li><a href="/games.html">Games</a></li>
+          <h1>Music</h1>
+            <li><a href="http://thenestmusic.com">The Nest</a></li>
+            <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
+            <li><a href="/music.html">Other music</a></li>
+      </ul>
+    </nav>
   </div>
 
   <script type="text/javascript">

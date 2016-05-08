@@ -10,48 +10,54 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
 
     <!--
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson’s Web Presence Full RSS Feed" />
-      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Categories Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Full Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson’s Web Presence Full RSS Feed" />
+      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Categories Atom Feed" />
     -->
 
-    <script src="http://steveasleep.com/js/hyphenate.js"></script>
+    <script src="http://localhost:8000/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://steveasleep.com/js/main.js"></script>
+    <script src="http://localhost:8000/js/main.js"></script>
 
 </head>
 
-<body id="index" class="home">
+<body>
+  <header id="banner" class="body">
+    <h1>
+      <a href="http://localhost:8000">
+        <!--Steve Johnson’s Web Presence <strong></strong>-->
+        <!--Steve Johnson&rsquo;s<br>partial creative output-->
+        Steve Johnson&rsquo;s<br>Web Presence
+      </a>
+    </h1>
+  </header>
+
   <div id="pagecontainer">
-    <header id="banner" class="body">
-      <h1>
-        <a href="http://steveasleep.com">
-          <!--Steve Johnson’s Web Presence <strong></strong>-->
-          <!--Steve Johnson&rsquo;s<br>partial creative output-->
-          Steve Johnson&rsquo;s<br>Web Presence
-        </a>
-      </h1>
-    </header><!-- /#banner -->
 
     <nav id="menu">
       <ul>
-          <li><a href="http://steveasleep.com/">Read me</a></li>
-          <li><a href="http://steveasleep.com/games.html">Games</a></li>
-          <li><a href="http://steveasleep.com/open-source.html">Open source</a></li>
-          <li><a href="http://steveasleep.com/pyglettutorial.html">Pyglet tutorial</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/pyglettutorial.html">Pyglet tutorial</a></li>
+          <li><a href="http://computerwords.com/">Computer Words</a></li>
+          <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+          <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
+          <li><a href="/games.html">Games</a></li>
           <li><a href="http://thenestmusic.com">The Nest</a></li>
+          <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
+          <li><a href="/music.html">Other music</a></li>
       </ul>
-    </nav><!-- /#menu -->
+    </nav>
+
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h2 class="entry-title">
-      <a href="http://steveasleep.com/space-train-postmortem.html" rel="bookmark" title="Permalink to Space Train Postmortem">
+      <a href="http://localhost:8000/space-train-postmortem.html" rel="bookmark" title="Permalink to Space Train Postmortem">
         Space Train&nbsp;Postmortem
       </a>
     </h2>
@@ -62,10 +68,10 @@
     </div>
   </header>
 
-    <div class="entry-content hyphenate"><p><img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png" /></p>
+    <div class="entry-content hyphenate"><p><img alt="Space Train logo" src="http://localhost:8000/img/content/space_train_logo.png" /></p>
 <p>With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
-called <em><a href="http://steveasleep.com/space-train.html">Space Train: Terror on the Mustachio
+called <em><a href="http://localhost:8000/space-train.html">Space Train: Terror on the Mustachio
 Express</a></em>, developed by a team of
 students from the <a href="http:/www.cia.edu/">Cleveland Institute of Art</a> and <a href="http:/www.case.edu">Case
 Western Reserve University</a>. Its technical components
@@ -123,15 +129,15 @@ hours writing detailed scripts for each level we planned to implement. We
 followed this process to the end, and it worked beautifully. We had a very
 slick&nbsp;demo.</p>
 <p>Here are some screenshots of the&nbsp;game:</p>
-<p><a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"><img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"><img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"><img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png" /></a></p>
+<p><a href="http://localhost:8000/img/content/space_train_screenshot_1.png"><img alt="Screenshot 1" src="http://localhost:8000/img/content/space_train_thumb_1.png" /></a>
+<a href="http://localhost:8000/img/content/space_train_screenshot_2.png"><img alt="Screenshot 2" src="http://localhost:8000/img/content/space_train_thumb_2.png" /></a>
+<a href="http://localhost:8000/img/content/space_train_screenshot_3.png"><img alt="Screenshot 3" src="http://localhost:8000/img/content/space_train_thumb_3.png" /></a></p>
 <p>Here are some of the stages of the game&#8217;s artistic&nbsp;development:</p>
-<p><a href="http://steveasleep.com/img/content/space_train_art_1.png"><img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_art_2.png"><img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_art_3.png"><img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_art_4.png"><img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_art_5.png"><img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png" /></a></p>
+<p><a href="http://localhost:8000/img/content/space_train_art_1.png"><img alt="Concept Art" src="http://localhost:8000/img/content/space_train_art_1_thumb.png" /></a>
+<a href="http://localhost:8000/img/content/space_train_art_2.png"><img alt="Line Art" src="http://localhost:8000/img/content/space_train_art_2_thumb.png" /></a>
+<a href="http://localhost:8000/img/content/space_train_art_3.png"><img alt="Flat Color" src="http://localhost:8000/img/content/space_train_art_3_thumb.png" /></a>
+<a href="http://localhost:8000/img/content/space_train_art_4.png"><img alt="Object/Furniture Design" src="http://localhost:8000/img/content/space_train_art_4_thumb.png" /></a>
+<a href="http://localhost:8000/img/content/space_train_art_5.png"><img alt="Rendered Art" src="http://localhost:8000/img/content/space_train_art_5_thumb.png" /></a></p>
 <h2 id="lessons-learned">Lessons&nbsp;Learned</h2>
 <p>I had never been in a managerial position before. My experience organizing
 <a href="http:/hacsoc.org/"><span class="caps">CWRU</span> Hacker Society</a> helped, but that was more cat herding
@@ -192,12 +198,13 @@ worked well enough for&nbsp;us.</p>
 </ul>
 <p>Kelsey did caricatures of the team for the credit sequence. Here&#8217;s mine for you
 to compare to my photo at the top of this&nbsp;page:</p>
-<p><img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png" /></p></div>
+<p><img alt="Caricature" src="http://localhost:8000/img/content/space_train_caricature.png" /></p></div>
   </article></section>
+
     <footer id="pagefooter" class="body">
       <div class="social-links">
         <!--
-          <a href="http://steveasleep.com/feeds/all.rss.xml">RSS</a>
+          <a href="http://localhost:8000/feeds/all.rss.xml">RSS</a>
         -->
         <a href="http://github.com/irskep">GitHub</a><br>
         <a href="http://twitter.com/irskep">Twitter</a><br>
@@ -207,6 +214,23 @@ to compare to my photo at the top of this&nbsp;page:</p>
       <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
       San Francisco, California
     </footer><!-- /#pagefooter -->
+
+    <nav id="sidebar">
+      <ul>
+          <h1>Writing</h1>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/pyglettutorial.html">Pyglet tutorial</a></li>
+          <h1>Projects</h1>
+            <li><a href="http://computerwords.com/">Computer Words</a></li>
+            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+            <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
+            <li><a href="/games.html">Games</a></li>
+          <h1>Music</h1>
+            <li><a href="http://thenestmusic.com">The Nest</a></li>
+            <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
+            <li><a href="/music.html">Other music</a></li>
+      </ul>
+    </nav>
   </div>
 
   <script type="text/javascript">
