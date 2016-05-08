@@ -23,7 +23,12 @@ DELETE_OUTPUT_DIRECTORY = True
 #DISQUS_SITENAME = ""
 GOOGLE_ANALYTICS = "UA-4517625-1"
 
+def process_menuitems(menuitems):
+    return [
+        (a, SITEURL + b if b.startswith('/') else b)
+        for a, b in menuitems
+    ]
+
 MENUITEMS = [
-    (a, SITEURL + b if b.startswith('/') else b)
-    for a, b in MENUITEMS
+    (title, process_menuitems(items)) for title, items in MENUITEMS
 ]
