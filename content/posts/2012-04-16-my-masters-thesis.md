@@ -1,6 +1,6 @@
 Title: My Master's Thesis
 Category: Side Channel
-Tags: college, ipad, thesis
+Tags: programming
 
 For a while I thought I was going to rewrite these 150 pages of filler
 interspersed with content, but my willpower wanes with each passing month.

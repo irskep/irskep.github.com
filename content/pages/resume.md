@@ -10,14 +10,18 @@ I want to make something people love and fight the gradual decline of society.
 
 # Experience
 
-## Game & web developer, [Buildy](http://playbuild.com) — 2012-present
+## Mobile team lead & iOS developer, [Hipmunk](http://hipmunk.com.com) — 2015-present
+
+Succesfully drove a rearchitecture of legacy iOS code base. Became team lead
+in January 2016. Contributed significantly to every major feature in the app.
+
+## Game & web developer, [Buildy](http://playbuild.com) — 2012-2015
 
 Developed an HTML5 game about building creatively in an isometric world.
 Contributed to game and UI design. Worked with server-side Python, JavaScript,
 Salt Stack, nearly every HTML5 technology, React.js, web page performance, more
 JavaScript, Pyramid-based admin site, SQLAlchemy, iOS (Obj-C and Swift),
 evolution of a large codebase over time.
-
 ## Maintainer, [Literally Canvas](http://literallycanvas.com) — 2012-present
 
 Designed, implemented, and documented an HTML5-based drawing tool that can be used as a JavaScript library. Worked as a freelancer to add features when approached.

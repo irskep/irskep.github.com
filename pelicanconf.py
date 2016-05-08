@@ -22,11 +22,21 @@ DATE_FORMATS = {
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 
 MENUITEMS = (
-    ('Read me', '/'),
-    ('Games', '/games.html'),
-    ('Open source', '/open-source.html'),
-    ('Pyglet tutorial', '/pyglettutorial.html'),
-    ('The Nest', 'http://thenestmusic.com'),
+    ('Writing', [
+        ('Blog', '/'),
+        ('Pyglet tutorial', '/pyglettutorial.html'),
+    ]),
+    ('Projects', [
+        ('Computer Words', 'http://computerwords.com/'),
+        ('Literally Canvas', 'http://literallycanvas.com/'),
+        ('mrjob', 'http://mrjob.readthedocs.org/'),
+        ('Games', '/games.html'),
+    ]),
+    ('Music', [
+        ('The Nest', 'http://thenestmusic.com'),
+        ('Slam Jamsen', 'http://slamjamsen.com'),
+        ('Other music', '/music.html'),
+    ])
 )
 
 DEFAULT_PAGINATION = False

@@ -1,6 +1,6 @@
 Title: Space Train Postmortem
 Category: Articles
-Tags: gamedev college programming
+Tags: games
 Slug: space-train-postmortem
 
 ![Space Train logo](|filename|/img/content/space_train_logo.png)

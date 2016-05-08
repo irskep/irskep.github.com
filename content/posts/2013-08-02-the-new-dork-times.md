@@ -1,6 +1,6 @@
 Title: The New Dork Times
 Category: Articles
-Tags: humor, projects
+Tags: projects
 
 I did the best writing of my life in 1997 when I was eight years old, sitting
 at an old PC with my friend Eric Drury to write the New Dork Times. Although it

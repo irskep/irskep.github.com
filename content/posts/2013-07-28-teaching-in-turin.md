@@ -1,5 +1,6 @@
 Title: Teaching in Turin
 Date: 2013-07-28
+Tags: programming
 Summary: ![River](|filename|/img/turin/river.jpg)
     <p>
     A few weeks ago I returned from teaching "big data analysis with MapReduce" at Big Dive in Turin, Italy. Big Dive is a technology training program about data science (applied statistics), visualization (displaying data in an understandable way), and computer programming.

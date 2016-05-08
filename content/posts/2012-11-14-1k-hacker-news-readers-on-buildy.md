@@ -1,6 +1,7 @@
 Title: One thousand users put 250,000 objects in Buildy in 18 hours
 Category: Articles
 Slug: 1k-hacker-news-readers-on-buildy
+Tags: programming
 
 ![Screenshot of Buildy](|filename|/img/buildy2.png)
 

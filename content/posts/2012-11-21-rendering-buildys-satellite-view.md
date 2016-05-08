@@ -1,6 +1,7 @@
 Title: Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL
 Category: Articles
 Slug: rendering-buildys-satellite-view
+Tags: programming
 
 ![Screenshot of Buildy](|filename|/img/buildy.png)
 

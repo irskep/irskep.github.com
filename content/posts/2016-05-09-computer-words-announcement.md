@@ -1,5 +1,5 @@
 Title: Why I wrote a new documentation system, and why you might like it
-Tags: computer-words projects
+Tags: projects
 Slug: computer-words-announcement
 
 TL;DR [Computer Words](http://steveasleep.com/computerwords)
