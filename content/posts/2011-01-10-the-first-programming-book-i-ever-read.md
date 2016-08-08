@@ -79,7 +79,7 @@ example that follows a description of what variables are:
 It's a small, self-contained, understandable example with a concise, complete
 explanation and an invitation to experiment. In this way, it mirrors the style
 of Zed Shaw's [Learn Python The Hard
-Way](http://learnpythonthehardway.com/index). It never blames the reader for
+Way](http://learnpythonthehardway.com/). It never blames the reader for
 being wrong, and in fact seems to encourage the reader to forgive his or her
 own mistakes while writing programs.
 
