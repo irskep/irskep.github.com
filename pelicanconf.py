@@ -25,6 +25,7 @@ MENUITEMS = (
     ('Writing', [
         ('Blog', '/'),
         ('Pyglet tutorial', '/pyglettutorial.html'),
+        ('Résumé', '/resume.html'),
     ]),
     ('Projects', [
         ('Computer Words', 'http://computerwords.com/'),
