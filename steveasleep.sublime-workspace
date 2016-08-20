@@ -117,9 +117,6 @@
 			]
 		]
 	},
-	"buffers":
-	[
-	],
 	"build_system": "",
 	"build_system_choices":
 	[
@@ -195,12 +192,14 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/steve/dev/steveasleep"
-	],
 	"file_history":
 	[
+		"/Users/steve/dev/steveasleep/content/pages/resume.md",
+		"/Users/steve/dev/steveasleep/content/pages/space-train.md",
+		"/Users/steve/dev/steveasleep/content/posts/2010-12-13-space-train-postmortem.md",
+		"/Users/steve/dev/steveasleep/steveasleep.sublime-project",
+		"/Users/steve/dev/steveasleep/pelicanconf.py",
+		"/Users/steve/dev/steveasleep/Makefile",
 		"/private/var/folders/x9/cs0fdry94_l5dcqsv620cflr0000gn/T/com.crashlytics.missing-devices.txt",
 		"/Users/steve/dev/imessage_creatures/Creatures/MessagesExtension/MessagesViewController.swift",
 		"/Library/Preferences/com.apple.Bluetooth.plist",
@@ -322,13 +321,7 @@
 		"/Users/steve/dev/gw/gw/client/prototypes/b/createView.jsx",
 		"/Users/steve/dev/gw/gw/web.py",
 		"/Users/steve/dev/gw/gw/client/TB/viewModel/createBedOwnerVM.coffee",
-		"/Users/steve/dev/gw/gevvy/gevvy/base.py",
-		"/Users/steve/dev/gw/gw/client/runTB.coffee",
-		"/Users/steve/dev/gw/gw/client/shared/reader.coffee",
-		"/Users/steve/dev/gw/gw/client/TB/view/guides.coffee",
-		"/Users/steve/dev/gw/gw/client/shared/viewModel/createNodeOperationsVM.coffee",
-		"/Users/steve/dev/gw/gw/client/lib/datastructure/PosetSorter.coffee",
-		"/Users/steve/dev/gw/gw/client/shared/viewModel/createObjectLibraryVM.coffee"
+		"/Users/steve/dev/gw/gevvy/gevvy/base.py"
 	],
 	"find":
 	{
@@ -395,6 +388,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"managerial",
 			"env",
 			"\n                            ",
 			"\n    ",
@@ -521,8 +515,7 @@
 			"_ensureFinishButtonsExist",
 			"prefix",
 			"lc-options",
-			"_close",
-			"(button"
+			"_close"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -618,17 +611,9 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"groups":
-	[
-		{
-			"sheets":
-			[
-			]
-		}
-	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"input":
 	{
@@ -662,7 +647,6 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "steveasleep.sublime-project",
 	"replace":
 	{
 		"height": 50.0
@@ -675,12 +659,20 @@
 		"selected_items":
 		[
 			[
-				"app",
-				"scripts/App.js"
+				"resume",
+				"content/pages/resume.md"
+			],
+			[
+				"spacetr",
+				"content/posts/2010-12-13-space-train-postmortem.md"
 			],
 			[
 				"makef",
 				"Makefile"
+			],
+			[
+				"app",
+				"scripts/App.js"
 			],
 			[
 				"babel",
@@ -1177,14 +1169,6 @@
 			[
 				"tables",
 				"shared/gwlib/db/tables.py"
-			],
-			[
-				"workersls",
-				"salt/pillar/worker.sls"
-			],
-			[
-				"workerinitsls",
-				"salt/salt/worker/init.sls"
 			]
 		],
 		"width": 0.0
@@ -1211,7 +1195,6 @@
 		],
 		"width": 392.0
 	},
-	"selected_group": 0,
 	"settings":
 	{
 	},
