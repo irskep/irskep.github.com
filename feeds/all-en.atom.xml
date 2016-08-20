@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all-en.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Why I wrote a new documentation system, and why you might like it</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><updated>2016-05-09T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all-en.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Computer Words: a new Markdown documentation tool</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I write a lot of documentation. I do it for two reasons: I like writing, and I
 like to be understood. Documentation is what takes software from “something
 &lt;code&gt;@irskep&lt;/code&gt; put on GitHub” to something you can actually&amp;nbsp;use.&lt;/p&gt;
@@ -14,9 +14,9 @@ projects tends to fall into one of three modes if they have it at&amp;nbsp;all:&
 &lt;p&gt;Some ecosystems have good, fairly well known tools (see Python and Sphinx), but
 with the prevalence of Markdown and the convenience of hosting Markdown files
 on GitHub, I suspect people have been tending toward the solutions with less&amp;nbsp;friction.&lt;/p&gt;
-&lt;p&gt;I want it to be easier to produce good documentation sites (without GitHub
-branding), with a bare-minimum learning curve and a sky&amp;#8217;s-the-limit plugin
-architecture, so that more projects have  better&amp;nbsp;documentation.&lt;/p&gt;
+&lt;p&gt;I want it to be easier to produce good documentation sites, without GitHub
+branding, with a bare-minimum learning curve, and a sky&amp;#8217;s-the-limit plugin
+architecture, so that more projects have better&amp;nbsp;documentation.&lt;/p&gt;
 &lt;p&gt;I think I&amp;#8217;ve succeeded. &lt;a href="http://steveasleep.com/computerwords"&gt;Computer Words&lt;/a&gt;
 is a tool written in Python 3 that lets you turn your &lt;a href="https://github.com/irskep/computerwords/tree/master/docs"&gt;directory of Markdown
 files&lt;/a&gt; into a
@@ -39,25 +39,28 @@ keep it small and easy to&amp;nbsp;use.&lt;/p&gt;
 &lt;p&gt;If you want to auto-generate docs from a programming language besides Python,
 and you are willing to write a docstring parser for your language (in your
 language!), I would love to help you. The interchange format is very&amp;nbsp;simple.&lt;/p&gt;
+&lt;p&gt;Version 1.0 is a groundwork-focused release. The theme isn&amp;#8217;t very fancy, but
+most of the pieces are in place to grow the system&amp;nbsp;cleanly.&lt;/p&gt;
 &lt;p&gt;If you currently use Sphinx and reStructuredText, you should probably keep
 doing that, but you might also want to read the &lt;a href="http://steveasleep.com/computerwords/related_work.html"&gt;Related
 Work&lt;/a&gt; and &lt;a href="http://steveasleep.com/computerwords/faq.html"&gt;Frequently
 Anticipated Criticisms&lt;/a&gt; sections
-of the&amp;nbsp;docs.&lt;/p&gt;</summary><category term="projects"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://steveasleep.com/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><updated>2015-04-25T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-25:slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+of the&amp;nbsp;docs.&lt;/p&gt;</summary><category term="projects computerwords"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://steveasleep.com/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-25:slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
 a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineering&amp;nbsp;skills.&lt;/p&gt;
-&lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation&amp;nbsp;&lt;span class="caps"&gt;EP&lt;/span&gt;!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation
+&lt;span class="caps"&gt;EP&lt;/span&gt;!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a collection of “bedroom tapes” made between 2005 and 2009. The popular vision of a budding high school rock musician is a guitarist sitting on a bed writing bad love songs, but in my case, I was at a desk with a low-end Mac and a &lt;span class="caps"&gt;MIDI&lt;/span&gt; keyboard, sharing the room with two more computers and a treadmill, writing bad video game&amp;nbsp;soundtracks.&lt;/p&gt;
 &lt;p&gt;Since the rise of the 4-track, the cost of making decent home recordings has fallen at different rates for different genres. As a so-so piano student and early-to-mid-‘00s Mac user, my options were limited at first to &lt;span class="caps"&gt;MIDI&lt;/span&gt; editors. When Apple’s Garageband program came out, and I finally got a copy, I discovered the world of software&amp;nbsp;synthesizers.&lt;/p&gt;
 &lt;p&gt;Video game development was my other major hobby at the time, so it seemed obvious that I should write my own soundtracks. (Otherwise, I wouldn’t have soundtracks at all, given my $0 budget.) My modus operandi was to constantly write songs for soundtracks for games that didn’t exist yet, and pull out the best ones from my catalogue when I actually made a&amp;nbsp;game.&lt;/p&gt;
 &lt;p&gt;Four of the tracks on this &lt;span class="caps"&gt;EP&lt;/span&gt; come from that process. Duty Calls was made for Escort Wing, a game designed and mostly programmed by Will Hogben. Glue Me Together and The Creature Sneaks were made for gw0rp, my entry into uDevGames 2008. Catastrophe Prelude was never used for anything, but written for a nonexistent&amp;nbsp;game.&lt;/p&gt;
 &lt;p&gt;In 2007, I built a Blue Man Group-style &lt;span class="caps"&gt;PVC&lt;/span&gt; instrument for a science competition. Once built, it was too tempting to pass up making music with it, so I wrote Parakeet in the E.R., Unsolved, and a few more songs that don’t appear on this &lt;span class="caps"&gt;EP&lt;/span&gt;. Those tracks also feature my classmates Amanda Andrews with bizarro-world guitar parts, and Eric Baize with an ocarina. My brother Phil played the bluesy intro to Unsolved. “Wheeee!” was made in the same batch, but doesn’t feature the &lt;span class="caps"&gt;PVC&lt;/span&gt;&amp;nbsp;instrument.&lt;/p&gt;
 &lt;p&gt;That just leaves The Five Dollar Song, which I’ll just say was mostly written and played by Phil, with contributions from me, around&amp;nbsp;2005.&lt;/p&gt;
-&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://steveasleep.com/the-nest-ep.html" rel="alternate"></link><updated>2015-04-20T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-20:the-nest-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://steveasleep.com/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-20:the-nest-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
-&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://steveasleep.com/anthony-presti-album.html" rel="alternate"></link><updated>2014-04-29T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-04-29:anthony-presti-album.html</id><summary type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://steveasleep.com/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-04-29:anthony-presti-album.html</id><summary type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
-&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><updated>2013-08-02T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-08-02:the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-08-02:the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
 at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
 ran for only nine issues published between 1997 and 1999, its biting social
 commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
@@ -65,7 +68,7 @@ commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
 New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
 years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="http://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><updated>2013-07-28T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-07-28:teaching-in-turin.html</id><summary type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="http://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-07-28:teaching-in-turin.html</id><summary type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
 Big Dive in Turin, Italy. Big Dive is a technology training program about data
 science (applied statistics), visualization (displaying data in an
 understandable way), and computer programming. Most of the students are in some
@@ -183,7 +186,7 @@ moving gourmet&amp;nbsp;restaurant!&lt;/p&gt;
 &lt;p&gt;Even though no one on the train spoke English, I managed to order red wine and
 enjoyed my dinner immensely. (One of the reasons I chose this event in the
 first place was its fixed menu.) It was an appropriate end to a great&amp;nbsp;week.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="On top of the world" src="http://steveasleep.com/img/turin/return_trip.jpg" /&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><updated>2013-05-04T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;img alt="On top of the world" src="http://steveasleep.com/img/turin/return_trip.jpg" /&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
@@ -203,7 +206,7 @@ grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
 the rest as I went&amp;nbsp;along.&lt;/p&gt;
 &lt;p&gt;You can do a few&amp;nbsp;things:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Move with the arrow keys or&amp;nbsp;&lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Move with the arrow keys or &lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
 &lt;li&gt;Harvest color with&amp;nbsp;space.&lt;/li&gt;
 &lt;li&gt;Dig out new rooms by bumping into walls. You need color to do this. The new 
    room will be the color of your dot, which is affected by the color in your&amp;nbsp;bucket.&lt;/li&gt;
@@ -343,7 +346,7 @@ pieces, I spent almost no time debugging simple (or even complicated)&amp;nbsp;i
 game.  Don’t give yourself any surprises. (Python developers have a
 particularly tough time with this one. There are still a few that ask you to
 install PyGame to play and rate their game. I sympathize, having used py2app
-for&amp;nbsp;&lt;span class="caps"&gt;LD19&lt;/span&gt;.)&lt;/p&gt;
+for &lt;span class="caps"&gt;LD19&lt;/span&gt;.)&lt;/p&gt;
 &lt;p&gt;If you spend any time in Javascript, try to get your head around
 &lt;a href="https://github.com/raimohanska/bacon.js"&gt;Bacon.js&lt;/a&gt;. It can decrease game logic
 complexity by quite a lot if you’re willing to invest your brain resources in
@@ -384,24 +387,24 @@ my tools really well, I&amp;nbsp;suppose.&lt;/p&gt;
 &lt;h2 id="in-closing"&gt;In&amp;nbsp;closing,&lt;/h2&gt;
 &lt;p&gt;I had a fun and intense time this year. Of my three attempts to date, We
 Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
-another round in August for&amp;nbsp;&lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="games"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
+another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="games"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
 web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
 Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
-Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><category term="meta"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><updated>2012-11-21T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-21:rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy.png" /&gt;&lt;/p&gt;
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><category term="meta"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-21:rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy.png" /&gt;&lt;/p&gt;
 &lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
 combination of technologies we use to render and display enormous zoomed out
-world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><updated>2012-11-14T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-14:1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy2.png" /&gt;&lt;/p&gt;
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-14:1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy2.png" /&gt;&lt;/p&gt;
 &lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>My Master’s Thesis</title><link href="http://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><updated>2012-04-16T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-16:my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>My Master’s Thesis</title><link href="http://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-16:my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
 interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><updated>2011-01-10T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><published>2011-01-10T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
 nine years&amp;nbsp;old.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
@@ -433,14 +436,14 @@ exercises at the end of each chapter. There is a final chapter with some
 example programs, and then appendices for reference, troubleshooting, editing,
 and information about computers in&amp;nbsp;general.&lt;/p&gt;
 &lt;p&gt;Here&amp;#8217;s a quick example to refresh your &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;memory:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; 
-&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;JUMP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt; 
-&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; 
-&lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;CLAP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt; 
-&lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; 
-&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; 
-&lt;span class="n"&gt;&lt;span class="caps"&gt;RUN&lt;/span&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;NEW
+10 FOR J = 1 TO 5 
+20 PRINT &amp;quot;JUMP&amp;quot;;J 
+30 FOR C = 1 TO 3 
+40 PRINT &amp;quot;CLAP&amp;quot;;C 
+50 NEXT C 
+60 NEXT J 
+RUN
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -453,10 +456,10 @@ very good&amp;nbsp;reasons.&lt;/p&gt;
 example that follows a description of what variables&amp;nbsp;are:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You can put variables in a program, like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;NEW
+10 N = 2
+20 X = 5
+30 PRINT N + X
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -468,7 +471,7 @@ only the word &lt;span class="caps"&gt;PRINT&lt;/span&gt; makes a message appear
 &lt;/blockquote&gt;
 &lt;p&gt;It&amp;#8217;s a small, self-contained, understandable example with a concise, complete
 explanation and an invitation to experiment. In this way, it mirrors the style
-of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/"&gt;Learn Python The Hard
+of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/index"&gt;Learn Python The Hard
 Way&lt;/a&gt;. It never blames the reader for
 being wrong, and in fact seems to encourage the reader to forgive his or her
 own mistakes while writing&amp;nbsp;programs.&lt;/p&gt;
@@ -537,7 +540,7 @@ not necessarily with good documentation for those new to&amp;nbsp;programming:&l
 &lt;li&gt;&lt;a href="http://www.processing.org/"&gt;Processing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blitzmax.com/"&gt;BlitzMax&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.yoyogames.com/make"&gt;GameMaker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png" /&gt;&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png" /&gt;&lt;/p&gt;
 &lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
@@ -564,7 +567,7 @@ Cleveland Institute of Art and Case Western Reserve University. Teams of 6-12
 artists and programmers collaborate to produce some sort of game. At the end of
 the course, the teams present to their peers and to Electronic Arts staff for
 questions and critique. The course is currently taught by Dr. Marc Buchner
-(&lt;span class="caps"&gt;CWRU&lt;/span&gt;) and &lt;a href="http://www.knuthybinette.com/"&gt;Knut Hybinette&lt;/a&gt;&amp;nbsp;(&lt;span class="caps"&gt;CIA&lt;/span&gt;).&lt;/p&gt;
+(&lt;span class="caps"&gt;CWRU&lt;/span&gt;) and &lt;a href="http://www.knuthybinette.com/"&gt;Knut Hybinette&lt;/a&gt; (&lt;span class="caps"&gt;CIA&lt;/span&gt;).&lt;/p&gt;
 &lt;p&gt;The other two games made this semester were Kalotai, a location-aware monster
 collection/battle game for Android, and Louder Than Words, a platformer with
 branching story lines based on a morality&amp;nbsp;system.&lt;/p&gt;
@@ -654,9 +657,9 @@ Github&lt;/a&gt;. It&amp;#8217;s not beautiful, but it
 worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;h2 id="the-team"&gt;The&amp;nbsp;Team&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Steve Johnson&lt;/strong&gt;: Lead programmer, screenplay, music, engine,&amp;nbsp;&lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Steve Johnson&lt;/strong&gt;: Lead programmer, screenplay, music, engine, &lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="http:/taxidermyrobot.blogspot.com/"&gt;Kelsey Bass&lt;/a&gt;&lt;/strong&gt;: Lead artist, character design/line&amp;nbsp;work/animation&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="http:/www.fredhatfull.com/"&gt;Fred Hatfull&lt;/a&gt;&lt;/strong&gt;: Level scripting, engine,&amp;nbsp;&lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http:/www.fredhatfull.com/"&gt;Fred Hatfull&lt;/a&gt;&lt;/strong&gt;: Level scripting, engine, &lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="http://www.ekeegan.com/"&gt;Liz Keegan&lt;/a&gt;&lt;/strong&gt;: Environments,&amp;nbsp;objects&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Tyler Goeringer&lt;/strong&gt;: Level scripting,&amp;nbsp;engine&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Susie Kim&lt;/strong&gt;:&amp;nbsp;Objects&lt;/li&gt;

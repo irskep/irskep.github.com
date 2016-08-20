@@ -80,14 +80,14 @@ the <code>--help</code> string, it needs to have a detailed description on the a
 doc page, and it needs to appear in the &#8220;quick reference&#8221;&nbsp;table.</p>
 <p>Let&#8217;s take the <code>interpreter</code> option as an example. It&#8217;s defined as an option in
 <code>mrjob/options.py</code>:</p>
-<div class="highlight"><pre><span class="n">opt_group</span><span class="p">.</span><span class="n">add_option</span><span class="p">(</span>
-    <span class="err">&#39;</span><span class="o">--</span><span class="n">interpreter</span><span class="err">&#39;</span><span class="p">,</span> <span class="n">dest</span><span class="o">=</span><span class="err">&#39;</span><span class="n">interpreter</span><span class="err">&#39;</span><span class="p">,</span> <span class="k">default</span><span class="o">=</span><span class="n">None</span><span class="p">,</span>
-    <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s">&quot;Interpreter to run your script, e.g. python or ruby.&quot;</span><span class="p">)),</span>
+<div class="highlight"><pre><span></span>opt_group.add_option(
+    &#39;--interpreter&#39;, dest=&#39;interpreter&#39;, default=None,
+    help=(&quot;Interpreter to run your script, e.g. python or ruby.&quot;)),
 </pre></div>
 
 
 <p>It has an entry in the reference table in <code>configs-reference.rst</code>:</p>
-<div class="highlight"><pre>======================================================= ================================================================== ============================== ================
+<div class="highlight"><pre><span></span>======================================================= ================================================================== ============================== ================
 Option                                                  Switches                                                           Default                        Data type
 <span class="gh">======================================================= ================================================================== ============================== ================</span>
 <span class="gh">...</span>
@@ -98,7 +98,7 @@ Option                                                  Switches                
 <p>(Incomprehensibility of large reStructuredText tables at small column
 widths intentionally&nbsp;preserved.)</p>
 <p>And finally, it has a description in <code>configs-all-runners.rst</code>:</p>
-<div class="highlight"><pre><span class="p">..</span> <span class="nt">_opt_interpreter:</span>
+<div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_opt_interpreter:</span>
 
 <span class="gs">**interpreter**</span> (<span class="na">:option:</span><span class="nv">`--interpreter`</span>)
     Interpreter to launch your script with. Defaults to the value
@@ -149,7 +149,7 @@ a description of what the option&nbsp;does.</p>
 <p>Describe the option on the appropriate doc page with this&nbsp;syntax:</p>
 </li>
 </ol>
-<div class="highlight"><pre><span class="p">..</span> <span class="nt">_opt_interpreter:</span>
+<div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_opt_interpreter:</span>
 
 <span class="p">..</span> <span class="ow">mrjob-opt</span><span class="p">::</span>
     <span class="nc">:config:</span> <span class="nf">interpreter</span>

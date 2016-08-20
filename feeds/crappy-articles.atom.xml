@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/crappy-articles.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2011-01-10T00:00:00-08:00</updated><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><updated>2011-01-10T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/crappy-articles.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2011-01-10T00:00:00-08:00</updated><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><published>2011-01-10T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
 nine years&amp;nbsp;old.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
@@ -31,14 +31,14 @@ exercises at the end of each chapter. There is a final chapter with some
 example programs, and then appendices for reference, troubleshooting, editing,
 and information about computers in&amp;nbsp;general.&lt;/p&gt;
 &lt;p&gt;Here&amp;#8217;s a quick example to refresh your &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;memory:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; 
-&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;JUMP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;J&lt;/span&gt; 
-&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;FOR&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;TO&lt;/span&gt;&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; 
-&lt;span class="mi"&gt;40&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;span class="caps"&gt;CLAP&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt; 
-&lt;span class="mi"&gt;50&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt; 
-&lt;span class="mi"&gt;60&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;NEXT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;J&lt;/span&gt; 
-&lt;span class="n"&gt;&lt;span class="caps"&gt;RUN&lt;/span&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;NEW
+10 FOR J = 1 TO 5 
+20 PRINT &amp;quot;JUMP&amp;quot;;J 
+30 FOR C = 1 TO 3 
+40 PRINT &amp;quot;CLAP&amp;quot;;C 
+50 NEXT C 
+60 NEXT J 
+RUN
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -51,10 +51,10 @@ very good&amp;nbsp;reasons.&lt;/p&gt;
 example that follows a description of what variables&amp;nbsp;are:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You can put variables in a program, like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;&lt;span class="caps"&gt;NEW&lt;/span&gt;&lt;/span&gt;
-&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
-&lt;span class="mi"&gt;20&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="mi"&gt;30&lt;/span&gt; &lt;span class="n"&gt;&lt;span class="caps"&gt;PRINT&lt;/span&gt;&lt;/span&gt; &lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;NEW
+10 N = 2
+20 X = 5
+30 PRINT N + X
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -66,7 +66,7 @@ only the word &lt;span class="caps"&gt;PRINT&lt;/span&gt; makes a message appear
 &lt;/blockquote&gt;
 &lt;p&gt;It&amp;#8217;s a small, self-contained, understandable example with a concise, complete
 explanation and an invitation to experiment. In this way, it mirrors the style
-of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/"&gt;Learn Python The Hard
+of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/index"&gt;Learn Python The Hard
 Way&lt;/a&gt;. It never blames the reader for
 being wrong, and in fact seems to encourage the reader to forgive his or her
 own mistakes while writing&amp;nbsp;programs.&lt;/p&gt;

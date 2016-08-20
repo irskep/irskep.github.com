@@ -128,23 +128,23 @@ called &#8216;resources,&#8217; outside the example folders. Each example folder
 Python file called asteroid.py which runs the game, as well as a game module
 which contains most of the functionality. Your folder structure should look
 like&nbsp;this:</p>
-<div class="highlight"><pre><span class="n">mygame</span><span class="o">/</span>
-    <span class="n">resources</span><span class="o">/</span>
-        <span class="p">(</span><span class="n">images</span> <span class="n">go</span> <span class="n">here</span><span class="p">)</span>
-    <span class="n">version1</span><span class="o">/</span>
-        <span class="n">asteroids</span><span class="p">.</span><span class="n">py</span>
-        <span class="n">game</span><span class="o">/</span>
-            <span class="n">__init__</span><span class="p">.</span><span class="n">py</span>
+<div class="highlight"><pre><span></span>mygame/
+    resources/
+        (images go here)
+    version1/
+        asteroids.py
+        game/
+            __init__.py
 </pre></div>
 
 
 <h3 id="getting-a-window">Getting a&nbsp;window</h3>
 <p>To set up a window, simply <code>import pyglet</code>, create a new instance of
 <code>pyglet.window.Window</code>, and call <code>pyglet.app.run()</code>.</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pyglet</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyglet</span>
 <span class="n">game_window</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">pyglet</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
@@ -156,8 +156,8 @@ away when you press&nbsp;Esc.</p>
 <code>resources.py</code>.</p>
 <p>Since our images reside in a directory other than the example&#8217;s root directory,
 we need to tell pyglet where to find&nbsp;them:</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pyglet</span>
-<span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">path</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;../resources&#39;</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyglet</span>
+<span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;../resources&#39;</span><span class="p">]</span>
 <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">reindex</span><span class="p">()</span>
 </pre></div>
 
@@ -166,9 +166,9 @@ we need to tell pyglet where to find&nbsp;them:</p>
 level as the version1 folder. If we left it off, pyglet would look inside
 <code>version1/</code> for the <code>resources/</code> folder.</p>
 <p>Now that pyglet&#8217;s <code>resource</code> module is initialized, we can easily load the&nbsp;images:</p>
-<div class="highlight"><pre><span class="n">player_image</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="s">&quot;player.png&quot;</span><span class="p">)</span>
-<span class="n">bullet_image</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="s">&quot;bullet.png&quot;</span><span class="p">)</span>
-<span class="n">asteroid_image</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="s">&quot;asteroid.png&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">player_image</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="s2">&quot;player.png&quot;</span><span class="p">)</span>
+<span class="n">bullet_image</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="s2">&quot;bullet.png&quot;</span><span class="p">)</span>
+<span class="n">asteroid_image</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="s2">&quot;asteroid.png&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -176,7 +176,7 @@ level as the version1 folder. If we left it off, pyglet would look inside
 <p>Pyglet will draw all images from their lower left corner by default. We don&#8217;t
 want this behavior for our images, which need to rotate around their centers.
 All we have to do to fix this problem is set their anchor&nbsp;points:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">center_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">center_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Sets an image&#39;s anchor point to its center&quot;&quot;&quot;</span>
     <span class="n">image</span><span class="o">.</span><span class="n">anchor_x</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span>
     <span class="n">image</span><span class="o">.</span><span class="n">anchor_y</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span>
@@ -184,7 +184,7 @@ All we have to do to fix this problem is set their anchor&nbsp;points:</p>
 
 
 <p>Now we can just call <code>center_image()</code> on all our loaded&nbsp;images:</p>
-<div class="highlight"><pre><span class="n">center_image</span><span class="p">(</span><span class="n">player_image</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">center_image</span><span class="p">(</span><span class="n">player_image</span><span class="p">)</span>
 <span class="n">center_image</span><span class="p">(</span><span class="n">bullet_image</span><span class="p">)</span>
 <span class="n">center_image</span><span class="p">(</span><span class="n">asteroid_image</span><span class="p">)</span>
 </pre></div>
@@ -202,9 +202,9 @@ score display, the name of the level, and a row of icons representing the
 number of remaining&nbsp;lives.</p>
 <h3 id="making-the-labels">Making the&nbsp;labels</h3>
 <p>To make a text label in pyglet, just initialize a pyglet.text.Label&nbsp;object:</p>
-<div class="highlight"><pre><span class="n">score_label</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;Score: 0&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">575</span><span class="p">)</span>
-<span class="n">level_label</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s">&quot;My Amazing Game&quot;</span><span class="p">,</span> 
-                                <span class="n">x</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">575</span><span class="p">,</span> <span class="n">anchor_x</span><span class="o">=</span><span class="s">&#39;center&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">score_label</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;Score: 0&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">575</span><span class="p">)</span>
+<span class="n">level_label</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&quot;My Amazing Game&quot;</span><span class="p">,</span> 
+                                <span class="n">x</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">575</span><span class="p">,</span> <span class="n">anchor_x</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -213,9 +213,9 @@ number of remaining&nbsp;lives.</p>
 <p>We want pyglet to call a custom function whenever the window is drawn. To make
 that happen, we need to either subclass <code>Window</code> and override the <code>on_draw()</code>
 function, or use the <code>@Window.event</code> decorator on a function with the same&nbsp;name:</p>
-<div class="highlight"><pre><span class="nd">@game_window.event</span>
+<div class="highlight"><pre><span></span><span class="nd">@game_window.event</span>
 <span class="k">def</span> <span class="nf">on_draw</span><span class="p">():</span>
-    <span class="c"># draw things here</span>
+    <span class="c1"># draw things here</span>
 </pre></div>
 
 
@@ -224,7 +224,7 @@ function, or use the <code>@Window.event</code> decorator on a function with the
 guessed it - the window needs to be redrawn. Other events include
 <code>on_mouse_press</code> and <code>on_key_press</code>.</p>
 <p>Now we can fill the method with the functions necessary to draw our labels. Before we draw anything, we should clear the screen. After that, we can simply call each object&#8217;s <code>draw()</code> function.</p>
-<div class="highlight"><pre><span class="nd">@game_window.event</span>
+<div class="highlight"><pre><span></span><span class="nd">@game_window.event</span>
 <span class="k">def</span> <span class="nf">on_draw</span><span class="p">():</span>
     <span class="n">game_window</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 
@@ -238,7 +238,7 @@ in the upper left corner and a centered label reading &#8220;Version 1: Static
 Graphics&#8221; at the top of the&nbsp;screen.</p>
 <h3 id="making-the-player-and-asteroid-sprites">Making the player and asteroid&nbsp;sprites</h3>
 <p>The player should be an instance or subclass of <code>pyglet.sprite.Sprite</code>, like&nbsp;so:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">game</span> <span class="kn">import</span> <span class="n">resources</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">game</span> <span class="kn">import</span> <span class="n">resources</span>
 <span class="o">...</span>
 <span class="n">player_ship</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">(</span>
     <span class="n">img</span><span class="o">=</span><span class="n">resources</span><span class="o">.</span><span class="n">player_image</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
@@ -246,7 +246,7 @@ Graphics&#8221; at the top of the&nbsp;screen.</p>
 
 
 <p>To get the player to draw on the screen, add a line to <code>on_draw()</code>:</p>
-<div class="highlight"><pre><span class="nd">@game_window.event</span>
+<div class="highlight"><pre><span></span><span class="nd">@game_window.event</span>
 <span class="k">def</span> <span class="nf">on_draw</span><span class="p">():</span>
     <span class="o">...</span>
     <span class="n">player_ship</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
@@ -254,7 +254,7 @@ Graphics&#8221; at the top of the&nbsp;screen.</p>
 
 
 <p>Loading the asteroids is a little more complicated, since we&#8217;ll need to place more than one at random locations that don&#8217;t immediately collide with the player. Let&#8217;s put the loading code in a new game submodule called <code>load.py</code>:</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pyglet</span><span class="o">,</span> <span class="nn">random</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyglet</span><span class="o">,</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">resources</span>
 
 <span class="k">def</span> <span class="nf">asteroids</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">):</span>
@@ -271,7 +271,7 @@ Graphics&#8221; at the top of the&nbsp;screen.</p>
 
 
 <p>All we are doing here is making a few new sprites with random positions. There&#8217;s still a problem, though: an asteroid might randomly be placed exactly where the player is, causing immediate death. To fix this issue, we&#8217;ll need to be able to tell how far away new asteroids are from the player. Here is a simple function to calculate that&nbsp;distance:</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="o">...</span>
 <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">point_1</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">point_2</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)):</span>
     <span class="sd">&quot;&quot;&quot;Returns the distance between two points&quot;&quot;&quot;</span>
@@ -287,7 +287,7 @@ coordinates until the asteroid is far enough away. Pyglet sprites keep track of
 their position both as a tuple (<code>Sprite.position</code>) and as <code>x</code> and <code>y</code>
 attributes (<code>Sprite.x</code> and <code>Sprite.y</code>). To keep our code short, we&#8217;ll just pass
 the position tuple into the&nbsp;function.</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">asteroids</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">,</span> <span class="n">player_position</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">asteroids</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">,</span> <span class="n">player_position</span><span class="p">):</span>
     <span class="n">asteroids</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">):</span>
         <span class="n">asteroid_x</span><span class="p">,</span> <span class="n">asteroid_y</span> <span class="o">=</span> <span class="n">player_position</span>
@@ -306,14 +306,14 @@ the position tuple into the&nbsp;function.</p>
 player, creates the sprite, and gives it a random rotation. Each asteroid is
 appended to a list, which is&nbsp;returned.</p>
 <p>Now you can load three asteroids like&nbsp;this:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">game</span> <span class="kn">import</span> <span class="n">resources</span><span class="p">,</span> <span class="n">load</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">game</span> <span class="kn">import</span> <span class="n">resources</span><span class="p">,</span> <span class="n">load</span>
 <span class="o">...</span>
 <span class="n">asteroids</span> <span class="o">=</span> <span class="n">load</span><span class="o">.</span><span class="n">asteroids</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">player_ship</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
 </pre></div>
 
 
 <p>The asteroids variable now contains a list of sprites. Drawing them on the screen is as simple as it was for the player&#8217;s ship: just call their <code>draw()</code> methods.</p>
-<div class="highlight"><pre><span class="nd">@game_window.event</span>
+<div class="highlight"><pre><span></span><span class="nd">@game_window.event</span>
 <span class="k">def</span> <span class="nf">on_draw</span><span class="p">():</span>
     <span class="o">...</span>
     <span class="k">for</span> <span class="n">asteroid</span> <span class="ow">in</span> <span class="n">asteroids</span><span class="p">:</span>
@@ -332,13 +332,13 @@ drawing by letting you draw all your objects with a single function call. All
 you need to do is create a batch, pass it into each object you want to draw,
 and call the batch&#8217;s <code>draw()</code> method.</p>
 <p>To create a new batch, simply call <code>pyglet.graphics.Batch()</code>:</p>
-<div class="highlight"><pre><span class="n">main_batch</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">Batch</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><span class="n">main_batch</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">graphics</span><span class="o">.</span><span class="n">Batch</span><span class="p">()</span>
 </pre></div>
 
 
 <p>To make an object a member of a batch, just pass the batch into its constructor as the <code>batch</code> keyword&nbsp;argument:</p>
-<div class="highlight"><pre><span class="n">score_label</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
-    <span class="n">text</span><span class="o">=</span><span class="s">&quot;Score: 0&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">575</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="n">main_batch</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">score_label</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span>
+    <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Score: 0&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">575</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="n">main_batch</span><span class="p">)</span>
 </pre></div>
 
 
@@ -347,7 +347,7 @@ and call the batch&#8217;s <code>draw()</code> method.</p>
 <p>To use the batch with the asteroid sprites, we&#8217;ll need to pass the batch into
 the <code>game.load.asteroid()</code> function, then just add it as a keyword argument to
 each new sprite. Update the&nbsp;function:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">asteroids</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">,</span> <span class="n">player_position</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">asteroids</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">,</span> <span class="n">player_position</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="o">...</span>
     <span class="n">new_asteroid</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">(</span>
         <span class="n">img</span><span class="o">=</span><span class="n">resources</span><span class="o">.</span><span class="n">asteroid_image</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">asteroid_x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">asteroid_y</span><span class="p">,</span>
@@ -356,12 +356,12 @@ each new sprite. Update the&nbsp;function:</p>
 
 
 <p>And update the place where it&#8217;s&nbsp;called:</p>
-<div class="highlight"><pre><span class="n">asteroids</span> <span class="o">=</span> <span class="n">load</span><span class="o">.</span><span class="n">asteroids</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">player_ship</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="n">main_batch</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">asteroids</span> <span class="o">=</span> <span class="n">load</span><span class="o">.</span><span class="n">asteroids</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">player_ship</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="n">main_batch</span><span class="p">)</span>
 </pre></div>
 
 
 <p>Now you can replace those five lines of <code>draw()</code> calls with just&nbsp;one:</p>
-<div class="highlight"><pre><span class="n">main_batch</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><span class="n">main_batch</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
 </pre></div>
 
 
@@ -375,7 +375,7 @@ the <code>load</code> module to generate&nbsp;them.</p>
 version using an image editor, or we could just let pyglet do the scaling. I
 don&#8217;t know about you, but I prefer the option that requires less&nbsp;work.</p>
 <p>The function for creating the icons is almost exactly the same as the one for creating asteroids. For each icon we just create a sprite, give it a position and scale, and append it to the return&nbsp;list.</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">player_lives</span><span class="p">(</span><span class="n">num_icons</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">player_lives</span><span class="p">(</span><span class="n">num_icons</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">player_lives</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_icons</span><span class="p">):</span>
         <span class="n">new_sprite</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">(</span>
@@ -405,7 +405,7 @@ attribute, but I find that simply subclassing Sprite provides more convenient&nb
 <p>Create a new game submodule called <code>physicalobject.py</code> and declare a
 <code>PhysicalObject</code> class. The only new attributes we&#8217;ll be adding will store the
 object&#8217;s velocity, so the constructor will be&nbsp;simple.</p>
-<div class="highlight"><pre><span class="k">class</span> <span class="nc">PhysicalObject</span><span class="p">(</span><span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PhysicalObject</span><span class="p">(</span><span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">):</span>
 
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">PhysicalObject</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -416,7 +416,7 @@ object&#8217;s velocity, so the constructor will be&nbsp;simple.</p>
 
 <p>Each object will need to be updated every frame, so let&#8217;s write an <code>update()</code>
 method.</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">velocity_x</span> <span class="o">*</span> <span class="n">dt</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">velocity_y</span> <span class="o">*</span> <span class="n">dt</span>
 </pre></div>
@@ -432,7 +432,7 @@ value is calculated&nbsp;later.</p>
 screen before long. Since we&#8217;re making a version of Asteroids, we would rather
 they just wrapped around the screen. Here is a simple function that
 accomplishes the&nbsp;goal:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">check_bounds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">check_bounds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">min_x</span> <span class="o">=</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span>
     <span class="n">min_y</span> <span class="o">=</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">height</span><span class="o">/</span><span class="mi">2</span>
     <span class="n">max_x</span> <span class="o">=</span> <span class="mi">800</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span>
@@ -456,7 +456,7 @@ end of <code>update()</code>.</p>
 module and change the <code>new_asteroid = ...</code> line to create a new
 <code>PhysicalObject</code> instead of a <code>Sprite</code>. You&#8217;ll also want to give them a random
 initial velocity.  Here is the new, improved <code>load.asteroids()</code> function:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">asteroids</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">,</span> <span class="n">player_position</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">asteroids</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">,</span> <span class="n">player_position</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="o">...</span>
     <span class="n">new_asteroid</span> <span class="o">=</span> <span class="n">physicalobject</span><span class="o">.</span><span class="n">PhysicalObject</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
     <span class="n">new_asteroid</span><span class="o">.</span><span class="n">rotation</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">360</span><span class="p">)</span>
@@ -470,12 +470,12 @@ initial velocity.  Here is the new, improved <code>load.asteroids()</code> funct
 <p>To call each object&#8217;s <code>update()</code> method every frame, we first need to have a
 list of those objects. For now, we can just declare it after setting up all the
 other&nbsp;objects:</p>
-<div class="highlight"><pre><span class="n">game_objects</span> <span class="o">=</span> <span class="p">[</span><span class="n">player_ship</span><span class="p">]</span> <span class="o">+</span> <span class="n">asteroids</span>
+<div class="highlight"><pre><span></span><span class="n">game_objects</span> <span class="o">=</span> <span class="p">[</span><span class="n">player_ship</span><span class="p">]</span> <span class="o">+</span> <span class="n">asteroids</span>
 </pre></div>
 
 
 <p>Now we can write a simple function to iterate over the&nbsp;list:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">dt</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">dt</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">game_objects</span><span class="p">:</span>
         <span class="n">obj</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
 </pre></div>
@@ -493,7 +493,7 @@ fast, 120 times per second, to get smooth&nbsp;animation.</p>
 The <code>pyglet.clock</code> module contains a number of ways to call functions
 periodically or at some specified time in the future. The one we want is
 <code>pyglet.clock.schedule_interval()</code>:</p>
-<div class="highlight"><pre><span class="n">pyglet</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mf">120.0</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">pyglet</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">schedule_interval</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mf">120.0</span><span class="p">)</span>
 </pre></div>
 
 
@@ -507,7 +507,7 @@ slide off the&nbsp;edge.</p>
 <p>In addition to obeying the basic laws of physics, the player object needs to
 respond to keyboard input. Start by creating a game.player module, importing
 the appropriate modules, and subclassing <code>PhysicalObject</code>:</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">physicalobject</span><span class="o">,</span> <span class="nn">resources</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">physicalobject</span><span class="o">,</span> <span class="nn">resources</span>
 
 <span class="k">class</span> <span class="nc">Player</span><span class="p">(</span><span class="n">physicalobject</span><span class="o">.</span><span class="n">PhysicalObject</span><span class="p">):</span>
 
@@ -522,7 +522,7 @@ Player will always have the same image. But <code>Player</code> objects need a c
 attributes. Since the ship will always thrust with the same force in whatever
 direction it points, we&#8217;ll need to define a constant for the magnitude of that
 force. We should also define a constant for the ship&#8217;s rotation&nbsp;speed.</p>
-<div class="highlight"><pre>        <span class="bp">self</span><span class="o">.</span><span class="n">thrust</span> <span class="o">=</span> <span class="mf">300.0</span>
+<div class="highlight"><pre><span></span>        <span class="bp">self</span><span class="o">.</span><span class="n">thrust</span> <span class="o">=</span> <span class="mf">300.0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">rotate_speed</span> <span class="o">=</span> <span class="mf">200.0</span>
 </pre></div>
 
@@ -533,33 +533,33 @@ registered event handlers. But we want to use a polling approach in this
 example, checking periodically if a key is down.  One way to accomplish that is
 to maintain a dictionary of keys. First, we need to initialize the dictionary
 in the&nbsp;constructor:</p>
-<div class="highlight"><pre>        <span class="bp">self</span><span class="o">.</span><span class="n">keys</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">up</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<div class="highlight"><pre><span></span>        <span class="bp">self</span><span class="o">.</span><span class="n">keys</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">up</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 </pre></div>
 
 
 <p>Then we need to write two methods, <code>on_key_press()</code> and <code>on_key_release()</code>.
 When pyglet checks a new event handler, it looks for these two methods, among&nbsp;others.</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">from</span> <span class="nn">pyglet.window</span> <span class="kn">import</span> <span class="n">key</span>
 <span class="kn">import</span> <span class="nn">physicalobject</span><span class="o">,</span> <span class="nn">resources</span>
 <span class="o">...</span>
 <span class="k">class</span> <span class="nc">Player</span><span class="p">(</span><span class="n">physicalobject</span><span class="o">.</span><span class="n">PhysicalObject</span><span class="p">)</span>
     <span class="o">...</span>
     <span class="k">def</span> <span class="nf">on_key_press</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">modifiers</span><span class="p">):</span>    
-        <span class="k">if</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">UP</span></span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;up&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-        <span class="k">elif</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">LEFT</span></span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;left&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-        <span class="k">elif</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">RIGHT</span></span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;right&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">if</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n">UP</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;up&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">elif</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n">LEFT</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">elif</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n">RIGHT</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
 
     <span class="k">def</span> <span class="nf">on_key_release</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">modifiers</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">UP</span></span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;up&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-        <span class="k">elif</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">LEFT</span></span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;left&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-        <span class="k">elif</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">RIGHT</span></span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;right&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="k">if</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n">UP</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;up&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="k">elif</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n">LEFT</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="k">elif</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n">RIGHT</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
 </pre></div>
 
 
@@ -568,13 +568,13 @@ later, but for now, this version serves as a good demonstration of pyglet&#8217;
 event&nbsp;system.</p>
 <p>The last thing we need to do is write the <code>update()</code> method. It follows the
 same behavior as a <code>PhysicalObject</code> plus a little extra, so we&#8217;ll need to call
-<code>PhysicalObject</code>&#8216;s <code>update()</code> method and then respond to&nbsp;input.</p>
-<div class="highlight"><pre>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+<code>PhysicalObject</code><span class="quo">&#8216;</span>s <code>update()</code> method and then respond to&nbsp;input.</p>
+<div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Player</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
 
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;left&#39;</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">rotation</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rotate_speed</span> <span class="o">*</span> <span class="n">dt</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;right&#39;</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">rotation</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rotate_speed</span> <span class="o">*</span> <span class="n">dt</span>
 </pre></div>
 
@@ -587,7 +587,7 @@ the result negative whenever you use Python&#8217;s built-in math functions with
 <code>Sprite</code> class, since those functions use radians instead of degrees, and their
 positive direction is counter-clockwise. The code to make the ship thrust
 forward uses an example of such a&nbsp;conversion:</p>
-<div class="highlight"><pre>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s">&#39;up&#39;</span><span class="p">]:</span>
+<div class="highlight"><pre><span></span>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">keys</span><span class="p">[</span><span class="s1">&#39;up&#39;</span><span class="p">]:</span>
             <span class="n">angle_radians</span> <span class="o">=</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">rotation</span><span class="p">)</span>
             <span class="n">force_x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle_radians</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">thrust</span> <span class="o">*</span> <span class="n">dt</span>
             <span class="n">force_y</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle_radians</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">thrust</span> <span class="o">*</span> <span class="n">dt</span>
@@ -603,7 +603,7 @@ ship&#8217;s X and Y velocity components and push the ship in the right&nbsp;dir
 that it&#8217;s an event handler, we should be good to&nbsp;go.</p>
 <h3 id="integrating-the-player-class">Integrating the player&nbsp;class</h3>
 <p>The first thing we need to do is make player_ship an instance of&nbsp;Player:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">game</span> <span class="kn">import</span> <span class="n">player</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">game</span> <span class="kn">import</span> <span class="n">player</span>
 <span class="o">...</span>
 <span class="n">player_ship</span> <span class="o">=</span> <span class="n">player</span><span class="o">.</span><span class="n">Player</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="n">main_batch</span><span class="p">)</span>
 </pre></div>
@@ -611,7 +611,7 @@ that it&#8217;s an event handler, we should be good to&nbsp;go.</p>
 
 <p>Now we need to tell pyglet that <code>player_ship</code> is an event handler. To do that,
 we need to push it onto the event stack with <code>game_window.push_handlers()</code>:</p>
-<div class="highlight"><pre><span class="n">game_window</span><span class="o">.</span><span class="n">push_handlers</span><span class="p">(</span><span class="n">player_ship</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">game_window</span><span class="o">.</span><span class="n">push_handlers</span><span class="p">(</span><span class="n">player_ship</span><span class="p">)</span>
 </pre></div>
 
 
@@ -631,25 +631,25 @@ would think that there would be a better way, and there is:
 <code>pyglet.window.key.KeyStateHandler</code>. This handy class automatically does what
 we have been doing manually: it tracks the state of every key on the&nbsp;keyboard.</p>
 <p>To start using it, we need to initialize it and push it onto the event stack
-instead of the <code>Player</code> class. First, let&#8217;s add it to <code>Player</code>&#8216;s&nbsp;constructor:</p>
-<div class="highlight"><pre><span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">KeyStateHandler</span><span class="p">()</span>
+instead of the <code>Player</code> class. First, let&#8217;s add it to <code>Player</code><span class="quo">&#8216;</span>s&nbsp;constructor:</p>
+<div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">KeyStateHandler</span><span class="p">()</span>
 </pre></div>
 
 
 <p>We also need to push the <code>key_handler</code> object onto the event stack. Keep
 pushing the <code>player_ship</code> object in addition to its key handler, because we&#8217;ll
 need it to keep handling key press and release events&nbsp;later.</p>
-<div class="highlight"><pre><span class="n">game_window</span><span class="o">.</span><span class="n">push_handlers</span><span class="p">(</span><span class="n">player_ship</span><span class="o">.</span><span class="n">key_handler</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">game_window</span><span class="o">.</span><span class="n">push_handlers</span><span class="p">(</span><span class="n">player_ship</span><span class="o">.</span><span class="n">key_handler</span><span class="p">)</span>
 </pre></div>
 
 
 <p>Since <code>Player</code> now relies on <code>key_handler</code> to read the keyboard, we need to
 change the <code>update()</code> method to use it. The only changes are in the if&nbsp;conditions:</p>
-<div class="highlight"><pre><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">LEFT</span></span><span class="p">]:</span>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">LEFT</span><span class="p">]:</span>
     <span class="o">...</span>
-<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">RIGHT</span></span><span class="p">]:</span>
+<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">RIGHT</span><span class="p">]:</span>
     <span class="o">...</span>
-<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">UP</span></span><span class="p">]:</span>
+<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">UP</span><span class="p">]:</span>
     <span class="o">...</span>
 </pre></div>
 
@@ -670,14 +670,14 @@ approach will be the simplest and most&nbsp;scalable.</p>
 <p>To make the flame draw in the correct position, we could either do some
 complicated math every frame, or we could just move the image&#8217;s anchor point.
 First, load the image in <code>resources.py</code>:</p>
-<div class="highlight"><pre><span class="n">engine_image</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="s">&quot;engine_flame.png&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">engine_image</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">resource</span><span class="o">.</span><span class="n">image</span><span class="p">(</span><span class="s2">&quot;engine_flame.png&quot;</span><span class="p">)</span>
 </pre></div>
 
 
 <p>To get the flame to draw behind the player, we need to move the flame image&#8217;s
 center of rotation to the right, past the end of the image. To do that, we just
 set its <code>anchor_x</code> and <code>anchor_y</code> attributes:</p>
-<div class="highlight"><pre><span class="n">engine_image</span><span class="o">.</span><span class="n">anchor_x</span> <span class="o">=</span> <span class="n">engine_image</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="mf">1.5</span>
+<div class="highlight"><pre><span></span><span class="n">engine_image</span><span class="o">.</span><span class="n">anchor_x</span> <span class="o">=</span> <span class="n">engine_image</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="mf">1.5</span>
 <span class="n">engine_image</span><span class="o">.</span><span class="n">anchor_y</span> <span class="o">=</span> <span class="n">engine_image</span><span class="o">.</span><span class="n">height</span> <span class="o">/</span> <span class="mi">2</span>
 </pre></div>
 
@@ -689,7 +689,7 @@ when you finish this&nbsp;section.</p>
 <p>The engine sprite needs to be initialized with all the same arguments as
 Player, except that it needs a different image and must be initially invisible.
 The code for creating it belongs in <code>Player.__init__()</code> and is very&nbsp;straightforward:</p>
-<div class="highlight"><pre><span class="bp">self</span><span class="o">.</span><span class="n">engine_sprite</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">(</span>
+<div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">engine_sprite</span> <span class="o">=</span> <span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">(</span>
     <span class="n">img</span><span class="o">=</span><span class="n">resources</span><span class="o">.</span><span class="n">engine_image</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 <span class="bp">self</span><span class="o">.</span><span class="n">engine_sprite</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="bp">False</span>
 </pre></div>
@@ -698,7 +698,7 @@ The code for creating it belongs in <code>Player.__init__()</code> and is very&n
 <p>To make the engine sprite appear only while the player is thrusting, we need to
 add some logic to the if <code>self.key_handler[key.UP]</code> block in the <code>update()</code>
 method.</p>
-<div class="highlight"><pre><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">UP</span></span><span class="p">]:</span>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">UP</span><span class="p">]:</span>
     <span class="o">...</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">engine_sprite</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="k">else</span><span class="p">:</span>
@@ -708,7 +708,7 @@ method.</p>
 
 <p>To make the sprite appear at the player&#8217;s position, we also need to update its
 position and rotation&nbsp;attributes:</p>
-<div class="highlight"><pre><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">UP</span></span><span class="p">]:</span>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">key_handler</span><span class="p">[</span><span class="n">key</span><span class="o">.</span><span class="n">UP</span><span class="p">]:</span>
     <span class="o">...</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">engine_sprite</span><span class="o">.</span><span class="n">rotation</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rotation</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">engine_sprite</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span>
@@ -723,11 +723,11 @@ position and rotation&nbsp;attributes:</p>
 <p>When the player is inevitably smashed to bits by an asteroid, he will disappear
 from the screen. However, simply removing the Player instance from the
 <code>game_objects</code> list is not enough for it to be removed from the graphics batch.
-To do that, we need to call its <code>delete()</code> method. Normally a <code>Sprite</code>&#8216;s own
+To do that, we need to call its <code>delete()</code> method. Normally a <code>Sprite</code><span class="quo">&#8216;</span>s own
 <code>delete()</code> method will work fine without modifications, but our subclass has its
 own Sprite which must also be deleted when the Player instance is deleted. To
 get both to die gracefully, we must write a simple <code>delete()</code> method:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">engine_sprite</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
     <span class="nb">super</span><span class="p">(</span><span class="n">Player</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
 </pre></div>
@@ -747,7 +747,7 @@ objects, but it will work for our purposes. We can use one easy optimization
 and avoid checking the same pair of objects twice. Here&#8217;s the setup for the
 loops, which belongs in <code>update()</code>. It simply iterates over all object pairs
 without doing&nbsp;anything.</p>
-<div class="highlight"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">game_objects</span><span class="p">)):</span>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">game_objects</span><span class="p">)):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">game_objects</span><span class="p">)):</span>
         <span class="n">obj_1</span> <span class="o">=</span> <span class="n">game_objects</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
         <span class="n">obj_2</span> <span class="o">=</span> <span class="n">game_objects</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
@@ -765,7 +765,7 @@ don&#8217;t exist yet. One method will determine if the two objects actually col
 and the other method will give each object an opportunity to respond to the
 collision. The checking code itself is easy to understand, so I won&#8217;t bother
 you with further&nbsp;explanations:</p>
-<div class="highlight"><pre>        <span class="k">if</span> <span class="ow">not</span> <span class="n">obj_1</span><span class="o">.</span><span class="n">dead</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">obj_2</span><span class="o">.</span><span class="n">dead</span><span class="p">:</span>
+<div class="highlight"><pre><span></span>        <span class="k">if</span> <span class="ow">not</span> <span class="n">obj_1</span><span class="o">.</span><span class="n">dead</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">obj_2</span><span class="o">.</span><span class="n">dead</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">obj_1</span><span class="o">.</span><span class="n">collides_with</span><span class="p">(</span><span class="n">obj_2</span><span class="p">):</span>
                 <span class="n">obj_1</span><span class="o">.</span><span class="n">handle_collision_with</span><span class="p">(</span><span class="n">obj_2</span><span class="p">)</span>
                 <span class="n">obj_2</span><span class="o">.</span><span class="n">handle_collision_with</span><span class="p">(</span><span class="n">obj_1</span><span class="p">)</span>
@@ -773,7 +773,7 @@ you with further&nbsp;explanations:</p>
 
 
 <p>Now all that remains is for us to go through the list and remove dead&nbsp;objects:</p>
-<div class="highlight"><pre><span class="o">...</span><span class="n">update</span> <span class="n">game</span> <span class="n">objects</span><span class="o">...</span>
+<div class="highlight"><pre><span></span><span class="o">...</span><span class="n">update</span> <span class="n">game</span> <span class="n">objects</span><span class="o">...</span>
 
 <span class="k">for</span> <span class="n">to_remove</span> <span class="ow">in</span> <span class="p">[</span><span class="n">obj</span> <span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">game_objects</span> <span class="k">if</span> <span class="n">obj</span><span class="o">.</span><span class="n">dead</span><span class="p">]:</span>
     <span class="n">to_remove</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
@@ -791,7 +791,7 @@ before the loop actually runs, so there should be no&nbsp;problems.</p>
 the <code>collides_with()</code> method, and the <code>handle_collision_with()</code> method. The
 <code>collides_with()</code> method will need to use the <code>distance()</code> function, so let&#8217;s
 start by moving that function into its own submodule of game, called <code>util.py</code>:</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pyglet</span><span class="o">,</span> <span class="nn">math</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyglet</span><span class="o">,</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">point_1</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">point_2</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)):</span>
     <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span>
@@ -802,7 +802,7 @@ start by moving that function into its own submodule of game, called <code>util.
 
 <p>Remember to call from util import distance in load.py. Now we can write
 <code>PhysicalObject.collides_with()</code> without duplicating&nbsp;code.</p>
-<div class="highlight"><pre><span class="p">{</span><span class="o">%</span> <span class="n">highlight</span> <span class="n">python</span> <span class="o">%</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="n">highlight</span> <span class="n">python</span> <span class="o">%</span><span class="p">}</span>
 <span class="k">def</span> <span class="nf">collides_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
     <span class="n">collision_distance</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">other_object</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span>
     <span class="n">actual_distance</span> <span class="o">=</span> <span class="n">util</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span>
@@ -814,7 +814,7 @@ start by moving that function into its own submodule of game, called <code>util.
 
 <p>The collision handler function is even simpler, since for now we just want
 every object to die as soon as it touches another&nbsp;object:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">handle_collision_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">handle_collision_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">dead</span> <span class="o">=</span> <span class="bp">True</span>
 </pre></div>
 
@@ -843,7 +843,7 @@ approach will make it easy for any object in the game to spawn more&nbsp;objects
 list is to add two lines of code to the <code>game_objects</code> loop. We haven&#8217;t
 implemented the <code>new_objects</code> attribute yet, but when we do, it will be a list
 of objects to&nbsp;add.</p>
-<div class="highlight"><pre><span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">game_objects</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">game_objects</span><span class="p">:</span>
     <span class="n">obj</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
     <span class="n">game_objects</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">new_objects</span><span class="p">)</span>
     <span class="n">obj</span><span class="o">.</span><span class="n">new_objects</span> <span class="o">=</span> <span class="p">[]</span>
@@ -857,7 +857,7 @@ after we have finished iterating over&nbsp;it.</p>
 <p>Declare a <code>to_add</code> list just below the loop and add new objects to it instead.
 At the very bottom of <code>update()</code>, after the object removal code, add the
 objects in <code>to_add</code> to&nbsp;game_objects.</p>
-<div class="highlight"><pre><span class="o">...</span><span class="n">collision</span><span class="o">...</span>
+<div class="highlight"><pre><span></span><span class="o">...</span><span class="n">collision</span><span class="o">...</span>
 
 <span class="n">to_add</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -875,7 +875,7 @@ objects in <code>to_add</code> to&nbsp;game_objects.</p>
 <h3 id="putting-the-attribute-in-physicalobject">Putting the attribute in <code>PhysicalObject</code></h3>
 <p>As mentioned before, all we have to do is declare a new_objects attribute in
 the <code>PhysicalObject</code> class:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="o">....</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">new_objects</span> <span class="o">=</span> <span class="p">[]</span>
 </pre></div>
@@ -892,7 +892,7 @@ and they disappear from the screen after a couple of seconds to prevent the
 player from flooding the screen with&nbsp;bullets.</p>
 <p>First, make a new submodule of game called <code>bullet.py</code> and start a simple
 subclass of <code>PhysicalObject</code>.</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pyglet</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyglet</span>
 <span class="kn">import</span> <span class="nn">physicalobject</span><span class="o">,</span> <span class="nn">resources</span>
 
 <span class="k">class</span> <span class="nc">Bullet</span><span class="p">(</span><span class="n">physicalobject</span><span class="o">.</span><span class="n">PhysicalObject</span><span class="p">):</span>
@@ -908,7 +908,7 @@ subclass of <code>PhysicalObject</code>.</p>
 and lifespan attributes, or we could let pyglet do all the work for us. I don&#8217;t
 know about you, but I prefer the second option. First, we need to write a
 function to call at the end of a bullet&#8217;s&nbsp;life:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">die</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">die</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">dead</span> <span class="o">=</span> <span class="bp">True</span>
 </pre></div>
 
@@ -916,7 +916,7 @@ function to call at the end of a bullet&#8217;s&nbsp;life:</p>
 <p>Now we need to tell pyglet to call it after half a second or so. We can do this
 as soon as the object is initialized by adding a call to
 <code>pyglet.clock.schedule_once()</code> to the&nbsp;constructor:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="nb">super</span><span class="p">(</span><span class="n">Bullet</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span>
         <span class="n">resources</span><span class="o">.</span><span class="n">bullet_image</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
     <span class="n">pyglet</span><span class="o">.</span><span class="n">clock</span><span class="o">.</span><span class="n">schedule_once</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">die</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
@@ -928,7 +928,7 @@ more work on the class itself, let&#8217;s get them on the&nbsp;screen.</p>
 <h3 id="firing-bullets">Firing&nbsp;bullets</h3>
 <p>The <code>Player</code> class will be the only class that fires bullets, so let&#8217;s open it
 up, import the <code>bullet</code> module, and add a <code>bullet_speed</code> attribute to its&nbsp;constructor:</p>
-<div class="highlight"><pre><span class="o">...</span>
+<div class="highlight"><pre><span></span><span class="o">...</span>
 <span class="kn">import</span> <span class="nn">bullet</span>
 
 <span class="k">class</span> <span class="nc">Player</span><span class="p">(</span><span class="n">physicalobject</span><span class="o">.</span><span class="n">PhysicalObject</span><span class="p">):</span>
@@ -942,8 +942,8 @@ up, import the <code>bullet</code> module, and add a <code>bullet_speed</code> a
 
 <p>Now we can write the code to create a new bullet and send it hurling off into
 space. First, we need to resurrect the <code>on_key_press()</code> event&nbsp;handler:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">on_key_press</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">modifiers</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n"><span class="caps">SPACE</span></span><span class="p">:</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">on_key_press</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">modifiers</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">symbol</span> <span class="o">==</span> <span class="n">key</span><span class="o">.</span><span class="n">SPACE</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">fire</span><span class="p">()</span>
 </pre></div>
 
@@ -955,13 +955,13 @@ not at its center. We&#8217;ll also need to add the ship&#8217;s existing veloci
 bullet&#8217;s new velocity, or the bullets will end up going slower than the ship if
 the player gets going fast&nbsp;enough.</p>
 <p>As usual, convert to radians and reverse the&nbsp;direction:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">fire</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fire</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="n">angle_radians</span> <span class="o">=</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">rotation</span><span class="p">)</span>
 </pre></div>
 
 
 <p>Next, calculate the bullet&#8217;s position and instantiate&nbsp;it:</p>
-<div class="highlight"><pre>    <span class="n">ship_radius</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span>
+<div class="highlight"><pre><span></span>    <span class="n">ship_radius</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span>
     <span class="n">bullet_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle_radians</span><span class="p">)</span> <span class="o">*</span> <span class="n">ship_radius</span>
     <span class="n">bullet_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle_radians</span><span class="p">)</span> <span class="o">*</span> <span class="n">ship_radius</span>
     <span class="n">new_bullet</span> <span class="o">=</span> <span class="n">bullet</span><span class="o">.</span><span class="n">Bullet</span><span class="p">(</span><span class="n">bullet_x</span><span class="p">,</span> <span class="n">bullet_y</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">batch</span><span class="p">)</span>
@@ -969,7 +969,7 @@ the player gets going fast&nbsp;enough.</p>
 
 
 <p>Set its velocity using almost the same&nbsp;equations:</p>
-<div class="highlight"><pre>    <span class="n">bullet_vx</span> <span class="o">=</span> <span class="p">(</span>
+<div class="highlight"><pre><span></span>    <span class="n">bullet_vx</span> <span class="o">=</span> <span class="p">(</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">velocity_x</span> <span class="o">+</span>
         <span class="n">math</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">angle_radians</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bullet_speed</span>
     <span class="p">)</span>
@@ -984,7 +984,7 @@ the player gets going fast&nbsp;enough.</p>
 
 <p>Finally, add it to the <code>new_objects</code> list so that the main loop will pick it up
 and add it to <code>game_objects</code>.</p>
-<div class="highlight"><pre>    <span class="bp">self</span><span class="o">.</span><span class="n">new_objects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_bullet</span><span class="p">)</span>
+<div class="highlight"><pre><span></span>    <span class="bp">self</span><span class="o">.</span><span class="n">new_objects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_bullet</span><span class="p">)</span>
 </pre></div>
 
 
@@ -1004,7 +1004,7 @@ require a little more&nbsp;work.</p>
 <p>To let two asteroids or two bullets pass each other by without a word of
 acknowledgement (or a dramatic explosion), we just need to check if their
 classes are equal in the <code>PhysicalObject.handle_collision_with()</code> method:</p>
-<div class="highlight"><pre><span class="k">def</span> <span class="nf">handle_collision_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">handle_collision_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">other_object</span><span class="o">.</span><span class="n">__class__</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">__class__</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">dead</span> <span class="o">=</span> <span class="bp">False</span>
     <span class="k">else</span><span class="p">:</span>
@@ -1023,7 +1023,7 @@ an <code>is_bullet</code> attribute so we can check the collision properly from 
 <p>(These are not &#8220;good&#8221; design decisions, but they will&nbsp;work.)</p>
 <p>First, initialize the <code>reacts_to_bullets</code> attribute to <code>True</code> in the
 <code>PhysicalObject</code> constructor.</p>
-<div class="highlight"><pre><span class="k">class</span> <span class="nc">PhysicalObject</span><span class="p">(</span><span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PhysicalObject</span><span class="p">(</span><span class="n">pyglet</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">Sprite</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="o">...</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">reacts_to_bullets</span> <span class="o">=</span> <span class="bp">True</span>
@@ -1039,7 +1039,7 @@ an <code>is_bullet</code> attribute so we can check the collision properly from 
 
 <p>Then, insert a bit of code in <code>PhysicalObject.collides_with()</code> to ignore
 bullets under the right&nbsp;circumstances:</p>
-<div class="highlight"><pre>    <span class="k">def</span> <span class="nf">collides_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
+<div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">collides_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">reacts_to_bullets</span> <span class="ow">and</span> <span class="n">other_object</span><span class="o">.</span><span class="n">is_bullet</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">False</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_bullet</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">other_object</span><span class="o">.</span><span class="n">reacts_to_bullets</span><span class="p">:</span>
@@ -1059,7 +1059,7 @@ is to make another subclass of PhysicalObject and write a custom
 <h3 id="writing-the-asteroid-class">Writing the asteroid&nbsp;class</h3>
 <p>Create a new submodule of game called <code>asteroid.py</code>. Write the usual
 constructor to pass a specific image to the superclass, passing along any other&nbsp;parameters.</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pyglet</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyglet</span>
 <span class="kn">import</span> <span class="nn">resources</span><span class="o">,</span> <span class="nn">physicalobject</span>
 
 <span class="k">class</span> <span class="nc">Asteroid</span><span class="p">(</span><span class="n">physicalobject</span><span class="o">.</span><span class="n">PhysicalObject</span><span class="p">):</span>
@@ -1076,7 +1076,7 @@ twice, and if we scale it down by half each time, then an asteroid should stop
 dividing when it&#8217;s 1/4 the size of a new&nbsp;asteroid.</p>
 <p>We want to keep the old behavior of ignoring other asteroids, so start the
 method with a call to the superclass&#8217;s&nbsp;method:</p>
-<div class="highlight"><pre>    <span class="k">def</span> <span class="nf">handle_collision_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
+<div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">handle_collision_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Asteroid</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">handle_collision_with</span><span class="p">(</span><span class="n">other_object</span><span class="p">)</span>
 </pre></div>
 
@@ -1085,7 +1085,7 @@ method with a call to the superclass&#8217;s&nbsp;method:</p>
 should create two or three new asteroids with random rotations and velocities.
 We should add the old asteroid&#8217;s velocity to the new ones to make it look like
 they come from the same&nbsp;object.</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="o">...</span>
 <span class="k">class</span> <span class="nc">Asteroid</span><span class="o">...</span>
     <span class="k">def</span> <span class="nf">handle_collision_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
@@ -1110,7 +1110,7 @@ them rotate a little. To do that, we&#8217;ll add a <code>rotate_speed</code> at
 it a random value. Then we&#8217;ll write an <code>update()</code> method to apply that rotation
 every&nbsp;frame.</p>
 <p>Add the attribute in the&nbsp;constructor:</p>
-<div class="highlight"><pre>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Asteroid</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span>
             <span class="n">resources</span><span class="o">.</span><span class="n">asteroid_image</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">rotate_speed</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="mf">100.0</span> <span class="o">-</span> <span class="mf">50.0</span>
@@ -1118,7 +1118,7 @@ every&nbsp;frame.</p>
 
 
 <p>Then write the <code>update()</code> method:</p>
-<div class="highlight"><pre>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+<div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">Asteroid</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">rotation</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rotate_speed</span> <span class="o">*</span> <span class="n">dt</span>
 </pre></div>
@@ -1126,7 +1126,7 @@ every&nbsp;frame.</p>
 
 <p>The last thing we need to do is go over to load.py and have the <code>asteroid()</code>
 method create a new Asteroid instead of a <code>PhysicalObject</code>.</p>
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">asteroid</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asteroid</span>
 
 <span class="k">def</span> <span class="nf">asteroids</span><span class="p">(</span><span class="n">num_asteroids</span><span class="p">,</span> <span class="n">player_position</span><span class="p">,</span> <span class="n">batch</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="o">...</span>

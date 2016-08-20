@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/posts.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Why I wrote a new documentation system, and why you might like it</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><updated>2016-05-09T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/posts.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Computer Words: a new Markdown documentation tool</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I write a lot of documentation. I do it for two reasons: I like writing, and I
 like to be understood. Documentation is what takes software from “something
 &lt;code&gt;@irskep&lt;/code&gt; put on GitHub” to something you can actually&amp;nbsp;use.&lt;/p&gt;
@@ -14,9 +14,9 @@ projects tends to fall into one of three modes if they have it at&amp;nbsp;all:&
 &lt;p&gt;Some ecosystems have good, fairly well known tools (see Python and Sphinx), but
 with the prevalence of Markdown and the convenience of hosting Markdown files
 on GitHub, I suspect people have been tending toward the solutions with less&amp;nbsp;friction.&lt;/p&gt;
-&lt;p&gt;I want it to be easier to produce good documentation sites (without GitHub
-branding), with a bare-minimum learning curve and a sky&amp;#8217;s-the-limit plugin
-architecture, so that more projects have  better&amp;nbsp;documentation.&lt;/p&gt;
+&lt;p&gt;I want it to be easier to produce good documentation sites, without GitHub
+branding, with a bare-minimum learning curve, and a sky&amp;#8217;s-the-limit plugin
+architecture, so that more projects have better&amp;nbsp;documentation.&lt;/p&gt;
 &lt;p&gt;I think I&amp;#8217;ve succeeded. &lt;a href="http://steveasleep.com/computerwords"&gt;Computer Words&lt;/a&gt;
 is a tool written in Python 3 that lets you turn your &lt;a href="https://github.com/irskep/computerwords/tree/master/docs"&gt;directory of Markdown
 files&lt;/a&gt; into a
@@ -39,11 +39,13 @@ keep it small and easy to&amp;nbsp;use.&lt;/p&gt;
 &lt;p&gt;If you want to auto-generate docs from a programming language besides Python,
 and you are willing to write a docstring parser for your language (in your
 language!), I would love to help you. The interchange format is very&amp;nbsp;simple.&lt;/p&gt;
+&lt;p&gt;Version 1.0 is a groundwork-focused release. The theme isn&amp;#8217;t very fancy, but
+most of the pieces are in place to grow the system&amp;nbsp;cleanly.&lt;/p&gt;
 &lt;p&gt;If you currently use Sphinx and reStructuredText, you should probably keep
 doing that, but you might also want to read the &lt;a href="http://steveasleep.com/computerwords/related_work.html"&gt;Related
 Work&lt;/a&gt; and &lt;a href="http://steveasleep.com/computerwords/faq.html"&gt;Frequently
 Anticipated Criticisms&lt;/a&gt; sections
-of the&amp;nbsp;docs.&lt;/p&gt;</summary><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="http://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><updated>2013-07-28T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-07-28:teaching-in-turin.html</id><summary type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
+of the&amp;nbsp;docs.&lt;/p&gt;</summary><category term="projects computerwords"></category></entry><entry><title>Teaching in Turin</title><link href="http://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-07-28:teaching-in-turin.html</id><summary type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
 Big Dive in Turin, Italy. Big Dive is a technology training program about data
 science (applied statistics), visualization (displaying data in an
 understandable way), and computer programming. Most of the students are in some
