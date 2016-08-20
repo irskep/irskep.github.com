@@ -4,16 +4,12 @@ no_header: True
 
 [PDF version](/downloads/Steve_Johnson_resume.pdf)
 
-# What I want
-
-I want to make something people love and fight the gradual decline of society.
-
 # Experience
 
 ## Mobile team lead & iOS developer, [Hipmunk](http://hipmunk.com.com) — 2015-present
 
-Succesfully drove a rearchitecture of legacy iOS code base. Became team lead
-in January 2016. Contributed significantly to every major feature in the app.
+Succesfully drove a rearchitecture of legacy iOS code base without rewriting
+it all at once. Became team lead in January 2016. Contributed significantly to every major feature in the app.
 
 ## Game & web developer, [Buildy](http://playbuild.com) — 2012-2015
 

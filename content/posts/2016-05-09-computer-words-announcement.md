@@ -1,5 +1,5 @@
 Title: Computer Words: a new Markdown documentation tool
-Tags: projects
+Tags: projects computerwords
 Slug: computer-words-announcement
 
 TL;DR [Computer Words](http://steveasleep.com/computerwords)
