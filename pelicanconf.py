@@ -32,6 +32,7 @@ MENUITEMS = (
         ('Literally Canvas', 'http://literallycanvas.com/'),
         ('mrjob', 'http://mrjob.readthedocs.org/'),
         ('Games', '/games.html'),
+        ('Hipmunk OSS', 'http://hipmunk.github.io'),
     ]),
     ('Music', [
         ('The Nest', 'http://thenestmusic.com'),
