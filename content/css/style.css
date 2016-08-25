@@ -70,7 +70,6 @@ table th {
   text-align: left;
   font-weight: normal;
   padding-right: 1rem; }
-
 table td {
   font-weight: 300;
   padding-right: 1rem; }
@@ -124,6 +123,7 @@ header#banner, nav#menu, section#content, footer#pagefooter {
 @media (min-width: 66rem) {
   #menu {
     display: none; }
+
   #pagecontainer {
     position: relative; }
     #pagecontainer nav#sidebar {
@@ -136,7 +136,6 @@ header#banner, nav#menu, section#content, footer#pagefooter {
       padding-right: 1rem; }
       #pagecontainer nav#sidebar h1:first-child {
         margin-top: 0; } }
-
 #menu {
   margin-top: 2rem;
   margin-bottom: 2rem; }
@@ -198,7 +197,6 @@ article.home-page ul.article-summary-list {
 
 .article h2 {
   font-size: 1.2rem; }
-
 .article .entry-content a {
   color: #3c3c8c; }
   .article .entry-content a:hover {
@@ -211,15 +209,14 @@ article.home-page ul.article-summary-list {
   font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   font-weight: bold; }
-
 .page h2 {
   font-size: 1.2rem;
   font-weight: bold; }
-
 .page h3 {
   font-size: 1.2rem; }
-
 .page .page-content a {
   color: #3c3c8c; }
   .page .page-content a:hover {
     color: #5050fa; }
+
+/*# sourceMappingURL=style.css.map */
