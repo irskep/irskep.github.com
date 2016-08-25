@@ -17,7 +17,7 @@ html {
   background-color: #f0f0f0;
   color: #282828; }
   html strong {
-    font-weight: normal; }
+    font-weight: 600; }
 
 a, a:visited, a:active {
   color: #3c3c50; }
@@ -84,7 +84,7 @@ article blockquote {
   font-size: 0.9rem;
   line-height: 1.2rem; }
   article blockquote strong {
-    font-weight: normal; }
+    font-weight: 600; }
 
 .left {
   float: left;
