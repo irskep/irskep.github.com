@@ -91,11 +91,12 @@ Here are some of the stages of the game's artistic development:
 
 ## Lessons Learned
 
-I had never been in a managerial position before. My experience organizing
-[CWRU Hacker Society](http:/hacsoc.org/) helped, but that was more cat herding
-than game building. By the end of the course the team had worked out a process
-by trial and error that seemed to produce results, but by the time we found
-that process, it was really too late to save the game.
+I had never been in a months-long team leadership position before. My
+experience organizing [CWRU Hacker Society](http:/hacsoc.org/) helped, but
+that was more cat herding than game building. By the end of the course the
+team had worked out a process by trial and error that seemed to produce
+results, but by the time we found that process, it was really too late to save
+the game.
 
 ### Schedule
 
@@ -163,8 +164,7 @@ worked well enough for us.
 * **Dylan Carrow**: Coloring, objects
 * **Vincent Pizarski**: Character design, coloring, exteriors
 
-Kelsey did caricatures of the team for the credit sequence. Here's mine for you
-to compare to my photo at the top of this page:
+Kelsey did caricatures of the team for the credit sequence. Here's mine for:
 
 ![Caricature](|filename|/img/content/space_train_caricature.png)
 

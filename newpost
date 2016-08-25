@@ -21,8 +21,9 @@ path = os.path.join('content', 'posts', filename)
 with open(path, 'w') as f:
   f.write("""Title: {title}
 Category: Articles
-Tags: FIXME
 Slug: {slug}
+Tags: FIXME
+Status: draft
 """.format(**fmt_kwargs))
 
 os.execlp('subl', 'subl', path)

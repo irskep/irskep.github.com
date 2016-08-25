@@ -1,5 +1,5 @@
-Title: Why I wrote a new documentation system, and why you might like it
-Tags: projects
+Title: Computer Words: a new Markdown documentation tool
+Tags: projects computerwords
 Slug: computer-words-announcement
 
 TL;DR [Computer Words](http://steveasleep.com/computerwords)
@@ -21,9 +21,9 @@ with the prevalence of Markdown and the convenience of hosting Markdown files
 on GitHub, I suspect people have been tending toward the solutions with less
 friction.
 
-I want it to be easier to produce good documentation sites (without GitHub
-branding), with a bare-minimum learning curve and a sky's-the-limit plugin
-architecture, so that more projects have  better documentation.
+I want it to be easier to produce good documentation sites, without GitHub
+branding, with a bare-minimum learning curve, and a sky's-the-limit plugin
+architecture, so that more projects have better documentation.
 
 I think I've succeeded. [Computer Words](http://steveasleep.com/computerwords)
 is a tool written in Python 3 that lets you turn your [directory of Markdown
@@ -48,6 +48,9 @@ If your docs are currently in Markdown, these features might interest you:
 If you want to auto-generate docs from a programming language besides Python,
 and you are willing to write a docstring parser for your language (in your
 language!), I would love to help you. The interchange format is very simple.
+
+Version 1.0 is a groundwork-focused release. The theme isn't very fancy, but
+most of the pieces are in place to grow the system cleanly.
 
 If you currently use Sphinx and reStructuredText, you should probably keep
 doing that, but you might also want to read the [Related
