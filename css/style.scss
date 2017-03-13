@@ -51,7 +51,7 @@ canvas { display: none; }
   @include body-font-weight;
 
   strong {
-    font-weight: 600;
+    font-weight: normal;
   }
 }
 
