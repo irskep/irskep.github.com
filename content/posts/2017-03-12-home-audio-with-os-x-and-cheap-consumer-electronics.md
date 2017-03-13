@@ -2,9 +2,6 @@ Title: Home audio with OS X and cheap consumer electronics
 Category: Articles
 Slug: home-audio-with-os-x-and-cheap-consumer-electronics
 Tags: audio
-Status: draft
-
-# Home audio adventures
 
 Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. We have a few constraints that make it impractical for us to just buy our way to a solution.
 
@@ -98,7 +95,7 @@ Buy SoundSource, run it, select “Open Play-Thru Window” in the menu, and cli
 
 At this point, we’ve got a Mac hosting a music library and Spotify, which will pass through any input we send to it through its line-in port. We need to add Bluetooth, 3.5mm aux, and a home theater PC.
 
-I spent _hours_ on Amazon trying to find a device that does nothing but switch between 3 RCA or 3.5mm inputs, and has a remote control. The reason this is hard to find is that most people use a “stereo receiver,” which is both an amplifier and a switch. [(Example, $150.)](https://www.amazon.com/Yamaha-R-S202BL-Stereo-Receiver/dp/B01EMQI2CU/) Stereo receiver remote controls never have fewer than 30 buttons. I don’t want anything in my house that has a D-pad and isn’t gaming controller.
+I spent _hours_ on Amazon trying to find a device that does nothing but switch between 3 RCA or 3.5mm inputs, and has a remote control. The reason this is hard to find is that most people use a stereo receiver, which is both an amplifier and a switch. [(Example, $150.)](https://www.amazon.com/Yamaha-R-S202BL-Stereo-Receiver/dp/B01EMQI2CU/) Stereo receiver remote controls never have fewer than 30 buttons. I don’t want anything in my house that has a D-pad and isn’t gaming controller.
 
 I found exactly one device that fits my requirements: [“iKKEGOL 5 Ways 4 Port IN 1 Out Video Audio S-Video Game AV Switch Box Selector with Remote Control Av-666d Black”](https://www.amazon.com/gp/product/B01HGISAOQ/). It was twenty bucks and its remote has five buttons: four for input selection, one for power.
 
