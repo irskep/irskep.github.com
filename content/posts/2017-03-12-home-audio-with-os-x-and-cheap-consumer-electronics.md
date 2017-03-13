@@ -50,7 +50,7 @@ On Mac number two, open a Finder window. In the Finder menu bar, select Go > Net
 
 You should see a list with `media-server` init. Click it. There should be a “Share Screen…” button. Click it. Enter your username and password from `media-server`.
 
-![Network folder in Finder](|filename|/img/home_audio_adventures/network.png)
+![Network folder in Finder](|filename|/img/home_audio_adventures/finder_network.png)
 ￼
 (I call mine “fiona.”)
 
