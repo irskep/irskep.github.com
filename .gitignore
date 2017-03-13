@@ -6,4 +6,5 @@ _site/
 output/
 *.pid
 .sass-cache/
+__pycache__/
 old/

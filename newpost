@@ -26,4 +26,4 @@ Tags: FIXME
 Status: draft
 """.format(**fmt_kwargs))
 
-os.execlp('subl', 'subl', path)
+os.execlp('code', 'code', path)

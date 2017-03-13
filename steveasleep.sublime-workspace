@@ -194,6 +194,7 @@
 	},
 	"file_history":
 	[
+		"/Users/steve/dev/steveasleep/content/posts/2016-09-10-sendimals-what-it-is-and-why-i-made-it.md",
 		"/Users/steve/dev/steveasleep/content/pages/resume.md",
 		"/Users/steve/dev/steveasleep/content/pages/space-train.md",
 		"/Users/steve/dev/steveasleep/content/posts/2010-12-13-space-train-postmortem.md",
@@ -320,8 +321,7 @@
 		"/Users/steve/dev/gw/gw/client/prototypes/c/view/createWorldMap.cjsx",
 		"/Users/steve/dev/gw/gw/client/prototypes/b/createView.jsx",
 		"/Users/steve/dev/gw/gw/web.py",
-		"/Users/steve/dev/gw/gw/client/TB/viewModel/createBedOwnerVM.coffee",
-		"/Users/steve/dev/gw/gevvy/gevvy/base.py"
+		"/Users/steve/dev/gw/gw/client/TB/viewModel/createBedOwnerVM.coffee"
 	],
 	"find":
 	{
