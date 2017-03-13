@@ -28,6 +28,7 @@ MENUITEMS = (
         ('Résumé', '/resume.html'),
     ]),
     ('Projects', [
+        ('Sendimals', 'http://sendimals.com'),
         ('Computer Words', 'http://steveasleep.com/computerwords'),
         ('Literally Canvas', 'http://literallycanvas.com/'),
         ('mrjob', 'http://mrjob.readthedocs.org/'),
