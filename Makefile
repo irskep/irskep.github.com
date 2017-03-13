@@ -24,7 +24,7 @@ serve:
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server
 
 scss: $(INPUTDIR)/css/style.scss 
-	sassc $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css
+	sass $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css
 
 watch-coffee:
 	coffee -o $(INPUTDIR)/js --watch --compile $(INPUTDIR)/coffee/main.coffee
