@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/steve-johnson.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2016-05-09T00:00:00-07:00</updated><entry><title>Computer Words: a new Markdown documentation tool</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/steve-johnson.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2016-08-25T00:00:00-07:00</updated><entry><title>Blogging about iOS architecture at Hipmunk</title><link href="http://steveasleep.com/ios-at-hipmunk.html" rel="alternate"></link><published>2016-08-25T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-08-25:ios-at-hipmunk.html</id><summary type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
+over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</summary><category term="ios"></category></entry><entry><title>Computer Words: a new Markdown documentation tool</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I write a lot of documentation. I do it for two reasons: I like writing, and I
 like to be understood. Documentation is what takes software from “something
 &lt;code&gt;@irskep&lt;/code&gt; put on GitHub” to something you can actually&amp;nbsp;use.&lt;/p&gt;
@@ -471,7 +472,7 @@ only the word &lt;span class="caps"&gt;PRINT&lt;/span&gt; makes a message appear
 &lt;/blockquote&gt;
 &lt;p&gt;It&amp;#8217;s a small, self-contained, understandable example with a concise, complete
 explanation and an invitation to experiment. In this way, it mirrors the style
-of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/index"&gt;Learn Python The Hard
+of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/"&gt;Learn Python The Hard
 Way&lt;/a&gt;. It never blames the reader for
 being wrong, and in fact seems to encourage the reader to forgive his or her
 own mistakes while writing&amp;nbsp;programs.&lt;/p&gt;
