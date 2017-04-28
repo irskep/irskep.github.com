@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence - Articles</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/articles.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2017-03-12T00:00:00-08:00</updated><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="http://localhost:8000/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><updated>2017-03-12T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2017-03-12:/home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. We have a few constraints that make it impractical for us to just buy our way to a&amp;nbsp;solution.&lt;/p&gt;
-&lt;h2&gt;The wish&amp;nbsp;list&lt;/h2&gt;
-&lt;p&gt;Music is our primary focus. We have no …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. We have a few constraints that make it impractical for us to just buy our way to a&amp;nbsp;solution.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence - Articles</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/articles.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2017-03-12T00:00:00-08:00</updated><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="http://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><updated>2017-03-12T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-03-12:/home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio&amp;nbsp;setup.&lt;/p&gt;
 &lt;h2&gt;The wish&amp;nbsp;list&lt;/h2&gt;
 &lt;p&gt;Music is our primary focus. We have no need to switch video. &lt;span class="caps"&gt;RCA&lt;/span&gt; and 3.5mm cables are the norm, not &lt;span class="caps"&gt;HDMI&lt;/span&gt;. This doesn’t prevent us from getting a receiver that supports &lt;span class="caps"&gt;RCA&lt;/span&gt;, but those tend to be bulky and have lots of&amp;nbsp;buttons.&lt;/p&gt;
 &lt;p&gt;We share a large &lt;span class="caps"&gt;MP3&lt;/span&gt; library that we would both like to control. It’s easy enough to take turns plugging our computers or phones into an aux cable, but it’s so much more seamless to collaboratively queue things up in the same player. There’s a mix of Windows and &lt;span class="caps"&gt;OS&lt;/span&gt; X machines in the house, so the solution has to be&amp;nbsp;multi-platform.&lt;/p&gt;
@@ -15,7 +13,7 @@
 &lt;p&gt;Find an out-of-the-way location. Plug the laptop into the speakers and power. We’re about to set things up so you don’t need to be physically at the computer to manage it, so don’t worry about the location being convenient to&amp;nbsp;access.&lt;/p&gt;
 &lt;h3&gt;Initial setup (seated at media&amp;nbsp;server)&lt;/h3&gt;
 &lt;p&gt;Open System Preferences. Select Sharing. Check the “Remote Management” box, and when the drop-down opens, select “Observe” and&amp;nbsp;“Control.”&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Sharing preference pane" src="http://localhost:8000/img/home_audio_adventures/prefpane_sharing.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sharing preference pane" src="http://steveasleep.com/img/home_audio_adventures/prefpane_sharing.png"&gt;&lt;/p&gt;
 &lt;p&gt;Set or remember the “Computer Name” field at the top. A nice, short name you could use would be &lt;code&gt;media-server&lt;/code&gt;. Going forward, I’m going to assume you used that&amp;nbsp;name.&lt;/p&gt;
 &lt;p&gt;Still in System Preferences, click the back button. Go to “Users &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Groups”. Click “Login Options.” Make sure the “Automatic login:” menu is set to the user you want. (You may also need to go to “Security &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Privacy” in System Preferences and uncheck “Disable automatic&amp;nbsp;login.”)&lt;/p&gt;
 &lt;p&gt;Install &lt;a href="http://semaja2.net/projects/insomniaxinfo/"&gt;InsomniaX&lt;/a&gt; if you’re using a laptop. This will let you close the lid without putting the laptop to sleep. Once installed and running, open the menu, and make sure Preferences &amp;gt; “Start on Login” is&amp;nbsp;checked.&lt;/p&gt;
@@ -23,7 +21,7 @@
 &lt;h3&gt;Remaining setup&amp;nbsp;(remote)&lt;/h3&gt;
 &lt;p&gt;On Mac number two, open a Finder window. In the Finder menu bar, select Go &amp;gt; Network or hit Command+Shift+K. Pick &lt;code&gt;media-server&lt;/code&gt; from the list and click the Share Screen button. Enter your username and password for your account on the media&amp;nbsp;server.&lt;/p&gt;
 &lt;p&gt;You should see a list with &lt;code&gt;media-server&lt;/code&gt; init. Click it. There should be a “Share Screen…” button. Click it. Enter your username and password from &lt;code&gt;media-server&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Network folder in Finder" src="http://localhost:8000/img/home_audio_adventures/finder_network.png"&gt;
+&lt;p&gt;&lt;img alt="Network folder in Finder" src="http://steveasleep.com/img/home_audio_adventures/finder_network.png"&gt;
 ￼
 (I call mine&amp;nbsp;“fiona.”)&lt;/p&gt;
 &lt;p&gt;Before you really get going, you might want to take some time to open your wifi router’s settings and assign a dedicated internal &lt;span class="caps"&gt;IP&lt;/span&gt; to the media server. Macs will be able to connect to it as &lt;code&gt;media-server.local&lt;/code&gt;, but Windows machines won’t. I won’t provide specific instructions here due to the infinite variety of router software, but it was pretty simple on my Airport&amp;nbsp;Extreme.&lt;/p&gt;
@@ -36,41 +34,43 @@
 &lt;p&gt;All of my solutions to the &lt;span class="caps"&gt;MP3&lt;/span&gt; library problem are, unfortunately, pretty technical. I don’t have any recommendations for people who are not comfortable with the&amp;nbsp;terminal.&lt;/p&gt;
 &lt;p&gt;The best-documented ways to share an &lt;span class="caps"&gt;MP3&lt;/span&gt; library are &lt;a href="https://www.musicpd.org"&gt;mpd&lt;/a&gt; and &lt;a href="https://www.mopidy.com"&gt;mopidy&lt;/a&gt;. Both solutions mostly work but are broken in some annoying way and don’t have any truly great&amp;nbsp;clients.&lt;/p&gt;
 &lt;p&gt;I prefer to use my own project, &lt;a href="https://github.com/irskep/summertunes"&gt;Summertunes&lt;/a&gt;. It glues together the &lt;a href="http://beets.io"&gt;beets&lt;/a&gt; extensible music library manager and &lt;a href="https://mpv.io"&gt;mpv&lt;/a&gt; player in an iTunes-like web interface. That means Casey and I can control the same library and playlist from any web browser on any device, including our phones. It’s responsive and&amp;nbsp;reliable.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Summertunes" src="http://localhost:8000/img/home_audio_adventures/summertunes.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Summertunes" src="http://steveasleep.com/img/home_audio_adventures/summertunes.png"&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;a href="http://www.soma-zone.com/LaunchControl/"&gt;LaunchControl&lt;/a&gt; with some shell scripts to run &lt;code&gt;mpd&lt;/code&gt; and Summertunes on login, so I never need to mess with them manually unless they&amp;nbsp;break.&lt;/p&gt;
 &lt;p&gt;I recommend &lt;a href="https://github.com/CDrummond/cantata/releases"&gt;Cantata&lt;/a&gt; as an &lt;span class="caps"&gt;MPD&lt;/span&gt; client. It’s not very Mac-like, but it’s easy enough to find your way&amp;nbsp;around.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Cantata" src="http://localhost:8000/img/home_audio_adventures/cantata.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cantata" src="http://steveasleep.com/img/home_audio_adventures/cantata.png"&gt;&lt;/p&gt;
 &lt;p&gt;We only use &lt;span class="caps"&gt;MPD&lt;/span&gt; if I’m actively working on Summertunes and have temporarily hosed the installation. So about once per&amp;nbsp;month.&lt;/p&gt;
 &lt;h2&gt;Input&amp;nbsp;passthrough&lt;/h2&gt;
 &lt;p&gt;The Mac takes care of a lot by itself, but we still need to support a home theater &lt;span class="caps"&gt;PC&lt;/span&gt;, Bluetooth adapter, and 3.5mm aux cable. Some external hardware is&amp;nbsp;necessary.&lt;/p&gt;
 &lt;p&gt;We could have the Mac output to a switch, but I’d rather just have everything merged into one signal so the music players work 100% of the time without having to remember what channel something is on. We can accomplish this using &lt;a href="https://rogueamoeba.com/soundsource/"&gt;SoundSource&lt;/a&gt;, a $10 utility that lets you mirror your Mac’s audio input to its&amp;nbsp;output.&lt;/p&gt;
 &lt;p&gt;Buy SoundSource, run it, select “Open Play-Thru Window” in the menu, and click “Start Play-Thru.” You’ll need to hit this button after every reboot, unfortunately. If you use SoundSource for this purpose, please join me in sending feature request via their &lt;a href="https://rogueamoeba.com/support/knowledgebase/?showCategory=SoundSource"&gt;support form&lt;/a&gt; asking them to let us auto-enable&amp;nbsp;it.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="SoundSource" src="http://localhost:8000/img/home_audio_adventures/soundsource.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="SoundSource" src="http://steveasleep.com/img/home_audio_adventures/soundsource.png"&gt;&lt;/p&gt;
 &lt;h2&gt;Audio&amp;nbsp;switching&lt;/h2&gt;
 &lt;p&gt;At this point, we’ve got a Mac hosting a music library and Spotify, which will pass through any input we send to it through its line-in port. We need to add Bluetooth, 3.5mm aux, and a home theater &lt;span class="caps"&gt;PC&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;I spent &lt;em&gt;hours&lt;/em&gt; on Amazon trying to find a device that does nothing but switch between 3 &lt;span class="caps"&gt;RCA&lt;/span&gt; or 3.5mm inputs, and has a remote control. The reason this is hard to find is that most people use a stereo receiver, which is both an amplifier and a switch. &lt;a href="https://www.amazon.com/Yamaha-R-S202BL-Stereo-Receiver/dp/B01EMQI2CU/"&gt;(Example, $150.)&lt;/a&gt; Stereo receiver remote controls never have fewer than 30 buttons. I don’t want anything in my house that has a D-pad and isn’t gaming&amp;nbsp;controller.&lt;/p&gt;
 &lt;p&gt;I found exactly one device that fits my requirements: &lt;a href="https://www.amazon.com/gp/product/B01HGISAOQ/"&gt;“iKKEGOL 5 Ways 4 Port &lt;span class="caps"&gt;IN&lt;/span&gt; 1 Out Video Audio S-Video Game &lt;span class="caps"&gt;AV&lt;/span&gt; Switch Box Selector with Remote Control Av-666d Black”&lt;/a&gt;. It was twenty bucks and its remote has five buttons: four for input selection, one for&amp;nbsp;power.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The switch" src="http://localhost:8000/img/home_audio_adventures/switch.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/switch.jpg"&gt;&lt;/p&gt;
 &lt;h2&gt;Bluetooth&lt;/h2&gt;
 &lt;p&gt;All Bluetooth devices for home use are garbage, but some are less garbage than others. I have had okay but not great luck with &lt;a href="https://www.amazon.com/gp/product/B016NUTG5K/"&gt;this adapter from Esinkin&lt;/a&gt; and was totally dissatisfied by &lt;a href="https://www.amazon.com/gp/product/B00SW0523A/"&gt;this one from iKross&lt;/a&gt;. I didn’t realize it at the time, but &lt;a href="http://thewirecutter.com/reviews/best-bluetooth-audio-receiver-for-your-home-stereo-or-speakers/"&gt;The Wirecutter has some suggestions that might be&amp;nbsp;better.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;We use Bluetooth a lot less now that Summertunes is working and populated, so I care about this a lot less than I used&amp;nbsp;to.&lt;/p&gt;
 &lt;h2&gt;Pieces of&amp;nbsp;flair&lt;/h2&gt;
 &lt;p&gt;Every home across America with more than one audio source has a unique and probably awful system for getting audio from point A to point B. Ours is particularly unique! So I designed this handy reference card, and Casey printed it out on our brand new &lt;a href="https://cricut.com"&gt;Cricut&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The switch" src="http://localhost:8000/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Casey also gave the switcher remote the Cricut-assisted personal&amp;nbsp;touch:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The switch" src="http://localhost:8000/img/home_audio_adventures/remote.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/remote.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;We’re still left with a minor cable nest, but the volume of the whole setup is only about two Macbook&amp;nbsp;Pros.&lt;/p&gt;
 &lt;h2&gt;Parting&amp;nbsp;thoughts&lt;/h2&gt;
 &lt;p&gt;After writing all this out, the first question I had for myself was whether it was all worth it. Shouldn’t I have just bought a stereo&amp;nbsp;receiver?&lt;/p&gt;
 &lt;p&gt;I’m still glad I didn’t, if only because of those damn remote controls. And the mixing of two sources is really&amp;nbsp;nice.&lt;/p&gt;
-&lt;p&gt;The only downside is that the switch I ended up with is not very well built and introduces a tiny bit of hum. The remote has to be pointed straight at it for it to work, too. But on the other hand, it’s simpler than any other home audio system I’ve&amp;nbsp;used.&lt;/p&gt;</content><category term="audio"></category></entry><entry><title>Blogging about iOS architecture at Hipmunk</title><link href="http://localhost:8000/ios-at-hipmunk.html" rel="alternate"></link><published>2016-08-25T00:00:00-07:00</published><updated>2016-08-25T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2016-08-25:/ios-at-hipmunk.html</id><summary type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
+&lt;p&gt;The only downside is that the switch I ended up with is not very well built and introduces a tiny bit of hum. The remote has to be pointed straight at it for it to work, too. But on the other hand, it’s simpler than any other home audio system I’ve&amp;nbsp;used.&lt;/p&gt;</content><category term="audio"></category></entry><entry><title>Blogging about iOS architecture at Hipmunk</title><link href="http://steveasleep.com/ios-at-hipmunk.html" rel="alternate"></link><published>2016-08-25T00:00:00-07:00</published><updated>2016-08-25T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-08-25:/ios-at-hipmunk.html</id><summary type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
 over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
-over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</content><category term="ios"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://localhost:8000/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><updated>2015-04-25T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2015-04-25:/slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</content><category term="ios"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://steveasleep.com/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><updated>2015-04-25T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-25:/slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
 a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineering&amp;nbsp;skills.&lt;/p&gt;
 &lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation
 &lt;span class="caps"&gt;EP&lt;/span&gt;!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This is a collection of “bedroom tapes” made between …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a collection of “bedroom tapes” made between 2005 and 2009. The popular vision of a budding high school rock musician is a guitarist sitting on a bed writing bad love songs, but in my case, I was at a desk with a low-end Mac and a &lt;span class="caps"&gt;MIDI&lt;/span&gt; keyboard, sharing the room with two more computers and a treadmill, writing bad video game&amp;nbsp;soundtracks.&lt;/p&gt;
+&lt;p&gt;Since the rise of the 4-track, the cost of making decent home recordings has fallen at different rates for different genres. As a so-so piano student and early-to-mid-‘00s Mac user, my options were limited at first to &lt;span class="caps"&gt;MIDI&lt;/span&gt; editors. When Apple’s Garageband program came out, and I finally got a copy, I discovered the world of software&amp;nbsp;synthesizers.&lt;/p&gt;
+&lt;p&gt;Video game development was my other major hobby at the time, so it seemed obvious that I should write my own soundtracks. (Otherwise, I wouldn’t have soundtracks at all, given my $0 budget …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
 a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineering&amp;nbsp;skills.&lt;/p&gt;
 &lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation
@@ -81,18 +81,15 @@ a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineerin
 &lt;p&gt;Four of the tracks on this &lt;span class="caps"&gt;EP&lt;/span&gt; come from that process. Duty Calls was made for Escort Wing, a game designed and mostly programmed by Will Hogben. Glue Me Together and The Creature Sneaks were made for gw0rp, my entry into uDevGames 2008. Catastrophe Prelude was never used for anything, but written for a nonexistent&amp;nbsp;game.&lt;/p&gt;
 &lt;p&gt;In 2007, I built a Blue Man Group-style &lt;span class="caps"&gt;PVC&lt;/span&gt; instrument for a science competition. Once built, it was too tempting to pass up making music with it, so I wrote Parakeet in the E.R., Unsolved, and a few more songs that don’t appear on this &lt;span class="caps"&gt;EP&lt;/span&gt;. Those tracks also feature my classmates Amanda Andrews with bizarro-world guitar parts, and Eric Baize with an ocarina. My brother Phil played the bluesy intro to Unsolved. “Wheeee!” was made in the same batch, but doesn’t feature the &lt;span class="caps"&gt;PVC&lt;/span&gt;&amp;nbsp;instrument.&lt;/p&gt;
 &lt;p&gt;That just leaves The Five Dollar Song, which I’ll just say was mostly written and played by Phil, with contributions from me, around&amp;nbsp;2005.&lt;/p&gt;
-&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</content><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://localhost:8000/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><updated>2015-04-20T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2015-04-20:/the-nest-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</content><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://steveasleep.com/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><updated>2015-04-20T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-20:/the-nest-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
 &lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
-&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</content><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://localhost:8000/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><updated>2014-04-29T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2014-04-29:/anthony-presti-album.html</id><summary type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</content><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://steveasleep.com/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><updated>2014-04-29T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-04-29:/anthony-presti-album.html</id><summary type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
 &lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
-&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</content><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://localhost:8000/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><updated>2013-08-02T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2013-08-02:/the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
-at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
-ran for only nine issues published between 1997 and 1999, its biting social
-commentary remains as …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</content><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><updated>2013-08-02T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-08-02:/the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
 at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
 ran for only nine issues published between 1997 and 1999, its biting social
 commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
@@ -100,13 +97,37 @@ commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
 New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
 years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><category term="projects"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://localhost:8000/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><updated>2013-05-04T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2013-05-04:/we-dreamers-postmortem.html</id><summary type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
+ran for only nine issues published between 1997 and 1999, its biting social
+commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
+&lt;p&gt;Earlier this year I came across my personal archives of all nine issues of the
+New Dork Times and decided they were worth two hours of attention to bring to a
+modern digital audience. I now present to you an online time capsule from 16
+years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><category term="projects"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><updated>2013-05-04T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:/we-dreamers-postmortem.html</id><summary type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
 &lt;a href="http://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; It may take a
 while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or&amp;nbsp;two.&lt;/p&gt;
-&lt;p&gt;Of all my programming escapades over …&lt;/p&gt;</summary><content type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Of all my programming escapades over the past couple of years, I&amp;#8217;m most proud
+of this one. Here&amp;#8217;s a comprehensive collection of my thoughts about it,
+including a discussions of the technical&amp;nbsp;aspects.&lt;/p&gt;
+&lt;h2&gt;Conception&lt;/h2&gt;
+&lt;p&gt;During the final voting round for Ludum Dare 26, I spent a couple of hours
+coming up with good ideas for every possible theme…except minimalism. No way
+that would get through,&amp;nbsp;right?&lt;/p&gt;
+&lt;p&gt;When that theme was chosen, and I had to throw out all of my wonderful schemes,
+most of which were single player pseudo-roguelikes. Instead, I picked a vague
+idea: a web-based multiplayer world where you dig out rooms underground in a
+grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
+the rest as I went&amp;nbsp;along.&lt;/p&gt;
+&lt;p&gt;You can do a few&amp;nbsp;things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Move with the arrow keys or &lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Harvest color with&amp;nbsp;space.&lt;/li&gt;
+&lt;li&gt;Dig out new rooms by bumping into walls. You …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
@@ -307,25 +328,42 @@ my tools really well, I&amp;nbsp;suppose.&lt;/p&gt;
 &lt;h2&gt;In&amp;nbsp;closing,&lt;/h2&gt;
 &lt;p&gt;I had a fun and intense time this year. Of my three attempts to date, We
 Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
-another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</content><category term="games"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://localhost:8000/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><updated>2012-11-21T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2012-11-21:/rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://localhost:8000/img/buildy.png"&gt;&lt;/p&gt;
+another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</content><category term="games"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><updated>2012-11-21T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-21:/rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy.png"&gt;&lt;/p&gt;
 &lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
 combination of technologies we use to render and display enormous zoomed out
-world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://localhost:8000/img/buildy.png"&gt;&lt;/p&gt;
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy.png"&gt;&lt;/p&gt;
 &lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
 combination of technologies we use to render and display enormous zoomed out
-world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://localhost:8000/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><updated>2012-11-14T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2012-11-14:/1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://localhost:8000/img/buildy2.png"&gt;&lt;/p&gt;
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><updated>2012-11-14T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-14:/1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy2.png"&gt;&lt;/p&gt;
 &lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://localhost:8000/img/buildy2.png"&gt;&lt;/p&gt;
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy2.png"&gt;&lt;/p&gt;
 &lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://localhost:8000/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:localhost,2010-12-13:/space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://localhost:8000/img/content/space_train_logo.png"&gt;&lt;/p&gt;
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:/space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png"&gt;&lt;/p&gt;
 &lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
-called &lt;em&gt;&lt;a href="http://localhost:8000/space-train.html"&gt;Space Train: Terror on the Mustachio
+called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
 Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
-students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://localhost:8000/img/content/space_train_logo.png"&gt;&lt;/p&gt;
+students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case
+Western Reserve University&lt;/a&gt;. Its technical components
+include an event-driven level scripting system, characters, items, inventory,
+dialogue, and more.  The engine is written in Python using my game programming
+weapon of choice, the &lt;a href="http:/www.pyglet.org"&gt;pyglet&lt;/a&gt; library. The&amp;nbsp;plot:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
+Stanislov Slavinsky, is reading his poetry live on the nearby Planet Deux, a
+short hop by space train from Inga&amp;#8217;s home. She wants nothing more than to see
+Stanislav in person, so she catches the Mustachio Express to Planet Deux.
+Little does she know it will be a bumpy&amp;nbsp;ride&amp;#8230;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sounds grand, right? We thought so too, but in typical student fashion we
+failed to account for one thing: &lt;strong&gt;adventure games take a lot of work to
+make.&lt;/strong&gt; As a result, the game is only about twenty minutes long. Even so, we
+all learned from the&amp;nbsp;experience.&lt;/p&gt;
+&lt;h2&gt;The&amp;nbsp;Course&lt;/h2&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;&lt;span class="caps"&gt;EECS&lt;/span&gt; 390 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png"&gt;&lt;/p&gt;
 &lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
-called &lt;em&gt;&lt;a href="http://localhost:8000/space-train.html"&gt;Space Train: Terror on the Mustachio
+called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
 Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
 students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case
 Western Reserve University&lt;/a&gt;. Its technical components
@@ -383,15 +421,15 @@ hours writing detailed scripts for each level we planned to implement. We
 followed this process to the end, and it worked beautifully. We had a very
 slick&amp;nbsp;demo.&lt;/p&gt;
 &lt;p&gt;Here are some screenshots of the&amp;nbsp;game:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://localhost:8000/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://localhost:8000/img/content/space_train_thumb_1.png"&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://localhost:8000/img/content/space_train_thumb_2.png"&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://localhost:8000/img/content/space_train_thumb_3.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here are some of the stages of the game&amp;#8217;s artistic&amp;nbsp;development:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://localhost:8000/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://localhost:8000/img/content/space_train_art_1_thumb.png"&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://localhost:8000/img/content/space_train_art_2_thumb.png"&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://localhost:8000/img/content/space_train_art_3_thumb.png"&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://localhost:8000/img/content/space_train_art_4_thumb.png"&gt;&lt;/a&gt;
-&lt;a href="http://localhost:8000/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://localhost:8000/img/content/space_train_art_5_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Lessons&amp;nbsp;Learned&lt;/h2&gt;
 &lt;p&gt;I had never been in a months-long team leadership position before. My
 experience organizing &lt;a href="http:/hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt; helped, but
@@ -452,4 +490,4 @@ worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Vincent Pizarski&lt;/strong&gt;: Character design, coloring,&amp;nbsp;exteriors&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Kelsey did caricatures of the team for the credit sequence. Here&amp;#8217;s mine&amp;nbsp;for:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Caricature" src="http://localhost:8000/img/content/space_train_caricature.png"&gt;&lt;/p&gt;</content><category term="games"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png"&gt;&lt;/p&gt;</content><category term="games"></category></entry></feed>

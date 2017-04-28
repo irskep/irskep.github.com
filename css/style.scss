@@ -7,7 +7,7 @@ $linkHoverColor: rgb(80, 80, 250);
 $separatorColor: lighten($bodyColor, 50%);
 $inlineCodeForegroundColor: rgb(80, 80, 80);
 
-$pageWidth: 38rem;
+$pageWidth: 50rem;
 
 $fontSizeHugeTitle: 3rem;
 $bannerFontSize: 1.75rem;
@@ -81,7 +81,6 @@ canvas { display: none; }
 }
 
 html {
-  font-size: 100%;
   line-height: 160%;
   @include body-font;
 
@@ -244,7 +243,7 @@ header#banner {
     border-right: 1px solid $separatorColor;
     padding-right: 1rem;
 
-    h1:first-child {
+    h1:first-child, h2:first-child, h3:first-child {
       margin-top: 0;
     }
   }
@@ -272,7 +271,7 @@ article.home-page {
     margin: 0;
     padding: 0;
 
-    li {
+    & > li {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -307,10 +306,12 @@ article.home-page {
 
   margin-bottom: 1rem;
 
-  h1 {
-    font-size: $fontSizeHugeTitle;
-    font-weight: bold;
-    margin: 0;
+  &.article-header__index {
+    h1 {
+      font-size: $fontSizeHugeTitle;
+      font-weight: bold;
+      margin: 0;
+    }
   }
 
   .post-info {
@@ -323,14 +324,7 @@ article.home-page {
   }
 }
 
-// article h1 == page h2 (pages can have more subsections)
-.article h1, h1.category-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 .article {
-  h2 { font-size: 1.2rem; }
   .entry-content a { @include body-link-styles; }
 }
 
@@ -343,11 +337,6 @@ article.home-page {
     font-weight: normal;
     @include title-font-2;
     font-size: 1.4rem;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-size: 1.2rem;
     font-weight: bold;
   }
 

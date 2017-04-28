@@ -10,7 +10,6 @@ canvas {
 
 /* base styles */
 html {
-  font-size: 100%;
   line-height: 160%;
   font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #f0f0f0;
@@ -114,7 +113,7 @@ iframe {
 /* layout */
 #pagecontainer {
   width: 100%;
-  max-width: 38rem;
+  max-width: 50rem;
   max-width: calc($pageWidth - 2rem);
   margin-left: auto;
   margin-right: auto;
@@ -140,7 +139,7 @@ header#banner {
     text-decoration: none;
     color: #f0f0f0; }
 
-@media (min-width: 66rem) {
+@media (min-width: 78rem) {
   #layoutcontainer {
     display: flex;
     flex-direction: row-reverse;
@@ -154,7 +153,7 @@ header#banner {
     width: 10rem;
     border-right: 1px solid #a8a8a8;
     padding-right: 1rem; }
-    #sidebar h1:first-child {
+    #sidebar h1:first-child, #sidebar h2:first-child, #sidebar h3:first-child {
       margin-top: 0; } }
 
 #menu {
@@ -173,14 +172,14 @@ header#banner {
 article.home-page ul.article-summary-list {
   margin: 0;
   padding: 0; }
-  article.home-page ul.article-summary-list li {
+  article.home-page ul.article-summary-list > li {
     list-style-type: none;
     margin: 0;
     padding: 0;
     padding-top: 2rem;
     margin-bottom: 2rem;
     border-top: 1px solid #a8a8a8; }
-    article.home-page ul.article-summary-list li .read-more {
+    article.home-page ul.article-summary-list > li .read-more {
       text-align: right; }
 
 #pagefooter {
@@ -200,7 +199,7 @@ article.home-page ul.article-summary-list {
     display: block;
     height: 0;
     visibility: hidden; }
-  .article-header h1 {
+  .article-header.article-header__index h1 {
     font-size: 3rem;
     font-weight: bold;
     margin: 0; }
@@ -209,13 +208,6 @@ article.home-page ul.article-summary-list {
     font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: normal;
     font-size: 80%; }
-
-.article h1, h1.category-title {
-  font-size: 1.2rem;
-  font-weight: bold; }
-
-.article h2 {
-  font-size: 1.2rem; }
 
 .article .entry-content a {
   color: #3c3c8c; }
@@ -228,10 +220,6 @@ article.home-page ul.article-summary-list {
   font-weight: normal;
   font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.4rem;
-  font-weight: bold; }
-
-.page h2 {
-  font-size: 1.2rem;
   font-weight: bold; }
 
 .page h3 {
