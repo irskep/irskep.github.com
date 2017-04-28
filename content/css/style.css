@@ -125,6 +125,8 @@ nav#menu, section#content, footer#pagefooter {
 #sidebar {
   padding-left: 1rem;
   padding-top: 1rem; }
+  #sidebar h3 {
+    font-size: 1em; }
 
 header#banner {
   box-sizing: border-box;
