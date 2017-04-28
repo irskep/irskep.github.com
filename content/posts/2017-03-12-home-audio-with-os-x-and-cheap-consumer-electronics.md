@@ -2,8 +2,9 @@ Title: Home audio with OS X and cheap consumer electronics
 Category: Articles
 Slug: home-audio-with-os-x-and-cheap-consumer-electronics
 Tags: audio
+Summary: ![The switch](|filename|/img/home_audio_adventures/reference_card.jpg)
 
-Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. We have a few constraints that make it impractical for us to just buy our way to a solution.
+Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio setup.
 
 ## The wish list
 

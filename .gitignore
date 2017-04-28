@@ -8,3 +8,6 @@ output/
 .sass-cache/
 __pycache__/
 old/
+.vscode/
+tags
+

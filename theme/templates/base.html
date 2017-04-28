@@ -57,52 +57,38 @@
       <a href="{{ SITEURL }}">
         <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
-        Steve Johnson&rsquo;s<br>Web Presence
+        Steve Johnson #6,059
       </a>
     </h1>
   </header>
 
-  <div id="pagecontainer">
+  <div id="layoutcontainer">
+    <div id="pagecontainer">
+      <nav id="menu">
+        <ul>
+          {% for _, items in MENUITEMS %}
+          {% for title, link in items %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </nav>
 
-    <nav id="menu">
-      <ul>
-        {% for _, items in MENUITEMS %}
-        {% for title, link in items %}
-          <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
-        {% endfor %}
-      </ul>
-    </nav>
-
-    {% block content %}
-    {% endblock %}
-
-    <footer id="pagefooter" class="body">
-      <div class="social-links">
-        <!--
-        {% if FEED_ALL_RSS %}
-          <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
-        {% endif %}
-        -->
-        <a href="http://github.com/irskep">GitHub</a><br>
-        <a href="http://twitter.com/irskep">Twitter</a><br>
-        <a href="http://www.last.fm/user/irskep">Last.fm</a><br>
-      </div>
-      Stephen R. Johnson<br>
-      <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
-      San Francisco, California
-    </footer><!-- /#pagefooter -->
+      {% block content %}
+      {% endblock %}
+    </div>
 
     <nav id="sidebar">
       <ul>
         {% for title, items in MENUITEMS %}
-          <h1>{{ title }}</h1>
+          <h3>{{ title }}</h3>
           {% for title, link in items %}
             <li><a href="{{ link }}">{{ title }}</a></li>
           {% endfor %}
         {% endfor %}
       </ul>
     </nav>
+
   </div>
 
   <script type="text/javascript">

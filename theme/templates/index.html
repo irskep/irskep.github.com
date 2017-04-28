@@ -4,8 +4,8 @@
 <article class="home-page">
 
 {% block content_title %}
-<header class="article-header">
-    <h1 class="entry-title">Posts</h1>
+<header class="article-header article-header__index">
+    <h1>Posts</h1>
 </header>
 {% endblock %}
 
@@ -13,6 +13,12 @@
   {% for article in articles_page.object_list %}
     <li>
       <header class="article-header">
+        <h2 class="entry-title">
+          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+            {{ article.title }}
+          </a>
+        </h2>
+
         <div class="post-info">
           {% if article.date %}
             <time class="published" datetime="{{ article.date.isoformat() }}">
@@ -21,11 +27,6 @@
           {% endif %}
         </div>
 
-        <h2 class="entry-title">
-          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
-            {{ article.title }}
-          </a>
-        </h2>
       </header>
       <div class="entry-content">
         {{ article.summary }}

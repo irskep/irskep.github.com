@@ -16,8 +16,9 @@ that you can get to run in some form.
 * [gw0rp](<|filename|gw0rp.md>) (2009)
 * [Lizard Wizard](http://www.ludumdare.com/compo/ludum-dare-19/?action=preview&uid=3120) (2010)
 * [Space Train](<|filename|space-train.md>) (2010)
-* [We Dreamers](http://steveasleep.com/we_dreamers) (2013)
+* [We Dreamers](http://steveasleep.com/we_dreamers_2) (2013)
 * [Buildy](http://playbuildy.com) (2013)
+* [Rogue Basement](https://irskep.itch.io/rogue_basement) (2016)
 
 Unfortunately, none of my middle school-era METAL BASIC creations survived
 various file transfers, web site backups, and hard drive failures. I am

@@ -29,20 +29,28 @@ MENUITEMS = (
     ]),
     ('Projects', [
         ('Sendimals', 'http://sendimals.com'),
-        ('Computer Words', 'http://steveasleep.com/computerwords'),
+        ('Rogue Basement', 'https://irskep.itch.io/rogue_basement'),
         ('Literally Canvas', 'http://literallycanvas.com/'),
-        ('mrjob', 'http://mrjob.readthedocs.org/'),
         ('Games', '/games.html'),
+        ('Computer Words', 'http://steveasleep.com/computerwords'),
+        ('mrjob', 'http://mrjob.readthedocs.org/'),
         ('Hipmunk OSS', 'http://hipmunk.github.io'),
     ]),
     ('Music', [
         ('The Nest', 'http://thenestmusic.com'),
         ('Slam Jamsen', 'http://slamjamsen.com'),
         ('Other music', '/music.html'),
+    ]),
+    ('External', [
+        ('GitHub', 'https://github.com/irskep'),
+        ('Twitter', 'https://twitter/irskep'),
+        ('last.fm', 'https://www.last.fm/user/irskep'),
+        ('Email', 'mailto:randos@steve.steveasleep.com'),
     ])
 )
 
 DEFAULT_PAGINATION = False
+SUMMARY_MAX_LENGTH = 200
 
 ARTICLE_PATHS = [
     'posts'

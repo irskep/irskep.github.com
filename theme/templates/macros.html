@@ -1,10 +1,10 @@
 {% macro post_header(article) %}
   <header class="article-header">
-    <h2 class="entry-title">
+    <h1 class="entry-title">
       <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
         {{ article.title }}
       </a>
-    </h2>
+    </h1>
     <div class="post-info">
       {% if article.date %}
         <time class="published" datetime="{{ article.date.isoformat() }}">
