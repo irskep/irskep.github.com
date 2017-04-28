@@ -10,14 +10,11 @@ canvas {
 
 /* base styles */
 html {
-  font-size: 115%;
+  font-size: 100%;
   line-height: 160%;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: #f0f0f0;
   color: #282828; }
-  html strong {
-    font-weight: 600; }
 
 a, a:visited, a:active {
   color: #3c3c50; }
@@ -26,10 +23,11 @@ a:hover {
   color: #5050fa; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
-  margin-top: 1.5em;
-  margin-bottom: 0.75em; }
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+  line-height: 1.5em; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #3c3c50;
@@ -37,6 +35,21 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   h1 a:visited, h1 a:active, h1 a:hover, h2 a:visited, h2 a:active, h2 a:hover, h3 a:visited, h3 a:active, h3 a:hover, h4 a:visited, h4 a:active, h4 a:hover, h5 a:visited, h5 a:active, h5 a:hover, h6 a:visited, h6 a:active, h6 a:hover {
     color: #3c3c50;
     text-decoration: underline; }
+
+h1, h2 {
+  font-size: 2rem; }
+
+h3, h4 {
+  font-size: 1.5rem; }
+
+h5, h6 {
+  font-size: 1.2rem; }
+
+h1, h3, h5 {
+  font-weight: bold; }
+
+h2, h4, h6 {
+  font-weight: normal; }
 
 p, ul, ol, pre {
   margin-bottom: 0.75rem; }
@@ -72,7 +85,6 @@ table th {
   padding-right: 1rem; }
 
 table td {
-  font-weight: 300;
   padding-right: 1rem; }
 
 p {
@@ -80,12 +92,12 @@ p {
 
 article blockquote {
   margin-left: 2em;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 0.9rem;
   line-height: 1.2rem; }
-  article blockquote strong {
-    font-weight: 600; }
+
+iframe {
+  max-width: 100%; }
 
 .left {
   float: left;
@@ -100,45 +112,52 @@ article blockquote {
   margin: auto; }
 
 /* layout */
-#pagecontainer, header#banner {
+#pagecontainer {
   width: 100%;
   max-width: 38rem;
   max-width: calc($pageWidth - 2rem);
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem; }
+  padding: 1rem 1rem; }
 
-header#banner, nav#menu, section#content, footer#pagefooter {
+nav#menu, section#content, footer#pagefooter {
   width: 100%; }
 
-#banner {
-  margin-top: 2em;
-  margin-bottom: 2em; }
-  #banner h1 {
-    font-size: 2rem;
-    line-height: 2.7rem;
-    font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  #banner a {
-    text-decoration: none; }
+#sidebar {
+  padding-left: 1rem;
+  padding-top: 1rem; }
+
+header#banner {
+  box-sizing: border-box;
+  background-color: #282828;
+  line-height: 2.3625rem;
+  padding: 0.75em 0 0.75rem 1em; }
+  header#banner h1 {
+    font-size: 1.75rem;
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0.75rem 0; }
+  header#banner a {
+    text-decoration: none;
+    color: #f0f0f0; }
 
 @media (min-width: 66rem) {
+  #layoutcontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    align-items: stretch; }
   #menu {
     display: none; }
-  #pagecontainer {
-    position: relative; }
-    #pagecontainer nav#sidebar {
-      position: absolute;
-      top: 0;
-      right: 100%;
-      width: 10rem;
-      border-right: 1px solid #a8a8a8;
-      text-align: right;
-      padding-right: 1rem; }
-      #pagecontainer nav#sidebar h1:first-child {
-        margin-top: 0; } }
+  #sidebar {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 10rem;
+    border-right: 1px solid #a8a8a8;
+    padding-right: 1rem; }
+    #sidebar h1:first-child {
+      margin-top: 0; } }
 
 #menu {
-  margin-top: 2rem;
   margin-bottom: 2rem; }
   #menu ul:after {
     clear: both;
@@ -181,14 +200,13 @@ article.home-page ul.article-summary-list {
     display: block;
     height: 0;
     visibility: hidden; }
-  .article-header .entry-title {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: normal; }
+  .article-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0; }
   .article-header .post-info time {
     display: block;
-    font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: normal;
     font-size: 80%; }
 
@@ -206,9 +224,9 @@ article.home-page ul.article-summary-list {
 
 .page h1 {
   border-top: 1px solid #a8a8a8;
-  padding-top: 1.5em;
+  padding-top: 1em;
   font-weight: normal;
-  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.4rem;
   font-weight: bold; }
 

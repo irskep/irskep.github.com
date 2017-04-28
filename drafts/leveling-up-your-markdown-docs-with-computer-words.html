@@ -10,57 +10,62 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
 
     <!--
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson’s Web Presence Full RSS Feed" />
-      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Categories Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Full Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson’s Web Presence Full RSS Feed" />
+      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson’s Web Presence Categories Atom Feed" />
     -->
 
-    <script src="http://steveasleep.com/js/hyphenate.js"></script>
+    <script src="http://localhost:8000/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://steveasleep.com/js/main.js"></script>
+    <script src="http://localhost:8000/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://steveasleep.com">
+      <a href="http://localhost:8000">
         <!--Steve Johnson’s Web Presence <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
-        Steve Johnson&rsquo;s<br>Web Presence
+        Steve Johnson #6,059
       </a>
     </h1>
   </header>
 
-  <div id="pagecontainer">
-
-    <nav id="menu">
-      <ul>
-          <li><a href="http://steveasleep.com/">Blog</a></li>
-          <li><a href="http://steveasleep.com/pyglettutorial.html">Pyglet tutorial</a></li>
-          <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-          <li><a href="http://sendimals.com">Sendimals</a></li>
-          <li><a href="http://steveasleep.com/computerwords">Computer Words</a></li>
-          <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
-          <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
-          <li><a href="http://steveasleep.com/games.html">Games</a></li>
-          <li><a href="http://hipmunk.github.io">Hipmunk OSS</a></li>
-          <li><a href="http://thenestmusic.com">The Nest</a></li>
-          <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
-          <li><a href="http://steveasleep.com/music.html">Other music</a></li>
-      </ul>
-    </nav>
+  <div id="layoutcontainer">
+    <div id="pagecontainer">
+      <nav id="menu">
+        <ul>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/pyglettutorial.html">Pyglet tutorial</a></li>
+            <li><a href="/resume.html">Résumé</a></li>
+            <li><a href="http://sendimals.com">Sendimals</a></li>
+            <li><a href="https://irskep.itch.io/rogue_basement">Rogue Basement</a></li>
+            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="http://steveasleep.com/computerwords">Computer Words</a></li>
+            <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
+            <li><a href="http://hipmunk.github.io">Hipmunk OSS</a></li>
+            <li><a href="http://thenestmusic.com">The Nest</a></li>
+            <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
+            <li><a href="/music.html">Other music</a></li>
+            <li><a href="https://github.com/irskep">GitHub</a></li>
+            <li><a href="https://twitter/irskep">Twitter</a></li>
+            <li><a href="https://www.last.fm/user/irskep">last.fm</a></li>
+            <li><a href="mailto:randos@steve.steveasleep.com">Email</a></li>
+        </ul>
+      </nav>
 
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h2 class="entry-title">
-      <a href="http://steveasleep.com/drafts/leveling-up-your-markdown-docs-with-computer-words.html" rel="bookmark" title="Permalink to Leveling up your Markdown docs with Computer Words">
+      <a href="http://localhost:8000/drafts/leveling-up-your-markdown-docs-with-computer-words.html" rel="bookmark" title="Permalink to Leveling up your Markdown docs with Computer Words">
         Leveling up your Markdown docs with Computer&nbsp;Words
       </a>
     </h2>
@@ -80,7 +85,7 @@ post is for you. I&#8217;m going to try to convince you to feed your Markdown fi
 into <a href="http://steveasleep.com/computerwords">Computer Words</a>, a program that
 will turn them into a static web site and provides you with a few useful
 authoring&nbsp;tools.</p>
-<h1 id="why-github-markdown-is-popular-for-docs">Why Github + Markdown is popular for&nbsp;docs</h1>
+<h1>Why Github + Markdown is popular for&nbsp;docs</h1>
 <ol>
 <li>You know Markdown and don&#8217;t mind writing it, and that&#8217;s also true of most
    potential&nbsp;contributors.</li>
@@ -89,9 +94,9 @@ authoring&nbsp;tools.</p>
 <p>In my opinion, these are must-haves for most projects without full-time
 developer support. Ain&#8217;t nobody got time to learn a new markup language or
 deal with lots of&nbsp;configuration.</p>
-<h1 id="but">But&#8230;</h1>
+<h1>But&#8230;</h1>
 <p>The drawbacks break down into two&nbsp;categories.</p>
-<h2 id="power">Power</h2>
+<h2>Power</h2>
 <ol>
 <li>If you want to link to somewhere in your docs, you have to insert an anchor
    by hand, remember the filename of the target document, and construct a
@@ -111,7 +116,7 @@ deal with lots of&nbsp;configuration.</p>
    want it to appear. There&#8217;s no navigation sidebar. (And no, the GitHub
    wiki alphabetical order document list doesn&#8217;t&nbsp;count.)</li>
 </ol>
-<h2 id="wishy-washy-moralizing">Wishy washy&nbsp;moralizing</h2>
+<h2>Wishy washy&nbsp;moralizing</h2>
 <ol>
 <li>You are giving GitHub control over your URLs and perpetuating their
    monopoly on open source hosting. Having the canonical Git repo there is
@@ -119,45 +124,39 @@ deal with lots of&nbsp;configuration.</p>
    indefinitely is riskier. In my opinion, you should own your&nbsp;URLs.</li>
 <li>GitHub branding on your project is&nbsp;tacky.</li>
 </ol>
-<h1 id="what-you-should-do-instead">What you should do&nbsp;instead</h1>
+<h1>What you should do&nbsp;instead</h1>
 <p>Put your docs in a folder, install Computer Words, write a very short config
 file, and use it to generate a static site you can host anywhere you like. By
 doing this, you solve every single problem listed&nbsp;above.</p></div>
   </article></section>
-
-    <footer id="pagefooter" class="body">
-      <div class="social-links">
-        <!--
-          <a href="http://steveasleep.com/feeds/all.rss.xml">RSS</a>
-        -->
-        <a href="http://github.com/irskep">GitHub</a><br>
-        <a href="http://twitter.com/irskep">Twitter</a><br>
-        <a href="http://www.last.fm/user/irskep">Last.fm</a><br>
-      </div>
-      Stephen R. Johnson<br>
-      <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
-      San Francisco, California
-    </footer><!-- /#pagefooter -->
+    </div>
 
     <nav id="sidebar">
       <ul>
           <h1>Writing</h1>
-            <li><a href="http://steveasleep.com/">Blog</a></li>
-            <li><a href="http://steveasleep.com/pyglettutorial.html">Pyglet tutorial</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/pyglettutorial.html">Pyglet tutorial</a></li>
+            <li><a href="/resume.html">Résumé</a></li>
           <h1>Projects</h1>
             <li><a href="http://sendimals.com">Sendimals</a></li>
-            <li><a href="http://steveasleep.com/computerwords">Computer Words</a></li>
+            <li><a href="https://irskep.itch.io/rogue_basement">Rogue Basement</a></li>
             <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="http://steveasleep.com/computerwords">Computer Words</a></li>
             <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
-            <li><a href="http://steveasleep.com/games.html">Games</a></li>
             <li><a href="http://hipmunk.github.io">Hipmunk OSS</a></li>
           <h1>Music</h1>
             <li><a href="http://thenestmusic.com">The Nest</a></li>
             <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
-            <li><a href="http://steveasleep.com/music.html">Other music</a></li>
+            <li><a href="/music.html">Other music</a></li>
+          <h1>External</h1>
+            <li><a href="https://github.com/irskep">GitHub</a></li>
+            <li><a href="https://twitter/irskep">Twitter</a></li>
+            <li><a href="https://www.last.fm/user/irskep">last.fm</a></li>
+            <li><a href="mailto:randos@steve.steveasleep.com">Email</a></li>
       </ul>
     </nav>
+
   </div>
 
   <script type="text/javascript">

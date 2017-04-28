@@ -9,11 +9,12 @@ $inlineCodeForegroundColor: rgb(80, 80, 80);
 
 $pageWidth: 38rem;
 
-$bannerFontSize: 2rem;
+$fontSizeHugeTitle: 3rem;
+$bannerFontSize: 1.75rem;
 $paragraphSpacing: 0.75rem;
 $prePadding: 0.5rem;
 $pageComponentSpacing: 4rem;
-$headerVerticalSpacingTop: 1.5em;
+$headerVerticalSpacingTop: 1em;
 $headerVerticalSpacingBottom: 0.75em;
 $listVerticalSpacing: 0.5rem;
 $blockQuoteFontSize: 0.9rem;
@@ -37,22 +38,13 @@ canvas { display: none; }
 
 /* base styles */
 
-@mixin body-font-weight {
-  font-weight: 300;
-}
-
 @mixin body-font {
   // font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   // font-family: 'Vollkorn', Garamond, "Hoefler Text", serif;
   // font-family: 'Gentium Basic', Garamond, "Hoefler Text", serif;
   // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   // font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  @include body-font-weight;
-
-  strong {
-    font-weight: 600;
-  }
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 @mixin blockquote-font {
@@ -62,16 +54,19 @@ canvas { display: none; }
 }
 
 @mixin title-font {
-  font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
 @mixin title-font-2 {
-  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin banner-font {
-  font-family: "Playfair Display SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  // font-family: "Playfair Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin mono-font {
@@ -86,7 +81,7 @@ canvas { display: none; }
 }
 
 html {
-  font-size: 115%;
+  font-size: 100%;
   line-height: 160%;
   @include body-font;
 
@@ -106,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   @include title-font;
   margin-top: $headerVerticalSpacingTop;
   margin-bottom: $headerVerticalSpacingBottom;
+  line-height: 1.5em;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -117,6 +113,12 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: underline;
   }
 }
+
+h1, h2 { font-size: 2rem; }
+h3, h4 { font-size: 1.5rem; }
+h5, h6 { font-size: 1.2rem; }
+h1, h3, h5 { font-weight: bold; }
+h2, h4, h6 { font-weight: normal; }
 
 p, ul, ol, pre {
   margin-bottom: $paragraphSpacing;
@@ -161,7 +163,6 @@ table {
     padding-right: $thHorzSpacing;
   }
   td {
-    @include body-font-weight;
     padding-right: $thHorzSpacing;
   }
 }
@@ -177,67 +178,79 @@ article blockquote {
   line-height: $blockQuoteLineHeight;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 .left { float: left; padding-right: 1rem; }
 .right { float: right; padding-left: 1rem; }
 .center { display: block; margin: auto; }
 
 /* layout */
 
-#pagecontainer, header#banner {
+#pagecontainer {
   width: 100%;
   max-width: $pageWidth;
   max-width: calc($pageWidth - 2rem);
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
-header#banner, nav#menu, section#content, footer#pagefooter {
+nav#menu, section#content, footer#pagefooter {
   width: 100%;
+}
+
+#sidebar {
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 // banner
 
-#banner {
-  margin-top: 2em;
-  margin-bottom: 2em;
+header#banner {
+  box-sizing: border-box;
+  background-color: $bodyColor;
+  line-height: $bannerFontSize * 1.35;
+  padding: 0.75em 0 0.75rem 1em;
 
   h1 {
     font-size: $bannerFontSize;
-    line-height: $bannerFontSize * 1.35;
     @include banner-font;
+    margin: 0.75rem 0;
   }
 
   a {
     text-decoration: none;
+    color: $backgroundColor;
   }
 }
 
 // menu
 
 @media (min-width: $pageWidth+28rem) {
+  #layoutcontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
   #menu { display: none; }
-  #pagecontainer {
-    position: relative;
+  #sidebar {
+    flex-grow: 0;
+    flex-shrink :0;
+    width: 10rem;
+    border-right: 1px solid $separatorColor;
+    padding-right: 1rem;
 
-    nav#sidebar {
-      position: absolute;
-      top: 0;
-      right: 100%;
-      width: 10rem;
-      border-right: 1px solid $separatorColor;
-      text-align: right;
-      padding-right: 1rem;
-
-      h1:first-child {
-        margin-top: 0;
-      }
+    h1:first-child {
+      margin-top: 0;
     }
   }
 }
 
 #menu {
-  margin-top: 2rem;
   margin-bottom: 2rem;
 
   ul { @include clear-contents; }
@@ -294,14 +307,10 @@ article.home-page {
 
   margin-bottom: 1rem;
 
-  .entry-title {
-    width: 100%;
-    // max-width: 20rem;
-    // float: left;
-    margin-top: 0;
-    margin-bottom: 0;
-    // font-size: 1.0rem;
-    font-weight: normal;
+  h1 {
+    font-size: $fontSizeHugeTitle;
+    font-weight: bold;
+    margin: 0;
   }
 
   .post-info {
