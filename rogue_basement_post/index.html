@@ -1,0 +1,295 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- common.css -->
+      <style>* {-webkit-tap-highlight-color: rgba(0,0,0,0);}html {-webkit-text-size-adjust: none;}body {font-family: -apple-system, Helvetica, Arial, sans-serif;margin: 0;padding: 20px;color: #333;word-wrap: break-word;}h1, h2, h3, h4, h5, h6 {line-height: 1.1;}img {max-width: 100% !important;}blockquote {margin: 0;padding: 0 15px;color: #777;border-left: 4px solid #ddd;}hr {background-color: #ddd;border: 0;height: 1px;margin: 15px 0;}code {font-family: Menlo, Consolas, 'Ubuntu Mono', Monaco, 'source-code-pro', monospace;line-height: 1.4;margin: 0;padding: 0.2em 0;font-size: 90%;background-color: rgba(0,0,0,0.04);border-radius: 3px;}pre > code {margin: 0;padding: 0;font-size: 100%;word-break: normal;background: transparent;border: 0;}ol {list-style-type: decimal;}ol ol, ul ol {list-style-type: lower-latin;}ol ol ol, ul ol ol, ul ul ol, ol ul ol {list-style-type: lower-roman;}table {border-spacing: 0;border-collapse: collapse;margin-top: 0;margin-bottom: 16px;}table th {font-weight: bold;}table th, table td {padding: 6px 13px;border: 1px solid #ddd;}table tr {border-top: 1px solid #ccc;}table tr:nth-child(even) {background-color: #f8f8f8;}input[type="checkbox"] {cursor: default;margin-right: 0.5em;font-size: 13px;}.task-list-item {list-style-type: none;}.task-list-item+.task-list-item {margin-top: 3px;}.task-list-item input {float: left;margin: 0.3em 1em 0.25em -1.6em;vertical-align: middle;}#tag-field {margin: 8px 2px 10px;}#tag-field .tag {display: inline-block;background: #cadff3;border-radius: 4px;padding: 1px 8px;color: black;font-size: 12px;margin-right: 10px;line-height: 1.4;}</style>
+      <!-- ace-static.css -->
+      <style>.ace_static_highlight {white-space: pre-wrap;}.ace_static_highlight .ace_gutter {width: 2em;text-align: right;padding: 0 3px 0 0;margin-right: 3px;}.ace_static_highlight.ace_show_gutter > .ace_line {padding-left: 2.6em;}.ace_static_highlight .ace_line {position: relative;}.ace_static_highlight .ace_gutter-cell {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;top: 0;bottom: 0;left: 0;position: absolute;}.ace_static_highlight .ace_gutter-cell:before {content: counter(ace_line, decimal);counter-increment: ace_line;}.ace_static_highlight {counter-reset: ace_line;}</style>
+      <style>.ace-tomorrow-night-eighties .ace_gutter {background: #272727;color: #CCC}.ace-tomorrow-night-eighties .ace_print-margin {width: 1px;background: #272727}.ace-tomorrow-night-eighties {background-color: #2D2D2D;color: #CCCCCC}.ace-tomorrow-night-eighties .ace_constant.ace_other,.ace-tomorrow-night-eighties .ace_cursor {color: #CCCCCC}.ace-tomorrow-night-eighties .ace_marker-layer .ace_selection {background: #515151}.ace-tomorrow-night-eighties.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #2D2D2D;}.ace-tomorrow-night-eighties .ace_marker-layer .ace_step {background: rgb(102, 82, 0)}.ace-tomorrow-night-eighties .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #6A6A6A}.ace-tomorrow-night-bright .ace_stack {background: rgb(66, 90, 44)}.ace-tomorrow-night-eighties .ace_marker-layer .ace_active-line {background: #393939}.ace-tomorrow-night-eighties .ace_gutter-active-line {background-color: #393939}.ace-tomorrow-night-eighties .ace_marker-layer .ace_selected-word {border: 1px solid #515151}.ace-tomorrow-night-eighties .ace_invisible {color: #6A6A6A}.ace-tomorrow-night-eighties .ace_keyword,.ace-tomorrow-night-eighties .ace_meta,.ace-tomorrow-night-eighties .ace_storage,.ace-tomorrow-night-eighties .ace_storage.ace_type,.ace-tomorrow-night-eighties .ace_support.ace_type {color: #CC99CC}.ace-tomorrow-night-eighties .ace_keyword.ace_operator {color: #66CCCC}.ace-tomorrow-night-eighties .ace_constant.ace_character,.ace-tomorrow-night-eighties .ace_constant.ace_language,.ace-tomorrow-night-eighties .ace_constant.ace_numeric,.ace-tomorrow-night-eighties .ace_keyword.ace_other.ace_unit,.ace-tomorrow-night-eighties .ace_support.ace_constant,.ace-tomorrow-night-eighties .ace_variable.ace_parameter {color: #F99157}.ace-tomorrow-night-eighties .ace_invalid {color: #CDCDCD;background-color: #F2777A}.ace-tomorrow-night-eighties .ace_invalid.ace_deprecated {color: #CDCDCD;background-color: #CC99CC}.ace-tomorrow-night-eighties .ace_fold {background-color: #6699CC;border-color: #CCCCCC}.ace-tomorrow-night-eighties .ace_entity.ace_name.ace_function,.ace-tomorrow-night-eighties .ace_support.ace_function,.ace-tomorrow-night-eighties .ace_variable {color: #6699CC}.ace-tomorrow-night-eighties .ace_support.ace_class,.ace-tomorrow-night-eighties .ace_support.ace_type {color: #FFCC66}.ace-tomorrow-night-eighties .ace_heading,.ace-tomorrow-night-eighties .ace_markup.ace_heading,.ace-tomorrow-night-eighties .ace_string {color: #99CC99}.ace-tomorrow-night-eighties .ace_comment {color: #999999}.ace-tomorrow-night-eighties .ace_entity.ace_name.ace_tag,.ace-tomorrow-night-eighties .ace_entity.ace_other.ace_attribute-name,.ace-tomorrow-night-eighties .ace_meta.ace_tag,.ace-tomorrow-night-eighties .ace_variable {color: #F2777A}.ace-tomorrow-night-eighties .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ09NrYAgMjP4PAAtGAwchHMyAAAAAAElFTkSuQmCC) right repeat-y}</style>
+      <!-- export.css -->
+      <style>
+        body{margin:0 auto;max-width:800px;line-height:1.4}
+        #nav{margin:5px 0 10px;font-size:15px}
+        #titlearea{border-bottom:1px solid #ccc;font-size:17px;padding:10px 0;}
+        #contentarea{font-size:15px;margin:16px 0}
+        .cell{outline:0;min-height:20px;margin:5px 0;padding:5px 0;}
+        .code-cell{font-family:Menlo,Consolas,'Ubuntu Mono',Monaco,'source-code-pro',monospace;font-size:12px;}
+        .latex-cell{white-space:pre-wrap;}
+      </style>
+      <!-- User CSS -->
+      <style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
+    </head>
+    <body>
+      
+      <div id="titlearea">
+        <h2>The Design and Implementation of Rogue Basement</h2>
+      </div>
+      <div id="contentarea"><div class="cell markdown-cell"><h1>Introduction</h1>
+<p>This year I participated in <a href="">Ludum Dare 38</a>, a 48-hour game programming "competition." I've been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made Rogue Basement, a bare-bones, single-level game with ASCII graphics.</p>
+<p>In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented.</p>
+<h1>What is a roguelike?</h1>
+<p>A "roguelike" is a game that is "like Rogue," a text-based game from the 1980s that looks like this:</p>
+<p><img src="resources/257BD0D6AB2E10E523C6F74028CBC005.png" alt="Rogue_Screen_Shot_CAR.png" width="637" height="371"></p>
+<p>Typical features of these games include:</p>
+<ul>
+<li>Procedurally generated levels</li>
+<li>Permadeath (one life)</li>
+<li>Turn-based action</li>
+<li>Top-down 2D graphics, often just text</li>
+<li>Simulation-oriented; interesting stories arise from the game's rules and behavior</li>
+<li>Very difficult to win without lots of practice</li>
+</ul>
+<p>The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you're always facing new situations. You have to use your wits to survive.</p>
+<h1>Environment</h1>
+<p>I started on Friday night with a level generator. When you're time-constrained, you have to make very careful decisions about where to innovate, and I chose to stick to a roguelike trope for my basic layout: boxy rooms connected by narrow corridors, with doors where corridors meet rooms.</p>
+<p>I could have placed a bunch of rooms randomly and made sure each one was connected to another, but it's tricky to use space efficiently that way. A common way to avoid this problem is to use a <strong>binary space partitioning tree.</strong></p>
+<p>The basic idea here is that you take a rectangular area, like this:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                                        |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>Divide it along the X or Y axis at a random point, like this, and label each side:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|       a         |          b           |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>Within each side, divide again on the other axis at a random point:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|       aa        |         ba           |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|-----------------|                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |----------------------|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|       ab        |         bb           |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |                      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>Divide some more...</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|       |         |              |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|  aaa  |   aab   |     baa      |  bab  |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|       |         |              |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|-----------------|              |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          |      |              |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          |      |----------------------|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          |      |       |              |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   aba    | abb  |       |              |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          |      |  bba  |     bbb      |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          |      |       |              |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          |      |       |              |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here's an actual screenshot I took when I got to this point:</p>
+<p><img src="resources/F883885B86DCA6D8BD0F58083AB16166.png" alt="Screenshot 2017-04-21 21.00.42.png" width="752" height="534"></p>
+<p>But it's more interesting ot mix it up with different sizes of rectangles.</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| +--+  | +------+|   +------+   |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| |  |  | |      ||   |      |   |+-----+|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| +--+  | +------+|   |      |   ||     ||
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|-----------------|   |      |   ||     ||
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          |+--+  |   +------+   |+-----+|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          ||  |  |----------------------|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   +----+ ||  |  |+-----+|              |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   |    | ||  |  ||     ||+-----+       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   |    | |+--+  ||     |||     |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   +----+ |      ||     |||     |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          |      |+-----+|+-----+       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>You probably noticed I annotated all the cells with <code>aab</code> and such. We'll use that information to add corridors. For every pair of areas that share the first 2 letters of their identifier ("siblings in the tree"), we add an L-shaped corridor from a random point in one to a random point in the other. If a point is already inside a room, we'll leave it alone. If a point is on a wall, we'll turn it into a door.</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| +--+    +------+|   +------+           |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| |  '####'      ||   |      |    +-----+|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| +--+    +------+|   |      '####'     ||
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|-----------------|   |      |    |     ||
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|           +--+  |   +------+    +-----+|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|     ######'  |  |----------------------|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   +-'--+  |  |  |+-----+               |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   |    |  |  |  ||     | +-----+       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   |    |  +--+  ||     '#'     |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   +----+        ||     | |     |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |+-----+ +-----+       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>Now we do it again, but the random point in each section will come from a random room in each respective section:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| +--+    +------+|   +------+           |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| |  '####'      ||   |      |    +-----+|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| +--+    +'-----+|   |      '####'     ||
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          #      |   |      |    |     ||
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          #+--+  |   +-'----+    +-----+|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|     ######'  |  |     #                |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   +-'--+ #|  |  |+----'+               |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   |    | #|  |  ||     | +-----+       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   |    +##+--+  ||     '#'     |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   +----+        ||     | |     |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                 |+-----+ +-----+       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>And finally we'll do it again to the top-level pair:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| +--+    +------+    +------+           |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| |  '####'      '#   |      |    +-----+|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>| +--+    +'-----+#   |      '####'     ||
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          #      #   |      |    |     ||
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|          #+--+  #   +-'----+    +-----+|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|     ######'  |  #     #                |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   +-'--+ #|  |  #+----'+               |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   |    | #|  |  #|     | +-----+       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   |    +##+--+  #'     '#'     |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|   +----+         |     | |     |       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                  +-----+ +-----+       |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>And here's how it looked during development:</p>
+<p><img src="resources/B74AF325D250255EA7B86A64BE1AAFD0.png" alt="Screenshot 2017-04-21 21.50.39.png" width="752" height="534"></p>
+<p>We now have a few guarantees:</p>
+<ul>
+<li>All rooms are reachable from all other rooms.</li>
+<li>No rooms intersect.</li>
+<li>For a given pair of room groups (everything under <code>a</code> vs everything under <code>b</code>, for example), there is exactly one path between them.</li>
+</ul>
+<p>That last point has some good and bad ramifications. On the bad side, it worsens replayability, because the corridors are roughly organized the same way from game to game. I noticed this while playtesting; after 3 games it's obvious that the rooms generally have the same layout.</p>
+<p>But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: "A Small World." I realized the first two splits don't have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a "one-level roguelike" with some actual progression.</p>
+<p>I split up the map like this:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+-------------------+--------------------+
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                   |                    |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                   |                    |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|         aa        |         ba         |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|    (start here)   |     (end here)     |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|         |         |         ^          |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|---------|---------+---------|----------|
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|         v         |         |          |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                   |                    |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|         ab     -------&gt;     bb         |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                   |                    |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>|                   |                    |
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>+----------------------------------------+
+</div></div></div></pre>
+<p>The player starts in <code>aa</code> and moves to <code>ab</code>, then <code>bb</code>, then <code>ba</code>, where the goal is.</p>
+<p>Here's another map from early development, which splits the map in this way:</p>
+<p><img src="resources/2EE2A79C08555276A852AAEA4DBEA9C7.png" alt="Screenshot 2017-04-22 10.54.30.png" width="1392" height="1414"></p>
+<p>And here's one with just the first two partition lines, so you can see how the map is divided:</p>
+<p><img src="resources/6F0FA752B4F575565A46B67ABF9120B6.png" alt="Screenshot 2017-04-22 10.56.58.png" width="1392" height="1414"></p>
+<p>And finally, here are the hallways that mark the transitions between each section:</p>
+<p><img src="resources/360C018F2FCC756A1A59049EB36E67AA.png" alt="Screenshot 2017-04-22 11.40.44.png" width="1392" height="1414"></p>
+<p>Originally the colors were just for debugging, but I ended up leaving them in place because they seem special.</p>
+<p>To add variety, I created a <code>rooms.csv</code> file to define a few room types:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  Monster   Item
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>Shape,      Difficulty, Monsters,   Chance, Color,    Density,  Density
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>box_random, 0.00,       *,          1.00,   #666666,  5.00,     5.00
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>box_random, 1.00,       *,          1.00,   #886666,  5.00,     4.00
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>box_random, 2.00,       *,          1.00,   #668866,  5.00,     3.00
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>box_random, 3.00,       *,          1.00,   #886688,  5.00,     2.00
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>box_full,   *,          verp_1      0.20,   #6666ff,  2.00,     4.00
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  |verp_2
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  |verp_3
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  |verp_4,
+</div></div></div></pre>
+<p>So within each quadrant, there is an 80% chance a room will have shape <code>box_random</code>, a quadrant-specific color, 5 monsters per 100 tiles, 5 items per 100 tiles, and contain any area-appropriate monster. But there is a 20% chance that the room will have the shape <code>box_full</code> (fill its entire BSP tree cell) and contain only verps, 2 per 100 tiles.</p>
+<h1>Inhabitants</h1>
+<h2>The player</h2>
+<p>The first inhabitant of the world is the player, represented by an <code>@</code> (because the cell with the <code>@</code> is "where you are at"). All world inhabitants, henceforth called "monsters" (after all, humans are the real monsters) and defined in <code>monsters.csv</code>:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>player, @,    #ffffff,  -1,         0.00,   keyboard_movement,  100,    5.00,
+</div></div></div></pre>
+<p>"Difficulty" determines which quadrant a monster can spawn in. The player is a special case, so the level generator ignores it. The player moves in response to keyboard events, has 100 hit points, and hits other monsters for 5 damage. (The combat system in Rogue Basement is not sophisticated. There is no randomness. Remember, I had to be careful about where to spend innovation-points!)</p>
+<h2>NPCs</h2>
+<p>Generally speaking, NPCs (non-player characters) in video games and tabletop RPGs are differentiated based on three important things:</p>
+<ol>
+<li>What they can do</li>
+<li>How they behave</li>
+<li>How many hits they take to kill, depending on what the player can do</li>
+</ol>
+<p>All of those things affect the player's behavior, strategy, and tactics. For a time-constrained game like Rogue Basement, I wanted to stick to the absolute basics.</p>
+<p>The monsters are all defined in a CSV file (<code>monsters.csv</code>). The very first monster I added was <code>v</code>, the "verp":</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>verp,   v,    #ffff00,  0.00,       1.00,   beeline_visible,    10,     2.00,
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    |random_walk
+</div></div></div></pre>
+<p>In human terms, that definition reads as: "The 'verp' monster, represented by a yellow <code>v</code>, appears in difficulty-zero rooms (first quadrant) with a random weight of 1.0, moves randomly unless it sees the player in which case it moves toward them, has 10 hit points, does 2 damage to the player when hitting, and has no items at the game start."</p>
+<p>Behaviors are implemented as Python classes. After the player moves, each monster has a chance to move as well. Behaviors can be stacked, meaning that if one behavior decides it can't do anything, control can be passed to the next behavior in the list. So the verp's <code>beeline_visible</code> behavior either says "I see the player, I move toward them" or "I do not see the player, let some other behavior act this turn."</p>
+<p>After adding the verps, I wanted to balance them out with a monster that attacks from a distance. I started by defining a behavior <code>range_5_visible</code> which acts like <code>beeline_visible</code>, but instead of trying to move onto the player's space, the monster tries to be exactly 5 tiles away. If the player approaches the monster, it will run away unless it is backed into a corner.</p>
+<p>I attached this behavior to a new enemy type, the <code>wibble</code> (<code>w</code>). But a monster that only runs away isn't very challenging! So it was time to deepen the simulation by adding items.</p>
+<p>Items have simple characteristics:</p>
+<ul>
+<li>Monsters (including the player) can hold them in an unlimited inventory.</li>
+<li>When a monster dies, its items are dropped on the ground.</li>
+</ul>
+<p>I only had time to add one kind of item: the rock (<code>*</code>). The rock has one use: you can throw it. When you do, the game spawns a new enemy with this definition:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>id,             Char, Color,    Difficulty, Chance, Behaviors,        hp_max, strength, items
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>rock_in_flight, *,    #c1a073,  -1,         0,      path_until_hit,   2,      2,
+</div></div></div></pre>
+<p>Since its "difficulty" is -1, it never spawns in the initial level. Its only behavior is to move along a path until it hits a wall, a monster, or the player. It has 2 hit points.</p>
+<p>This is a special item, so the game ignores the <code>strength</code> and <code>items</code> attributes in the CSV file. Instead, the <code>rock_in_flight</code>'s strength value is taken from <em>the monster that threw the rock</em>, and the original rock item is added to the <code>rock_in_flight</code>'s inventory! When the <code>rock_in_flight</code>'s <code>path_until_hit</code> behavior detects that its life is over, the <code>rock_in_flight</code> "dies" and the contents of its inventory (the <code>rock</code>) are dropped on the ground.</p>
+<p>Now that I had throwable rocks, I could put a couple in each <code>wibble</code>'s inventory and give them the ability to throw them. The <code>wibble</code> definition looked like this:</p>
+<pre><div class="ace-tomorrow-night-eighties"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,        ROCKx1
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  |throw_rock_slow
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  |sleep,
+</div></div></div></pre>
+<p>I added a "sleep" behavior to differentiate wibbles from verps. When the player isn't around, verps are hyperactive and run around randomly; wibbles sit and meditate. It seemed in keeping with their fighting styles.</p>
+<p>That all worked great, but when wibbles ran out of rocks, the game got really easy! So I added another behavior, <code>pick_up_rocks</code>, which makes a wibble either move toward any adjacent rocks, or pick them up if it's standing on one.</p>
+<p>The "conservation of rocks" principle introduces a new tactic into the game: players can pick up all the rocks to deprive the wibbles of their ammunition. Fortunately the player's backpack is infinitely large!</p>
+<h2>Stun effect</h2>
+<p>At this point, combat consisted of punching verps and dodging or punching rocks. (Yeah, you can punch rocks! They are just monsters after all!) I wanted to make it possible to avoid almost all damage, though, by understanding the game's systems, and the verps made it too hard to do that by being relentless.</p>
+<p>So I made every hit by the player stun the target monster for 2 turns. This is done using a behavior called <code>stunnable</code>, which just says "if I've been hit within the last 2 turns, turn blue and do nothing."</p>
+<p>For experienced roguelike players this makes the game easy once you figure it out, but I believe it's still a rewarding experience to figure it out in the first place. It is very, very difficult to make a game by yourself in 48 hours that has more than a few minutes of worthwhile gameplay, so I was aiming to just make those few minutes as good as possible and then let players feel like they could put it down after a good experience.</p>
+<h2>Healing</h2>
+<p>To make each section its own challenge, I decided to have the colored hallways between sections heal the player completely. This is another difficulty decrease that I could probably have left out, but I decided to err on the side of easy because I knew I had some user interface issues and wanted to be "extra" fair to players.</p>
+<h1>Atmosphere</h1>
+<p>I took 90 minutes to write 4 tracks, adding up to 11 minutes of music. Each map quadrant plays one of the tracks. <a href="https://soundcloud.com/irskep/sets/rogue-basement-ost">You can listen to them here.</a></p>
+<p>The music fades down when you're in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get tougher.</p>
+<h1>Takeaways</h1>
+<h2>Scope</h2>
+<p>Features I had planned to add but didn't:</p>
+<ul>
+<li>Multiple basements and an overworld</li>
+<li>Health potions</li>
+<li>Fire/ice missiles</li>
+<li>2 more enemy types to use those missiles</li>
+</ul>
+<p>From past experience, I knew from the start that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech demo.</p>
+<h2>Difficulty is hard</h2>
+<p>It's very difficult to tune for difficulty without time to playtest and fix things! I kept making the game easier because developers almost always make games too hard on the first pass, and I wanted to overcompensate to make it more likely that people would finish it in one sitting.</p>
+<p>Since judging hasn't started yet, I don't know if I was successful.</p>
+<h2>CSVs and roguelikes are best friends</h2>
+<p>Every time I moved some data out of Python code into a CSV file, it got 10x easier to add new content, but not for the reason you might thing. Yes, copy/pasting CSV rows is an easy way to add new things, but the act of <em>designing</em> the file format made me think about how the whole program worked and put flexible systems in place that would let me do more cool stuff later.</p>
+<h2>Preparation matters</h2>
+<p>The week before Ludum Dare 38, I worked on an ASCII user interface and roguelike development framework. I didn't want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important stuff.</p>
+<h2>Music makes a difference</h2>
+<p>The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn't working anymore.</p>
+<h1>Thanks for reading!</h1>
+<p>May the odds be ever in your favor.</p>
+</div></div>
+      <script></script>
+    </body>
+    </html>
+  
