@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/side-channel.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2012-12-15T00:00:00-08:00</updated><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence - Side Channel</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/side-channel.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2012-12-15T00:00:00-08:00</updated><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:/what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
 web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
 Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
-Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><category term="meta"></category></entry><entry><title>My Master’s Thesis</title><link href="http://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-16:my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
+almost a year and a half. During that time, I did a lot of work on
+&lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
+&lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
+web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
+Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</content><category term="meta"></category></entry><entry><title>My Master’s Thesis</title><link href="http://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><updated>2012-04-16T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-16:/my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
 interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="programming"></category></entry></feed>
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+interspersed with content, but my willpower wanes with each passing month.
+Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="programming"></category></entry></feed>
