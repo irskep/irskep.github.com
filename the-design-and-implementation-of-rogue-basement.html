@@ -79,6 +79,7 @@
     <div class="entry-content hyphenate"><h1>Introduction</h1>
 <p>This year I participated in <a href="https://ldjam.com">Ludum Dare 38</a>, a 48-hour game programming &#8220;competition.&#8221; I&#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href="https://ldjam.com/events/ludum-dare/38/rogue-basement">Rogue Basement</a>, a bare-bones, single-level game with <span class="caps">ASCII</span>&nbsp;graphics.</p>
 <p>In this article, I&#8217;ll cover the game design decisions I made, how they affect the player&#8217;s experience, and a bit of how they&#8217;re&nbsp;implemented.</p>
+<p><img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png"></p>
 <h1>What is a&nbsp;roguelike?</h1>
 <p>A &#8220;roguelike&#8221; is a game that is &#8220;like Rogue,&#8221; a text-based game from the 1980s that looks like&nbsp;this:</p>
 <p><img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png"></p>
@@ -165,7 +166,7 @@
 
 <p>When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here&#8217;s a screenshot I took when I got to this&nbsp;point:</p>
 <p><img alt="Screenshot 2017-04-21 21.00.42.png" src="http://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png"></p>
-<p>But it&#8217;s more interesting ot mix it up with different sizes of&nbsp;rectangles.</p>
+<p>But it&#8217;s more interesting to mix it up with different sizes of&nbsp;rectangles.</p>
 <div class="highlight"><pre><span></span>+----------------------------------------+
 | +--+  | +------+|   +------+   |       |
 | |  |  | |      ||   |      |   |+-----+|
@@ -242,7 +243,7 @@
 <li>For a given pair of room groups (everything under <code>a</code> vs everything under <code>b</code>, for example), there is exactly one path between&nbsp;them.</li>
 </ul>
 <p>That last point has some good and bad ramifications. On the bad side, it worsens replayability, because the corridors are roughly organized the same way from game to game. I noticed this while playtesting; after 3 games it&#8217;s obvious that the rooms generally have the same&nbsp;layout.</p>
-<p>But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: &#8220;A Small World.&#8221; I realized the first two splits don&#8217;t have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a &#8220;one-level roguelike&#8221; with some actual&nbsp;progression.</p>
+<p>But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: &#8220;A Small World.&#8221; The first two splits don&#8217;t have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a &#8220;one-level roguelike&#8221; with some actual&nbsp;progression.</p>
 <p>I split up the map like&nbsp;this:</p>
 <div class="highlight"><pre><span></span>+-------------------+--------------------+
 |                   |                    |
@@ -342,8 +343,12 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 <h2>Healing</h2>
 <p>To make each section its own challenge, I decided to have the colored hallways between sections heal the player completely. This is another difficulty decrease that I could probably have left out, but I decided to err on the side of easy because I knew I had some user interface issues and wanted to be &#8220;extra&#8221; fair to&nbsp;players.</p>
 <h1>Atmosphere</h1>
+<h2>Music</h2>
 <p>I took 90 minutes to write 4 tracks, adding up to 11 minutes of music. Each map quadrant plays one of the tracks. <a href="https://soundcloud.com/irskep/sets/rogue-basement-ost">You can listen to them&nbsp;here.</a></p>
 <p>The music fades down when you&#8217;re in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get&nbsp;tougher.</p>
+<h2>Title&nbsp;screen</h2>
+<p>I made this adorable title screen, and reused the <span class="caps">ASCII</span> art in the&nbsp;manual:</p>
+<p><img alt="title screen" src="http://steveasleep.com/img/rogue_basement/screenshot1.png"></p>
 <h1>Takeaways</h1>
 <h2>Scope</h2>
 <p>Features I had planned to add but&nbsp;didn&#8217;t:</p>
@@ -353,7 +358,7 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 <li>Fire/ice&nbsp;missiles</li>
 <li>2 more enemy types to use those&nbsp;missiles</li>
 </ul>
-<p>From past experience, I knew from the start that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech&nbsp;demo.</p>
+<p>From past experience, I knew that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech&nbsp;demo.</p>
 <h2>Difficulty is&nbsp;hard</h2>
 <p>It&#8217;s very difficult to tune for difficulty without time to playtest and fix things! I kept making the game easier because developers almost always make games too hard on the first pass, and I wanted to overcompensate to make it more likely that people would finish it in one&nbsp;sitting.</p>
 <p>The feedback so far seems to indicate that the difficulty is just about right. No one says it&#8217;s too hard, and some people say they&#8217;ve been playing for 25 minutes(!!!) and haven&#8217;t beaten it&nbsp;yet.</p>
@@ -364,8 +369,12 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 <p>The week before Ludum Dare 38, I worked on an <span class="caps">ASCII</span> user interface and roguelike development framework. I didn&#8217;t want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important&nbsp;stuff.</p>
 <h2>Music makes a&nbsp;difference</h2>
 <p>The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&#8217;t working anymore. Most of the positive reviews mention the music, so I think it will affect my score even outside the Audio&nbsp;category.</p>
-<h1>End</h1>
-<p>Thanks for reading! I might write more here eventually.&nbsp;:-)</p></div>
+<h2><span class="caps">ASCII</span> is a Ludum Dare graphics cheat&nbsp;code</h2>
+<p>Since <span class="caps">ASCII</span> is traditional for roguelikes, I don&#8217;t think it&#8217;s going to cost me too many points in the Graphics category. I&#8217;ve always had a difficult time making nice-looking graphics, and <span class="caps">ASCII</span> means it&#8217;s a&nbsp;non-issue.</p>
+<h2>Making videos ameliorates&nbsp;loneliness</h2>
+<p>Whenever I felt like I hit a milestone, I did a quick <a href="https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr">video update</a>. I didn&#8217;t really expect anyone to watch them, but it helped give me perspective on my progress. And it also simulated human interaction a little bit, which was nice because I was alone in the house for the entire&nbsp;weekend.</p>
+<h1>Conclusion</h1>
+<p>This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for&nbsp;reading!</p></div>
   </article></section>
     </div>
 

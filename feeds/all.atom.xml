@@ -2,6 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson’s Web Presence</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2017-05-04T00:00:00-07:00</updated><entry><title>The Design and Implementation of Rogue Basement</title><link href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="alternate"></link><published>2017-05-04T00:00:00-07:00</published><updated>2017-05-04T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-05-04:/the-design-and-implementation-of-rogue-basement.html</id><summary type="html">&lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
 &lt;p&gt;In this article, I&amp;#8217;ll cover the game design decisions I made, how they affect the player&amp;#8217;s experience, and a bit of how they&amp;#8217;re&amp;nbsp;implemented.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png"&gt;&lt;/p&gt;
 &lt;h1&gt;What is a&amp;nbsp;roguelike?&lt;/h1&gt;
 &lt;p&gt;A &amp;#8220;roguelike&amp;#8221; is a game that is &amp;#8220;like Rogue,&amp;#8221; a text-based game from the 1980s that looks like&amp;nbsp;this:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png"&gt;&lt;/p&gt;
@@ -19,6 +20,7 @@
 &lt;p&gt;I started on Friday night with a level generator. When you&amp;#8217;re time-constrained …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
 &lt;p&gt;In this article, I&amp;#8217;ll cover the game design decisions I made, how they affect the player&amp;#8217;s experience, and a bit of how they&amp;#8217;re&amp;nbsp;implemented.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png"&gt;&lt;/p&gt;
 &lt;h1&gt;What is a&amp;nbsp;roguelike?&lt;/h1&gt;
 &lt;p&gt;A &amp;#8220;roguelike&amp;#8221; is a game that is &amp;#8220;like Rogue,&amp;#8221; a text-based game from the 1980s that looks like&amp;nbsp;this:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png"&gt;&lt;/p&gt;
@@ -105,7 +107,7 @@
 
 &lt;p&gt;When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here&amp;#8217;s a screenshot I took when I got to this&amp;nbsp;point:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot 2017-04-21 21.00.42.png" src="http://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png"&gt;&lt;/p&gt;
-&lt;p&gt;But it&amp;#8217;s more interesting ot mix it up with different sizes of&amp;nbsp;rectangles.&lt;/p&gt;
+&lt;p&gt;But it&amp;#8217;s more interesting to mix it up with different sizes of&amp;nbsp;rectangles.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
 | +--+  | +------+|   +------+   |       |
 | |  |  | |      ||   |      |   |+-----+|
@@ -182,7 +184,7 @@
 &lt;li&gt;For a given pair of room groups (everything under &lt;code&gt;a&lt;/code&gt; vs everything under &lt;code&gt;b&lt;/code&gt;, for example), there is exactly one path between&amp;nbsp;them.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;That last point has some good and bad ramifications. On the bad side, it worsens replayability, because the corridors are roughly organized the same way from game to game. I noticed this while playtesting; after 3 games it&amp;#8217;s obvious that the rooms generally have the same&amp;nbsp;layout.&lt;/p&gt;
-&lt;p&gt;But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: &amp;#8220;A Small World.&amp;#8221; I realized the first two splits don&amp;#8217;t have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a &amp;#8220;one-level roguelike&amp;#8221; with some actual&amp;nbsp;progression.&lt;/p&gt;
+&lt;p&gt;But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: &amp;#8220;A Small World.&amp;#8221; The first two splits don&amp;#8217;t have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a &amp;#8220;one-level roguelike&amp;#8221; with some actual&amp;nbsp;progression.&lt;/p&gt;
 &lt;p&gt;I split up the map like&amp;nbsp;this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+-------------------+--------------------+
 |                   |                    |
@@ -282,8 +284,12 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;h2&gt;Healing&lt;/h2&gt;
 &lt;p&gt;To make each section its own challenge, I decided to have the colored hallways between sections heal the player completely. This is another difficulty decrease that I could probably have left out, but I decided to err on the side of easy because I knew I had some user interface issues and wanted to be &amp;#8220;extra&amp;#8221; fair to&amp;nbsp;players.&lt;/p&gt;
 &lt;h1&gt;Atmosphere&lt;/h1&gt;
+&lt;h2&gt;Music&lt;/h2&gt;
 &lt;p&gt;I took 90 minutes to write 4 tracks, adding up to 11 minutes of music. Each map quadrant plays one of the tracks. &lt;a href="https://soundcloud.com/irskep/sets/rogue-basement-ost"&gt;You can listen to them&amp;nbsp;here.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The music fades down when you&amp;#8217;re in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get&amp;nbsp;tougher.&lt;/p&gt;
+&lt;h2&gt;Title&amp;nbsp;screen&lt;/h2&gt;
+&lt;p&gt;I made this adorable title screen, and reused the &lt;span class="caps"&gt;ASCII&lt;/span&gt; art in the&amp;nbsp;manual:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="title screen" src="http://steveasleep.com/img/rogue_basement/screenshot1.png"&gt;&lt;/p&gt;
 &lt;h1&gt;Takeaways&lt;/h1&gt;
 &lt;h2&gt;Scope&lt;/h2&gt;
 &lt;p&gt;Features I had planned to add but&amp;nbsp;didn&amp;#8217;t:&lt;/p&gt;
@@ -293,7 +299,7 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;li&gt;Fire/ice&amp;nbsp;missiles&lt;/li&gt;
 &lt;li&gt;2 more enemy types to use those&amp;nbsp;missiles&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;From past experience, I knew from the start that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech&amp;nbsp;demo.&lt;/p&gt;
+&lt;p&gt;From past experience, I knew that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech&amp;nbsp;demo.&lt;/p&gt;
 &lt;h2&gt;Difficulty is&amp;nbsp;hard&lt;/h2&gt;
 &lt;p&gt;It&amp;#8217;s very difficult to tune for difficulty without time to playtest and fix things! I kept making the game easier because developers almost always make games too hard on the first pass, and I wanted to overcompensate to make it more likely that people would finish it in one&amp;nbsp;sitting.&lt;/p&gt;
 &lt;p&gt;The feedback so far seems to indicate that the difficulty is just about right. No one says it&amp;#8217;s too hard, and some people say they&amp;#8217;ve been playing for 25 minutes(!!!) and haven&amp;#8217;t beaten it&amp;nbsp;yet.&lt;/p&gt;
@@ -304,8 +310,12 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;p&gt;The week before Ludum Dare 38, I worked on an &lt;span class="caps"&gt;ASCII&lt;/span&gt; user interface and roguelike development framework. I didn&amp;#8217;t want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important&amp;nbsp;stuff.&lt;/p&gt;
 &lt;h2&gt;Music makes a&amp;nbsp;difference&lt;/h2&gt;
 &lt;p&gt;The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&amp;#8217;t working anymore. Most of the positive reviews mention the music, so I think it will affect my score even outside the Audio&amp;nbsp;category.&lt;/p&gt;
-&lt;h1&gt;End&lt;/h1&gt;
-&lt;p&gt;Thanks for reading! I might write more here eventually.&amp;nbsp;:-)&lt;/p&gt;</content><category term="games"></category></entry><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="http://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><updated>2017-03-12T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-03-12:/home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio&amp;nbsp;setup.&lt;/p&gt;
+&lt;h2&gt;&lt;span class="caps"&gt;ASCII&lt;/span&gt; is a Ludum Dare graphics cheat&amp;nbsp;code&lt;/h2&gt;
+&lt;p&gt;Since &lt;span class="caps"&gt;ASCII&lt;/span&gt; is traditional for roguelikes, I don&amp;#8217;t think it&amp;#8217;s going to cost me too many points in the Graphics category. I&amp;#8217;ve always had a difficult time making nice-looking graphics, and &lt;span class="caps"&gt;ASCII&lt;/span&gt; means it&amp;#8217;s a&amp;nbsp;non-issue.&lt;/p&gt;
+&lt;h2&gt;Making videos ameliorates&amp;nbsp;loneliness&lt;/h2&gt;
+&lt;p&gt;Whenever I felt like I hit a milestone, I did a quick &lt;a href="https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr"&gt;video update&lt;/a&gt;. I didn&amp;#8217;t really expect anyone to watch them, but it helped give me perspective on my progress. And it also simulated human interaction a little bit, which was nice because I was alone in the house for the entire&amp;nbsp;weekend.&lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for&amp;nbsp;reading!&lt;/p&gt;</content><category term="games"></category></entry><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="http://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><updated>2017-03-12T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-03-12:/home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio&amp;nbsp;setup.&lt;/p&gt;
 &lt;h2&gt;The wish&amp;nbsp;list&lt;/h2&gt;
 &lt;p&gt;Music is our primary focus. We have no need to switch video. &lt;span class="caps"&gt;RCA&lt;/span&gt; and 3.5mm cables are the norm, not &lt;span class="caps"&gt;HDMI&lt;/span&gt;. This doesn’t prevent us from getting a receiver that supports &lt;span class="caps"&gt;RCA&lt;/span&gt;, but those tend to be bulky and have lots of&amp;nbsp;buttons.&lt;/p&gt;
 &lt;p&gt;We share a large &lt;span class="caps"&gt;MP3&lt;/span&gt; library that we would both like to control. It’s easy enough to take turns plugging our computers or phones into an aux cable, but it’s so much more seamless to collaboratively queue things up in the same player. There’s a mix of Windows and &lt;span class="caps"&gt;OS&lt;/span&gt; X machines in the house, so the solution has to be&amp;nbsp;multi-platform.&lt;/p&gt;
