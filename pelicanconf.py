@@ -4,7 +4,10 @@ from __future__ import unicode_literals
 import sys
 sys.path.append('.')
 
-STATIC_PATHS = ['img', 'downloads', 'css', 'js', 'css/style.css', 'CNAME']
+STATIC_PATHS = [
+    'img', 'downloads', 'css', 'js', 'css/style.css', 'CNAME',
+    'rogue_basement_post',
+]
 
 AUTHOR = u'Steve Johnson'
 SITENAME = u"Steve Johnson’s Web Presence"
