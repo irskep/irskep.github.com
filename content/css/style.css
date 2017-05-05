@@ -231,3 +231,6 @@ article.home-page ul.article-summary-list {
   color: #3c3c8c; }
   .page .page-content a:hover {
     color: #5050fa; }
+
+.entry-content h1 {
+  border-bottom: 1px solid #a8a8a8; }
