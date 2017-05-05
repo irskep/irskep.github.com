@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/steve-johnson.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2017-05-04T00:00:00-07:00</updated><entry><title>The Design and Implementation of Rogue Basement</title><link href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="alternate"></link><published>2017-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-05-04:the-design-and-implementation-of-rogue-basement.html</id><summary type="html">&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson - Steve Johnson</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/steve-johnson.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2017-05-04T00:00:00-07:00</updated><entry><title>The Design and Implementation of Rogue Basement</title><link href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="alternate"></link><published>2017-05-04T00:00:00-07:00</published><updated>2017-05-04T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-05-04:/the-design-and-implementation-of-rogue-basement.html</id><summary type="html">&lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
 &lt;p&gt;In this article, I&amp;#8217;ll cover the game design decisions I made, how they affect the player&amp;#8217;s experience, and a bit of how they&amp;#8217;re&amp;nbsp;implemented.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png" /&gt;&lt;/p&gt;
-&lt;h1 id="what-is-a-roguelike"&gt;What is a&amp;nbsp;roguelike?&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png"&gt;&lt;/p&gt;
+&lt;h1&gt;What is a&amp;nbsp;roguelike?&lt;/h1&gt;
 &lt;p&gt;A &amp;#8220;roguelike&amp;#8221; is a game that is &amp;#8220;like Rogue,&amp;#8221; a text-based game from the 1980s that looks like&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png"&gt;&lt;/p&gt;
 &lt;p&gt;Typical features of these games&amp;nbsp;include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Procedurally generated&amp;nbsp;levels&lt;/li&gt;
@@ -16,7 +16,25 @@
 &lt;li&gt;Very difficult to win without lots of&amp;nbsp;practice&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you&amp;#8217;re always facing new situations. You have to use your wits to&amp;nbsp;survive.&lt;/p&gt;
-&lt;h1 id="environment"&gt;Environment&lt;/h1&gt;
+&lt;h1&gt;Environment&lt;/h1&gt;
+&lt;p&gt;I started on Friday night with a level generator. When you&amp;#8217;re time-constrained …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;#8217;ll cover the game design decisions I made, how they affect the player&amp;#8217;s experience, and a bit of how they&amp;#8217;re&amp;nbsp;implemented.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png"&gt;&lt;/p&gt;
+&lt;h1&gt;What is a&amp;nbsp;roguelike?&lt;/h1&gt;
+&lt;p&gt;A &amp;#8220;roguelike&amp;#8221; is a game that is &amp;#8220;like Rogue,&amp;#8221; a text-based game from the 1980s that looks like&amp;nbsp;this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png"&gt;&lt;/p&gt;
+&lt;p&gt;Typical features of these games&amp;nbsp;include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Procedurally generated&amp;nbsp;levels&lt;/li&gt;
+&lt;li&gt;Permadeath (one&amp;nbsp;life)&lt;/li&gt;
+&lt;li&gt;Turn-based&amp;nbsp;action&lt;/li&gt;
+&lt;li&gt;Top-down 2D graphics, often just&amp;nbsp;text&lt;/li&gt;
+&lt;li&gt;Simulation-oriented; interesting stories arise from the game&amp;#8217;s rules and&amp;nbsp;behavior&lt;/li&gt;
+&lt;li&gt;Very difficult to win without lots of&amp;nbsp;practice&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you&amp;#8217;re always facing new situations. You have to use your wits to&amp;nbsp;survive.&lt;/p&gt;
+&lt;h1&gt;Environment&lt;/h1&gt;
 &lt;p&gt;I started on Friday night with a level generator. When you&amp;#8217;re time-constrained, you have to make very careful decisions about where to innovate, and I chose to stick to a roguelike trope for my basic layout: boxy rooms connected by narrow corridors, with doors where corridors meet&amp;nbsp;rooms.&lt;/p&gt;
 &lt;p&gt;I could have placed a bunch of rooms randomly and made sure each one was connected to another, but it&amp;#8217;s tricky to use space efficiently that way. A common way to avoid this problem is to use a &lt;strong&gt;binary space partitioning&amp;nbsp;tree.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The basic idea here is that you take a rectangular area, like&amp;nbsp;this:&lt;/p&gt;
@@ -88,7 +106,7 @@
 
 
 &lt;p&gt;When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here&amp;#8217;s a screenshot I took when I got to this&amp;nbsp;point:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Screenshot 2017-04-21 21.00.42.png" src="http://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot 2017-04-21 21.00.42.png" src="http://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png"&gt;&lt;/p&gt;
 &lt;p&gt;But it&amp;#8217;s more interesting to mix it up with different sizes of&amp;nbsp;rectangles.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
 | +--+  | +------+|   +------+   |       |
@@ -158,7 +176,7 @@
 
 
 &lt;p&gt;And here&amp;#8217;s how it looked during&amp;nbsp;development:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Screenshot 2017-04-21 21.50.39.png" src="http://steveasleep.com/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot 2017-04-21 21.50.39.png" src="http://steveasleep.com/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png"&gt;&lt;/p&gt;
 &lt;p&gt;We now have a few&amp;nbsp;guarantees:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;All rooms are reachable from all other&amp;nbsp;rooms.&lt;/li&gt;
@@ -186,11 +204,11 @@
 
 &lt;p&gt;The player starts in &lt;code&gt;aa&lt;/code&gt; and moves to &lt;code&gt;ab&lt;/code&gt;, then &lt;code&gt;bb&lt;/code&gt;, then &lt;code&gt;ba&lt;/code&gt;, where the goal&amp;nbsp;is.&lt;/p&gt;
 &lt;p&gt;Here&amp;#8217;s another map from early development, which splits the map in this&amp;nbsp;way:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Screenshot 2017-04-22 10.54.30.png" src="http://steveasleep.com/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot 2017-04-22 10.54.30.png" src="http://steveasleep.com/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png"&gt;&lt;/p&gt;
 &lt;p&gt;And here&amp;#8217;s one with just the first two partition lines, so you can see how the map is&amp;nbsp;divided:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Screenshot 2017-04-22 10.56.58.png" src="http://steveasleep.com/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot 2017-04-22 10.56.58.png" src="http://steveasleep.com/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png"&gt;&lt;/p&gt;
 &lt;p&gt;And finally, here are the hallways that mark the transitions between each&amp;nbsp;section:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Screenshot 2017-04-22 11.40.44.png" src="http://steveasleep.com/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot 2017-04-22 11.40.44.png" src="http://steveasleep.com/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png"&gt;&lt;/p&gt;
 &lt;p&gt;Originally the colors were just for debugging, but I ended up leaving them in place because they signal&amp;nbsp;specialness.&lt;/p&gt;
 &lt;p&gt;To add variety, I created a &lt;code&gt;rooms.csv&lt;/code&gt; file to define a few room&amp;nbsp;types:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;                                                      Monster   Item
@@ -207,8 +225,8 @@ box_full,   *,          verp_1      0.20,   #6666ff,  2.00,     4.00
 
 
 &lt;p&gt;So within each quadrant, there is an 80% chance a room will have shape &lt;code&gt;box_random&lt;/code&gt;, a quadrant-specific color, 5 monsters per 100 tiles, 5 items per 100 tiles, and allow any area-appropriate monster. But there is a 20% chance that the room will have the shape &lt;code&gt;box_full&lt;/code&gt; (fill its entire &lt;span class="caps"&gt;BSP&lt;/span&gt; tree cell) and contain only verps, 2 per 100&amp;nbsp;tiles.&lt;/p&gt;
-&lt;h1 id="inhabitants"&gt;Inhabitants&lt;/h1&gt;
-&lt;h2 id="the-player"&gt;The&amp;nbsp;player&lt;/h2&gt;
+&lt;h1&gt;Inhabitants&lt;/h1&gt;
+&lt;h2&gt;The&amp;nbsp;player&lt;/h2&gt;
 &lt;p&gt;The first inhabitant of the world is the player, represented by an &lt;code&gt;@&lt;/code&gt; (because the cell with the &lt;code&gt;@&lt;/code&gt; is &amp;#8220;where you are at&amp;#8221;). All world inhabitants, henceforth called &amp;#8220;monsters&amp;#8221; (after all, humans are the real monsters) and defined in &lt;code&gt;monsters.csv&lt;/code&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
 player, @,    #ffffff,  -1,         0.00,   keyboard_movement,  100,    5.00,
@@ -216,7 +234,7 @@ player, @,    #ffffff,  -1,         0.00,   keyboard_movement,  100,    5.00,
 
 
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Difficulty&amp;#8221; determines which quadrant a monster can spawn in. The player is a special case, so the level generator ignores it. The player moves in response to keyboard events, has 100 hit points, and hits other monsters for 5 damage. (The combat system in Rogue Basement is not sophisticated. There is no randomness. Remember, I had to be careful about where to spend&amp;nbsp;innovation-points!)&lt;/p&gt;
-&lt;h2 id="npcs"&gt;NPCs&lt;/h2&gt;
+&lt;h2&gt;NPCs&lt;/h2&gt;
 &lt;p&gt;Generally speaking, NPCs (non-player characters) in video games and tabletop RPGs are differentiated based on three important&amp;nbsp;things:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;What they can&amp;nbsp;do&lt;/li&gt;
@@ -259,13 +277,13 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;p&gt;I added a &amp;#8220;sleep&amp;#8221; behavior to differentiate wibbles from verps. When the player isn&amp;#8217;t around, verps are hyperactive and run around randomly; wibbles sit and meditate. It seemed in keeping with their fighting&amp;nbsp;styles.&lt;/p&gt;
 &lt;p&gt;That all worked great, but when wibbles ran out of rocks, the game got really easy! So I added another behavior, &lt;code&gt;pick_up_rocks&lt;/code&gt;, which makes a wibble either move toward any adjacent rocks, or pick them up if it&amp;#8217;s standing on&amp;nbsp;one.&lt;/p&gt;
 &lt;p&gt;The &amp;#8220;conservation of rocks&amp;#8221; principle introduces a new tactic into the game: players can pick up all the rocks to deprive the wibbles of their ammunition. Fortunately the player&amp;#8217;s backpack is infinitely&amp;nbsp;large!&lt;/p&gt;
-&lt;h2 id="stun-effect"&gt;Stun&amp;nbsp;effect&lt;/h2&gt;
+&lt;h2&gt;Stun&amp;nbsp;effect&lt;/h2&gt;
 &lt;p&gt;At this point, combat consisted of punching verps and dodging or punching rocks. (Yeah, you can punch rocks! They are just monsters after all!) I wanted to make it possible to avoid almost all damage, though, by understanding the game&amp;#8217;s systems, and the verps made it too hard to do that by being&amp;nbsp;relentless.&lt;/p&gt;
 &lt;p&gt;So I made every hit by the player stun the target monster for 2 turns. This is done using a behavior called &lt;code&gt;stunnable&lt;/code&gt;, which just says &amp;#8220;if I&amp;#8217;ve been hit within the last 2 turns, turn blue and do&amp;nbsp;nothing.&amp;#8221;&lt;/p&gt;
 &lt;p&gt;For experienced roguelike players this makes the game easy once you figure it out, but I believe it&amp;#8217;s still a rewarding experience to figure it out in the first place. It is very, very difficult to make a game by yourself in 48 hours that has more than a few minutes of worthwhile gameplay, so I was aiming to just make those few minutes as good as possible and then let players feel like they could put it down after a good&amp;nbsp;experience.&lt;/p&gt;
-&lt;h2 id="healing"&gt;Healing&lt;/h2&gt;
+&lt;h2&gt;Healing&lt;/h2&gt;
 &lt;p&gt;To make each section its own challenge, I decided to have the colored hallways between sections heal the player completely. This is another difficulty decrease that I could probably have left out, but I decided to err on the side of easy because I knew I had some user interface issues and wanted to be &amp;#8220;extra&amp;#8221; fair to&amp;nbsp;players.&lt;/p&gt;
-&lt;h1 id="unintended-consequences"&gt;Unintended&amp;nbsp;consequences&lt;/h1&gt;
+&lt;h1&gt;Unintended&amp;nbsp;consequences&lt;/h1&gt;
 &lt;p&gt;The simulation has a few features I didn&amp;#8217;t intend, but that I don&amp;#8217;t regret—that&amp;#8217;s half the&amp;nbsp;fun!&lt;/p&gt;
 &lt;p&gt;These features mainly have to do with rocks, and the fact that when you throw them, they become monsters.&amp;nbsp;Specifically:&lt;/p&gt;
 &lt;ul&gt;
@@ -274,15 +292,15 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;li&gt;If two wibbles throw rocks at you at the same time, they may collide in midair and&amp;nbsp;die.&lt;/li&gt;
 &lt;li&gt;You can embed rocks in walls. (Okay, not so happy about this&amp;nbsp;one.)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id="atmosphere"&gt;Atmosphere&lt;/h1&gt;
-&lt;h2 id="music"&gt;Music&lt;/h2&gt;
+&lt;h1&gt;Atmosphere&lt;/h1&gt;
+&lt;h2&gt;Music&lt;/h2&gt;
 &lt;p&gt;I took 90 minutes to write 4 tracks, adding up to 11 minutes of music. Each map quadrant plays one of the tracks. &lt;a href="https://soundcloud.com/irskep/sets/rogue-basement-ost"&gt;You can listen to them&amp;nbsp;here.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The music fades down when you&amp;#8217;re in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get&amp;nbsp;tougher.&lt;/p&gt;
-&lt;h2 id="title-screen"&gt;Title&amp;nbsp;screen&lt;/h2&gt;
+&lt;h2&gt;Title&amp;nbsp;screen&lt;/h2&gt;
 &lt;p&gt;I made this adorable title screen, and reused the &lt;span class="caps"&gt;ASCII&lt;/span&gt; art in the&amp;nbsp;manual:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="title screen" src="http://steveasleep.com/img/rogue_basement/screenshot1.png" /&gt;&lt;/p&gt;
-&lt;h1 id="takeaways"&gt;Takeaways&lt;/h1&gt;
-&lt;h2 id="scope"&gt;Scope&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="title screen" src="http://steveasleep.com/img/rogue_basement/screenshot1.png"&gt;&lt;/p&gt;
+&lt;h1&gt;Takeaways&lt;/h1&gt;
+&lt;h2&gt;Scope&lt;/h2&gt;
 &lt;p&gt;Features I had planned to add but&amp;nbsp;didn&amp;#8217;t:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Multiple basements and an&amp;nbsp;overworld&lt;/li&gt;
@@ -291,24 +309,27 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;li&gt;2 more enemy types to use those&amp;nbsp;missiles&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;From past experience, I knew that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech&amp;nbsp;demo.&lt;/p&gt;
-&lt;h2 id="difficulty-is-hard"&gt;Difficulty is&amp;nbsp;hard&lt;/h2&gt;
+&lt;h2&gt;Difficulty is&amp;nbsp;hard&lt;/h2&gt;
 &lt;p&gt;It&amp;#8217;s very difficult to tune for difficulty without time to playtest and fix things! I kept making the game easier because developers almost always make games too hard on the first pass, and I wanted to overcompensate to make it more likely that people would finish it in one&amp;nbsp;sitting.&lt;/p&gt;
 &lt;p&gt;The feedback so far seems to indicate that the difficulty is just about right. No one says it&amp;#8217;s too hard, and some people say they&amp;#8217;ve been playing for 25 minutes(!!!) and haven&amp;#8217;t beaten it&amp;nbsp;yet.&lt;/p&gt;
-&lt;h2 id="csvs-and-roguelikes-are-best-friends"&gt;CSVs and roguelikes are best&amp;nbsp;friends&lt;/h2&gt;
+&lt;h2&gt;CSVs and roguelikes are best&amp;nbsp;friends&lt;/h2&gt;
 &lt;p&gt;Every time I moved some data out of Python code into a &lt;span class="caps"&gt;CSV&lt;/span&gt; file, it got 10x easier to add new content, but not for the reason you might thing. Yes, copy/pasting &lt;span class="caps"&gt;CSV&lt;/span&gt; rows is an easy way to add new things, but the act of &lt;em&gt;designing&lt;/em&gt; the file format made me think about how the whole program worked and put flexible systems in place that would let me do more cool stuff&amp;nbsp;later.&lt;/p&gt;
 &lt;p&gt;I can already see the limitations of &lt;span class="caps"&gt;CSV&lt;/span&gt;, so I think next I&amp;#8217;m going to switch to &lt;span class="caps"&gt;CSV&lt;/span&gt;, but with &lt;span class="caps"&gt;YAML&lt;/span&gt; values for each column. I really like the efficiency of editing &lt;span class="caps"&gt;CSV&lt;/span&gt;, but it&amp;#8217;s not flexible enough to do what I&amp;nbsp;want.&lt;/p&gt;
-&lt;h2 id="preparation-matters"&gt;Preparation&amp;nbsp;matters&lt;/h2&gt;
+&lt;h2&gt;Preparation&amp;nbsp;matters&lt;/h2&gt;
 &lt;p&gt;The week before Ludum Dare 38, I worked on an &lt;span class="caps"&gt;ASCII&lt;/span&gt; user interface and roguelike development framework. I didn&amp;#8217;t want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important&amp;nbsp;stuff.&lt;/p&gt;
-&lt;h2 id="music-makes-a-difference"&gt;Music makes a&amp;nbsp;difference&lt;/h2&gt;
+&lt;h2&gt;Music makes a&amp;nbsp;difference&lt;/h2&gt;
 &lt;p&gt;The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&amp;#8217;t working anymore. Most of the positive reviews mention the music, so I think it will affect my score even outside the Audio&amp;nbsp;category.&lt;/p&gt;
-&lt;h2 id="ascii-is-a-ludum-dare-graphics-cheat-code"&gt;&lt;span class="caps"&gt;ASCII&lt;/span&gt; is a Ludum Dare graphics cheat&amp;nbsp;code&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="caps"&gt;ASCII&lt;/span&gt; is a Ludum Dare graphics cheat&amp;nbsp;code&lt;/h2&gt;
 &lt;p&gt;Since &lt;span class="caps"&gt;ASCII&lt;/span&gt; is traditional for roguelikes, I don&amp;#8217;t think it&amp;#8217;s going to cost me too many points in the Graphics category. I&amp;#8217;ve always had a difficult time making nice-looking graphics, and &lt;span class="caps"&gt;ASCII&lt;/span&gt; means it&amp;#8217;s a&amp;nbsp;non-issue.&lt;/p&gt;
-&lt;h2 id="making-videos-ameliorates-loneliness"&gt;Making videos ameliorates&amp;nbsp;loneliness&lt;/h2&gt;
+&lt;h2&gt;Making videos ameliorates&amp;nbsp;loneliness&lt;/h2&gt;
 &lt;p&gt;Whenever I felt like I hit a milestone, I did a quick &lt;a href="https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr"&gt;video update&lt;/a&gt;. I didn&amp;#8217;t really expect anyone to watch them, but it helped give me perspective on my progress. And it simulated human interaction a little bit, which was nice because I was alone in the house for the entire&amp;nbsp;weekend.&lt;/p&gt;
-&lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
+&lt;h2&gt;The tech stack&amp;nbsp;works&lt;/h2&gt;
+&lt;p&gt;I wrote the game in Python 3. For graphics, I used &lt;a href="http://foo.wyrd.name/en:bearlibterminal"&gt;BearLibTerminal&lt;/a&gt;. I played the music with &lt;a href="https://pyglet.org"&gt;pyglet&lt;/a&gt;. And for assorted algorithms, state management, and user interface features, I used my own &lt;a href="http://steveasleep.com/clubsandwich/"&gt;clubsandwich&lt;/a&gt; library. To package the game for &lt;span class="caps"&gt;OS&lt;/span&gt; X and Windows, I used &lt;a href="http://www.pyinstaller.org/"&gt;PyInstaller&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This combination works really well. The main downside is that calling C libraries from Python is slow, and I had to do some optimiziation work to get a decent frame rate. In the future, I might switch the graphics over to use pyglet entirely, but I really like using BearLibTerminal because of its limitations. You get a grid of tiles and nothing else. It&amp;#8217;s&amp;nbsp;liberating.&lt;/p&gt;
+&lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for reading! You can watch all this happen at super-speed in this timelapse&amp;nbsp;video:&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="games"></category></entry><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="http://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-03-12:home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio&amp;nbsp;setup.&lt;/p&gt;
-&lt;h2 id="the-wish-list"&gt;The wish&amp;nbsp;list&lt;/h2&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="games"></category></entry><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="http://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><updated>2017-03-12T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-03-12:/home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio&amp;nbsp;setup.&lt;/p&gt;
+&lt;h2&gt;The wish&amp;nbsp;list&lt;/h2&gt;
 &lt;p&gt;Music is our primary focus. We have no need to switch video. &lt;span class="caps"&gt;RCA&lt;/span&gt; and 3.5mm cables are the norm, not &lt;span class="caps"&gt;HDMI&lt;/span&gt;. This doesn’t prevent us from getting a receiver that supports &lt;span class="caps"&gt;RCA&lt;/span&gt;, but those tend to be bulky and have lots of&amp;nbsp;buttons.&lt;/p&gt;
 &lt;p&gt;We share a large &lt;span class="caps"&gt;MP3&lt;/span&gt; library that we would both like to control. It’s easy enough to take turns plugging our computers or phones into an aux cable, but it’s so much more seamless to collaboratively queue things up in the same player. There’s a mix of Windows and &lt;span class="caps"&gt;OS&lt;/span&gt; X machines in the house, so the solution has to be&amp;nbsp;multi-platform.&lt;/p&gt;
 &lt;p&gt;We have a &lt;span class="caps"&gt;PC&lt;/span&gt; that functions as a &lt;span class="caps"&gt;TV&lt;/span&gt; and gaming machine. Latency is important for that use case, so wifi is&amp;nbsp;out.&lt;/p&gt;
@@ -316,61 +337,83 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;p&gt;When people come stay with us, I want to be able to explain how it all works in less than 120&amp;nbsp;characters.&lt;/p&gt;
 &lt;p&gt;And finally, I shouldn’t need to mess with it constantly. It should do everything we need without crashing or&amp;nbsp;fiddling.&lt;/p&gt;
 &lt;p&gt;I’ve tried a bunch of low-cost configurations, and this is what we have today. It’s reliable, predictable, and hits all the points&amp;nbsp;above.&lt;/p&gt;
-&lt;h2 id="mac-as-media-server"&gt;Mac as media&amp;nbsp;server&lt;/h2&gt;
+&lt;h2&gt;Mac as media&amp;nbsp;server&lt;/h2&gt;
 &lt;p&gt;I have an old Mac laptop from 2011. Here’s how I set it up to act as a media server and audio passthrough device. Note that I already have an amplifier for the speakers. If you don’t, well, maybe you’re better off with a regular receiver! Anyway, on to&amp;nbsp;setup.&lt;/p&gt;
 &lt;p&gt;Find an out-of-the-way location. Plug the laptop into the speakers and power. We’re about to set things up so you don’t need to be physically at the computer to manage it, so don’t worry about the location being convenient to&amp;nbsp;access.&lt;/p&gt;
-&lt;h3 id="initial-setup-seated-at-media-server"&gt;Initial setup (seated at media&amp;nbsp;server)&lt;/h3&gt;
+&lt;h3&gt;Initial setup (seated at media&amp;nbsp;server)&lt;/h3&gt;
 &lt;p&gt;Open System Preferences. Select Sharing. Check the “Remote Management” box, and when the drop-down opens, select “Observe” and&amp;nbsp;“Control.”&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Sharing preference pane" src="http://steveasleep.com/img/home_audio_adventures/prefpane_sharing.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Sharing preference pane" src="http://steveasleep.com/img/home_audio_adventures/prefpane_sharing.png"&gt;&lt;/p&gt;
 &lt;p&gt;Set or remember the “Computer Name” field at the top. A nice, short name you could use would be &lt;code&gt;media-server&lt;/code&gt;. Going forward, I’m going to assume you used that&amp;nbsp;name.&lt;/p&gt;
 &lt;p&gt;Still in System Preferences, click the back button. Go to “Users &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Groups”. Click “Login Options.” Make sure the “Automatic login:” menu is set to the user you want. (You may also need to go to “Security &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Privacy” in System Preferences and uncheck “Disable automatic&amp;nbsp;login.”)&lt;/p&gt;
 &lt;p&gt;Install &lt;a href="http://semaja2.net/projects/insomniaxinfo/"&gt;InsomniaX&lt;/a&gt; if you’re using a laptop. This will let you close the lid without putting the laptop to sleep. Once installed and running, open the menu, and make sure Preferences &amp;gt; “Start on Login” is&amp;nbsp;checked.&lt;/p&gt;
 &lt;p&gt;Now close the lid and head to another Mac so you can configure things more&amp;nbsp;comfortably!&lt;/p&gt;
-&lt;h3 id="remaining-setup-remote"&gt;Remaining setup&amp;nbsp;(remote)&lt;/h3&gt;
+&lt;h3&gt;Remaining setup&amp;nbsp;(remote)&lt;/h3&gt;
 &lt;p&gt;On Mac number two, open a Finder window. In the Finder menu bar, select Go &amp;gt; Network or hit Command+Shift+K. Pick &lt;code&gt;media-server&lt;/code&gt; from the list and click the Share Screen button. Enter your username and password for your account on the media&amp;nbsp;server.&lt;/p&gt;
 &lt;p&gt;You should see a list with &lt;code&gt;media-server&lt;/code&gt; init. Click it. There should be a “Share Screen…” button. Click it. Enter your username and password from &lt;code&gt;media-server&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Network folder in Finder" src="http://steveasleep.com/img/home_audio_adventures/finder_network.png" /&gt;
+&lt;p&gt;&lt;img alt="Network folder in Finder" src="http://steveasleep.com/img/home_audio_adventures/finder_network.png"&gt;
 ￼
 (I call mine&amp;nbsp;“fiona.”)&lt;/p&gt;
 &lt;p&gt;Before you really get going, you might want to take some time to open your wifi router’s settings and assign a dedicated internal &lt;span class="caps"&gt;IP&lt;/span&gt; to the media server. Macs will be able to connect to it as &lt;code&gt;media-server.local&lt;/code&gt;, but Windows machines won’t. I won’t provide specific instructions here due to the infinite variety of router software, but it was pretty simple on my Airport&amp;nbsp;Extreme.&lt;/p&gt;
 &lt;p&gt;From here there are a ton of things you can do, so I’ll organize the rest of this post by&amp;nbsp;topic.&lt;/p&gt;
-&lt;h2 id="spotify"&gt;Spotify&lt;/h2&gt;
+&lt;h2&gt;Spotify&lt;/h2&gt;
 &lt;p&gt;Spotify is easy to set up but limited to one user. Install Spotify on the media server, sign in to it, and ask it to launch itself on login. (Menu -&amp;gt; Spotify -&amp;gt; Preferences, Show Advanced Settings, Open Spotify automatically after you log in to the&amp;nbsp;computer.)&lt;/p&gt;
 &lt;p&gt;Your devices can now control Spotify on the media server, but you have to be logged in as you. Even with family sharing, there’s no way to share a device among multiple user accounts without going for a super-technical solution like &lt;a href="https://github.com/dirkgroenen/mopidy-mopify"&gt;mopidy-mopify&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In our case, this means one of us has to use aux or Bluetooth to play Spotify through the&amp;nbsp;speakers. &lt;/p&gt;
-&lt;h2 id="mp3s"&gt;MP3s&lt;/h2&gt;
+&lt;h2&gt;MP3s&lt;/h2&gt;
 &lt;p&gt;All of my solutions to the &lt;span class="caps"&gt;MP3&lt;/span&gt; library problem are, unfortunately, pretty technical. I don’t have any recommendations for people who are not comfortable with the&amp;nbsp;terminal.&lt;/p&gt;
 &lt;p&gt;The best-documented ways to share an &lt;span class="caps"&gt;MP3&lt;/span&gt; library are &lt;a href="https://www.musicpd.org"&gt;mpd&lt;/a&gt; and &lt;a href="https://www.mopidy.com"&gt;mopidy&lt;/a&gt;. Both solutions mostly work but are broken in some annoying way and don’t have any truly great&amp;nbsp;clients.&lt;/p&gt;
 &lt;p&gt;I prefer to use my own project, &lt;a href="https://github.com/irskep/summertunes"&gt;Summertunes&lt;/a&gt;. It glues together the &lt;a href="http://beets.io"&gt;beets&lt;/a&gt; extensible music library manager and &lt;a href="https://mpv.io"&gt;mpv&lt;/a&gt; player in an iTunes-like web interface. That means Casey and I can control the same library and playlist from any web browser on any device, including our phones. It’s responsive and&amp;nbsp;reliable.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Summertunes" src="http://steveasleep.com/img/home_audio_adventures/summertunes.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Summertunes" src="http://steveasleep.com/img/home_audio_adventures/summertunes.png"&gt;&lt;/p&gt;
 &lt;p&gt;I use &lt;a href="http://www.soma-zone.com/LaunchControl/"&gt;LaunchControl&lt;/a&gt; with some shell scripts to run &lt;code&gt;mpd&lt;/code&gt; and Summertunes on login, so I never need to mess with them manually unless they&amp;nbsp;break.&lt;/p&gt;
 &lt;p&gt;I recommend &lt;a href="https://github.com/CDrummond/cantata/releases"&gt;Cantata&lt;/a&gt; as an &lt;span class="caps"&gt;MPD&lt;/span&gt; client. It’s not very Mac-like, but it’s easy enough to find your way&amp;nbsp;around.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Cantata" src="http://steveasleep.com/img/home_audio_adventures/cantata.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cantata" src="http://steveasleep.com/img/home_audio_adventures/cantata.png"&gt;&lt;/p&gt;
 &lt;p&gt;We only use &lt;span class="caps"&gt;MPD&lt;/span&gt; if I’m actively working on Summertunes and have temporarily hosed the installation. So about once per&amp;nbsp;month.&lt;/p&gt;
-&lt;h2 id="input-passthrough"&gt;Input&amp;nbsp;passthrough&lt;/h2&gt;
+&lt;h2&gt;Input&amp;nbsp;passthrough&lt;/h2&gt;
 &lt;p&gt;The Mac takes care of a lot by itself, but we still need to support a home theater &lt;span class="caps"&gt;PC&lt;/span&gt;, Bluetooth adapter, and 3.5mm aux cable. Some external hardware is&amp;nbsp;necessary.&lt;/p&gt;
 &lt;p&gt;We could have the Mac output to a switch, but I’d rather just have everything merged into one signal so the music players work 100% of the time without having to remember what channel something is on. We can accomplish this using &lt;a href="https://rogueamoeba.com/soundsource/"&gt;SoundSource&lt;/a&gt;, a $10 utility that lets you mirror your Mac’s audio input to its&amp;nbsp;output.&lt;/p&gt;
 &lt;p&gt;Buy SoundSource, run it, select “Open Play-Thru Window” in the menu, and click “Start Play-Thru.” You’ll need to hit this button after every reboot, unfortunately. If you use SoundSource for this purpose, please join me in sending feature request via their &lt;a href="https://rogueamoeba.com/support/knowledgebase/?showCategory=SoundSource"&gt;support form&lt;/a&gt; asking them to let us auto-enable&amp;nbsp;it.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="SoundSource" src="http://steveasleep.com/img/home_audio_adventures/soundsource.png" /&gt;&lt;/p&gt;
-&lt;h2 id="audio-switching"&gt;Audio&amp;nbsp;switching&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="SoundSource" src="http://steveasleep.com/img/home_audio_adventures/soundsource.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Audio&amp;nbsp;switching&lt;/h2&gt;
 &lt;p&gt;At this point, we’ve got a Mac hosting a music library and Spotify, which will pass through any input we send to it through its line-in port. We need to add Bluetooth, 3.5mm aux, and a home theater &lt;span class="caps"&gt;PC&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;I spent &lt;em&gt;hours&lt;/em&gt; on Amazon trying to find a device that does nothing but switch between 3 &lt;span class="caps"&gt;RCA&lt;/span&gt; or 3.5mm inputs, and has a remote control. The reason this is hard to find is that most people use a stereo receiver, which is both an amplifier and a switch. &lt;a href="https://www.amazon.com/Yamaha-R-S202BL-Stereo-Receiver/dp/B01EMQI2CU/"&gt;(Example, $150.)&lt;/a&gt; Stereo receiver remote controls never have fewer than 30 buttons. I don’t want anything in my house that has a D-pad and isn’t gaming&amp;nbsp;controller.&lt;/p&gt;
 &lt;p&gt;I found exactly one device that fits my requirements: &lt;a href="https://www.amazon.com/gp/product/B01HGISAOQ/"&gt;“iKKEGOL 5 Ways 4 Port &lt;span class="caps"&gt;IN&lt;/span&gt; 1 Out Video Audio S-Video Game &lt;span class="caps"&gt;AV&lt;/span&gt; Switch Box Selector with Remote Control Av-666d Black”&lt;/a&gt;. It was twenty bucks and its remote has five buttons: four for input selection, one for&amp;nbsp;power.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/switch.jpg" /&gt;&lt;/p&gt;
-&lt;h2 id="bluetooth"&gt;Bluetooth&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/switch.jpg"&gt;&lt;/p&gt;
+&lt;h2&gt;Bluetooth&lt;/h2&gt;
 &lt;p&gt;All Bluetooth devices for home use are garbage, but some are less garbage than others. I have had okay but not great luck with &lt;a href="https://www.amazon.com/gp/product/B016NUTG5K/"&gt;this adapter from Esinkin&lt;/a&gt; and was totally dissatisfied by &lt;a href="https://www.amazon.com/gp/product/B00SW0523A/"&gt;this one from iKross&lt;/a&gt;. I didn’t realize it at the time, but &lt;a href="http://thewirecutter.com/reviews/best-bluetooth-audio-receiver-for-your-home-stereo-or-speakers/"&gt;The Wirecutter has some suggestions that might be&amp;nbsp;better.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;We use Bluetooth a lot less now that Summertunes is working and populated, so I care about this a lot less than I used&amp;nbsp;to.&lt;/p&gt;
-&lt;h2 id="pieces-of-flair"&gt;Pieces of&amp;nbsp;flair&lt;/h2&gt;
+&lt;h2&gt;Pieces of&amp;nbsp;flair&lt;/h2&gt;
 &lt;p&gt;Every home across America with more than one audio source has a unique and probably awful system for getting audio from point A to point B. Ours is particularly unique! So I designed this handy reference card, and Casey printed it out on our brand new &lt;a href="https://cricut.com"&gt;Cricut&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/reference_card.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Casey also gave the switcher remote the Cricut-assisted personal&amp;nbsp;touch:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/remote.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/remote.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;We’re still left with a minor cable nest, but the volume of the whole setup is only about two Macbook&amp;nbsp;Pros.&lt;/p&gt;
-&lt;h2 id="parting-thoughts"&gt;Parting&amp;nbsp;thoughts&lt;/h2&gt;
+&lt;h2&gt;Parting&amp;nbsp;thoughts&lt;/h2&gt;
 &lt;p&gt;After writing all this out, the first question I had for myself was whether it was all worth it. Shouldn’t I have just bought a stereo&amp;nbsp;receiver?&lt;/p&gt;
 &lt;p&gt;I’m still glad I didn’t, if only because of those damn remote controls. And the mixing of two sources is really&amp;nbsp;nice.&lt;/p&gt;
-&lt;p&gt;The only downside is that the switch I ended up with is not very well built and introduces a tiny bit of hum. The remote has to be pointed straight at it for it to work, too. But on the other hand, it’s simpler than any other home audio system I’ve&amp;nbsp;used.&lt;/p&gt;</summary><category term="audio"></category></entry><entry><title>Blogging about iOS architecture at Hipmunk</title><link href="http://steveasleep.com/ios-at-hipmunk.html" rel="alternate"></link><published>2016-08-25T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-08-25:ios-at-hipmunk.html</id><summary type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
-over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</summary><category term="ios"></category></entry><entry><title>Computer Words: a new Markdown documentation tool</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The only downside is that the switch I ended up with is not very well built and introduces a tiny bit of hum. The remote has to be pointed straight at it for it to work, too. But on the other hand, it’s simpler than any other home audio system I’ve&amp;nbsp;used.&lt;/p&gt;</content><category term="audio"></category></entry><entry><title>Blogging about iOS architecture at Hipmunk</title><link href="http://steveasleep.com/ios-at-hipmunk.html" rel="alternate"></link><published>2016-08-25T00:00:00-07:00</published><updated>2016-08-25T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-08-25:/ios-at-hipmunk.html</id><summary type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
+over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
+over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</content><category term="ios"></category></entry><entry><title>Computer Words: a new Markdown documentation tool</title><link href="http://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><updated>2016-05-09T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2016-05-09:/computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I write a lot of documentation. I do it for two reasons: I like writing, and I
+like to be understood. Documentation is what takes software from “something
+&lt;code&gt;@irskep&lt;/code&gt; put on GitHub” to something you can actually&amp;nbsp;use.&lt;/p&gt;
+&lt;p&gt;But I’m not happy with the available tools. Open source documentation for young
+projects tends to fall into one of three modes if they have it at&amp;nbsp;all:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A GitHub&amp;nbsp;wiki&lt;/li&gt;
+&lt;li&gt;A directory of Markdown&amp;nbsp;files&lt;/li&gt;
+&lt;li&gt;A proper web site, but requires a tool no one wants to install or a syntax
+   no one knows, except one&amp;nbsp;maintainer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some ecosystems have good, fairly well known tools (see Python and Sphinx), but
+with the prevalence of Markdown and the convenience of hosting Markdown files
+on GitHub, I suspect people have been tending toward the solutions with less&amp;nbsp;friction.&lt;/p&gt;
+&lt;p&gt;I want it to be easier to produce good documentation sites, without GitHub
+branding, with a bare-minimum learning curve, and a sky&amp;#8217;s-the-limit plugin
+architecture, so that more projects have better&amp;nbsp;documentation.&lt;/p&gt;
+&lt;p&gt;I think I&amp;#8217;ve succeeded. &lt;a href="http://steveasleep.com/computerwords"&gt;Computer Words&lt;/a&gt;
+is a tool written in Python 3 that lets you turn your &lt;a href="https://github.com/irskep/computerwords/tree/master/docs"&gt;directory of Markdown
+files&lt;/a&gt; into a
+&lt;a href="http://steveasleep.com/computerwords"&gt;beautiful web site …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="http://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I write a lot of documentation. I do it for two reasons: I like writing, and I
 like to be understood. Documentation is what takes software from “something
 &lt;code&gt;@irskep&lt;/code&gt; put on GitHub” to something you can actually&amp;nbsp;use.&lt;/p&gt;
@@ -416,7 +459,14 @@ most of the pieces are in place to grow the system&amp;nbsp;cleanly.&lt;/p&gt;
 doing that, but you might also want to read the &lt;a href="http://steveasleep.com/computerwords/related_work.html"&gt;Related
 Work&lt;/a&gt; and &lt;a href="http://steveasleep.com/computerwords/faq.html"&gt;Frequently
 Anticipated Criticisms&lt;/a&gt; sections
-of the&amp;nbsp;docs.&lt;/p&gt;</summary><category term="projects computerwords"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://steveasleep.com/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-25:slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+of the&amp;nbsp;docs.&lt;/p&gt;</content><category term="projects computerwords"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="http://steveasleep.com/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><updated>2015-04-25T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-25:/slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
+a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineering&amp;nbsp;skills.&lt;/p&gt;
+&lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation
+&lt;span class="caps"&gt;EP&lt;/span&gt;!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is a collection of “bedroom tapes” made between 2005 and 2009. The popular vision of a budding high school rock musician is a guitarist sitting on a bed writing bad love songs, but in my case, I was at a desk with a low-end Mac and a &lt;span class="caps"&gt;MIDI&lt;/span&gt; keyboard, sharing the room with two more computers and a treadmill, writing bad video game&amp;nbsp;soundtracks.&lt;/p&gt;
+&lt;p&gt;Since the rise of the 4-track, the cost of making decent home recordings has fallen at different rates for different genres. As a so-so piano student and early-to-mid-‘00s Mac user, my options were limited at first to &lt;span class="caps"&gt;MIDI&lt;/span&gt; editors. When Apple’s Garageband program came out, and I finally got a copy, I discovered the world of software&amp;nbsp;synthesizers.&lt;/p&gt;
+&lt;p&gt;Video game development was my other major hobby at the time, so it seemed obvious that I should write my own soundtracks. (Otherwise, I wouldn’t have soundtracks at all, given my $0 budget …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
 a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineering&amp;nbsp;skills.&lt;/p&gt;
 &lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation
@@ -427,11 +477,15 @@ a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineerin
 &lt;p&gt;Four of the tracks on this &lt;span class="caps"&gt;EP&lt;/span&gt; come from that process. Duty Calls was made for Escort Wing, a game designed and mostly programmed by Will Hogben. Glue Me Together and The Creature Sneaks were made for gw0rp, my entry into uDevGames 2008. Catastrophe Prelude was never used for anything, but written for a nonexistent&amp;nbsp;game.&lt;/p&gt;
 &lt;p&gt;In 2007, I built a Blue Man Group-style &lt;span class="caps"&gt;PVC&lt;/span&gt; instrument for a science competition. Once built, it was too tempting to pass up making music with it, so I wrote Parakeet in the E.R., Unsolved, and a few more songs that don’t appear on this &lt;span class="caps"&gt;EP&lt;/span&gt;. Those tracks also feature my classmates Amanda Andrews with bizarro-world guitar parts, and Eric Baize with an ocarina. My brother Phil played the bluesy intro to Unsolved. “Wheeee!” was made in the same batch, but doesn’t feature the &lt;span class="caps"&gt;PVC&lt;/span&gt;&amp;nbsp;instrument.&lt;/p&gt;
 &lt;p&gt;That just leaves The Five Dollar Song, which I’ll just say was mostly written and played by Phil, with contributions from me, around&amp;nbsp;2005.&lt;/p&gt;
-&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://steveasleep.com/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-20:the-nest-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</content><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="http://steveasleep.com/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><updated>2015-04-20T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2015-04-20:/the-nest-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
-&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://steveasleep.com/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-04-29:anthony-presti-album.html</id><summary type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
+&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</content><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="http://steveasleep.com/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><updated>2014-04-29T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2014-04-29:/anthony-presti-album.html</id><summary type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
-&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-08-02:the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
+&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</content><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="http://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><updated>2013-08-02T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-08-02:/the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
 at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
 ran for only nine issues published between 1997 and 1999, its biting social
 commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
@@ -439,7 +493,18 @@ commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
 New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
 years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="http://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-07-28:teaching-in-turin.html</id><summary type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
+ran for only nine issues published between 1997 and 1999, its biting social
+commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
+&lt;p&gt;Earlier this year I came across my personal archives of all nine issues of the
+New Dork Times and decided they were worth two hours of attention to bring to a
+modern digital audience. I now present to you an online time capsule from 16
+years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="http://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><updated>2013-07-28T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-07-28:/teaching-in-turin.html</id><summary type="html">&lt;p&gt;&lt;img alt="River" src="http://steveasleep.com/img/turin/river.jpg"&gt;
+&lt;p&gt;
+A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at Big Dive in Turin, Italy. Big Dive is a technology training program about data science (applied statistics), visualization (displaying data in an understandable way), and computer&amp;nbsp;programming.
+&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
 Big Dive in Turin, Italy. Big Dive is a technology training program about data
 science (applied statistics), visualization (displaying data in an
 understandable way), and computer programming. Most of the students are in some
@@ -454,15 +519,15 @@ some very expensive plane tickets, I boarded a plane. 18 exhausting hours
 later, I met Alessandro Molina, one of my hosts. He took me to dinner and then
 to my hotel, where I collapsed for the&amp;nbsp;night.&lt;/p&gt;
 &lt;p&gt;My hotel was on the river. If I walked for 60 seconds, I saw&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="River" src="http://steveasleep.com/img/turin/river.jpg" /&gt;&lt;/p&gt;
-&lt;h1 id="monday"&gt;Monday&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="River" src="http://steveasleep.com/img/turin/river.jpg"&gt;&lt;/p&gt;
+&lt;h1&gt;Monday&lt;/h1&gt;
 &lt;p&gt;I woke up in time to order breakfast at a restaurant where none of the staff
 spoke English. Pointing, gesturing, and pronunciation mangling was involved. My
 stomach full, I walked to Big Dive early to get acquainted with the people and
 the building, and to finish my notes and slides for the day. The walk between
 my hotel and the Big Dive building (below) was consistently nice the whole
 week despite the&amp;nbsp;heat.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Big Dive building" src="http://steveasleep.com/img/turin/bigdive_building.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Big Dive building" src="http://steveasleep.com/img/turin/bigdive_building.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Two hours later I was ready to teach, but no lesson plan survives contact with
 students. Having written much of the software they were learning, I was used to
 just knowing things and don’t have much of a beginner’s mind about it anymore.
@@ -471,7 +536,7 @@ proficient physics&amp;nbsp;PhD.&lt;/p&gt;
 &lt;p&gt;By the end of the day, though, most students seemed to understand all the
 relevant concepts. For dinner, Alessandro took me to Eataly, a well-known
 collection of restaurants with authentic dishes from across Italy. I had&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Pasta" src="http://steveasleep.com/img/turin/eataly.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pasta" src="http://steveasleep.com/img/turin/eataly.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;After dinner, we had Italian ice cream. What’s &amp;#8220;ice cream&amp;#8221; in Italian?
 &amp;#8220;Gelato.&amp;#8221; I should also mention that &amp;#8220;coffee&amp;#8221; in Italy is straight espresso in
 a tiny cup, &amp;#8220;American-style&amp;#8221; coffee is espresso and water (&amp;#8220;Americano,&amp;#8221; same as
@@ -479,14 +544,14 @@ you can get at any American coffee shop), and drip-brewed coffee is really
 nowhere to be found. Strange and redundant language crossings abound,
 apparently. I found out later that World War &lt;span class="caps"&gt;II&lt;/span&gt; plays a part in those
 linguistic&amp;nbsp;shenanigans.&lt;/p&gt;
-&lt;h1 id="tuesday"&gt;Tuesday&lt;/h1&gt;
+&lt;h1&gt;Tuesday&lt;/h1&gt;
 &lt;p&gt;On Tuesday morning I went to the Egyptian museum. I enjoyed myself with an
 English audio tour and don’t have much else to say about it. Here’s a cool
 photo of a&amp;nbsp;sarcophagus.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/egyptian_museum.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/egyptian_museum.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;On my way out, I came across this police marching band. I think some kind of
 ceremony was beginning, but I never figured it&amp;nbsp;out.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/marching_band.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/marching_band.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;I had too much coffee before teaching my second class and experienced an
 intense caffeine crash at the end. I imagine the students were more than a
 little confused about some of the&amp;nbsp;material.&lt;/p&gt;
@@ -495,23 +560,23 @@ Alessandro’s coworkers. I ate a large amount of delicious food and drank a
 large amount of delicious beer. Afterward, we found one of his friends and
 enjoyed ourselves at a nearby bar until bed time. Here’s a quick snap of the
 inside of the&amp;nbsp;tavern:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/taverna.jpg" /&gt;&lt;/p&gt;
-&lt;h1 id="wednesday"&gt;Wednesday&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="Marching band" src="http://steveasleep.com/img/turin/taverna.jpg"&gt;&lt;/p&gt;
+&lt;h1&gt;Wednesday&lt;/h1&gt;
 &lt;p&gt;My last class of the week was in the morning. This one went much better than
 the last, and by the end of the day I was confident that everyone understood
 all the relevant technology. After class we all went to lunch, with gelato for
 dessert. Then I resumed my tourist activities by going to the Mole
 Antonelliana, which houses the Museum of Cinema. It’s the tallest brick
 building in the world. Here’s the&amp;nbsp;outside:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://steveasleep.com/img/turin/mole_antonelliana.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://steveasleep.com/img/turin/mole_antonelliana.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;I took the elevator to the&amp;nbsp;top:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://steveasleep.com/img/turin/mole_antonelliana_view.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mole Antonelliana" src="http://steveasleep.com/img/turin/mole_antonelliana_view.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;I didn’t get any photographs of the inside of the museum, but it’s amazing.
 Most of the interior is a single huge room stretching up into the spire. The
 main exhibits are little rooms on the edges, and the special exhibit is a ramp
 that spirals up the inner&amp;nbsp;walls.&lt;/p&gt;
 &lt;p&gt;Puria took me to dinner again. I had a pasta dish and half a&amp;nbsp;lobster.&lt;/p&gt;
-&lt;h1 id="thursday"&gt;Thursday&lt;/h1&gt;
+&lt;h1&gt;Thursday&lt;/h1&gt;
 &lt;p&gt;Although my classes were over, I had to go to Big Dive once more to help answer
 questions while the students worked on their final projects. From 10:30 &lt;span class="caps"&gt;AM&lt;/span&gt;
 until 6:30 &lt;span class="caps"&gt;PM&lt;/span&gt;, excluding lunch, I sat in the event space and read Wikipedia.
@@ -525,17 +590,17 @@ the course of the evening I solidified my friendship with the group (all the
 students were there) and had a lot of interesting discussions about sports,
 culture, movies, and personal lives. At the end of the night, I finally felt
 like I had actual new&amp;nbsp;friends.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Most of the students" src="http://steveasleep.com/img/turin/all_the_students.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Most of the students" src="http://steveasleep.com/img/turin/all_the_students.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Seth, a friend of a student, was visiting and needed something to do on Friday.
 We agreed to be tourists together. His family moved to Canada from Bulgaria
 when he was young, and now he&amp;#8217;s studying at a university in a European country
 I can&amp;#8217;t&amp;nbsp;remember.&lt;/p&gt;
-&lt;h1 id="friday"&gt;Friday&lt;/h1&gt;
+&lt;h1&gt;Friday&lt;/h1&gt;
 &lt;p&gt;Seth and I met at 11 to see the royal palace. I can confirm that it was both
 royal and&amp;nbsp;palacious.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Palace dining room" src="http://steveasleep.com/img/turin/palace_dining_room.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Palace dining room" src="http://steveasleep.com/img/turin/palace_dining_room.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Here’s a cheesy tourist shot of me outside a different&amp;nbsp;palace:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Cheesy tourist shot" src="http://steveasleep.com/img/turin/cheesy_tourist_shot.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cheesy tourist shot" src="http://steveasleep.com/img/turin/cheesy_tourist_shot.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;After the palace, we visited the Royal Armory and the Archaeology Museum. We
 weren’t allowed to take photos, so…there aren’t any&amp;nbsp;photos.&lt;/p&gt;
 &lt;p&gt;We had lunch at a hip baked potato joint (Did I mention Yelp is near useless in
@@ -543,7 +608,7 @@ Turin?), followed by &amp;#8220;coffee with cream,&amp;#8221; i.e. espresso with
 cream on top. Our stomachs full, Seth and I crossed the river to walk up a big
 hill to a church. The view from there should give a better idea of the size of
 the Mole Antonelliana, and how few really tall buildings there are in&amp;nbsp;Turin.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="View from across the river" src="http://steveasleep.com/img/turin/across_the_river.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="View from across the river" src="http://steveasleep.com/img/turin/across_the_river.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Having just hiked up and down a big hill, lesser travelers might have gone for
 a nap. But Seth and I are urbanites accustomed to hoofing it across the city at
 all times of day, so we opted to walk the length of a nearby park instead. It
@@ -553,11 +618,11 @@ the whole way. After we had walked for a few hours, incuding through a
 recreation of a medieval village, we got gelato and then parted&amp;nbsp;ways.&lt;/p&gt;
 &lt;p&gt;Later that evening, I boarded a tram. But it wasn&amp;#8217;t an ordinary tram; it was a
 moving gourmet&amp;nbsp;restaurant!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="The magic tram" src="http://steveasleep.com/img/turin/magic_tram.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The magic tram" src="http://steveasleep.com/img/turin/magic_tram.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Even though no one on the train spoke English, I managed to order red wine and
 enjoyed my dinner immensely. (One of the reasons I chose this event in the
 first place was its fixed menu.) It was an appropriate end to a great&amp;nbsp;week.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="On top of the world" src="http://steveasleep.com/img/turin/return_trip.jpg" /&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;img alt="On top of the world" src="http://steveasleep.com/img/turin/return_trip.jpg"&gt;&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><updated>2013-05-04T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:/we-dreamers-postmortem.html</id><summary type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
@@ -566,7 +631,29 @@ while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to downlo
 &lt;p&gt;Of all my programming escapades over the past couple of years, I&amp;#8217;m most proud
 of this one. Here&amp;#8217;s a comprehensive collection of my thoughts about it,
 including a discussions of the technical&amp;nbsp;aspects.&lt;/p&gt;
-&lt;h2 id="conception"&gt;Conception&lt;/h2&gt;
+&lt;h2&gt;Conception&lt;/h2&gt;
+&lt;p&gt;During the final voting round for Ludum Dare 26, I spent a couple of hours
+coming up with good ideas for every possible theme…except minimalism. No way
+that would get through,&amp;nbsp;right?&lt;/p&gt;
+&lt;p&gt;When that theme was chosen, and I had to throw out all of my wonderful schemes,
+most of which were single player pseudo-roguelikes. Instead, I picked a vague
+idea: a web-based multiplayer world where you dig out rooms underground in a
+grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
+the rest as I went&amp;nbsp;along.&lt;/p&gt;
+&lt;p&gt;You can do a few&amp;nbsp;things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Move with the arrow keys or &lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Harvest color with&amp;nbsp;space.&lt;/li&gt;
+&lt;li&gt;Dig out new rooms by bumping into walls. You …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+category of Ludum Dare 26.
+&lt;a href="http://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; It may take a
+while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or&amp;nbsp;two.&lt;/p&gt;
+&lt;p&gt;Of all my programming escapades over the past couple of years, I&amp;#8217;m most proud
+of this one. Here&amp;#8217;s a comprehensive collection of my thoughts about it,
+including a discussions of the technical&amp;nbsp;aspects.&lt;/p&gt;
+&lt;h2&gt;Conception&lt;/h2&gt;
 &lt;p&gt;During the final voting round for Ludum Dare 26, I spent a couple of hours
 coming up with good ideas for every possible theme…except minimalism. No way
 that would get through,&amp;nbsp;right?&lt;/p&gt;
@@ -589,8 +676,8 @@ the rest as I went&amp;nbsp;along.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;You gain levels by adding content. If anyone else is online at the same time as
 you, you can see their dot and any content they add, all&amp;nbsp;live-updated.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="screenshot" src="http://www.ludumdare.com/compo/wp-content/uploads/2013/05/2m-300x207.png" /&gt;&lt;/p&gt;
-&lt;h2 id="competition-results"&gt;Competition&amp;nbsp;results&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="screenshot" src="http://www.ludumdare.com/compo/wp-content/uploads/2013/05/2m-300x207.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Competition&amp;nbsp;results&lt;/h2&gt;
 &lt;p&gt;It placed 6th in the Innovation category out of 2,346 games. The rest of the
 category scores aren&amp;#8217;t as impressive as raw numbers but are still nice in terms
 of the number of&amp;nbsp;games:&lt;/p&gt;
@@ -675,7 +762,7 @@ highlights&lt;/a&gt;. They compared We
 Dreamers to Peter Molyneux’s game Curiosity. I&amp;#8217;m not sure if that&amp;#8217;s a
 compliment, but it’s still nice to be noticed. They have a &lt;a href="http://indiestatik.com/2013/05/02/ludum-dare-25-part-2/"&gt;second highlights
 post&lt;/a&gt; as&amp;nbsp;well.&lt;/p&gt;
-&lt;h2 id="technical-details"&gt;Technical&amp;nbsp;details&lt;/h2&gt;
+&lt;h2&gt;Technical&amp;nbsp;details&lt;/h2&gt;
 &lt;p&gt;You might be wondering, like
 &lt;a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;amp;uid=20822"&gt;StuStutheBloo&lt;/a&gt;
 in We Dreamers’s comments, &lt;strong&gt;“How did you even put this together in the time&amp;nbsp;available?”&lt;/strong&gt;&lt;/p&gt;
@@ -722,7 +809,7 @@ for &lt;span class="caps"&gt;LD19&lt;/span&gt;.)&lt;/p&gt;
 &lt;a href="https://github.com/raimohanska/bacon.js"&gt;Bacon.js&lt;/a&gt;. It can decrease game logic
 complexity by quite a lot if you’re willing to invest your brain resources in
 it. We Dreamers would have had 30% more code and been 30% buggier without&amp;nbsp;it.&lt;/p&gt;
-&lt;h2 id="downsides-and-difficulties"&gt;Downsides and&amp;nbsp;difficulties&lt;/h2&gt;
+&lt;h2&gt;Downsides and&amp;nbsp;difficulties&lt;/h2&gt;
 &lt;p&gt;There’s another, secret reason why I was able to write We Dreamers so fast: I
 didn’t give more than a passing thought about scale. I had no idea how much
 data users would generate (currently ~4 &lt;span class="caps"&gt;MB&lt;/span&gt;) or how well browsers would deal
@@ -755,30 +842,47 @@ data. At least one person exploited it to leave me an amusing note, but
 fortunately there were no abusers. Firebase has the ability to use access
 controls, but I didn&amp;#8217;t have time to learn their &lt;span class="caps"&gt;API&lt;/span&gt;. Another reason to know
 my tools really well, I&amp;nbsp;suppose.&lt;/p&gt;
-&lt;h2 id="in-closing"&gt;In&amp;nbsp;closing,&lt;/h2&gt;
+&lt;h2&gt;In&amp;nbsp;closing,&lt;/h2&gt;
 &lt;p&gt;I had a fun and intense time this year. Of my three attempts to date, We
 Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
-another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="games"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
+another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</content><category term="games"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:/what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
 web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
 Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
-Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><category term="meta"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-21:rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy.png" /&gt;&lt;/p&gt;
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
+almost a year and a half. During that time, I did a lot of work on
+&lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
+&lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
+web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
+Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</content><category term="meta"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="http://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><updated>2012-11-21T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-21:/rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy.png"&gt;&lt;/p&gt;
 &lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
 combination of technologies we use to render and display enormous zoomed out
-world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-14:1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy2.png" /&gt;&lt;/p&gt;
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy.png"&gt;&lt;/p&gt;
+&lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
+combination of technologies we use to render and display enormous zoomed out
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="http://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><updated>2012-11-14T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-11-14:/1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy2.png"&gt;&lt;/p&gt;
 &lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>My Master’s Thesis</title><link href="http://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-16:my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="http://steveasleep.com/img/buildy2.png"&gt;&lt;/p&gt;
+&lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>My Master’s Thesis</title><link href="http://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><updated>2012-04-16T00:00:00-07:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-04-16:/my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
 interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><published>2011-01-10T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+interspersed with content, but my willpower wanes with each passing month.
+Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><published>2011-01-10T00:00:00-08:00</published><updated>2011-01-10T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:/the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
 nine years&amp;nbsp;old.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault"&gt;&lt;/p&gt;
 &lt;p&gt;The first thing you need to know is that since it was published in 1983, I
 didn&amp;#8217;t know how to find an interpreter for the code in 1999. All examples were
 run via thought experiment. Because of this fact, I think that this book did
@@ -792,7 +896,26 @@ is to help you understand computers, to think about how computers can help
 you in all kinds of ways, and to discover how much fun you can have when you
 learn how to talk to&amp;nbsp;computers.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="content"&gt;Content&lt;/h2&gt;
+&lt;h2&gt;Content&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/strong&gt; explains how to write simple &lt;span class="caps"&gt;BASIC&lt;/span&gt; programs for
+The Apple &lt;span class="caps"&gt;II&lt;/span&gt;+/e, Atari 400/800, Commodore 64/&lt;span class="caps"&gt;PET …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
+read. In rereading it, I found almost as much as when I first experienced it at
+nine years&amp;nbsp;old.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault"&gt;&lt;/p&gt;
+&lt;p&gt;The first thing you need to know is that since it was published in 1983, I
+didn&amp;#8217;t know how to find an interpreter for the code in 1999. All examples were
+run via thought experiment. Because of this fact, I think that this book did
+more to get me excited about the idea of programming than it did to impart
+knowledge. In this way, I think it follows a higher-level version of the &amp;#8220;give
+a man a fish&amp;#8230;&amp;#8221;&amp;nbsp;saying.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This book will teach you how to write simple programs in &lt;span class="caps"&gt;BASIC&lt;/span&gt; for your
+computer. Its purpose, however, is not to make you a programmer. Its purpose
+is to help you understand computers, to think about how computers can help
+you in all kinds of ways, and to discover how much fun you can have when you
+learn how to talk to&amp;nbsp;computers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Content&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/strong&gt; explains how to write simple &lt;span class="caps"&gt;BASIC&lt;/span&gt; programs for
 The Apple &lt;span class="caps"&gt;II&lt;/span&gt;+/e, Atari 400/800, Commodore 64/&lt;span class="caps"&gt;PET&lt;/span&gt;/&lt;span class="caps"&gt;VIC&lt;/span&gt; 20, &lt;span class="caps"&gt;TI&lt;/span&gt; 99/4A, Timex
 Sinclair 1000, and &lt;span class="caps"&gt;TRS&lt;/span&gt;-80. (The programs still run in Chipmunk Basic.) The fact
@@ -822,7 +945,7 @@ RUN
 that the author did a good job of conveying the joy of computing to young
 readers. Second, that the &lt;span class="caps"&gt;BASIC&lt;/span&gt; language was an awful mess but succeeded for
 very good&amp;nbsp;reasons.&lt;/p&gt;
-&lt;h2 id="review-positive"&gt;Review:&amp;nbsp;Positive&lt;/h2&gt;
+&lt;h2&gt;Review:&amp;nbsp;Positive&lt;/h2&gt;
 &lt;p&gt;This is a good book. I&amp;#8217;m glad I found it when I went looking for it. Here&amp;#8217;s an
 example that follows a description of what variables&amp;nbsp;are:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -847,7 +970,7 @@ Way&lt;/a&gt;. It never blames the reader for
 being wrong, and in fact seems to encourage the reader to forgive his or her
 own mistakes while writing&amp;nbsp;programs.&lt;/p&gt;
 &lt;p&gt;So yes, it&amp;#8217;s a good book. But about this &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;thing&amp;#8230;&lt;/p&gt;
-&lt;h2 id="basic-sucked-but-worse-was-better"&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Sucked, But Worse Was&amp;nbsp;Better&lt;/h2&gt;
+&lt;h2&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Sucked, But Worse Was&amp;nbsp;Better&lt;/h2&gt;
 &lt;p&gt;Seriously, what is this crap? Specifying a line number for each statement
 before the program is finished? &lt;span class="caps"&gt;REM&lt;/span&gt;? &lt;em&gt;No proper functions?&lt;/em&gt; How did anyone
 survive&amp;nbsp;this?&lt;/p&gt;
@@ -861,7 +984,7 @@ was because of the simplicity of &lt;span class="caps"&gt;BASIC&lt;/span&gt; and
 it using terms no more complex than necessary. At this point I should mention
 that this book may not actually be the very first programming book I read, but
 it was certainly the first one I understood. I really don&amp;#8217;t&amp;nbsp;remember.&lt;/p&gt;
-&lt;h2 id="and-also-worse"&gt;&amp;#8230;And Also&amp;nbsp;Worse&lt;/h2&gt;
+&lt;h2&gt;&amp;#8230;And Also&amp;nbsp;Worse&lt;/h2&gt;
 &lt;p&gt;Before rereading this book, I had mostly forgotten what &lt;span class="caps"&gt;BASIC&lt;/span&gt; really was, and
 didn&amp;#8217;t necessarily agree with the statement that &lt;span class="caps"&gt;BASIC&lt;/span&gt; causes brain damage. Now
 I agree wholeheartedly, and I speak from experience. &lt;span class="caps"&gt;BASIC&lt;/span&gt; crippled me for&amp;nbsp;years.&lt;/p&gt;
@@ -891,7 +1014,7 @@ Processing and BlitzMax are currently the best platforms to learn game
 programming&amp;nbsp;with.)&lt;/p&gt;
 &lt;p&gt;I spent so much time in the game bubble that I missed out on many early
 opportunities to learn new language&amp;nbsp;concepts.&lt;/p&gt;
-&lt;h2 id="what-everyone-knows-is-wrong-today"&gt;What Everyone Knows Is Wrong&amp;nbsp;Today&lt;/h2&gt;
+&lt;h2&gt;What Everyone Knows Is Wrong&amp;nbsp;Today&lt;/h2&gt;
 &lt;p&gt;Today&amp;#8217;s popular languages are objectively better than &lt;span class="caps"&gt;BASIC&lt;/span&gt; in every way.
 Features, syntax, libraries, the works. But for a kid who wants to write games
 by typing into a window and clicking &lt;span class="caps"&gt;COMPILE&lt;/span&gt; or &lt;span class="caps"&gt;RUN&lt;/span&gt;, the language options are
@@ -901,7 +1024,7 @@ smooth transition to the next stage in their development as a master of&amp;nbsp
 &lt;p&gt;I won&amp;#8217;t bother rehashing what others have said about this problem or yearn for
 the days of the &lt;span class="caps"&gt;BASIC&lt;/span&gt;-prompt-as-main-interface. I&amp;#8217;ll just say this: make better
 tools, write more books and&amp;nbsp;tutorials.&lt;/p&gt;
-&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
+&lt;h2&gt;Resources&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www.inventwithpython.com/"&gt;Invent Your Own Computer Games with Python&lt;/a&gt;
 is comparable to &lt;em&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/em&gt;. Better, even. Python&amp;#8217;s tools are
 not ideal for children, but they are good enough to teach programming&amp;nbsp;with.&lt;/p&gt;
@@ -911,7 +1034,7 @@ not necessarily with good documentation for those new to&amp;nbsp;programming:&l
 &lt;li&gt;&lt;a href="http://www.processing.org/"&gt;Processing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://blitzmax.com/"&gt;BlitzMax&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.yoyogames.com/make"&gt;GameMaker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png" /&gt;&lt;/p&gt;
+&lt;/ul&gt;</content><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:/space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png"&gt;&lt;/p&gt;
 &lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
@@ -932,7 +1055,29 @@ Little does she know it will be a bumpy&amp;nbsp;ride&amp;#8230;&lt;/p&gt;
 failed to account for one thing: &lt;strong&gt;adventure games take a lot of work to
 make.&lt;/strong&gt; As a result, the game is only about twenty minutes long. Even so, we
 all learned from the&amp;nbsp;experience.&lt;/p&gt;
-&lt;h2 id="the-course"&gt;The&amp;nbsp;Course&lt;/h2&gt;
+&lt;h2&gt;The&amp;nbsp;Course&lt;/h2&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;&lt;span class="caps"&gt;EECS&lt;/span&gt; 390 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png"&gt;&lt;/p&gt;
+&lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
+various states of completion. One of these is a point-and-click adventure game
+called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
+Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
+students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case
+Western Reserve University&lt;/a&gt;. Its technical components
+include an event-driven level scripting system, characters, items, inventory,
+dialogue, and more.  The engine is written in Python using my game programming
+weapon of choice, the &lt;a href="http:/www.pyglet.org"&gt;pyglet&lt;/a&gt; library. The&amp;nbsp;plot:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
+Stanislov Slavinsky, is reading his poetry live on the nearby Planet Deux, a
+short hop by space train from Inga&amp;#8217;s home. She wants nothing more than to see
+Stanislav in person, so she catches the Mustachio Express to Planet Deux.
+Little does she know it will be a bumpy&amp;nbsp;ride&amp;#8230;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sounds grand, right? We thought so too, but in typical student fashion we
+failed to account for one thing: &lt;strong&gt;adventure games take a lot of work to
+make.&lt;/strong&gt; As a result, the game is only about twenty minutes long. Even so, we
+all learned from the&amp;nbsp;experience.&lt;/p&gt;
+&lt;h2&gt;The&amp;nbsp;Course&lt;/h2&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;&lt;span class="caps"&gt;EECS&lt;/span&gt; 390 - Advanced Game Development Project&amp;#8221; is a joint course between the
 Cleveland Institute of Art and Case Western Reserve University. Teams of 6-12
 artists and programmers collaborate to produce some sort of game. At the end of
@@ -942,7 +1087,7 @@ questions and critique. The course is currently taught by Dr. Marc Buchner
 &lt;p&gt;The other two games made this semester were Kalotai, a location-aware monster
 collection/battle game for Android, and Louder Than Words, a platformer with
 branching story lines based on a morality&amp;nbsp;system.&lt;/p&gt;
-&lt;h2 id="how-it-went-down"&gt;How It Went&amp;nbsp;Down&lt;/h2&gt;
+&lt;h2&gt;How It Went&amp;nbsp;Down&lt;/h2&gt;
 &lt;p&gt;We all arrived at 8:30 &lt;span class="caps"&gt;AM&lt;/span&gt; on the first day of class, heavily caffeinated.
 Everyone put ideas on a white board and then divided into three teams based on
 interest. My team ended up with four programmers and six artists, with me as
@@ -972,23 +1117,23 @@ hours writing detailed scripts for each level we planned to implement. We
 followed this process to the end, and it worked beautifully. We had a very
 slick&amp;nbsp;demo.&lt;/p&gt;
 &lt;p&gt;Here are some screenshots of the&amp;nbsp;game:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"&gt;&lt;img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"&gt;&lt;img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"&gt;&lt;img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here are some of the stages of the game&amp;#8217;s artistic&amp;nbsp;development:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png" /&gt;&lt;/a&gt;
-&lt;a href="http://steveasleep.com/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="lessons-learned"&gt;Lessons&amp;nbsp;Learned&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://steveasleep.com/img/content/space_train_art_1.png"&gt;&lt;img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_2.png"&gt;&lt;img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_3.png"&gt;&lt;img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_4.png"&gt;&lt;img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png"&gt;&lt;/a&gt;
+&lt;a href="http://steveasleep.com/img/content/space_train_art_5.png"&gt;&lt;img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Lessons&amp;nbsp;Learned&lt;/h2&gt;
 &lt;p&gt;I had never been in a months-long team leadership position before. My
 experience organizing &lt;a href="http:/hacsoc.org/"&gt;&lt;span class="caps"&gt;CWRU&lt;/span&gt; Hacker Society&lt;/a&gt; helped, but
 that was more cat herding than game building. By the end of the course the
 team had worked out a process by trial and error that seemed to produce
 results, but by the time we found that process, it was really too late to save
 the&amp;nbsp;game.&lt;/p&gt;
-&lt;h3 id="schedule"&gt;Schedule&lt;/h3&gt;
+&lt;h3&gt;Schedule&lt;/h3&gt;
 &lt;p&gt;We spent too much time thinking up random characters and not enough time
 fitting them into a big picture. We should have started writing
 pseudo-screenplays or storyboards to work from by the third week. That would
@@ -998,7 +1143,7 @@ early&amp;nbsp;on.&lt;/p&gt;
 levels, which would have helped us develop a scripting &lt;span class="caps"&gt;API&lt;/span&gt;. For most of the
 semester, we worked with an ad-hoc &lt;span class="caps"&gt;API&lt;/span&gt;. We ended up redesigning it in the last
 week because it wasn&amp;#8217;t working for us&amp;nbsp;anymore.&lt;/p&gt;
-&lt;h3 id="adventure-games-are-hard-to-make"&gt;Adventure Games Are Hard to&amp;nbsp;Make&lt;/h3&gt;
+&lt;h3&gt;Adventure Games Are Hard to&amp;nbsp;Make&lt;/h3&gt;
 &lt;p&gt;Almost every game I have ever made has involved bullets. That usually means
 those bullets are heading for a relatively small number of enemy types, are
 flying over relatively simple pre-rendered or procedurally generated terrain,
@@ -1006,7 +1151,7 @@ and have very simple animations. In an adventure game, everything the player
 sees has a unique design and multiple animations. The average screen time of a
 given image is minutes or less. Even though we were working with six artists,
 we were barely able to finish our 20 minutes of play&amp;nbsp;time.&lt;/p&gt;
-&lt;h3 id="communication-is-key"&gt;Communication is&amp;nbsp;Key&lt;/h3&gt;
+&lt;h3&gt;Communication is&amp;nbsp;Key&lt;/h3&gt;
 &lt;p&gt;We encouraged communication by providing as many useful collaboration tools as
 possible. Without constant communication, Space Train would have been a total&amp;nbsp;failure.&lt;/p&gt;
 &lt;p&gt;By keeping all live game assets in a shared Dropbox folder, we guaranteed
@@ -1015,19 +1160,19 @@ system or an artist-unfriendly version control system. Our consistent meeting
 format was usually effective at giving everyone concrete goals for the week.
 Git, of course, is the ideal code collaboration tool. The mailing list filled
 in any&amp;nbsp;gaps.&lt;/p&gt;
-&lt;h3 id="course-project-group-dynamics-are-weird"&gt;Course Project Group Dynamics are&amp;nbsp;Weird&lt;/h3&gt;
+&lt;h3&gt;Course Project Group Dynamics are&amp;nbsp;Weird&lt;/h3&gt;
 &lt;p&gt;I&amp;#8217;ve always felt uncomfortable with the way course project groups are formed.
 Usually they form around ideas, not around teams, and that was explicitly the
 case with this course. This means that team dynamics are a total crapshoot, and
 if things go south, you&amp;#8217;re locked in for three months and your success is
 irrevocably chained together. By the end of the course, we effectively had two
 programmers and four artists, with four other people functioning as dead&amp;nbsp;weight.&lt;/p&gt;
-&lt;h3 id="conspicuously-absent-from-this-list"&gt;Conspicuously Absent From This&amp;nbsp;List:&lt;/h3&gt;
+&lt;h3&gt;Conspicuously Absent From This&amp;nbsp;List:&lt;/h3&gt;
 &lt;p&gt;Significant code issues. We really powered through the engine and never got
 hindered by any major design flaws. The game&amp;#8217;s source code is &lt;a href="http:/www.github.com/irskep/Space-Train"&gt;on
 Github&lt;/a&gt;. It&amp;#8217;s not beautiful, but it
 worked well enough for&amp;nbsp;us.&lt;/p&gt;
-&lt;h2 id="the-team"&gt;The&amp;nbsp;Team&lt;/h2&gt;
+&lt;h2&gt;The&amp;nbsp;Team&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Steve Johnson&lt;/strong&gt;: Lead programmer, screenplay, music, engine, &lt;span class="caps"&gt;UI&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="http:/taxidermyrobot.blogspot.com/"&gt;Kelsey Bass&lt;/a&gt;&lt;/strong&gt;: Lead artist, character design/line&amp;nbsp;work/animation&lt;/li&gt;
@@ -1041,4 +1186,4 @@ worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Vincent Pizarski&lt;/strong&gt;: Character design, coloring,&amp;nbsp;exteriors&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Kelsey did caricatures of the team for the credit sequence. Here&amp;#8217;s mine&amp;nbsp;for:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png" /&gt;&lt;/p&gt;</summary><category term="games"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png"&gt;&lt;/p&gt;</content><category term="games"></category></entry></feed>
