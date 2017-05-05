@@ -10,7 +10,7 @@ STATIC_PATHS = [
 ]
 
 AUTHOR = u'Steve Johnson'
-SITENAME = u"Steve Johnson’s Web Presence"
+SITENAME = u"Steve Johnson"
 SITEURL = 'http://localhost:8000'
 
 DEFAULT_CATEGORY = 'Blog'
@@ -32,7 +32,7 @@ MENUITEMS = (
     ]),
     ('Projects', [
         ('Sendimals', 'http://sendimals.com'),
-        ('Rogue Basement', 'https://irskep.itch.io/rogue_basement'),
+        ('Rogue Basement', 'https://ldjam.com/events/ludum-dare/38/rogue-basement'),
         ('Literally Canvas', 'http://literallycanvas.com/'),
         ('Games', '/games.html'),
         ('Computer Words', 'http://steveasleep.com/computerwords'),

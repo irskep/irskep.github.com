@@ -350,3 +350,9 @@ article.home-page {
 
   .page-content a { @include body-link-styles; }
 }
+
+.entry-content {
+  h1 {
+    border-bottom: 1px solid $separatorColor;
+  }
+}
