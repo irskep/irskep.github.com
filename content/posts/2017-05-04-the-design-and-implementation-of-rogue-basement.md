@@ -385,7 +385,7 @@ Since ASCII is traditional for roguelikes, I don't think it's going to cost me t
 
 ## Making videos ameliorates loneliness
 
-Whenever I felt like I hit a milestone, I did a quick [video update](https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr). I didn't really expect anyone to watch them, but it helped give me perspective on my progress. And it simulated human interaction a little bit, which was nice because I was alone in the house for the entire weekend.
+Whenever I felt like I hit a milestone, I did a quick [video update](https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr). I didn't really expect anyone to watch them, but it helped give me perspective on my progress. And it also simulated human interaction a little bit, which was nice because I was alone in the house for the entire weekend.
 
 # Conclusion
 
