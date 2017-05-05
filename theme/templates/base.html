@@ -2,7 +2,7 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
   {% block head %}
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <title>{% block title %}{{ SITENAME }}{% block moretitle %}{% endblock %}{% endblock title %}</title>
 
     <meta name="viewport" content="width=device-width">
     <meta charset="UTF-8">

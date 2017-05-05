@@ -7,7 +7,7 @@ sys.path.append('.')
 STATIC_PATHS = ['img', 'downloads', 'css', 'js', 'css/style.css', 'CNAME']
 
 AUTHOR = u'Steve Johnson'
-SITENAME = u"Steve Johnson’s Web Presence"
+SITENAME = u"Steve Johnson"
 SITEURL = 'http://localhost:8000'
 
 DEFAULT_CATEGORY = 'Blog'
