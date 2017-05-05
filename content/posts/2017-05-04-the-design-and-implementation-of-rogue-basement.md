@@ -332,6 +332,17 @@ For experienced roguelike players this makes the game easy once you figure it ou
 
 To make each section its own challenge, I decided to have the colored hallways between sections heal the player completely. This is another difficulty decrease that I could probably have left out, but I decided to err on the side of easy because I knew I had some user interface issues and wanted to be "extra" fair to players.
 
+# Unintended consequences
+
+The simulation has a few features I didn't intend, but that I don't regret—that's half the fun!
+
+These features mainly have to do with rocks, and the fact that when you throw them, they become monsters. Specifically:
+
+* You can punch rocks out of the air.
+* If you throw a rock, and then walk in its direction, you will punch it dead before it has a chance to move.
+* If two wibbles throw rocks at you at the same time, they may collide in midair and die.
+* You can embed rocks in walls. (Okay, not so happy about this one.)
+
 # Atmosphere
 
 ## Music
@@ -389,4 +400,6 @@ Whenever I felt like I hit a milestone, I did a quick [video update](https://www
 
 # Conclusion
 
-This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for reading!
+This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for reading! You can watch all this happen at super-speed in this timelapse video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen></iframe>
