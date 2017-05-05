@@ -10,6 +10,8 @@ This year I participated in [Ludum Dare 38](https://ldjam.com), a 48-hour game p
 
 In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented.
 
+![screenshot](|filename|/img/rogue_basement/screenshot2.png)
+
 # What is a roguelike?
 
 A "roguelike" is a game that is "like Rogue," a text-based game from the 1980s that looks like this:
@@ -109,7 +111,7 @@ When the cells get too small, stop dividing. Inside each cell, decide how to use
 
 ![Screenshot 2017-04-21 21.00.42.png](|filename|/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png)
 
-But it's more interesting ot mix it up with different sizes of rectangles.
+But it's more interesting to mix it up with different sizes of rectangles.
 
 ```
 +----------------------------------------+
@@ -194,7 +196,7 @@ We now have a few guarantees:
 
 That last point has some good and bad ramifications. On the bad side, it worsens replayability, because the corridors are roughly organized the same way from game to game. I noticed this while playtesting; after 3 games it's obvious that the rooms generally have the same layout.
 
-But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: "A Small World." I realized the first two splits don't have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a "one-level roguelike" with some actual progression.
+But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: "A Small World." The first two splits don't have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a "one-level roguelike" with some actual progression.
 
 I split up the map like this:
 
@@ -332,9 +334,17 @@ To make each section its own challenge, I decided to have the colored hallways b
 
 # Atmosphere
 
+## Music
+
 I took 90 minutes to write 4 tracks, adding up to 11 minutes of music. Each map quadrant plays one of the tracks. [You can listen to them here.](https://soundcloud.com/irskep/sets/rogue-basement-ost)
 
 The music fades down when you're in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get tougher.
+
+## Title screen
+
+I made this adorable title screen, and reused the ASCII art in the manual:
+
+![title screen](|filename|/img/rogue_basement/screenshot1.png)
 
 # Takeaways
 
@@ -347,7 +357,7 @@ Features I had planned to add but didn't:
 *   Fire/ice missiles
 *   2 more enemy types to use those missiles
 
-From past experience, I knew from the start that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech demo.
+From past experience, I knew that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech demo.
 
 ## Difficulty is hard
 
@@ -369,6 +379,14 @@ The week before Ludum Dare 38, I worked on an ASCII user interface and roguelike
 
 The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn't working anymore. Most of the positive reviews mention the music, so I think it will affect my score even outside the Audio category.
 
-# End
+## ASCII is a Ludum Dare graphics cheat code
 
-Thanks for reading! I might write more here eventually. :-)
+Since ASCII is traditional for roguelikes, I don't think it's going to cost me too many points in the Graphics category. I've always had a difficult time making nice-looking graphics, and ASCII means it's a non-issue.
+
+## Making videos ameliorates loneliness
+
+Whenever I felt like I hit a milestone, I did a quick [video update](https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr). I didn't really expect anyone to watch them, but it helped give me perspective on my progress. And it also simulated human interaction a little bit, which was nice because I was alone in the house for the entire weekend.
+
+# Conclusion
+
+This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for reading!
