@@ -8,7 +8,7 @@ Status: published
 
 This year I participated in [Ludum Dare 38](https://ldjam.com), a 48-hour game programming "competition." I've been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made [Rogue Basement](https://ldjam.com/events/ludum-dare/38/rogue-basement), a bare-bones, single-level game with ASCII graphics.
 
-In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented.
+In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented. [The source code](https://github.com/irskep/rogue_basement) is **extensively** commented as well.
 
 ![screenshot](|filename|/img/rogue_basement/screenshot2.png)
 
