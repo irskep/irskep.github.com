@@ -398,6 +398,12 @@ Since ASCII is traditional for roguelikes, I don't think it's going to cost me t
 
 Whenever I felt like I hit a milestone, I did a quick [video update](https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr). I didn't really expect anyone to watch them, but it helped give me perspective on my progress. And it simulated human interaction a little bit, which was nice because I was alone in the house for the entire weekend.
 
+## The tech stack works
+
+I wrote the game in Python 3. For graphics, I used [BearLibTerminal](http://foo.wyrd.name/en:bearlibterminal). I played the music with [pyglet](https://pyglet.org). And for assorted algorithms, state management, and user interface features, I used my own [clubsandwich](http://steveasleep.com/clubsandwich/) library. To package the game for OS X and Windows, I used [PyInstaller](http://www.pyinstaller.org/).
+
+This combination works really well. The main downside is that calling C libraries from Python is slow, and I had to do some optimiziation work to get a decent frame rate. In the future, I might switch the graphics over to use pyglet entirely, but I really like using BearLibTerminal because of its limitations. You get a grid of tiles and nothing else. It's liberating.
+
 # Conclusion
 
 This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for reading! You can watch all this happen at super-speed in this timelapse video:
