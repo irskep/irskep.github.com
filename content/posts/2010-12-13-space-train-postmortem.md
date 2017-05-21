@@ -26,6 +26,8 @@ failed to account for one thing: **adventure games take a lot of work to
 make.** As a result, the game is only about twenty minutes long. Even so, we
 all learned from the experience.
 
+<!-- PELICAN_END_SUMMARY -->
+
 ## The Course
 
 "EECS 390 - Advanced Game Development Project" is a joint course between the

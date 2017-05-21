@@ -4,6 +4,10 @@ from __future__ import unicode_literals
 import sys
 sys.path.append('.')
 
+PLUGINS = [
+    'minchin.pelican.plugins.summary',
+]
+
 STATIC_PATHS = [
     'img', 'downloads', 'css', 'js', 'css/style.css', 'CNAME',
     'rogue_basement_post',
@@ -13,7 +17,7 @@ AUTHOR = u'Steve Johnson'
 SITENAME = u"Steve Johnson"
 SITEURL = 'http://localhost:8000'
 
-DEFAULT_CATEGORY = 'Blog'
+DEFAULT_CATEGORY = 'Articles'
 
 TIMEZONE = 'US/Pacific'
 DEFAULT_LANG = u'en'
@@ -72,7 +76,7 @@ TAG_URL = '{slug}'
 TAG_SAVE_AS = '%s/index.html' % TAG_URL
 MD_EXTENSIONS = [
     'codehilite(css_class=highlight)', 'extra', 'sane_lists', 'toc',
-    ]
+]
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False

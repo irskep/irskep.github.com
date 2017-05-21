@@ -4,13 +4,13 @@ Slug: the-design-and-implementation-of-rogue-basement
 Tags: games
 Status: published
 
-# Introduction
-
 This year I participated in [Ludum Dare 38](https://ldjam.com), a 48-hour game programming "competition." I've been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made [Rogue Basement](https://ldjam.com/events/ludum-dare/38/rogue-basement), a bare-bones, single-level game with ASCII graphics.
 
-In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented. [The source code](https://github.com/irskep/rogue_basement) is **extensively** commented as well.
+In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented. [The source code](https://github.com/irskep/rogue_basement) is extensively commented as well.
 
 ![screenshot](|filename|/img/rogue_basement/screenshot2.png)
+
+<!-- PELICAN_END_SUMMARY -->
 
 # What is a roguelike?
 
@@ -357,6 +357,45 @@ I made this adorable title screen, and reused the ASCII art in the manual:
 
 ![title screen](|filename|/img/rogue_basement/screenshot1.png)
 
+# Final scores
+
+There were 1,104 "compo" (48-hour, one person) games, of which 549 had enough ratings to get scored and ranked. Here are the scores for Rogue Basement. Percentiles are within the 549 ranked games.
+
+Category   | Rank | Percentile | Score | # ratings
+---------- | ---- | ---------- | ----- | ---------
+Overall    | 135  | 75.4       | 3.667 | 47
+Fun        | 179  | 67.4       | 3.409 | 46
+Innovation | 379  | 31.0       | 2.841 | 46
+Theme      | 398  | 25.5       | 2.977 | 46
+Graphics   | 374  | 31.9       | 2.932 | 46
+Audio      | 24   | 95.7       | 4.000 | 44
+Humor      | 157  | 71.5       | 3.000 | 42
+Mood       | 94   | 82.9       | 3.659 | 43
+
+I'm most interested in ratings as a measurement of how well-spent my effort
+was in each area of the game. When you only have 48 hours to make a game, you
+get on a path early and it's hard to get off of it if something isn't working.
+That adds an enormous luck factor to things like "Fun" and "Innovation."
+
+It looks like the soundtrack was my secret weapon. Audio got a great score, and
+I'm guessing that gave me a boost in Mood and Overall.
+
+The Theme score is very low, which I'm a little surprised at but also don't
+care about.
+
+Innovation was one of my dump stats this round, so its low score makes sense too.
+I did make a very by-the-book roguelike.
+
+Graphics was my other dump stat in that I used ASCII, but I'm a little hurt
+that people didn't appreciate the aesthetic more.
+
+Humor was a wildcard. I mostly use humor in my games to
+[lampshade](http://tvtropes.org/pmwiki/pmwiki.php/Main/LampshadeHanging)
+silly situations or mechanics. Rogue Basement just has some flavor text and
+ASCII art to justify your situation. I guess people appreciated it. (There's
+also some not-so-great English in the log messages, and that might have played
+a part.)
+
 # Takeaways
 
 ## Scope
@@ -388,11 +427,13 @@ The week before Ludum Dare 38, I worked on an ASCII user interface and roguelike
 
 ## Music makes a difference
 
-The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn't working anymore. Most of the positive reviews mention the music, so I think it will affect my score even outside the Audio category.
+The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn't working anymore. Most of the positive reviews mention the music.
 
-## ASCII is a Ludum Dare graphics cheat code
+## ASCII helps you focus on mechanics but has a score cost
 
-Since ASCII is traditional for roguelikes, I don't think it's going to cost me too many points in the Graphics category. I've always had a difficult time making nice-looking graphics, and ASCII means it's a non-issue.
+Since ASCII is traditional for roguelikes, I thought I wouldn't lose too many points in graphics. In my opinion, good ASCII is better than bad pixel art. But I was wrong, and I was ranked in the bottom 35% of scored games.
+
+Even though I lost points on graphics, I'm glad I went with ASCII, because it gave me a lot more time to focus on mechanics and the design of my engine. I would consider using ASCII again next time, graphics score be damned.
 
 ## Making videos ameliorates loneliness
 
@@ -406,6 +447,8 @@ This combination works really well. The main downside is that calling C librarie
 
 # Conclusion
 
-This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for reading! You can watch all this happen at super-speed in this timelapse video:
+This is probably the most fun game I have ever made, and ties for most fun making a game alongside my last Ludum Dare success.
+
+Thanks for reading! You can watch all this happen at super-speed in this timelapse video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen></iframe>

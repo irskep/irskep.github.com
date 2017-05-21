@@ -1,6 +1,7 @@
 Title: The First Programming Book I Ever Read
 Category: Crappy Articles
 Tags: programming
+status: draft
 
 Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
