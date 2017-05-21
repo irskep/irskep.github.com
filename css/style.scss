@@ -155,12 +155,15 @@ article iframe, table {
 }
 
 table {
-  $thHorzSpacing: 1rem;
+  $thHorzSpacing: 2rem;
+
   th {
     text-align: left;
     font-weight: normal;
     padding-right: $thHorzSpacing;
+    border-bottom: 1px solid $separatorColor;
   }
+
   td {
     padding-right: $thHorzSpacing;
   }

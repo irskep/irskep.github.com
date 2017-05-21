@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Steve Johnson – How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned&nbsp;Out</title>
+    <title>Steve Johnson – We Dreamers&nbsp;postmortem</title>
 
     <meta name="viewport" content="width=device-width">
     <meta charset="UTF-8">
@@ -65,8 +65,8 @@
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://steveasleep.com/we-dreamers-postmortem.html" rel="bookmark" title="Permalink to How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out">
-        How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned&nbsp;Out
+      <a href="http://steveasleep.com/we-dreamers-postmortem.html" rel="bookmark" title="Permalink to We Dreamers postmortem">
+        We Dreamers&nbsp;postmortem
       </a>
     </h1>
     <div class="post-info">
@@ -76,16 +76,20 @@
     </div>
   </header>
 
-    <div class="entry-content hyphenate"><iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
+    <div class="entry-content hyphenate"><p>We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+category of Ludum Dare&nbsp;26.</p>
+<p><img alt="Screenshot of We Dreamers" src="http://steveasleep.com/img/content/we_dreamers.jpg" /></p>
 
-<p>We Dreamers is an abstract online sandbox that placed sixth in the Innovation
-category of Ludum Dare 26.
-<a href="http://steveasleep.com/we_dreamers_2">You can play it here.</a> It may take a
-while for the 4+ <span class="caps">MB</span> of user data to download, so give it a minute or&nbsp;two.</p>
+
+<p><a href="http://steveasleep.com/we_dreamers_2">You can play it here.</a> (<a href="http://ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=3120">Ludum Dare page</a>) It may take a
+while for the 4+ <span class="caps">MB</span> of user data to download, so give it a minute or two. Here&#8217;s
+ten seconds of&nbsp;it:</p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
+
 <p>Of all my programming escapades over the past couple of years, I&#8217;m most proud
 of this one. Here&#8217;s a comprehensive collection of my thoughts about it,
 including a discussions of the technical&nbsp;aspects.</p>
-<h2 id="conception">Conception</h2>
+<h1 id="conception">Conception</h1>
 <p>During the final voting round for Ludum Dare 26, I spent a couple of hours
 coming up with good ideas for every possible theme…except minimalism. No way
 that would get through,&nbsp;right?</p>
@@ -109,7 +113,7 @@ the rest as I went&nbsp;along.</p>
 <p>You gain levels by adding content. If anyone else is online at the same time as
 you, you can see their dot and any content they add, all&nbsp;live-updated.</p>
 <p><img alt="screenshot" src="http://www.ludumdare.com/compo/wp-content/uploads/2013/05/2m-300x207.png" /></p>
-<h2 id="competition-results">Competition&nbsp;results</h2>
+<h1 id="competition-results">Competition&nbsp;results</h1>
 <p>It placed 6th in the Innovation category out of 2,346 games. The rest of the
 category scores aren&#8217;t as impressive as raw numbers but are still nice in terms
 of the number of&nbsp;games:</p>
@@ -194,7 +198,7 @@ highlights</a>. They compared We
 Dreamers to Peter Molyneux’s game Curiosity. I&#8217;m not sure if that&#8217;s a
 compliment, but it’s still nice to be noticed. They have a <a href="http://indiestatik.com/2013/05/02/ludum-dare-25-part-2/">second highlights
 post</a> as&nbsp;well.</p>
-<h2 id="technical-details">Technical&nbsp;details</h2>
+<h1 id="technical-details">Technical&nbsp;details</h1>
 <p>You might be wondering, like
 <a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=20822">StuStutheBloo</a>
 in We Dreamers’s comments, <strong>“How did you even put this together in the time&nbsp;available?”</strong></p>
@@ -241,7 +245,7 @@ for <span class="caps">LD19</span>.)</p>
 <a href="https://github.com/raimohanska/bacon.js">Bacon.js</a>. It can decrease game logic
 complexity by quite a lot if you’re willing to invest your brain resources in
 it. We Dreamers would have had 30% more code and been 30% buggier without&nbsp;it.</p>
-<h2 id="downsides-and-difficulties">Downsides and&nbsp;difficulties</h2>
+<h1 id="downsides-and-difficulties">Downsides and&nbsp;difficulties</h1>
 <p>There’s another, secret reason why I was able to write We Dreamers so fast: I
 didn’t give more than a passing thought about scale. I had no idea how much
 data users would generate (currently ~4 <span class="caps">MB</span>) or how well browsers would deal
@@ -274,10 +278,41 @@ data. At least one person exploited it to leave me an amusing note, but
 fortunately there were no abusers. Firebase has the ability to use access
 controls, but I didn&#8217;t have time to learn their <span class="caps">API</span>. Another reason to know
 my tools really well, I&nbsp;suppose.</p>
-<h2 id="in-closing">In&nbsp;closing,</h2>
+<h1 id="in-closing">In&nbsp;closing,</h1>
 <p>I had a fun and intense time this year. Of my three attempts to date, We
 Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
-another round in August for <span class="caps">LD27</span>.</p></div>
+another round in August for <span class="caps">LD27</span>.</p>
+<h1 id="appendix-my-favorite-reviews">Appendix: my favorite&nbsp;reviews</h1>
+<blockquote>
+<p>Ooh, collaborative art! I liked the idea and of course took the liberty of leaving my mark on the world. Makes me happy! Thanks!&nbsp;-semi</p>
+<p>I really enjoyed my play session. Had a good time reading all kind of different messages and just messing around. 
+I love the collaborative stuff and the openness. Art is cool and the sound is charming. It is also a nice piece of tech.&nbsp;-PsenFilip</p>
+<p>There is something very cheerful about this game. As far as I can tell you don&#8217;t &#8220;win&#8221; you just smile :)&nbsp;-BlennosoftGames</p>
+<p>I love open-ended and creative games! I had fun just wandering around reading everyone else&#8217;s notes. I might have to come back later to do some more exploring ;)&nbsp;-cardboard</p>
+<p>This is beautiful. Found some really awesome messages, had fun following a huge tunnel dug by Lies, and then spent some time extending it even further myself. Tried to make sure to leave some inspiration bits around too. Amazing stuff, I love it.&nbsp;-SnoringFrog</p>
+<p>As someone else pointed out, this is an awesomely artsy guestbook. A very neat idea, and a technical prowess for the time constraints, that shows you&#8217;ve got some deadly programming&nbsp;chops. </p>
+<p>All in all, a nice collaborative experience, very fitting of the theme. I&#8217;m just not too much into games without any gameplay to them - yeah, the ages old debate about games as art :)&nbsp;-TenTonToon</p>
+<p>That is a very interesting entry, and I loved the technical&nbsp;details. </p>
+<p>I think it would be kind of cool if there was some sort of &#8220;decay&#8221;, so that after a few days, some of the painted cells would go white and then fill again - as to keep the instalation&nbsp;fresh. </p>
+<p>Also, having some sort of minimap or full view mode would be really great. (The browser&#8217;s native zoom doesn&#8217;t go very&nbsp;far&#8230;) </p>
+<p>Thanks for the game!&nbsp;-caranha</p>
+<p>I just had the most interesting conversation with a wall, containing soul fragments of past dreamers. 
+It&#8217;s like a dream: you cannot predict what you will find, but you&#8217;ll always walk on the path of an interesting weird journey. 
+<span class="caps">THANK</span> <span class="caps">YOU</span>&nbsp;stevejohnson. </p>
+<p>Oh. And too bad that the sound reacts sometimes badly when travelling to many successive tiles of various colors. It makes it hard to create music :D&nbsp;-Chronodrax</p>
+<p>So this is a unique world for all players? Like an artistic <span class="caps">MMO</span>? This is extra-cool, a piece of art made by people around the world&nbsp;-atraxgames</p>
+<p>Nice bit of minimalist brain rot. Have some upstars.&nbsp;-swizzcheez</p>
+<p>this is a good gam&nbsp;-evelyn-jolli</p>
+<p>Neat. Quite unique. Technologically a marvel for the available time. To be honest, though, I don&#8217;t get the purpose of it.&nbsp;-wrongcoder</p>
+<p>WrongCoder I left you a bunch of messages in rooms but you didn&#8217;t reply&nbsp;:( </p>
+<p>This was fantastic. How did you even put this together in the time available?&nbsp;-StuStutheBloo</p>
+<p>Cool stuff with Firebase! 
+I have just started checking out BaaSes myself and this just reinforces my idea of just how fast you can get up and running to prototype new concepts. Haven&#8217;t seen Bacon.js before, looks interesting. Would be nice to see some more in-depth post-mortem on this :)&nbsp;-Legogris</p>
+<p>It might be cool to make a way for people to have a local version of this for their own social group. I don&#8217;t know what that would achieve, it just seems like it would work somehow.&nbsp;-nintendoeats</p>
+<p>Wow, beautiful. Defies definition. Thank you!&nbsp;-CherryNukaCola</p>
+<p>Fun! Felt a bit like geocaching :P&nbsp;-Hegemege</p>
+<p>Now that&#8217;s a fun guestbook :D&nbsp;-gerritg</p>
+</blockquote></div>
   </article></section>
     </div>
 

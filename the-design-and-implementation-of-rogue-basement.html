@@ -76,10 +76,11 @@
     </div>
   </header>
 
-    <div class="entry-content hyphenate"><h1 id="introduction">Introduction</h1>
-<p>This year I participated in <a href="https://ldjam.com">Ludum Dare 38</a>, a 48-hour game programming &#8220;competition.&#8221; I&#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href="https://ldjam.com/events/ludum-dare/38/rogue-basement">Rogue Basement</a>, a bare-bones, single-level game with <span class="caps">ASCII</span>&nbsp;graphics.</p>
-<p>In this article, I&#8217;ll cover the game design decisions I made, how they affect the player&#8217;s experience, and a bit of how they&#8217;re implemented. <a href="https://github.com/irskep/rogue_basement">The source code</a> is <strong>extensively</strong> commented as&nbsp;well.</p>
+    <div class="entry-content hyphenate"><p>This year I participated in <a href="https://ldjam.com">Ludum Dare 38</a>, a 48-hour game programming &#8220;competition.&#8221; I&#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href="https://ldjam.com/events/ludum-dare/38/rogue-basement">Rogue Basement</a>, a bare-bones, single-level game with <span class="caps">ASCII</span>&nbsp;graphics.</p>
+<p>In this article, I&#8217;ll cover the game design decisions I made, how they affect the player&#8217;s experience, and a bit of how they&#8217;re implemented. <a href="https://github.com/irskep/rogue_basement">The source code</a> is extensively commented as&nbsp;well.</p>
 <p><img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png" /></p>
+
+
 <h1 id="what-is-a-roguelike">What is a&nbsp;roguelike?</h1>
 <p>A &#8220;roguelike&#8221; is a game that is &#8220;like Rogue,&#8221; a text-based game from the 1980s that looks like&nbsp;this:</p>
 <p><img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png" /></p>
@@ -358,6 +359,95 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 <h2 id="title-screen">Title&nbsp;screen</h2>
 <p>I made this adorable title screen, and reused the <span class="caps">ASCII</span> art in the&nbsp;manual:</p>
 <p><img alt="title screen" src="http://steveasleep.com/img/rogue_basement/screenshot1.png" /></p>
+<h1 id="final-scores">Final&nbsp;scores</h1>
+<p>There were 1,104 &#8220;compo&#8221; (48-hour, one person) games, of which 549 had enough ratings to get scored and ranked. Here are the scores for Rogue Basement. Percentiles are within the 549 ranked&nbsp;games.</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Rank</th>
+<th>Percentile</th>
+<th>Score</th>
+<th># ratings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall</td>
+<td>135</td>
+<td>75.4</td>
+<td>3.667</td>
+<td>47</td>
+</tr>
+<tr>
+<td>Fun</td>
+<td>179</td>
+<td>67.4</td>
+<td>3.409</td>
+<td>46</td>
+</tr>
+<tr>
+<td>Innovation</td>
+<td>379</td>
+<td>31.0</td>
+<td>2.841</td>
+<td>46</td>
+</tr>
+<tr>
+<td>Theme</td>
+<td>398</td>
+<td>25.5</td>
+<td>2.977</td>
+<td>46</td>
+</tr>
+<tr>
+<td>Graphics</td>
+<td>374</td>
+<td>31.9</td>
+<td>2.932</td>
+<td>46</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>24</td>
+<td>95.7</td>
+<td>4.000</td>
+<td>44</td>
+</tr>
+<tr>
+<td>Humor</td>
+<td>157</td>
+<td>71.5</td>
+<td>3.000</td>
+<td>42</td>
+</tr>
+<tr>
+<td>Mood</td>
+<td>94</td>
+<td>82.9</td>
+<td>3.659</td>
+<td>43</td>
+</tr>
+</tbody>
+</table>
+<p>I&#8217;m most interested in ratings as a measurement of how well-spent my effort
+was in each area of the game. When you only have 48 hours to make a game, you
+get on a path early and it&#8217;s hard to get off of it if something isn&#8217;t working.
+That adds an enormous luck factor to things like &#8220;Fun&#8221; and&nbsp;&#8220;Innovation.&#8221;</p>
+<p>It looks like the soundtrack was my secret weapon. Audio got a great score, and
+I&#8217;m guessing that gave me a boost in Mood and&nbsp;Overall.</p>
+<p>The Theme score is very low, which I&#8217;m a little surprised at but also don&#8217;t
+care&nbsp;about.</p>
+<p>Innovation was one of my dump stats this round, so its low score makes sense too.
+I did make a very by-the-book&nbsp;roguelike.</p>
+<p>Graphics was my other dump stat in that I used <span class="caps">ASCII</span>, but I&#8217;m a little hurt
+that people didn&#8217;t appreciate the aesthetic&nbsp;more.</p>
+<p>Humor was a wildcard. I mostly use humor in my games to
+<a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/LampshadeHanging">lampshade</a>
+silly situations or mechanics. Rogue Basement just has some flavor text and
+<span class="caps">ASCII</span> art to justify your situation. I guess people appreciated it. (There&#8217;s
+also some not-so-great English in the log messages, and that might have played
+a&nbsp;part.)</p>
 <h1 id="takeaways">Takeaways</h1>
 <h2 id="scope">Scope</h2>
 <p>Features I had planned to add but&nbsp;didn&#8217;t:</p>
@@ -377,16 +467,18 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 <h2 id="preparation-matters">Preparation&nbsp;matters</h2>
 <p>The week before Ludum Dare 38, I worked on an <span class="caps">ASCII</span> user interface and roguelike development framework. I didn&#8217;t want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important&nbsp;stuff.</p>
 <h2 id="music-makes-a-difference">Music makes a&nbsp;difference</h2>
-<p>The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&#8217;t working anymore. Most of the positive reviews mention the music, so I think it will affect my score even outside the Audio&nbsp;category.</p>
-<h2 id="ascii-is-a-ludum-dare-graphics-cheat-code"><span class="caps">ASCII</span> is a Ludum Dare graphics cheat&nbsp;code</h2>
-<p>Since <span class="caps">ASCII</span> is traditional for roguelikes, I don&#8217;t think it&#8217;s going to cost me too many points in the Graphics category. I&#8217;ve always had a difficult time making nice-looking graphics, and <span class="caps">ASCII</span> means it&#8217;s a&nbsp;non-issue.</p>
+<p>The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&#8217;t working anymore. Most of the positive reviews mention the&nbsp;music.</p>
+<h2 id="ascii-helps-you-focus-on-mechanics-but-has-a-score-cost"><span class="caps">ASCII</span> helps you focus on mechanics but has a score&nbsp;cost</h2>
+<p>Since <span class="caps">ASCII</span> is traditional for roguelikes, I thought I wouldn&#8217;t lose too many points in graphics. In my opinion, good <span class="caps">ASCII</span> is better than bad pixel art. But I was wrong, and I was ranked in the bottom 35% of scored&nbsp;games.</p>
+<p>Even though I lost points on graphics, I&#8217;m glad I went with <span class="caps">ASCII</span>, because it gave me a lot more time to focus on mechanics and the design of my engine. I would consider using <span class="caps">ASCII</span> again next time, graphics score be&nbsp;damned.</p>
 <h2 id="making-videos-ameliorates-loneliness">Making videos ameliorates&nbsp;loneliness</h2>
 <p>Whenever I felt like I hit a milestone, I did a quick <a href="https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr">video update</a>. I didn&#8217;t really expect anyone to watch them, but it helped give me perspective on my progress. And it simulated human interaction a little bit, which was nice because I was alone in the house for the entire&nbsp;weekend.</p>
 <h2 id="the-tech-stack-works">The tech stack&nbsp;works</h2>
 <p>I wrote the game in Python 3. For graphics, I used <a href="http://foo.wyrd.name/en:bearlibterminal">BearLibTerminal</a>. I played the music with <a href="https://pyglet.org">pyglet</a>. And for assorted algorithms, state management, and user interface features, I used my own <a href="http://steveasleep.com/clubsandwich/">clubsandwich</a> library. To package the game for <span class="caps">OS</span> X and Windows, I used <a href="http://www.pyinstaller.org/">PyInstaller</a>.</p>
 <p>This combination works really well. The main downside is that calling C libraries from Python is slow, and I had to do some optimiziation work to get a decent frame rate. In the future, I might switch the graphics over to use pyglet entirely, but I really like using BearLibTerminal because of its limitations. You get a grid of tiles and nothing else. It&#8217;s&nbsp;liberating.</p>
 <h1 id="conclusion">Conclusion</h1>
-<p>This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for reading! You can watch all this happen at super-speed in this timelapse&nbsp;video:</p>
+<p>This is probably the most fun game I have ever made, and ties for most fun making a game alongside my last Ludum Dare&nbsp;success.</p>
+<p>Thanks for reading! You can watch all this happen at super-speed in this timelapse&nbsp;video:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen></iframe></div>
   </article></section>
     </div>

@@ -81,10 +81,11 @@ article iframe, table {
 table th {
   text-align: left;
   font-weight: normal;
-  padding-right: 1rem; }
+  padding-right: 2rem;
+  border-bottom: 1px solid #a8a8a8; }
 
 table td {
-  padding-right: 1rem; }
+  padding-right: 2rem; }
 
 p {
   text-rendering: optimizeLegibility; }

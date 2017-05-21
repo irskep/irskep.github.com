@@ -1,77 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2017-05-20T00:00:00-07:00</updated><entry><title>Rogue Basement final scores</title><link href="http://steveasleep.com/rogue-basement-final-scores.html" rel="alternate"></link><published>2017-05-20T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-05-20:rogue-basement-final-scores.html</id><summary type="html">&lt;p&gt;Ludum Dare voting closed yesterday and the ratings are now public. There were 1,104 &amp;#8220;compo&amp;#8221; (48-hour, one person) games. Here are the scores for Rogue Basement. Percentiles are &lt;code&gt;1 - rank / 549&lt;/code&gt; (only 549 games got enough ratings to receive&amp;nbsp;scores).&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Category&lt;/th&gt;
-&lt;th&gt;Rank&lt;/th&gt;
-&lt;th&gt;Percentile&lt;/th&gt;
-&lt;th&gt;Score&lt;/th&gt;
-&lt;th&gt;# ratings&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Overall&lt;/td&gt;
-&lt;td&gt;135&lt;/td&gt;
-&lt;td&gt;75.4&lt;/td&gt;
-&lt;td&gt;3.667&lt;/td&gt;
-&lt;td&gt;47&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fun&lt;/td&gt;
-&lt;td&gt;179&lt;/td&gt;
-&lt;td&gt;67.4&lt;/td&gt;
-&lt;td&gt;3.409&lt;/td&gt;
-&lt;td&gt;46&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Innovation&lt;/td&gt;
-&lt;td&gt;379&lt;/td&gt;
-&lt;td&gt;31.0&lt;/td&gt;
-&lt;td&gt;2.841&lt;/td&gt;
-&lt;td&gt;46&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Theme&lt;/td&gt;
-&lt;td&gt;398&lt;/td&gt;
-&lt;td&gt;25.5&lt;/td&gt;
-&lt;td&gt;2.977&lt;/td&gt;
-&lt;td&gt;46&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Graphics&lt;/td&gt;
-&lt;td&gt;374&lt;/td&gt;
-&lt;td&gt;31.9&lt;/td&gt;
-&lt;td&gt;2.932&lt;/td&gt;
-&lt;td&gt;46&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Audio&lt;/td&gt;
-&lt;td&gt;24&lt;/td&gt;
-&lt;td&gt;95.7&lt;/td&gt;
-&lt;td&gt;4.000&lt;/td&gt;
-&lt;td&gt;44&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Humor&lt;/td&gt;
-&lt;td&gt;157&lt;/td&gt;
-&lt;td&gt;71.5&lt;/td&gt;
-&lt;td&gt;3.000&lt;/td&gt;
-&lt;td&gt;42&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Mood&lt;/td&gt;
-&lt;td&gt;94&lt;/td&gt;
-&lt;td&gt;82.9&lt;/td&gt;
-&lt;td&gt;3.659&lt;/td&gt;
-&lt;td&gt;43&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</summary><category term="games"></category></entry><entry><title>The Design and Implementation of Rogue Basement</title><link href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="alternate"></link><published>2017-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-05-04:the-design-and-implementation-of-rogue-basement.html</id><summary type="html">&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
-&lt;p&gt;In this article, I&amp;#8217;ll cover the game design decisions I made, how they affect the player&amp;#8217;s experience, and a bit of how they&amp;#8217;re implemented. &lt;a href="https://github.com/irskep/rogue_basement"&gt;The source code&lt;/a&gt; is &lt;strong&gt;extensively&lt;/strong&gt; commented as&amp;nbsp;well.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/all.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2017-05-04T00:00:00-07:00</updated><entry><title>The Design and Implementation of Rogue Basement</title><link href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="alternate"></link><published>2017-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-05-04:the-design-and-implementation-of-rogue-basement.html</id><summary type="html">&lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
+&lt;p&gt;In this article, I&amp;#8217;ll cover the game design decisions I made, how they affect the player&amp;#8217;s experience, and a bit of how they&amp;#8217;re implemented. &lt;a href="https://github.com/irskep/rogue_basement"&gt;The source code&lt;/a&gt; is extensively commented as&amp;nbsp;well.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png" /&gt;&lt;/p&gt;
+
+
 &lt;h1 id="what-is-a-roguelike"&gt;What is a&amp;nbsp;roguelike?&lt;/h1&gt;
 &lt;p&gt;A &amp;#8220;roguelike&amp;#8221; is a game that is &amp;#8220;like Rogue,&amp;#8221; a text-based game from the 1980s that looks like&amp;nbsp;this:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png" /&gt;&lt;/p&gt;
@@ -350,6 +282,95 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;h2 id="title-screen"&gt;Title&amp;nbsp;screen&lt;/h2&gt;
 &lt;p&gt;I made this adorable title screen, and reused the &lt;span class="caps"&gt;ASCII&lt;/span&gt; art in the&amp;nbsp;manual:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="title screen" src="http://steveasleep.com/img/rogue_basement/screenshot1.png" /&gt;&lt;/p&gt;
+&lt;h1 id="final-scores"&gt;Final&amp;nbsp;scores&lt;/h1&gt;
+&lt;p&gt;There were 1,104 &amp;#8220;compo&amp;#8221; (48-hour, one person) games, of which 549 had enough ratings to get scored and ranked. Here are the scores for Rogue Basement. Percentiles are within the 549 ranked&amp;nbsp;games.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Category&lt;/th&gt;
+&lt;th&gt;Rank&lt;/th&gt;
+&lt;th&gt;Percentile&lt;/th&gt;
+&lt;th&gt;Score&lt;/th&gt;
+&lt;th&gt;# ratings&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Overall&lt;/td&gt;
+&lt;td&gt;135&lt;/td&gt;
+&lt;td&gt;75.4&lt;/td&gt;
+&lt;td&gt;3.667&lt;/td&gt;
+&lt;td&gt;47&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fun&lt;/td&gt;
+&lt;td&gt;179&lt;/td&gt;
+&lt;td&gt;67.4&lt;/td&gt;
+&lt;td&gt;3.409&lt;/td&gt;
+&lt;td&gt;46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Innovation&lt;/td&gt;
+&lt;td&gt;379&lt;/td&gt;
+&lt;td&gt;31.0&lt;/td&gt;
+&lt;td&gt;2.841&lt;/td&gt;
+&lt;td&gt;46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Theme&lt;/td&gt;
+&lt;td&gt;398&lt;/td&gt;
+&lt;td&gt;25.5&lt;/td&gt;
+&lt;td&gt;2.977&lt;/td&gt;
+&lt;td&gt;46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Graphics&lt;/td&gt;
+&lt;td&gt;374&lt;/td&gt;
+&lt;td&gt;31.9&lt;/td&gt;
+&lt;td&gt;2.932&lt;/td&gt;
+&lt;td&gt;46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Audio&lt;/td&gt;
+&lt;td&gt;24&lt;/td&gt;
+&lt;td&gt;95.7&lt;/td&gt;
+&lt;td&gt;4.000&lt;/td&gt;
+&lt;td&gt;44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Humor&lt;/td&gt;
+&lt;td&gt;157&lt;/td&gt;
+&lt;td&gt;71.5&lt;/td&gt;
+&lt;td&gt;3.000&lt;/td&gt;
+&lt;td&gt;42&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mood&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;td&gt;82.9&lt;/td&gt;
+&lt;td&gt;3.659&lt;/td&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;I&amp;#8217;m most interested in ratings as a measurement of how well-spent my effort
+was in each area of the game. When you only have 48 hours to make a game, you
+get on a path early and it&amp;#8217;s hard to get off of it if something isn&amp;#8217;t working.
+That adds an enormous luck factor to things like &amp;#8220;Fun&amp;#8221; and&amp;nbsp;&amp;#8220;Innovation.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;It looks like the soundtrack was my secret weapon. Audio got a great score, and
+I&amp;#8217;m guessing that gave me a boost in Mood and&amp;nbsp;Overall.&lt;/p&gt;
+&lt;p&gt;The Theme score is very low, which I&amp;#8217;m a little surprised at but also don&amp;#8217;t
+care&amp;nbsp;about.&lt;/p&gt;
+&lt;p&gt;Innovation was one of my dump stats this round, so its low score makes sense too.
+I did make a very by-the-book&amp;nbsp;roguelike.&lt;/p&gt;
+&lt;p&gt;Graphics was my other dump stat in that I used &lt;span class="caps"&gt;ASCII&lt;/span&gt;, but I&amp;#8217;m a little hurt
+that people didn&amp;#8217;t appreciate the aesthetic&amp;nbsp;more.&lt;/p&gt;
+&lt;p&gt;Humor was a wildcard. I mostly use humor in my games to
+&lt;a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/LampshadeHanging"&gt;lampshade&lt;/a&gt;
+silly situations or mechanics. Rogue Basement just has some flavor text and
+&lt;span class="caps"&gt;ASCII&lt;/span&gt; art to justify your situation. I guess people appreciated it. (There&amp;#8217;s
+also some not-so-great English in the log messages, and that might have played
+a&amp;nbsp;part.)&lt;/p&gt;
 &lt;h1 id="takeaways"&gt;Takeaways&lt;/h1&gt;
 &lt;h2 id="scope"&gt;Scope&lt;/h2&gt;
 &lt;p&gt;Features I had planned to add but&amp;nbsp;didn&amp;#8217;t:&lt;/p&gt;
@@ -369,16 +390,18 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 &lt;h2 id="preparation-matters"&gt;Preparation&amp;nbsp;matters&lt;/h2&gt;
 &lt;p&gt;The week before Ludum Dare 38, I worked on an &lt;span class="caps"&gt;ASCII&lt;/span&gt; user interface and roguelike development framework. I didn&amp;#8217;t want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important&amp;nbsp;stuff.&lt;/p&gt;
 &lt;h2 id="music-makes-a-difference"&gt;Music makes a&amp;nbsp;difference&lt;/h2&gt;
-&lt;p&gt;The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&amp;#8217;t working anymore. Most of the positive reviews mention the music, so I think it will affect my score even outside the Audio&amp;nbsp;category.&lt;/p&gt;
-&lt;h2 id="ascii-is-a-ludum-dare-graphics-cheat-code"&gt;&lt;span class="caps"&gt;ASCII&lt;/span&gt; is a Ludum Dare graphics cheat&amp;nbsp;code&lt;/h2&gt;
-&lt;p&gt;Since &lt;span class="caps"&gt;ASCII&lt;/span&gt; is traditional for roguelikes, I don&amp;#8217;t think it&amp;#8217;s going to cost me too many points in the Graphics category. I&amp;#8217;ve always had a difficult time making nice-looking graphics, and &lt;span class="caps"&gt;ASCII&lt;/span&gt; means it&amp;#8217;s a&amp;nbsp;non-issue.&lt;/p&gt;
+&lt;p&gt;The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&amp;#8217;t working anymore. Most of the positive reviews mention the&amp;nbsp;music.&lt;/p&gt;
+&lt;h2 id="ascii-helps-you-focus-on-mechanics-but-has-a-score-cost"&gt;&lt;span class="caps"&gt;ASCII&lt;/span&gt; helps you focus on mechanics but has a score&amp;nbsp;cost&lt;/h2&gt;
+&lt;p&gt;Since &lt;span class="caps"&gt;ASCII&lt;/span&gt; is traditional for roguelikes, I thought I wouldn&amp;#8217;t lose too many points in graphics. In my opinion, good &lt;span class="caps"&gt;ASCII&lt;/span&gt; is better than bad pixel art. But I was wrong, and I was ranked in the bottom 35% of scored&amp;nbsp;games.&lt;/p&gt;
+&lt;p&gt;Even though I lost points on graphics, I&amp;#8217;m glad I went with &lt;span class="caps"&gt;ASCII&lt;/span&gt;, because it gave me a lot more time to focus on mechanics and the design of my engine. I would consider using &lt;span class="caps"&gt;ASCII&lt;/span&gt; again next time, graphics score be&amp;nbsp;damned.&lt;/p&gt;
 &lt;h2 id="making-videos-ameliorates-loneliness"&gt;Making videos ameliorates&amp;nbsp;loneliness&lt;/h2&gt;
 &lt;p&gt;Whenever I felt like I hit a milestone, I did a quick &lt;a href="https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr"&gt;video update&lt;/a&gt;. I didn&amp;#8217;t really expect anyone to watch them, but it helped give me perspective on my progress. And it simulated human interaction a little bit, which was nice because I was alone in the house for the entire&amp;nbsp;weekend.&lt;/p&gt;
 &lt;h2 id="the-tech-stack-works"&gt;The tech stack&amp;nbsp;works&lt;/h2&gt;
 &lt;p&gt;I wrote the game in Python 3. For graphics, I used &lt;a href="http://foo.wyrd.name/en:bearlibterminal"&gt;BearLibTerminal&lt;/a&gt;. I played the music with &lt;a href="https://pyglet.org"&gt;pyglet&lt;/a&gt;. And for assorted algorithms, state management, and user interface features, I used my own &lt;a href="http://steveasleep.com/clubsandwich/"&gt;clubsandwich&lt;/a&gt; library. To package the game for &lt;span class="caps"&gt;OS&lt;/span&gt; X and Windows, I used &lt;a href="http://www.pyinstaller.org/"&gt;PyInstaller&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This combination works really well. The main downside is that calling C libraries from Python is slow, and I had to do some optimiziation work to get a decent frame rate. In the future, I might switch the graphics over to use pyglet entirely, but I really like using BearLibTerminal because of its limitations. You get a grid of tiles and nothing else. It&amp;#8217;s&amp;nbsp;liberating.&lt;/p&gt;
 &lt;h1 id="conclusion"&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;This is probably the most fun game I have ever made, and the most fun I have ever had making a game. Thanks for reading! You can watch all this happen at super-speed in this timelapse&amp;nbsp;video:&lt;/p&gt;
+&lt;p&gt;This is probably the most fun game I have ever made, and ties for most fun making a game alongside my last Ludum Dare&amp;nbsp;success.&lt;/p&gt;
+&lt;p&gt;Thanks for reading! You can watch all this happen at super-speed in this timelapse&amp;nbsp;video:&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="games"></category></entry><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="http://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-03-12:home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio&amp;nbsp;setup.&lt;/p&gt;
 &lt;h2 id="the-wish-list"&gt;The wish&amp;nbsp;list&lt;/h2&gt;
 &lt;p&gt;Music is our primary focus. We have no need to switch video. &lt;span class="caps"&gt;RCA&lt;/span&gt; and 3.5mm cables are the norm, not &lt;span class="caps"&gt;HDMI&lt;/span&gt;. This doesn’t prevent us from getting a receiver that supports &lt;span class="caps"&gt;RCA&lt;/span&gt;, but those tend to be bulky and have lots of&amp;nbsp;buttons.&lt;/p&gt;
@@ -629,16 +652,20 @@ moving gourmet&amp;nbsp;restaurant!&lt;/p&gt;
 &lt;p&gt;Even though no one on the train spoke English, I managed to order red wine and
 enjoyed my dinner immensely. (One of the reasons I chose this event in the
 first place was its fixed menu.) It was an appropriate end to a great&amp;nbsp;week.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="On top of the world" src="http://steveasleep.com/img/turin/return_trip.jpg" /&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;img alt="On top of the world" src="http://steveasleep.com/img/turin/return_trip.jpg" /&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>We Dreamers postmortem</title><link href="http://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2013-05-04:we-dreamers-postmortem.html</id><summary type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+category of Ludum Dare&amp;nbsp;26.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot of We Dreamers" src="http://steveasleep.com/img/content/we_dreamers.jpg" /&gt;&lt;/p&gt;
 
-&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
-category of Ludum Dare 26.
-&lt;a href="http://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; It may take a
-while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or&amp;nbsp;two.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; (&lt;a href="http://ludumdare.com/compo/ludum-dare-26/?action=preview&amp;amp;uid=3120"&gt;Ludum Dare page&lt;/a&gt;) It may take a
+while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or two. Here&amp;#8217;s
+ten seconds of&amp;nbsp;it:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
 &lt;p&gt;Of all my programming escapades over the past couple of years, I&amp;#8217;m most proud
 of this one. Here&amp;#8217;s a comprehensive collection of my thoughts about it,
 including a discussions of the technical&amp;nbsp;aspects.&lt;/p&gt;
-&lt;h2 id="conception"&gt;Conception&lt;/h2&gt;
+&lt;h1 id="conception"&gt;Conception&lt;/h1&gt;
 &lt;p&gt;During the final voting round for Ludum Dare 26, I spent a couple of hours
 coming up with good ideas for every possible theme…except minimalism. No way
 that would get through,&amp;nbsp;right?&lt;/p&gt;
@@ -662,7 +689,7 @@ the rest as I went&amp;nbsp;along.&lt;/p&gt;
 &lt;p&gt;You gain levels by adding content. If anyone else is online at the same time as
 you, you can see their dot and any content they add, all&amp;nbsp;live-updated.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="screenshot" src="http://www.ludumdare.com/compo/wp-content/uploads/2013/05/2m-300x207.png" /&gt;&lt;/p&gt;
-&lt;h2 id="competition-results"&gt;Competition&amp;nbsp;results&lt;/h2&gt;
+&lt;h1 id="competition-results"&gt;Competition&amp;nbsp;results&lt;/h1&gt;
 &lt;p&gt;It placed 6th in the Innovation category out of 2,346 games. The rest of the
 category scores aren&amp;#8217;t as impressive as raw numbers but are still nice in terms
 of the number of&amp;nbsp;games:&lt;/p&gt;
@@ -747,7 +774,7 @@ highlights&lt;/a&gt;. They compared We
 Dreamers to Peter Molyneux’s game Curiosity. I&amp;#8217;m not sure if that&amp;#8217;s a
 compliment, but it’s still nice to be noticed. They have a &lt;a href="http://indiestatik.com/2013/05/02/ludum-dare-25-part-2/"&gt;second highlights
 post&lt;/a&gt; as&amp;nbsp;well.&lt;/p&gt;
-&lt;h2 id="technical-details"&gt;Technical&amp;nbsp;details&lt;/h2&gt;
+&lt;h1 id="technical-details"&gt;Technical&amp;nbsp;details&lt;/h1&gt;
 &lt;p&gt;You might be wondering, like
 &lt;a href="http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;amp;uid=20822"&gt;StuStutheBloo&lt;/a&gt;
 in We Dreamers’s comments, &lt;strong&gt;“How did you even put this together in the time&amp;nbsp;available?”&lt;/strong&gt;&lt;/p&gt;
@@ -794,7 +821,7 @@ for &lt;span class="caps"&gt;LD19&lt;/span&gt;.)&lt;/p&gt;
 &lt;a href="https://github.com/raimohanska/bacon.js"&gt;Bacon.js&lt;/a&gt;. It can decrease game logic
 complexity by quite a lot if you’re willing to invest your brain resources in
 it. We Dreamers would have had 30% more code and been 30% buggier without&amp;nbsp;it.&lt;/p&gt;
-&lt;h2 id="downsides-and-difficulties"&gt;Downsides and&amp;nbsp;difficulties&lt;/h2&gt;
+&lt;h1 id="downsides-and-difficulties"&gt;Downsides and&amp;nbsp;difficulties&lt;/h1&gt;
 &lt;p&gt;There’s another, secret reason why I was able to write We Dreamers so fast: I
 didn’t give more than a passing thought about scale. I had no idea how much
 data users would generate (currently ~4 &lt;span class="caps"&gt;MB&lt;/span&gt;) or how well browsers would deal
@@ -827,10 +854,41 @@ data. At least one person exploited it to leave me an amusing note, but
 fortunately there were no abusers. Firebase has the ability to use access
 controls, but I didn&amp;#8217;t have time to learn their &lt;span class="caps"&gt;API&lt;/span&gt;. Another reason to know
 my tools really well, I&amp;nbsp;suppose.&lt;/p&gt;
-&lt;h2 id="in-closing"&gt;In&amp;nbsp;closing,&lt;/h2&gt;
+&lt;h1 id="in-closing"&gt;In&amp;nbsp;closing,&lt;/h1&gt;
 &lt;p&gt;I had a fun and intense time this year. Of my three attempts to date, We
 Dreamers is far and away my best Ludum Dare effort yet. I plan to come back for
-another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;</summary><category term="games"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
+another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt;
+&lt;h1 id="appendix-my-favorite-reviews"&gt;Appendix: my favorite&amp;nbsp;reviews&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ooh, collaborative art! I liked the idea and of course took the liberty of leaving my mark on the world. Makes me happy! Thanks!&amp;nbsp;-semi&lt;/p&gt;
+&lt;p&gt;I really enjoyed my play session. Had a good time reading all kind of different messages and just messing around. 
+I love the collaborative stuff and the openness. Art is cool and the sound is charming. It is also a nice piece of tech.&amp;nbsp;-PsenFilip&lt;/p&gt;
+&lt;p&gt;There is something very cheerful about this game. As far as I can tell you don&amp;#8217;t &amp;#8220;win&amp;#8221; you just smile :)&amp;nbsp;-BlennosoftGames&lt;/p&gt;
+&lt;p&gt;I love open-ended and creative games! I had fun just wandering around reading everyone else&amp;#8217;s notes. I might have to come back later to do some more exploring ;)&amp;nbsp;-cardboard&lt;/p&gt;
+&lt;p&gt;This is beautiful. Found some really awesome messages, had fun following a huge tunnel dug by Lies, and then spent some time extending it even further myself. Tried to make sure to leave some inspiration bits around too. Amazing stuff, I love it.&amp;nbsp;-SnoringFrog&lt;/p&gt;
+&lt;p&gt;As someone else pointed out, this is an awesomely artsy guestbook. A very neat idea, and a technical prowess for the time constraints, that shows you&amp;#8217;ve got some deadly programming&amp;nbsp;chops. &lt;/p&gt;
+&lt;p&gt;All in all, a nice collaborative experience, very fitting of the theme. I&amp;#8217;m just not too much into games without any gameplay to them - yeah, the ages old debate about games as art :)&amp;nbsp;-TenTonToon&lt;/p&gt;
+&lt;p&gt;That is a very interesting entry, and I loved the technical&amp;nbsp;details. &lt;/p&gt;
+&lt;p&gt;I think it would be kind of cool if there was some sort of &amp;#8220;decay&amp;#8221;, so that after a few days, some of the painted cells would go white and then fill again - as to keep the instalation&amp;nbsp;fresh. &lt;/p&gt;
+&lt;p&gt;Also, having some sort of minimap or full view mode would be really great. (The browser&amp;#8217;s native zoom doesn&amp;#8217;t go very&amp;nbsp;far&amp;#8230;) &lt;/p&gt;
+&lt;p&gt;Thanks for the game!&amp;nbsp;-caranha&lt;/p&gt;
+&lt;p&gt;I just had the most interesting conversation with a wall, containing soul fragments of past dreamers. 
+It&amp;#8217;s like a dream: you cannot predict what you will find, but you&amp;#8217;ll always walk on the path of an interesting weird journey. 
+&lt;span class="caps"&gt;THANK&lt;/span&gt; &lt;span class="caps"&gt;YOU&lt;/span&gt;&amp;nbsp;stevejohnson. &lt;/p&gt;
+&lt;p&gt;Oh. And too bad that the sound reacts sometimes badly when travelling to many successive tiles of various colors. It makes it hard to create music :D&amp;nbsp;-Chronodrax&lt;/p&gt;
+&lt;p&gt;So this is a unique world for all players? Like an artistic &lt;span class="caps"&gt;MMO&lt;/span&gt;? This is extra-cool, a piece of art made by people around the world&amp;nbsp;-atraxgames&lt;/p&gt;
+&lt;p&gt;Nice bit of minimalist brain rot. Have some upstars.&amp;nbsp;-swizzcheez&lt;/p&gt;
+&lt;p&gt;this is a good gam&amp;nbsp;-evelyn-jolli&lt;/p&gt;
+&lt;p&gt;Neat. Quite unique. Technologically a marvel for the available time. To be honest, though, I don&amp;#8217;t get the purpose of it.&amp;nbsp;-wrongcoder&lt;/p&gt;
+&lt;p&gt;WrongCoder I left you a bunch of messages in rooms but you didn&amp;#8217;t reply&amp;nbsp;:( &lt;/p&gt;
+&lt;p&gt;This was fantastic. How did you even put this together in the time available?&amp;nbsp;-StuStutheBloo&lt;/p&gt;
+&lt;p&gt;Cool stuff with Firebase! 
+I have just started checking out BaaSes myself and this just reinforces my idea of just how fast you can get up and running to prototype new concepts. Haven&amp;#8217;t seen Bacon.js before, looks interesting. Would be nice to see some more in-depth post-mortem on this :)&amp;nbsp;-Legogris&lt;/p&gt;
+&lt;p&gt;It might be cool to make a way for people to have a local version of this for their own social group. I don&amp;#8217;t know what that would achieve, it just seems like it would work somehow.&amp;nbsp;-nintendoeats&lt;/p&gt;
+&lt;p&gt;Wow, beautiful. Defies definition. Thank you!&amp;nbsp;-CherryNukaCola&lt;/p&gt;
+&lt;p&gt;Fun! Felt a bit like geocaching :P&amp;nbsp;-Hegemege&lt;/p&gt;
+&lt;p&gt;Now that&amp;#8217;s a fun guestbook :D&amp;nbsp;-gerritg&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="games"></category></entry><entry><title>What I’ve been doing lately</title><link href="http://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2012-12-15:what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
@@ -847,143 +905,7 @@ interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/thesis/slides.pdf"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>The First Programming Book I Ever Read</title><link href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="alternate"></link><published>2011-01-10T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2011-01-10:the-first-programming-book-i-ever-read.html</id><summary type="html">&lt;p&gt;Over the holidays someone gave me a copy of the first programming book I ever
-read. In rereading it, I found almost as much as when I first experienced it at
-nine years&amp;nbsp;old.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /&gt;&lt;/p&gt;
-&lt;p&gt;The first thing you need to know is that since it was published in 1983, I
-didn&amp;#8217;t know how to find an interpreter for the code in 1999. All examples were
-run via thought experiment. Because of this fact, I think that this book did
-more to get me excited about the idea of programming than it did to impart
-knowledge. In this way, I think it follows a higher-level version of the &amp;#8220;give
-a man a fish&amp;#8230;&amp;#8221;&amp;nbsp;saying.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This book will teach you how to write simple programs in &lt;span class="caps"&gt;BASIC&lt;/span&gt; for your
-computer. Its purpose, however, is not to make you a programmer. Its purpose
-is to help you understand computers, to think about how computers can help
-you in all kinds of ways, and to discover how much fun you can have when you
-learn how to talk to&amp;nbsp;computers.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="content"&gt;Content&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/strong&gt; explains how to write simple &lt;span class="caps"&gt;BASIC&lt;/span&gt; programs for
-The Apple &lt;span class="caps"&gt;II&lt;/span&gt;+/e, Atari 400/800, Commodore 64/&lt;span class="caps"&gt;PET&lt;/span&gt;/&lt;span class="caps"&gt;VIC&lt;/span&gt; 20, &lt;span class="caps"&gt;TI&lt;/span&gt; 99/4A, Timex
-Sinclair 1000, and &lt;span class="caps"&gt;TRS&lt;/span&gt;-80. (The programs still run in Chipmunk Basic.) The fact
-that such a book could be written for ten different platforms is a testament to
-the ubiquity of &lt;span class="caps"&gt;BASIC&lt;/span&gt; in personal computers at the time, but the book does
-spend a lot of time explaining special cases and how to rewrite the examples so
-that they run on some of the platforms. (Apparently the Timex Sinclair 1000 was
-an awful&amp;nbsp;machine.)&lt;/p&gt;
-&lt;p&gt;It begins with a 30-page chapter on how to type and use the prompts on the
-various platforms. Then the language is taught over ten chapters, with
-exercises at the end of each chapter. There is a final chapter with some
-example programs, and then appendices for reference, troubleshooting, editing,
-and information about computers in&amp;nbsp;general.&lt;/p&gt;
-&lt;p&gt;Here&amp;#8217;s a quick example to refresh your &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;memory:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;NEW
-10 FOR J = 1 TO 5 
-20 PRINT &amp;quot;JUMP&amp;quot;;J 
-30 FOR C = 1 TO 3 
-40 PRINT &amp;quot;CLAP&amp;quot;;C 
-50 NEXT C 
-60 NEXT J 
-RUN
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;After rereading the book cover to cover, I have only two new thoughts. First,
-that the author did a good job of conveying the joy of computing to young
-readers. Second, that the &lt;span class="caps"&gt;BASIC&lt;/span&gt; language was an awful mess but succeeded for
-very good&amp;nbsp;reasons.&lt;/p&gt;
-&lt;h2 id="review-positive"&gt;Review:&amp;nbsp;Positive&lt;/h2&gt;
-&lt;p&gt;This is a good book. I&amp;#8217;m glad I found it when I went looking for it. Here&amp;#8217;s an
-example that follows a description of what variables&amp;nbsp;are:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You can put variables in a program, like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;NEW
-10 N = 2
-20 X = 5
-30 PRINT N + X
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;What will that program print? Run it and see if you guessed correctly. Notice
-that lines 10 and 20 don&amp;#8217;t make anything happen on the screen when you run
-the program. They tell the program to do something &lt;em&gt;inside&lt;/em&gt; the computer, but
-only the word &lt;span class="caps"&gt;PRINT&lt;/span&gt; makes a message appear on the&amp;nbsp;screen.&lt;/p&gt;
-&lt;p&gt;Now change lines 10 and 20 to give the variables some different&amp;nbsp;values.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It&amp;#8217;s a small, self-contained, understandable example with a concise, complete
-explanation and an invitation to experiment. In this way, it mirrors the style
-of Zed Shaw&amp;#8217;s &lt;a href="http://learnpythonthehardway.com/"&gt;Learn Python The Hard
-Way&lt;/a&gt;. It never blames the reader for
-being wrong, and in fact seems to encourage the reader to forgive his or her
-own mistakes while writing&amp;nbsp;programs.&lt;/p&gt;
-&lt;p&gt;So yes, it&amp;#8217;s a good book. But about this &lt;span class="caps"&gt;BASIC&lt;/span&gt;&amp;nbsp;thing&amp;#8230;&lt;/p&gt;
-&lt;h2 id="basic-sucked-but-worse-was-better"&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Sucked, But Worse Was&amp;nbsp;Better&lt;/h2&gt;
-&lt;p&gt;Seriously, what is this crap? Specifying a line number for each statement
-before the program is finished? &lt;span class="caps"&gt;REM&lt;/span&gt;? &lt;em&gt;No proper functions?&lt;/em&gt; How did anyone
-survive&amp;nbsp;this?&lt;/p&gt;
-&lt;p&gt;Oh, the alternative was to use assembly, or to slip into an &lt;span class="caps"&gt;AI&lt;/span&gt; laboratory.&amp;nbsp;Right.&lt;/p&gt;
-&lt;p&gt;The two great things about &lt;span class="caps"&gt;BASIC&lt;/span&gt; as it existed in personal computers was that
-it was &lt;em&gt;extremely&lt;/em&gt; simple, and it was &lt;em&gt;everywhere&lt;/em&gt;. Ault was able to describe
-almost the entire language with extensive examples in a hundred pages of large
-print, and those pages covered the vast majority of PCs on the market at the&amp;nbsp;time.&lt;/p&gt;
-&lt;p&gt;The reason I was able to understand the book without actually using a computer
-was because of the simplicity of &lt;span class="caps"&gt;BASIC&lt;/span&gt; and because of Ault&amp;#8217;s ability to explain
-it using terms no more complex than necessary. At this point I should mention
-that this book may not actually be the very first programming book I read, but
-it was certainly the first one I understood. I really don&amp;#8217;t&amp;nbsp;remember.&lt;/p&gt;
-&lt;h2 id="and-also-worse"&gt;&amp;#8230;And Also&amp;nbsp;Worse&lt;/h2&gt;
-&lt;p&gt;Before rereading this book, I had mostly forgotten what &lt;span class="caps"&gt;BASIC&lt;/span&gt; really was, and
-didn&amp;#8217;t necessarily agree with the statement that &lt;span class="caps"&gt;BASIC&lt;/span&gt; causes brain damage. Now
-I agree wholeheartedly, and I speak from experience. &lt;span class="caps"&gt;BASIC&lt;/span&gt; crippled me for&amp;nbsp;years.&lt;/p&gt;
-&lt;p&gt;At its core, &lt;span class="caps"&gt;BASIC&lt;/span&gt; is a crappy way to express a state machine. The syntax
-encourages tight, unreadable balls of spaghetti. &lt;code&gt;GOSUB&lt;/code&gt; is a poor way to break
-out functions. Most of the punctuation feels very ad&amp;nbsp;hoc.&lt;/p&gt;
-&lt;p&gt;I can&amp;#8217;t help but contrast this mess with Scheme. All other concerns aside,
-Scheme makes a great teaching language because there is almost no syntax and
-code is inherently hierarchical. Beginners simply learn new words. Everything
-else is&amp;nbsp;gravy.&lt;/p&gt;
-&lt;p&gt;But I didn&amp;#8217;t learn Scheme, I learned &lt;span class="caps"&gt;BASIC&lt;/span&gt; and stuck with it for about six
-years. I went from &lt;a href="http://www.truebasic.com/"&gt;TrueBASIC&lt;/a&gt; to &lt;a href="http://www.vellios.com/2010/06/06/basic-compiler-opensourced/"&gt;Visual
-MacStandardBasic&lt;/a&gt;
-to &lt;a href="http://web.archive.org/web/20080321015004/www.iit.edu/~sarimar/GDS/metal.html"&gt;&lt;span class="caps"&gt;METAL&lt;/span&gt;
-&lt;span class="caps"&gt;BASIC&lt;/span&gt;&lt;/a&gt;
-to &lt;a href="http://www.blitzmax.com/"&gt;BlitzMax&lt;/a&gt;. I would occasionally try to learn a
-new language, but would quickly become frustrated with the lack of easy-to-use
-IDEs and graphics libraries. (During this period I was writing nothing but&amp;nbsp;games.)&lt;/p&gt;
-&lt;p&gt;Languages like &lt;span class="caps"&gt;METAL&lt;/span&gt; &lt;span class="caps"&gt;BASIC&lt;/span&gt; had few features and libraries, but for me that was
-as much of a strength as it was a weakness. Rather than spending hours
-searching for which giant package to import, I could browse a complete list of
-commands less than twenty pages long to find what I needed, modules and
-namespaces be damned. When I was done writing a game, I could click &amp;#8220;Compile&amp;#8221;
-and email it to my friends instead of asking them to download Joe Shmoe Player
-3000 or tearing my hair out over config files. (For this reason, I think
-Processing and BlitzMax are currently the best platforms to learn game
-programming&amp;nbsp;with.)&lt;/p&gt;
-&lt;p&gt;I spent so much time in the game bubble that I missed out on many early
-opportunities to learn new language&amp;nbsp;concepts.&lt;/p&gt;
-&lt;h2 id="what-everyone-knows-is-wrong-today"&gt;What Everyone Knows Is Wrong&amp;nbsp;Today&lt;/h2&gt;
-&lt;p&gt;Today&amp;#8217;s popular languages are objectively better than &lt;span class="caps"&gt;BASIC&lt;/span&gt; in every way.
-Features, syntax, libraries, the works. But for a kid who wants to write games
-by typing into a window and clicking &lt;span class="caps"&gt;COMPILE&lt;/span&gt; or &lt;span class="caps"&gt;RUN&lt;/span&gt;, the language options are
-limited to Processing, BlitzMax, and whatever GameMaker uses. None of these
-are real-world languages, so anyone starting out with them will not have a
-smooth transition to the next stage in their development as a master of&amp;nbsp;technology.&lt;/p&gt;
-&lt;p&gt;I won&amp;#8217;t bother rehashing what others have said about this problem or yearn for
-the days of the &lt;span class="caps"&gt;BASIC&lt;/span&gt;-prompt-as-main-interface. I&amp;#8217;ll just say this: make better
-tools, write more books and&amp;nbsp;tutorials.&lt;/p&gt;
-&lt;h2 id="resources"&gt;Resources&lt;/h2&gt;
-&lt;p&gt;&lt;a href="http://www.inventwithpython.com/"&gt;Invent Your Own Computer Games with Python&lt;/a&gt;
-is comparable to &lt;em&gt;&lt;span class="caps"&gt;BASIC&lt;/span&gt; Programming for Kids&lt;/em&gt;. Better, even. Python&amp;#8217;s tools are
-not ideal for children, but they are good enough to teach programming&amp;nbsp;with.&lt;/p&gt;
-&lt;p&gt;Here are some ways to create games with a good write/run/distribute tool, but
-not necessarily with good documentation for those new to&amp;nbsp;programming:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.processing.org/"&gt;Processing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blitzmax.com/"&gt;BlitzMax&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.yoyogames.com/make"&gt;GameMaker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="http://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2010-12-13:space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png" /&gt;&lt;/p&gt;
 &lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called &lt;em&gt;&lt;a href="http://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
@@ -1004,6 +926,8 @@ Little does she know it will be a bumpy&amp;nbsp;ride&amp;#8230;&lt;/p&gt;
 failed to account for one thing: &lt;strong&gt;adventure games take a lot of work to
 make.&lt;/strong&gt; As a result, the game is only about twenty minutes long. Even so, we
 all learned from the&amp;nbsp;experience.&lt;/p&gt;
+
+
 &lt;h2 id="the-course"&gt;The&amp;nbsp;Course&lt;/h2&gt;
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;&lt;span class="caps"&gt;EECS&lt;/span&gt; 390 - Advanced Game Development Project&amp;#8221; is a joint course between the
 Cleveland Institute of Art and Case Western Reserve University. Teams of 6-12

@@ -69,97 +69,6 @@
     <li>
       <header class="article-header">
         <h2 class="entry-title">
-          <a href="http://steveasleep.com/rogue-basement-final-scores.html" rel="bookmark" title="Permalink to Rogue Basement final scores">
-            Rogue Basement final&nbsp;scores
-          </a>
-        </h2>
-
-        <div class="post-info">
-            <time class="published" datetime="2017-05-20T00:00:00-07:00">
-              20 May 2017
-            </time>
-        </div>
-
-      </header>
-      <div class="entry-content">
-        <p>Ludum Dare voting closed yesterday and the ratings are now public. There were 1,104 &#8220;compo&#8221; (48-hour, one person) games. Here are the scores for Rogue Basement. Percentiles are <code>1 - rank / 549</code> (only 549 games got enough ratings to receive&nbsp;scores).</p>
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Rank</th>
-<th>Percentile</th>
-<th>Score</th>
-<th># ratings</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Overall</td>
-<td>135</td>
-<td>75.4</td>
-<td>3.667</td>
-<td>47</td>
-</tr>
-<tr>
-<td>Fun</td>
-<td>179</td>
-<td>67.4</td>
-<td>3.409</td>
-<td>46</td>
-</tr>
-<tr>
-<td>Innovation</td>
-<td>379</td>
-<td>31.0</td>
-<td>2.841</td>
-<td>46</td>
-</tr>
-<tr>
-<td>Theme</td>
-<td>398</td>
-<td>25.5</td>
-<td>2.977</td>
-<td>46</td>
-</tr>
-<tr>
-<td>Graphics</td>
-<td>374</td>
-<td>31.9</td>
-<td>2.932</td>
-<td>46</td>
-</tr>
-<tr>
-<td>Audio</td>
-<td>24</td>
-<td>95.7</td>
-<td>4.000</td>
-<td>44</td>
-</tr>
-<tr>
-<td>Humor</td>
-<td>157</td>
-<td>71.5</td>
-<td>3.000</td>
-<td>42</td>
-</tr>
-<tr>
-<td>Mood</td>
-<td>94</td>
-<td>82.9</td>
-<td>3.659</td>
-<td>43</td>
-</tr>
-</tbody>
-</table>
-        <p class="read-more">
-          <a href="http://steveasleep.com/rogue-basement-final-scores.html">Read &rarr;</a>
-        </p>
-      </div>
-    </li>
-    <li>
-      <header class="article-header">
-        <h2 class="entry-title">
           <a href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="bookmark" title="Permalink to The Design and Implementation of Rogue Basement">
             The Design and Implementation of Rogue&nbsp;Basement
           </a>
@@ -173,25 +82,10 @@
 
       </header>
       <div class="entry-content">
-        <h1 id="introduction">Introduction</h1>
-<p>This year I participated in <a href="https://ldjam.com">Ludum Dare 38</a>, a 48-hour game programming &#8220;competition.&#8221; I&#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href="https://ldjam.com/events/ludum-dare/38/rogue-basement">Rogue Basement</a>, a bare-bones, single-level game with <span class="caps">ASCII</span>&nbsp;graphics.</p>
-<p>In this article, I&#8217;ll cover the game design decisions I made, how they affect the player&#8217;s experience, and a bit of how they&#8217;re implemented. <a href="https://github.com/irskep/rogue_basement">The source code</a> is <strong>extensively</strong> commented as&nbsp;well.</p>
+        <p>This year I participated in <a href="https://ldjam.com">Ludum Dare 38</a>, a 48-hour game programming &#8220;competition.&#8221; I&#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href="https://ldjam.com/events/ludum-dare/38/rogue-basement">Rogue Basement</a>, a bare-bones, single-level game with <span class="caps">ASCII</span>&nbsp;graphics.</p>
+<p>In this article, I&#8217;ll cover the game design decisions I made, how they affect the player&#8217;s experience, and a bit of how they&#8217;re implemented. <a href="https://github.com/irskep/rogue_basement">The source code</a> is extensively commented as&nbsp;well.</p>
 <p><img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png" /></p>
-<h1 id="what-is-a-roguelike">What is a&nbsp;roguelike?</h1>
-<p>A &#8220;roguelike&#8221; is a game that is &#8220;like Rogue,&#8221; a text-based game from the 1980s that looks like&nbsp;this:</p>
-<p><img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png" /></p>
-<p>Typical features of these games&nbsp;include:</p>
-<ul>
-<li>Procedurally generated&nbsp;levels</li>
-<li>Permadeath (one&nbsp;life)</li>
-<li>Turn-based&nbsp;action</li>
-<li>Top-down 2D graphics, often just&nbsp;text</li>
-<li>Simulation-oriented; interesting stories arise from the game&#8217;s rules and&nbsp;behavior</li>
-<li>Very difficult to win without lots of&nbsp;practice</li>
-</ul>
-<p>The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you&#8217;re always facing new situations. You have to use your wits to&nbsp;survive.</p>
-<h1 id="environment">Environment</h1>
-<p>I started on Friday night ...</p>
+
         <p class="read-more">
           <a href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html">Read &rarr;</a>
         </p>
@@ -420,8 +314,8 @@ A few weeks ago I returned from teaching &#8220;big data analysis with MapReduce
     <li>
       <header class="article-header">
         <h2 class="entry-title">
-          <a href="http://steveasleep.com/we-dreamers-postmortem.html" rel="bookmark" title="Permalink to How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned Out">
-            How I Made a Realtime Multiplayer Art Piece in 48 Hours, and How It Turned&nbsp;Out
+          <a href="http://steveasleep.com/we-dreamers-postmortem.html" rel="bookmark" title="Permalink to We Dreamers postmortem">
+            We Dreamers&nbsp;postmortem
           </a>
         </h2>
 
@@ -433,29 +327,10 @@ A few weeks ago I returned from teaching &#8220;big data analysis with MapReduce
 
       </header>
       <div class="entry-content">
-        <iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen></iframe>
+        <p>We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+category of Ludum Dare&nbsp;26.</p>
+<p><img alt="Screenshot of We Dreamers" src="http://steveasleep.com/img/content/we_dreamers.jpg" /></p>
 
-<p>We Dreamers is an abstract online sandbox that placed sixth in the Innovation
-category of Ludum Dare 26.
-<a href="http://steveasleep.com/we_dreamers_2">You can play it here.</a> It may take a
-while for the 4+ <span class="caps">MB</span> of user data to download, so give it a minute or&nbsp;two.</p>
-<p>Of all my programming escapades over the past couple of years, I&#8217;m most proud
-of this one. Here&#8217;s a comprehensive collection of my thoughts about it,
-including a discussions of the technical&nbsp;aspects.</p>
-<h2 id="conception">Conception</h2>
-<p>During the final voting round for Ludum Dare 26, I spent a couple of hours
-coming up with good ideas for every possible theme…except minimalism. No way
-that would get through,&nbsp;right?</p>
-<p>When that theme was chosen, and I had to throw out all of my wonderful schemes,
-most of which were single player pseudo-roguelikes. Instead, I picked a vague
-idea: a web-based multiplayer world where you dig out rooms underground in a
-grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
-the rest as I went&nbsp;along.</p>
-<p>You can do a few&nbsp;things:</p>
-<ol>
-<li>Move with the arrow keys or <span class="caps">WASD</span>.</li>
-<li>Harvest color with&nbsp;space.</li>
-<li>Dig out new rooms by bumping into walls. You ...</li></ol>
         <p class="read-more">
           <a href="http://steveasleep.com/we-dreamers-postmortem.html">Read &rarr;</a>
         </p>
@@ -569,47 +444,6 @@ Therefore, these links are only for the&nbsp;brave:</p>
     <li>
       <header class="article-header">
         <h2 class="entry-title">
-          <a href="http://steveasleep.com/the-first-programming-book-i-ever-read.html" rel="bookmark" title="Permalink to The First Programming Book I Ever Read">
-            The First Programming Book I Ever&nbsp;Read
-          </a>
-        </h2>
-
-        <div class="post-info">
-            <time class="published" datetime="2011-01-10T00:00:00-08:00">
-              10 Jan 2011
-            </time>
-        </div>
-
-      </header>
-      <div class="entry-content">
-        <p>Over the holidays someone gave me a copy of the first programming book I ever
-read. In rereading it, I found almost as much as when I first experienced it at
-nine years&nbsp;old.</p>
-<p><img alt="Book cover" src="http://steveasleep.com/img/content/basic_programming_for_kids.jpg" title="**BASIC Programming for Kids** by Roz Ault" /></p>
-<p>The first thing you need to know is that since it was published in 1983, I
-didn&#8217;t know how to find an interpreter for the code in 1999. All examples were
-run via thought experiment. Because of this fact, I think that this book did
-more to get me excited about the idea of programming than it did to impart
-knowledge. In this way, I think it follows a higher-level version of the &#8220;give
-a man a fish&#8230;&#8221;&nbsp;saying.</p>
-<blockquote>
-<p>This book will teach you how to write simple programs in <span class="caps">BASIC</span> for your
-computer. Its purpose, however, is not to make you a programmer. Its purpose
-is to help you understand computers, to think about how computers can help
-you in all kinds of ways, and to discover how much fun you can have when you
-learn how to talk to&nbsp;computers.</p>
-</blockquote>
-<h2 id="content">Content</h2>
-<p><strong><span class="caps">BASIC</span> Programming for Kids</strong> explains how to write simple <span class="caps">BASIC</span> programs for
-The Apple <span class="caps">II</span>+/e, Atari 400/800, Commodore 64/<span class="caps">PET ...</span></p>
-        <p class="read-more">
-          <a href="http://steveasleep.com/the-first-programming-book-i-ever-read.html">Read &rarr;</a>
-        </p>
-      </div>
-    </li>
-    <li>
-      <header class="article-header">
-        <h2 class="entry-title">
           <a href="http://steveasleep.com/space-train-postmortem.html" rel="bookmark" title="Permalink to Space Train Postmortem">
             Space Train&nbsp;Postmortem
           </a>
@@ -644,8 +478,7 @@ Little does she know it will be a bumpy&nbsp;ride&#8230;</p>
 failed to account for one thing: <strong>adventure games take a lot of work to
 make.</strong> As a result, the game is only about twenty minutes long. Even so, we
 all learned from the&nbsp;experience.</p>
-<h2 id="the-course">The&nbsp;Course</h2>
-<p><span class="dquo">&#8220;</span><span class="caps">EECS</span> 390 ...</p>
+
         <p class="read-more">
           <a href="http://steveasleep.com/space-train-postmortem.html">Read &rarr;</a>
         </p>
