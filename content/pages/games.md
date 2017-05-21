@@ -12,11 +12,11 @@ that you can get to run in some form.
 
 * [Escort Wing](<|filename|escort-wing.md>) (2005)
 * [Artack](<|filename|artack.md>) (2006)
-* [Elite Bungie Chopper Squadron](http://www.pyweek.org/e/idg/) (2008)
+* [Elite Bungie Chopper Squadron](https://github.com/irskep/bungie-chopper) (2008)
 * [gw0rp](<|filename|gw0rp.md>) (2009)
 * [Lizard Wizard](http://www.ludumdare.com/compo/ludum-dare-19/?action=preview&uid=3120) (2010)
 * [Space Train](<|filename|space-train.md>) (2010)
-* [We Dreamers](http://steveasleep.com/we_dreamers_2) (2013)
+* [We Dreamers](http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=3120) (2013)
 * [Buildy](http://playbuildy.com) (2013-2015, RIP)
 * [Rogue Basement](https://irskep.itch.io/rogue_basement) (2016)
 
