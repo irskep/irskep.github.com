@@ -13,7 +13,7 @@ that you can get to run in some form.
 * [Bibble Biter](<|filename|bibble-biter.md>) (2005)
 * [Escort Wing](<|filename|escort-wing.md>) (2005)
 * [Artack](<|filename|artack.md>) (2006)
-* [Elite Bungie Chopper Squadron](https://github.com/irskep/bungie-chopper) (2008)
+* [Elite Bungie Chopper Squadron](<|filename|bungie-chopper.md>) (2008)
 * [gw0rp](<|filename|gw0rp.md>) (2009)
 * [Lizard Wizard](http://www.ludumdare.com/compo/ludum-dare-19/?action=preview&uid=3120) (2010)
 * [Space Train](<|filename|space-train.md>) (2010)
