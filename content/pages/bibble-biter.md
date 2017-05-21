@@ -9,7 +9,9 @@ In 2005 I was a junior in high school, and the source for this game is a single 
 
 <iframe width="560" height="400" src="https://www.youtube.com/embed/X1HYYvUmCuc" frameborder="0" allowfullscreen></iframe>
 
-# Design notes from 11 years later
+# Design notes from 12 years later
+
+I think I made this because I thought it would look hilarious. And it does look hilarious. It's just unplayable.
 
 ## Pros
 
@@ -22,5 +24,3 @@ In 2005 I was a junior in high school, and the source for this game is a single 
 * The black zapper things give no warning at all that they are about to zap, so they just kind of randomly kill you.
 * The dominant strategy is to find an open area, jump, hold the F key, and run back and forth constantly.
 * I cannot survive more than 60 seconds in this entire game, and I made it.
-
-I think I made this because I thought it would look hilarious. And it does.
