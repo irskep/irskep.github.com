@@ -23,4 +23,4 @@ that you can get to run in some form.
 Unfortunately, none of my middle school-era METAL BASIC creations survived
 various file transfers, web site backups, and hard drive failures. I am
 sad to say that the world may never again see Canvas Wars, Canvas
-Wars 2, Retro Defender, Past Blasters, or Last Hope.
+Wars 2, Retro Defender, Past Blasters, Bibble Biter, or Last Hope.
