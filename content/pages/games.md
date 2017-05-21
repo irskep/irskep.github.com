@@ -10,6 +10,7 @@ making games almost exactly as long as I've been programming, and many of them
 you could almost call playable. Here's a chronological list of games I made
 that you can get to run in some form.
 
+* [Bibble Biter](<|filename|bibble-biter.md>) (2005)
 * [Escort Wing](<|filename|escort-wing.md>) (2005)
 * [Artack](<|filename|artack.md>) (2006)
 * [Elite Bungie Chopper Squadron](https://github.com/irskep/bungie-chopper) (2008)
