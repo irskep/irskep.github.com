@@ -7,5 +7,5 @@ I made this very silly, very badly designed game for [a 3-week competition](http
 
 In 2005 I was a junior in high school, and the source for this game is a single 1,400 line BlitzMax BASIC file.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/X1HYYvUmCuc" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="400" src="https://www.youtube.com/embed/X1HYYvUmCuc" frameborder="0" allowfullscreen></iframe>
 
