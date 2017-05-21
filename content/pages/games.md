@@ -12,15 +12,15 @@ that you can get to run in some form.
 
 * [Escort Wing](<|filename|escort-wing.md>) (2005)
 * [Artack](<|filename|artack.md>) (2006)
-* [Elite Bungie Chopper Squadron](http://www.pyweek.org/e/idg/) (2009)
+* [Elite Bungie Chopper Squadron](http://www.pyweek.org/e/idg/) (2008)
 * [gw0rp](<|filename|gw0rp.md>) (2009)
 * [Lizard Wizard](http://www.ludumdare.com/compo/ludum-dare-19/?action=preview&uid=3120) (2010)
 * [Space Train](<|filename|space-train.md>) (2010)
 * [We Dreamers](http://steveasleep.com/we_dreamers_2) (2013)
-* [Buildy](http://playbuildy.com) (2013)
+* [Buildy](http://playbuildy.com) (2013-2015, RIP)
 * [Rogue Basement](https://irskep.itch.io/rogue_basement) (2016)
 
 Unfortunately, none of my middle school-era METAL BASIC creations survived
 various file transfers, web site backups, and hard drive failures. I am
-sincerely sad to say that the world may never again see Canvas Wars, Canvas
+sad to say that the world may never again see Canvas Wars, Canvas
 Wars 2, Retro Defender, Past Blasters, or Last Hope.

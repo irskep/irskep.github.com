@@ -38,15 +38,14 @@ MENUITEMS = (
         ('Sendimals', 'http://sendimals.com'),
         ('Rogue Basement', 'https://ldjam.com/events/ludum-dare/38/rogue-basement'),
         ('Literally Canvas', 'http://literallycanvas.com/'),
-        ('Games', '/games.html'),
         ('Computer Words', 'http://steveasleep.com/computerwords'),
         ('mrjob', 'http://mrjob.readthedocs.org/'),
         ('Hipmunk OSS', 'http://hipmunk.github.io'),
+        ('Old games', '/games.html'),
     ]),
     ('Music', [
         ('The Nest', 'http://thenestmusic.com'),
         ('Slam Jamsen', 'http://slamjamsen.com'),
-        ('Other music', '/music.html'),
     ]),
     ('External', [
         ('GitHub', 'https://github.com/irskep'),
