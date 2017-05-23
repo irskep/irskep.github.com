@@ -43,3 +43,5 @@ There was a Canvas Wars 1, but the code is long gone.
 # Elite Bungie Chopper Squadron (2008)
 
 <iframe width="560" height="400" src="https://www.youtube.com/embed/vLTsKThAedw" frameborder="0" allowfullscreen></iframe>
+
+<!-- PELICAN_END_SUMMARY -->
