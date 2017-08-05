@@ -391,6 +391,9 @@ article.home-page {
     }
 
     img {
+      @media (max-width: 40rem) {
+        display: none;
+      }
       height: 100%;
 
       &.left {

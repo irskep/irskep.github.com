@@ -260,6 +260,9 @@ article.home-page ul.article-summary-list {
     text-decoration: none; }
   .promo .promo-section img {
     height: 100%; }
+    @media (max-width: 40rem) {
+      .promo .promo-section img {
+        display: none; } }
     .promo .promo-section img.left {
       position: absolute;
       top: 0;
