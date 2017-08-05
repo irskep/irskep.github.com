@@ -18,10 +18,11 @@ For games I didn't finish, see [Unfinished games](<|filename|unfinished-games.md
 * [Lizard Wizard](http://www.ludumdare.com/compo/ludum-dare-19/?action=preview&uid=3120) (2010)
 * [Space Train](<|filename|space-train.md>) (2010)
 * [We Dreamers](http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=3120) (2013)
-* [Buildy](http://playbuildy.com) (2013-2015, RIP)
-* [Rogue Basement](https://irskep.itch.io/rogue_basement) (2016)
+* Buildy (2013-2015, RIP)
+* [Rogue Basement](https://irskep.itch.io/rogue_basement) (2017)
+* [PoweRL](https://irskep.itch.io/powerl) (2017)
 
 Unfortunately, none of my middle school-era METAL BASIC creations survived
 various file transfers, web site backups, and hard drive failures. I am
-sad to say that the world may never again see Canvas Wars, Canvas
-Wars 2, Retro Defender, Past Blasters, Bibble Biter, or Last Hope.
+sad to say that the world may never again see Canvas Wars,
+Retro Defender, Past Blasters, or Last Hope.

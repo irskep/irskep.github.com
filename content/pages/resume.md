@@ -8,7 +8,15 @@ no_header: True
 
 # Jobs
 
-**Hipmunk:** Mobile developer & team lead, July 2015-present
+**Hipmunk:** Engineering manager & Mobile engineer, January 2017-present
+
+Still working on Hipmunk for iOS and leading the mobile team, but now also
+fulfilling management role for my teammates.
+
+Hard stuff: Hiring great engineers  
+Fun stuff: Hiring great engineers
+
+**Hipmunk:** Mobile developer & team lead, July 2015-December 2016
 
 Worked on [Hipmunk for iOS](https://itunes.apple.com/us/app/hipmunk-travel-
 hotels- flights/id419950680?mt=8). Became mobile team lead in January 2016.

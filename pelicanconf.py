@@ -33,6 +33,7 @@ MENUITEMS = (
         ('Blog', '/'),
         ('Pyglet tutorial', '/pyglettutorial.html'),
         ('Résumé', '/resume.html'),
+        ('Game jam CV', '/game-jam-cv.html'),
     ]),
     ('Projects', [
         ('Sendimals', 'http://sendimals.com'),
