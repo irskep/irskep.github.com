@@ -359,3 +359,61 @@ article.home-page {
     border-bottom: 1px solid $separatorColor;
   }
 }
+
+// random stuff
+
+.promo {
+  .promo-section {
+    $height: 128px;
+
+    position: relative;
+    height: $height;
+    line-height: $height;
+    border-radius: 4px;
+    background-color: $bodyColor;
+    font-family: Menlo,Consolas,monospace;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    text-align: center;
+
+    & > * {
+      margin-right: 4px;
+    }
+
+    a {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      color: $backgroundColor;
+      text-decoration: none;
+    }
+
+    img {
+      @media (max-width: 40rem) {
+        display: none;
+      }
+      height: 100%;
+
+      &.left {
+        position: absolute;
+        top: 0; left: 16px; bottom: 0;
+      }
+
+      &.right {
+        position: absolute;
+        top: 0; right: 16px; bottom: 0;
+      }
+    }
+  }
+}
+
+.music-blurb {
+  background-color: hsl(90, 50, 40);
+  border: 1px solid darken(hsl(90, 100, 50), 30%);
+  width: 128px * 3 + 32px;
+  padding-left: 16px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}

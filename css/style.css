@@ -235,3 +235,49 @@ article.home-page ul.article-summary-list {
 
 .entry-content h1 {
   border-bottom: 1px solid #a8a8a8; }
+
+.promo .promo-section {
+  position: relative;
+  height: 128px;
+  line-height: 128px;
+  border-radius: 4px;
+  background-color: #282828;
+  font-family: Menlo,Consolas,monospace;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  text-align: center; }
+  .promo .promo-section > * {
+    margin-right: 4px; }
+  .promo .promo-section a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #f0f0f0;
+    text-decoration: none; }
+  .promo .promo-section img {
+    height: 100%; }
+    @media (max-width: 40rem) {
+      .promo .promo-section img {
+        display: none; } }
+    .promo .promo-section img.left {
+      position: absolute;
+      top: 0;
+      left: 16px;
+      bottom: 0; }
+    .promo .promo-section img.right {
+      position: absolute;
+      top: 0;
+      right: 16px;
+      bottom: 0; }
+
+.music-blurb {
+  background-color: #669933;
+  border: 1px solid #336600;
+  width: 416px;
+  padding-left: 16px;
+  border-radius: 4px;
+  margin-bottom: 1rem; }
