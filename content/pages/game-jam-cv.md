@@ -17,7 +17,7 @@ When I do jams less than 72 hours long, I typically only spend a couple of hours
 
 ### Links
 
-* [Music from my recent Ludum Dare games]()
+* [Music from my recent Ludum Dare games](https://soundcloud.com/irskep)
 * [Music from 5-10 years ago](http://slamjamsen.com/)
 
 ## Sound

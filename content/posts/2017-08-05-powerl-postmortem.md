@@ -31,7 +31,7 @@ SpriteKit's `SKLabelNode` let me write almost the whole game in old-school rogue
 
 ## Evolution of the design
 
-Ever since starting to play [868-HACK]() on my phone, I've wanted to try making a game in the same genre (pocket roguelike). The SpriteKit template in Xcode immediately gives you a codebase that runs on macOS, iOS, and tvOS, so right from the start, I kept in mind a control scheme that could work on keyboards and touch screens alike. Swiping would move your character, and tapping would do something else.
+Ever since starting to play [868-HACK](http://www.smestorp.com) on my phone, I've wanted to try making a game in the same genre (pocket roguelike). The SpriteKit template in Xcode immediately gives you a codebase that runs on macOS, iOS, and tvOS, so right from the start, I kept in mind a control scheme that could work on keyboards and touch screens alike. Swiping would move your character, and tapping would do something else.
 
 The theme of the jam was "running out of power," so I did something dumb and obvious: I made a robot with a power meter. I put it in a level filled with walls, batteries, and "power drains." When I went to bed Friday night, that was it: a game about getting from Point A to Point B without running out of power, over and over again.
 
@@ -61,7 +61,7 @@ With all the mechanics in place, I played through a few times for balance. I twe
 
 ### Influences
 
-Two things influenced my approach toward designing this game. The first is Jesse Schell's book [The Art of Game Design: A Book of Lenses](). It helps frame a lot of important questions. The second is roguelikes in general, which at their core are about creating interesting decisions for players every single turn of every game.
+Two things influenced my approach toward designing this game. The first is Jesse Schell's book [The Art of Game Design: A Book of Lenses](https://www.amazon.com/Art-Game-Design-Lenses-Second/dp/1466598646/). It helps frame a lot of important questions. The second is roguelikes in general, which at their core are about creating interesting decisions for players every single turn of every game.
 
 ## Music
 
