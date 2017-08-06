@@ -4,7 +4,7 @@ Slug: powerl-postmortem
 Tags: games
 Status: published
 
-[Ludum Dare 39](https://ldjam.com) fell on a weekend when I wasn't busy, and I wanted an excuse to learn a bit about Apple's game libraries, so I made another [roguelike](), [PoweRL](https://irskep.itch.io/powerl):
+[Ludum Dare 39](https://ldjam.com) fell on a weekend when I wasn't busy, and I wanted an excuse to learn a bit about Apple's game libraries, so I made another [roguelike](https://en.wikipedia.org/wiki/Roguelike), [PoweRL](https://irskep.itch.io/powerl):
 
 ![Screenshot](|filename|/img/powerl/screenshot.png)
 
