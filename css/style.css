@@ -281,3 +281,10 @@ article.home-page ul.article-summary-list {
   padding-left: 16px;
   border-radius: 4px;
   margin-bottom: 1rem; }
+
+.resume-image {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateY(8px); }

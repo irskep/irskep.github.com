@@ -417,3 +417,11 @@ article.home-page {
   border-radius: 4px;
   margin-bottom: 1rem;
 }
+
+.resume-image {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  transform: translateY(8px);
+}
