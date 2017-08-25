@@ -12,7 +12,7 @@ no_header: True
 **Hipmunk:** Engineering manager & Mobile engineer, January 2017-present
 
 Still working on Hipmunk for iOS and leading the mobile team, but now also
-managing the people on mobile team.
+managing the people on the mobile team.
 
 Hard stuff: Hiring great engineers  
 Fun stuff: Hiring great engineers
