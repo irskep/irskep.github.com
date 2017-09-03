@@ -16,7 +16,7 @@ Before:
 
 After:
 
-(youtube)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5ggZDCYNHyg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## Game mechanics
 
@@ -95,6 +95,8 @@ I immediately regretted all of my art choices. The whole thing looked like crap 
 As I converted more of my art to the new style, I became frustrated with Piskel’s UI. I bought [Aseprite](https://www.aseprite.org) instead and my pixel art productivity skyrocketed. I reduced my color palette and put the finishing touches on the sprites. As someone without any art training, I found creating the color palette to be a bigger challenge than I would have expected, though I suspect if I had started with Aseprite instead of Piskel I would have been more consistent from the beginning and had an easier time of it.
 
 My game-over screens were just black voids with text in the middle of them, so as soon as I was done with the sprites, I did some simple illustrations for the three possible endgame conditions: a win, a loss due to power, and a loss due to health.
+
+One enemy, formerly known as the turtle, moves every other turn. It was impossible to know at a glance whether it was about to move or not. I replaced the single turtle frame with a blobby thing that flips between two frames.
 
 I’m leaving a lot out here. There were probably a hundred more little things I did to the art.
 
