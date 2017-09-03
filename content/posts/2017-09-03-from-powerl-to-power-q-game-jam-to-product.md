@@ -4,7 +4,7 @@ Slug: from-powerl-to-power-q-game-jam-to-product
 Tags: games
 Status: published
 
-[Power-Q](https://irskep.itch.io/power) is the polished, productized version of my Ludum Dare game [PoweRL](https://irskep.itch.io/powerl). They have exactly the same mechanics, but Power-Q has about 30 extra hours of effort invested into it. Before I send it out into the world, I want to reflect upon where those 30 hours went.
+[Power-Q](https://irskep.itch.io/powerq) is the polished, productized version of my Ludum Dare game [PoweRL](https://irskep.itch.io/powerl). They have exactly the same mechanics, but Power-Q has about 30 extra hours of effort invested into it. Before I send it out into the world, I want to reflect upon where those 30 hours went.
 
 Power-Q is in beta on Mac and iOS. You can get the Mac beta [on itch.io](https://irskep.itch.io/powerl), but to get the iOS beta you’ll have to [email me.](powerq@steve.steveasleep.com)
 
