@@ -24,7 +24,7 @@ universe:
 
 # My employer's git workflow
 
-I work at Hipmunk. We use a rebase-and-squash workflow. this means that when
+I work at Hipmunk. We use a rebase-and-squash workflow. This means that when
 a pull request has been reviewed, the tests pass, and it's ready to go
 "into production," all the commits from the branch are combined into one and
 added as a single commit on the master branch, with the pull request
