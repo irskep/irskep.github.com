@@ -1,4 +1,4 @@
-Title: How to hire me
+Title: Hiring FAQ
 Date: 2017-08-24
 
 Hello! You're here because you're interested in hiring me. Here's a quick
