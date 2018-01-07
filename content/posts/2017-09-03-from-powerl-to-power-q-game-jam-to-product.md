@@ -78,7 +78,7 @@ The dumb AI is mostly fine, but for the "turtle" (originally an actual turtle, n
 
 #### Scoring
 
-Typical players will die a lot before beating the game. A simple high score counter seemed like a good solution. I made each enemy worth one point and displayed the highest score on the title screen.
+Typical players will die a lot before beating the game, and I don't want them to feel like they aren't progressing. A simple high score counter seemed like a good solution. I made each enemy worth one point and displayed the highest score on the title screen.
 
 ## Art
 
