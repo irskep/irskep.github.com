@@ -1,81 +1,83 @@
 Title: How to hire me
 Date: 2017-08-24
 
-If I sent you this link, it's because I'm taking you seriously as a prospective
-recruiter or employer. It's all stuff you'd get from the usual email exchanges
-and 30 minute intro calls, but my hope is that it's more efficient and friendly
-for both of us!
+Hello! You're here because you're interested in hiring me. Here's a quick
+outline of where I'm at and where I'm headed.
 
-If any of this sounds weirdly off-putting, please let me know, because I'm
-honestly trying to be helpful. I only mention that because what I'm doing here
-seems unusual.
+## Current position
+
+I've been at Hipmunk on the mobile team since mid 2015. I've been my team's
+manager since late 2016. There are two Android engineers, one iOS engineer, and
+me, also acting as an iOS engineer.
+
+I spend about half my time programming, half managing.
+
+The earliest I could arrive on my first day at a new job is probably
+mid-February 2018.
+
+Hipmunk was acquired by SAP/Concur in October 2016.
+
+## Career next steps
+
+### Manager?
+
+I'm tentatively interested in new management roles. I really like being a
+multiplier on a team's productivity! But with only a year under my belt, I
+worry about taking on a new challenge too soon. If you hire me, I will need
+help. But I'm fully dedicated to becoming a great manager.
+
+### Engineer?
+
+I love programming! I'm open to joining a team as an individual contributor, but
+there should be either leadership opportunities or radical autonomy.
+
+See below for technology specifics.
+
+### Early-stage startup generalist?
+
+I love building new products as quickly as possible while maintaining quality.
+I'm great at iOS, web frontend, and web backend development. I learn quickly. As
+the company grows, I can take whatever leadership roles you need me to and step
+back from coding.
+
+But I'm not going to follow you very far down the "trade salary for equity"
+path. Don't let that stop you from reaching out, though!
+
+## Cheat codes
+
+If any of these things describe your company or the position, bringing it up
+is a way to get past all my defenses. If none of them are true, don't worry!
+
+* You are trying to un-break an industry being ruined by the internet,
+  e.g. music, journalism, human communication.
+* Your business model does not involve ads or enterprise sales.
+* Good documentation is at the core of your product or company culture.
 
 ## Deal breakers
 
 * Long commute from Glen Park. My current commute is 30 minutes on a bike. It's
   my only exercise. Mountain View is too far. (Good remote work culture would
   mitigate this.) 
-* Open office without a guarantee of quiet. (Good remote work culture would
-  also mitigate this.)
 * Your company is likely helping to bring about the downfall of humanity or
   [some other sort of slow-motion apocalypse](https://io9.gizmodo.com/william-gibson-on-the-apocalypse-america-and-the-peri-1656659382).
+* Most of my job would be writing JavaScript. (Some is OK!)
+ 
+One not-quite-deal-breaker: open office without quiet hours.
 
-## Why it will be hard for you to hire me
+## Fun facts about Steve
 
-I've been a manager since January 2016, not yet a full year. Because of that,
-it's tricky for me to change jobs until early next year, because I really want
-to have leveled up before I leave this behind.
-
-When I do decide to leave, I want to make sure the team is in a good position,
-which probably means I'll want to give lots of notice.
-
-## What I want to do next
-
-### Manager or individual contributor?
-
-I'm on the fence about whether I want to pursue a management or IC career
-track. When picking my next job, I think it will come down to whether there's
-a big opportunity in either track for mentorship and growth. I'll always
-want to mix and match; I want to use both my leadership skills and technical
-skills.
-
-### Industry
-
-I've never been very picky about what industry my employer is in. I lean toward
-consumer products because I'm very motivated by connecting my work with end
-users, but I'm very open to other ideas.
-
-I would jump at the chance to work on a new desktop music app, or a creativity
-tool.
-
-### Size
-
-I was happy in a 4-person startup, but less happy when it never grew.
-
-The larger the company, the more I want to know about the specific team I'd
-join. This is why I never got far with Google.
-
-## How to sell me on an opportunity
-
-Here's some information that might help you form a pitch.
+Here's some information that might help you pitch me on your opportunity.
 
 ### Things I like to do
 
-* Give talks. I did a _lot_ of this in college but haven't had as many
-  chances to do it over the past few years. This is partially my own fault.
-* Write for fun, teaching, or documentation.
-* Program computers. My GitHub profile shows 91 repositories, and that's
-  just the public ones.
-* Make music. I'm not optimistic about using this in a technology setting.
-* Ship great stuff to people who appreciate it.
-* Put good interfaces on complex tech.
-
-### Things to mention
-
-* Who will my manager be?
-* Who will my peers be?
-* How much of the team is new blood vs veterans, both in company tenure and
-  total experience?
+* Public speaking. I haven't done a conference in a while, but I'm comfortable
+  in front of a crowd and I like giving technical talks. I've given about
+  20 talks since 2007, some polished, some extemporaneous.
+* Writing for fun, for teaching, or for documentation. I've published blog posts
+  while working at Yelp, Graffiti Labs, and Hipmunk.
+* Making music.
+* Shipping great stuff to people who appreciate it.
+* Putting good interfaces on complex technology.
 
 ### Technology I like to work with
 
@@ -87,33 +89,7 @@ Here's some information that might help you form a pitch.
 
 (Not deal breakers, though.)
 
-* JavaScript
 * Node.js
 * React Native
 * Hadoop
-* Your in-house ORM or web framework if you are not Google or that ORM/web
-  framework is not your actual product
-* Anything with an incremental build time of more than 5 seconds
-
-### Weirdly specific imaginary opportunities I would be excited about
-
-#### The Manager-In-Waiting
-
-You bring me on as a senior engineer/tech lead and either have me manage a
-team when it makes sense, or help me grow in a non-management engineering
-leadership role.
-
-#### The First iOS Engineer
-
-You need a native iOS app. You need it soon and you need it to be good. You
-want me to write the app, hire some more iOS developers, and keep up with
-the needs of the product.
-
-#### The Second iOS Engineer
-
-Just like the last one, but your first iOS engineer is AMAZING.
-
-#### The Technical Cofounder
-
-You somehow manage to convince me that the founding team can get from zero to
-one and isn't made of sociopaths.
+* Home-grown web frameworks and ORMs
