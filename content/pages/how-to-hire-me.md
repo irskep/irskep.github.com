@@ -22,7 +22,7 @@ Hipmunk was acquired by SAP/Concur in October 2016.
 I want to grow as a leader and have fun at my job.
 
 Specifically, I'm focusing on team lead or manager roles on iOS or iOS/Android
-teams.
+teams. I am weirdly passionate about iOS as a development platform.
 
 ## Cheat codes
 
