@@ -1,5 +1,5 @@
 PY=python
-PELICAN=~/.pyenv/shims/pelican
+PELICAN=/Users/steve/env/steveasleep/bin/pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
