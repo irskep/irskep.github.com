@@ -50,7 +50,7 @@ MENUITEMS = (
     ]),
     ('External', [
         ('GitHub', 'https://github.com/irskep'),
-        ('Twitter', 'https://twitter/irskep'),
+        ('Twitter', 'https://twitter.com/irskep'),
         ('last.fm', 'https://www.last.fm/user/irskep'),
         ('Email', 'mailto:randos@steve.steveasleep.com'),
     ])
