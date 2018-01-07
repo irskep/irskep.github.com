@@ -6,23 +6,19 @@ outline of where I'm at and where I'm headed.
 
 ## Current position
 
-I've been at Hipmunk on the mobile team since mid 2015. I've been managing my
-team since late 2016. There are two Android engineers, one iOS engineer, and
-me, also acting as an iOS engineer.
+I manage the mobile team at Hipmunk, and do some iOS development as well.
+The team is me, another iOS developer, and two Android developers.
 
-I spend about half my time programming, half managing.
-
-The earliest I could arrive on my first day at a new job is probably
-April 2018.
-
-Hipmunk was acquired by SAP/Concur in October 2016.
+The earliest I could leave is April 2018.
 
 ## What I want
 
 I want to grow as a leader and have fun at my job.
 
 Specifically, I'm focusing on team lead or manager roles on iOS or iOS/Android
-teams. I am weirdly passionate about iOS as a development platform.
+teams. I am weirdly passionate about iOS as a development platform. But if
+you need something else, please pitch it to me, because I like getting excited
+about things!
 
 ## Cheat codes
 
