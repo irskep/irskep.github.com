@@ -1,5 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/steve-johnson.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2017-09-03T00:00:00-07:00</updated><entry><title>From PoweRL to Power-Q: game jam to product</title><link href="http://steveasleep.com/from-powerl-to-power-q-game-jam-to-product.html" rel="alternate"></link><published>2017-09-03T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-09-03:from-powerl-to-power-q-game-jam-to-product.html</id><summary type="html">&lt;p&gt;&lt;a href="https://irskep.itch.io/powerq"&gt;Power-Q&lt;/a&gt; is the polished, productized version of my Ludum Dare game &lt;a href="https://irskep.itch.io/powerl"&gt;PoweRL&lt;/a&gt;. They have exactly the same mechanics, but Power-Q has about 30 extra hours of effort invested into it. Before I send it out into the world, I want to reflect upon where those 30 hours&amp;nbsp;went.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Johnson</title><link href="http://steveasleep.com/" rel="alternate"></link><link href="http://steveasleep.com/feeds/steve-johnson.atom.xml" rel="self"></link><id>http://steveasleep.com/</id><updated>2017-12-20T00:00:00-08:00</updated><entry><title>2017 Year in Review</title><link href="http://steveasleep.com/2017-year-in-review.html" rel="alternate"></link><published>2017-12-20T00:00:00-08:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-12-20:2017-year-in-review.html</id><summary type="html">&lt;p&gt;This year I did a bunch of things, but one thing I didn’t do was blog about every single thing. Here’s a roundup of everything I&amp;nbsp;missed.&lt;/p&gt;
+&lt;h2 id="i-made-some-games"&gt;I made some&amp;nbsp;games&lt;/h2&gt;
+&lt;p&gt;I made three games this year for Ludum Dare 38, 39, and 40: &lt;a href="https://irskep.itch.io/roguebasement"&gt;Rogue Basement&lt;/a&gt;, &lt;a href="https://irskep.itch.io/powerq"&gt;Power-Q&lt;/a&gt;, and &lt;a href="http://steveasleep.com/please-come-in/"&gt;Please, Come In&lt;/a&gt;. Their collective soundtracks contain five original&amp;nbsp;songs.&lt;/p&gt;
+&lt;p&gt;The only one I really dedicated myself to during Ludum Dare was &lt;em&gt;Rogue Basement&lt;/em&gt;, and it shows in the ratings. The other two were experiments with frameworks and genres. But I did polish &lt;em&gt;Power-Q&lt;/em&gt; for an iOS release, and &lt;a href="https://itunes.apple.com/us/app/power-q/id1278699114?mt=8"&gt;you can get it&amp;nbsp;now!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It feels good to hit a new personal best in game releases, because it means
+I’m more motivated than ever to take my coding to creative places. And the
+consistent quality of each game demonstrates how much I’ve learned about game
+design over time. &lt;em&gt;Rogue Basement&lt;/em&gt; and &lt;em&gt;Power-Q&lt;/em&gt; eclipse all ~15 other games
+I’ve ever made in terms of fun and&amp;nbsp;polish.&lt;/p&gt;
+&lt;!-- idea: getting better at making games --&gt;
+
+&lt;h2 id="i-wrote-some-open-source-libraries"&gt;I wrote some open source&amp;nbsp;libraries&lt;/h2&gt;
+&lt;p&gt;Early in the year, I was looking into ways to manage a local music collection
+and make playback control available to everyone on my home network. After
+becoming frustrated with the mpd ecosystem and discovering
+&lt;a href="http://beets.io"&gt;beets&lt;/a&gt;, I wrote a collection of Python and JavaScript code
+called &lt;a href="https://github.com/irskep/summertunes"&gt;Summertunes&lt;/a&gt; to marry beets to
+the &lt;a href="http://mpv.io"&gt;&lt;span class="caps"&gt;MPV&lt;/span&gt;&lt;/a&gt; player with an iTunes-like web interface. Eventually
+I wrote some small patches for beets and packaged it all up as a beets plugin
+and Python package. But I haven’t made any noise about it at all because it’s
+a lot of trouble to set up, and some features aren’t as reliable as I’d&amp;nbsp;like.&lt;/p&gt;
+&lt;p&gt;Before writing &lt;em&gt;Rogue Basement&lt;/em&gt;, I wrote
+&lt;a href="http://steveasleep.com/clubsandwich/"&gt;clubsandwich&lt;/a&gt;. It’s a framework for
+making roguelikes in Python 3 built on the
+&lt;a href="http://foo.wyrd.name/en:bearlibterminal"&gt;BearLibTerminal&lt;/a&gt;
+retro-terminal-style rendering &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; input library. It has comprehensive
+documentation and&amp;nbsp;examples.&lt;/p&gt;
+&lt;p&gt;Before writing &lt;em&gt;Please, Come In&lt;/em&gt;, I wrote &lt;a href="http://steveasleep.com/jumbogrove/"&gt;Jumbo
+Grove&lt;/a&gt;. It’s a framework for writing
+interactive fiction in JavaScript built on &lt;a href="http://vuejs.org/"&gt;Vue.js&lt;/a&gt;. It
+has comprehensive documentation and&amp;nbsp;examples.&lt;/p&gt;
+&lt;p&gt;(Obviously there’s a theme to the last two, and it’s a topic I plan to write
+about&amp;nbsp;soon.)&lt;/p&gt;
+&lt;p&gt;This year I made a very small number of changes to &lt;a href="http://literallycanvas.com"&gt;Literally
+Canvas&lt;/a&gt;. I am still mystified by the popularity
+of this library. Or, mystified that no one else is interested in maintaining
+it despite it being part of their&amp;nbsp;business.&lt;/p&gt;
+&lt;p&gt;And finally, I helped the &lt;a href="http://pyglet.readthedocs.io"&gt;pyglet&lt;/a&gt; project
+overhaul its documentation tooling. They had used epydoc for years and had
+switched to a hacky Sphinx setup that was breaking down on recent Python and
+Sphinx releases. (I did something similar for
+&lt;a href="http://pillow.readthedocs.io"&gt;pillow&lt;/a&gt; in&amp;nbsp;2015.)&lt;/p&gt;
+&lt;!-- idea: my approach to writing new libraries --&gt;
+
+&lt;h2 id="i-worked-on-some-apps"&gt;I worked on some&amp;nbsp;apps&lt;/h2&gt;
+&lt;p&gt;At the beginning of the year, I got involved with &lt;a href="http://ragtag.team"&gt;Ragtag&lt;/a&gt; and started working on a tool for publishing political calls to action. I made an &lt;span class="caps"&gt;MVP&lt;/span&gt;, but wasn’t able to drum up any interest, so I abandoned it. This and another potential project taught me that I don’t have the mental energy to take on projects that amount to second jobs: projects with teams, external requirements, and tools I don’t happen to be interested in. I have a lot of raw output, but unless a project follows my obsession of the month and has no stakes, it’s draining instead of energizing. Donating money is much easier. I don’t want to burn&amp;nbsp;out.&lt;/p&gt;
+&lt;p&gt;At some point I decided to take a structured approach to working through my 3-digit Steam backlog. I imported everything into &lt;a href="http://completionator.com"&gt;Completionator&lt;/a&gt;, wrote a scraper for its Excel export feature, and wrote  a &lt;a href="https://github.com/irskep/completionator-cli"&gt;command line tool&lt;/a&gt; to suggest games for me to play. (While kind of neat, this approach didn’t work because I still buy Humble Bundles faster than I can get through the&amp;nbsp;games&amp;#8230;)&lt;/p&gt;
+&lt;p&gt;Late in the year, I made a small &lt;span class="caps"&gt;UI&lt;/span&gt; polish update to &lt;a href="http://sendimals.com"&gt;Sendimals&lt;/a&gt; and stuck some Google ads at the bottom of the top-level screen. Sendimals now has revenue of two dollars per month. I developed a new way of coloring body parts (our #1 feature request) but haven’t yet found the motivation to update all the &lt;span class="caps"&gt;UI&lt;/span&gt; and data structures to support&amp;nbsp;it.&lt;/p&gt;
+&lt;h2 id="i-made-some-videos"&gt;I made some&amp;nbsp;videos&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/channel/UC0lx9IhbHiM5XTcdISqttWQ"&gt;I sort of have a YouTube channel now.&lt;/a&gt; I made it to
+host my &lt;em&gt;Rogue Basement&lt;/em&gt; timelapse and update videos. Later on, I got the
+idea to dig up my old games, get them running on modern macOS, and do video
+captures for&amp;nbsp;posterity.&lt;/p&gt;
+&lt;h2 id="i-learned-some-new-tech"&gt;I learned some new&amp;nbsp;tech&lt;/h2&gt;
+&lt;p&gt;My weapons of choice are Python 3, Swift, and &lt;span class="caps"&gt;ES6&lt;/span&gt;. I didn’t branch out from those languages this year, but there was a lot to learn within those&amp;nbsp;domains.&lt;/p&gt;
+&lt;p&gt;In the JavaScript world, I learned about &lt;span class="caps"&gt;HTML5&lt;/span&gt; audio, and built a library on Vue.js. (Yeah, it really is better than&amp;nbsp;React.)&lt;/p&gt;
+&lt;p&gt;In Apple’s domain, I learned SpriteKit, GameplayKit, and the Entity-Component-System design&amp;nbsp;pattern.&lt;/p&gt;
+&lt;p&gt;I dug deep into the world of roguelikes this year. It’s a really fun genre to work in as a programmer, because you can go as shallow or deep as you want in different aspects of game design. I spent a lot of time with game architecture design patterns and procedural level&amp;nbsp;algorithms.&lt;/p&gt;
+&lt;!-- idea: why vue.js is great for writing libs for noobs --&gt;
+
+&lt;h2 id="i-discovered-some-tools"&gt;I discovered some&amp;nbsp;tools&lt;/h2&gt;
+&lt;p&gt;2017 was the year I discovered &lt;a href="http://itch.io"&gt;itch.io&lt;/a&gt;. They’re doing an amazing job of cultivating the Truly Indie™ game scene. They basically run the bar where all the up-and-coming local bands play, except “local” is&amp;nbsp;“everywhere.” &lt;/p&gt;
+&lt;p&gt;While making art for Power-Q, I discovered &lt;a href="https://aseprite.org"&gt;Aseprite&lt;/a&gt;, an amazing
+pixel art&amp;nbsp;tool.&lt;/p&gt;
+&lt;h2 id="i-became-a-better-drummer"&gt;I became a better&amp;nbsp;drummer&lt;/h2&gt;
+&lt;p&gt;I practice drums 2-4 days a week after work and over the weekend. I can’t really claim any milestones here, but if my band ever gets off the ground, you might get a chance to hear me on an &lt;span class="caps"&gt;EP&lt;/span&gt;!&lt;/p&gt;
+&lt;h2 id="i-played-a-lot-of-video-games"&gt;I played a lot of video&amp;nbsp;games&lt;/h2&gt;
+&lt;p&gt;This isn’t really an achievement, but here’s a random Games of the Year list in the middle of a post about creative&amp;nbsp;output.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Steve Johnson Outstanding Achievement in Game Design&amp;nbsp;Awards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Out Of The Park Baseball 2016 and &lt;span class="caps"&gt;XCOM&lt;/span&gt;&amp;nbsp;2&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Steve Johnson This Is A Good Roguelike&amp;nbsp;Awards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Tales of Maj’Eyal 4 and&amp;nbsp;HyperRogue&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Steve Johnson I Don’t Hate This First Person Shooter&amp;nbsp;Awards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ziggurat and Borderlands&amp;nbsp;2&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Steve Johnson This Game Deserves An Award&amp;nbsp;Awards&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Rocket League and The&amp;nbsp;Witness&lt;/p&gt;
+&lt;h2 id="when-i-write-all-that-out-it-seems-like-a-lot"&gt;When I write all that out it seems like a&amp;nbsp;lot&lt;/h2&gt;
+&lt;p&gt;Those are the things I did with my nights and weekends in 2017! In retrospect, it looks like I overdid it. Time will tell if I manage to tone it down this&amp;nbsp;year.&lt;/p&gt;</summary></entry><entry><title>From PoweRL to Power-Q: game jam to product</title><link href="http://steveasleep.com/from-powerl-to-power-q-game-jam-to-product.html" rel="alternate"></link><published>2017-09-03T00:00:00-07:00</published><author><name>Steve Johnson</name></author><id>tag:steveasleep.com,2017-09-03:from-powerl-to-power-q-game-jam-to-product.html</id><summary type="html">&lt;p&gt;&lt;a href="https://irskep.itch.io/powerq"&gt;Power-Q&lt;/a&gt; is the polished, productized version of my Ludum Dare game &lt;a href="https://irskep.itch.io/powerl"&gt;PoweRL&lt;/a&gt;. They have exactly the same mechanics, but Power-Q has about 30 extra hours of effort invested into it. Before I send it out into the world, I want to reflect upon where those 30 hours&amp;nbsp;went.&lt;/p&gt;
 &lt;p&gt;Power-Q is in beta on Mac and iOS. You can get the Mac beta &lt;a href="https://irskep.itch.io/powerl"&gt;on itch.io&lt;/a&gt;, but to get the iOS beta you’ll have to &lt;a href="powerq@steve.steveasleep.com"&gt;email&amp;nbsp;me.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="screenshot" src="http://steveasleep.com/img/powerq/screenshot.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Before:&lt;/p&gt;
