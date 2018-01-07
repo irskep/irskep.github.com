@@ -97,6 +97,7 @@ Here's some information that might help you pitch me on your opportunity.
 
 ### Open source projects
 
+* [BearLibTerminal-Swift](http://steveasleep.com/BearLibTerminal-Swift)
 * [Literally Canvas](http://literallycanvas.com)
 * [Club Sandwich](http://steveasleep.com/clubsandwich)
 * [Jumbo Grove](http://steveasleep.com/jumbogrove)
