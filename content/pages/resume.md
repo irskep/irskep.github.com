@@ -4,7 +4,7 @@ no_header: True
 
 [PDF version](/downloads/Steve_Johnson_resume.pdf)
 
-**Summary:** Software engineer with leadership skills and deep knowledge of iOS and full stack web development. Writes pretty well and plays in local bands. Willing to work in San Francisco or in East Bay near BART.
+**Summary:** Engineering manager (1y) and experienced generalist software developer with an iOS focus. Writes pretty well and plays in local bands. Willing to work in San Francisco or in East Bay near BART.
 
 # Jobs
 
