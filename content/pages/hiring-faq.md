@@ -1,9 +1,6 @@
 Title: Hiring FAQ
 Date: 2017-08-24
 
-Hello! You're here because you're interested in hiring me. Here's a quick
-outline of where I'm at and where I'm headed.
-
 ## Current position
 
 I manage the mobile team at Hipmunk, and do some iOS development as well.
