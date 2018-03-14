@@ -26,8 +26,7 @@ referring only to PCG32, the one that generates 32-bit unsigned integers and
 keeps its state as two 64-bit unsigned integers.
 
 (By the way, I used PCG in
-[Dr. Hallervorden](https://irskep.itch.io/dr-hallervorden), my 7DRL entry for 2018.
-Check it out!)
+[Dr. Hallervorden](https://irskep.itch.io/dr-hallervorden), my 7DRL entry for 2018.)
 
 # What makes PCG unique?
 
@@ -70,9 +69,75 @@ Stream 2: 89, 61, 71, 58, 85, 14, 70, 6, 59, 31
 This means you can start your game with one seed, and then lazily create
 individual PCG instances for each level at the time you need them, without
 worrying that your PRNG state has been messed up just by playing the game.
+You don't need to do silly things like generate a bunch of random numbers
+at the start of the game to use for level generator seeds later on, which
+adds complexity and unnecessary work, especially if you have branching
+levels.
 
-And once we've created a PCG instance, we only need to store two unsigned
+Once we've created a PCG instance, we only need to store two unsigned
 integers! Serialization's a snap.
+
+So, to sum up:
+
+* You can have multiple, uncorrelated streams of data from the same seed
+* You only need to store 16 bytes per instance
+
+# A fun trick with strings
+
+Imagine you have a branching level structure. You've got `normal-dungeon-1`
+through `normal-dungeon-30`, and you might branch off into `dwarvish-mines-1`
+somewhere between level 5 and 15.
+
+Rather than deciding exactly how to branch when the game starts and generating
+all the level seeds in advance, you can create an object that lazily creates
+PCG32 instances based on the hash value if your level ID string!
+
+```swift
+public class PRNGStore: Codable {
+  public let seed: UInt64
+
+  private var rngCache = [UInt64: PCG32Generator]()
+  private var collisionChecks = [UInt64: String]()
+
+  public init(seed: UInt64) {
+    self.seed = seed
+  }
+
+  /// Lazily create a PRNG instance based on the given stream
+  public func get(stream: UInt64) -> PCG32Generator {
+    if let rng = rngCache[stream] { return rng }
+    let rng = PCG32Generator(seed: seed, seq: stream)
+    rngCache[stream] = rng
+    return rng
+  }
+
+  /// Lazily create a PRNG based on the given string by getting its hash value
+  /// and handling hash collisions
+  public func get(id: String) -> PCG32Generator {
+    var seq = UInt64(bitPattern: Int64(id.hashValue))
+    while collisionChecks[seq] != nil && collisionChecks[seq] != id {
+      print("Collision between", id, "and", collisionChecks[seq] ?? "nil")
+      seq += 1
+    }
+    if collisionChecks[seq] == nil {
+      collisionChecks[seq] = id
+    }
+    return self.get(stream: seq)
+  }
+
+  public func get(stream: UInt64) -> PCG32Generator {
+    if let rng = rngCache[stream] { return rng }
+    let rng = PCG32Generator(seed: seed, seq: stream)
+    rngCache[stream] = rng
+    return rng
+  }
+}
+```
+
+Once you have a class like this, you never again need to think about when and
+how to generate PRNG instances, because it all just happens by magic. Using the
+example at the beginning of this section, you can now generate any dungeon using
+the PRNG instance at `prngStore[levelId]`, e.g. `prngStore["dwarvish-mines-1"]`.
 
 # Language support
 
