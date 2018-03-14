@@ -2,7 +2,6 @@ Title: PCG32: The Perfect PRNG for Roguelikes
 Category: Articles
 Slug: pcg32-the-perfect-prng-for-roguelikes
 Tags: gamedev roguelikes
-Status: draft
 
 Roguelikes are games that, among other things, have a lot of procedurally
 generated content. To generate content, we need random numbers. And to get
