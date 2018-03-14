@@ -25,6 +25,10 @@ is a lot easier. There are many variants of PCG, but in this post I'll be
 referring only to PCG32, the one that generates 32-bit unsigned integers and
 keeps its state as two 64-bit unsigned integers.
 
+(By the way, I used PCG in
+[Dr. Hallervorden](https://irskep.itch.io/dr-hallervorden), my 7DRL entry for 2018.
+Check it out!)
+
 # What makes PCG unique?
 
 PCG has a lot going for it, and [the web site does a good job of explaining
