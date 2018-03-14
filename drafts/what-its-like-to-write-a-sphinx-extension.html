@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Steve Johnson – What It&#8217;s Like to Write a Sphinx&nbsp;Extension</title>
+    <title>Steve Johnson – What It's Like to Write a Sphinx Extension</title>
 
     <meta name="viewport" content="width=device-width">
     <meta charset="UTF-8">
@@ -65,8 +65,8 @@
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://steveasleep.com/drafts/what-its-like-to-write-a-sphinx-extension.html" rel="bookmark" title="Permalink to What It’s Like to Write a Sphinx Extension">
-        What It&#8217;s Like to Write a Sphinx&nbsp;Extension
+      <a href="http://steveasleep.com/drafts/what-its-like-to-write-a-sphinx-extension.html" rel="bookmark" title="Permalink to What It's Like to Write a Sphinx Extension">
+        What It's Like to Write a Sphinx Extension
       </a>
     </h1>
     <div class="post-info">
@@ -76,17 +76,17 @@
     </div>
   </header>
 
-    <div class="entry-content hyphenate"><h1 id="why-i-wanted-to-write-a-sphinx-extension">Why I wanted to write a Sphinx&nbsp;extension</h1>
+    <div class="entry-content hyphenate"><h1 id="why-i-wanted-to-write-a-sphinx-extension">Why I wanted to write a Sphinx extension</h1>
 <p>As the de facto Director of Documentation for <a href="mrjob">mrjob</a>, I spend a lot of
 time dealing with <a href="sphinx">Sphinx</a>—certainly more time than anyone else. So
 more than anyone else, I notice pain points in the process of writing
-documentation for&nbsp;mrjob.</p>
+documentation for mrjob.</p>
 <p>The pain point I identified most recently was how many places you have to
 document a configuration option. You see, almost every option in mrjob can be
 set in a config file or on the command line. So it needs to be documented in
 the <code>--help</code> string, it needs to have a detailed description on the appropriate
-doc page, and it needs to appear in the &#8220;quick reference&#8221;&nbsp;table.</p>
-<p>Let&#8217;s take the <code>interpreter</code> option as an example. It&#8217;s defined as an option in
+doc page, and it needs to appear in the "quick reference" table.</p>
+<p>Let's take the <code>interpreter</code> option as an example. It's defined as an option in
 <code>mrjob/options.py</code>:</p>
 <div class="highlight"><pre><span></span>opt_group.add_option(
     &#39;--interpreter&#39;, dest=&#39;interpreter&#39;, default=None,
@@ -104,7 +104,7 @@ Option                                                  Switches                
 
 
 <p>(Incomprehensibility of large reStructuredText tables at small column
-widths intentionally&nbsp;preserved.)</p>
+widths intentionally preserved.)</p>
 <p>And finally, it has a description in <code>configs-all-runners.rst</code>:</p>
 <div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_opt_interpreter:</span>
 
@@ -119,42 +119,43 @@ widths intentionally&nbsp;preserved.)</p>
 <p>The above block contains (in order): an anchor for the reference table entry to
 link to, the config file version of the option in bold, the command line
 version of the option in the style of the <code>option</code> role (normally italic), and
-a description of what the option&nbsp;does.</p>
-<p>There are several ways in which the above system of documention an option is&nbsp;suboptimal.</p>
+a description of what the option does.</p>
+<p>There are several ways in which the above system of documention an option is
+suboptimal.</p>
 <ol>
 <li>
-<p>You have to describe the same option in three places. It&#8217;s tedious and the
+<p>You have to describe the same option in three places. It's tedious and the
    likelihood of leaving a piece of information out of date is high. (In fact,
-   I found several out-of-date descriptions while writing my&nbsp;extension.)</p>
+   I found several out-of-date descriptions while writing my extension.)</p>
 </li>
 <li>
-<p>reStructuredText (hereafter <span class="caps">RST</span>) tables are terrible to define and badly
-   implemented. <code>docutils</code>, the library that generates the <span class="caps">HTML</span> from the <span class="caps">RST</span>,
+<p>reStructuredText (hereafter RST) tables are terrible to define and badly
+   implemented. <code>docutils</code>, the library that generates the HTML from the RST,
    generates a <code>&lt;colgroup&gt;</code> element that defines the width of each column based
    on the <em>number of <code>=</code> characters above it in the text definition</em>. When most
    of your table content is actually just link markup, this implementation
-   detail balloons the widths of&nbsp;tables.</p>
+   detail balloons the widths of tables.</p>
 </li>
 </ol>
 <p>Additionally, if you increase the length of the longest option name by
    adding a new option <code>--with-a-really-long-name</code>, you have to add whitespace
-   to every. single. freaking. table.&nbsp;row.</p>
+   to every. single. freaking. table. row.</p>
 <ol>
 <li>The markup for detailed option descriptions is prone to copy/paste error and
-   laziness in formatting on the part of the untrained&nbsp;contributor.</li>
+   laziness in formatting on the part of the untrained contributor.</li>
 </ol>
-<h1 id="how-i-improved-the-situation">How I improved the&nbsp;situation</h1>
-<p>I wrote a Sphinx extension that replaces the above process with this&nbsp;one:</p>
+<h1 id="how-i-improved-the-situation">How I improved the situation</h1>
+<p>I wrote a Sphinx extension that replaces the above process with this one:</p>
 <ol>
 <li>
 <p>Describe the command line option in <code>options.py</code>.</p>
 </li>
 <li>
 <p>Make sure <code>.. mrjob-optlist:: all</code> is somewhere in the documentation, to
-   collect all options with <code>:set: all</code>. You basically never need to do&nbsp;this.</p>
+   collect all options with <code>:set: all</code>. You basically never need to do this.</p>
 </li>
 <li>
-<p>Describe the option on the appropriate doc page with this&nbsp;syntax:</p>
+<p>Describe the option on the appropriate doc page with this syntax:</p>
 </li>
 </ol>
 <div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_opt_interpreter:</span>
@@ -174,26 +175,27 @@ a description of what the option&nbsp;does.</p>
 </pre></div>
 
 
-<p>And you&#8217;re&nbsp;done.</p>
-<p>I&#8217;ll be the first to admit that the above syntax still has flaws. But it has a
-few key&nbsp;advantages:</p>
+<p>And you're done.</p>
+<p>I'll be the first to admit that the above syntax still has flaws. But it has a
+few key advantages:</p>
 <ol>
 <li>
-<p>You don&#8217;t need to edit the reference table by hand. Fewer duplications of
-   text and no idiotic <span class="caps">RST</span>&nbsp;tables.</p>
+<p>You don't need to edit the reference table by hand. Fewer duplications of
+   text and no idiotic RST tables.</p>
 </li>
 <li>
 <p>You define the different components of the option (config key, command line
-   switches, default value) semantically instead of by&nbsp;convention.</p>
+   switches, default value) semantically instead of by convention.</p>
 </li>
 </ol>
-<p>In the future, I&#8217;d like to have it automatically generate the <code>opt_X</code> and
+<p>In the future, I'd like to have it automatically generate the <code>opt_X</code> and
 <code>:type:</code> links to remove even more manual labor from the process of documenting
 options, but this is enough of an improvement that I went ahead and submitted a
-<a href="pr">pull request</a> for&nbsp;it.</p>
-<h1 id="how-i-wrote-the-extension">How I wrote the&nbsp;extension</h1>
+<a href="pr">pull request</a> for it.</p>
+<h1 id="how-i-wrote-the-extension">How I wrote the extension</h1>
 <p>This section will describe not only how the code works, but also how I went
-about learning how to write Sphinx extensions and how to get the results I&nbsp;wanted.</p></div>
+about learning how to write Sphinx extensions and how to get the results I
+wanted.</p></div>
   </article></section>
     </div>
 
