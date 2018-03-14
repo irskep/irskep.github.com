@@ -100,23 +100,23 @@
 Slug:&nbsp;pcg32-the-perfect-prng-for-roguelikes</p>
 <p>Tags: gamedev roguelikes
 Status:&nbsp;draft</p>
-<p>A <strong>pseudo-random number generator</strong> uses math to generate numbers that appear
-random to users, but are completely deterministic. They are used in roguelike
-games to generate levels, determine combat outcomes, and much&nbsp;more.</p>
-<p>In roguelikes, each game typically has a unique <em>random seed</em>. This seed
-affects how the generated levels are laid out. That way, players can share
-seeds with each other to see who does better in the same&nbsp;situation.</p>
-<p>When designing a roguelike, it can be tricky to design the game so that the
-levels turn out the same way every time for every game. We must be careful not
-to use the same <span class="caps">PRNG</span> instance for both level generation and combat, for
-example, or else the player&#8217;s actions during the game will affect how future
-maps&nbsp;look!</p>
-<p>But if you use the <a href="http://www.pcg-random.org"><span class="caps">PCG</span> family of PRNGs</a>, our job
+<p>Roguelikes are games that, among other things, have a lot of procedurally
+generated content. To generate content, we need random numbers. And to get
+random numbers, we need a <strong>pseudo-random number generator</strong>.</p>
+<p>Not only do we want random numbers, but we want <em>predictable</em> random numbers!
+We want players to be able to share seeds and see who does better in the same
+situation, while also giving people a completely fresh experience every time
+they&nbsp;play.</p>
+<p>But we can&#8217;t just create a <span class="caps">PRNG</span> with a seed and be done. If we use the same
+<span class="caps">PRNG</span> for both level generation and combat, for example, then our second level
+might change based on how many times the player got into a&nbsp;fight!</p>
+<p>So we need to be clever about how we create and store our PRNGs, to ensure
+that the procedurally generated maps are not affected by anything that happens
+during&nbsp;gameplay.</p>
+<p>But if we use the <a href="http://www.pcg-random.org"><span class="caps">PCG</span> family of PRNGs</a>, our job
 is a lot easier. There are many variants of <span class="caps">PCG</span>, but in this post I&#8217;ll be
 referring only to <span class="caps">PCG32</span>, the one that generates 32-bit unsigned integers and
-keeps its state as two 64-bit unsigned&nbsp;integers.</p>
-<h1 id="what-makes-pcg-unique">What makes <span class="caps">PCG</span>&nbsp;unique?</h1>
-<p><span class="caps">PCG</span> has a lot going for it, and ...</p>
+keeps ...</p>
         <p class="read-more">
           <a href="http://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html">Read &rarr;</a>
         </p>
