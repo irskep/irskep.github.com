@@ -43,9 +43,9 @@ for seed: UInt64 in [12345, 67890] {
   for seq: UInt64 in [0, 1, 2] {
 
     // two numbers: seed and seq
-    let p = PCG32Generator(seed: seed, seq: seq)
+    let rng = PCG32Generator(seed: seed, seq: seq)
 
-    let values = [0,1,2,3,4,5,6,7,8,9].map({_ in "\(p.get(upperBound: 100))" })
+    let values = [0,1,2,3,4,5,6,7,8,9].map({_ in "\(rng.get(upperBound: 100))" })
     print("Stream \(seq):", values.joined(separator: ", "))
   }
   print()
