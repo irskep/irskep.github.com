@@ -69,6 +69,45 @@
     <li>
       <header class="article-header">
         <h2 class="entry-title">
+          <a href="http://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html" rel="bookmark" title="Permalink to PCG32: The Perfect PRNG for Roguelikes">
+            PCG32: The Perfect PRNG for Roguelikes
+          </a>
+        </h2>
+
+        <div class="post-info">
+            <time class="published" datetime="2018-03-14T00:00:00-07:00">
+              14 Mar 2018
+            </time>
+        </div>
+
+      </header>
+      <div class="entry-content">
+        <p>Roguelikes are games that, among other things, have a lot of procedurally
+generated content. To generate content, we need random numbers. And to get
+random numbers, we need a <strong>pseudo-random number generator</strong>.</p>
+<p>Not only do we want random numbers, but we want <em>predictable</em> random numbers!
+We want players to be able to share seeds and see who does better in the same
+situation, while also giving people a completely fresh experience every time
+they play.</p>
+<p>But we can't just create a PRNG with a seed and be done. If we use the same
+PRNG for both level generation and combat, for example, then our second level
+might change based on how many times the player got into a fight!</p>
+<p>So we need to be clever about how we create and store our PRNGs, to ensure
+that the procedurally generated maps are not affected by anything that happens
+during gameplay.</p>
+<p>But if we use the <a href="http://www.pcg-random.org">PCG family of PRNGs</a>, our job
+is a lot easier. There are many variants of PCG, but in this post I'll be
+referring only to PCG32, the one that generates 32-bit unsigned integers and
+keeps its state as two 64-bit unsigned integers.</p>
+<h1 id="what-makes-pcg-unique">What makes ...</h1>
+        <p class="read-more">
+          <a href="http://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html">Read &rarr;</a>
+        </p>
+      </div>
+    </li>
+    <li>
+      <header class="article-header">
+        <h2 class="entry-title">
           <a href="http://steveasleep.com/2017-year-in-review.html" rel="bookmark" title="Permalink to 2017 Year in Review">
             2017 Year in Review
           </a>
