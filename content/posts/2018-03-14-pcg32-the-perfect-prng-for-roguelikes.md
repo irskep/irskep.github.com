@@ -69,10 +69,8 @@ Stream 2: 89, 61, 71, 58, 85, 14, 70, 6, 59, 31
 This means you can start your game with one seed, and then lazily create
 individual PCG instances for each level at the time you need them, without
 worrying that your PRNG state has been messed up just by playing the game.
-You don't need to do silly things like generate a bunch of random numbers
-at the start of the game to use for level generator seeds later on, which
-adds complexity and unnecessary work, especially if you have branching
-levels.
+(There are other ways of making that guarantee that aren't difficult, but this
+one is particularly convenient.)
 
 Once we've created a PCG instance, we only need to store two unsigned
 integers! Serialization's a snap.
