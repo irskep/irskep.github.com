@@ -117,7 +117,9 @@ PCG32 instances based on the hash value if your level ID string!&lt;/p&gt;
 
 
 &lt;p&gt;Once you have a class like this, you never again need to think about when and
-how to generate PRNG instances, because it all just happens by magic.&lt;/p&gt;
+how to generate PRNG instances, because it all just happens by magic. Using the
+example at the beginning of this section, you can now generate any dungeon using
+the PRNG instance at &lt;code&gt;prngStore[levelId]&lt;/code&gt;, e.g. &lt;code&gt;prngStore["dwarvish-mines-1"]&lt;/code&gt;.&lt;/p&gt;
 &lt;h1 id="language-support"&gt;Language support&lt;/h1&gt;
 &lt;p&gt;PCG32 is very easy to implement, so it has broad language support, even though
 the algorithm was only introduced in 2014. I wrote two implementations myself:
