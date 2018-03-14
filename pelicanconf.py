@@ -82,7 +82,7 @@ DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_PAGINATION = False
 
-TYPOGRIFY = True
-TYPOGRIFY_IGNORE_TAGS = ['pre', 'code', 'title']
+TYPOGRIFY = False
+TYPOGRIFY_IGNORE_TAGS = ['pre', 'code', 'head']
 
 THEME = 'theme'
