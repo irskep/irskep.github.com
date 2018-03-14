@@ -69,6 +69,48 @@
     <li>
       <header class="article-header">
         <h2 class="entry-title">
+          <a href="http://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html" rel="bookmark" title="Permalink to PCG32: The Perfect PRNG for Roguelikes">
+            <span class="caps">PCG32</span>: The Perfect <span class="caps">PRNG</span> for&nbsp;Roguelikes
+          </a>
+        </h2>
+
+        <div class="post-info">
+            <time class="published" datetime="2018-03-14T00:00:00-07:00">
+              14 Mar 2018
+            </time>
+        </div>
+
+      </header>
+      <div class="entry-content">
+        <p>Category: Articles
+Slug:&nbsp;pcg32-the-perfect-prng-for-roguelikes</p>
+<p>Tags: gamedev roguelikes
+Status:&nbsp;draft</p>
+<p>A <strong>pseudo-random number generator</strong> uses math to generate numbers that appear
+random to users, but are completely deterministic. They are used in roguelike
+games to generate levels, determine combat outcomes, and much&nbsp;more.</p>
+<p>In roguelikes, each game typically has a unique <em>random seed</em>. This seed
+affects how the generated levels are laid out. That way, players can share
+seeds with each other to see who does better in the same&nbsp;situation.</p>
+<p>When designing a roguelike, it can be tricky to design the game so that the
+levels turn out the same way every time for every game. We must be careful not
+to use the same <span class="caps">PRNG</span> instance for both level generation and combat, for
+example, or else the player&#8217;s actions during the game will affect how future
+maps&nbsp;look!</p>
+<p>But if you use the <a href="http://www.pcg-random.org"><span class="caps">PCG</span> family of PRNGs</a>, our job
+is a lot easier. There are many variants of <span class="caps">PCG</span>, but in this post I&#8217;ll be
+referring only to <span class="caps">PCG32</span>, the one that generates 32-bit unsigned integers and
+keeps its state as two 64-bit unsigned&nbsp;integers.</p>
+<h1 id="what-makes-pcg-unique">What makes <span class="caps">PCG</span>&nbsp;unique?</h1>
+<p><span class="caps">PCG</span> has a lot going for it, and ...</p>
+        <p class="read-more">
+          <a href="http://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html">Read &rarr;</a>
+        </p>
+      </div>
+    </li>
+    <li>
+      <header class="article-header">
+        <h2 class="entry-title">
           <a href="http://steveasleep.com/2017-year-in-review.html" rel="bookmark" title="Permalink to 2017 Year in Review">
             2017 Year in&nbsp;Review
           </a>
