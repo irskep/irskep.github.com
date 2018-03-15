@@ -21,6 +21,7 @@ For games I didn't finish, see [Unfinished games](<|filename|unfinished-games.md
 * Buildy (2013-2015, RIP)
 * [Rogue Basement](https://irskep.itch.io/rogue_basement) (2017)
 * [PoweRL](https://irskep.itch.io/powerl) (2017)
+* [Dr. Hallervorden](https://irskep.itch.io/dr-hallervorden) (2017)
 
 Unfortunately, none of my middle school-era METAL BASIC creations survived
 various file transfers, web site backups, and hard drive failures. I am

@@ -36,8 +36,8 @@ MENUITEMS = (
         ('Game jam CV', '/game-jam-cv.html'),
     ]),
     ('Projects', [
+        ('Dr. Hallervorden', 'https://irskep.itch.io/dr-hallervorden'),
         ('Sendimals', 'http://sendimals.com'),
-        ('Rogue Basement', 'https://ldjam.com/events/ludum-dare/38/rogue-basement'),
         ('Literally Canvas', 'http://literallycanvas.com/'),
         ('Computer Words', 'http://steveasleep.com/computerwords'),
         ('mrjob', 'http://mrjob.readthedocs.org/'),
