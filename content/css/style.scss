@@ -223,16 +223,17 @@ nav#menu, section#content, footer#pagefooter {
 header#banner {
   box-sizing: border-box;
   line-height: $bannerFontSize * 1.35;
-  padding: 0.75em 0 0.75rem 1em;
+  padding: 0.75em 1em;
 
   h1 {
     font-size: $bannerFontSize;
     @include banner-font;
     margin: 0.75rem 0;
+    display: inline-block;
   }
 
-  a {
-    text-decoration: none;
+  .header-links a {
+    margin-right: 0.5rem;
   }
 }
 
@@ -244,6 +245,11 @@ header#banner {
     flex-direction: row-reverse;
     justify-content: stretch;
     align-items: stretch;
+  }
+
+  header#banner .header-links {
+    display: block;
+    float: right;
   }
 
   #menu { display: none; }
@@ -265,11 +271,8 @@ header#banner {
   ul { @include clear-contents; }
 
   li {
-    float: left;
-  }
-
-  li {
-    margin-right: 1em;
+    display: inline;
+    margin-right: 0.5rem;
   }
 }
 

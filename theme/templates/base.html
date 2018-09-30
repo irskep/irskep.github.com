@@ -60,6 +60,11 @@
         Steve Landey
       </a>
     </h1>
+    <div class="header-links">
+      {% for title, url in HEADER_LINKS %}
+        <a href="{{ url }}">{{ title }}</a>
+      {% endfor %}
+    </div>
   </header>
 
   <div id="layoutcontainer">

@@ -13,8 +13,8 @@ STATIC_PATHS = [
     'rogue_basement_post',
 ]
 
-AUTHOR = u'Steve Johnson'
-SITENAME = u"Steve Johnson"
+AUTHOR = u'Steve Landey'
+SITENAME = u"Steve Landey"
 SITEURL = 'http://localhost:8000'
 
 DEFAULT_CATEGORY = 'Articles'
@@ -28,6 +28,13 @@ DATE_FORMATS = {
 # Feed generation is usually not desired when developing
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 
+HEADER_LINKS = [
+    ('Email', 'mailto:randos@steve.steveasleep.com'),
+    ('GitHub', 'https://github.com/irskep'),
+    ('Twitter', 'https://twitter.com/irskep'),
+    ('last.fm', 'https://www.last.fm/user/irskep'),
+]
+
 MENUITEMS = (
     ('Writing', [
         ('Blog', 'https://blog.steveasleep.com/'),
@@ -39,7 +46,7 @@ MENUITEMS = (
     ('Projects', [
         ('Dr. Hallervorden', 'https://irskep.itch.io/dr-hallervorden'),
         ('Sendimals', 'http://sendimals.com'),
-        # ('Literally Canvas', 'http://literallycanvas.com/'),
+        ('Literally Canvas', 'http://literallycanvas.com/'),
         # ('Computer Words', 'http://steveasleep.com/computerwords'),
         # ('mrjob', 'http://mrjob.readthedocs.org/'),
         # ('Hipmunk OSS', 'http://hipmunk.github.io'),
@@ -49,12 +56,6 @@ MENUITEMS = (
         # ('The Nest', 'http://thenestmusic.com'),
         # ('Slam Jamsen', 'http://slamjamsen.com'),
     # ]),
-    ('External', [
-        ('GitHub', 'https://github.com/irskep'),
-        ('Twitter', 'https://twitter.com/irskep'),
-        ('last.fm', 'https://www.last.fm/user/irskep'),
-        ('Email', 'mailto:randos@steve.steveasleep.com'),
-    ])
 )
 
 DEFAULT_PAGINATION = False

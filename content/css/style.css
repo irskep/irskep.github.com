@@ -133,13 +133,14 @@ nav#menu, section#content, footer#pagefooter {
 header#banner {
   box-sizing: border-box;
   line-height: 2.3625rem;
-  padding: 0.75em 0 0.75rem 1em; }
+  padding: 0.75em 1em; }
   header#banner h1 {
     font-size: 1.75rem;
     font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    margin: 0.75rem 0; }
-  header#banner a {
-    text-decoration: none; }
+    margin: 0.75rem 0;
+    display: inline-block; }
+  header#banner .header-links a {
+    margin-right: 0.5rem; }
 
 @media (min-width: 78rem) {
   #layoutcontainer {
@@ -147,6 +148,9 @@ header#banner {
     flex-direction: row-reverse;
     justify-content: stretch;
     align-items: stretch; }
+  header#banner .header-links {
+    display: block;
+    float: right; }
   #menu {
     display: none; }
   #sidebar {
@@ -166,9 +170,8 @@ header#banner {
     height: 0;
     visibility: hidden; }
   #menu li {
-    float: left; }
-  #menu li {
-    margin-right: 1em; }
+    display: inline;
+    margin-right: 0.5rem; }
 
 article.home-page ul.article-summary-list {
   margin: 0;
