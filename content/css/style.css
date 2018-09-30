@@ -142,15 +142,17 @@ header#banner {
   header#banner .header-links a {
     margin-right: 0.5rem; }
 
+@media (min-width: 50rem) {
+  header#banner .header-links {
+    display: block;
+    float: right; } }
+
 @media (min-width: 78rem) {
   #layoutcontainer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: stretch;
     align-items: stretch; }
-  header#banner .header-links {
-    display: block;
-    float: right; }
   #menu {
     display: none; }
   #sidebar {
