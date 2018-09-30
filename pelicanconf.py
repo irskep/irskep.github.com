@@ -71,7 +71,7 @@ MENUITEMS = (
     ('Open Source', [
         ('Drawsana', 'https://asana.github.io/Drawsana/'),
         ('Literally Canvas', 'http://literallycanvas.com/'),
-        ('clubsandwich', 'http://steveasleep.com.com/clubsandwich'),
+        ('clubsandwich', 'http://steveasleep.com/clubsandwich'),
         ('BearLibTerminal-Swift', 'http://steveasleep.com/BearLibTerminal-Swift/'),
         ('Jumbo Grove', 'http://steveasleep.com/jumbogrove'),
         ('sphinx-better-theme', 'https://sphinx-better-theme.readthedocs.io/en/latest/'),
