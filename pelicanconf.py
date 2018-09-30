@@ -22,7 +22,7 @@ DEFAULT_CATEGORY = 'Articles'
 TIMEZONE = 'US/Pacific'
 DEFAULT_LANG = u'en'
 DATE_FORMATS = {
-    'en': '%d %b %Y',
+    'en': '%B %-d, %Y',
 }
 
 # Feed generation is usually not desired when developing
@@ -30,24 +30,25 @@ FEED_ALL_RSS = 'feeds/all.rss.xml'
 
 MENUITEMS = (
     ('Writing', [
-        ('Blog', '/'),
-        ('Pyglet tutorial', '/pyglettutorial.html'),
+        ('Blog', 'https://blog.steveasleep.com/'),
+        ('Old blog', '/'),
+        # ('Pyglet tutorial', '/pyglettutorial.html'),
         ('Résumé', '/resume.html'),
-        ('Game jam CV', '/game-jam-cv.html'),
+        # ('Game jam CV', '/game-jam-cv.html'),
     ]),
     ('Projects', [
         ('Dr. Hallervorden', 'https://irskep.itch.io/dr-hallervorden'),
         ('Sendimals', 'http://sendimals.com'),
-        ('Literally Canvas', 'http://literallycanvas.com/'),
-        ('Computer Words', 'http://steveasleep.com/computerwords'),
-        ('mrjob', 'http://mrjob.readthedocs.org/'),
-        ('Hipmunk OSS', 'http://hipmunk.github.io'),
+        # ('Literally Canvas', 'http://literallycanvas.com/'),
+        # ('Computer Words', 'http://steveasleep.com/computerwords'),
+        # ('mrjob', 'http://mrjob.readthedocs.org/'),
+        # ('Hipmunk OSS', 'http://hipmunk.github.io'),
         ('Old games', '/games.html'),
     ]),
-    ('Music', [
-        ('The Nest', 'http://thenestmusic.com'),
-        ('Slam Jamsen', 'http://slamjamsen.com'),
-    ]),
+    # ('Music', [
+        # ('The Nest', 'http://thenestmusic.com'),
+        # ('Slam Jamsen', 'http://slamjamsen.com'),
+    # ]),
     ('External', [
         ('GitHub', 'https://github.com/irskep'),
         ('Twitter', 'https://twitter.com/irskep'),

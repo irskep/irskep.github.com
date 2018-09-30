@@ -23,7 +23,9 @@ Gw0rp was an entry in the [uDevGames 2009 contest](http://www.udevgames.com/).
 It took second place in Story and third in Originality. Calvin Eiber and I
 executed the concept with reasonable competency, but the game design is
 significantly flawed and there are a handful of major bugs. I hope to
-eventually revisit this concept in another form.
+eventually revisit this concept in another form. For now, here's a video I made about why it's so bad!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TvqtfLrDhx4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 If you want more details about the development process and my opinion of the
 game, you can [read the

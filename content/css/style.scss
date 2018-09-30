@@ -1,4 +1,4 @@
-$backgroundColor: rgb(240, 240, 240);
+$backgroundColor: rgb(250, 250, 250);
 $codeBackgroundColor: rgb(250, 250, 250);
 $bodyColor: rgb(40, 40, 40);
 $linkColor: rgb(60, 60, 80);
@@ -11,7 +11,7 @@ $pageWidth: 50rem;
 
 $fontSizeHugeTitle: 3rem;
 $bannerFontSize: 1.75rem;
-$paragraphSpacing: 0.75rem;
+$paragraphSpacing: 1.5rem;
 $prePadding: 0.5rem;
 $pageComponentSpacing: 4rem;
 $headerVerticalSpacingTop: 1em;
@@ -116,9 +116,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   }
 }
 
-h1, h2 { font-size: 2rem; }
-h3, h4 { font-size: 1.5rem; }
-h5, h6 { font-size: 1.2rem; }
+h1, h2 { font-size: 1.5rem; }
+h3, h4 { font-size: 1.2rem; }
+h5, h6 { font-size: 1.0rem; }
 h1, h3, h5 { font-weight: bold; }
 h2, h4, h6 { font-weight: normal; }
 
@@ -151,6 +151,10 @@ article li {
   padding-left: 0.5rem;
   margin-left: 1rem;
   margin-bottom: $listVerticalSpacing;
+
+  & > ul, & > ol {
+    margin-top: $listVerticalSpacing;
+  }
 }
 
 article iframe, table {
@@ -199,7 +203,7 @@ iframe {
   max-width: calc($pageWidth - 2rem);
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem 1rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 nav#menu, section#content, footer#pagefooter {
@@ -208,7 +212,6 @@ nav#menu, section#content, footer#pagefooter {
 
 #sidebar {
   padding-left: 1rem;
-  padding-top: 1rem;
 
   h3 {
     font-size: 1em;
@@ -219,7 +222,6 @@ nav#menu, section#content, footer#pagefooter {
 
 header#banner {
   box-sizing: border-box;
-  background-color: $bodyColor;
   line-height: $bannerFontSize * 1.35;
   padding: 0.75em 0 0.75rem 1em;
 
@@ -231,7 +233,6 @@ header#banner {
 
   a {
     text-decoration: none;
-    color: $backgroundColor;
   }
 }
 
@@ -250,7 +251,6 @@ header#banner {
     flex-grow: 0;
     flex-shrink :0;
     width: 10rem;
-    border-right: 1px solid $separatorColor;
     padding-right: 1rem;
 
     h1:first-child, h2:first-child, h3:first-child {
@@ -289,6 +289,15 @@ article.home-page {
       margin-bottom: 2rem;
       border-top: 1px solid $separatorColor;
 
+      &:first-child {
+        border-top: none;
+        padding-top: 0;
+
+        .entry-title {
+          margin-top: 0;
+        }
+      }
+
       .read-more {
         text-align: right;
       }
@@ -316,6 +325,11 @@ article.home-page {
 
   margin-bottom: 1rem;
 
+  .entry-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
   &.article-header__index {
     h1 {
       font-size: $fontSizeHugeTitle;
@@ -329,7 +343,6 @@ article.home-page {
       display: block;
       // float: right;
       @include title-font;
-      font-size: 80%;
     }
   }
 }
@@ -341,26 +354,10 @@ article.home-page {
 // page styling
 
 .page {
-  h1 {
-    border-top: 1px solid $separatorColor;
-    padding-top: $headerVerticalSpacingTop;
-    font-weight: normal;
-    @include title-font-2;
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
   .page-content a { @include body-link-styles; }
 }
 
 .entry-content {
-  h1 {
-    border-bottom: 1px solid $separatorColor;
-  }
 }
 
 // random stuff

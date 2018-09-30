@@ -12,7 +12,7 @@ We want players to be able to share seeds and see who does better in the same
 situation, while also giving people a completely fresh experience every time
 they play.
 
-But we can't just create a PRNG with a seed and be done. If we use the same
+We can't just create a PRNG with a seed and be done. If we use the same
 PRNG for both level generation and combat, for example, then our second level
 might change based on how many times the player got into a fight!
 
@@ -20,7 +20,7 @@ So we need to be clever about how we create and store our PRNGs, to ensure
 that the procedurally generated maps are not affected by anything that happens
 during gameplay.
 
-But if we use the [PCG family of PRNGs](http://www.pcg-random.org), our job
+If we use the [PCG family of PRNGs](http://www.pcg-random.org), our job
 is a lot easier. There are many variants of PCG, but in this post I'll be
 referring only to PCG32, the one that generates 32-bit unsigned integers and
 keeps its state as two 64-bit unsigned integers.
@@ -143,6 +143,6 @@ PCG32 is very easy to implement, so it has broad language support, even though
 the algorithm was only introduced in 2014. I wrote two implementations myself:
 [Python](https://github.com/irskep/clubsandwich/blob/master/clubsandwich/pcg32.py)
 and [Swift](https://github.com/irskep/RogueKit/blob/master/Sources/RogueKit/Util/PCG32.swift).
-But you should be able to find a good implementation for your favorite language
-just by searching Google. And if you can't find one, it really isn't too hard
+You should be able to find a good implementation for your favorite language
+just by searching the web. And if you can't find one, it really isn't too hard
 to do! It's just a handful of bitwise operations.
