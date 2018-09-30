@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Steve Johnson – PCG32: The Perfect PRNG for Roguelikes</title>
+    <title>Steve Landey – PCG32: The Perfect PRNG for Roguelikes</title>
 
     <meta name="viewport" content="width=device-width">
     <meta charset="UTF-8">
@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
     <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
 
-    <!--
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Johnson Full RSS Feed" />
-      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Johnson Categories Atom Feed" />
+      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+    <!--
+      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
     -->
 
     <script src="http://steveasleep.com/js/hyphenate.js"></script>
@@ -31,34 +31,39 @@
   <header id="banner" class="body">
     <h1>
       <a href="http://steveasleep.com">
-        <!--Steve Johnson <strong></strong>-->
+        <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
-        Steve Johnson #6,059
+        Steve Landey
       </a>
     </h1>
+    <div class="header-links">
+        <a href="mailto:randos@steve.steveasleep.com">Email</a>
+        <a href="https://github.com/irskep">GitHub</a>
+        <a href="https://slamjamsen.bandcamp.com">Bandcamp</a>
+        <a href="https://irskep.itch.io">itch.io</a>
+        <a href="https://www.last.fm/user/irskep">last.fm</a>
+    </div>
   </header>
 
   <div id="layoutcontainer">
     <div id="pagecontainer">
       <nav id="menu">
         <ul>
-            <li><a href="http://steveasleep.com/">Blog</a></li>
-            <li><a href="http://steveasleep.com/pyglettutorial.html">Pyglet tutorial</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/game-jam-cv.html">Game jam CV</a></li>
-            <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
-            <li><a href="http://sendimals.com">Sendimals</a></li>
-            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
-            <li><a href="http://steveasleep.com/computerwords">Computer Words</a></li>
-            <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
-            <li><a href="http://hipmunk.github.io">Hipmunk OSS</a></li>
-            <li><a href="http://steveasleep.com/games.html">Old games</a></li>
-            <li><a href="http://thenestmusic.com">The Nest</a></li>
-            <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
-            <li><a href="https://github.com/irskep">GitHub</a></li>
+            <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="https://www.last.fm/user/irskep">last.fm</a></li>
-            <li><a href="mailto:randos@steve.steveasleep.com">Email</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/games.html">All games</a></li>
+            <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
+            <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
+            <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
+            <li><a href="http://sendimals.com">Sendimals</a></li>
+            <li><a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a></li>
+            <li><a href="https://asana.github.io/Drawsana/">Drawsana</a></li>
+            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+            <li><a href="http://steveasleep.com.com/clubsandwich">clubsandwich</a></li>
+            <li><a href="http://steveasleep.com/BearLibTerminal-Swift/">BearLibTerminal-Swift</a></li>
+            <li><a href="http://steveasleep.com/jumbogrove">Jumbo Grove</a></li>
+            <li><a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a></li>
         </ul>
       </nav>
 
@@ -71,7 +76,7 @@
     </h1>
     <div class="post-info">
         <time class="published" datetime="2018-03-14T00:00:00-07:00">
-          14 Mar 2018
+          March 14, 2018
         </time>
     </div>
   </header>
@@ -83,13 +88,13 @@ random numbers, we need a <strong>pseudo-random number generator</strong>.</p>
 We want players to be able to share seeds and see who does better in the same
 situation, while also giving people a completely fresh experience every time
 they play.</p>
-<p>But we can't just create a PRNG with a seed and be done. If we use the same
+<p>We can't just create a PRNG with a seed and be done. If we use the same
 PRNG for both level generation and combat, for example, then our second level
 might change based on how many times the player got into a fight!</p>
 <p>So we need to be clever about how we create and store our PRNGs, to ensure
 that the procedurally generated maps are not affected by anything that happens
 during gameplay.</p>
-<p>But if we use the <a href="http://www.pcg-random.org">PCG family of PRNGs</a>, our job
+<p>If we use the <a href="http://www.pcg-random.org">PCG family of PRNGs</a>, our job
 is a lot easier. There are many variants of PCG, but in this post I'll be
 referring only to PCG32, the one that generates 32-bit unsigned integers and
 keeps its state as two 64-bit unsigned integers.</p>
@@ -200,8 +205,8 @@ the PRNG instance at <code>prngStore[levelId]</code>, e.g. <code>prngStore["dwar
 the algorithm was only introduced in 2014. I wrote two implementations myself:
 <a href="https://github.com/irskep/clubsandwich/blob/master/clubsandwich/pcg32.py">Python</a>
 and <a href="https://github.com/irskep/RogueKit/blob/master/Sources/RogueKit/Util/PCG32.swift">Swift</a>.
-But you should be able to find a good implementation for your favorite language
-just by searching Google. And if you can't find one, it really isn't too hard
+You should be able to find a good implementation for your favorite language
+just by searching the web. And if you can't find one, it really isn't too hard
 to do! It's just a handful of bitwise operations.</p></div>
   </article></section>
     </div>
@@ -209,26 +214,24 @@ to do! It's just a handful of bitwise operations.</p></div>
     <nav id="sidebar">
       <ul>
           <h3>Writing</h3>
-            <li><a href="http://steveasleep.com/">Blog</a></li>
-            <li><a href="http://steveasleep.com/pyglettutorial.html">Pyglet tutorial</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/game-jam-cv.html">Game jam CV</a></li>
-          <h3>Projects</h3>
-            <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
-            <li><a href="http://sendimals.com">Sendimals</a></li>
-            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
-            <li><a href="http://steveasleep.com/computerwords">Computer Words</a></li>
-            <li><a href="http://mrjob.readthedocs.org/">mrjob</a></li>
-            <li><a href="http://hipmunk.github.io">Hipmunk OSS</a></li>
-            <li><a href="http://steveasleep.com/games.html">Old games</a></li>
-          <h3>Music</h3>
-            <li><a href="http://thenestmusic.com">The Nest</a></li>
-            <li><a href="http://slamjamsen.com">Slam Jamsen</a></li>
-          <h3>External</h3>
-            <li><a href="https://github.com/irskep">GitHub</a></li>
+            <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="https://www.last.fm/user/irskep">last.fm</a></li>
-            <li><a href="mailto:randos@steve.steveasleep.com">Email</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+          <h3>Games</h3>
+            <li><a href="http://steveasleep.com/games.html">All games</a></li>
+            <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
+            <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
+            <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
+          <h3>Apps</h3>
+            <li><a href="http://sendimals.com">Sendimals</a></li>
+            <li><a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a></li>
+          <h3>Open Source</h3>
+            <li><a href="https://asana.github.io/Drawsana/">Drawsana</a></li>
+            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
+            <li><a href="http://steveasleep.com.com/clubsandwich">clubsandwich</a></li>
+            <li><a href="http://steveasleep.com/BearLibTerminal-Swift/">BearLibTerminal-Swift</a></li>
+            <li><a href="http://steveasleep.com/jumbogrove">Jumbo Grove</a></li>
+            <li><a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a></li>
       </ul>
     </nav>
 

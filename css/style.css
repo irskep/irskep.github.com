@@ -12,7 +12,7 @@ canvas {
 html {
   line-height: 160%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   color: #282828; }
 
 a, a:visited, a:active {
@@ -36,13 +36,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: underline; }
 
 h1, h2 {
-  font-size: 2rem; }
-
-h3, h4 {
   font-size: 1.5rem; }
 
-h5, h6 {
+h3, h4 {
   font-size: 1.2rem; }
+
+h5, h6 {
+  font-size: 1.0rem; }
 
 h1, h3, h5 {
   font-weight: bold; }
@@ -51,7 +51,7 @@ h2, h4, h6 {
   font-weight: normal; }
 
 p, ul, ol, pre {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 1.5rem; }
 
 pre, code, kbd, samp {
   font-family: Inconsolata, monospace, sans-serif;
@@ -74,9 +74,11 @@ article li {
   padding-left: 0.5rem;
   margin-left: 1rem;
   margin-bottom: 0.5rem; }
+  article li > ul, article li > ol {
+    margin-top: 0.5rem; }
 
 article iframe, table {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 1.5rem; }
 
 table th {
   text-align: left;
@@ -118,29 +120,27 @@ iframe {
   max-width: calc($pageWidth - 2rem);
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem 1rem; }
+  padding: 0rem 1rem 1rem 1rem; }
 
 nav#menu, section#content, footer#pagefooter {
   width: 100%; }
 
 #sidebar {
-  padding-left: 1rem;
-  padding-top: 1rem; }
+  padding-left: 1rem; }
   #sidebar h3 {
     font-size: 1em; }
 
 header#banner {
   box-sizing: border-box;
-  background-color: #282828;
   line-height: 2.3625rem;
-  padding: 0.75em 0 0.75rem 1em; }
+  padding: 0.75em 1em; }
   header#banner h1 {
     font-size: 1.75rem;
     font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    margin: 0.75rem 0; }
-  header#banner a {
-    text-decoration: none;
-    color: #f0f0f0; }
+    margin: 0.75rem 0;
+    display: inline-block; }
+  header#banner .header-links a {
+    margin-right: 0.5rem; }
 
 @media (min-width: 78rem) {
   #layoutcontainer {
@@ -148,13 +148,15 @@ header#banner {
     flex-direction: row-reverse;
     justify-content: stretch;
     align-items: stretch; }
+  header#banner .header-links {
+    display: block;
+    float: right; }
   #menu {
     display: none; }
   #sidebar {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 10rem;
-    border-right: 1px solid #a8a8a8;
+    width: 12rem;
     padding-right: 1rem; }
     #sidebar h1:first-child, #sidebar h2:first-child, #sidebar h3:first-child {
       margin-top: 0; } }
@@ -168,9 +170,8 @@ header#banner {
     height: 0;
     visibility: hidden; }
   #menu li {
-    float: left; }
-  #menu li {
-    margin-right: 1em; }
+    display: inline;
+    margin-right: 0.5rem; }
 
 article.home-page ul.article-summary-list {
   margin: 0;
@@ -182,6 +183,11 @@ article.home-page ul.article-summary-list {
     padding-top: 2rem;
     margin-bottom: 2rem;
     border-top: 1px solid #a8a8a8; }
+    article.home-page ul.article-summary-list > li:first-child {
+      border-top: none;
+      padding-top: 0; }
+      article.home-page ul.article-summary-list > li:first-child .entry-title {
+        margin-top: 0; }
     article.home-page ul.article-summary-list > li .read-more {
       text-align: right; }
 
@@ -202,6 +208,9 @@ article.home-page ul.article-summary-list {
     display: block;
     height: 0;
     visibility: hidden; }
+  .article-header .entry-title {
+    margin-top: 0;
+    margin-bottom: 1rem; }
   .article-header.article-header__index h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -209,32 +218,17 @@ article.home-page ul.article-summary-list {
   .article-header .post-info time {
     display: block;
     font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: normal;
-    font-size: 80%; }
+    font-weight: normal; }
 
 .article .entry-content a {
   color: #3c3c8c; }
   .article .entry-content a:hover {
     color: #5050fa; }
 
-.page h1 {
-  border-top: 1px solid #a8a8a8;
-  padding-top: 1em;
-  font-weight: normal;
-  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold; }
-
-.page h3 {
-  font-size: 1.2rem; }
-
 .page .page-content a {
   color: #3c3c8c; }
   .page .page-content a:hover {
     color: #5050fa; }
-
-.entry-content h1 {
-  border-bottom: 1px solid #a8a8a8; }
 
 .promo .promo-section {
   position: relative;
@@ -256,7 +250,7 @@ article.home-page ul.article-summary-list {
     right: 0;
     bottom: 0;
     left: 0;
-    color: #f0f0f0;
+    color: #fafafa;
     text-decoration: none; }
   .promo .promo-section img {
     height: 100%; }
