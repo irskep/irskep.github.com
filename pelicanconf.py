@@ -33,6 +33,7 @@ HEADER_LINKS = [
     ('Email', 'mailto:randos@steve.steveasleep.com'),
     ('GitHub', 'https://github.com/irskep'),
     ('Bandcamp', 'https://slamjamsen.bandcamp.com'),
+    ('itch.io', 'https://irskep.itch.io'),
     # ('Twitter', 'https://twitter.com/irskep'),
     ('last.fm', 'https://www.last.fm/user/irskep'),
 ]
@@ -59,6 +60,7 @@ MENUITEMS = (
     ('Games', [
         ('All games', '/games.html'),
         ('Dr. Hallervorden', 'https://irskep.itch.io/dr-hallervorden'),
+        ('Power-Q', 'https://irskep.itch.io/powerq'),
         ('Rogue Basement', 'https://irskep.itch.io/roguebasement'),
     ]),
     ('Apps', [
