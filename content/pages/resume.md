@@ -4,12 +4,14 @@ no_header: True
 
 [PDF version](/downloads/Steve_Johnson_resume.pdf)
 
-**Summary:** Engineering manager (1y) and experienced generalist software developer with an iOS focus. Writes pretty well and plays in local bands. Willing to work in San Francisco or in East Bay near BART.
+**Summary:** Not interested in anything new, don't contact me
 
 # Jobs
 
+**Asana:** Engineering manager for iOS, April 2018-present
+
 <img class="resume-image" src="/img/companies/hipmunk.png" alt="logo">
-**Hipmunk:** Engineering manager & Mobile engineer, January 2017-present
+**Hipmunk:** Engineering manager & mobile engineer, January 2017-February 2018
 
 Still working on Hipmunk for iOS and leading the mobile team, but now also
 managing the people on the mobile team.
@@ -18,7 +20,7 @@ Hard stuff: Hiring great engineers
 Fun stuff: Hiring great engineers
 
 <img class="resume-image" src="/img/companies/hipmunk.png" alt="logo">
-**Hipmunk:** Mobile developer & team lead, July 2015-December 2016
+**Hipmunk:** Mobile engineer & team lead, July 2015-December 2016
 
 Worked on [Hipmunk for iOS](https://itunes.apple.com/us/app/hipmunk-travel-
 hotels- flights/id419950680?mt=8). Became mobile team lead in January 2016.
@@ -93,24 +95,9 @@ Fun stuff: the easygoing culture of a small, successful business
 
 # Projects
 
-**[Hobbyist game development](http://steveasleep.com/games.html):** 2003-present
+**[Hobbyist game development](http://steveasleep.com/games.html):** 2000-present
 
 Wrote about a dozen small-to-medium games in BASIC, Python, Swift, and JavaScript, including art and music.
-
-**[Literally Canvas](http://literallycanvas.com):** 2012-present
-
-HTML5-based drawing tool that can be used as a JavaScript library. I work as a
-freelancer to add features when approached. The project is successful because
-it has lots of documentation and examples.
-
-**[Computer Words](http://steveasleep.com/computerwords):** 2016
-
-Documentation tool (like Sphinx) that builds a web site from Markdown files and Python source.
-
-**[Hipmunk open source projects](http://hipmunk.github.io/):** 2016
-
-Wrote and released several open source libraries used in Hipmunk’s iOS app,
-mostly related to Swift app architecture.
 
 **[mrjob](http://mrjob.readthedocs.org/):** 2011-2012
 
@@ -118,5 +105,20 @@ Maintained the most popular MapReduce framework for Python, including writing
 most of the documentation, accepting contributions from dozens of outside
 contributors, and wrangling Amazon Web Services. mrjob is around the 220th most
 popular Python package.
+
+**[Literally Canvas](http://literallycanvas.com):** 2012-present
+
+HTML5-based drawing tool that can be used as a JavaScript library. I work as a
+freelancer to add features when approached. The project is successful because
+it has lots of documentation and examples.
+
+**[Jumbo Grove](http://steveasleep.com/jumbogrove):** 2017
+
+JavaScript library for writing browser-based interactive fiction games.
+
+**[Hipmunk open source projects](http://hipmunk.github.io/):** 2016
+
+Wrote and released several open source libraries used in Hipmunk’s iOS app,
+mostly related to Swift app architecture.
 
 **Education:** BS & MS in Computer Science from Case Western Reserve University

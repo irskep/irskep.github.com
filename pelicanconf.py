@@ -32,35 +32,46 @@ FEED_ALL_RSS = 'feeds/all.rss.xml'
 HEADER_LINKS = [
     ('Email', 'mailto:randos@steve.steveasleep.com'),
     ('GitHub', 'https://github.com/irskep'),
-    ('Twitter', 'https://twitter.com/irskep'),
+    ('Bandcamp', 'https://slamjamsen.bandcamp.com'),
+    # ('Twitter', 'https://twitter.com/irskep'),
     ('last.fm', 'https://www.last.fm/user/irskep'),
 ]
 
 Project = namedtuple('Project', ('name', 'desc', 'img'))
 
+"""
 PROJECTS = [
     Project('Dr. Hallervorden', '7-day roguelike', None),
     Project('Sendimals', 'iMessage app for silly art', None),
     Project('Literally Canvas', 'MacPaint in JavaScript as a library', None),
     Project('Games', '', None),
 ]
+"""
 
 MENUITEMS = (
     ('Writing', [
         ('Blog', 'https://blog.steveasleep.com/'),
-        ('Old blog', '/articles/'),
+        ('Twitter', 'https://twitter.com/irskep'),
         # ('Pyglet tutorial', '/pyglettutorial.html'),
         ('Résumé', '/resume.html'),
         # ('Game jam CV', '/game-jam-cv.html'),
     ]),
-    ('Projects', [
+    ('Games', [
+        ('All games', '/games.html'),
         ('Dr. Hallervorden', 'https://irskep.itch.io/dr-hallervorden'),
+        ('Rogue Basement', 'https://irskep.itch.io/roguebasement'),
+    ]),
+    ('Apps', [
         ('Sendimals', 'http://sendimals.com'),
+        ('Asana', 'https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8'),
+    ]),
+    ('Open Source', [
+        ('Drawsana', 'https://asana.github.io/Drawsana/'),
         ('Literally Canvas', 'http://literallycanvas.com/'),
-        # ('Computer Words', 'http://steveasleep.com/computerwords'),
-        # ('mrjob', 'http://mrjob.readthedocs.org/'),
-        # ('Hipmunk OSS', 'http://hipmunk.github.io'),
-        ('Games', '/games.html'),
+        ('clubsandwich', 'http://steveasleep.com.com/clubsandwich'),
+        ('BearLibTerminal-Swift', 'http://steveasleep.com/BearLibTerminal-Swift/'),
+        ('Jumbo Grove', 'http://steveasleep.com/jumbogrove'),
+        ('sphinx-better-theme', 'https://sphinx-better-theme.readthedocs.io/en/latest/'),
     ]),
     # ('Music', [
         # ('The Nest', 'http://thenestmusic.com'),
