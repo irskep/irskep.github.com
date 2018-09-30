@@ -237,6 +237,13 @@ header#banner {
   }
 }
 
+@media (min-width: $pageWidth) {
+  header#banner .header-links {
+    display: block;
+    float: right;
+  }
+}
+
 // menu
 
 @media (min-width: $pageWidth+28rem) {
@@ -245,11 +252,6 @@ header#banner {
     flex-direction: row-reverse;
     justify-content: stretch;
     align-items: stretch;
-  }
-
-  header#banner .header-links {
-    display: block;
-    float: right;
   }
 
   #menu { display: none; }

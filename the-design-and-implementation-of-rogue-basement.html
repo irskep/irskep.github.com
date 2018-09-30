@@ -10,27 +10,27 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
 
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
     <!--
-      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
+      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
     -->
 
-    <script src="http://steveasleep.com/js/hyphenate.js"></script>
+    <script src="http://localhost:8000/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://steveasleep.com/js/main.js"></script>
+    <script src="http://localhost:8000/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://steveasleep.com">
+      <a href="http://localhost:8000">
         <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
         Steve Landey
@@ -51,8 +51,8 @@
         <ul>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/games.html">All games</a></li>
+            <li><a href="/resume.html">Résumé</a></li>
+            <li><a href="/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
@@ -70,7 +70,7 @@
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="bookmark" title="Permalink to The Design and Implementation of Rogue Basement">
+      <a href="http://localhost:8000/the-design-and-implementation-of-rogue-basement.html" rel="bookmark" title="Permalink to The Design and Implementation of Rogue Basement">
         The Design and Implementation of Rogue Basement
       </a>
     </h1>
@@ -83,12 +83,12 @@
 
     <div class="entry-content hyphenate"><p>This year I participated in <a href="https://ldjam.com">Ludum Dare 38</a>, a 48-hour game programming "competition." I've been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href="https://ldjam.com/events/ludum-dare/38/rogue-basement">Rogue Basement</a>, a bare-bones, single-level game with ASCII graphics.</p>
 <p>In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented. <a href="https://github.com/irskep/rogue_basement">The source code</a> is extensively commented as well.</p>
-<p><img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png" /></p>
+<p><img alt="screenshot" src="http://localhost:8000/img/rogue_basement/screenshot2.png" /></p>
 
 
 <h1 id="what-is-a-roguelike">What is a roguelike?</h1>
 <p>A "roguelike" is a game that is "like Rogue," a text-based game from the 1980s that looks like this:</p>
-<p><img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png" /></p>
+<p><img alt="Rogue_Screen_Shot_CAR.png" src="http://localhost:8000/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png" /></p>
 <p>Typical features of these games include:</p>
 <ul>
 <li>Procedurally generated levels</li>
@@ -171,7 +171,7 @@
 
 
 <p>When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here's a screenshot I took when I got to this point:</p>
-<p><img alt="Screenshot 2017-04-21 21.00.42.png" src="http://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png" /></p>
+<p><img alt="Screenshot 2017-04-21 21.00.42.png" src="http://localhost:8000/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png" /></p>
 <p>But it's more interesting to mix it up with different sizes of rectangles.</p>
 <div class="highlight"><pre><span></span>+----------------------------------------+
 | +--+  | +------+|   +------+   |       |
@@ -241,7 +241,7 @@
 
 
 <p>And here's how it looked during development:</p>
-<p><img alt="Screenshot 2017-04-21 21.50.39.png" src="http://steveasleep.com/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png" /></p>
+<p><img alt="Screenshot 2017-04-21 21.50.39.png" src="http://localhost:8000/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png" /></p>
 <p>We now have a few guarantees:</p>
 <ul>
 <li>All rooms are reachable from all other rooms.</li>
@@ -269,11 +269,11 @@
 
 <p>The player starts in <code>aa</code> and moves to <code>ab</code>, then <code>bb</code>, then <code>ba</code>, where the goal is.</p>
 <p>Here's another map from early development, which splits the map in this way:</p>
-<p><img alt="Screenshot 2017-04-22 10.54.30.png" src="http://steveasleep.com/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png" /></p>
+<p><img alt="Screenshot 2017-04-22 10.54.30.png" src="http://localhost:8000/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png" /></p>
 <p>And here's one with just the first two partition lines, so you can see how the map is divided:</p>
-<p><img alt="Screenshot 2017-04-22 10.56.58.png" src="http://steveasleep.com/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png" /></p>
+<p><img alt="Screenshot 2017-04-22 10.56.58.png" src="http://localhost:8000/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png" /></p>
 <p>And finally, here are the hallways that mark the transitions between each section:</p>
-<p><img alt="Screenshot 2017-04-22 11.40.44.png" src="http://steveasleep.com/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png" /></p>
+<p><img alt="Screenshot 2017-04-22 11.40.44.png" src="http://localhost:8000/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png" /></p>
 <p>Originally the colors were just for debugging, but I ended up leaving them in place because they signal specialness.</p>
 <p>To add variety, I created a <code>rooms.csv</code> file to define a few room types:</p>
 <div class="highlight"><pre><span></span>                                                      Monster   Item
@@ -363,7 +363,7 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 <p>The music fades down when you're in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get tougher.</p>
 <h2 id="title-screen">Title screen</h2>
 <p>I made this adorable title screen, and reused the ASCII art in the manual:</p>
-<p><img alt="title screen" src="http://steveasleep.com/img/rogue_basement/screenshot1.png" /></p>
+<p><img alt="title screen" src="http://localhost:8000/img/rogue_basement/screenshot1.png" /></p>
 <h1 id="final-scores">Final scores</h1>
 <p>There were 1,104 "compo" (48-hour, one person) games, of which 549 had enough ratings to get scored and ranked. Here are the scores for Rogue Basement. Percentiles are within the 549 ranked games.</p>
 <table>
@@ -493,9 +493,9 @@ a part.)</p>
           <h3>Writing</h3>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="/resume.html">Résumé</a></li>
           <h3>Games</h3>
-            <li><a href="http://steveasleep.com/games.html">All games</a></li>
+            <li><a href="/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
