@@ -10,7 +10,11 @@ This site runs on [Pelican](http://docs.getpelican.com/en/stable/), which is
 great for making static sites, but I've been doing a much better job of
 writing consistently now that I can do it all from a web browser.
 
-[Here's the RSS feed.](https://blog.steveasleep.com/feed/)
+[New blog](https://blog.steveasleep.com/)
+
+[RSS feed](https://blog.steveasleep.com/feed/)
+
+[Old blog](/articles/)
 
 # Posts so far
 

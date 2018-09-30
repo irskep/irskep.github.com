@@ -71,10 +71,12 @@
     <div id="pagecontainer">
       <nav id="menu">
         <ul>
-          {% for _, items in MENUITEMS %}
-          {% for title, link in items %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
-          {% endfor %}
+          {% for itemtitle, items in MENUITEMS %}
+          <li><strong>{{ itemtitle }}:</strong>
+            {% for title, link in items %}
+              <a href="{{ link }}">{{ title }}</a>
+            {% endfor %}
+          </li>
           {% endfor %}
         </ul>
       </nav>
