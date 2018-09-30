@@ -10,27 +10,27 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
-    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
-    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
 
     <meta charset="utf-8" />
-      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
-      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
     <!--
-      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
+      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
     -->
 
-    <script src="http://localhost:8000/js/hyphenate.js"></script>
+    <script src="http://steveasleep.com/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://localhost:8000/js/main.js"></script>
+    <script src="http://steveasleep.com/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://localhost:8000">
+      <a href="http://steveasleep.com">
         <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
         Steve Landey
@@ -51,8 +51,9 @@
         <ul>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="/resume.html">Résumé</a></li>
-            <li><a href="/games.html">All games</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
+            <li><a href="http://steveasleep.com/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
@@ -70,7 +71,7 @@
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://localhost:8000/powerl-postmortem.html" rel="bookmark" title="Permalink to PoweRL postmortem">
+      <a href="http://steveasleep.com/powerl-postmortem.html" rel="bookmark" title="Permalink to PoweRL postmortem">
         PoweRL postmortem
       </a>
     </h1>
@@ -82,11 +83,11 @@
   </header>
 
     <div class="entry-content hyphenate"><p><a href="https://ldjam.com">Ludum Dare 39</a> fell on a weekend when I wasn't busy, and I wanted an excuse to learn a bit about Apple's game libraries, so I made another <a href="https://en.wikipedia.org/wiki/Roguelike">roguelike</a>, <a href="https://irskep.itch.io/powerl">PoweRL</a>:</p>
-<p><img alt="Screenshot" src="http://localhost:8000/img/powerl/screenshot.png" /></p>
+<p><img alt="Screenshot" src="http://steveasleep.com/img/powerl/screenshot.png" /></p>
 
 
 <p>I wasn't in the mood for stress, so I set my standards very, very low. Ironically, the result is more commercially viable than most of what I make! That might not be apparent from the screenshot, but maybe this new version with updated art will convince you:</p>
-<p><img alt="Screenshot 2" src="http://localhost:8000/img/powerl/screenshot2.png" /></p>
+<p><img alt="Screenshot 2" src="http://steveasleep.com/img/powerl/screenshot2.png" /></p>
 <h2 id="swift-spritekit-and-gameplaykit">Swift, SpriteKit, and GameplayKit</h2>
 <p>"iOS engineer" is part of my normal job description, but in the past I've avoided using Swift or Objective-C for jams because it isn't cross-platform. But since I didn't really care about the outcome of this jam, I let my curiosity about SpriteKit and GameplayKit win out over portability.</p>
 <p>I'm really glad I did, because after learning the frameworks, I spent almost no time worrying about the engine! My last Ludum Dare game, <a href="/|filename|/posts/2017-05-04-the-design-and-implementation-of-rogue-basement.html">Rogue Basement</a>, needed a lot of up-front work on the engine to get running, and then optimization work after completion. But with PoweRL, SpriteKit made for an efficient renderer and animation system, and GameplayKit gave me structure for gameplay code and a few nice utilities like pathfinding.</p>
@@ -138,9 +139,10 @@
           <h3>Writing</h3>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
           <h3>Games</h3>
-            <li><a href="/games.html">All games</a></li>
+            <li><a href="http://steveasleep.com/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>

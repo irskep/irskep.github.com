@@ -10,27 +10,27 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
-    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
-    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
 
     <meta charset="utf-8" />
-      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
-      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
     <!--
-      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
+      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
     -->
 
-    <script src="http://localhost:8000/js/hyphenate.js"></script>
+    <script src="http://steveasleep.com/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://localhost:8000/js/main.js"></script>
+    <script src="http://steveasleep.com/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://localhost:8000">
+      <a href="http://steveasleep.com">
         <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
         Steve Landey
@@ -51,8 +51,9 @@
         <ul>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="/resume.html">Résumé</a></li>
-            <li><a href="/games.html">All games</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
+            <li><a href="http://steveasleep.com/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
@@ -70,7 +71,7 @@
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://localhost:8000/from-powerl-to-power-q-game-jam-to-product.html" rel="bookmark" title="Permalink to From PoweRL to Power-Q: game jam to product">
+      <a href="http://steveasleep.com/from-powerl-to-power-q-game-jam-to-product.html" rel="bookmark" title="Permalink to From PoweRL to Power-Q: game jam to product">
         From PoweRL to Power-Q: game jam to product
       </a>
     </h1>
@@ -83,7 +84,7 @@
 
     <div class="entry-content hyphenate"><p><a href="https://irskep.itch.io/powerq">Power-Q</a> is the polished, productized version of my Ludum Dare game <a href="https://irskep.itch.io/powerl">PoweRL</a>. They have exactly the same mechanics, but Power-Q has about 30 extra hours of effort invested into it. Before I send it out into the world, I want to reflect upon where those 30 hours went.</p>
 <p>Power-Q is in beta on Mac and iOS. You can get the Mac beta <a href="https://irskep.itch.io/powerl">on itch.io</a>, but to get the iOS beta you’ll have to <a href="powerq@steve.steveasleep.com">email me.</a></p>
-<p><img alt="screenshot" src="http://localhost:8000/img/powerq/screenshot.png" /></p>
+<p><img alt="screenshot" src="http://steveasleep.com/img/powerq/screenshot.png" /></p>
 <p>Before:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UwGfKSDzyeY?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -94,7 +95,7 @@
 <p>Power-Q is a turn-based game played on an 8-column, 6-row grid. The player is a robot with a health bar and a power meter. They can move up, down, left, or right. Each move drains power.</p>
 <p>The level contains walls, enemies, powerups, and an exit. The overall goal of the game is to reach the exit 8 times. Each level has more enemies than the last. Powerups include health boosts, power boosts, and ammunition.</p>
 <p>There are three kinds of enemies. They move in specific patterns (diagonals, up/down/left/right every other turn, and knight-style) and sap your health when they hit you. There are also “power drains,” which sap your power and disappear if you run over them.</p>
-<p><img alt="moves diagram" src="http://localhost:8000/img/powerq/moves.png" /></p>
+<p><img alt="moves diagram" src="http://steveasleep.com/img/powerq/moves.png" /></p>
 <p>The player has a melee attack and a ranged attack. The melee attack can kill a health-draining enemy in two hits. The ranged attack consumes ammunition and can kill an enemy in one hit.</p>
 <p>Although I only published the Mac version for Ludum Dare, I wanted to make sure the interface could work on an iPhone. There are only two kinds of interactions you can have with the game: you can move (arrow keys on Mac, swipe on iOS) and shoot (click on Mac, double-tap on iOS).</p>
 <p>That’s it, the end! That’s the whole game. Each game is supposed to last about five minutes. I could expand the enemy roster, but I wanted to limit the scope to something I could finish on weekends before my intrinsic motivation ran out.</p>
@@ -106,14 +107,14 @@
 <p>If you look at the console logs, you’ll see that every level is re-rolled 1-4 times on average, but it’s really fast, so it won’t matter to players.</p>
 <h4 id="frustrating-targeting">Frustrating targeting</h4>
 <p>Shooting follows a line determined by <a href="https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm">Bresenham's algorithm</a>. It means a bullet path follows the yellow squares:</p>
-<p><img alt="bresenham exmaple" src="http://localhost:8000/img/powerq/bresenham_1.png" /></p>
+<p><img alt="bresenham exmaple" src="http://steveasleep.com/img/powerq/bresenham_1.png" /></p>
 <p>The algorithm is popular and well understood. It's convenient for a programmer, but can be frustrating for players if used for this kind of thing naïvely.</p>
 <p>As an example, take a look at this situation:</p>
-<p><img alt="bresenham exmaple" src="http://localhost:8000/img/powerq/bresenham_2.png" /></p>
+<p><img alt="bresenham exmaple" src="http://steveasleep.com/img/powerq/bresenham_2.png" /></p>
 <p>Given the way shooting works, the player could reasonably expect to shoot around the corner. And it would work:</p>
-<p><img alt="bresenham exmaple" src="http://localhost:8000/img/powerq/bresenham_3.png" /></p>
+<p><img alt="bresenham exmaple" src="http://steveasleep.com/img/powerq/bresenham_3.png" /></p>
 <p>But what if the middle two cells were flipped? The player probably expects to be able to shoot the enemy.</p>
-<p><img alt="bresenham exmaple" src="http://localhost:8000/img/powerq/bresenham_4.png" /></p>
+<p><img alt="bresenham exmaple" src="http://steveasleep.com/img/powerq/bresenham_4.png" /></p>
 <p>Oh no! That's a terrible experience! it will fail and the player won't know why.</p>
 <p>I solved this problem by exploiting the asymmetry of Bresenham's line algorithm. If you run it from point A to point B, you get a different set of points than if you run it from point B to point A! By running it both ways every time, almost all of these weird cases are covered because the reverse version uses a slightly different path from the regular version.</p>
 <h4 id="smarter-enemies">Smarter enemies</h4>
@@ -123,15 +124,15 @@
 <p>Typical players will die a lot before beating the game, and I don't want them to feel like they aren't progressing. A simple high score counter seemed like a good solution. I made each enemy worth one point and displayed the highest score on the title screen.</p>
 <h2 id="art">Art</h2>
 <p>I developed the game using ASCII characters for most of Ludum Dare. Midway through, I turned the enemies into emoji. As the deadline approached, it didn’t feel right to use Apple’s beautiful high-resolution animal illustrations as my game art, so I did some bad tracings in Pixelmator and shipped it.</p>
-<p><img alt="screenshot from jam" src="http://localhost:8000/img/powerq/screenshot_before.png" /></p>
+<p><img alt="screenshot from jam" src="http://steveasleep.com/img/powerq/screenshot_before.png" /></p>
 <p>I immediately regretted all of my art choices. The whole thing looked like crap to me. So I downloaded <a href="https://piskelapp.com">Piskel</a> and started on some 16x16 pixel art style sprites. The result was a lot more charming! I packaged it up into a post-compo build with some crash fixes a couple days after the jam ended.</p>
-<p><img alt="screenshot from just after the" src="http://localhost:8000/img/powerq/screenshot_before_2.png" /></p>
+<p><img alt="screenshot from just after the" src="http://steveasleep.com/img/powerq/screenshot_before_2.png" /></p>
 <h3 id="polishing-the-art">Polishing the art</h3>
 <p>As I converted more of my art to the new style, I became frustrated with Piskel’s UI. I bought <a href="https://www.aseprite.org">Aseprite</a> instead and my pixel art productivity skyrocketed. I reduced my color palette and put the finishing touches on the sprites. As someone without any art training, I found creating the color palette to be a bigger challenge than I would have expected, though I suspect if I had started with Aseprite instead of Piskel I would have been more consistent from the beginning and had an easier time of it.</p>
 <p>My game-over screens were just black voids with text in the middle of them, so as soon as I was done with the sprites, I did some simple illustrations for the three possible endgame conditions: a win, a loss due to power, and a loss due to health.</p>
 <p>One enemy, formerly known as the turtle, moves every other turn. It was impossible to know at a glance whether it was about to move or not. I replaced the single turtle frame with a blobby thing that flips between two frames.</p>
 <p>I’m leaving a lot out here. There were probably a hundred more little things I did to the art.</p>
-<p><img alt="screenshot from final game" src="http://localhost:8000/img/powerq/screenshot.png" /></p>
+<p><img alt="screenshot from final game" src="http://steveasleep.com/img/powerq/screenshot.png" /></p>
 <h2 id="music-and-sound">Music and sound</h2>
 <p>Music production for 48-hour game jams requires a careful balance between time spent and dopeness. My initial music pass had a pretty good set of sounds and melodies, but I rearranged it a little bit for the final release. I might still write a second track.</p>
 <p>To get an extra push over the musical polish line, I put <a href="https://gooseninja.itch.io/space-music-pack">GooseNinja’s space-themed loading track</a> over the title screen. If this game makes any money, I’ll be kicking some of it over to them.</p>
@@ -141,9 +142,9 @@
 <h2 id="help-screen">Help screen</h2>
 <p>For the Ludum Dare build, I did what most people do: slap some instruction text on the title screen. For the final version, I moved the instructions to a separate screen.</p>
 <p>Before:</p>
-<p><img alt="help screen before" src="http://localhost:8000/img/powerq/help_screen_before.png" /></p>
+<p><img alt="help screen before" src="http://steveasleep.com/img/powerq/help_screen_before.png" /></p>
 <p>After:</p>
-<p><img alt="help screen after" src="http://localhost:8000/img/powerq/help_screen.png" /></p>
+<p><img alt="help screen after" src="http://steveasleep.com/img/powerq/help_screen.png" /></p>
 <h2 id="portrait-mode">Portrait mode</h2>
 <p>One of my core beliefs as an iOS gamer and developer is one that apparently isn’t shared by game developers who make otherwise great games:</p>
 <p><strong>If your iOS game can be played with one hand, it should support portrait mode.</strong></p>
@@ -151,7 +152,7 @@
 <p>Given my passion for this belief, as soon as Ludum Dare was over, I began to think about how I’d go about supporting portrait mode in Power-Q.</p>
 <p>In terms of just the interface, the solution was simple. The 8x6 grid was designed to comfortably fit on an iPhone 5S without scrolling, so in portrait mode, it would just become a 6x8 grid! The map would physically stay in the same place in both rotations; only your perspective of the objects would change. The resource bars and labels would be at the bottom of the screen instead of the left.</p>
 <p>In practice, this feels a bit weird when you see the rotation in person, but when you’re playing locked in one rotation it doesn’t matter at all and just works.</p>
-<p><img alt="help screen after" src="http://localhost:8000/img/powerq/portrait.png" /></p>
+<p><img alt="help screen after" src="http://steveasleep.com/img/powerq/portrait.png" /></p>
 <p>But in the code, it was nightmarish. I had to move a lot of layout code around and make sure every sprite was in the right place at all times. And because the map was just rotated 90º, I also had to un-rotate all the sprites individually and do a little bit of funky coordinate space translation math to detect grid touches correctly. Now every single screen in the game has two completely separate layouts that have to be individually tested.</p>
 <p>So I guess I lied when I said there was “no reason” why 868-HACK couldn’t support portrait mode. It would be a lot of work. But I swear on Steve Job’s grave that I would pay $10 for an in-app purchase that enables it.</p>
 <p>Now that I’ve baked the portrait/landscape duality into the game, I think I’ll just do it for every iOS game I make going forward. The patterns are easy to understand and implement. In the future, though, I’m going to just make games with scrolling or square maps so I don’t have to rotate the playing field.</p>
@@ -185,9 +186,10 @@
           <h3>Writing</h3>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
           <h3>Games</h3>
-            <li><a href="/games.html">All games</a></li>
+            <li><a href="http://steveasleep.com/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>

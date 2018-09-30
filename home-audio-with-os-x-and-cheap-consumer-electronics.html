@@ -10,27 +10,27 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
-    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
-    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
 
     <meta charset="utf-8" />
-      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
-      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
     <!--
-      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
+      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
     -->
 
-    <script src="http://localhost:8000/js/hyphenate.js"></script>
+    <script src="http://steveasleep.com/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://localhost:8000/js/main.js"></script>
+    <script src="http://steveasleep.com/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://localhost:8000">
+      <a href="http://steveasleep.com">
         <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
         Steve Landey
@@ -51,8 +51,9 @@
         <ul>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="/resume.html">Résumé</a></li>
-            <li><a href="/games.html">All games</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
+            <li><a href="http://steveasleep.com/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
@@ -70,7 +71,7 @@
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://localhost:8000/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="bookmark" title="Permalink to Home audio with OS X and cheap consumer electronics">
+      <a href="http://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="bookmark" title="Permalink to Home audio with OS X and cheap consumer electronics">
         Home audio with OS X and cheap consumer electronics
       </a>
     </h1>
@@ -95,7 +96,7 @@
 <p>Find an out-of-the-way location. Plug the laptop into the speakers and power. We’re about to set things up so you don’t need to be physically at the computer to manage it, so don’t worry about the location being convenient to access.</p>
 <h3 id="initial-setup-seated-at-media-server">Initial setup (seated at media server)</h3>
 <p>Open System Preferences. Select Sharing. Check the “Remote Management” box, and when the drop-down opens, select “Observe” and “Control.”</p>
-<p><img alt="Sharing preference pane" src="http://localhost:8000/img/home_audio_adventures/prefpane_sharing.png" /></p>
+<p><img alt="Sharing preference pane" src="http://steveasleep.com/img/home_audio_adventures/prefpane_sharing.png" /></p>
 <p>Set or remember the “Computer Name” field at the top. A nice, short name you could use would be <code>media-server</code>. Going forward, I’m going to assume you used that name.</p>
 <p>Still in System Preferences, click the back button. Go to “Users &amp; Groups”. Click “Login Options.” Make sure the “Automatic login:” menu is set to the user you want. (You may also need to go to “Security &amp; Privacy” in System Preferences and uncheck “Disable automatic login.”)</p>
 <p>Install <a href="http://semaja2.net/projects/insomniaxinfo/">InsomniaX</a> if you’re using a laptop. This will let you close the lid without putting the laptop to sleep. Once installed and running, open the menu, and make sure Preferences &gt; “Start on Login” is checked.</p>
@@ -103,7 +104,7 @@
 <h3 id="remaining-setup-remote">Remaining setup (remote)</h3>
 <p>On Mac number two, open a Finder window. In the Finder menu bar, select Go &gt; Network or hit Command+Shift+K. Pick <code>media-server</code> from the list and click the Share Screen button. Enter your username and password for your account on the media server.</p>
 <p>You should see a list with <code>media-server</code> init. Click it. There should be a “Share Screen…” button. Click it. Enter your username and password from <code>media-server</code>.</p>
-<p><img alt="Network folder in Finder" src="http://localhost:8000/img/home_audio_adventures/finder_network.png" />
+<p><img alt="Network folder in Finder" src="http://steveasleep.com/img/home_audio_adventures/finder_network.png" />
 ￼
 (I call mine “fiona.”)</p>
 <p>Before you really get going, you might want to take some time to open your wifi router’s settings and assign a dedicated internal IP to the media server. Macs will be able to connect to it as <code>media-server.local</code>, but Windows machines won’t. I won’t provide specific instructions here due to the infinite variety of router software, but it was pretty simple on my Airport Extreme.</p>
@@ -116,29 +117,29 @@
 <p>All of my solutions to the MP3 library problem are, unfortunately, pretty technical. I don’t have any recommendations for people who are not comfortable with the terminal.</p>
 <p>The best-documented ways to share an MP3 library are <a href="https://www.musicpd.org">mpd</a> and <a href="https://www.mopidy.com">mopidy</a>. Both solutions mostly work but are broken in some annoying way and don’t have any truly great clients.</p>
 <p>I prefer to use my own project, <a href="https://github.com/irskep/summertunes">Summertunes</a>. It glues together the <a href="http://beets.io">beets</a> extensible music library manager and <a href="https://mpv.io">mpv</a> player in an iTunes-like web interface. That means Casey and I can control the same library and playlist from any web browser on any device, including our phones. It’s responsive and reliable.</p>
-<p><img alt="Summertunes" src="http://localhost:8000/img/home_audio_adventures/summertunes.png" /></p>
+<p><img alt="Summertunes" src="http://steveasleep.com/img/home_audio_adventures/summertunes.png" /></p>
 <p>I use <a href="http://www.soma-zone.com/LaunchControl/">LaunchControl</a> with some shell scripts to run <code>mpd</code> and Summertunes on login, so I never need to mess with them manually unless they break.</p>
 <p>I recommend <a href="https://github.com/CDrummond/cantata/releases">Cantata</a> as an MPD client. It’s not very Mac-like, but it’s easy enough to find your way around.</p>
-<p><img alt="Cantata" src="http://localhost:8000/img/home_audio_adventures/cantata.png" /></p>
+<p><img alt="Cantata" src="http://steveasleep.com/img/home_audio_adventures/cantata.png" /></p>
 <p>We only use MPD if I’m actively working on Summertunes and have temporarily hosed the installation. So about once per month.</p>
 <h2 id="input-passthrough">Input passthrough</h2>
 <p>The Mac takes care of a lot by itself, but we still need to support a home theater PC, Bluetooth adapter, and 3.5mm aux cable. Some external hardware is necessary.</p>
 <p>We could have the Mac output to a switch, but I’d rather just have everything merged into one signal so the music players work 100% of the time without having to remember what channel something is on. We can accomplish this using <a href="https://rogueamoeba.com/soundsource/">SoundSource</a>, a $10 utility that lets you mirror your Mac’s audio input to its output.</p>
 <p>Buy SoundSource, run it, select “Open Play-Thru Window” in the menu, and click “Start Play-Thru.” You’ll need to hit this button after every reboot, unfortunately. If you use SoundSource for this purpose, please join me in sending feature request via their <a href="https://rogueamoeba.com/support/knowledgebase/?showCategory=SoundSource">support form</a> asking them to let us auto-enable it.</p>
-<p><img alt="SoundSource" src="http://localhost:8000/img/home_audio_adventures/soundsource.png" /></p>
+<p><img alt="SoundSource" src="http://steveasleep.com/img/home_audio_adventures/soundsource.png" /></p>
 <h2 id="audio-switching">Audio switching</h2>
 <p>At this point, we’ve got a Mac hosting a music library and Spotify, which will pass through any input we send to it through its line-in port. We need to add Bluetooth, 3.5mm aux, and a home theater PC.</p>
 <p>I spent <em>hours</em> on Amazon trying to find a device that does nothing but switch between 3 RCA or 3.5mm inputs, and has a remote control. The reason this is hard to find is that most people use a stereo receiver, which is both an amplifier and a switch. <a href="https://www.amazon.com/Yamaha-R-S202BL-Stereo-Receiver/dp/B01EMQI2CU/">(Example, $150.)</a> Stereo receiver remote controls never have fewer than 30 buttons. I don’t want anything in my house that has a D-pad and isn’t gaming controller.</p>
 <p>I found exactly one device that fits my requirements: <a href="https://www.amazon.com/gp/product/B01HGISAOQ/">“iKKEGOL 5 Ways 4 Port IN 1 Out Video Audio S-Video Game AV Switch Box Selector with Remote Control Av-666d Black”</a>. It was twenty bucks and its remote has five buttons: four for input selection, one for power.</p>
-<p><img alt="The switch" src="http://localhost:8000/img/home_audio_adventures/switch.jpg" /></p>
+<p><img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/switch.jpg" /></p>
 <h2 id="bluetooth">Bluetooth</h2>
 <p>All Bluetooth devices for home use are garbage, but some are less garbage than others. I have had okay but not great luck with <a href="https://www.amazon.com/gp/product/B016NUTG5K/">this adapter from Esinkin</a> and was totally dissatisfied by <a href="https://www.amazon.com/gp/product/B00SW0523A/">this one from iKross</a>. I didn’t realize it at the time, but <a href="http://thewirecutter.com/reviews/best-bluetooth-audio-receiver-for-your-home-stereo-or-speakers/">The Wirecutter has some suggestions that might be better.</a></p>
 <p>We use Bluetooth a lot less now that Summertunes is working and populated, so I care about this a lot less than I used to.</p>
 <h2 id="pieces-of-flair">Pieces of flair</h2>
 <p>Every home across America with more than one audio source has a unique and probably awful system for getting audio from point A to point B. Ours is particularly unique! So I designed this handy reference card, and Casey printed it out on our brand new <a href="https://cricut.com">Cricut</a>:</p>
-<p><img alt="The switch" src="http://localhost:8000/img/home_audio_adventures/reference_card.jpg" /></p>
+<p><img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/reference_card.jpg" /></p>
 <p>Casey also gave the switcher remote the Cricut-assisted personal touch:</p>
-<p><img alt="The switch" src="http://localhost:8000/img/home_audio_adventures/remote.jpg" /></p>
+<p><img alt="The switch" src="http://steveasleep.com/img/home_audio_adventures/remote.jpg" /></p>
 <p>We’re still left with a minor cable nest, but the volume of the whole setup is only about two Macbook Pros.</p>
 <h2 id="parting-thoughts">Parting thoughts</h2>
 <p>After writing all this out, the first question I had for myself was whether it was all worth it. Shouldn’t I have just bought a stereo receiver?</p>
@@ -152,9 +153,10 @@
           <h3>Writing</h3>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
+            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
           <h3>Games</h3>
-            <li><a href="/games.html">All games</a></li>
+            <li><a href="http://steveasleep.com/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
