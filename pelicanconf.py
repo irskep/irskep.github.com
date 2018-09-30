@@ -96,6 +96,8 @@ PAGE_SAVE_AS = PAGE_URL
 ARTICLE_URL = '{slug}.html'
 ARTICLE_SAVE_AS = ARTICLE_URL
 
+INDEX_SAVE_AS = 'index_old.html'
+
 CATEGORY_URL = '{slug}'
 CATEGORY_SAVE_AS = '%s/index.html' % CATEGORY_URL
 TAG_URL = '{slug}'
