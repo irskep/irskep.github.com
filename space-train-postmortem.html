@@ -10,27 +10,27 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
 
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
     <!--
-      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
+      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
     -->
 
-    <script src="http://steveasleep.com/js/hyphenate.js"></script>
+    <script src="http://localhost:8000/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://steveasleep.com/js/main.js"></script>
+    <script src="http://localhost:8000/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://steveasleep.com">
+      <a href="http://localhost:8000">
         <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
         Steve Landey
@@ -49,29 +49,37 @@
     <div id="pagecontainer">
       <nav id="menu">
         <ul>
-            <li><a href="https://blog.steveasleep.com/">Blog</a></li>
-            <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
-            <li><a href="http://steveasleep.com/games.html">All games</a></li>
-            <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
-            <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
-            <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
-            <li><a href="http://sendimals.com">Sendimals</a></li>
-            <li><a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a></li>
-            <li><a href="https://asana.github.io/Drawsana/">Drawsana</a></li>
-            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
-            <li><a href="http://steveasleep.com/clubsandwich">clubsandwich</a></li>
-            <li><a href="http://steveasleep.com/BearLibTerminal-Swift/">BearLibTerminal-Swift</a></li>
-            <li><a href="http://steveasleep.com/jumbogrove">Jumbo Grove</a></li>
-            <li><a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a></li>
+          <li><strong>Writing:</strong>
+              <a href="https://blog.steveasleep.com/">Blog</a>
+              <a href="https://twitter.com/irskep">Twitter</a>
+              <a href="/resume.html">Résumé</a>
+              <a href="/articles/">Old blog</a>
+          </li>
+          <li><strong>Games:</strong>
+              <a href="/games.html">All games</a>
+              <a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a>
+              <a href="https://irskep.itch.io/powerq">Power-Q</a>
+              <a href="https://irskep.itch.io/roguebasement">Rogue Basement</a>
+          </li>
+          <li><strong>Apps:</strong>
+              <a href="http://sendimals.com">Sendimals</a>
+              <a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a>
+          </li>
+          <li><strong>Open Source:</strong>
+              <a href="https://asana.github.io/Drawsana/">Drawsana</a>
+              <a href="http://literallycanvas.com/">Literally Canvas</a>
+              <a href="http://steveasleep.com/clubsandwich">clubsandwich</a>
+              <a href="http://steveasleep.com/BearLibTerminal-Swift/">BearLibTerminal-Swift</a>
+              <a href="http://steveasleep.com/jumbogrove">Jumbo Grove</a>
+              <a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a>
+          </li>
         </ul>
       </nav>
 
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://steveasleep.com/space-train-postmortem.html" rel="bookmark" title="Permalink to Space Train Postmortem">
+      <a href="http://localhost:8000/space-train-postmortem.html" rel="bookmark" title="Permalink to Space Train Postmortem">
         Space Train Postmortem
       </a>
     </h1>
@@ -82,10 +90,10 @@
     </div>
   </header>
 
-    <div class="entry-content hyphenate"><p><img alt="Space Train logo" src="http://steveasleep.com/img/content/space_train_logo.png" /></p>
+    <div class="entry-content hyphenate"><p><img alt="Space Train logo" src="http://localhost:8000/img/content/space_train_logo.png"></p>
 <p>With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
-called <em><a href="http://steveasleep.com/space-train.html">Space Train: Terror on the Mustachio
+called <em><a href="http://localhost:8000/space-train.html">Space Train: Terror on the Mustachio
 Express</a></em>, developed by a team of
 students from the <a href="http:/www.cia.edu/">Cleveland Institute of Art</a> and <a href="http:/www.case.edu">Case
 Western Reserve University</a>. Its technical components
@@ -105,7 +113,7 @@ make.</strong> As a result, the game is only about twenty minutes long. Even so,
 all learned from the experience.</p>
 
 
-<h2 id="the-course">The Course</h2>
+<h2>The Course</h2>
 <p>"EECS 390 - Advanced Game Development Project" is a joint course between the
 Cleveland Institute of Art and Case Western Reserve University. Teams of 6-12
 artists and programmers collaborate to produce some sort of game. At the end of
@@ -115,7 +123,7 @@ questions and critique. The course is currently taught by Dr. Marc Buchner
 <p>The other two games made this semester were Kalotai, a location-aware monster
 collection/battle game for Android, and Louder Than Words, a platformer with
 branching story lines based on a morality system.</p>
-<h2 id="how-it-went-down">How It Went Down</h2>
+<h2>How It Went Down</h2>
 <p>We all arrived at 8:30 AM on the first day of class, heavily caffeinated.
 Everyone put ideas on a white board and then divided into three teams based on
 interest. My team ended up with four programmers and six artists, with me as
@@ -146,23 +154,23 @@ hours writing detailed scripts for each level we planned to implement. We
 followed this process to the end, and it worked beautifully. We had a very
 slick demo.</p>
 <p>Here are some screenshots of the game:</p>
-<p><a href="http://steveasleep.com/img/content/space_train_screenshot_1.png"><img alt="Screenshot 1" src="http://steveasleep.com/img/content/space_train_thumb_1.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_screenshot_2.png"><img alt="Screenshot 2" src="http://steveasleep.com/img/content/space_train_thumb_2.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_screenshot_3.png"><img alt="Screenshot 3" src="http://steveasleep.com/img/content/space_train_thumb_3.png" /></a></p>
+<p><a href="http://localhost:8000/img/content/space_train_screenshot_1.png"><img alt="Screenshot 1" src="http://localhost:8000/img/content/space_train_thumb_1.png"></a>
+<a href="http://localhost:8000/img/content/space_train_screenshot_2.png"><img alt="Screenshot 2" src="http://localhost:8000/img/content/space_train_thumb_2.png"></a>
+<a href="http://localhost:8000/img/content/space_train_screenshot_3.png"><img alt="Screenshot 3" src="http://localhost:8000/img/content/space_train_thumb_3.png"></a></p>
 <p>Here are some of the stages of the game's artistic development:</p>
-<p><a href="http://steveasleep.com/img/content/space_train_art_1.png"><img alt="Concept Art" src="http://steveasleep.com/img/content/space_train_art_1_thumb.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_art_2.png"><img alt="Line Art" src="http://steveasleep.com/img/content/space_train_art_2_thumb.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_art_3.png"><img alt="Flat Color" src="http://steveasleep.com/img/content/space_train_art_3_thumb.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_art_4.png"><img alt="Object/Furniture Design" src="http://steveasleep.com/img/content/space_train_art_4_thumb.png" /></a>
-<a href="http://steveasleep.com/img/content/space_train_art_5.png"><img alt="Rendered Art" src="http://steveasleep.com/img/content/space_train_art_5_thumb.png" /></a></p>
-<h2 id="lessons-learned">Lessons Learned</h2>
+<p><a href="http://localhost:8000/img/content/space_train_art_1.png"><img alt="Concept Art" src="http://localhost:8000/img/content/space_train_art_1_thumb.png"></a>
+<a href="http://localhost:8000/img/content/space_train_art_2.png"><img alt="Line Art" src="http://localhost:8000/img/content/space_train_art_2_thumb.png"></a>
+<a href="http://localhost:8000/img/content/space_train_art_3.png"><img alt="Flat Color" src="http://localhost:8000/img/content/space_train_art_3_thumb.png"></a>
+<a href="http://localhost:8000/img/content/space_train_art_4.png"><img alt="Object/Furniture Design" src="http://localhost:8000/img/content/space_train_art_4_thumb.png"></a>
+<a href="http://localhost:8000/img/content/space_train_art_5.png"><img alt="Rendered Art" src="http://localhost:8000/img/content/space_train_art_5_thumb.png"></a></p>
+<h2>Lessons Learned</h2>
 <p>I had never been in a months-long team leadership position before. My
 experience organizing <a href="http:/hacsoc.org/">CWRU Hacker Society</a> helped, but
 that was more cat herding than game building. By the end of the course the
 team had worked out a process by trial and error that seemed to produce
 results, but by the time we found that process, it was really too late to save
 the game.</p>
-<h3 id="schedule">Schedule</h3>
+<h3>Schedule</h3>
 <p>We spent too much time thinking up random characters and not enough time
 fitting them into a big picture. We should have started writing
 pseudo-screenplays or storyboards to work from by the third week. That would
@@ -172,7 +180,7 @@ early on.</p>
 levels, which would have helped us develop a scripting API. For most of the
 semester, we worked with an ad-hoc API. We ended up redesigning it in the last
 week because it wasn't working for us anymore.</p>
-<h3 id="adventure-games-are-hard-to-make">Adventure Games Are Hard to Make</h3>
+<h3>Adventure Games Are Hard to Make</h3>
 <p>Almost every game I have ever made has involved bullets. That usually means
 those bullets are heading for a relatively small number of enemy types, are
 flying over relatively simple pre-rendered or procedurally generated terrain,
@@ -180,7 +188,7 @@ and have very simple animations. In an adventure game, everything the player
 sees has a unique design and multiple animations. The average screen time of a
 given image is minutes or less. Even though we were working with six artists,
 we were barely able to finish our 20 minutes of play time.</p>
-<h3 id="communication-is-key">Communication is Key</h3>
+<h3>Communication is Key</h3>
 <p>We encouraged communication by providing as many useful collaboration tools as
 possible. Without constant communication, Space Train would have been a total
 failure.</p>
@@ -190,7 +198,7 @@ system or an artist-unfriendly version control system. Our consistent meeting
 format was usually effective at giving everyone concrete goals for the week.
 Git, of course, is the ideal code collaboration tool. The mailing list filled
 in any gaps.</p>
-<h3 id="course-project-group-dynamics-are-weird">Course Project Group Dynamics are Weird</h3>
+<h3>Course Project Group Dynamics are Weird</h3>
 <p>I've always felt uncomfortable with the way course project groups are formed.
 Usually they form around ideas, not around teams, and that was explicitly the
 case with this course. This means that team dynamics are a total crapshoot, and
@@ -198,12 +206,12 @@ if things go south, you're locked in for three months and your success is
 irrevocably chained together. By the end of the course, we effectively had two
 programmers and four artists, with four other people functioning as dead
 weight.</p>
-<h3 id="conspicuously-absent-from-this-list">Conspicuously Absent From This List:</h3>
+<h3>Conspicuously Absent From This List:</h3>
 <p>Significant code issues. We really powered through the engine and never got
 hindered by any major design flaws. The game's source code is <a href="http:/www.github.com/irskep/Space-Train">on
 Github</a>. It's not beautiful, but it
 worked well enough for us.</p>
-<h2 id="the-team">The Team</h2>
+<h2>The Team</h2>
 <ul>
 <li><strong>Steve Johnson</strong>: Lead programmer, screenplay, music, engine, UI</li>
 <li><strong><a href="http:/taxidermyrobot.blogspot.com/">Kelsey Bass</a></strong>: Lead artist, character design/line work/animation</li>
@@ -217,7 +225,7 @@ worked well enough for us.</p>
 <li><strong>Vincent Pizarski</strong>: Character design, coloring, exteriors</li>
 </ul>
 <p>Kelsey did caricatures of the team for the credit sequence. Here's mine for:</p>
-<p><img alt="Caricature" src="http://steveasleep.com/img/content/space_train_caricature.png" /></p></div>
+<p><img alt="Caricature" src="http://localhost:8000/img/content/space_train_caricature.png"></p></div>
   </article></section>
     </div>
 
@@ -226,10 +234,10 @@ worked well enough for us.</p>
           <h3>Writing</h3>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
+            <li><a href="/resume.html">Résumé</a></li>
+            <li><a href="/articles/">Old blog</a></li>
           <h3>Games</h3>
-            <li><a href="http://steveasleep.com/games.html">All games</a></li>
+            <li><a href="/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>

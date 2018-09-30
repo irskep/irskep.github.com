@@ -10,27 +10,27 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
 
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
     <!--
-      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
+      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
     -->
 
-    <script src="http://steveasleep.com/js/hyphenate.js"></script>
+    <script src="http://localhost:8000/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://steveasleep.com/js/main.js"></script>
+    <script src="http://localhost:8000/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://steveasleep.com">
+      <a href="http://localhost:8000">
         <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
         Steve Landey
@@ -49,29 +49,37 @@
     <div id="pagecontainer">
       <nav id="menu">
         <ul>
-            <li><a href="https://blog.steveasleep.com/">Blog</a></li>
-            <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
-            <li><a href="http://steveasleep.com/games.html">All games</a></li>
-            <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
-            <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
-            <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
-            <li><a href="http://sendimals.com">Sendimals</a></li>
-            <li><a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a></li>
-            <li><a href="https://asana.github.io/Drawsana/">Drawsana</a></li>
-            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
-            <li><a href="http://steveasleep.com/clubsandwich">clubsandwich</a></li>
-            <li><a href="http://steveasleep.com/BearLibTerminal-Swift/">BearLibTerminal-Swift</a></li>
-            <li><a href="http://steveasleep.com/jumbogrove">Jumbo Grove</a></li>
-            <li><a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a></li>
+          <li><strong>Writing:</strong>
+              <a href="https://blog.steveasleep.com/">Blog</a>
+              <a href="https://twitter.com/irskep">Twitter</a>
+              <a href="/resume.html">Résumé</a>
+              <a href="/articles/">Old blog</a>
+          </li>
+          <li><strong>Games:</strong>
+              <a href="/games.html">All games</a>
+              <a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a>
+              <a href="https://irskep.itch.io/powerq">Power-Q</a>
+              <a href="https://irskep.itch.io/roguebasement">Rogue Basement</a>
+          </li>
+          <li><strong>Apps:</strong>
+              <a href="http://sendimals.com">Sendimals</a>
+              <a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a>
+          </li>
+          <li><strong>Open Source:</strong>
+              <a href="https://asana.github.io/Drawsana/">Drawsana</a>
+              <a href="http://literallycanvas.com/">Literally Canvas</a>
+              <a href="http://steveasleep.com/clubsandwich">clubsandwich</a>
+              <a href="http://steveasleep.com/BearLibTerminal-Swift/">BearLibTerminal-Swift</a>
+              <a href="http://steveasleep.com/jumbogrove">Jumbo Grove</a>
+              <a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a>
+          </li>
         </ul>
       </nav>
 
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="bookmark" title="Permalink to The Design and Implementation of Rogue Basement">
+      <a href="http://localhost:8000/the-design-and-implementation-of-rogue-basement.html" rel="bookmark" title="Permalink to The Design and Implementation of Rogue Basement">
         The Design and Implementation of Rogue Basement
       </a>
     </h1>
@@ -84,12 +92,12 @@
 
     <div class="entry-content hyphenate"><p>This year I participated in <a href="https://ldjam.com">Ludum Dare 38</a>, a 48-hour game programming "competition." I've been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href="https://ldjam.com/events/ludum-dare/38/rogue-basement">Rogue Basement</a>, a bare-bones, single-level game with ASCII graphics.</p>
 <p>In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented. <a href="https://github.com/irskep/rogue_basement">The source code</a> is extensively commented as well.</p>
-<p><img alt="screenshot" src="http://steveasleep.com/img/rogue_basement/screenshot2.png" /></p>
+<p><img alt="screenshot" src="http://localhost:8000/img/rogue_basement/screenshot2.png"></p>
 
 
-<h1 id="what-is-a-roguelike">What is a roguelike?</h1>
+<h1>What is a roguelike?</h1>
 <p>A "roguelike" is a game that is "like Rogue," a text-based game from the 1980s that looks like this:</p>
-<p><img alt="Rogue_Screen_Shot_CAR.png" src="http://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png" /></p>
+<p><img alt="Rogue_Screen_Shot_CAR.png" src="http://localhost:8000/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png"></p>
 <p>Typical features of these games include:</p>
 <ul>
 <li>Procedurally generated levels</li>
@@ -100,7 +108,7 @@
 <li>Very difficult to win without lots of practice</li>
 </ul>
 <p>The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you're always facing new situations. You have to use your wits to survive.</p>
-<h1 id="environment">Environment</h1>
+<h1>Environment</h1>
 <p>I started on Friday night with a level generator. When you're time-constrained, you have to make very careful decisions about where to innovate, and I chose to stick to a roguelike trope for my basic layout: boxy rooms connected by narrow corridors, with doors where corridors meet rooms.</p>
 <p>I could have placed a bunch of rooms randomly and made sure each one was connected to another, but it's tricky to use space efficiently that way. A common way to avoid this problem is to use a <strong>binary space partitioning tree.</strong></p>
 <p>The basic idea here is that you take a rectangular area, like this:</p>
@@ -172,7 +180,7 @@
 
 
 <p>When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here's a screenshot I took when I got to this point:</p>
-<p><img alt="Screenshot 2017-04-21 21.00.42.png" src="http://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png" /></p>
+<p><img alt="Screenshot 2017-04-21 21.00.42.png" src="http://localhost:8000/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png"></p>
 <p>But it's more interesting to mix it up with different sizes of rectangles.</p>
 <div class="highlight"><pre><span></span>+----------------------------------------+
 | +--+  | +------+|   +------+   |       |
@@ -242,7 +250,7 @@
 
 
 <p>And here's how it looked during development:</p>
-<p><img alt="Screenshot 2017-04-21 21.50.39.png" src="http://steveasleep.com/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png" /></p>
+<p><img alt="Screenshot 2017-04-21 21.50.39.png" src="http://localhost:8000/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png"></p>
 <p>We now have a few guarantees:</p>
 <ul>
 <li>All rooms are reachable from all other rooms.</li>
@@ -270,11 +278,11 @@
 
 <p>The player starts in <code>aa</code> and moves to <code>ab</code>, then <code>bb</code>, then <code>ba</code>, where the goal is.</p>
 <p>Here's another map from early development, which splits the map in this way:</p>
-<p><img alt="Screenshot 2017-04-22 10.54.30.png" src="http://steveasleep.com/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png" /></p>
+<p><img alt="Screenshot 2017-04-22 10.54.30.png" src="http://localhost:8000/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png"></p>
 <p>And here's one with just the first two partition lines, so you can see how the map is divided:</p>
-<p><img alt="Screenshot 2017-04-22 10.56.58.png" src="http://steveasleep.com/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png" /></p>
+<p><img alt="Screenshot 2017-04-22 10.56.58.png" src="http://localhost:8000/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png"></p>
 <p>And finally, here are the hallways that mark the transitions between each section:</p>
-<p><img alt="Screenshot 2017-04-22 11.40.44.png" src="http://steveasleep.com/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png" /></p>
+<p><img alt="Screenshot 2017-04-22 11.40.44.png" src="http://localhost:8000/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png"></p>
 <p>Originally the colors were just for debugging, but I ended up leaving them in place because they signal specialness.</p>
 <p>To add variety, I created a <code>rooms.csv</code> file to define a few room types:</p>
 <div class="highlight"><pre><span></span>                                                      Monster   Item
@@ -291,8 +299,8 @@ box_full,   *,          verp_1      0.20,   #6666ff,  2.00,     4.00
 
 
 <p>So within each quadrant, there is an 80% chance a room will have shape <code>box_random</code>, a quadrant-specific color, 5 monsters per 100 tiles, 5 items per 100 tiles, and allow any area-appropriate monster. But there is a 20% chance that the room will have the shape <code>box_full</code> (fill its entire BSP tree cell) and contain only verps, 2 per 100 tiles.</p>
-<h1 id="inhabitants">Inhabitants</h1>
-<h2 id="the-player">The player</h2>
+<h1>Inhabitants</h1>
+<h2>The player</h2>
 <p>The first inhabitant of the world is the player, represented by an <code>@</code> (because the cell with the <code>@</code> is "where you are at"). All world inhabitants, henceforth called "monsters" (after all, humans are the real monsters) and defined in <code>monsters.csv</code>:</p>
 <div class="highlight"><pre><span></span>id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
 player, @,    #ffffff,  -1,         0.00,   keyboard_movement,  100,    5.00,
@@ -300,7 +308,7 @@ player, @,    #ffffff,  -1,         0.00,   keyboard_movement,  100,    5.00,
 
 
 <p>"Difficulty" determines which quadrant a monster can spawn in. The player is a special case, so the level generator ignores it. The player moves in response to keyboard events, has 100 hit points, and hits other monsters for 5 damage. (The combat system in Rogue Basement is not sophisticated. There is no randomness. Remember, I had to be careful about where to spend innovation-points!)</p>
-<h2 id="npcs">NPCs</h2>
+<h2>NPCs</h2>
 <p>Generally speaking, NPCs (non-player characters) in video games and tabletop RPGs are differentiated based on three important things:</p>
 <ol>
 <li>What they can do</li>
@@ -343,13 +351,13 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 <p>I added a "sleep" behavior to differentiate wibbles from verps. When the player isn't around, verps are hyperactive and run around randomly; wibbles sit and meditate. It seemed in keeping with their fighting styles.</p>
 <p>That all worked great, but when wibbles ran out of rocks, the game got really easy! So I added another behavior, <code>pick_up_rocks</code>, which makes a wibble either move toward any adjacent rocks, or pick them up if it's standing on one.</p>
 <p>The "conservation of rocks" principle introduces a new tactic into the game: players can pick up all the rocks to deprive the wibbles of their ammunition. Fortunately the player's backpack is infinitely large!</p>
-<h2 id="stun-effect">Stun effect</h2>
+<h2>Stun effect</h2>
 <p>At this point, combat consisted of punching verps and dodging or punching rocks. (Yeah, you can punch rocks! They are just monsters after all!) I wanted to make it possible to avoid almost all damage, though, by understanding the game's systems, and the verps made it too hard to do that by being relentless.</p>
 <p>So I made every hit by the player stun the target monster for 2 turns. This is done using a behavior called <code>stunnable</code>, which just says "if I've been hit within the last 2 turns, turn blue and do nothing."</p>
 <p>For experienced roguelike players this makes the game easy once you figure it out, but I believe it's still a rewarding experience to figure it out in the first place. It is very, very difficult to make a game by yourself in 48 hours that has more than a few minutes of worthwhile gameplay, so I was aiming to just make those few minutes as good as possible and then let players feel like they could put it down after a good experience.</p>
-<h2 id="healing">Healing</h2>
+<h2>Healing</h2>
 <p>To make each section its own challenge, I decided to have the colored hallways between sections heal the player completely. This is another difficulty decrease that I could probably have left out, but I decided to err on the side of easy because I knew I had some user interface issues and wanted to be "extra" fair to players.</p>
-<h1 id="unintended-consequences">Unintended consequences</h1>
+<h1>Unintended consequences</h1>
 <p>The simulation has a few features I didn't intend, but that I don't regret—that's half the fun!</p>
 <p>These features mainly have to do with rocks, and the fact that when you throw them, they become monsters. Specifically:</p>
 <ul>
@@ -358,14 +366,14 @@ wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,      
 <li>If two wibbles throw rocks at you at the same time, they may collide in midair and die.</li>
 <li>You can embed rocks in walls. (Okay, not so happy about this one.)</li>
 </ul>
-<h1 id="atmosphere">Atmosphere</h1>
-<h2 id="music">Music</h2>
+<h1>Atmosphere</h1>
+<h2>Music</h2>
 <p>I took 90 minutes to write 4 tracks, adding up to 11 minutes of music. Each map quadrant plays one of the tracks. <a href="https://soundcloud.com/irskep/sets/rogue-basement-ost">You can listen to them here.</a></p>
 <p>The music fades down when you're in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get tougher.</p>
-<h2 id="title-screen">Title screen</h2>
+<h2>Title screen</h2>
 <p>I made this adorable title screen, and reused the ASCII art in the manual:</p>
-<p><img alt="title screen" src="http://steveasleep.com/img/rogue_basement/screenshot1.png" /></p>
-<h1 id="final-scores">Final scores</h1>
+<p><img alt="title screen" src="http://localhost:8000/img/rogue_basement/screenshot1.png"></p>
+<h1>Final scores</h1>
 <p>There were 1,104 "compo" (48-hour, one person) games, of which 549 had enough ratings to get scored and ranked. Here are the scores for Rogue Basement. Percentiles are within the 549 ranked games.</p>
 <table>
 <thead>
@@ -454,8 +462,8 @@ silly situations or mechanics. Rogue Basement just has some flavor text and
 ASCII art to justify your situation. I guess people appreciated it. (There's
 also some not-so-great English in the log messages, and that might have played
 a part.)</p>
-<h1 id="takeaways">Takeaways</h1>
-<h2 id="scope">Scope</h2>
+<h1>Takeaways</h1>
+<h2>Scope</h2>
 <p>Features I had planned to add but didn't:</p>
 <ul>
 <li>Multiple basements and an overworld</li>
@@ -464,25 +472,25 @@ a part.)</p>
 <li>2 more enemy types to use those missiles</li>
 </ul>
 <p>From past experience, I knew that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech demo.</p>
-<h2 id="difficulty-is-hard">Difficulty is hard</h2>
+<h2>Difficulty is hard</h2>
 <p>It's very difficult to tune for difficulty without time to playtest and fix things! I kept making the game easier because developers almost always make games too hard on the first pass, and I wanted to overcompensate to make it more likely that people would finish it in one sitting.</p>
 <p>The feedback so far seems to indicate that the difficulty is just about right. No one says it's too hard, and some people say they've been playing for 25 minutes(!!!) and haven't beaten it yet.</p>
-<h2 id="csvs-and-roguelikes-are-best-friends">CSVs and roguelikes are best friends</h2>
+<h2>CSVs and roguelikes are best friends</h2>
 <p>Every time I moved some data out of Python code into a CSV file, it got 10x easier to add new content, but not for the reason you might thing. Yes, copy/pasting CSV rows is an easy way to add new things, but the act of <em>designing</em> the file format made me think about how the whole program worked and put flexible systems in place that would let me do more cool stuff later.</p>
 <p>I can already see the limitations of CSV, so I think next I'm going to switch to CSV, but with YAML values for each column. I really like the efficiency of editing CSV, but it's not flexible enough to do what I want.</p>
-<h2 id="preparation-matters">Preparation matters</h2>
+<h2>Preparation matters</h2>
 <p>The week before Ludum Dare 38, I worked on an ASCII user interface and roguelike development framework. I didn't want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important stuff.</p>
-<h2 id="music-makes-a-difference">Music makes a difference</h2>
+<h2>Music makes a difference</h2>
 <p>The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn't working anymore. Most of the positive reviews mention the music.</p>
-<h2 id="ascii-helps-you-focus-on-mechanics-but-has-a-score-cost">ASCII helps you focus on mechanics but has a score cost</h2>
+<h2>ASCII helps you focus on mechanics but has a score cost</h2>
 <p>Since ASCII is traditional for roguelikes, I thought I wouldn't lose too many points in graphics. In my opinion, good ASCII is better than bad pixel art. But I was wrong, and I was ranked in the bottom 35% of scored games.</p>
 <p>Even though I lost points on graphics, I'm glad I went with ASCII, because it gave me a lot more time to focus on mechanics and the design of my engine. I would consider using ASCII again next time, graphics score be damned.</p>
-<h2 id="making-videos-ameliorates-loneliness">Making videos ameliorates loneliness</h2>
+<h2>Making videos ameliorates loneliness</h2>
 <p>Whenever I felt like I hit a milestone, I did a quick <a href="https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr">video update</a>. I didn't really expect anyone to watch them, but it helped give me perspective on my progress. And it simulated human interaction a little bit, which was nice because I was alone in the house for the entire weekend.</p>
-<h2 id="the-tech-stack-works">The tech stack works</h2>
+<h2>The tech stack works</h2>
 <p>I wrote the game in Python 3. For graphics, I used <a href="http://foo.wyrd.name/en:bearlibterminal">BearLibTerminal</a>. I played the music with <a href="https://pyglet.org">pyglet</a>. And for assorted algorithms, state management, and user interface features, I used my own <a href="http://steveasleep.com/clubsandwich/">clubsandwich</a> library. To package the game for OS X and Windows, I used <a href="http://www.pyinstaller.org/">PyInstaller</a>.</p>
 <p>This combination works really well. The main downside is that calling C libraries from Python is slow, and I had to do some optimiziation work to get a decent frame rate. In the future, I might switch the graphics over to use pyglet entirely, but I really like using BearLibTerminal because of its limitations. You get a grid of tiles and nothing else. It's liberating.</p>
-<h1 id="conclusion">Conclusion</h1>
+<h1>Conclusion</h1>
 <p>This is probably the most fun game I have ever made, and ties for most fun making a game alongside my last Ludum Dare success.</p>
 <p>Thanks for reading! You can watch all this happen at super-speed in this timelapse video:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen></iframe></div>
@@ -494,10 +502,10 @@ a part.)</p>
           <h3>Writing</h3>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
+            <li><a href="/resume.html">Résumé</a></li>
+            <li><a href="/articles/">Old blog</a></li>
           <h3>Games</h3>
-            <li><a href="http://steveasleep.com/games.html">All games</a></li>
+            <li><a href="/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>

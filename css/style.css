@@ -171,8 +171,7 @@ header#banner {
     display: block;
     height: 0;
     visibility: hidden; }
-  #menu li {
-    display: inline;
+  #menu li a, #menu li strong {
     margin-right: 0.5rem; }
 
 article.home-page ul.article-summary-list {

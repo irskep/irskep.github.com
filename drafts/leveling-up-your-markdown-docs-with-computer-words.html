@@ -10,27 +10,27 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
-    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
+    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
 
     <meta charset="utf-8" />
-      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
-      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
     <!--
-      <link href="http://steveasleep.com/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
+      <link href="http://localhost:8000/feeds/articles.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Categories Atom Feed" />
     -->
 
-    <script src="http://steveasleep.com/js/hyphenate.js"></script>
+    <script src="http://localhost:8000/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://steveasleep.com/js/main.js"></script>
+    <script src="http://localhost:8000/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://steveasleep.com">
+      <a href="http://localhost:8000">
         <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
         Steve Landey
@@ -49,29 +49,37 @@
     <div id="pagecontainer">
       <nav id="menu">
         <ul>
-            <li><a href="https://blog.steveasleep.com/">Blog</a></li>
-            <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
-            <li><a href="http://steveasleep.com/games.html">All games</a></li>
-            <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
-            <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
-            <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
-            <li><a href="http://sendimals.com">Sendimals</a></li>
-            <li><a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a></li>
-            <li><a href="https://asana.github.io/Drawsana/">Drawsana</a></li>
-            <li><a href="http://literallycanvas.com/">Literally Canvas</a></li>
-            <li><a href="http://steveasleep.com/clubsandwich">clubsandwich</a></li>
-            <li><a href="http://steveasleep.com/BearLibTerminal-Swift/">BearLibTerminal-Swift</a></li>
-            <li><a href="http://steveasleep.com/jumbogrove">Jumbo Grove</a></li>
-            <li><a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a></li>
+          <li><strong>Writing:</strong>
+              <a href="https://blog.steveasleep.com/">Blog</a>
+              <a href="https://twitter.com/irskep">Twitter</a>
+              <a href="/resume.html">Résumé</a>
+              <a href="/articles/">Old blog</a>
+          </li>
+          <li><strong>Games:</strong>
+              <a href="/games.html">All games</a>
+              <a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a>
+              <a href="https://irskep.itch.io/powerq">Power-Q</a>
+              <a href="https://irskep.itch.io/roguebasement">Rogue Basement</a>
+          </li>
+          <li><strong>Apps:</strong>
+              <a href="http://sendimals.com">Sendimals</a>
+              <a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a>
+          </li>
+          <li><strong>Open Source:</strong>
+              <a href="https://asana.github.io/Drawsana/">Drawsana</a>
+              <a href="http://literallycanvas.com/">Literally Canvas</a>
+              <a href="http://steveasleep.com/clubsandwich">clubsandwich</a>
+              <a href="http://steveasleep.com/BearLibTerminal-Swift/">BearLibTerminal-Swift</a>
+              <a href="http://steveasleep.com/jumbogrove">Jumbo Grove</a>
+              <a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a>
+          </li>
         </ul>
       </nav>
 
   <section id="content" class="body"><article class="article">
       <header class="article-header">
     <h1 class="entry-title">
-      <a href="http://steveasleep.com/drafts/leveling-up-your-markdown-docs-with-computer-words.html" rel="bookmark" title="Permalink to Leveling up your Markdown docs with Computer Words">
+      <a href="http://localhost:8000/drafts/leveling-up-your-markdown-docs-with-computer-words.html" rel="bookmark" title="Permalink to Leveling up your Markdown docs with Computer Words">
         Leveling up your Markdown docs with Computer Words
       </a>
     </h1>
@@ -92,7 +100,7 @@ post is for you. I'm going to try to convince you to feed your Markdown files
 into <a href="http://steveasleep.com/computerwords">Computer Words</a>, a program that
 will turn them into a static web site and provides you with a few useful
 authoring tools.</p>
-<h1 id="why-github-markdown-is-popular-for-docs">Why Github + Markdown is popular for docs</h1>
+<h1>Why Github + Markdown is popular for docs</h1>
 <ol>
 <li>You know Markdown and don't mind writing it, and that's also true of most
    potential contributors.</li>
@@ -101,9 +109,9 @@ authoring tools.</p>
 <p>In my opinion, these are must-haves for most projects without full-time
 developer support. Ain't nobody got time to learn a new markup language or
 deal with lots of configuration.</p>
-<h1 id="but">But...</h1>
+<h1>But...</h1>
 <p>The drawbacks break down into two categories.</p>
-<h2 id="power">Power</h2>
+<h2>Power</h2>
 <ol>
 <li>If you want to link to somewhere in your docs, you have to insert an anchor
    by hand, remember the filename of the target document, and construct a
@@ -124,7 +132,7 @@ deal with lots of configuration.</p>
    want it to appear. There's no navigation sidebar. (And no, the GitHub
    wiki alphabetical order document list doesn't count.)</li>
 </ol>
-<h2 id="wishy-washy-moralizing">Wishy washy moralizing</h2>
+<h2>Wishy washy moralizing</h2>
 <ol>
 <li>You are giving GitHub control over your URLs and perpetuating their
    monopoly on open source hosting. Having the canonical Git repo there is
@@ -132,7 +140,7 @@ deal with lots of configuration.</p>
    indefinitely is riskier. In my opinion, you should own your URLs.</li>
 <li>GitHub branding on your project is tacky.</li>
 </ol>
-<h1 id="what-you-should-do-instead">What you should do instead</h1>
+<h1>What you should do instead</h1>
 <p>Put your docs in a folder, install Computer Words, write a very short config
 file, and use it to generate a static site you can host anywhere you like. By
 doing this, you solve every single problem listed above.</p></div>
@@ -144,10 +152,10 @@ doing this, you solve every single problem listed above.</p></div>
           <h3>Writing</h3>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
-            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
+            <li><a href="/resume.html">Résumé</a></li>
+            <li><a href="/articles/">Old blog</a></li>
           <h3>Games</h3>
-            <li><a href="http://steveasleep.com/games.html">All games</a></li>
+            <li><a href="/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>

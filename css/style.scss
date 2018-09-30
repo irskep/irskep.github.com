@@ -272,8 +272,7 @@ header#banner {
 
   ul { @include clear-contents; }
 
-  li {
-    display: inline;
+  li a, li strong {
     margin-right: 0.5rem;
   }
 }
