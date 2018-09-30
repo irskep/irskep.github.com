@@ -6,8 +6,8 @@ For a while I thought I was going to rewrite these 150 pages of filler
 interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the brave:
 
-[150 pages of insanity](http://dl.dropbox.com/u/360865/thesis/iPathCase.pdf)
+[150 pages of insanity](https://www.dropbox.com/s/wfi8aezy5zcx3nf/iPathCase.pdf?dl=1)
 
-[Defense slides](http://dl.dropbox.com/u/360865/thesis/slides.pdf)
+[Defense slides](https://www.dropbox.com/s/4hrruvrj88sb9jv/slides.pdf?dl=1)
 
-[![Screenshot](http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg-thumb.png)](http://dl.dropbox.com/u/360865/steveasleep/ipathcase-kegg.png)
+[![Screenshot](|filename|/img/ipathcase-kegg-thumb.png)](|filename|/img/ipathcase-kegg.png)
