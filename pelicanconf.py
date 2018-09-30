@@ -55,6 +55,7 @@ MENUITEMS = (
         ('Twitter', 'https://twitter.com/irskep'),
         # ('Pyglet tutorial', '/pyglettutorial.html'),
         ('Résumé', '/resume.html'),
+        ('Old blog', '/articles/'),
         # ('Game jam CV', '/game-jam-cv.html'),
     ]),
     ('Games', [
