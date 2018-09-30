@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from collections import namedtuple
 import sys
 sys.path.append('.')
 
@@ -35,10 +36,19 @@ HEADER_LINKS = [
     ('last.fm', 'https://www.last.fm/user/irskep'),
 ]
 
+Project = namedtuple('Project', ('name', 'desc', 'img'))
+
+PROJECTS = [
+    Project('Dr. Hallervorden', '7-day roguelike', None),
+    Project('Sendimals', 'iMessage app for silly art', None),
+    Project('Literally Canvas', 'MacPaint in JavaScript as a library', None),
+    Project('Games', '', None),
+]
+
 MENUITEMS = (
     ('Writing', [
         ('Blog', 'https://blog.steveasleep.com/'),
-        ('Old blog', '/'),
+        ('Old blog', '/articles/'),
         # ('Pyglet tutorial', '/pyglettutorial.html'),
         ('Résumé', '/resume.html'),
         # ('Game jam CV', '/game-jam-cv.html'),
@@ -50,7 +60,7 @@ MENUITEMS = (
         # ('Computer Words', 'http://steveasleep.com/computerwords'),
         # ('mrjob', 'http://mrjob.readthedocs.org/'),
         # ('Hipmunk OSS', 'http://hipmunk.github.io'),
-        ('Old games', '/games.html'),
+        ('Games', '/games.html'),
     ]),
     # ('Music', [
         # ('The Nest', 'http://thenestmusic.com'),
