@@ -69,32 +69,36 @@
 
   <div id="layoutcontainer">
     <div id="pagecontainer">
+      <!--
       <nav id="menu">
         <ul>
           {% for itemtitle, items in MENUITEMS %}
           <li><strong>{{ itemtitle }}:</strong>
-            {% for title, link in items %}
+            {% for title, link, _ in items %}
               <a href="{{ link }}">{{ title }}</a>
             {% endfor %}
           </li>
           {% endfor %}
         </ul>
       </nav>
+      -->
 
       {% block content %}
       {% endblock %}
     </div>
 
+    <!--
     <nav id="sidebar">
       <ul>
         {% for title, items in MENUITEMS %}
           <h3>{{ title }}</h3>
-          {% for title, link in items %}
+          {% for title, link, _ in items %}
             <li><a href="{{ link }}">{{ title }}</a></li>
           {% endfor %}
         {% endfor %}
       </ul>
     </nav>
+    -->
 
   </div>
 

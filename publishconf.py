@@ -25,8 +25,8 @@ GOOGLE_ANALYTICS = "UA-4517625-1"
 
 def process_menuitems(menuitems):
     return [
-        (a, SITEURL + b if b.startswith('/') else b)
-        for a, b in menuitems
+        (a, SITEURL + b if b.startswith('/') else b, c)
+        for a, b, c in menuitems
     ]
 
 MENUITEMS = [

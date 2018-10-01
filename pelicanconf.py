@@ -32,55 +32,57 @@ FEED_ALL_RSS = 'feeds/all.rss.xml'
 HEADER_LINKS = [
     ('Email', 'mailto:randos@steve.steveasleep.com'),
     ('GitHub', 'https://github.com/irskep'),
+    ('YouTube', 'https://www.youtube.com/channel/UC0lx9IhbHiM5XTcdISqttWQ'),
     ('Bandcamp', 'https://slamjamsen.bandcamp.com'),
     ('itch.io', 'https://irskep.itch.io'),
     # ('Twitter', 'https://twitter.com/irskep'),
-    ('last.fm', 'https://www.last.fm/user/irskep'),
+    # ('last.fm', 'https://www.last.fm/user/irskep'),
 ]
 
 Project = namedtuple('Project', ('name', 'desc', 'img'))
 
-"""
-PROJECTS = [
-    Project('Dr. Hallervorden', '7-day roguelike', None),
-    Project('Sendimals', 'iMessage app for silly art', None),
-    Project('Literally Canvas', 'MacPaint in JavaScript as a library', None),
-    Project('Games', '', None),
-]
-"""
-
 MENUITEMS = (
     ('Writing', [
-        ('Blog', 'https://blog.steveasleep.com/'),
-        ('Twitter', 'https://twitter.com/irskep'),
+        ('Blog', 'https://blog.steveasleep.com/', None),
+        ('Old blog', '/articles/', None),
+        ('Twitter', 'https://twitter.com/irskep', None),
         # ('Pyglet tutorial', '/pyglettutorial.html'),
-        ('Résumé', '/resume.html'),
-        ('Old blog', '/articles/'),
+        ('Résumé', '/resume.html', None),
         # ('Game jam CV', '/game-jam-cv.html'),
     ]),
     ('Games', [
-        ('All games', '/games.html'),
-        ('Dr. Hallervorden', 'https://irskep.itch.io/dr-hallervorden'),
-        ('Power-Q', 'https://irskep.itch.io/powerq'),
-        ('Rogue Basement', 'https://irskep.itch.io/roguebasement'),
+        ('Dr. Hallervorden', 'https://irskep.itch.io/dr-hallervorden', 'dr_hallervorden.png'),
+        ('Power-Q', 'https://irskep.itch.io/powerq', 'powerq.png'),
+        ('Rogue Basement', 'https://irskep.itch.io/roguebasement', 'rogue_basement.png'),
+        ('17 more games', '/games.html', 'gw0rp.png'),
     ]),
     ('Apps', [
-        ('Sendimals', 'http://sendimals.com'),
-        ('Asana', 'https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8'),
+        ('Sendimals', 'http://sendimals.com', 'sendimals.png'),
+        ('Hipmunk', 'https://itunes.apple.com/us/app/hipmunk-travel-search/id419950680?mt=8', 'hipmunk.jpg'),
+        ('Asana', 'https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8', 'asana.jpg'),
     ]),
     ('Open Source', [
-        ('Drawsana', 'https://asana.github.io/Drawsana/'),
-        ('Literally Canvas', 'http://literallycanvas.com/'),
-        ('clubsandwich', 'http://steveasleep.com/clubsandwich'),
-        ('BearLibTerminal-Swift', 'http://steveasleep.com/BearLibTerminal-Swift/'),
-        ('Jumbo Grove', 'http://steveasleep.com/jumbogrove'),
-        ('sphinx-better-theme', 'https://sphinx-better-theme.readthedocs.io/en/latest/'),
+        ('Drawsana', 'https://asana.github.io/Drawsana/', None),
+        ('Literally Canvas', 'http://literallycanvas.com/', None),
+        ('clubsandwich', 'http://steveasleep.com/clubsandwich', None),
+        ('BearLibTerminal-Swift', 'http://steveasleep.com/BearLibTerminal-Swift/', None),
+        ('Jumbo Grove', 'http://steveasleep.com/jumbogrove', None),
+        ('sphinx-better-theme', 'https://sphinx-better-theme.readthedocs.io/en/latest/', None),
     ]),
     # ('Music', [
         # ('The Nest', 'http://thenestmusic.com'),
         # ('Slam Jamsen', 'http://slamjamsen.com'),
     # ]),
 )
+
+CUSTOM_DESCRIPTIONS = {
+    'Drawsana': "a Swift library for adding drawing and image markup features to iOS apps",
+    'Literally Canvas': "a JavaScript library for adding drawing and image markup features to web pages",
+    'clubsandwich': "a Python library for making roguelikes",
+    'BearLibTerminal-Swift': "a Swift library for making roguelikes",
+    'Jumbo Grove': "a JavaScript library for making interactive fiction games",
+    'sphinx-better-theme': "a nice-looking, CSS-tweakable template for <a href=\"https://sphinx-doc.org\">Sphinx</a>",
+}
 
 DEFAULT_PAGINATION = False
 SUMMARY_MAX_LENGTH = 200
@@ -114,3 +116,7 @@ TYPOGRIFY = False
 TYPOGRIFY_IGNORE_TAGS = ['pre', 'code', 'head']
 
 THEME = 'theme'
+
+JINJA_FILTERS = {
+    'to_css_class': lambda s: s.lower().replace(' ', ''),
+}
