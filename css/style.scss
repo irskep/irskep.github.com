@@ -4,8 +4,9 @@ $bodyColor: rgb(40, 40, 40);
 $linkColor: rgb(60, 60, 80);
 $bodyLinkColor: rgb(60, 60, 140);
 $linkHoverColor: rgb(80, 80, 250);
-$separatorColor: lighten($bodyColor, 50%);
+$separatorColor: lighten($bodyColor, 70%);
 $inlineCodeForegroundColor: rgb(80, 80, 80);
+$calloutColor: #f7601b;
 
 $pageWidth: 50rem;
 
@@ -231,6 +232,10 @@ header#banner {
     margin: 0.75rem 0;
     display: inline-block;
   }
+  
+  .header-links {
+    text-align: center;
+  }
 
   .header-links a {
     margin-right: 0.5rem;
@@ -241,6 +246,7 @@ header#banner {
   header#banner .header-links {
     display: block;
     float: right;
+    text-align: left;
   }
 }
 
@@ -367,59 +373,91 @@ article.home-page {
 // random stuff
 
 .promo {
-  .promo-section {
-    $height: 128px;
+  .promo-group {
+    margin-bottom: 4rem;
 
-    position: relative;
-    height: $height;
-    line-height: $height;
-    border-radius: 4px;
-    background-color: $bodyColor;
-    font-family: Menlo,Consolas,monospace;
-    margin-bottom: 1rem;
-
-    display: flex;
-    flex-direction: row;
-    font-size: 24px;
-    text-align: center;
-
-    & > * {
-      margin-right: 4px;
+    h2 {
+      text-align: center;
+      width: 100%;
+      margin: 0 0 1rem 0;
+      padding: 0 0 1rem 0;
+      border-bottom: 1px solid $separatorColor;
     }
 
     a {
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      color: $backgroundColor;
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
-    img {
-      @media (max-width: 40rem) {
-        display: none;
-      }
-      height: 100%;
+    .promo-group__outerlist {
+      margin: 0;
+      padding: 0;
 
-      &.left {
-        position: absolute;
-        top: 0; left: 16px; bottom: 0;
+      & > li {
+        list-style-type: none;
       }
+    }
 
-      &.right {
-        position: absolute;
-        top: 0; right: 16px; bottom: 0;
-      }
+    .promo-item__logo {
+      display: block;
+      margin: 0 auto 1rem auto;
+      max-width: 64px;
+      max-height: 64px;
+      border-radius: 5px;
     }
   }
-}
 
-.music-blurb {
-  background-color: hsl(90, 50, 40);
-  border: 1px solid darken(hsl(90, 100, 50), 30%);
-  width: 128px * 3 + 32px;
-  padding-left: 16px;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  .promo-group__opensource {
+    .promo-item {
+      padding: 0;
+    }
+  }
+
+  .promo-group__writing {
+    .promo-group__outerlist {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    .promo-item {
+      padding: 0;
+    }
+
+    .promo-item__title {
+      font-size: 1.2rem;
+    }
+
+    .promo-item__blog {
+      // flex-basis: 100%;
+      // background-color: #75c7fd;
+      font-weight: bold;
+      // font-size: 1.2rem;
+    }
+  }
+
+  .promo-group__games, .promo-group__apps {
+    .promo-group__outerlist {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    .promo-item {
+      flex-grow: 1;
+      flex-basis: 20%;
+      margin: 0 1rem 1rem 1rem;
+      padding: 1rem;
+      // width: 30%;
+      text-align: center;
+      // border: 1px solid $separatorColor;
+      // border-radius: 5px;
+      // background-color: white;
+      // box-shadow: 2px 2px 5px 0px rgba(51,51,51,0.2);
+    }
+  }
 }
 
 .resume-image {

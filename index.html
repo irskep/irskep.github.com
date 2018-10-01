@@ -10,26 +10,26 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
 
-    <link rel="stylesheet" href="http://localhost:8000/css/reset.css" />
-    <link rel="stylesheet" href="http://localhost:8000/css/pygments.css" />
-    <link rel="stylesheet" href="http://localhost:8000/css/style.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/reset.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/pygments.css" />
+    <link rel="stylesheet" href="http://steveasleep.com/css/style.css" />
 
     <meta charset="utf-8" />
-      <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
-      <link href="http://localhost:8000/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
+      <link href="http://steveasleep.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Steve Landey Full Atom Feed" />
+      <link href="http://steveasleep.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Steve Landey Full RSS Feed" />
     <!--
     -->
 
-    <script src="http://localhost:8000/js/hyphenate.js"></script>
+    <script src="http://steveasleep.com/js/hyphenate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="http://localhost:8000/js/main.js"></script>
+    <script src="http://steveasleep.com/js/main.js"></script>
 
 </head>
 
 <body>
   <header id="banner" class="body">
     <h1>
-      <a href="http://localhost:8000">
+      <a href="http://steveasleep.com">
         <!--Steve Landey <strong></strong>-->
         <!--Steve Johnson&rsquo;s<br>partial creative output-->
         Steve Landey
@@ -38,30 +38,32 @@
     <div class="header-links">
         <a href="mailto:randos@steve.steveasleep.com">Email</a>
         <a href="https://github.com/irskep">GitHub</a>
+        <a href="https://www.youtube.com/channel/UC0lx9IhbHiM5XTcdISqttWQ">YouTube</a>
         <a href="https://slamjamsen.bandcamp.com">Bandcamp</a>
         <a href="https://irskep.itch.io">itch.io</a>
-        <a href="https://www.last.fm/user/irskep">last.fm</a>
     </div>
   </header>
 
   <div id="layoutcontainer">
     <div id="pagecontainer">
+      <!--
       <nav id="menu">
         <ul>
           <li><strong>Writing:</strong>
               <a href="https://blog.steveasleep.com/">Blog</a>
+              <a href="http://steveasleep.com/articles/">Old blog</a>
               <a href="https://twitter.com/irskep">Twitter</a>
-              <a href="/resume.html">Résumé</a>
-              <a href="/articles/">Old blog</a>
+              <a href="http://steveasleep.com/resume.html">Résumé</a>
           </li>
           <li><strong>Games:</strong>
-              <a href="/games.html">All games</a>
               <a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a>
               <a href="https://irskep.itch.io/powerq">Power-Q</a>
               <a href="https://irskep.itch.io/roguebasement">Rogue Basement</a>
+              <a href="http://steveasleep.com/games.html">17 more games</a>
           </li>
           <li><strong>Apps:</strong>
               <a href="http://sendimals.com">Sendimals</a>
+              <a href="https://itunes.apple.com/us/app/hipmunk-travel-search/id419950680?mt=8">Hipmunk</a>
               <a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a>
           </li>
           <li><strong>Open Source:</strong>
@@ -74,63 +76,151 @@
           </li>
         </ul>
       </nav>
+      -->
 
-  <section id="content" class="body">
-    <article class="page">
-          <header class="article-header">
-    <h1 class="entry-title">
-      <a href="http://localhost:8000/" rel="bookmark" title="Permalink to The blog has a new home">
-        The blog has a new home
-      </a>
-    </h1>
-    <div class="post-info">
+
+<article class="promo">
+  <div class="promo-group promo-group__writing">
+    <h2>Writing</h2>
+
+    <ul class="promo-group__outerlist">
+      <li class="promo-item">
+        <a class="implied-link promo-item__blog" href="https://blog.steveasleep.com/">
+          <span class="promo-item__title">
+Blog</span></a>      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__oldblog" href="http://steveasleep.com/articles/">
+          <span class="promo-item__title">
+Old blog</span></a>      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__twitter" href="https://twitter.com/irskep">
+          <span class="promo-item__title">
+Twitter</span></a>      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__résumé" href="http://steveasleep.com/resume.html">
+          <span class="promo-item__title">
+Résumé</span></a>      </li>
+    </ul>
+  </div>
+  <div class="promo-group promo-group__games">
+    <h2>Games</h2>
+
+    <ul class="promo-group__outerlist">
+      <li class="promo-item">
+        <a class="implied-link promo-item__dr.hallervorden" href="https://irskep.itch.io/dr-hallervorden">
+            <img
+              class="promo-item__logo"
+              src="http://steveasleep.com/img/nav/dr_hallervorden.png"
+              title="Dr. Hallervorden logo">
+          <span class="promo-item__title">
+Dr. Hallervorden</span></a>      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__power-q" href="https://irskep.itch.io/powerq">
+            <img
+              class="promo-item__logo"
+              src="http://steveasleep.com/img/nav/powerq.png"
+              title="Power-Q logo">
+          <span class="promo-item__title">
+Power-Q</span></a>      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__roguebasement" href="https://irskep.itch.io/roguebasement">
+            <img
+              class="promo-item__logo"
+              src="http://steveasleep.com/img/nav/rogue_basement.png"
+              title="Rogue Basement logo">
+          <span class="promo-item__title">
+Rogue Basement</span></a>      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__17moregames" href="http://steveasleep.com/games.html">
+            <img
+              class="promo-item__logo"
+              src="http://steveasleep.com/img/nav/gw0rp.png"
+              title="17 more games logo">
+          <span class="promo-item__title">
+17 more games</span></a>      </li>
+    </ul>
+  </div>
+  <div class="promo-group promo-group__apps">
+    <h2>Apps</h2>
+
+    <ul class="promo-group__outerlist">
+      <li class="promo-item">
+        <a class="implied-link promo-item__sendimals" href="http://sendimals.com">
+            <img
+              class="promo-item__logo"
+              src="http://steveasleep.com/img/nav/sendimals.png"
+              title="Sendimals logo">
+          <span class="promo-item__title">
+Sendimals</span></a>      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__hipmunk" href="https://itunes.apple.com/us/app/hipmunk-travel-search/id419950680?mt=8">
+            <img
+              class="promo-item__logo"
+              src="http://steveasleep.com/img/nav/hipmunk.jpg"
+              title="Hipmunk logo">
+          <span class="promo-item__title">
+Hipmunk</span></a>      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__asana" href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">
+            <img
+              class="promo-item__logo"
+              src="http://steveasleep.com/img/nav/asana.jpg"
+              title="Asana logo">
+          <span class="promo-item__title">
+Asana</span></a>      </li>
+    </ul>
+  </div>
+  <div class="promo-group promo-group__opensource">
+    <h2>Open Source</h2>
+
+    <ul class="promo-group__outerlist">
+      <li class="promo-item">
+        <a class="implied-link promo-item__drawsana" href="https://asana.github.io/Drawsana/">
+          <span class="promo-item__title">
+<strong>Drawsana</strong></span></a>, a Swift library for adding drawing and image markup features to iOS apps      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__literallycanvas" href="http://literallycanvas.com/">
+          <span class="promo-item__title">
+<strong>Literally Canvas</strong></span></a>, a JavaScript library for adding drawing and image markup features to web pages      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__clubsandwich" href="http://steveasleep.com/clubsandwich">
+          <span class="promo-item__title">
+<strong>clubsandwich</strong></span></a>, a Python library for making roguelikes      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__bearlibterminal-swift" href="http://steveasleep.com/BearLibTerminal-Swift/">
+          <span class="promo-item__title">
+<strong>BearLibTerminal-Swift</strong></span></a>, a Swift library for making roguelikes      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__jumbogrove" href="http://steveasleep.com/jumbogrove">
+          <span class="promo-item__title">
+<strong>Jumbo Grove</strong></span></a>, a JavaScript library for making interactive fiction games      </li>
+      <li class="promo-item">
+        <a class="implied-link promo-item__sphinx-better-theme" href="https://sphinx-better-theme.readthedocs.io/en/latest/">
+          <span class="promo-item__title">
+<strong>sphinx-better-theme</strong></span></a>, a nice-looking, CSS-tweakable template for <a href="https://sphinx-doc.org">Sphinx</a>      </li>
+    </ul>
+  </div>
+</article>
+
+
     </div>
-  </header>
 
-      <div class="page-content hyphenate">
-        
-
-        <p>I've started blogging at
-<a href="https://blog.steveasleep.com">blog.steveasleep.com</a>, hosted on
-<a href="https://write.as">write.as</a>. I expect to keep the blog there going forward.
-This site runs on <a href="http://docs.getpelican.com/en/stable/">Pelican</a>, which is
-great for making static sites, but I've been doing a much better job of
-writing consistently now that I can do it all from a web browser.</p>
-<p><a href="https://blog.steveasleep.com/">New blog</a></p>
-<p><a href="https://blog.steveasleep.com/feed/">RSS feed</a></p>
-<p><a href="/articles/">Old blog</a></p>
-<h2>Posts so far</h2>
-<ul>
-<li><a href="https://blog.steveasleep.com/usernames">Usernames</a></li>
-<li><a href="https://blog.steveasleep.com/community-conferences">Big and little conferences</a></li>
-<li><a href="https://blog.steveasleep.com/questions-i-asked-myself-while-writing-a-simple-web-forum">The web development decision firehose</a></li>
-<li>A series on things I found on a web site I made when I was 12. These are good!<ul>
-<li><a href="https://blog.steveasleep.com/autoarchaeology-part-1">Autoarchaeology Part 1: Web Sites</a></li>
-<li><a href="https://blog.steveasleep.com/autoarchaeology-part-2-early-games">Autoarchaeology Part 2: Early Games</a></li>
-<li><a href="https://blog.steveasleep.com/autoarchaeology-part-3-mac-software">Autoarchaeology Part 3: Mac Software</a></li>
-<li><a href="https://blog.steveasleep.com/autoarchaeology-part-4-media">Autoarchaeology Part 4: Media</a></li>
-</ul>
-</li>
-</ul>
-      </div>
-    </article>
-  </section>
-    </div>
-
+    <!--
     <nav id="sidebar">
       <ul>
           <h3>Writing</h3>
             <li><a href="https://blog.steveasleep.com/">Blog</a></li>
+            <li><a href="http://steveasleep.com/articles/">Old blog</a></li>
             <li><a href="https://twitter.com/irskep">Twitter</a></li>
-            <li><a href="/resume.html">Résumé</a></li>
-            <li><a href="/articles/">Old blog</a></li>
+            <li><a href="http://steveasleep.com/resume.html">Résumé</a></li>
           <h3>Games</h3>
-            <li><a href="/games.html">All games</a></li>
             <li><a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a></li>
             <li><a href="https://irskep.itch.io/powerq">Power-Q</a></li>
             <li><a href="https://irskep.itch.io/roguebasement">Rogue Basement</a></li>
+            <li><a href="http://steveasleep.com/games.html">17 more games</a></li>
           <h3>Apps</h3>
             <li><a href="http://sendimals.com">Sendimals</a></li>
+            <li><a href="https://itunes.apple.com/us/app/hipmunk-travel-search/id419950680?mt=8">Hipmunk</a></li>
             <li><a href="https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8">Asana</a></li>
           <h3>Open Source</h3>
             <li><a href="https://asana.github.io/Drawsana/">Drawsana</a></li>
@@ -141,6 +231,7 @@ writing consistently now that I can do it all from a web browser.</p>
             <li><a href="https://sphinx-better-theme.readthedocs.io/en/latest/">sphinx-better-theme</a></li>
       </ul>
     </nav>
+    -->
 
   </div>
 
