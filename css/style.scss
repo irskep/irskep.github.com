@@ -196,6 +196,15 @@ iframe {
 .right { float: right; padding-left: 1rem; }
 .center { display: block; margin: auto; }
 
+a.implied-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.entry-content a { @include body-link-styles; }
+
 /* layout */
 
 #pagecontainer {
@@ -357,19 +366,6 @@ article.home-page {
   }
 }
 
-.article {
-  .entry-content a { @include body-link-styles; }
-}
-
-// page styling
-
-.page {
-  .page-content a { @include body-link-styles; }
-}
-
-.entry-content {
-}
-
 // random stuff
 
 .promo {
@@ -381,14 +377,7 @@ article.home-page {
       width: 100%;
       margin: 0 0 1rem 0;
       padding: 0 0 1rem 0;
-      border-bottom: 1px solid $separatorColor;
-    }
-
-    a {
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
+      // border-bottom: 1px solid $separatorColor;
     }
 
     .promo-group__outerlist {
