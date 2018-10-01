@@ -81,7 +81,7 @@ CUSTOM_DESCRIPTIONS = {
     'clubsandwich': "a Python library for making roguelikes",
     'BearLibTerminal-Swift': "a Swift library for making roguelikes",
     'Jumbo Grove': "a JavaScript library for making interactive fiction games",
-    'sphinx-better-theme': "a nice-looking, CSS-tweakable template for <a href=\"https://sphinx-doc.org\">Sphinx</a>",
+    'sphinx-better-theme': "a nice-looking, CSS-tweakable template for <a href=\"http://sphinx-doc.org\">Sphinx</a>",
 }
 
 DEFAULT_PAGINATION = False
