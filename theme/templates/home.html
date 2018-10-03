@@ -16,6 +16,8 @@
         <a class="implied-link promo-item__{{ title|to_css_class }}" href="{{ link }}">
           {% if imgurl %}
             <img
+              width="64"
+              height="64"
               class="promo-item__logo"
               src="{{ SITEURL }}/img/nav/{{imgurl}}"
               title="{{ title }} logo">

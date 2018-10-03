@@ -44,8 +44,8 @@ Project = namedtuple('Project', ('name', 'desc', 'img'))
 MENUITEMS = (
     ('Writing', [
         ('Blog', 'https://blog.steveasleep.com/', None),
-        ('Old blog', '/articles/', None),
         ('Twitter', 'https://twitter.com/irskep', None),
+        ('Old blog', '/articles/', None),
         # ('Pyglet tutorial', '/pyglettutorial.html'),
         ('Résumé', '/resume.html', None),
         # ('Game jam CV', '/game-jam-cv.html'),

@@ -243,7 +243,7 @@ header#banner {
   }
   
   .header-links {
-    text-align: center;
+    // text-align: left;
   }
 
   .header-links a {
@@ -255,7 +255,7 @@ header#banner {
   header#banner .header-links {
     display: block;
     float: right;
-    text-align: left;
+    // text-align: left;
   }
 }
 
@@ -370,13 +370,13 @@ article.home-page {
 
 .promo {
   .promo-group {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 
     h2 {
-      text-align: center;
+      // text-align: center;
       width: 100%;
       margin: 0 0 1rem 0;
-      padding: 0 0 1rem 0;
+      padding: 0;
       // border-bottom: 1px solid $separatorColor;
     }
 
@@ -401,18 +401,14 @@ article.home-page {
   .promo-group__opensource {
     .promo-item {
       padding: 0;
+      margin: 0;
     }
   }
 
   .promo-group__writing {
-    .promo-group__outerlist {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-    }
-
     .promo-item {
       padding: 0;
+      margin: 0;
     }
 
     .promo-item__title {
@@ -422,8 +418,16 @@ article.home-page {
     .promo-item__blog {
       // flex-basis: 100%;
       // background-color: #75c7fd;
-      font-weight: bold;
       // font-size: 1.2rem;
+      color: #6749e3;
+    }
+
+    .promo-item__twitter {
+      color: #1da1f2;
+    }
+    
+    .promo-item__oldblog, .promo-item__résumé {
+      color: lighten($bodyColor, 40%);
     }
   }
 
@@ -431,20 +435,30 @@ article.home-page {
     .promo-group__outerlist {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: flex-start;
+
+      @media (max-width: $pageWidth) {
+        justify-content: space-around;
+      }
     }
 
     .promo-item {
-      flex-grow: 1;
-      flex-basis: 20%;
-      margin: 0 1rem 1rem 1rem;
-      padding: 1rem;
+      flex-grow: 0;
+      // flex-basis: 100px;
+      // width: 150px;
+      margin: 0 2rem 1rem 0;
+      padding: 0;
       // width: 30%;
       text-align: center;
       // border: 1px solid $separatorColor;
       // border-radius: 5px;
       // background-color: white;
       // box-shadow: 2px 2px 5px 0px rgba(51,51,51,0.2);
+
+      @media (max-width: $pageWidth) {
+        flex-grow: 1;
+        flex-basis: 40%;
+      }
     }
   }
 }
