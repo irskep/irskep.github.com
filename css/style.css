@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -149,16 +150,13 @@ header#banner {
     font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 0.75rem 0;
     display: inline-block; }
-  header#banner .header-links {
-    text-align: center; }
   header#banner .header-links a {
     margin-right: 0.5rem; }
 
 @media (min-width: 50rem) {
   header#banner .header-links {
     display: block;
-    float: right;
-    text-align: left; } }
+    float: right; } }
 
 @media (min-width: 78rem) {
   #layoutcontainer {
@@ -235,12 +233,11 @@ article.home-page ul.article-summary-list {
     font-weight: normal; }
 
 .promo .promo-group {
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
   .promo .promo-group h2 {
-    text-align: center;
     width: 100%;
     margin: 0 0 1rem 0;
-    padding: 0 0 1rem 0; }
+    padding: 0; }
   .promo .promo-group .promo-group__outerlist {
     margin: 0;
     padding: 0; }
@@ -254,33 +251,42 @@ article.home-page ul.article-summary-list {
     border-radius: 5px; }
 
 .promo .promo-group__opensource .promo-item {
-  padding: 0; }
-
-.promo .promo-group__writing .promo-group__outerlist {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
+  padding: 0;
+  margin: 0; }
 
 .promo .promo-group__writing .promo-item {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 .promo .promo-group__writing .promo-item__title {
   font-size: 1.2rem; }
 
 .promo .promo-group__writing .promo-item__blog {
-  font-weight: bold; }
+  color: #6749e3; }
+
+.promo .promo-group__writing .promo-item__twitter {
+  color: #1da1f2; }
+
+.promo .promo-group__writing .promo-item__oldblog, .promo .promo-group__writing .promo-item__résumé {
+  color: #8e8e8e; }
 
 .promo .promo-group__games .promo-group__outerlist, .promo .promo-group__apps .promo-group__outerlist {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
+  justify-content: flex-start; }
+  @media (max-width: 50rem) {
+    .promo .promo-group__games .promo-group__outerlist, .promo .promo-group__apps .promo-group__outerlist {
+      justify-content: space-around; } }
 
 .promo .promo-group__games .promo-item, .promo .promo-group__apps .promo-item {
-  flex-grow: 1;
-  flex-basis: 20%;
-  margin: 0 1rem 1rem 1rem;
-  padding: 1rem;
+  flex-grow: 0;
+  margin: 0 2rem 1rem 0;
+  padding: 0;
   text-align: center; }
+  @media (max-width: 50rem) {
+    .promo .promo-group__games .promo-item, .promo .promo-group__apps .promo-item {
+      flex-grow: 1;
+      flex-basis: 40%; } }
 
 .resume-image {
   image-rendering: -moz-crisp-edges;
