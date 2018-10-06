@@ -231,18 +231,22 @@ nav#menu, section#content, footer#pagefooter {
 // banner
 
 header#banner {
+  $lineHeight: $bannerFontSize * 1.35;
+  $topMargin: 0.75rem;
   box-sizing: border-box;
-  line-height: $bannerFontSize * 1.35;
-  padding: 0.75em 1em;
+  line-height: $lineHeight;
+  padding: 0.75em 0;
 
   h1 {
     font-size: $bannerFontSize;
     @include banner-font;
-    margin: 0.75rem 0;
+    margin: $topMargin 0;
     display: inline-block;
   }
   
   .header-links {
+    line-height: $lineHeight;
+    margin-top: $topMargin;
     // text-align: left;
   }
 
@@ -436,6 +440,7 @@ article.home-page {
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-start;
+      margin-right: -2rem;
 
       @media (max-width: $pageWidth) {
         justify-content: space-around;

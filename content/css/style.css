@@ -144,12 +144,15 @@ nav#menu, section#content, footer#pagefooter {
 header#banner {
   box-sizing: border-box;
   line-height: 2.3625rem;
-  padding: 0.75em 1em; }
+  padding: 0.75em 0; }
   header#banner h1 {
     font-size: 1.75rem;
     font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 0.75rem 0;
     display: inline-block; }
+  header#banner .header-links {
+    line-height: 2.3625rem;
+    margin-top: 0.75rem; }
   header#banner .header-links a {
     margin-right: 0.5rem; }
 
@@ -273,7 +276,8 @@ article.home-page ul.article-summary-list {
 .promo .promo-group__games .promo-group__outerlist, .promo .promo-group__apps .promo-group__outerlist {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-right: -2rem; }
   @media (max-width: 50rem) {
     .promo .promo-group__games .promo-group__outerlist, .promo .promo-group__apps .promo-group__outerlist {
       justify-content: space-around; } }

@@ -52,23 +52,22 @@
 </head>
 
 <body>
-  <header id="banner" class="body">
-    <h1>
-      <a href="{{ SITEURL }}">
-        <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
-        <!--Steve Johnson&rsquo;s<br>partial creative output-->
-        Steve Landey
-      </a>
-    </h1>
-    <div class="header-links">
-      {% for title, url in HEADER_LINKS %}
-        <a href="{{ url }}">{{ title }}</a>
-      {% endfor %}
-    </div>
-  </header>
-
   <div id="layoutcontainer">
     <div id="pagecontainer">
+      <header id="banner" class="body">
+        <h1>
+          <a href="{{ SITEURL }}">
+            <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
+            <!--Steve Johnson&rsquo;s<br>partial creative output-->
+            Steve Landey
+          </a>
+        </h1>
+        <div class="header-links">
+          {% for title, url in HEADER_LINKS %}
+            <a href="{{ url }}">{{ title }}</a>
+          {% endfor %}
+        </div>
+      </header>
       <!--
       <nav id="menu">
         <ul>
