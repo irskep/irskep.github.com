@@ -111,7 +111,7 @@ referring only to PCG32, the one that generates 32-bit unsigned integers and
 keeps its state as two 64-bit unsigned integers.</p>
 <p>(By the way, I used PCG in
 <a href="https://irskep.itch.io/dr-hallervorden">Dr. Hallervorden</a>, my 7DRL entry for 2018.)</p>
-<h1>What makes PCG unique?</h1>
+<h1 id="what-makes-pcg-unique">What makes PCG unique?</h1>
 <p>PCG has a lot going for it, and <a href="http://www.pcg-random.org">the web site does a good job of explaining
 the advantages</a>, but for roguelike developers, it
 all comes down to the API.</p>
@@ -158,7 +158,7 @@ integers! Serialization's a snap.</p>
 <li>You can have multiple, uncorrelated streams of data from the same seed</li>
 <li>You only need to store 16 bytes per instance</li>
 </ul>
-<h1>A fun trick with strings</h1>
+<h1 id="a-fun-trick-with-strings">A fun trick with strings</h1>
 <p>Imagine you have a branching level structure. You've got <code>normal-dungeon-1</code>
 through <code>normal-dungeon-30</code>, and you might branch off into <code>dwarvish-mines-1</code>
 somewhere between level 5 and 15.</p>
@@ -211,7 +211,7 @@ PCG32 instances based on the hash value if your level ID string!</p>
 how to generate PRNG instances, because it all just happens by magic. Using the
 example at the beginning of this section, you can now generate any dungeon using
 the PRNG instance at <code>prngStore[levelId]</code>, e.g. <code>prngStore["dwarvish-mines-1"]</code>.</p>
-<h1>Language support</h1>
+<h1 id="language-support">Language support</h1>
 <p>PCG32 is very easy to implement, so it has broad language support, even though
 the algorithm was only introduced in 2014. I wrote two implementations myself:
 <a href="https://github.com/irskep/clubsandwich/blob/master/clubsandwich/pcg32.py">Python</a>
