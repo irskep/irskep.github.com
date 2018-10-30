@@ -830,7 +830,6 @@ Remember to call from util import distance in load.py. Now we can write
 
     :::python
 
-    {% highlight python %}
     def collides_with(self, other_object):
         collision_distance = self.image.width/2 + other_object.image.width/2
         actual_distance = util.distance(
