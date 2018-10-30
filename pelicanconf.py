@@ -117,11 +117,14 @@ TYPOGRIFY_IGNORE_TAGS = ['pre', 'code', 'head', 'title']
 
 THEME = 'theme'
 
+def inline_fn(s):
+    try:
+        return open(s).read()
+    except FileNotFoundError:
+        return open('content/' + s).read()
+
+
 JINJA_FILTERS = {
     'to_css_class': lambda s: s.lower().replace(' ', ''),
-    'inline': lambda s: open(s).read()
+    'inline': inline_fn,
 }
-
-EXTRA_TEMPLATE_PATHS = [
-    'output/css/style.css',
-]
