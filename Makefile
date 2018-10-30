@@ -10,12 +10,8 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 .PHONY: watch publish serve devserver stopserver
 
-html: scss compile-coffee content/**
+html: scss content/**
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
-
-watch:
-	make html
-	fswatch -o content/**/*.md content/**/*.scss content/**/*.coffee theme/templates/*.html | xargs -n1 make html
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
@@ -26,13 +22,7 @@ serve:
 scss: $(INPUTDIR)/css/style.scss 
 	sassc $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css
 
-watch-coffee:
-	coffee -o $(INPUTDIR)/js --watch --compile $(INPUTDIR)/coffee/main.coffee
-
-compile-coffee: $(INPUTDIR)/coffee/main.coffee
-	coffee -o $(INPUTDIR)/js --compile $(INPUTDIR)/coffee/main.coffee
-
-publish: scss compile-coffee
+publish: scss
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 deploy: publish
