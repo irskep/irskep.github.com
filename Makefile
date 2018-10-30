@@ -20,7 +20,7 @@ serve:
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server
 
 scss: $(INPUTDIR)/css/style.scss 
-	sassc $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css
+	sassc -m --style=compressed $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css
 
 publish: scss
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
