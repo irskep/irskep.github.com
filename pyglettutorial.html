@@ -827,8 +827,7 @@ start by moving that function into its own submodule of game, called <code>util.
 
 <p>Remember to call from util import distance in load.py. Now we can write
 <code>PhysicalObject.collides_with()</code> without duplicating code.</p>
-<div class="highlight"><pre><span></span><span class="p">{</span><span class="o">%</span> <span class="n">highlight</span> <span class="n">python</span> <span class="o">%</span><span class="p">}</span>
-<span class="k">def</span> <span class="nf">collides_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">collides_with</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_object</span><span class="p">):</span>
     <span class="n">collision_distance</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span> <span class="o">+</span> <span class="n">other_object</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span>
     <span class="n">actual_distance</span> <span class="o">=</span> <span class="n">util</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="n">other_object</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
