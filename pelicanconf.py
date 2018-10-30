@@ -112,11 +112,16 @@ DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_PAGINATION = False
 
-TYPOGRIFY = False
-TYPOGRIFY_IGNORE_TAGS = ['pre', 'code', 'head']
+TYPOGRIFY = True
+TYPOGRIFY_IGNORE_TAGS = ['pre', 'code', 'head', 'title']
 
 THEME = 'theme'
 
 JINJA_FILTERS = {
     'to_css_class': lambda s: s.lower().replace(' ', ''),
+    'inline': lambda s: open(s).read()
 }
+
+EXTRA_TEMPLATE_PATHS = [
+    'output/css/style.css',
+]

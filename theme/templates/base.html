@@ -17,8 +17,8 @@
     {#
     <link rel="stylesheet" href="{{ SITEURL }}/css/reset.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/css/pygments.css" />
-    #}
     <link rel="stylesheet" href="{{ SITEURL }}/css/style.css" />
+    #}
 
     <meta charset="utf-8" />
     {% if FEED_ALL_ATOM %}
@@ -50,6 +50,8 @@
 
     <script src="{{ SITEURL }}/js/hyphenate.js" defer></script>
     <script src="{{ SITEURL }}/js/main.js" defer></script>
+
+    <style type="text/css">{{ "output/css/style.css"|inline|safe }}</style>
 
   {% endblock head %}
 </head>

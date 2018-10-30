@@ -11,7 +11,8 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 .PHONY: watch publish serve devserver stopserver
 
 html: scss content/**
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --verbose
+	cp output/css/style.css.map output/style.css.map
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
