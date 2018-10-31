@@ -12,7 +12,6 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 html: scss content/**
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --verbose
-	cp output/css/style.css.map output/style.css.map
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
@@ -21,7 +20,7 @@ serve:
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server
 
 scss: $(INPUTDIR)/css/style.scss 
-	sassc -m $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css --style=compressed
+	sassc -m $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css --style=compressed --omit-map-comment
 
 publish: scss
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)

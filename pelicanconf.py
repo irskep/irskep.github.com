@@ -10,6 +10,10 @@ PLUGINS = [
     'minify',
 ]
 
+MINIFY = {
+  'remove_comments': True,
+}
+
 STATIC_PATHS = [
     'img', 'downloads', 'css', 'js', 'css/style.css', 'CNAME',
     'rogue_basement_post', 'rexpaint_manual.html',
