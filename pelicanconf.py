@@ -7,6 +7,7 @@ sys.path.append('.')
 
 PLUGINS = [
     'minchin.pelican.plugins.summary',
+    'minify',
 ]
 
 STATIC_PATHS = [
