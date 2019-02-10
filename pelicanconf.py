@@ -67,6 +67,7 @@ MENUITEMS = (
         ('Asana', 'https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8', 'asana.jpg'),
     ]),
     ('Open Source', [
+        ('Keplverse', 'http://steveasleep.com/keplverse', None),
         ('Drawsana', 'https://asana.github.io/Drawsana/', None),
         ('Literally Canvas', 'http://literallycanvas.com/', None),
         ('clubsandwich', 'http://steveasleep.com/clubsandwich', None),
@@ -81,6 +82,7 @@ MENUITEMS = (
 )
 
 CUSTOM_DESCRIPTIONS = {
+    'Keplverse': "a scientifically accurate procedural star system generator",
     'Drawsana': "a Swift library for adding drawing and image markup features to iOS apps",
     'Literally Canvas': "a JavaScript library for adding drawing and image markup features to web pages",
     'clubsandwich': "a Python library for making roguelikes",
