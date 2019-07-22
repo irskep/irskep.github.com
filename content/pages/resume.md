@@ -95,7 +95,7 @@ Fun stuff: the easygoing culture of a small, successful business
 
 # Projects
 
-**[Hobbyist game development](http://steveasleep.com/games.html):** 2000-present
+**[Hobbyist game development](https://steveasleep.com/games.html):** 2000-present
 
 Wrote about a dozen small-to-medium games in BASIC, Python, Swift, and JavaScript, including art and music.
 
@@ -112,7 +112,7 @@ HTML5-based drawing tool that can be used as a JavaScript library. I work as a
 freelancer to add features when approached. The project is successful because
 it has lots of documentation and examples.
 
-**[Jumbo Grove](http://steveasleep.com/jumbogrove):** 2017
+**[Jumbo Grove](https://steveasleep.com/jumbogrove):** 2017
 
 JavaScript library for writing browser-based interactive fiction games.
 

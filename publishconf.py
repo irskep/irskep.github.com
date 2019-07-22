@@ -10,8 +10,8 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://steveasleep.com'
-#SITEURL = 'http://steveasleep.com/beta'
+SITEURL = 'https://steveasleep.com'
+#SITEURL = 'https://steveasleep.com/beta'
 RELATIVE_URLS = False
 
 FEED_ALL_RSS = 'feeds/all.rss.xml'

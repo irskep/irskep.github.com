@@ -12,7 +12,7 @@ feature.
 
 If this has happened to you, or you contribute to a similar project, then this
 post is for you. I'm going to try to convince you to feed your Markdown files
-into [Computer Words](http://steveasleep.com/computerwords), a program that
+into [Computer Words](https://steveasleep.com/computerwords), a program that
 will turn them into a static web site and provides you with a few useful
 authoring tools.
 

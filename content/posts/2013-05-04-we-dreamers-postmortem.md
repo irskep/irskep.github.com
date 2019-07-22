@@ -10,7 +10,7 @@ category of Ludum Dare 26.
 
 <!-- PELICAN_END_SUMMARY -->
 
-[You can play it here.](http://steveasleep.com/we_dreamers_2) ([Ludum Dare page](http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=3120)) It may take a
+[You can play it here.](https://steveasleep.com/we_dreamers_2) ([Ludum Dare page](http://ludumdare.com/compo/ludum-dare-26/?action=preview&uid=3120)) It may take a
 while for the 4+ MB of user data to download, so give it a minute or two. Here's
 ten seconds of it:
 

@@ -73,9 +73,9 @@ Here's some information that might help you pitch me on your opportunity.
 ### Blog posts
 
 * [Taming Hipmunk's iOS Code](https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/)
-* [The Design and Implementation of Rogue Basement](http://steveasleep.com/the-design-and-implementation-of-rogue-basement.html)
-* [My blog](http://steveasleep.com)
-* [8 year old tutorial for pyglet](http://steveasleep.com/pyglettutorial.html)
+* [The Design and Implementation of Rogue Basement](https://steveasleep.com/the-design-and-implementation-of-rogue-basement.html)
+* [My blog](https://steveasleep.com)
+* [8 year old tutorial for pyglet](https://steveasleep.com/pyglettutorial.html)
 
 ### Videos
 
@@ -90,9 +90,9 @@ Here's some information that might help you pitch me on your opportunity.
 
 ### Open source projects
 
-* [BearLibTerminal-Swift](http://steveasleep.com/BearLibTerminal-Swift)
+* [BearLibTerminal-Swift](https://steveasleep.com/BearLibTerminal-Swift)
 * [Literally Canvas](http://literallycanvas.com)
-* [Club Sandwich](http://steveasleep.com/clubsandwich)
-* [Jumbo Grove](http://steveasleep.com/jumbogrove)
-* [Computer Words](http://steveasleep.com/computerwords)
+* [Club Sandwich](https://steveasleep.com/clubsandwich)
+* [Jumbo Grove](https://steveasleep.com/jumbogrove)
+* [Computer Words](https://steveasleep.com/computerwords)
 * [mrjob](https://mrjob.readthedocs.io)

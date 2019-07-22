@@ -2,7 +2,7 @@ Title: Computer Words: a new Markdown documentation tool
 Tags: projects computerwords
 Slug: computer-words-announcement
 
-TL;DR [Computer Words](http://steveasleep.com/computerwords)
+TL;DR [Computer Words](https://steveasleep.com/computerwords)
 
 I write a lot of documentation. I do it for two reasons: I like writing, and I
 like to be understood. Documentation is what takes software from “something
@@ -25,10 +25,10 @@ I want it to be easier to produce good documentation sites, without GitHub
 branding, with a bare-minimum learning curve, and a sky's-the-limit plugin
 architecture, so that more projects have better documentation.
 
-I think I've succeeded. [Computer Words](http://steveasleep.com/computerwords)
+I think I've succeeded. [Computer Words](https://steveasleep.com/computerwords)
 is a tool written in Python 3 that lets you turn your [directory of Markdown
 files](https://github.com/irskep/computerwords/tree/master/docs) into a
-[beautiful web site](http://steveasleep.com/computerwords), without
+[beautiful web site](https://steveasleep.com/computerwords), without
 sacrificing important features like semantic cross-referencing.
 It vaguely resembles [Sphinx](http://www.sphinx-doc.org/en/stable/) in its
 design, so it has the potential for powerful plugins, but I did my best to
@@ -54,6 +54,6 @@ most of the pieces are in place to grow the system cleanly.
 
 If you currently use Sphinx and reStructuredText, you should probably keep
 doing that, but you might also want to read the [Related
-Work](http://steveasleep.com/computerwords/related_work.html) and [Frequently
-Anticipated Criticisms](http://steveasleep.com/computerwords/faq.html) sections
+Work](https://steveasleep.com/computerwords/related_work.html) and [Frequently
+Anticipated Criticisms](https://steveasleep.com/computerwords/faq.html) sections
 of the docs.

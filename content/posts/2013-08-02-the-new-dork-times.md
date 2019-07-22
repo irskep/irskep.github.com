@@ -12,4 +12,4 @@ New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
 years ago, lovingly typeset in its original Times New Roman:
 
-**[The New Dork Times – Digital Edition](http://steveasleep.com/newdorktimes/)**
+**[The New Dork Times – Digital Edition](https://steveasleep.com/newdorktimes/)**

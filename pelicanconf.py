@@ -67,12 +67,12 @@ MENUITEMS = (
         ('Asana', 'https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8', 'asana.jpg'),
     ]),
     ('Open Source', [
-        ('Keplverse', 'http://steveasleep.com/keplverse', None),
+        ('Keplverse', 'https://steveasleep.com/keplverse', None),
         ('Drawsana', 'https://asana.github.io/Drawsana/', None),
         ('Literally Canvas', 'http://literallycanvas.com/', None),
-        ('clubsandwich', 'http://steveasleep.com/clubsandwich', None),
-        ('BearLibTerminal-Swift', 'http://steveasleep.com/BearLibTerminal-Swift/', None),
-        ('Jumbo Grove', 'http://steveasleep.com/jumbogrove', None),
+        ('clubsandwich', 'https://steveasleep.com/clubsandwich', None),
+        ('BearLibTerminal-Swift', 'https://steveasleep.com/BearLibTerminal-Swift/', None),
+        ('Jumbo Grove', 'https://steveasleep.com/jumbogrove', None),
         ('sphinx-better-theme', 'https://sphinx-better-theme.readthedocs.io/en/latest/', None),
     ]),
     # ('Music', [
