@@ -114,6 +114,11 @@
         border-top: 0.5px solid black;
       }
 
+      aside {
+        text-align: right;
+        padding-left: 1rem;
+      }
+
       .SplitHeading {
         display: flex;
         width: 100%;
@@ -168,7 +173,7 @@
           {% for entry in education %}
             <div class="SplitHeading">
               <h3>{{ entry.title|safe }}</h3>
-              <aside>{% if entry.url %}<a href="{{ entry.url|safe }}">{{ entry.url|safe }}</a> {% endif %}({{ year(entry) }})</aside>
+              <aside>{% if entry.url %}<a href="{{ entry.url|safe }}">{{ entry.url|safe }}</a> {% endif %}{{ year(entry) }}</aside>
             </div>
             <p>{{ entry.description|safe }}</p>
           {% endfor %}
