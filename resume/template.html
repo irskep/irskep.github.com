@@ -1,0 +1,179 @@
+{%- macro year(e) -%}
+{% if e.year_start == e.year_end %}{{ e.year_start|safe }}{% else %}{{ e.year_start|safe }}–{{ e.year_end|safe }}{% endif %}
+{%- endmacro -%}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Steve Landey's Résumé</title>
+    <!-- <meta name="description" content=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap" rel="stylesheet">
+
+    <style>
+      /* reset */
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+
+      ol, ul {
+        list-style: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* basic fonts */
+
+      body {
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "liga" 1, "kern" 1;
+        font-family: "Lora", "Palatino", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      h1, h2, address {
+        font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+      }
+
+      /* specific fonts */
+
+      address {
+        font-size: 14px;
+        line-height: 1.4em;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        line-height: 2em;
+      }
+
+      h2 {
+        font-size: 1rem;
+        line-height: 2em;
+      }
+
+      h3, section.WorkHistory aside, section.Education aside {
+        font-size: 1.4rem;
+        line-height: 1em;
+        margin-top: 1.4rem
+      }
+
+      section.PersonalProjects aside {
+        margin-top: 1.6rem;
+      }
+
+      h4 {
+        font-style: italic;
+        font-size: 1.1em;
+        margin-top: 0.5rem;
+      }
+
+      p {
+        margin-top: 1rem;
+        line-height: 145%;
+        /* hyphens: auto;
+        text-align: justify; */
+      }
+
+      /* layout */
+
+      article {
+        margin: 2rem auto 4rem 0;
+        max-width: 44rem;
+        padding: 0 2rem;
+      }
+
+      section {
+        margin-top: 2rem;
+        border-top: 0.5px solid black;
+      }
+
+      .SplitHeading {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+
+  <body>
+    {% if body %}
+      {{ body }}
+    {% else %}
+      <article class="Resume">
+        <div class="SplitHeading">
+          <h1>Steve Landey</h1>
+          <address>
+            San Francisco, CA
+            <br>
+            <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a>
+            <br>
+            <a href="https://steveasleep.com">https://steveasleep.com</a>
+          </address>
+        </div>
+
+        <section class="WorkHistory">
+          <h2>Work History</h2>
+
+          {% for entry in work_history %}
+            <div class="SplitHeading">
+              <h3>{{ entry.title|safe }}</h3>
+              <aside>{{ year(entry) }}</aside>
+            </div>
+            <h4>{{ entry.subtitle|safe }}</h4>
+            <p>{{ entry.description|safe }}</p>
+          {% endfor %}
+        </section>
+
+        <section class="PersonalProjects">
+          <h2>Personal Projects</h2>
+
+          {% for entry in personal_projects %}
+            <div class="SplitHeading">
+              <h3>{{ entry.title|safe }}</h3>
+              <aside>{% if entry.url %}<a href="{{ entry.url|safe }}">{{ entry.url|safe }}</a> {% endif %}({{ year(entry) }})</aside>
+            </div>
+            <p>{{ entry.description|safe }}</p>
+          {% endfor %}
+        </section>
+
+        <section class="Education">
+          <h2>Education</h2>
+          {% for entry in education %}
+            <div class="SplitHeading">
+              <h3>{{ entry.title|safe }}</h3>
+              <aside>{% if entry.url %}<a href="{{ entry.url|safe }}">{{ entry.url|safe }}</a> {% endif %}({{ year(entry) }})</aside>
+            </div>
+            <p>{{ entry.description|safe }}</p>
+          {% endfor %}
+        </section>
+      {% endif %}
+    </article>
+  </body>
+</html>
