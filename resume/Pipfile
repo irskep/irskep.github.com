@@ -11,6 +11,7 @@ html5print = "*"
 attrs = "*"
 jinja2 = "*"
 hyphenate = "*"
+xmljson = "*"
 
 [requires]
 python_version = "3.7"

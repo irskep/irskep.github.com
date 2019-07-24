@@ -13,8 +13,7 @@ from html5print import HTMLBeautifier
 class Entry:
   title = attr.ib(default=None)
   subtitle = attr.ib(default=None)
-  year_start = attr.ib(default=None)
-  year_end = attr.ib(default=None)
+  years = attr.ib(default=None)
   url = attr.ib(default=None)
   description = attr.ib(default=None)
 
@@ -43,16 +42,7 @@ def main():
       if child.tagName == 'p' and child.attributes['class'].value == 'p3':
         title = child.childNodes[0].childNodes[0].data.strip()
         years = child.childNodes[2].childNodes[0].data.strip()
-        year_start, year_end = (None, None)
-        if '-' in years:
-          (year_start, year_end) = years.split('&ndash;')
-        else:
-          year_start = year_end = years
-        # print('Start', title)
-        current_entry = Entry(
-          title=title,
-          year_start=year_start,
-          year_end=year_end or 'Present')
+        current_entry = Entry(title=title, years=years)
         work_history.append(current_entry)
       elif child.attributes['class'].value == 'p4':
         current_entry.subtitle = child.childNodes[0].data.strip()
@@ -69,16 +59,14 @@ def main():
         meta = child.childNodes[2].childNodes[0].childNodes[0].data.strip()
         if meta.startswith('('):
           url = None
-          year = meta[1:-1]
+          years = meta[1:-1]
         else:
-          (url, year) = meta.split('(')
-          year = year[:-1] # remove parens
+          (url, years) = meta.split('(')
+          years = years[:-1] # remove parens
           url = url.strip()
-        # print('Start', title)
         current_entry = Entry(
           title=title,
-          year_start=year,
-          year_end=year,
+          years=years,
           url=url)
         personal_projects.append(current_entry)
       elif child.attributes['class'].value == 'p5':
@@ -87,7 +75,6 @@ def main():
           current_entry.description += child.childNodes[0].data.strip()
         else:
           current_entry.description = child.childNodes[0].data.strip()
-        # print(current_entry)
       elif child.tagName == 'h1' and child.attributes['class'].value == 'p2' and child.childNodes[0].data.strip() == 'Education':
         mode = 'EDUCATION'
         current_entry = None
@@ -96,14 +83,7 @@ def main():
       if child.tagName == 'p' and child.attributes['class'].value == 'p6':
         title = child.childNodes[0].childNodes[0].childNodes[0].data.strip()
         years = child.childNodes[2].childNodes[0].childNodes[0].data.strip()
-        year_start, year_end = (None, None)
-        print(repr(years))
-        (year_start, year_end) = years.split('–')
-        # print('Start', title)
-        current_entry = Entry(
-          title=title,
-          year_start=year_start,
-          year_end=year_end)
+        current_entry = Entry(title=title, years=years)
         education.append(current_entry)
       elif child.attributes['class'].value == 'p5':
         if current_entry.description:
