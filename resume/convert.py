@@ -96,6 +96,32 @@ def find_title_index(items, text):
   return next(i for (i,v) in enumerate(items) if v.children == [text])
 
 
+def data2entries(items, title_class='p3', subtitle_class='p4', description_class='p5'):
+  e = None
+  results = []
+  for item in items:
+    if item.attributes['class'] == title_class:
+      years = str(item.children[2])
+      match = URL_YEAR_RE.match(years)
+      if match:
+        e = Entry(
+          title=item.children[0],
+          years=match.group('year'),
+          url=match.group('url'))
+      else:
+        e = Entry(title=item.children[0], years=years)
+      results.append(e)
+    elif item.attributes['class'] == subtitle_class:
+      e.subtitle = item.child_text()
+    elif item.attributes['class'] == description_class:
+      if e.description:
+        e.description += '<br>'
+        e.description += item.child_text()
+      else:
+        e.description = item.child_text()
+  return results
+
+
 def main():
   prettyprinter.install_extras(['attrs'])
 
@@ -118,42 +144,15 @@ def main():
   # print for debugging
   # prettyprinter.cpprint(data)
 
-  work_history_index = find_title_index(data, 'Work History')
-  personal_projects_index = find_title_index(data, 'Personal Projects')
-  education_index = find_title_index(data, 'Education')
+  title_indices = [
+    find_title_index(data, 'Work History'),
+    find_title_index(data, 'Personal Projects'),
+    find_title_index(data, 'Education'),
+  ]
 
-  work_history_data = data[work_history_index+1:personal_projects_index]
-  personal_projects_data = data[personal_projects_index+1:education_index]
-  education_data = data[education_index+1:]
-
-  def read_style_a(items, title_class='p3', subtitle_class='p4', description_class='p5'):
-    e = None
-    results = []
-    for item in items:
-      if item.attributes['class'] == title_class:
-        years = str(item.children[2])
-        match = URL_YEAR_RE.match(years)
-        if match:
-          e = Entry(
-            title=item.children[0],
-            years=match.group('year'),
-            url=match.group('url'))
-        else:
-          e = Entry(title=item.children[0], years=years)
-        results.append(e)
-      elif item.attributes['class'] == subtitle_class:
-        e.subtitle = item.child_text()
-      elif item.attributes['class'] == description_class:
-        if e.description:
-          e.description += '<br>'
-          e.description += item.child_text()
-        else:
-          e.description = item.child_text()
-    return results
-
-  work_history = read_style_a(work_history_data, title_class='p3')
-  personal_projects = read_style_a(personal_projects_data, title_class='p6')
-  education = read_style_a(education_data, title_class='p6')
+  work_history =      data2entries(data[title_indices[0]+1:title_indices[1]], title_class='p3')
+  personal_projects = data2entries(data[title_indices[1]+1:title_indices[2]], title_class='p6')
+  education =         data2entries(data[title_indices[2]+1:], title_class='p6')
 
   # prettyprinter.cpprint(work_history)
   # print()
