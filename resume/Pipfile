@@ -12,6 +12,7 @@ attrs = "*"
 jinja2 = "*"
 hyphenate = "*"
 xmljson = "*"
+prettyprinter = "*"
 
 [requires]
 python_version = "3.7"
