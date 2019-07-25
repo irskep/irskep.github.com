@@ -160,8 +160,12 @@ def main():
   # print()
   # prettyprinter.cpprint(education)
 
-  with open(sys.argv[2], 'w') as f:
+  with open(sys.argv[2], 'r') as f:
+    css = f.read()
+
+  with open(sys.argv[3], 'w') as f:
     f.write(jinja2.Template(template).render(
+      css=css,
       work_history=work_history,
       personal_projects=personal_projects,
       education=education))
