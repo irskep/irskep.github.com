@@ -21,6 +21,7 @@
         --h3: var(--fg);
         --h4: var(--fg);
         --year: var(--h4);
+        --leftw: var(20vw);
 
         box-sizing: border-box;
         font-size: 16px;
@@ -64,10 +65,6 @@
         font-weight: 400;
       }
 
-      h1, h2, h3, h4 {
-        font-size: 1rem;
-      }
-
       a, a:visited, a:active {
         color: var(--link);
       }
@@ -76,10 +73,13 @@
 
       h1 {
         color: var(--h1);
+        font-weight: bolder;
+        font-size: 4rem;
       }
 
       h2 {
         color: var(--h2);
+        font-size: 1rem;
       }
 
       h3 {
@@ -88,16 +88,83 @@
 
       h4 {
         color: var(--h4);
+        font-style: italic;
       }
 
       aside {
         color: var(--year);
       }
 
+      p {
+        line-height: 145%;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        text-align: justify;
+      }
+
       /* layout */
 
-      h2, h3, h4, aside, p, address {
+      h3, aside, p, address {
         margin-top: 1rem;
+      }
+
+      h1 {
+        width: 30rem;
+      }
+
+      h2 {
+        border-bottom: 1px solid black;
+        padding-bottom: 2px;
+        margin-bottom: 2rem;
+      }
+
+      section {
+        margin-top: 4rem;
+      }
+
+      section:first-of-type {
+        margin-top: 2rem;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      h4 {
+        margin-top: 0.5rem;
+      }
+
+      article {
+        padding: 1rem;
+        width: 100%;
+      }
+
+      .SplitHeading {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      @media(min-width: 55rem) {
+        section {
+          margin-top: 0;
+        }
+
+        h2 {
+          margin-left: -10rem;
+          padding: 0 45rem 0.5rem 0;
+          width: 53rem;
+        }
+
+        article {
+          margin-left: 10rem;
+          width: 45rem;
+        }
       }
     </style>
   </head>
@@ -108,10 +175,8 @@
         <div class="SplitHeading">
           <h1>Steve Landey</h1>
           <address>
-            San Francisco, CA
-            <br>
-            <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a>
-            <br>
+            San Francisco, CA<br>
+            <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
             <a href="https://steveasleep.com">https://steveasleep.com</a>
           </address>
         </div>
