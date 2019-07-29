@@ -13,16 +13,14 @@
     <style>
       /* reset */
       html {
-        --bg: #034;
-        --fg: #ddf;
-        --link: #fff;
-        /* --h1: #fce; */
+        --bg: white;
+        --fg: black;
+        --link: red;
         --h1: var(--fg);
-        --h2: #fce;
-        --h3: #f64;
-        --h4: #aac;
+        --h2: var(--fg);
+        --h3: var(--fg);
+        --h4: var(--fg);
         --year: var(--h4);
-        --h3shadow: rgba(255, 255, 128, 0.4);
 
         box-sizing: border-box;
         font-size: 16px;
@@ -52,16 +50,15 @@
       /* basic fonts */
 
       body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         text-rendering: optimizeLegibility;
-        /* font-feature-settings: "liga" 1, "kern" 1; */
-        font-family: Menlo, monospace;
+        font-feature-settings: "liga" 1, "kern" 1;
         font-style: normal;
         font-variant: normal;
         font-weight: 400;
       }
 
       h1, h2, address {
-        /* font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; */
         font-style: normal;
         font-variant: normal;
         font-weight: 400;
@@ -77,55 +74,30 @@
 
       /* specific fonts */
 
-      h1::before, h1::after {
-        content: "**";
+      h1 {
+        color: var(--h1);
       }
 
-      h2::before {
-        content: "# ";
+      h2 {
+        color: var(--h2);
       }
 
-      h3::before {
-        content: "## ";
-      }
-
-      h1 { color: var(--h1); }
-      h2 { color: var(--h2); }
       h3 {
         color: var(--h3);
-        font-weight: bold;
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
       }
-      h4 { color: var(--h4); }
-      aside { color: var(--year); }
+
+      h4 {
+        color: var(--h4);
+      }
+
+      aside {
+        color: var(--year);
+      }
 
       /* layout */
 
-      article {
-        margin: 2rem auto 4rem 0;
-        max-width: 45rem;
-        padding: 0 2rem;
-      }
-
-      h2, h3, h4, aside, address, p {
+      h2, h3, h4, aside, p, address {
         margin-top: 1rem;
-      }
-
-      @media(min-width: 430px) {
-        address {
-          margin-top: 0;
-        }
-
-        aside {
-          text-align: right;
-          padding-left: 1rem;
-        }
-
-        .SplitHeading {
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-        }
       }
     </style>
   </head>
