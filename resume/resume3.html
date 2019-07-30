@@ -10,6 +10,49 @@
     <!-- <link rel="apple-touch-icon" href="icon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap" rel="stylesheet">
+
+    <style>
+      footer {
+        position: relative;
+        width: 100%;
+        height: 4rem;
+      }
+
+      footer nav, footer nav ul {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+      }
+
+      footer nav ul {
+        border-top-width: 0.5px;
+        border-top-style: solid;
+        border-top-color: var(--footer-border);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      footer nav li {
+        line-height: 4rem;
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      footer nav li.Previous, footer nav li.Next {
+        width: 33%;
+      }
+
+      footer nav li a {
+        text-decoration: none;
+      }
+
+      .DisabledLink {
+        opacity: 0.5;
+      }
+    </style>
+
     <style>
       /* reset */
       html {
@@ -22,6 +65,7 @@
         --h4: var(--fg);
         --year: var(--h4);
         --leftw: var(20vw);
+        --footer-border: var(--fg);
 
         box-sizing: border-box;
         font-size: 16px;
@@ -175,8 +219,10 @@
         <div class="SplitHeading">
           <h1>Steve Landey</h1>
           <address>
-            San Francisco, CA<br>
-            <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a><br>
+            San Francisco, CA
+            <br>
+            <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a>
+            <br>
             <a href="https://steveasleep.com">https://steveasleep.com</a>
           </address>
         </div>
@@ -283,5 +329,17 @@
     <article>
       <a href="/downloads/Steve_Landey_resume.pdf">PDF version of this résumé</a>
     </article>
+
+    <footer>
+      <nav>
+        <ul>
+          <li class="Previous">
+            <a href="resume2.html">&larr; Previous Style</a></li>
+          <li class="Number">3 of 3</li>
+          <li class="Next">
+            <span class="DisabledLink">&nbsp;</span></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
