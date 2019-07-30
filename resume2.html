@@ -56,9 +56,22 @@
     <style>
       /* reset */
       html {
+        --bg: #034;
+        --fg: #ddf;
+        --link: #fff;
+        /* --h1: #fce; */
+        --h1: var(--fg);
+        --h2: #fce;
+        --h3: #f64;
+        --h4: #aac;
+        --year: var(--h4);
+        --h3shadow: rgba(255, 255, 128, 0.4);
+        --footer-border: var(--fg);
+
         box-sizing: border-box;
         font-size: 16px;
-        --footer-border: black;
+        background-color: var(--bg);
+        color: var(--fg);
       }
 
       *, *:before, *:after {
@@ -84,84 +97,79 @@
 
       body {
         text-rendering: optimizeLegibility;
-        font-feature-settings: "liga" 1, "kern" 1;
-        font-family: "Lora", "Palatino", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+        /* font-feature-settings: "liga" 1, "kern" 1; */
+        font-family: Menlo, monospace;
         font-style: normal;
         font-variant: normal;
         font-weight: 400;
-        font-size: 14px;
       }
 
       h1, h2, address {
-        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        /* font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; */
         font-style: normal;
         font-variant: normal;
         font-weight: 400;
+      }
+
+      h1, h2, h3, h4 {
+        font-size: 1rem;
+      }
+
+      a, a:visited, a:active {
+        color: var(--link);
       }
 
       /* specific fonts */
 
-      address {
-        font-size: 14px;
-        line-height: 1.4em;
+      h1::before, h1::after {
+        content: "**";
       }
 
-      h1 {
-        font-size: 1.8rem;
-        line-height: 2em;
+      h2::before {
+        content: "# ";
       }
 
-      h2 {
-        font-size: 1rem;
-        line-height: 2em;
+      h3::before {
+        content: "## ";
       }
 
-      h3, section.WorkHistory aside, section.Education aside {
-        font-size: 1.4rem;
-        line-height: 1em;
-        margin-top: 1.4rem
+      h1 { color: var(--h1); }
+      h2 { color: var(--h2); }
+      h3 {
+        color: var(--h3);
+        font-weight: bold;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
       }
-
-      section.PersonalProjects aside {
-        margin-top: 1.6rem;
-      }
-
-      h4 {
-        font-style: italic;
-        font-size: 1.1em;
-        margin-top: 0.5rem;
-      }
-
-      p {
-        margin-top: 1rem;
-        line-height: 145%;
-        hyphens: auto;
-        -webkit-hyphens: auto;
-        text-align: justify;
-      }
+      h4 { color: var(--h4); }
+      aside { color: var(--year); }
 
       /* layout */
 
       article {
         margin: 2rem auto 4rem 0;
-        max-width: 40rem;
+        max-width: 45rem;
         padding: 0 2rem;
       }
 
-      section {
-        margin-top: 2rem;
-        border-top: 0.5px solid black;
+      h2, h3, h4, aside, address, p {
+        margin-top: 1rem;
       }
 
-      aside {
-        text-align: right;
-        padding-left: 1rem;
-      }
+      @media(min-width: 430px) {
+        address {
+          margin-top: 0;
+        }
 
-      .SplitHeading {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
+        aside {
+          text-align: right;
+          padding-left: 1rem;
+        }
+
+        .SplitHeading {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+        }
       }
     </style>
   </head>
@@ -287,10 +295,10 @@
       <nav>
         <ul>
           <li class="Previous">
-            <span class="DisabledLink">&nbsp;</span></li>
-          <li class="Number">1 of 4</li>
+            <a href="resume.html">&larr; Previous Style</a></li>
+          <li class="Number">2 of 4</li>
           <li class="Next">
-            <a href="resume2.html">Next Style &rarr;</a></li>
+            <a href="resume3.html">Next Style &rarr;</a></li>
         </ul>
       </nav>
     </footer>
