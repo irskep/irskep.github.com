@@ -95,12 +95,14 @@
       /* basic fonts */
 
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-family: "Comic Sans MS", "Comic Sans", sans-serif;
         text-rendering: optimizeLegibility;
         font-feature-settings: "liga" 1, "kern" 1;
         font-style: normal;
         font-variant: normal;
         font-weight: 400;
+
+        transform: rotate(1deg);
       }
 
       h1, h2, address {
@@ -153,7 +155,7 @@
       }
 
       h1 {
-        width: 30rem;
+        max-width: calc(100% - 8rem);
       }
 
       h2 {
@@ -184,30 +186,112 @@
       }
 
       article {
-        padding: 1rem;
-        width: 100%;
+        margin: 2rem 4rem 4rem 4rem;
+        width: 40rem;
+        max-width: calc(100% - 8rem);
       }
 
-      .SplitHeading {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
+      @media(min-width: 30rem) {
+        .SplitHeading {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+        }
       }
 
-      @media(min-width: 55rem) {
-        section {
-          margin-top: 0;
-        }
+      /* rainbow links */
 
-        h2 {
-          margin-left: -10rem;
-          padding: 0 45rem 0.5rem 0;
-          width: 53rem;
-        }
+      a {
+        text-decoration:none;
+        animation:rainbow 2s linear infinite alternate;
+      }
+      a:hover {
+        display: inline-block;
+        transform: scale(2.0, 2.0);
+        text-decoration: underline;
+      }
 
-        article {
-          margin-left: 10rem;
-          width: 45rem;
+      @keyframes rainbow {
+          0%   {color:red;        }
+          10%  {color:orange;     }
+          20%  {color:gold;       }
+          30%  {color:yellow;     }
+          40%  {color:yellowgreen;}
+          50%  {color:green;      }
+          60%  {color:cyan;       }
+          70%  {color:blue;       }
+          80%  {color:violet;     }
+          90%  {color:magenta;    }
+          100% {color:indigo;     }
+      }
+
+      /* wiggle paragraphs */
+
+      p {
+        animation-name: wiggle;
+        animation-duration: 4000ms;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      p:nth-of-type(2) {
+        animation-delay: 250ms;
+      }
+      p:nth-of-type(3) {
+        animation-delay: 500ms;
+      }
+      p:nth-of-type(4) {
+        animation-delay: 750ms;
+      }
+      p:nth-of-type(5) {
+        animation-delay: 1000ms;
+      }
+      p:nth-of-type(6) {
+        animation-delay: 1250ms;
+      }
+      p:nth-of-type(7) {
+        animation-delay: 1500ms;
+      }
+      p:nth-of-type(8) {
+        animation-delay: 1750ms;
+      }
+      p:nth-of-type(9) {
+        animation-delay: 2000ms;
+      }
+      p:nth-of-type(10) {
+        animation-delay: 2250ms;
+      }
+      p:nth-of-type(11) {
+        animation-delay: 2500ms;
+      }
+      p:nth-of-type(12) {
+        animation-delay: 2750ms;
+      }
+
+      @keyframes wiggle {
+        0% {transform: translateX(-10px);}
+        50% {transform: translateX(10px);}
+        100% {transform: translateX(-10px);}
+      }
+
+      /* marquee subtitles */
+
+      h4 {
+        height: 1em;
+        animation: marquee 15s linear infinite;
+        animation-delay: -2000ms;
+        display: inline-block;
+      }
+      h4::after {
+        display: block;
+        content: " ";
+      }
+
+      @keyframes marquee {
+        0% {
+          transform: translate(100vw, 0);
+        }
+        100% {
+          transform: translate(-200%, 0);
         }
       }
     </style>
@@ -334,10 +418,10 @@
       <nav>
         <ul>
           <li class="Previous">
-            <a href="resume2.html">&larr; Previous Style</a></li>
-          <li class="Number">3 of 4</li>
+            <a href="resume3.html">&larr; Previous Style</a></li>
+          <li class="Number">4 of 4</li>
           <li class="Next">
-            <a href="resume4.html">Next Style &rarr;</a></li>
+            <span class="DisabledLink">&nbsp;</span></li>
         </ul>
       </nav>
     </footer>
