@@ -1,0 +1,92 @@
+{
+  "work_history": [
+    {
+      "title": "Asana",
+      "subtitle": "Engineering Manager",
+      "years": "2018\u2013Present",
+      "url": null,
+      "description": "I support the iOS and Android teams by coaching people, unclogging communication, applying leverage, and getting my hands dirty in code. I also help the engineering intern program run smoothly and facilitate the release of open source software."
+    },
+    {
+      "title": "Hipmunk",
+      "subtitle": "iOS Engineer \u2192 Mobile Team Lead \u2192 Engineering Manager",
+      "years": "2015\u20132018",
+      "url": null,
+      "description": "Worked on Hipmunk for iOS. Became mobile team lead in January 2016, engineering manager January 2017. Reworked a messy code base while shipping on time. Owned the entire mobile recruiting pipeline and hired 3 engineers. Acted as an ambassador of company culture by giving enthusiastic demos and writing blog posts."
+    },
+    {
+      "title": "Graffiti Labs",
+      "subtitle": "Full Stack Engineer, Game Designer",
+      "years": "2012\u20132015",
+      "url": null,
+      "description": "As one of two engineers, helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. Worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React.JS, and subtleties of Python."
+    },
+    {
+      "title": "Yelp",
+      "subtitle": "Spam Warrior",
+      "years": "2011\u20132012",
+      "url": null,
+      "description": "Worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. Maintained mrjob, a framework with thousands of users that runs Python code on Hadoop."
+    },
+    {
+      "title": "Freelance for Cooper Legal Group",
+      "subtitle": "iOS Engineer",
+      "years": "2011",
+      "url": null,
+      "description": "Developed an iPad app, Patent Portal, to improve the workflow of lawyers browsing the US Patent Office. Worked with client to define requirements and design. The app\u2019s functionality included offline PDF storage, notes, organizational features, and a graphical interface to the USPTO\u2019s advanced search syntax."
+    },
+    {
+      "title": "Apple",
+      "subtitle": "Intern on Obj-C Runtime Team",
+      "years": "2010",
+      "url": null,
+      "description": "Implemented early prototype of the Xcode visual object graph debugging tool released in 2016."
+    },
+    {
+      "title": "MIM Software",
+      "subtitle": "Intern",
+      "years": "2009",
+      "url": null,
+      "description": "Built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing."
+    }
+  ],
+  "personal_projects": [
+    {
+      "title": "Oscillator Drum Loops",
+      "subtitle": null,
+      "years": "2019, unreleased",
+      "url": "https://oscillator.rocks",
+      "description": "An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. The app is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro."
+    },
+    {
+      "title": "Sendimals",
+      "subtitle": null,
+      "years": "2016",
+      "url": "http://sendimals.com",
+      "description": "Users can make cute, funny, weird, scary, or silly creatures from pre-drawn body parts and use iMessage to share them. This app is conceptually simple, but has sophisticated gesture handling."
+    },
+    {
+      "title": "Literally Canvas",
+      "subtitle": null,
+      "years": "2012",
+      "url": "http://literallycanvas.com",
+      "description": "An extensible JavaScript library for embedding an MS Paint-like drawing widget in web pages. This project has been used in many surprising places over its long lifetime."
+    },
+    {
+      "title": "Hobbyist Game Development",
+      "subtitle": null,
+      "years": "2003\u2013Present",
+      "url": null,
+      "description": "20+ small games in BASIC, Python, JavaScript, Godot, Nim, and Swift.<br>Art and music of uneven quality."
+    }
+  ],
+  "education": [
+    {
+      "title": "Case Western Reserve University",
+      "subtitle": null,
+      "years": "2007\u20132012",
+      "url": null,
+      "description": "B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community. Pianist for IMPROVment comedy troupe."
+    }
+  ]
+}

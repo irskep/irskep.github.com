@@ -5,7 +5,6 @@ import sys
 from xml.etree import ElementTree
 
 import attr
-import jinja2
 import prettyprinter
 import xmljson
 from html5print import HTMLBeautifier
@@ -154,23 +153,13 @@ def main():
   personal_projects = data2entries(data[title_indices[1]+1:title_indices[2]], title_class='p6')
   education =         data2entries(data[title_indices[2]+1:], title_class='p6')
 
-  # prettyprinter.cpprint(work_history)
-  # print()
-  # prettyprinter.cpprint(personal_projects)
-  # print()
-  # prettyprinter.cpprint(education)
-
-  with open(sys.argv[2], 'r') as f:
-    css = f.read()
-
-  with open(sys.argv[3], 'w') as f:
-    f.write(jinja2.Template(template).render(
-      css=css,
-      work_history=work_history,
-      personal_projects=personal_projects,
-      education=education))
-
-  return
+  asdict = lambda l: [attr.asdict(i) for i in l]
+  with open(sys.argv[2], 'w') as f:
+    f.write(json.dumps({
+      'work_history': asdict(work_history),
+      'personal_projects': asdict(personal_projects),
+      'education': asdict(education),
+    }, indent=2))
 
 if __name__ == '__main__':
   main()
