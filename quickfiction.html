@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quick Fiction: The Band</title>
+    <!-- <meta name="description" content=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap" rel="stylesheet"> -->
+
+    <style>
+      footer {
+        position: relative;
+        width: 100%;
+        height: 4rem;
+      }
+
+      footer nav, footer nav ul {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+      }
+
+      footer nav ul {
+        border-top-width: 0.5px;
+        border-top-style: solid;
+        border-top-color: var(--footer-border);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      footer nav li {
+        line-height: 4rem;
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      footer nav li.Previous, footer nav li.Next {
+        width: 33%;
+      }
+
+      footer nav li a {
+        text-decoration: none;
+      }
+
+      .DisabledLink {
+        opacity: 0.5;
+      }
+    </style>
+
+    <style>
+      /* reset */
+      html {
+        --bg: white;
+        --fg: black;
+        --link: red;
+        --h1: var(--fg);
+        --h2: var(--fg);
+        --h3: var(--fg);
+        --h4: var(--fg);
+        --year: var(--h4);
+        --leftw: var(20vw);
+        --footer-border: var(--fg);
+
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: var(--bg);
+        color: var(--fg);
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+
+      ol, ul {
+        list-style: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* basic fonts */
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "liga" 1, "kern" 1;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+      }
+
+      h1, h2, address {
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+      }
+
+      a, a:visited, a:active {
+        color: var(--link);
+      }
+
+      /* specific fonts */
+
+      h1 {
+        color: var(--h1);
+        font-weight: bolder;
+        font-size: 4rem;
+      }
+
+      h2 {
+        color: var(--h2);
+        font-size: 1rem;
+      }
+
+      h3 {
+        color: var(--h3);
+      }
+
+      h4 {
+        color: var(--h4);
+        font-style: italic;
+      }
+
+      aside {
+        color: var(--year);
+      }
+
+      p {
+        line-height: 145%;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        text-align: justify;
+      }
+
+      /* layout */
+
+      h3, aside, p, address {
+        margin-top: 1rem;
+      }
+
+      h1 {
+        width: 30rem;
+      }
+
+      h2 {
+        border-bottom: 1px solid black;
+        padding-bottom: 2px;
+        margin-bottom: 2rem;
+      }
+
+      section {
+        margin-top: 4rem;
+      }
+
+      section:first-of-type {
+        margin-top: 4rem;
+      }
+
+      p, .SoundCloud {
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      h4 {
+        margin-top: 0.5rem;
+      }
+
+      article, header {
+        padding: 1rem;
+        width: 100%;
+      }
+
+      @media(min-width: 55rem) {
+        article, header {
+          margin-left: 10rem;
+          width: 45rem;
+        }
+      }
+
+      /* colors and styles */
+
+      .Background {
+        z-index: -2;
+        position: fixed;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background-image: url("Catch the Wave_Pattern 1_by Stella.png");
+        background-size: 50%;
+        background-repeat: repeat;
+        opacity: 0.2;
+        pointer-events: none;
+      }
+
+      header {
+        z-index: 1;
+        position: relative;
+      }
+
+      .HeaderImage {
+        z-index: -1;
+        position: absolute;
+        top: 0; right: 0;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="Background"></div>
+    <main>
+      <header>
+        <h1>Quick Fiction</h1>
+        <img class="HeaderImage" src="Casey_Landey_S78.png">
+      </header>
+
+      <article class="Page">
+
+        <section>
+          <h2>Music</h2>
+
+          <div class="SoundCloud">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/667343138%3Fsecret_token%3Ds-io4el&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          </div>
+        </section>
+
+        <section>
+          <h2>Follow Us</h2>
+          <p>
+            <strong>Mailing list:</strong> Coming soon
+          </p>
+
+          <p>
+            <a href="https://twitter.com/irskep">Twitter</a>
+          </p>
+
+          <p>
+            <a href="https://twitter.com/irskep">Facebook</a>
+          </p>
+
+          <p>
+            <a href="https://twitter.com/irskep">Instagram</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>
+            Email: <a href="mailto:quickfiction@fastmail.com">quickfiction@fastmail.com</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Shows</h2>
+          <p>Currently trying to book them!</p>
+        </section>
+
+      </article>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li class="Previous">
+            <span class="DisabledLink">&nbsp;</span></li>
+          <li class="Number">1 of 1</li>
+          <li class="Next">
+            <span class="DisabledLink">&nbsp;</span></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
