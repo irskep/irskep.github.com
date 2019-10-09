@@ -26,7 +26,7 @@ publish: scss
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	cp output/css/style.css.map output/style.css.map
 	cp resume/resume.html resume/resume*.html output/
-	cp quickfiction output/quickfiction
+	cp -r quickfiction output/quickfiction
 
 deploy: publish
 	ghp-import $(OUTPUTDIR) -b master
