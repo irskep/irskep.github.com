@@ -66,13 +66,14 @@ MENUITEMS = (
         ('Hipmunk', 'https://itunes.apple.com/us/app/hipmunk-travel-search/id419950680?mt=8', 'hipmunk.jpg'),
         ('Asana', 'https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8', 'asana.jpg'),
     ]),
-    ('Open Source', [
-        ('Keplverse', 'https://steveasleep.com/keplverse', None),
+    ('Other good stuff', [
+        ("Steve’s Pedal Shop", 'https://steveasleep.com/pedalshop/', None),
+        ('Keplverse', 'https://steveasleep.com/keplverse/', None),
         ('Drawsana', 'https://asana.github.io/Drawsana/', None),
         ('Literally Canvas', 'http://literallycanvas.com/', None),
         ('clubsandwich', 'https://steveasleep.com/clubsandwich', None),
         ('BearLibTerminal-Swift', 'https://steveasleep.com/BearLibTerminal-Swift/', None),
-        ('Jumbo Grove', 'https://steveasleep.com/jumbogrove', None),
+        # ('Jumbo Grove', 'https://steveasleep.com/jumbogrove', None),
         ('sphinx-better-theme', 'https://sphinx-better-theme.readthedocs.io/en/latest/', None),
     ]),
     # ('Music', [
@@ -88,6 +89,7 @@ CUSTOM_DESCRIPTIONS = {
     'clubsandwich': "a Python library for making roguelikes",
     'BearLibTerminal-Swift': "a Swift library for making roguelikes",
     'Jumbo Grove': "a JavaScript library for making interactive fiction games",
+    'Steve’s Pedal Shop': "a procedural guitar pedal generator",
     'sphinx-better-theme': "a nice-looking, CSS-tweakable template for <a href=\"http://sphinx-doc.org\">Sphinx</a>",
 }
 

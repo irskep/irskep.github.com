@@ -93,6 +93,6 @@ Here's some information that might help you pitch me on your opportunity.
 * [BearLibTerminal-Swift](https://steveasleep.com/BearLibTerminal-Swift)
 * [Literally Canvas](http://literallycanvas.com)
 * [Club Sandwich](https://steveasleep.com/clubsandwich)
-* [Jumbo Grove](https://steveasleep.com/jumbogrove)
+<!-- * [Jumbo Grove](https://steveasleep.com/jumbogrove) -->
 * [Computer Words](https://steveasleep.com/computerwords)
 * [mrjob](https://mrjob.readthedocs.io)
