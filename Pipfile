@@ -30,4 +30,4 @@ Pygments = "==2.2.0"
 Unidecode = "==1.0.22"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
