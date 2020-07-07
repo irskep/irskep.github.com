@@ -64,7 +64,7 @@ MENUITEMS = (
     ]),
     ('Apps', [
         ('Sendimals', 'http://sendimals.com', 'sendimals.png'),
-        ('Hipmunk', 'https://itunes.apple.com/us/app/hipmunk-travel-search/id419950680?mt=8', 'hipmunk.jpg'),
+        ('Hipmunk', 'https://blog.steveasleep.com/my-time-at-hipmunk', 'hipmunk.jpg'),
         ('Asana', 'https://itunes.apple.com/us/app/asana-organize-tasks-work/id489969512?mt=8', 'asana.jpg'),
     ]),
     ('Other good stuff', [
