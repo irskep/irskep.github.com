@@ -17,6 +17,7 @@ MINIFY = {
 STATIC_PATHS = [
     'img', 'downloads', 'css', 'js', 'css/style.css', 'CNAME',
     'rogue_basement_post', 'rexpaint_manual.html',
+    'oscillator_posts'
 ]
 
 AUTHOR = u'Steve Landey'
