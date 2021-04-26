@@ -29,7 +29,7 @@ publish: scss
 	cp -r quickfiction output/quickfiction
 
 deploy: publish
-	pipenv run ghp-import $(OUTPUTDIR) -b master
+	poetry run ghp-import $(OUTPUTDIR) -b master
 	git push origin master:master
 
 devserver:
