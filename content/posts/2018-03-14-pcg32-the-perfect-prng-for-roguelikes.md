@@ -3,6 +3,8 @@ Category: Articles
 Slug: pcg32-the-perfect-prng-for-roguelikes
 Tags: gamedev roguelikes
 
+*Hello, Hacker News. You found a post I wrote in 2018 that in hindsight is basically wrong. Please don't judge me too harsly. Instead, please check out my free online whiteboard [Browserboard](https://browserboard.com) or read [some of my newer posts](https://blog.steveasleep.com).*
+
 Roguelikes are games that, among other things, have a lot of procedurally
 generated content. To generate content, we need random numbers. And to get
 random numbers, we need a **pseudo-random number generator**.
