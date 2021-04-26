@@ -22,7 +22,7 @@ STATIC_PATHS = [
 
 AUTHOR = u'Steve Landey'
 SITENAME = u"Steve Landey"
-SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8001'
 
 DEFAULT_CATEGORY = 'Articles'
 
