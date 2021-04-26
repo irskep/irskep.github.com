@@ -1,5 +1,5 @@
-PY=pipenv run python
-PELICAN=pipenv run pelican
+PY=poetry run python
+PELICAN=poetry run pelican -D
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -17,7 +17,7 @@ clean:
 	[ ! -d $(OUTPUTDIR) ] || find $(OUTPUTDIR) -mindepth 1 -delete
 
 serve:
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+	cd $(OUTPUTDIR) && $(PY) -m pelican.server 8001
 
 scss: $(INPUTDIR)/css/style.scss 
 	sassc -m $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css --style=compressed --omit-map-comment

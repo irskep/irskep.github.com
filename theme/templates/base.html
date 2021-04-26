@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
-<head>
-  {% block head %}
-    <title>{% block title %}{{ SITENAME }}{% block moretitle %}{% endblock %}{% endblock title %}</title>
+  <head>
+    {% block head %}
+    <title>
+      {% block title %}{{ SITENAME }}{% block moretitle %}{% endblock %}{%
+      endblock title %}
+    </title>
 
-    <meta name="viewport" content="width=device-width">
-    <meta charset="UTF-8">
-
-    {#
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic&subset=latin,latin-ext' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    #}
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
 
     {#
+    <link
+      href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic&subset=latin,latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Playfair+Display+SC"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Inconsolata:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    #} {#
     <link rel="stylesheet" href="{{ SITEURL }}/css/reset.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/css/pygments.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/css/style.css" />
@@ -22,10 +36,19 @@
 
     <meta charset="utf-8" />
     {% if FEED_ALL_ATOM %}
-      <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
-    {% endif %}
-    {% if FEED_ALL_RSS %}
-      <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+    <link
+      href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"
+      type="application/atom+xml"
+      rel="alternate"
+      title="{{ SITENAME }} Full Atom Feed"
+    />
+    {% endif %} {% if FEED_ALL_RSS %}
+    <link
+      href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"
+      type="application/rss+xml"
+      rel="alternate"
+      title="{{ SITENAME }} Full RSS Feed"
+    />
     {% endif %}
     <!--
     {% if FEED_ATOM %}
@@ -35,45 +58,47 @@
       <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
     {% endif %}
     {% if CATEGORY_FEED_ATOM and category %}
-      <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+      <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(slug=category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
     {% endif %}
     {% if CATEGORY_FEED_RSS and category %}
-      <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+      <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(slug=category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
     {% endif %}
     {% if TAG_FEED_ATOM and tag %}
-      <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+      <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(slug=tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
     {% endif %}
     {% if TAG_FEED_RSS and tag %}
-      <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+      <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(slug=tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
     -->
 
     <script src="{{ SITEURL }}/js/hyphenate.js" defer></script>
     <script src="{{ SITEURL }}/js/main.js" defer></script>
 
-    <style type="text/css">{{ "css/style.css"|inline|safe }}/*# sourceMappingURL=css/style.css.map */</style>
+    <style type="text/css">
+      {{ "css/style.css"|inline|safe }}/*# sourceMappingURL=css/style.css.map */
+    </style>
 
-  {% endblock head %}
-</head>
+    {% endblock head %}
+  </head>
 
-<body>
-  <div id="layoutcontainer">
-    <div id="pagecontainer">
-      <header id="banner" class="body">
-        <h1>
-          <a href="{{ SITEURL }}">
-            <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
-            <!--Steve Johnson&rsquo;s<br>partial creative output-->
-            Steve Landey
-          </a>
-        </h1>
-        <div class="header-links">
-          {% for title, url in HEADER_LINKS %}
+  <body>
+    <div id="layoutcontainer">
+      <div id="pagecontainer">
+        <header id="banner" class="body">
+          <h1>
+            <a href="{{ SITEURL }}">
+              <!--{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong>-->
+              <!--Steve Johnson&rsquo;s<br>partial creative output-->
+              Steve Landey
+            </a>
+          </h1>
+          <div class="header-links">
+            {% for title, url in HEADER_LINKS %}
             <a href="{{ url }}">{{ title }}</a>
-          {% endfor %}
-        </div>
-      </header>
-      <!--
+            {% endfor %}
+          </div>
+        </header>
+        <!--
       <nav id="menu">
         <ul>
           {% for itemtitle, items in MENUITEMS %}
@@ -87,11 +112,10 @@
       </nav>
       -->
 
-      {% block content %}
-      {% endblock %}
-    </div>
+        {% block content %} {% endblock %}
+      </div>
 
-    <!--
+      <!--
     <nav id="sidebar">
       <ul>
         {% for title, items in MENUITEMS %}
@@ -102,22 +126,24 @@
         {% endfor %}
       </ul>
     </nav>
-    -->
+    --></div>
 
-  </div>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-4517625-1"]);
+      _gaq.push(["_trackPageview"]);
 
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-4517625-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-</body>
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
 </html>
