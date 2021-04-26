@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Landey</title><link href="https://steveasleep.com/" rel="alternate"></link><link href="https://steveasleep.com/feeds/all-en.atom.xml" rel="self"></link><id>https://steveasleep.com/</id><updated>2018-09-29T00:00:00-07:00</updated><entry><title>The blog has a new home</title><link href="https://steveasleep.com/the-blog-has-a-new-home.html" rel="alternate"></link><published>2018-09-29T00:00:00-07:00</published><updated>2018-09-29T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2018-09-29:/the-blog-has-a-new-home.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve started blogging at
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Landey</title><link href="https://steveasleep.com/" rel="alternate"></link><link href="https://steveasleep.com/feeds/all-en.atom.xml" rel="self"></link><id>https://steveasleep.com/</id><updated>2018-09-29T00:00:00-07:00</updated><entry><title>The blog has a new home</title><link href="https://steveasleep.com/the-blog-has-a-new-home.html" rel="alternate"></link><published>2018-09-29T00:00:00-07:00</published><updated>2018-09-29T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2018-09-29:/the-blog-has-a-new-home.html</id><content type="html">&lt;p&gt;I&amp;#8217;ve started blogging at
 &lt;a href="https://blog.steveasleep.com"&gt;blog.steveasleep.com&lt;/a&gt;, hosted on
 &lt;a href="https://write.as"&gt;write.as&lt;/a&gt;. I expect to keep the blog there going forward.
 This site runs on &lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican&lt;/a&gt;, which is
@@ -20,28 +20,8 @@ writing consistently now that I can do it all from a web&amp;nbsp;browser.&lt;/p
 &lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-4-media"&gt;Autoarchaeology Part 4:&amp;nbsp;Media&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;p&gt;I&amp;#8217;ve started blogging at
-&lt;a href="https://blog.steveasleep.com"&gt;blog.steveasleep.com&lt;/a&gt;, hosted on
-&lt;a href="https://write.as"&gt;write.as&lt;/a&gt;. I expect to keep the blog there going forward.
-This site runs on &lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican&lt;/a&gt;, which is
-great for making static sites, but I&amp;#8217;ve been doing a much better job of
-writing consistently now that I can do it all from a web&amp;nbsp;browser.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://blog.steveasleep.com/"&gt;New&amp;nbsp;blog&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://blog.steveasleep.com/feed/"&gt;&lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feed&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="/articles/"&gt;Old&amp;nbsp;blog&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Posts so&amp;nbsp;far&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://blog.steveasleep.com/usernames"&gt;Usernames&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.steveasleep.com/community-conferences"&gt;Big and little&amp;nbsp;conferences&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.steveasleep.com/questions-i-asked-myself-while-writing-a-simple-web-forum"&gt;The web development decision&amp;nbsp;firehose&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;A series on things I found on a web site I made when I was 12. These are good!&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-1"&gt;Autoarchaeology Part 1: Web&amp;nbsp;Sites&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-2-early-games"&gt;Autoarchaeology Part 2: Early&amp;nbsp;Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-3-mac-software"&gt;Autoarchaeology Part 3: Mac&amp;nbsp;Software&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-4-media"&gt;Autoarchaeology Part 4:&amp;nbsp;Media&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content><category term="blog"></category></entry><entry><title>PCG32: The Perfect PRNG for Roguelikes</title><link href="https://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html" rel="alternate"></link><published>2018-03-14T00:00:00-07:00</published><updated>2018-03-14T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2018-03-14:/pcg32-the-perfect-prng-for-roguelikes.html</id><summary type="html">&lt;p&gt;Roguelikes are games that, among other things, have a lot of procedurally
+&lt;/ul&gt;</content><category term="Articles"></category><category term="blog"></category></entry><entry><title>PCG32: The Perfect PRNG for Roguelikes</title><link href="https://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html" rel="alternate"></link><published>2018-03-14T00:00:00-07:00</published><updated>2018-03-14T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2018-03-14:/pcg32-the-perfect-prng-for-roguelikes.html</id><summary type="html">&lt;p&gt;&lt;em&gt;Hello, Hacker News. You found a post I wrote in 2018 that in hindsight has some issues. Please don&amp;#8217;t judge me too harshly. Instead, check out my free online whiteboard &lt;a href="https://browserboard.com"&gt;Browserboard&lt;/a&gt; or read &lt;a href="https://blog.steveasleep.com"&gt;some of my newer posts&lt;/a&gt;, such as &lt;a href="https://blog.steveasleep.com/lets-generate-some-imaginary-guitar-pedals"&gt;Let’s generate some imaginary guitar pedals&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Roguelikes are games that, among other things, have a lot of procedurally
 generated content. To generate content, we need random numbers. And to get
 random numbers, we need a &lt;strong&gt;pseudo-random number generator&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Not only do we want random numbers, but we want &lt;em&gt;predictable&lt;/em&gt; random numbers!
@@ -54,11 +34,8 @@ might change based on how many times the player got into a&amp;nbsp;fight!&lt;/p
 &lt;p&gt;So we need to be clever about how we create and store our PRNGs, to ensure
 that the procedurally generated maps are not affected by anything that happens
 during&amp;nbsp;gameplay.&lt;/p&gt;
-&lt;p&gt;If we use the &lt;a href="http://www.pcg-random.org"&gt;&lt;span class="caps"&gt;PCG&lt;/span&gt; family of PRNGs&lt;/a&gt;, our job
-is a lot easier. There are many variants of &lt;span class="caps"&gt;PCG&lt;/span&gt;, but in this post I&amp;#8217;ll be
-referring only to &lt;span class="caps"&gt;PCG32&lt;/span&gt;, the one that generates 32-bit unsigned integers and
-keeps its state as two 64-bit unsigned&amp;nbsp;integers.&lt;/p&gt;
-&lt;p&gt;(By the way, I …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Roguelikes are games that, among other things, have a lot of procedurally
+&lt;p&gt;If we use …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;em&gt;Hello, Hacker News. You found a post I wrote in 2018 that in hindsight has some issues. Please don&amp;#8217;t judge me too harshly. Instead, check out my free online whiteboard &lt;a href="https://browserboard.com"&gt;Browserboard&lt;/a&gt; or read &lt;a href="https://blog.steveasleep.com"&gt;some of my newer posts&lt;/a&gt;, such as &lt;a href="https://blog.steveasleep.com/lets-generate-some-imaginary-guitar-pedals"&gt;Let’s generate some imaginary guitar pedals&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Roguelikes are games that, among other things, have a lot of procedurally
 generated content. To generate content, we need random numbers. And to get
 random numbers, we need a &lt;strong&gt;pseudo-random number generator&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Not only do we want random numbers, but we want &lt;em&gt;predictable&lt;/em&gt; random numbers!
@@ -85,7 +62,7 @@ all comes down to the &lt;span class="caps"&gt;API&lt;/span&gt;.&lt;/p&gt;
 &lt;em&gt;stream&lt;/em&gt;. The seed matches the traditional idea of a &lt;span class="caps"&gt;PRNG&lt;/span&gt; seed, but the stream
 is something new: it lets you pick from &lt;strong&gt;multiple streams of random numbers&lt;/strong&gt;
 generated by the same&amp;nbsp;seed!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;seed&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;UInt64&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;12345&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;67890&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;seed&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;UInt64&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;12345&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;67890&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="bp"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Seed:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;seed&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
   &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;seq&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;UInt64&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
 
@@ -97,10 +74,9 @@ generated by the same&amp;nbsp;seed!&lt;/p&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
   &lt;span class="bp"&gt;print&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Seed&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;12345&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Seed&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;12345&lt;/span&gt;
 &lt;span class="n"&gt;Stream&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;26&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;74&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;82&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;86&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;75&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;82&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;92&lt;/span&gt;
 &lt;span class="n"&gt;Stream&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;76&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;54&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;90&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;40&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;98&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;34&lt;/span&gt;
 &lt;span class="n"&gt;Stream&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;17&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;46&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;68&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;29&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;91&lt;/span&gt;
@@ -109,8 +85,7 @@ generated by the same&amp;nbsp;seed!&lt;/p&gt;
 &lt;span class="n"&gt;Stream&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;54&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;68&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;74&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;56&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;63&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;43&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;47&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;21&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;96&lt;/span&gt;
 &lt;span class="n"&gt;Stream&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;36&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;16&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;58&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;36&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;31&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;29&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;73&lt;/span&gt;
 &lt;span class="n"&gt;Stream&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;89&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;61&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;71&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;58&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;85&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;70&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;59&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;31&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This means you can start your game with one seed, and then lazily create
 individual &lt;span class="caps"&gt;PCG&lt;/span&gt; instances for each level at the time you need them, without
@@ -131,7 +106,7 @@ somewhere between level 5 and&amp;nbsp;15.&lt;/p&gt;
 &lt;p&gt;Rather than deciding exactly how to branch when the game starts and generating
 all the level seeds in advance, you can create an object that lazily creates
 &lt;span class="caps"&gt;PCG32&lt;/span&gt; instances based on the hash value if your level &lt;span class="caps"&gt;ID&lt;/span&gt;&amp;nbsp;string!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;PRNGStore&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Codable&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;PRNGStore&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;Codable&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nv"&gt;seed&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;UInt64&lt;/span&gt;
 
   &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nv"&gt;rngCache&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;UInt64&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;PCG32Generator&lt;/span&gt;&lt;span class="p"&gt;]()&lt;/span&gt;
@@ -170,8 +145,7 @@ all the level seeds in advance, you can create an object that lazily creates
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;rng&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Once you have a class like this, you never again need to think about when and
 how to generate &lt;span class="caps"&gt;PRNG&lt;/span&gt; instances, because it all just happens by magic. Using the
@@ -184,7 +158,7 @@ the algorithm was only introduced in 2014. I wrote two implementations myself:
 and &lt;a href="https://github.com/irskep/RogueKit/blob/master/Sources/RogueKit/Util/PCG32.swift"&gt;Swift&lt;/a&gt;.
 You should be able to find a good implementation for your favorite language
 just by searching the web. And if you can&amp;#8217;t find one, it really isn&amp;#8217;t too hard
-to do! It&amp;#8217;s just a handful of bitwise&amp;nbsp;operations.&lt;/p&gt;</content><category term="gamedev roguelikes"></category></entry><entry><title>2017 Year in Review</title><link href="https://steveasleep.com/2017-year-in-review.html" rel="alternate"></link><published>2017-12-20T00:00:00-08:00</published><updated>2017-12-20T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-12-20:/2017-year-in-review.html</id><summary type="html">&lt;p&gt;This year I did a bunch of things, but one thing I didn’t do was blog about every single thing. Here’s a roundup of everything I&amp;nbsp;missed.&lt;/p&gt;
+to do! It&amp;#8217;s just a handful of bitwise&amp;nbsp;operations.&lt;/p&gt;</content><category term="Articles"></category><category term="gamedev roguelikes"></category></entry><entry><title>2017 Year in Review</title><link href="https://steveasleep.com/2017-year-in-review.html" rel="alternate"></link><published>2017-12-20T00:00:00-08:00</published><updated>2017-12-20T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-12-20:/2017-year-in-review.html</id><summary type="html">&lt;p&gt;This year I did a bunch of things, but one thing I didn’t do was blog about every single thing. Here’s a roundup of everything I&amp;nbsp;missed.&lt;/p&gt;
 &lt;h2&gt;I made some&amp;nbsp;games&lt;/h2&gt;
 &lt;p&gt;I made three games this year for Ludum Dare 38, 39, and 40: &lt;a href="https://irskep.itch.io/roguebasement"&gt;Rogue Basement&lt;/a&gt;, &lt;a href="https://irskep.itch.io/powerq"&gt;Power-Q&lt;/a&gt;, and &lt;a href="https://steveasleep.com/please-come-in/"&gt;Please, Come In&lt;/a&gt;. Their collective soundtracks contain five original&amp;nbsp;songs.&lt;/p&gt;
 &lt;p&gt;The only one I really dedicated myself to during Ludum Dare was &lt;em&gt;Rogue Basement&lt;/em&gt;, and it shows in the ratings. The other two were experiments with frameworks and genres. But I did polish &lt;em&gt;Power-Q&lt;/em&gt; for an iOS release, and &lt;a href="https://itunes.apple.com/us/app/power-q/id1278699114?mt=8"&gt;you can get it&amp;nbsp;now!&lt;/a&gt;&lt;/p&gt;
@@ -274,7 +248,7 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Steve Johnson This Game Deserves An Award&amp;nbsp;Awards&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Rocket League and The&amp;nbsp;Witness&lt;/p&gt;
 &lt;h2&gt;When I write all that out it seems like a&amp;nbsp;lot&lt;/h2&gt;
-&lt;p&gt;Those are the things I did with my nights and weekends in 2017! In retrospect, it looks like I overdid it. Time will tell if I manage to tone it down this&amp;nbsp;year.&lt;/p&gt;</content></entry><entry><title>From PoweRL to Power-Q: game jam to product</title><link href="https://steveasleep.com/from-powerl-to-power-q-game-jam-to-product.html" rel="alternate"></link><published>2017-09-03T00:00:00-07:00</published><updated>2017-09-03T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-09-03:/from-powerl-to-power-q-game-jam-to-product.html</id><summary type="html">&lt;p&gt;&lt;a href="https://irskep.itch.io/powerq"&gt;Power-Q&lt;/a&gt; is the polished, productized version of my Ludum Dare game &lt;a href="https://irskep.itch.io/powerl"&gt;PoweRL&lt;/a&gt;. They have exactly the same mechanics, but Power-Q has about 30 extra hours of effort invested into it. Before I send it out into the world, I want to reflect upon where those 30 hours&amp;nbsp;went.&lt;/p&gt;
+&lt;p&gt;Those are the things I did with my nights and weekends in 2017! In retrospect, it looks like I overdid it. Time will tell if I manage to tone it down this&amp;nbsp;year.&lt;/p&gt;</content><category term="Articles"></category></entry><entry><title>From PoweRL to Power-Q: game jam to product</title><link href="https://steveasleep.com/from-powerl-to-power-q-game-jam-to-product.html" rel="alternate"></link><published>2017-09-03T00:00:00-07:00</published><updated>2017-09-03T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-09-03:/from-powerl-to-power-q-game-jam-to-product.html</id><summary type="html">&lt;p&gt;&lt;a href="https://irskep.itch.io/powerq"&gt;Power-Q&lt;/a&gt; is the polished, productized version of my Ludum Dare game &lt;a href="https://irskep.itch.io/powerl"&gt;PoweRL&lt;/a&gt;. They have exactly the same mechanics, but Power-Q has about 30 extra hours of effort invested into it. Before I send it out into the world, I want to reflect upon where those 30 hours&amp;nbsp;went.&lt;/p&gt;
 &lt;p&gt;Power-Q is in beta on Mac and iOS. You can get the Mac beta &lt;a href="https://irskep.itch.io/powerl"&gt;on itch.io&lt;/a&gt;, but to get the iOS beta you’ll have to &lt;a href="powerq@steve.steveasleep.com"&gt;email&amp;nbsp;me.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="screenshot" src="https://steveasleep.com/img/powerq/screenshot.png"&gt;&lt;/p&gt;
 &lt;p&gt;Before:&lt;/p&gt;
@@ -381,9 +355,15 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;li&gt;Music is slightly&amp;nbsp;better&lt;/li&gt;
 &lt;li&gt;Different sounds for&amp;nbsp;shooting&lt;/li&gt;
 &lt;li&gt;Game saves at the start of each level, loads on&amp;nbsp;launch&lt;/li&gt;
-&lt;/ul&gt;</content><category term="games"></category></entry><entry><title>PoweRL postmortem</title><link href="https://steveasleep.com/powerl-postmortem.html" rel="alternate"></link><published>2017-08-05T00:00:00-07:00</published><updated>2017-08-05T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-08-05:/powerl-postmortem.html</id><summary type="html">&lt;p&gt;&lt;a href="https://ldjam.com"&gt;Ludum Dare 39&lt;/a&gt; fell on a weekend when I wasn&amp;#8217;t busy, and I wanted an excuse to learn a bit about Apple&amp;#8217;s game libraries, so I made another &lt;a href="https://en.wikipedia.org/wiki/Roguelike"&gt;roguelike&lt;/a&gt;, &lt;a href="https://irskep.itch.io/powerl"&gt;PoweRL&lt;/a&gt;:&lt;/p&gt;
+&lt;/ul&gt;</content><category term="Articles"></category><category term="games"></category></entry><entry><title>PoweRL postmortem</title><link href="https://steveasleep.com/powerl-postmortem.html" rel="alternate"></link><published>2017-08-05T00:00:00-07:00</published><updated>2017-08-05T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-08-05:/powerl-postmortem.html</id><summary type="html">&lt;p&gt;&lt;a href="https://ldjam.com"&gt;Ludum Dare 39&lt;/a&gt; fell on a weekend when I wasn&amp;#8217;t busy, and I wanted an excuse to learn a bit about Apple&amp;#8217;s game libraries, so I made another &lt;a href="https://en.wikipedia.org/wiki/Roguelike"&gt;roguelike&lt;/a&gt;, &lt;a href="https://irskep.itch.io/powerl"&gt;PoweRL&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot" src="https://steveasleep.com/img/powerl/screenshot.png"&gt;&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;&lt;a href="https://ldjam.com"&gt;Ludum Dare 39&lt;/a&gt; fell on a weekend when I wasn&amp;#8217;t busy, and I wanted an excuse to learn a bit about Apple&amp;#8217;s game libraries, so I made another &lt;a href="https://en.wikipedia.org/wiki/Roguelike"&gt;roguelike&lt;/a&gt;, &lt;a href="https://irskep.itch.io/powerl"&gt;PoweRL&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;p&gt;I wasn&amp;#8217;t in the mood for stress, so I set my standards very, very low. Ironically, the result is more commercially viable than most of what I make! That might not be apparent from the screenshot, but maybe this new version with updated art will convince&amp;nbsp;you:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Screenshot 2" src="https://steveasleep.com/img/powerl/screenshot2.png"&gt;&lt;/p&gt;
+&lt;h2&gt;Swift, SpriteKit, and&amp;nbsp;GameplayKit&lt;/h2&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;iOS engineer&amp;#8221; is part of my normal job description, but in the past I&amp;#8217;ve avoided using Swift or Objective-C for jams because it isn&amp;#8217;t cross-platform. But since I didn&amp;#8217;t really care about the outcome of this jam, I let my curiosity about SpriteKit and GameplayKit win out over&amp;nbsp;portability.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m really glad I did, because after learning the frameworks, I spent almost no time worrying about the engine! My last Ludum Dare game, &lt;a href="/|filename|/posts/2017-05-04-the-design-and-implementation-of-rogue-basement.html"&gt;Rogue Basement&lt;/a&gt;, needed a lot of up-front work on the engine to get running, and then optimization work after completion. But with PoweRL, SpriteKit made for an efficient renderer and animation system, and GameplayKit gave me structure for gameplay …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://ldjam.com"&gt;Ludum Dare 39&lt;/a&gt; fell on a weekend when I wasn&amp;#8217;t busy, and I wanted an excuse to learn a bit about Apple&amp;#8217;s game libraries, so I made another &lt;a href="https://en.wikipedia.org/wiki/Roguelike"&gt;roguelike&lt;/a&gt;, &lt;a href="https://irskep.itch.io/powerl"&gt;PoweRL&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot" src="https://steveasleep.com/img/powerl/screenshot.png"&gt;&lt;/p&gt;
 
 
@@ -431,7 +411,7 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;p&gt;I can&amp;#8217;t use the new sprites in the Ludum Dare judging, but I can at least use it as the canonical version when judging is over, and recover a bit of&amp;nbsp;self-respect.&lt;/p&gt;
 &lt;h2&gt;Parting&amp;nbsp;thoughts&lt;/h2&gt;
 &lt;p&gt;I took a lot more breaks this time than I did in the past. These days I value my weekend chill-out a lot. But by being smart about tools, game design, and assets, I ended up with something I&amp;#8217;m proud&amp;nbsp;of.&lt;/p&gt;
-&lt;p&gt;For the next Ludum Dare, I&amp;#8217;m going to try to join a&amp;nbsp;team.&lt;/p&gt;</content><category term="games"></category></entry><entry><title>Videos of old games</title><link href="https://steveasleep.com/videos-of-old-games.html" rel="alternate"></link><published>2017-05-21T00:00:00-07:00</published><updated>2017-05-21T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-05-21:/videos-of-old-games.html</id><summary type="html">&lt;p&gt;I spent the day making some basic playthrough videos of some of my old games. Check &amp;#8216;em out! You can find more info about them &lt;a href="/games.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For the next Ludum Dare, I&amp;#8217;m going to try to join a&amp;nbsp;team.&lt;/p&gt;</content><category term="Articles"></category><category term="games"></category></entry><entry><title>Videos of old games</title><link href="https://steveasleep.com/videos-of-old-games.html" rel="alternate"></link><published>2017-05-21T00:00:00-07:00</published><updated>2017-05-21T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-05-21:/videos-of-old-games.html</id><content type="html">&lt;p&gt;I spent the day making some basic playthrough videos of some of my old games. Check &amp;#8216;em out! You can find more info about them &lt;a href="/games.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Most of these videos have some kind of disruptive&amp;nbsp;sound.&lt;/p&gt;
 &lt;h1&gt;Bibble Biter&amp;nbsp;(2005)&lt;/h1&gt;
 &lt;iframe width="560" height="400" src="https://www.youtube.com/embed/X1HYYvUmCuc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -459,38 +439,26 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;h1&gt;Elite Bungie Chopper Squadron&amp;nbsp;(2008)&lt;/h1&gt;
 &lt;iframe width="560" height="400" src="https://www.youtube.com/embed/vLTsKThAedw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-</summary><content type="html">&lt;p&gt;I spent the day making some basic playthrough videos of some of my old games. Check &amp;#8216;em out! You can find more info about them &lt;a href="/games.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Most of these videos have some kind of disruptive&amp;nbsp;sound.&lt;/p&gt;
-&lt;h1&gt;Bibble Biter&amp;nbsp;(2005)&lt;/h1&gt;
-&lt;iframe width="560" height="400" src="https://www.youtube.com/embed/X1HYYvUmCuc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1&gt;Walaga&amp;nbsp;(2005)&lt;/h1&gt;
-&lt;iframe width="560" height="400" src="https://www.youtube.com/embed/z2du6zxYmcM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1&gt;Canvas Wars 2 (2005?,&amp;nbsp;unfinished)&lt;/h1&gt;
-&lt;iframe width="560" height="340" src="https://www.youtube.com/embed/d7peqm5ZOH8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;There was a Canvas Wars 1, but the code is long&amp;nbsp;gone.&lt;/p&gt;
-&lt;h1&gt;Whizbang (2005,&amp;nbsp;unfinished)&lt;/h1&gt;
-&lt;iframe width="560" height="340" src="https://www.youtube.com/embed/R4qM0PDF2bQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1&gt;Artack&amp;nbsp;(2006)&lt;/h1&gt;
-&lt;iframe width="560" height="400" src="https://www.youtube.com/embed/xOLhMyyxqiA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="https://steveasleep.com/downloads/Artack.zip"&gt;You can actually download this&amp;nbsp;one!&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;Guy who catches on fire (2007?,&amp;nbsp;demo)&lt;/h1&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/J-oM7qDnx_w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1&gt;Tormegra (2007,&amp;nbsp;unfinished)&lt;/h1&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/8DlEQO92Knc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;h1&gt;Elite Bungie Chopper Squadron&amp;nbsp;(2008)&lt;/h1&gt;
-&lt;iframe width="560" height="400" src="https://www.youtube.com/embed/vLTsKThAedw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-</content><category term="games"></category></entry><entry><title>The Design and Implementation of Rogue Basement</title><link href="https://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="alternate"></link><published>2017-05-04T00:00:00-07:00</published><updated>2017-05-04T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-05-04:/the-design-and-implementation-of-rogue-basement.html</id><summary type="html">&lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
+</content><category term="Articles"></category><category term="games"></category></entry><entry><title>The Design and Implementation of Rogue Basement</title><link href="https://steveasleep.com/the-design-and-implementation-of-rogue-basement.html" rel="alternate"></link><published>2017-05-04T00:00:00-07:00</published><updated>2017-05-04T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-05-04:/the-design-and-implementation-of-rogue-basement.html</id><summary type="html">&lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
 &lt;p&gt;In this article, I&amp;#8217;ll cover the game design decisions I made, how they affect the player&amp;#8217;s experience, and a bit of how they&amp;#8217;re implemented. &lt;a href="https://github.com/irskep/rogue_basement"&gt;The source code&lt;/a&gt; is extensively commented as&amp;nbsp;well.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="screenshot" src="https://steveasleep.com/img/rogue_basement/screenshot2.png"&gt;&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
+
+
+&lt;h1&gt;What is a&amp;nbsp;roguelike?&lt;/h1&gt;
+&lt;p&gt;A &amp;#8220;roguelike&amp;#8221; is a game that is &amp;#8220;like Rogue,&amp;#8221; a text-based game from the 1980s that looks like&amp;nbsp;this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Rogue_Screen_Shot_CAR.png" src="https://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png"&gt;&lt;/p&gt;
+&lt;p&gt;Typical features of these games&amp;nbsp;include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Procedurally generated&amp;nbsp;levels&lt;/li&gt;
+&lt;li&gt;Permadeath (one&amp;nbsp;life)&lt;/li&gt;
+&lt;li&gt;Turn-based&amp;nbsp;action&lt;/li&gt;
+&lt;li&gt;Top-down 2D graphics, often just&amp;nbsp;text&lt;/li&gt;
+&lt;li&gt;Simulation-oriented; interesting stories arise from the game&amp;#8217;s rules and&amp;nbsp;behavior&lt;/li&gt;
+&lt;li&gt;Very difficult to win without lots of&amp;nbsp;practice&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you&amp;#8217;re always facing new situations. You have to use your wits to&amp;nbsp;survive.&lt;/p&gt;
+&lt;h1&gt;Environment&lt;/h1&gt;
+&lt;p&gt;I started on Friday night with …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This year I participated in &lt;a href="https://ldjam.com"&gt;Ludum Dare 38&lt;/a&gt;, a 48-hour game programming &amp;#8220;competition.&amp;#8221; I&amp;#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made &lt;a href="https://ldjam.com/events/ludum-dare/38/rogue-basement"&gt;Rogue Basement&lt;/a&gt;, a bare-bones, single-level game with &lt;span class="caps"&gt;ASCII&lt;/span&gt;&amp;nbsp;graphics.&lt;/p&gt;
 &lt;p&gt;In this article, I&amp;#8217;ll cover the game design decisions I made, how they affect the player&amp;#8217;s experience, and a bit of how they&amp;#8217;re implemented. &lt;a href="https://github.com/irskep/rogue_basement"&gt;The source code&lt;/a&gt; is extensively commented as&amp;nbsp;well.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="screenshot" src="https://steveasleep.com/img/rogue_basement/screenshot2.png"&gt;&lt;/p&gt;
 
@@ -512,7 +480,7 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;p&gt;I started on Friday night with a level generator. When you&amp;#8217;re time-constrained, you have to make very careful decisions about where to innovate, and I chose to stick to a roguelike trope for my basic layout: boxy rooms connected by narrow corridors, with doors where corridors meet&amp;nbsp;rooms.&lt;/p&gt;
 &lt;p&gt;I could have placed a bunch of rooms randomly and made sure each one was connected to another, but it&amp;#8217;s tricky to use space efficiently that way. A common way to avoid this problem is to use a &lt;strong&gt;binary space partitioning&amp;nbsp;tree.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The basic idea here is that you take a rectangular area, like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;+----------------------------------------+
 |                                        |
 |                                        |
 |                                        |
@@ -525,11 +493,10 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 |                                        |
 |                                        |
 +----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Divide it along the X or Y axis at a random point, like this, and label each&amp;nbsp;side:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;+----------------------------------------+
 |                 |                      |
 |                 |                      |
 |                 |                      |
@@ -542,11 +509,10 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 |                 |                      |
 |                 |                      |
 +----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Within each side, divide again on the other axis at a random&amp;nbsp;point:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;+----------------------------------------+
 |                 |                      |
 |       aa        |         ba           |
 |                 |                      |
@@ -559,11 +525,10 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 |                 |                      |
 |                 |                      |
 +----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Divide some&amp;nbsp;more&amp;#8230;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;+----------------------------------------+
 |       |         |              |       |
 |  aaa  |   aab   |     baa      |  bab  |
 |       |         |              |       |
@@ -576,78 +541,73 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 |          |      |       |              |
 |          |      |       |              |
 +----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here&amp;#8217;s a screenshot I took when I got to this&amp;nbsp;point:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot 2017-04-21 21.00.42.png" src="https://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png"&gt;&lt;/p&gt;
 &lt;p&gt;But it&amp;#8217;s more interesting to mix it up with different sizes of&amp;nbsp;rectangles.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
-| +--+  | +------+|   +------+   |       |
-| |  |  | |      ||   |      |   |+-----+|
-| +--+  | +------+|   |      |   ||     ||
-|-----------------|   |      |   ||     ||
-|          |+--+  |   +------+   |+-----+|
-|          ||  |  |----------------------|
-|   +----+ ||  |  |+-----+|              |
-|   |    | ||  |  ||     ||+-----+       |
-|   |    | |+--+  ||     |||     |       |
-|   +----+ |      ||     |||     |       |
-|          |      |+-----+|+-----+       |
-+----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;+----------------------------------------+&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+&lt;span class="c"&gt;| &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  | &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;   |       |&lt;/span&gt;
+&lt;span class="c"&gt;| |  |  | |      ||   |      |   |&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;| &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  | &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;|   |      |   ||     ||&lt;/span&gt;
+&lt;span class="c"&gt;|&lt;/span&gt;&lt;span class="nb"&gt;-----------------&lt;/span&gt;&lt;span class="c"&gt;|   |      |   ||     ||&lt;/span&gt;
+&lt;span class="c"&gt;|          |&lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  |   &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;   |&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;|          ||  |  |&lt;/span&gt;&lt;span class="nb"&gt;----------------------&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+----+&lt;/span&gt;&lt;span class="c"&gt; ||  |  |&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|              |&lt;/span&gt;
+&lt;span class="c"&gt;|   |    | ||  |  ||     ||&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;       |&lt;/span&gt;
+&lt;span class="c"&gt;|   |    | |&lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  ||     |||     |       |&lt;/span&gt;
+&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+----+&lt;/span&gt;&lt;span class="c"&gt; |      ||     |||     |       |&lt;/span&gt;
+&lt;span class="c"&gt;|          |      |&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;       |&lt;/span&gt;
+&lt;span class="nb"&gt;+----------------------------------------+&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;You probably noticed I annotated all the cells with &lt;code&gt;aab&lt;/code&gt; and such. We&amp;#8217;ll use that information to add corridors. For every pair of areas that share the first 2 letters of their identifier (&amp;#8220;siblings in the tree&amp;#8221;), we add an L-shaped corridor from a random point in one to a random point in the other. If a point is already inside a room, we&amp;#8217;ll leave it alone. If a point is on a wall, we&amp;#8217;ll turn it into a&amp;nbsp;door.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
-| +--+    +------+|   +------+           |
-| |  &amp;#39;####&amp;#39;      ||   |      |    +-----+|
-| +--+    +------+|   |      &amp;#39;####&amp;#39;     ||
-|-----------------|   |      |    |     ||
-|           +--+  |   +------+    +-----+|
-|     ######&amp;#39;  |  |----------------------|
-|   +-&amp;#39;--+  |  |  |+-----+               |
-|   |    |  |  |  ||     | +-----+       |
-|   |    |  +--+  ||     &amp;#39;#&amp;#39;     |       |
-|   +----+        ||     | |     |       |
-|                 |+-----+ +-----+       |
-+----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;+----------------------------------------+&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+&lt;span class="c"&gt;| &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;           |&lt;/span&gt;
+&lt;span class="c"&gt;| |  &amp;#39;####&amp;#39;      ||   |      |    &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;| &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;|   |      &amp;#39;####&amp;#39;     ||&lt;/span&gt;
+&lt;span class="c"&gt;|&lt;/span&gt;&lt;span class="nb"&gt;-----------------&lt;/span&gt;&lt;span class="c"&gt;|   |      |    |     ||&lt;/span&gt;
+&lt;span class="c"&gt;|           &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  |   &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;|     ######&amp;#39;  |  |&lt;/span&gt;&lt;span class="nb"&gt;----------------------&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+-&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;--+&lt;/span&gt;&lt;span class="c"&gt;  |  |  |&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;               |&lt;/span&gt;
+&lt;span class="c"&gt;|   |    |  |  |  ||     | &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;       |&lt;/span&gt;
+&lt;span class="c"&gt;|   |    |  &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  ||     &amp;#39;#&amp;#39;     |       |&lt;/span&gt;
+&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+----+&lt;/span&gt;&lt;span class="c"&gt;        ||     | |     |       |&lt;/span&gt;
+&lt;span class="c"&gt;|                 |&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt; &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;       |&lt;/span&gt;
+&lt;span class="nb"&gt;+----------------------------------------+&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Now we do it again, but the random point in each section will come from a random room in each respective&amp;nbsp;section:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
-| +--+    +------+|   +------+           |
-| |  &amp;#39;####&amp;#39;      ||   |      |    +-----+|
-| +--+    +&amp;#39;-----+|   |      &amp;#39;####&amp;#39;     ||
-|          #      |   |      |    |     ||
-|          #+--+  |   +-&amp;#39;----+    +-----+|
-|     ######&amp;#39;  |  |     #                |
-|   +-&amp;#39;--+ #|  |  |+----&amp;#39;+               |
-|   |    | #|  |  ||     | +-----+       |
-|   |    +##+--+  ||     &amp;#39;#&amp;#39;     |       |
-|   +----+        ||     | |     |       |
-|                 |+-----+ +-----+       |
-+----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;+----------------------------------------+&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+&lt;span class="c"&gt;| &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;           |&lt;/span&gt;
+&lt;span class="c"&gt;| |  &amp;#39;####&amp;#39;      ||   |      |    &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;| &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;-----+&lt;/span&gt;&lt;span class="c"&gt;|   |      &amp;#39;####&amp;#39;     ||&lt;/span&gt;
+&lt;span class="c"&gt;|          #      |   |      |    |     ||&lt;/span&gt;
+&lt;span class="c"&gt;|          #&lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  |   &lt;/span&gt;&lt;span class="nb"&gt;+-&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;----+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;|     ######&amp;#39;  |  |     #                |&lt;/span&gt;
+&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+-&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;--+&lt;/span&gt;&lt;span class="c"&gt; #|  |  |&lt;/span&gt;&lt;span class="nb"&gt;+----&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;+&lt;/span&gt;&lt;span class="c"&gt;               |&lt;/span&gt;
+&lt;span class="c"&gt;|   |    | #|  |  ||     | &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;       |&lt;/span&gt;
+&lt;span class="c"&gt;|   |    &lt;/span&gt;&lt;span class="nb"&gt;+&lt;/span&gt;&lt;span class="c"&gt;##&lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  ||     &amp;#39;#&amp;#39;     |       |&lt;/span&gt;
+&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+----+&lt;/span&gt;&lt;span class="c"&gt;        ||     | |     |       |&lt;/span&gt;
+&lt;span class="c"&gt;|                 |&lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt; &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;       |&lt;/span&gt;
+&lt;span class="nb"&gt;+----------------------------------------+&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And finally we&amp;#8217;ll do it again to the top-level&amp;nbsp;pair:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+----------------------------------------+
-| +--+    +------+    +------+           |
-| |  &amp;#39;####&amp;#39;      &amp;#39;#   |      |    +-----+|
-| +--+    +&amp;#39;-----+#   |      &amp;#39;####&amp;#39;     ||
-|          #      #   |      |    |     ||
-|          #+--+  #   +-&amp;#39;----+    +-----+|
-|     ######&amp;#39;  |  #     #                |
-|   +-&amp;#39;--+ #|  |  #+----&amp;#39;+               |
-|   |    | #|  |  #|     | +-----+       |
-|   |    +##+--+  #&amp;#39;     &amp;#39;#&amp;#39;     |       |
-|   +----+         |     | |     |       |
-|                  +-----+ +-----+       |
-+----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;+----------------------------------------+&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+&lt;span class="c"&gt;| &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+------+&lt;/span&gt;&lt;span class="c"&gt;           |&lt;/span&gt;
+&lt;span class="c"&gt;| |  &amp;#39;####&amp;#39;      &amp;#39;#   |      |    &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;| &lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;-----+&lt;/span&gt;&lt;span class="c"&gt;#   |      &amp;#39;####&amp;#39;     ||&lt;/span&gt;
+&lt;span class="c"&gt;|          #      #   |      |    |     ||&lt;/span&gt;
+&lt;span class="c"&gt;|          #&lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  #   &lt;/span&gt;&lt;span class="nb"&gt;+-&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;----+&lt;/span&gt;&lt;span class="c"&gt;    &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;|&lt;/span&gt;
+&lt;span class="c"&gt;|     ######&amp;#39;  |  #     #                |&lt;/span&gt;
+&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+-&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;--+&lt;/span&gt;&lt;span class="c"&gt; #|  |  #&lt;/span&gt;&lt;span class="nb"&gt;+----&lt;/span&gt;&lt;span class="c"&gt;&amp;#39;&lt;/span&gt;&lt;span class="nb"&gt;+&lt;/span&gt;&lt;span class="c"&gt;               |&lt;/span&gt;
+&lt;span class="c"&gt;|   |    | #|  |  #|     | &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;       |&lt;/span&gt;
+&lt;span class="c"&gt;|   |    &lt;/span&gt;&lt;span class="nb"&gt;+&lt;/span&gt;&lt;span class="c"&gt;##&lt;/span&gt;&lt;span class="nb"&gt;+--+&lt;/span&gt;&lt;span class="c"&gt;  #&amp;#39;     &amp;#39;#&amp;#39;     |       |&lt;/span&gt;
+&lt;span class="c"&gt;|   &lt;/span&gt;&lt;span class="nb"&gt;+----+&lt;/span&gt;&lt;span class="c"&gt;         |     | |     |       |&lt;/span&gt;
+&lt;span class="c"&gt;|                  &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt; &lt;/span&gt;&lt;span class="nb"&gt;+-----+&lt;/span&gt;&lt;span class="c"&gt;       |&lt;/span&gt;
+&lt;span class="nb"&gt;+----------------------------------------+&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;And here&amp;#8217;s how it looked during&amp;nbsp;development:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot 2017-04-21 21.50.39.png" src="https://steveasleep.com/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png"&gt;&lt;/p&gt;
@@ -660,21 +620,20 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;p&gt;That last point has some good and bad ramifications. On the bad side, it worsens replayability, because the corridors are roughly organized the same way from game to game. I noticed this while playtesting; after 3 games it&amp;#8217;s obvious that the rooms generally have the same&amp;nbsp;layout.&lt;/p&gt;
 &lt;p&gt;But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: &amp;#8220;A Small World.&amp;#8221; The first two splits don&amp;#8217;t have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a &amp;#8220;one-level roguelike&amp;#8221; with some actual&amp;nbsp;progression.&lt;/p&gt;
 &lt;p&gt;I split up the map like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;+-------------------+--------------------+
-|                   |                    |
-|                   |                    |
-|         aa        |         ba         |
-|    (start here)   |     (end here)     |
-|         |         |         ^          |
-|---------|---------+---------|----------|
-|         v         |         |          |
-|                   |                    |
-|         ab     -------&amp;gt;     bb         |
-|                   |                    |
-|                   |                    |
-+----------------------------------------+
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;+-------------------+--------------------+&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;         &lt;span class="n"&gt;aa&lt;/span&gt;        &lt;span class="o"&gt;|&lt;/span&gt;         &lt;span class="n"&gt;ba&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="n"&gt;here&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt;     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;end &lt;/span&gt;&lt;span class="n"&gt;here&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;     &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;         &lt;span class="o"&gt;^&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|---------|---------+---------|----------|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;         &lt;span class="n"&gt;v&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;          &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;         &lt;span class="n"&gt;ab&lt;/span&gt;     &lt;span class="o"&gt;-------&amp;gt;&lt;/span&gt;     &lt;span class="n"&gt;bb&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;|&lt;/span&gt;                   &lt;span class="o"&gt;|&lt;/span&gt;                    &lt;span class="o"&gt;|&lt;/span&gt;
+&lt;span class="o"&gt;+----------------------------------------+&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The player starts in &lt;code&gt;aa&lt;/code&gt; and moves to &lt;code&gt;ab&lt;/code&gt;, then &lt;code&gt;bb&lt;/code&gt;, then &lt;code&gt;ba&lt;/code&gt;, where the goal&amp;nbsp;is.&lt;/p&gt;
 &lt;p&gt;Here&amp;#8217;s another map from early development, which splits the map in this&amp;nbsp;way:&lt;/p&gt;
@@ -685,7 +644,7 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot 2017-04-22 11.40.44.png" src="https://steveasleep.com/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png"&gt;&lt;/p&gt;
 &lt;p&gt;Originally the colors were just for debugging, but I ended up leaving them in place because they signal&amp;nbsp;specialness.&lt;/p&gt;
 &lt;p&gt;To add variety, I created a &lt;code&gt;rooms.csv&lt;/code&gt; file to define a few room&amp;nbsp;types:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;                                                      Monster   Item
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;                                                      Monster   Item
 Shape,      Difficulty, Monsters,   Chance, Color,    Density,  Density
 box_random, 0.00,       *,          1.00,   #666666,  5.00,     5.00
 box_random, 1.00,       *,          1.00,   #886666,  5.00,     4.00
@@ -695,17 +654,15 @@ box_full,   *,          verp_1      0.20,   #6666ff,  2.00,     4.00
                           |verp_2
                           |verp_3
                           |verp_4,
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;So within each quadrant, there is an 80% chance a room will have shape &lt;code&gt;box_random&lt;/code&gt;, a quadrant-specific color, 5 monsters per 100 tiles, 5 items per 100 tiles, and allow any area-appropriate monster. But there is a 20% chance that the room will have the shape &lt;code&gt;box_full&lt;/code&gt; (fill its entire &lt;span class="caps"&gt;BSP&lt;/span&gt; tree cell) and contain only verps, 2 per 100&amp;nbsp;tiles.&lt;/p&gt;
 &lt;h1&gt;Inhabitants&lt;/h1&gt;
 &lt;h2&gt;The&amp;nbsp;player&lt;/h2&gt;
 &lt;p&gt;The first inhabitant of the world is the player, represented by an &lt;code&gt;@&lt;/code&gt; (because the cell with the &lt;code&gt;@&lt;/code&gt; is &amp;#8220;where you are at&amp;#8221;). All world inhabitants, henceforth called &amp;#8220;monsters&amp;#8221; (after all, humans are the real monsters) and defined in &lt;code&gt;monsters.csv&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
 player, @,    #ffffff,  -1,         0.00,   keyboard_movement,  100,    5.00,
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Difficulty&amp;#8221; determines which quadrant a monster can spawn in. The player is a special case, so the level generator ignores it. The player moves in response to keyboard events, has 100 hit points, and hits other monsters for 5 damage. (The combat system in Rogue Basement is not sophisticated. There is no randomness. Remember, I had to be careful about where to spend&amp;nbsp;innovation-points!)&lt;/p&gt;
 &lt;h2&gt;NPCs&lt;/h2&gt;
@@ -717,11 +674,10 @@ player, @,    #ffffff,  -1,         0.00,   keyboard_movement,  100,    5.00,
 &lt;/ol&gt;
 &lt;p&gt;All of those things affect the player&amp;#8217;s behavior, strategy, and tactics. For a time-constrained game like Rogue Basement, I wanted to stick to the absolute&amp;nbsp;basics.&lt;/p&gt;
 &lt;p&gt;The monsters are all defined in a &lt;span class="caps"&gt;CSV&lt;/span&gt; file (&lt;code&gt;monsters.csv&lt;/code&gt;). The very first monster I added was &lt;code&gt;v&lt;/code&gt;, the&amp;nbsp;&amp;#8220;verp&amp;#8221;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
 verp,   v,    #ffff00,  0.00,       1.00,   beeline_visible,    10,     2.00,
                                             |random_walk
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;In human terms, that definition reads as: &amp;#8220;The &amp;#8216;verp&amp;#8217; monster, represented by a yellow &lt;code&gt;v&lt;/code&gt;, appears in difficulty-zero rooms (first quadrant) with a random weight of 1.0, moves randomly unless it sees the player in which case it moves toward them, has 10 hit points, does 2 damage to the player when hitting, and has no items at the game&amp;nbsp;start.&amp;#8221;&lt;/p&gt;
 &lt;p&gt;Behaviors are implemented as Python classes. After the player moves, each monster has a chance to move as well. Behaviors can be stacked, meaning that if one behavior decides it can&amp;#8217;t do anything, control can be passed to the next behavior in the list. So the verp&amp;#8217;s &lt;code&gt;beeline_visible&lt;/code&gt; behavior either says &amp;#8220;I see the player, I move toward them&amp;#8221; or &amp;#8220;I do not see the player, let some other behavior act this&amp;nbsp;turn.&amp;#8221;&lt;/p&gt;
@@ -733,20 +689,18 @@ verp,   v,    #ffff00,  0.00,       1.00,   beeline_visible,    10,     2.00,
 &lt;li&gt;When a monster dies, its items are dropped on the&amp;nbsp;ground.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I only had time to add one kind of item: the rock (&lt;code&gt;*&lt;/code&gt;). The rock has one use: you can throw it. When you do, the game spawns a new enemy with this&amp;nbsp;definition:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;id,             Char, Color,    Difficulty, Chance, Behaviors,        hp_max, strength, items
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;id,             Char, Color,    Difficulty, Chance, Behaviors,        hp_max, strength, items
 rock_in_flight, *,    #c1a073,  -1,         0,      path_until_hit,   2,      2,
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Since its &amp;#8220;difficulty&amp;#8221; is -1, it never spawns in the initial level. Its only behavior is to move along a path until it hits a wall, a monster, or the player. It has 2 hit&amp;nbsp;points.&lt;/p&gt;
 &lt;p&gt;This is a special item, so the game ignores the &lt;code&gt;strength&lt;/code&gt; and &lt;code&gt;items&lt;/code&gt; attributes in the &lt;span class="caps"&gt;CSV&lt;/span&gt; file. Instead, the &lt;code&gt;rock_in_flight&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;s strength value is taken from &lt;em&gt;the monster that threw the rock&lt;/em&gt;, and the original rock item is added to the &lt;code&gt;rock_in_flight&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;s inventory! When the &lt;code&gt;rock_in_flight&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;s &lt;code&gt;path_until_hit&lt;/code&gt; behavior detects that its life is over, the &lt;code&gt;rock_in_flight&lt;/code&gt; &lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;dies&amp;#8221; and the contents of its inventory (the &lt;code&gt;rock&lt;/code&gt;) are dropped on the&amp;nbsp;ground.&lt;/p&gt;
 &lt;p&gt;Now that I had throwable rocks, I could put a couple in each &lt;code&gt;wibble&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;s inventory and give them the ability to throw them. The &lt;code&gt;wibble&lt;/code&gt; definition looked like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;id,     Char, Color,    Difficulty, Chance, Behaviors,          hp_max, strength, items
 wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,        ROCKx1
                                               |throw_rock_slow
                                               |sleep,
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I added a &amp;#8220;sleep&amp;#8221; behavior to differentiate wibbles from verps. When the player isn&amp;#8217;t around, verps are hyperactive and run around randomly; wibbles sit and meditate. It seemed in keeping with their fighting&amp;nbsp;styles.&lt;/p&gt;
 &lt;p&gt;That all worked great, but when wibbles ran out of rocks, the game got really easy! So I added another behavior, &lt;code&gt;pick_up_rocks&lt;/code&gt;, which makes a wibble either move toward any adjacent rocks, or pick them up if it&amp;#8217;s standing on&amp;nbsp;one.&lt;/p&gt;
@@ -893,7 +847,7 @@ a&amp;nbsp;part.)&lt;/p&gt;
 &lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;This is probably the most fun game I have ever made, and ties for most fun making a game alongside my last Ludum Dare&amp;nbsp;success.&lt;/p&gt;
 &lt;p&gt;Thanks for reading! You can watch all this happen at super-speed in this timelapse&amp;nbsp;video:&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="games"></category></entry><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="https://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><updated>2017-03-12T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-03-12:/home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;&lt;img alt="The switch" src="https://steveasleep.com/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio&amp;nbsp;setup.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="Articles"></category><category term="games"></category></entry><entry><title>Home audio with OS X and cheap consumer electronics</title><link href="https://steveasleep.com/home-audio-with-os-x-and-cheap-consumer-electronics.html" rel="alternate"></link><published>2017-03-12T00:00:00-08:00</published><updated>2017-03-12T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2017-03-12:/home-audio-with-os-x-and-cheap-consumer-electronics.html</id><summary type="html">&lt;p&gt;&lt;img alt="The switch" src="https://steveasleep.com/img/home_audio_adventures/reference_card.jpg"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio&amp;nbsp;setup.&lt;/p&gt;
 &lt;h2&gt;The wish&amp;nbsp;list&lt;/h2&gt;
 &lt;p&gt;Music is our primary focus. We have no need to switch video. &lt;span class="caps"&gt;RCA&lt;/span&gt; and 3.5mm cables are the norm, not &lt;span class="caps"&gt;HDMI&lt;/span&gt;. This doesn’t prevent us from getting a receiver that supports &lt;span class="caps"&gt;RCA&lt;/span&gt;, but those tend to be bulky and have lots of&amp;nbsp;buttons.&lt;/p&gt;
 &lt;p&gt;We share a large &lt;span class="caps"&gt;MP3&lt;/span&gt; library that we would both like to control. It’s easy enough to take turns plugging our computers or phones into an aux cable, but it’s so much more seamless to collaboratively queue things up in the same player. There’s a mix of Windows and &lt;span class="caps"&gt;OS&lt;/span&gt; X machines in the house, so the solution has to be&amp;nbsp;multi-platform.&lt;/p&gt;
@@ -955,9 +909,8 @@ a&amp;nbsp;part.)&lt;/p&gt;
 &lt;h2&gt;Parting&amp;nbsp;thoughts&lt;/h2&gt;
 &lt;p&gt;After writing all this out, the first question I had for myself was whether it was all worth it. Shouldn’t I have just bought a stereo&amp;nbsp;receiver?&lt;/p&gt;
 &lt;p&gt;I’m still glad I didn’t, if only because of those damn remote controls. And the mixing of two sources is really&amp;nbsp;nice.&lt;/p&gt;
-&lt;p&gt;The only downside is that the switch I ended up with is not very well built and introduces a tiny bit of hum. The remote has to be pointed straight at it for it to work, too. But on the other hand, it’s simpler than any other home audio system I’ve&amp;nbsp;used.&lt;/p&gt;</content><category term="audio"></category></entry><entry><title>Blogging about iOS architecture at Hipmunk</title><link href="https://steveasleep.com/ios-at-hipmunk.html" rel="alternate"></link><published>2016-08-25T00:00:00-07:00</published><updated>2016-08-25T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2016-08-25:/ios-at-hipmunk.html</id><summary type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
-over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
-over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</content><category term="ios"></category></entry><entry><title>Computer Words: a new Markdown documentation tool</title><link href="https://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><updated>2016-05-09T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2016-05-09:/computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="https://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The only downside is that the switch I ended up with is not very well built and introduces a tiny bit of hum. The remote has to be pointed straight at it for it to work, too. But on the other hand, it’s simpler than any other home audio system I’ve&amp;nbsp;used.&lt;/p&gt;</content><category term="Articles"></category><category term="audio"></category></entry><entry><title>Blogging about iOS architecture at Hipmunk</title><link href="https://steveasleep.com/ios-at-hipmunk.html" rel="alternate"></link><published>2016-08-25T00:00:00-07:00</published><updated>2016-08-25T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2016-08-25:/ios-at-hipmunk.html</id><content type="html">&lt;p&gt;I wrote about the work I&amp;#8217;ve been doing at Hipmunk over the past year
+over on over at the &lt;a href="https://hipmunk.github.io/posts/2016/Aug/19/taming-hipmunks-ios-code/"&gt;Hipmunk engineering blog&lt;/a&gt;.&lt;/p&gt;</content><category term="Articles"></category><category term="ios"></category></entry><entry><title>Computer Words: a new Markdown documentation tool</title><link href="https://steveasleep.com/computer-words-announcement.html" rel="alternate"></link><published>2016-05-09T00:00:00-07:00</published><updated>2016-05-09T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2016-05-09:/computer-words-announcement.html</id><summary type="html">&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt; &lt;a href="https://steveasleep.com/computerwords"&gt;Computer&amp;nbsp;Words&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I write a lot of documentation. I do it for two reasons: I like writing, and I
 like to be understood. Documentation is what takes software from “something
 &lt;code&gt;@irskep&lt;/code&gt; put on GitHub” to something you can actually&amp;nbsp;use.&lt;/p&gt;
@@ -1024,7 +977,7 @@ most of the pieces are in place to grow the system&amp;nbsp;cleanly.&lt;/p&gt;
 doing that, but you might also want to read the &lt;a href="https://steveasleep.com/computerwords/related_work.html"&gt;Related
 Work&lt;/a&gt; and &lt;a href="https://steveasleep.com/computerwords/faq.html"&gt;Frequently
 Anticipated Criticisms&lt;/a&gt; sections
-of the&amp;nbsp;docs.&lt;/p&gt;</content><category term="projects computerwords"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="https://steveasleep.com/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><updated>2015-04-25T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2015-04-25:/slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+of the&amp;nbsp;docs.&lt;/p&gt;</content><category term="posts"></category><category term="projects computerwords"></category></entry><entry><title>Sometimes they call me Slam Jamsen</title><link href="https://steveasleep.com/slam-jamsen-salvage-operation-ep.html" rel="alternate"></link><published>2015-04-25T00:00:00-07:00</published><updated>2015-04-25T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2015-04-25:/slam-jamsen-salvage-operation-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://slamjamsen.com/"&gt;&lt;img alt="Salvage Operation EP album art" src="https://f4.bcbits.com/img/a2439303327_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Graffiti Labs is shutting down next month. I&amp;#8217;ll be spending June looking for
 a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineering&amp;nbsp;skills.&lt;/p&gt;
 &lt;p&gt;As my first act of freedom, I&amp;#8217;m releasing &lt;strong&gt;&lt;a href="http://slamjamsen.com/"&gt;Slam Jamsen&amp;#8217;s Salvage Operation
@@ -1042,15 +995,11 @@ a new job &lt;em&gt;(edit: found one!)&lt;/em&gt; and honing my audio engineerin
 &lt;p&gt;Four of the tracks on this &lt;span class="caps"&gt;EP&lt;/span&gt; come from that process. Duty Calls was made for Escort Wing, a game designed and mostly programmed by Will Hogben. Glue Me Together and The Creature Sneaks were made for gw0rp, my entry into uDevGames 2008. Catastrophe Prelude was never used for anything, but written for a nonexistent&amp;nbsp;game.&lt;/p&gt;
 &lt;p&gt;In 2007, I built a Blue Man Group-style &lt;span class="caps"&gt;PVC&lt;/span&gt; instrument for a science competition. Once built, it was too tempting to pass up making music with it, so I wrote Parakeet in the E.R., Unsolved, and a few more songs that don’t appear on this &lt;span class="caps"&gt;EP&lt;/span&gt;. Those tracks also feature my classmates Amanda Andrews with bizarro-world guitar parts, and Eric Baize with an ocarina. My brother Phil played the bluesy intro to Unsolved. “Wheeee!” was made in the same batch, but doesn’t feature the &lt;span class="caps"&gt;PVC&lt;/span&gt;&amp;nbsp;instrument.&lt;/p&gt;
 &lt;p&gt;That just leaves The Five Dollar Song, which I’ll just say was mostly written and played by Phil, with contributions from me, around&amp;nbsp;2005.&lt;/p&gt;
-&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</content><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="https://steveasleep.com/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><updated>2015-04-20T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2015-04-20:/the-nest-ep.html</id><summary type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Good free synthesizers that appear on this &lt;span class="caps"&gt;EP&lt;/span&gt; and are still around include daHornet, Automat, and&amp;nbsp;Remedy.&lt;/p&gt;</content><category term="Articles"></category><category term="music"></category></entry><entry><title>I played drums on this EP</title><link href="https://steveasleep.com/the-nest-ep.html" rel="alternate"></link><published>2015-04-20T00:00:00-07:00</published><updated>2015-04-20T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2015-04-20:/the-nest-ep.html</id><content type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
-&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://jams.thenestmusic.com/releases"&gt;&lt;img alt="The Nest EP album art" src="http://f4.bcbits.com/img/a2623181876_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;My band The Nest just put out its first &lt;span class="caps"&gt;EP&lt;/span&gt;.
-&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</content><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="https://steveasleep.com/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><updated>2014-04-29T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2014-04-29:/anthony-presti-album.html</id><summary type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href="http://jams.thenestmusic.com/releases"&gt;Listen to it&amp;nbsp;here!&lt;/a&gt;&lt;/p&gt;</content><category term="Articles"></category><category term="music"></category></entry><entry><title>I played bass on this album</title><link href="https://steveasleep.com/anthony-presti-album.html" rel="alternate"></link><published>2014-04-29T00:00:00-07:00</published><updated>2014-04-29T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2014-04-29:/anthony-presti-album.html</id><content type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
-&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;&lt;img alt="Clarity in Hindsight album art" src="https://f4.bcbits.com/img/a4160820184_16.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;I just returned from recording an album with &lt;span class="caps"&gt;SF&lt;/span&gt; local artist Anthony Presti.
-&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</content><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="https://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><updated>2013-08-02T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2013-08-02:/the-new-dork-times.html</id><summary type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
+&lt;a href="https://anthonyprestimusic.bandcamp.com/album/clarity-in-hindsight"&gt;Check it out on&amp;nbsp;Bandcamp!&lt;/a&gt;&lt;/p&gt;</content><category term="Articles"></category><category term="music"></category></entry><entry><title>The New Dork Times</title><link href="https://steveasleep.com/the-new-dork-times.html" rel="alternate"></link><published>2013-08-02T00:00:00-07:00</published><updated>2013-08-02T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2013-08-02:/the-new-dork-times.html</id><content type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
 at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
 ran for only nine issues published between 1997 and 1999, its biting social
 commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
@@ -1058,18 +1007,10 @@ commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
 New Dork Times and decided they were worth two hours of attention to bring to a
 modern digital audience. I now present to you an online time capsule from 16
 years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I did the best writing of my life in 1997 when I was eight years old, sitting
-at an old &lt;span class="caps"&gt;PC&lt;/span&gt; with my friend Eric Drury to write the New Dork Times. Although it
-ran for only nine issues published between 1997 and 1999, its biting social
-commentary remains as relevant as&amp;nbsp;ever.&lt;/p&gt;
-&lt;p&gt;Earlier this year I came across my personal archives of all nine issues of the
-New Dork Times and decided they were worth two hours of attention to bring to a
-modern digital audience. I now present to you an online time capsule from 16
-years ago, lovingly typeset in its original Times New&amp;nbsp;Roman:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="https://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="https://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><updated>2013-07-28T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2013-07-28:/teaching-in-turin.html</id><summary type="html">&lt;p&gt;&lt;img alt="River" src="https://steveasleep.com/img/turin/river.jpg"&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://steveasleep.com/newdorktimes/"&gt;The New Dork Times – Digital&amp;nbsp;Edition&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content><category term="Articles"></category><category term="projects"></category></entry><entry><title>Teaching in Turin</title><link href="https://steveasleep.com/teaching-in-turin.html" rel="alternate"></link><published>2013-07-28T00:00:00-07:00</published><updated>2013-07-28T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2013-07-28:/teaching-in-turin.html</id><summary type="html">&lt;p&gt;&lt;img alt="River" src="https://steveasleep.com/img/turin/river.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;
 A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at Big Dive in Turin, Italy. Big Dive is a technology training program about data science (applied statistics), visualization (displaying data in an understandable way), and computer&amp;nbsp;programming.
-&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
+&lt;/p&gt;</summary><content type="html">&lt;p&gt;A few weeks ago I returned from teaching &amp;#8220;big data analysis with MapReduce&amp;#8221; at
 Big Dive in Turin, Italy. Big Dive is a technology training program about data
 science (applied statistics), visualization (displaying data in an
 understandable way), and computer programming. Most of the students are in some
@@ -1187,10 +1128,32 @@ moving gourmet&amp;nbsp;restaurant!&lt;/p&gt;
 &lt;p&gt;Even though no one on the train spoke English, I managed to order red wine and
 enjoyed my dinner immensely. (One of the reasons I chose this event in the
 first place was its fixed menu.) It was an appropriate end to a great&amp;nbsp;week.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="On top of the world" src="https://steveasleep.com/img/turin/return_trip.jpg"&gt;&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>We Dreamers postmortem</title><link href="https://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><updated>2013-05-04T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2013-05-04:/we-dreamers-postmortem.html</id><summary type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+&lt;p&gt;&lt;img alt="On top of the world" src="https://steveasleep.com/img/turin/return_trip.jpg"&gt;&lt;/p&gt;</content><category term="posts"></category><category term="programming"></category></entry><entry><title>We Dreamers postmortem</title><link href="https://steveasleep.com/we-dreamers-postmortem.html" rel="alternate"></link><published>2013-05-04T00:00:00-07:00</published><updated>2013-05-04T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2013-05-04:/we-dreamers-postmortem.html</id><summary type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare&amp;nbsp;26.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot of We Dreamers" src="https://steveasleep.com/img/content/we_dreamers.jpg"&gt;&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
+
+
+&lt;p&gt;&lt;a href="https://steveasleep.com/we_dreamers_2"&gt;You can play it here.&lt;/a&gt; (&lt;a href="http://ludumdare.com/compo/ludum-dare-26/?action=preview&amp;amp;uid=3120"&gt;Ludum Dare page&lt;/a&gt;) It may take a
+while for the 4+ &lt;span class="caps"&gt;MB&lt;/span&gt; of user data to download, so give it a minute or two. Here&amp;#8217;s
+ten seconds of&amp;nbsp;it:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/2bmRw-QD1Bs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Of all my programming escapades over the past couple of years, I&amp;#8217;m most proud
+of this one. Here&amp;#8217;s a comprehensive collection of my thoughts about it,
+including a discussions of the technical&amp;nbsp;aspects.&lt;/p&gt;
+&lt;h1&gt;Conception&lt;/h1&gt;
+&lt;p&gt;During the final voting round for Ludum Dare 26, I spent a couple of hours
+coming up with good ideas for every possible theme…except minimalism. No way
+that would get through,&amp;nbsp;right?&lt;/p&gt;
+&lt;p&gt;When that theme was chosen, and I had to throw out all of my wonderful schemes,
+most of which were single player pseudo-roguelikes. Instead, I picked a vague
+idea: a web-based multiplayer world where you dig out rooms underground in a
+grid. Maybe there would be shapes and colors and stuff. Genius! I figured out
+the rest as I went&amp;nbsp;along.&lt;/p&gt;
+&lt;p&gt;You can do a few&amp;nbsp;things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Move with the arrow keys or &lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
+&lt;li&gt;Harvest color with&amp;nbsp;space …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare&amp;nbsp;26.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Screenshot of We Dreamers" src="https://steveasleep.com/img/content/we_dreamers.jpg"&gt;&lt;/p&gt;
 
@@ -1426,41 +1389,24 @@ I have just started checking out BaaSes myself and this just reinforces my idea 
 &lt;p&gt;Wow, beautiful. Defies definition. Thank you!&amp;nbsp;-CherryNukaCola&lt;/p&gt;
 &lt;p&gt;Fun! Felt a bit like geocaching :P&amp;nbsp;-Hegemege&lt;/p&gt;
 &lt;p&gt;Now that&amp;#8217;s a fun guestbook :D&amp;nbsp;-gerritg&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="games"></category></entry><entry><title>What I’ve been doing lately</title><link href="https://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2012-12-15:/what-ive-been-doing-lately.html</id><summary type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
+&lt;/blockquote&gt;</content><category term="Articles"></category><category term="games"></category></entry><entry><title>What I’ve been doing lately</title><link href="https://steveasleep.com/what-ive-been-doing-lately.html" rel="alternate"></link><published>2012-12-15T00:00:00-08:00</published><updated>2012-12-15T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2012-12-15:/what-ive-been-doing-lately.html</id><content type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
 almost a year and a half. During that time, I did a lot of work on
 &lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
 &lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
 web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
 Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
-Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I recently started my new job at Graffiti Labs after working at Yelp for
-almost a year and a half. During that time, I did a lot of work on
-&lt;a href="http://mrjob.readthedocs.org/"&gt;mrjob&lt;/a&gt; and
-&lt;a href="http://packages.python.org/tron/"&gt;tron&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now I work on &lt;a href="http://playbuildy.com"&gt;Buildy&lt;/a&gt;, a collaborative sandbox
-web game. I have a few technical blog posts over at the &lt;a href="http://blog.playbuildy.com/"&gt;Buildy
-Blog&lt;/a&gt;. I also work on &lt;a href="http://literallycanvas.com/"&gt;Literally
-Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</content><category term="meta"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="https://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><updated>2012-11-21T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2012-11-21:/rendering-buildys-satellite-view.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="https://steveasleep.com/img/buildy.png"&gt;&lt;/p&gt;
+Canvas&lt;/a&gt;, an open source &lt;span class="caps"&gt;HTML5&lt;/span&gt; drawing&amp;nbsp;widget.&lt;/p&gt;</content><category term="Side Channel"></category><category term="meta"></category></entry><entry><title>Rendering Buildy’s satellite view: PhantomJS, Beanstalkd, Leaflet, and PIL</title><link href="https://steveasleep.com/rendering-buildys-satellite-view.html" rel="alternate"></link><published>2012-11-21T00:00:00-08:00</published><updated>2012-11-21T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2012-11-21:/rendering-buildys-satellite-view.html</id><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="https://steveasleep.com/img/buildy.png"&gt;&lt;/p&gt;
 &lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
 combination of technologies we use to render and display enormous zoomed out
-world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="https://steveasleep.com/img/buildy.png"&gt;&lt;/p&gt;
-&lt;p&gt;A world in Buildy can be hundreds of square miles. I &lt;a href="http://blog.playbuildy.com/2012/11/21/rendering-buildys-satellite-view-phantomjs-beanstalkd-leaflet-and-pil/"&gt;wrote about the
-combination of technologies we use to render and display enormous zoomed out
-world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="https://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><updated>2012-11-14T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2012-11-14:/1k-hacker-news-readers-on-buildy.html</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="https://steveasleep.com/img/buildy2.png"&gt;&lt;/p&gt;
+world views on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="Articles"></category><category term="programming"></category></entry><entry><title>One thousand users put 250,000 objects in Buildy in 18 hours</title><link href="https://steveasleep.com/1k-hacker-news-readers-on-buildy.html" rel="alternate"></link><published>2012-11-14T00:00:00-08:00</published><updated>2012-11-14T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2012-11-14:/1k-hacker-news-readers-on-buildy.html</id><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="https://steveasleep.com/img/buildy2.png"&gt;&lt;/p&gt;
 &lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of Buildy" src="https://steveasleep.com/img/buildy2.png"&gt;&lt;/p&gt;
-&lt;p&gt;We posted Buildy on Hacker News and it was on the front page for 17 hours. I
-shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>My Master’s Thesis</title><link href="https://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><updated>2012-04-16T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2012-04-16:/my-masters-thesis.html</id><summary type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
+shared &lt;a href="http://blog.playbuildy.com/2012/11/14/hn-postmortem/"&gt;some observations and experiences on the Buildy Blog&lt;/a&gt;.&lt;/p&gt;</content><category term="Articles"></category><category term="programming"></category></entry><entry><title>My Master’s Thesis</title><link href="https://steveasleep.com/my-masters-thesis.html" rel="alternate"></link><published>2012-04-16T00:00:00-07:00</published><updated>2012-04-16T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2012-04-16:/my-masters-thesis.html</id><content type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
 interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.dropbox.com/s/wfi8aezy5zcx3nf/iPathCase.pdf?dl=1"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.dropbox.com/s/4hrruvrj88sb9jv/slides.pdf?dl=1"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://steveasleep.com/img/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="https://steveasleep.com/img/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;For a while I thought I was going to rewrite these 150 pages of filler
-interspersed with content, but my willpower wanes with each passing month.
-Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.dropbox.com/s/wfi8aezy5zcx3nf/iPathCase.pdf?dl=1"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.dropbox.com/s/4hrruvrj88sb9jv/slides.pdf?dl=1"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://steveasleep.com/img/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="https://steveasleep.com/img/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="https://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2010-12-13:/space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="https://steveasleep.com/img/content/space_train_logo.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://steveasleep.com/img/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="https://steveasleep.com/img/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="Side Channel"></category><category term="programming"></category></entry><entry><title>Space Train Postmortem</title><link href="https://steveasleep.com/space-train-postmortem.html" rel="alternate"></link><published>2010-12-13T00:00:00-08:00</published><updated>2010-12-13T00:00:00-08:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2010-12-13:/space-train-postmortem.html</id><summary type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="https://steveasleep.com/img/content/space_train_logo.png"&gt;&lt;/p&gt;
 &lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called &lt;em&gt;&lt;a href="https://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
@@ -1481,7 +1427,10 @@ Little does she know it will be a bumpy&amp;nbsp;ride&amp;#8230;&lt;/p&gt;
 failed to account for one thing: &lt;strong&gt;adventure games take a lot of work to
 make.&lt;/strong&gt; As a result, the game is only about twenty minutes long. Even so, we
 all learned from the&amp;nbsp;experience.&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="https://steveasleep.com/img/content/space_train_logo.png"&gt;&lt;/p&gt;
+
+
+&lt;h2&gt;The&amp;nbsp;Course&lt;/h2&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;&lt;span class="caps"&gt;EECS&lt;/span&gt; 390 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Space Train logo" src="https://steveasleep.com/img/content/space_train_logo.png"&gt;&lt;/p&gt;
 &lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called &lt;em&gt;&lt;a href="https://steveasleep.com/space-train.html"&gt;Space Train: Terror on the Mustachio
@@ -1613,4 +1562,4 @@ worked well enough for&amp;nbsp;us.&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Vincent Pizarski&lt;/strong&gt;: Character design, coloring,&amp;nbsp;exteriors&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Kelsey did caricatures of the team for the credit sequence. Here&amp;#8217;s mine&amp;nbsp;for:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Caricature" src="https://steveasleep.com/img/content/space_train_caricature.png"&gt;&lt;/p&gt;</content><category term="games"></category></entry></feed>
+&lt;p&gt;&lt;img alt="Caricature" src="https://steveasleep.com/img/content/space_train_caricature.png"&gt;&lt;/p&gt;</content><category term="Articles"></category><category term="games"></category></entry></feed>
