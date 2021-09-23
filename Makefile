@@ -8,7 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-.PHONY: watch publish serve devserver stopserver
+.PHONY: watch publish serve devserver stopserver resume
 
 html: scss content/**
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --verbose
@@ -40,3 +40,6 @@ stopserver:
 	-kill -9 `cat srv.pid`
 	-./develop_server.sh stop
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
+
+resume:
+	cd resume && make all

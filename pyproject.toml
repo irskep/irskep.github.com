@@ -25,6 +25,12 @@ Markdown = "^3.3.4"
 "minchin.pelican.plugins.summary" = "^1.1.1"
 Pygments = "^2.8.1"
 Unidecode = "^1.2.0"
+attrs = "^21.2.0"
+html5lib = "^1.1"
+html5print = "^0.1.2"
+hyphenate = "^1.1.0"
+xmljson = "^0.2.1"
+prettyprinter = "^0.18.0"
 
 [tool.poetry.dev-dependencies]
 

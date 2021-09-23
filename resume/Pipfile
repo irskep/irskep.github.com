@@ -8,11 +8,11 @@ verify_ssl = true
 [packages]
 html5lib = "*"
 html5print = "*"
-attrs = "*"
 jinja2 = "*"
 hyphenate = "*"
 xmljson = "*"
 prettyprinter = "*"
+attrs = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.9"

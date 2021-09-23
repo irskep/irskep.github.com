@@ -83,7 +83,9 @@
               <aside>{{ entry.years }}</aside>
             </div>
             <h4>{{ entry.subtitle|safe }}</h4>
-            <p>{{ entry.description|safe }}</p>
+            {% for p in entry.description %}
+              <p>{{ p|safe }}</p>
+            {% endfor %}
           {% endfor %}
         </section>
 
@@ -95,7 +97,9 @@
               <h3>{{ entry.title|safe }}</h3>
               <aside>{% if entry.url %}<a href="{{ entry.url|safe }}">{{ entry.url|safe }}</a> {% endif %}({{ entry.years }})</aside>
             </div>
-            <p>{{ entry.description|safe }}</p>
+            {% for p in entry.description %}
+              <p>{{ p|safe }}</p>
+            {% endfor %}
           {% endfor %}
         </section>
 
@@ -106,7 +110,9 @@
               <h3>{{ entry.title|safe }}</h3>
               <aside>{% if entry.url %}<a href="{{ entry.url|safe }}">{{ entry.url|safe }}</a> {% endif %}{{ entry.years }}</aside>
             </div>
-            <p>{{ entry.description|safe }}</p>
+            {% for p in entry.description %}
+              <p>{{ p|safe }}</p>
+            {% endfor %}
           {% endfor %}
         </section>
 
