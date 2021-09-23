@@ -70,6 +70,11 @@ MENUITEMS = (
         "Games",
         [
             (
+                "Vigil@nte",
+                "https://irskep.itch.io/vigilante",
+                "vigilante.png",
+            ),
+            (
                 "Dr. Hallervorden",
                 "https://irskep.itch.io/dr-hallervorden",
                 "dr_hallervorden.png",
@@ -86,6 +91,7 @@ MENUITEMS = (
     (
         "Apps",
         [
+            ("Oscillator Drum Jams", "https://oscillatordrums.com", "oscillator.png"),
             ("Sendimals", "http://sendimals.com", "sendimals.png"),
             (
                 "Hipmunk",
@@ -105,7 +111,7 @@ MENUITEMS = (
             ("Browserboard", "https://browserboard.com", None),
             ("Steve’s Pedal Shop", "https://steveasleep.com/pedalshop/", None),
             ("Keplverse", "https://steveasleep.com/keplverse/", None),
-            ("Drawsana", "https://asana.github.io/Drawsana/", None),
+            ("Locheck", "https://github.com/Asana/locheck", None),
             ("Literally Canvas", "http://literallycanvas.com/", None),
             ("clubsandwich", "https://steveasleep.com/clubsandwich", None),
             (
@@ -132,6 +138,7 @@ CUSTOM_DESCRIPTIONS = {
     "Keplverse": "a scientifically accurate procedural star system generator",
     "Drawsana": "a Swift library for adding drawing and image markup features to iOS apps",
     "Literally Canvas": "a JavaScript library for adding drawing and image markup features to web pages",
+    "Locheck": "a localization validator for iOS and Android",
     "clubsandwich": "a Python library for making roguelikes",
     "BearLibTerminal-Swift": "a Swift library for making roguelikes",
     "Jumbo Grove": "a JavaScript library for making interactive fiction games",

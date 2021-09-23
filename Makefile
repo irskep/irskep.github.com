@@ -33,13 +33,7 @@ deploy: publish
 	git push origin master:master
 
 devserver:
-	$(BASEDIR)/develop_server.sh restart
-
-stopserver:
-	-kill -9 `cat pelican.pid`
-	-kill -9 `cat srv.pid`
-	-./develop_server.sh stop
-	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
+	$(PELICAN) -lr --port 8001
 
 resume:
 	cd resume && make all

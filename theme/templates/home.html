@@ -8,6 +8,16 @@
 <article class="promo">
   {% for itemtitle, items in MENUITEMS %}
   <div class="promo-group promo-group__{{ itemtitle|to_css_class }}">
+
+    {% if itemtitle == "Writing" %}
+      <div class="promo-special">
+        <h2>My band</h2>
+        <a href="https://open.spotify.com/artist/2oRwM2XfnfWccBOJJ7tdyE?si=QutrXxfKTNCbFOtZg01zXw&dl_branch=1">
+          <img src="/img/nav/quickfiction.jpeg">
+        </a>
+      </div>
+    {% endif %}
+
     <h2>{{ itemtitle }}</h2>
 
     <ul class="promo-group__outerlist">
