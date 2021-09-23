@@ -471,6 +471,16 @@ article.home-page {
   }
 }
 
+.promo-special {
+  float: right;
+  h2 {
+    text-align: right;
+  }
+  img {
+    max-height: 128px;
+  }
+}
+
 .resume-image {
   image-rendering: -moz-crisp-edges;
   image-rendering: -webkit-crisp-edges;
