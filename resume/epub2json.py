@@ -133,21 +133,27 @@ def main():
     with open("template.html", "r") as f:
         template = f.read()
 
-    with open(sys.argv[1], "rb") as f:
-        doc = ElementTree.fromstring(f.read())
+    data = []
+    for path in sys.argv[1:-1]:
+        with open(path, "rb") as f:
+            doc = ElementTree.fromstring(f.read())
 
-    # convert heinous XML API to plain Python objects
-    body = doc.find("{http://www.w3.org/1999/xhtml}body")[0]
-    rawdata = xmljson.abdera.data(body)
-    root = SimpleNode.parse(*unwrap_obj(rawdata))
+            # convert heinous XML API to plain Python objects
+            body = doc.find("{http://www.w3.org/1999/xhtml}body")[0]
+            rawdata = xmljson.abdera.data(body)
 
-    # ignore front matter
-    root.attributes = {}
-    root.children.remove(root.children[0])
-    data = root.children
+            print("===", path, "===")
+            root = SimpleNode.parse(*unwrap_obj(rawdata))
+            # print for debugging
+            prettyprinter.cpprint(data)
+            
 
-    # print for debugging
-    prettyprinter.cpprint(data)
+            # ignore front matter
+            root.attributes = {}
+            root.children.remove(root.children[0])
+
+            data.extend(root.children)
+
 
     title_indices = [
         find_title_index(data, "Work History"),
@@ -164,7 +170,7 @@ def main():
     education = data2entries(data[title_indices[2] + 1 :], title_class="p6")
 
     asdict = lambda l: [attr.asdict(i) for i in l]
-    with open(sys.argv[2], "w") as f:
+    with open(sys.argv[-1], "w") as f:
         f.write(
             json.dumps(
                 {

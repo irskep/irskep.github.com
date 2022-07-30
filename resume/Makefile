@@ -15,7 +15,12 @@ resume4.html: theme4.css template.html json2html.py resume.json
 	poetry run ./json2html.py 4 4 resume.json theme4.css resume4.html
 
 resume.json: OPS epub2json.py
-	poetry run ./epub2json.py OPS/chapter-1.xhtml resume.json
+	poetry run ./epub2json.py \
+		OPS/chapter-1.xhtml \
+		resume.json
 
 OPS: original.epub
 	unzip -o original.epub
+
+OPS2: original2.epub
+	unzip -o original2.epub -d OPS2

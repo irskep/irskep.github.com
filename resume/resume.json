@@ -2,21 +2,21 @@
   "work_history": [
     {
       "title": "Asana",
-      "subtitle": "Engineering Manager (2018-2020), Software Engineer (2020-Present)",
+      "subtitle": "Engineering Manager (2018-2020), Staff Mobile Engineer (2020-Present)",
       "years": "2018\u2013Present",
       "url": null,
       "description": [
-        "As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided I wasn\u2019t ready to leave the technical side behind, so I switched to an IC role. Now I\u2019m on the Mobile Foundations team and I\u2019m responsible for iOS architecture across our whole app.",
-        "In addition to my work with the iOS and Android teams, I also help the engineering intern program run smoothly, edit most Asana Engineering blog posts and facilitate the release of open source software."
+        "As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided to switch to a Staff Engineer role. Now I\u2019m on the Mobile Foundations team and I\u2019m responsible for many aspects of mobile architecture at Asana, helping engineers on four teams work as effectively as possible.",
+        "In addition to my work with the iOS and Android teams, I\u2019ve also helped the engineering intern program run smoothly, edited most Asana Engineering blog posts, and facilitated the release of open source software. I also helped design and build a complex web-based text editor that\u2019s also used in the mobile apps."
       ]
     },
     {
       "title": "Hipmunk",
-      "subtitle": "iOS Engineer \u2192 Mobile Team Lead \u2192 Engineering Manager",
+      "subtitle": "iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018)",
       "years": "2015\u20132018",
       "url": null,
       "description": [
-        "Worked on Hipmunk for iOS. Became mobile team lead in January 2016, engineering manager January 2017. Reworked a messy code base while shipping on time. Owned the entire mobile recruiting pipeline and hired 3 engineers. Acted as an ambassador of company culture by giving enthusiastic demos and writing blog posts."
+        "I helped move Hipmunk\u2019s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 solid engineers."
       ]
     },
     {
@@ -25,16 +25,16 @@
       "years": "2012\u20132015",
       "url": null,
       "description": [
-        "As one of two engineers, helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. Worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React.JS, and subtleties of Python."
+        "As one of two engineers, I helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. I worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React.JS, and Python."
       ]
     },
     {
       "title": "Yelp",
-      "subtitle": "Spam Warrior",
+      "subtitle": "Software Engineer on the Spam Team",
       "years": "2011\u20132012",
       "url": null,
       "description": [
-        "Worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. Maintained mrjob, a framework with thousands of users that runs Python code on Hadoop."
+        "I worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. Maintained mrjob, a popular framework that runs Python code on Hadoop."
       ]
     },
     {
@@ -43,7 +43,7 @@
       "years": "2010",
       "url": null,
       "description": [
-        "Implemented early prototype of the Xcode visual object graph debugging tool released in 2016."
+        "I implemented an early prototype of the Xcode visual object graph debugging tool."
       ]
     },
     {
@@ -52,7 +52,7 @@
       "years": "2009",
       "url": null,
       "description": [
-        "Built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing."
+        "I built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing."
       ]
     }
   ],
@@ -63,7 +63,7 @@
       "years": "2020",
       "url": "https://browserboard.com",
       "description": [
-        "A multiuser whiteboard web app built with Django, Node.js, Vue, and good ol\u2019 DOM."
+        "A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets."
       ]
     },
     {
@@ -90,7 +90,7 @@
       "years": "2003\u2013Present",
       "url": null,
       "description": [
-        "20+ small games in BASIC, Python, JavaScript, Godot, Nim, and Swift.",
+        "20+ small games in BASIC, Python, JavaScript, and Swift.",
         "Art and music of uneven quality."
       ]
     }
