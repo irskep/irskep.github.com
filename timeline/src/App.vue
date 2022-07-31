@@ -95,12 +95,11 @@ export default {
         ],
         [
           "September 2019",
-          "Took a part-time job as Sisyphus",
-          `Or, “started trying to fix deep-seated mobile staffing and project
-          management issues by training web engineers on mobile on a per-project basis.” We
-          started a big initiative called “Mobile Self-Serve” that was time-consuming,
-          complicated, and nowhere near effective enough to make a difference. But I worked
-          really hard on it for almost two years!`,
+          "Started working on “Mobile Self-Serve”",
+          `We were having a tough time hiring mobile engineers, so we experimented with
+          training engineers on partner teams in how to make mobile changes on their own.
+          I took this on because it didn’t have a clear owner, and worked hard on it for
+          the next couple years, but ultimately it didn’t result in a good ROI.`,
         ],
 
         // 2020
