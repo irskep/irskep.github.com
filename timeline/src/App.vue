@@ -48,6 +48,7 @@ export default {
           It was the first time we added a second type of task.`,
           "m-right",
         ],
+        [null, "2018", null, "m-yeardivider"],
 
         // 2019
         [
@@ -101,6 +102,7 @@ export default {
           I took this on because it didn’t have a clear owner, and worked hard on it for
           the next couple years, but ultimately it didn’t result in a good ROI.`,
         ],
+        [null, "2019", null, "m-yeardivider"],
 
         // 2020
         [
@@ -148,6 +150,7 @@ export default {
           Asana’s goal-tracking system.`,
           "m-right",
         ],
+        [null, "2020", null, "m-yeardivider"],
 
         // 2021
         [
@@ -216,6 +219,7 @@ export default {
           the open source program, and gave the responsibility to someone with
           more energy for it.`,
         ],
+        [null, "2021", null, "m-yeardivider"],
 
         // 2022
         [

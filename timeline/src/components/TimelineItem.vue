@@ -29,6 +29,18 @@ export default {
   position: relative;
 }
 
+.TimelineItem.m-yeardivider {
+  width: 100%;
+  height: 1.5rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.TimelineItem.m-yeardivider > .TimelineItem_Dot,
+.TimelineItem.m-yeardivider > .TimelineItem_ContentWrapper,
+.TimelineItem.m-yeardivider > .TimelineItem_Date {
+  display: none;
+}
+
 .TimelineItem_Line {
   position: absolute;
   top: 0;
