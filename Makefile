@@ -24,8 +24,10 @@ scss: $(INPUTDIR)/css/style.scss
 
 publish: scss
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	cd timeline && yarn build && cd ..
 	cp output/css/style.css.map output/style.css.map
 	cp resume/resume.html resume/resume*.html output/
+	cp -r timeline/dist output/timeline
 	cp -r quickfiction output/quickfiction
 
 deploy: publish
