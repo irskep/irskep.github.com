@@ -166,7 +166,7 @@ export default {
           `In 2019, I learned that Asana was planning to rewrite its text editor, and I
           got involved in the design process to ensure there would continue to be a great
           mobile experience. By February 2021, this project was in full swing, and I
-          joined to lay a strong foundation for the mobile component and help train 
+          joined to lay a strong foundation for the mobile component and help train
           engineers on the team in how to combine web and native mobile technology
           effectively.`,
         ],
@@ -268,6 +268,31 @@ export default {
           requires using an Xcode project generation tool like
           <a href='https://tuist.io'>Tuist</a>. Over the course of a week, I
           painstakingly converted our project file to a Tuist manifest.`,
+          "m-right",
+        ],
+        [
+          "August 2022",
+          "Took back responsibility for open source",
+          "The guy I handed it off to quit. Dang.",
+          null,
+        ],
+        [
+          "August 2022",
+          "Migrated translation management backends",
+          `Built a deep understanding of Xcode's translation tools and the
+            XLIFF format in order to move from a decent translation management
+            system to a crappy one to theoretically save the company money.`,
+          "m-right",
+        ],
+        [
+          "September-December 2022",
+          "Cut build times by 80% using modules",
+          `I led efforts by the Mobile Foundations team to leverage Tuist to
+          split our app into feature modules, by refactoring code, writing
+          developer-facing tools, and helping educate the wider mobile team.
+          As a result, most engineers wait 5 seconds instead of 45 seconds for
+          rebuilds when making incremental changes, and make new feature
+          modules on their own.`,
           "m-right",
         ],
       ],
