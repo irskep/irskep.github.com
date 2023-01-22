@@ -19,6 +19,7 @@
       {% for title, link, imgurl in items %}
       <li class="promo-item">
         <a
+          {% if title == "Mastodon" %}rel="me"{% endif %}
           class="implied-link promo-item__{{ title|to_css_class }}"
           href="{{ link }}"
         >
