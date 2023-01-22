@@ -1,57 +1,50 @@
-{% extends "page.html" %}
-{% from "macros.html" import whole_post with context %}
-
-{% block title %}{{ SITENAME }} - Home{%endblock%}
-
-{% block content %}
+{% extends "page.html" %} {% from "macros.html" import whole_post with context
+%} {% block title %}{{ SITENAME }} - Home{%endblock%} {% block content %}
 
 <article class="promo">
   {% for itemtitle, items in MENUITEMS %}
   <div class="promo-group promo-group__{{ itemtitle|to_css_class }}">
-
     {% if itemtitle == "Writing" %}
-      <div class="promo-special">
-        <h2>My band</h2>
-        <a href="https://open.spotify.com/artist/2oRwM2XfnfWccBOJJ7tdyE?si=QutrXxfKTNCbFOtZg01zXw&dl_branch=1">
-          <img src="/img/nav/quickfiction.jpeg">
-        </a>
-      </div>
+    <div class="promo-special">
+      <h2>My band</h2>
+      <a href="https://quickfiction.band/">
+        <img src="/img/nav/quickfiction.jpeg" />
+      </a>
+    </div>
     {% endif %}
 
     <h2>{{ itemtitle }}</h2>
 
     <ul class="promo-group__outerlist">
-    {% for title, link, imgurl in items %}
+      {% for title, link, imgurl in items %}
       <li class="promo-item">
-        <a class="implied-link promo-item__{{ title|to_css_class }}" href="{{ link }}">
+        <a
+          class="implied-link promo-item__{{ title|to_css_class }}"
+          href="{{ link }}"
+        >
           {% if imgurl %}
-            <img
-              width="64"
-              height="64"
-              class="promo-item__logo"
-              src="{{ SITEURL }}/img/nav/{{imgurl}}"
-              title="{{ title }} logo">
+          <img
+            width="64"
+            height="64"
+            class="promo-item__logo"
+            src="{{ SITEURL }}/img/nav/{{imgurl}}"
+            title="{{ title }} logo"
+          />
           {% endif %}
           <span class="promo-item__title">
             {% if CUSTOM_DESCRIPTIONS[title] -%}
-              <strong>{{ title }}</strong>
-            {%- else -%}
-              {{ title }}
-            {%- endif -%}
+            <strong>{{ title }}</strong>
+            {%- else -%} {{ title }} {%- endif -%}
           </span>
           {%- if True -%}{# trim whitespace #}{%- endif -%}
         </a>
-        {%- if CUSTOM_DESCRIPTIONS[title] -%}
-        , {{ CUSTOM_DESCRIPTIONS[title]|safe }}
-        {%- endif %}
+        {%- if CUSTOM_DESCRIPTIONS[title] -%} , {{
+        CUSTOM_DESCRIPTIONS[title]|safe }} {%- endif %}
       </li>
-    {% endfor %}
+      {% endfor %}
     </ul>
   </div>
   {% endfor %}
 </article>
 
-{# meh, don't even include the page #}
-{# {{ super() }} #}
-
-{% endblock %}
+{# meh, don't even include the page #} {# {{ super() }} #} {% endblock %}

@@ -59,7 +59,7 @@ MENUITEMS = (
         "Writing",
         [
             ("Blog", "https://blog.steveasleep.com/", None),
-            ("Twitter", "https://twitter.com/irskep", None),
+            ("Mastodon", "https://mastodon.gamedev.place/@irskep", None),
             ("Old blog", "/articles/", None),
             # ('Pyglet tutorial', '/pyglettutorial.html'),
             ("Résumé", "/resume.html", None),

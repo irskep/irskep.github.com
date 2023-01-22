@@ -28,7 +28,6 @@ publish: scss
 	cp output/css/style.css.map output/style.css.map
 	cp resume/resume.html resume/resume*.html output/
 	cp -r timeline/dist output/timeline
-	cp -r quickfiction output/quickfiction
 
 deploy: publish
 	poetry run ghp-import $(OUTPUTDIR) -b master
