@@ -10,7 +10,7 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 .PHONY: watch publish serve devserver stopserver resume
 
-html: scss content/**
+html: content/**
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --verbose
 
 clean:
@@ -19,15 +19,11 @@ clean:
 serve:
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server 8001
 
-scss: $(INPUTDIR)/css/style.scss 
-	sassc -m $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css --style=compressed --omit-map-comment
-
 pelican:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-publish: scss pelican
+publish: pelican
 	cd timeline && yarn build && cd ..
-	cp output/css/style.css.map output/style.css.map
 	cp resume/resume.html resume/resume*.html output/
 	cp -r timeline/dist output/timeline
 

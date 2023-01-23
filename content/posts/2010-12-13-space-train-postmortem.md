@@ -3,7 +3,7 @@ Category: Articles
 Tags: games
 Slug: space-train-postmortem
 
-![Space Train logo](|static|/img/content/space_train_logo.png)
+![Space Train logo](/img/content/space_train_logo.png)
 
 With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
