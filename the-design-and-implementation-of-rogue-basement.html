@@ -53,7 +53,7 @@
 |          |      |       |              |
 |          |      |       |              |
 +----------------------------------------+
-</code></pre></div> <p>When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here&#8217;s a screenshot I took when I got to this&nbsp;point:</p> <p><img alt="Screenshot 2017-04-21 21.00.42.png" src=https://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png></p> <p>But it&#8217;s more interesting to mix it up with different sizes of&nbsp;rectangles.</p> <div class=highlight><pre><span></span><code><span class=nb>+----------------------------------------+</span><span class=c></span>
+</code></pre></div> <p>When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here&#8217;s a screenshot I took when I got to this&nbsp;point:</p> <p><img alt="Screenshot 2017-04-21 21.00.42.png" src=https://steveasleep.com/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png></p> <p>But it&#8217;s more interesting to mix it up with different sizes of&nbsp;rectangles.</p> <div class=highlight><pre><span></span><code><span class=nb>+----------------------------------------+</span>
 <span class=c>| </span><span class=nb>+--+</span><span class=c>  | </span><span class=nb>+------+</span><span class=c>|   </span><span class=nb>+------+</span><span class=c>   |       |</span>
 <span class=c>| |  |  | |      ||   |      |   |</span><span class=nb>+-----+</span><span class=c>|</span>
 <span class=c>| </span><span class=nb>+--+</span><span class=c>  | </span><span class=nb>+------+</span><span class=c>|   |      |   ||     ||</span>
@@ -65,8 +65,8 @@
 <span class=c>|   |    | |</span><span class=nb>+--+</span><span class=c>  ||     |||     |       |</span>
 <span class=c>|   </span><span class=nb>+----+</span><span class=c> |      ||     |||     |       |</span>
 <span class=c>|          |      |</span><span class=nb>+-----+</span><span class=c>|</span><span class=nb>+-----+</span><span class=c>       |</span>
-<span class=nb>+----------------------------------------+</span><span class=c></span>
-</code></pre></div> <p>You probably noticed I annotated all the cells with <code>aab</code> and such. We&#8217;ll use that information to add corridors. For every pair of areas that share the first 2 letters of their identifier (&#8220;siblings in the tree&#8221;), we add an L-shaped corridor from a random point in one to a random point in the other. If a point is already inside a room, we&#8217;ll leave it alone. If a point is on a wall, we&#8217;ll turn it into a&nbsp;door.</p> <div class=highlight><pre><span></span><code><span class=nb>+----------------------------------------+</span><span class=c></span>
+<span class=nb>+----------------------------------------+</span>
+</code></pre></div> <p>You probably noticed I annotated all the cells with <code>aab</code> and such. We&#8217;ll use that information to add corridors. For every pair of areas that share the first 2 letters of their identifier (&#8220;siblings in the tree&#8221;), we add an L-shaped corridor from a random point in one to a random point in the other. If a point is already inside a room, we&#8217;ll leave it alone. If a point is on a wall, we&#8217;ll turn it into a&nbsp;door.</p> <div class=highlight><pre><span></span><code><span class=nb>+----------------------------------------+</span>
 <span class=c>| </span><span class=nb>+--+</span><span class=c>    </span><span class=nb>+------+</span><span class=c>|   </span><span class=nb>+------+</span><span class=c>           |</span>
 <span class=c>| |  &#39;####&#39;      ||   |      |    </span><span class=nb>+-----+</span><span class=c>|</span>
 <span class=c>| </span><span class=nb>+--+</span><span class=c>    </span><span class=nb>+------+</span><span class=c>|   |      &#39;####&#39;     ||</span>
@@ -78,8 +78,8 @@
 <span class=c>|   |    |  </span><span class=nb>+--+</span><span class=c>  ||     &#39;#&#39;     |       |</span>
 <span class=c>|   </span><span class=nb>+----+</span><span class=c>        ||     | |     |       |</span>
 <span class=c>|                 |</span><span class=nb>+-----+</span><span class=c> </span><span class=nb>+-----+</span><span class=c>       |</span>
-<span class=nb>+----------------------------------------+</span><span class=c></span>
-</code></pre></div> <p>Now we do it again, but the random point in each section will come from a random room in each respective&nbsp;section:</p> <div class=highlight><pre><span></span><code><span class=nb>+----------------------------------------+</span><span class=c></span>
+<span class=nb>+----------------------------------------+</span>
+</code></pre></div> <p>Now we do it again, but the random point in each section will come from a random room in each respective&nbsp;section:</p> <div class=highlight><pre><span></span><code><span class=nb>+----------------------------------------+</span>
 <span class=c>| </span><span class=nb>+--+</span><span class=c>    </span><span class=nb>+------+</span><span class=c>|   </span><span class=nb>+------+</span><span class=c>           |</span>
 <span class=c>| |  &#39;####&#39;      ||   |      |    </span><span class=nb>+-----+</span><span class=c>|</span>
 <span class=c>| </span><span class=nb>+--+</span><span class=c>    </span><span class=nb>+</span><span class=c>&#39;</span><span class=nb>-----+</span><span class=c>|   |      &#39;####&#39;     ||</span>
@@ -91,8 +91,8 @@
 <span class=c>|   |    </span><span class=nb>+</span><span class=c>##</span><span class=nb>+--+</span><span class=c>  ||     &#39;#&#39;     |       |</span>
 <span class=c>|   </span><span class=nb>+----+</span><span class=c>        ||     | |     |       |</span>
 <span class=c>|                 |</span><span class=nb>+-----+</span><span class=c> </span><span class=nb>+-----+</span><span class=c>       |</span>
-<span class=nb>+----------------------------------------+</span><span class=c></span>
-</code></pre></div> <p>And finally we&#8217;ll do it again to the top-level&nbsp;pair:</p> <div class=highlight><pre><span></span><code><span class=nb>+----------------------------------------+</span><span class=c></span>
+<span class=nb>+----------------------------------------+</span>
+</code></pre></div> <p>And finally we&#8217;ll do it again to the top-level&nbsp;pair:</p> <div class=highlight><pre><span></span><code><span class=nb>+----------------------------------------+</span>
 <span class=c>| </span><span class=nb>+--+</span><span class=c>    </span><span class=nb>+------+</span><span class=c>    </span><span class=nb>+------+</span><span class=c>           |</span>
 <span class=c>| |  &#39;####&#39;      &#39;#   |      |    </span><span class=nb>+-----+</span><span class=c>|</span>
 <span class=c>| </span><span class=nb>+--+</span><span class=c>    </span><span class=nb>+</span><span class=c>&#39;</span><span class=nb>-----+</span><span class=c>#   |      &#39;####&#39;     ||</span>
@@ -104,19 +104,19 @@
 <span class=c>|   |    </span><span class=nb>+</span><span class=c>##</span><span class=nb>+--+</span><span class=c>  #&#39;     &#39;#&#39;     |       |</span>
 <span class=c>|   </span><span class=nb>+----+</span><span class=c>         |     | |     |       |</span>
 <span class=c>|                  </span><span class=nb>+-----+</span><span class=c> </span><span class=nb>+-----+</span><span class=c>       |</span>
-<span class=nb>+----------------------------------------+</span><span class=c></span>
+<span class=nb>+----------------------------------------+</span>
 </code></pre></div> <p>And here&#8217;s how it looked during&nbsp;development:</p> <p><img alt="Screenshot 2017-04-21 21.50.39.png" src=https://steveasleep.com/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png></p> <p>We now have a few&nbsp;guarantees:</p> <ul> <li>All rooms are reachable from all other&nbsp;rooms.</li> <li>No rooms&nbsp;intersect.</li> <li>For a given pair of room groups (everything under <code>a</code> vs everything under <code>b</code>, for example), there is exactly one path between&nbsp;them.</li> </ul> <p>That last point has some good and bad ramifications. On the bad side, it worsens replayability, because the corridors are roughly organized the same way from game to game. I noticed this while playtesting; after 3 games it&#8217;s obvious that the rooms generally have the same&nbsp;layout.</p> <p>But those characteristics allowed me to take a simple approach to matching the theme of Ludum Dare 38: &#8220;A Small World.&#8221; The first two splits don&#8217;t have to be random; if they always split the sections evenly, then the map will have 4 even quadrants. I used this to create 4 distinct areas of increasing difficulty, so I could have a &#8220;one-level roguelike&#8221; with some actual&nbsp;progression.</p> <p>I split up the map like&nbsp;this:</p> <div class=highlight><pre><span></span><code><span class=o>+-------------------+--------------------+</span>
-<span class=o>|</span>                   <span class=o>|</span>                    <span class=o>|</span>
-<span class=o>|</span>                   <span class=o>|</span>                    <span class=o>|</span>
-<span class=o>|</span>         <span class=n>aa</span>        <span class=o>|</span>         <span class=n>ba</span>         <span class=o>|</span>
-<span class=o>|</span>    <span class=p>(</span><span class=n>start</span> <span class=n>here</span><span class=p>)</span>   <span class=o>|</span>     <span class=p>(</span><span class=kd>end </span><span class=n>here</span><span class=p>)</span>     <span class=o>|</span>
-<span class=o>|</span>         <span class=o>|</span>         <span class=o>|</span>         <span class=o>^</span>          <span class=o>|</span>
+<span class=o>|</span><span class=w>                   </span><span class=o>|</span><span class=w>                    </span><span class=o>|</span>
+<span class=o>|</span><span class=w>                   </span><span class=o>|</span><span class=w>                    </span><span class=o>|</span>
+<span class=o>|</span><span class=w>         </span><span class=n>aa</span><span class=w>        </span><span class=o>|</span><span class=w>         </span><span class=n>ba</span><span class=w>         </span><span class=o>|</span>
+<span class=o>|</span><span class=w>    </span><span class=p>(</span><span class=n>start</span><span class=w> </span><span class=n>here</span><span class=p>)</span><span class=w>   </span><span class=o>|</span><span class=w>     </span><span class=p>(</span><span class=kd>end </span><span class=n>here</span><span class=p>)</span><span class=w>     </span><span class=o>|</span>
+<span class=o>|</span><span class=w>         </span><span class=o>|</span><span class=w>         </span><span class=o>|</span><span class=w>         </span><span class=o>^</span><span class=w>          </span><span class=o>|</span>
 <span class=o>|---------|---------+---------|----------|</span>
-<span class=o>|</span>         <span class=n>v</span>         <span class=o>|</span>         <span class=o>|</span>          <span class=o>|</span>
-<span class=o>|</span>                   <span class=o>|</span>                    <span class=o>|</span>
-<span class=o>|</span>         <span class=n>ab</span>     <span class=o>-------&gt;</span>     <span class=n>bb</span>         <span class=o>|</span>
-<span class=o>|</span>                   <span class=o>|</span>                    <span class=o>|</span>
-<span class=o>|</span>                   <span class=o>|</span>                    <span class=o>|</span>
+<span class=o>|</span><span class=w>         </span><span class=n>v</span><span class=w>         </span><span class=o>|</span><span class=w>         </span><span class=o>|</span><span class=w>          </span><span class=o>|</span>
+<span class=o>|</span><span class=w>                   </span><span class=o>|</span><span class=w>                    </span><span class=o>|</span>
+<span class=o>|</span><span class=w>         </span><span class=n>ab</span><span class=w>     </span><span class=o>-------&gt;</span><span class=w>     </span><span class=n>bb</span><span class=w>         </span><span class=o>|</span>
+<span class=o>|</span><span class=w>                   </span><span class=o>|</span><span class=w>                    </span><span class=o>|</span>
+<span class=o>|</span><span class=w>                   </span><span class=o>|</span><span class=w>                    </span><span class=o>|</span>
 <span class=o>+----------------------------------------+</span>
 </code></pre></div> <p>The player starts in <code>aa</code> and moves to <code>ab</code>, then <code>bb</code>, then <code>ba</code>, where the goal&nbsp;is.</p> <p>Here&#8217;s another map from early development, which splits the map in this&nbsp;way:</p> <p><img alt="Screenshot 2017-04-22 10.54.30.png" src=https://steveasleep.com/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png></p> <p>And here&#8217;s one with just the first two partition lines, so you can see how the map is&nbsp;divided:</p> <p><img alt="Screenshot 2017-04-22 10.56.58.png" src=https://steveasleep.com/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png></p> <p>And finally, here are the hallways that mark the transitions between each&nbsp;section:</p> <p><img alt="Screenshot 2017-04-22 11.40.44.png" src=https://steveasleep.com/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png></p> <p>Originally the colors were just for debugging, but I ended up leaving them in place because they signal&nbsp;specialness.</p> <p>To add variety, I created a <code>rooms.csv</code> file to define a few room&nbsp;types:</p> <div class=highlight><pre><span></span><code>                                                      Monster   Item
 Shape,      Difficulty, Monsters,   Chance, Color,    Density,  Density
