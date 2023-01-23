@@ -8,7 +8,7 @@ Status: published
 
 Power-Q is in beta on Mac and iOS. You can get the Mac beta [on itch.io](https://irskep.itch.io/powerl), but to get the iOS beta you’ll have to [email me.](powerq@steve.steveasleep.com)
 
-![screenshot](|filename|/img/powerq/screenshot.png)
+![screenshot](|static|/img/powerq/screenshot.png)
 
 Before:
 
@@ -26,7 +26,7 @@ The level contains walls, enemies, powerups, and an exit. The overall goal of th
 
 There are three kinds of enemies. They move in specific patterns (diagonals, up/down/left/right every other turn, and knight-style) and sap your health when they hit you. There are also “power drains,” which sap your power and disappear if you run over them.
 
-![moves diagram](|filename|/img/powerq/moves.png)
+![moves diagram](|static|/img/powerq/moves.png)
 
 The player has a melee attack and a ranged attack. The melee attack can kill a health-draining enemy in two hits. The ranged attack consumes ammunition and can kill an enemy in one hit.
 
@@ -50,21 +50,21 @@ If you look at the console logs, you’ll see that every level is re-rolled 1-4 
 
 Shooting follows a line determined by [Bresenham's algorithm](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm). It means a bullet path follows the yellow squares:
 
-![bresenham exmaple](|filename|/img/powerq/bresenham_1.png)
+![bresenham exmaple](|static|/img/powerq/bresenham_1.png)
 
 The algorithm is popular and well understood. It's convenient for a programmer, but can be frustrating for players if used for this kind of thing naïvely.
 
 As an example, take a look at this situation:
 
-![bresenham exmaple](|filename|/img/powerq/bresenham_2.png)
+![bresenham exmaple](|static|/img/powerq/bresenham_2.png)
 
 Given the way shooting works, the player could reasonably expect to shoot around the corner. And it would work:
 
-![bresenham exmaple](|filename|/img/powerq/bresenham_3.png)
+![bresenham exmaple](|static|/img/powerq/bresenham_3.png)
 
 But what if the middle two cells were flipped? The player probably expects to be able to shoot the enemy.
 
-![bresenham exmaple](|filename|/img/powerq/bresenham_4.png)
+![bresenham exmaple](|static|/img/powerq/bresenham_4.png)
 
 Oh no! That's a terrible experience! it will fail and the player won't know why.
 
@@ -84,11 +84,11 @@ Typical players will die a lot before beating the game, and I don't want them to
 
 I developed the game using ASCII characters for most of Ludum Dare. Midway through, I turned the enemies into emoji. As the deadline approached, it didn’t feel right to use Apple’s beautiful high-resolution animal illustrations as my game art, so I did some bad tracings in Pixelmator and shipped it.
 
-![screenshot from jam](|filename|/img/powerq/screenshot_before.png)
+![screenshot from jam](|static|/img/powerq/screenshot_before.png)
 
 I immediately regretted all of my art choices. The whole thing looked like crap to me. So I downloaded [Piskel](https://piskelapp.com) and started on some 16x16 pixel art style sprites. The result was a lot more charming! I packaged it up into a post-compo build with some crash fixes a couple days after the jam ended.
 
-![screenshot from just after the](|filename|/img/powerq/screenshot_before_2.png)
+![screenshot from just after the](|static|/img/powerq/screenshot_before_2.png)
 
 ### Polishing the art
 
@@ -100,7 +100,7 @@ One enemy, formerly known as the turtle, moves every other turn. It was impossib
 
 I’m leaving a lot out here. There were probably a hundred more little things I did to the art.
 
-![screenshot from final game](|filename|/img/powerq/screenshot.png)
+![screenshot from final game](|static|/img/powerq/screenshot.png)
 
 ## Music and sound
 
@@ -120,11 +120,11 @@ For the Ludum Dare build, I did what most people do: slap some instruction text 
 
 Before:
 
-![help screen before](|filename|/img/powerq/help_screen_before.png)
+![help screen before](|static|/img/powerq/help_screen_before.png)
 
 After:
 
-![help screen after](|filename|/img/powerq/help_screen.png)
+![help screen after](|static|/img/powerq/help_screen.png)
 
 ## Portrait mode
 
@@ -140,7 +140,7 @@ In terms of just the interface, the solution was simple. The 8x6 grid was design
 
 In practice, this feels a bit weird when you see the rotation in person, but when you’re playing locked in one rotation it doesn’t matter at all and just works.
 
-![help screen after](|filename|/img/powerq/portrait.png)
+![help screen after](|static|/img/powerq/portrait.png)
 
 But in the code, it was nightmarish. I had to move a lot of layout code around and make sure every sprite was in the right place at all times. And because the map was just rotated 90º, I also had to un-rotate all the sprites individually and do a little bit of funky coordinate space translation math to detect grid touches correctly. Now every single screen in the game has two completely separate layouts that have to be individually tested.
 
@@ -152,7 +152,7 @@ Now that I’ve baked the portrait/landscape duality into the game, I think I’
 
 Power-Q is a simple game without an explicit save system, but on iOS it’s important not to lose the player’s game when the app is kicked out of RAM.
 
-That means my hacky, often thoughtless Ludum Dare code had to be refactored _a lot_. The main issue was that the map generator gave you a fully connected object graph with lots of references between objects, instead of a flat data structure that was easy to serialize. 
+That means my hacky, often thoughtless Ludum Dare code had to be refactored _a lot_. The main issue was that the map generator gave you a fully connected object graph with lots of references between objects, instead of a flat data structure that was easy to serialize.
 
 There was no shortcut, so I just dove in. It took about 500 lines of new code, but it worked the very first time I ran it. (I have a lot of practice writing serialization code from working on [Hipmunk](https://itunes.apple.com/us/app/hipmunk-travel-hotels-flights/id419950680)!)
 
@@ -170,14 +170,13 @@ It helps to think about saving and loading from the beginning, to avoid working 
 
 Re-rolling bad procedurally generated levels is much simpler than writing fancy algorithms to make them good in the first place, as long as it’s cheap to do so.
 
-
 ## Full changelog
 
-* Completely new art in every screen
-* Portrait mode supported on phones
-* UI layout tweaks in every screen
-* Help screen
-* No levels with unreachable exits or powerups
-* Music is slightly better
-* Different sounds for shooting
-* Game saves at the start of each level, loads on launch
+- Completely new art in every screen
+- Portrait mode supported on phones
+- UI layout tweaks in every screen
+- Help screen
+- No levels with unreachable exits or powerups
+- Music is slightly better
+- Different sounds for shooting
+- Game saves at the start of each level, loads on launch

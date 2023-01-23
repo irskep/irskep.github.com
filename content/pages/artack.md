@@ -13,4 +13,4 @@ June 2006. He made the levels and the music.
 
 Artack is written in BlitzMax, a BASIC-like layer over C++.
 
-[Download for OS X and Windows](|filename|/downloads/Artack.zip)
+[Download for OS X and Windows](|static|/downloads/Artack.zip)

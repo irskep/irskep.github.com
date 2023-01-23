@@ -6,14 +6,13 @@ Status: published
 
 [Ludum Dare 39](https://ldjam.com) fell on a weekend when I wasn't busy, and I wanted an excuse to learn a bit about Apple's game libraries, so I made another [roguelike](https://en.wikipedia.org/wiki/Roguelike), [PoweRL](https://irskep.itch.io/powerl):
 
-![Screenshot](|filename|/img/powerl/screenshot.png)
+![Screenshot](|static|/img/powerl/screenshot.png)
 
 <!-- PELICAN_END_SUMMARY -->
 
 I wasn't in the mood for stress, so I set my standards very, very low. Ironically, the result is more commercially viable than most of what I make! That might not be apparent from the screenshot, but maybe this new version with updated art will convince you:
 
-![Screenshot 2](|filename|/img/powerl/screenshot2.png)
-
+![Screenshot 2](|static|/img/powerl/screenshot2.png)
 
 ## Swift, SpriteKit, and GameplayKit
 
@@ -37,25 +36,25 @@ The theme of the jam was "running out of power," so I did something dumb and obv
 
 That's an interesting set of mechanics by itself because the player already has interesting decisions to make:
 
-* What path should I take through the level to minimize power loss?
-* Should I pick up all the batteries? Is that worthwhile?
+- What path should I take through the level to minimize power loss?
+- Should I pick up all the batteries? Is that worthwhile?
 
 The next day I added the butterfly, which moves one tile diagonally per turn. I added a health bar and some health pickups. Then I added a turtle, which moves one tile non-diagonally every other turn. Over lunch, I pondered other enemies I could add, and ultimately plopped in a literal chess knight.
 
 These changes added a second dimension to the gameplay, which introduces new questions and tradeoffs. Players must now constantly decide whether they value power or health more, and act accordingly. They would be asking questions like this:
 
-* Should I pick up the battery, even if enemies drain my health along the way?
-* Can I make it through that pack of enemies?
-* Should I run through that line of power drains, or make it past those enemies? Do I value health or power more right now?
-* If I beeline for the exit, will I be able to recover the power in the next level, which is more difficult?
+- Should I pick up the battery, even if enemies drain my health along the way?
+- Can I make it through that pack of enemies?
+- Should I run through that line of power drains, or make it past those enemies? Do I value health or power more right now?
+- If I beeline for the exit, will I be able to recover the power in the next level, which is more difficult?
 
 The enemies seemed to be able to get the best of the player too often, so I finally made use of the tap control: bullets! I added ammo pickups and a simple Bresenham line-based instakill shooting mechanic.
 
 This change added an element of long-term strategy. Players could pick different values for these strategy-axes:
 
-* Never pick up bullets to avoid wasting energy, or pick up all the bullets?
-* Shoot everything on sight, or only shoot in dire situations?
-* Use ammo early, or hoard for later?
+- Never pick up bullets to avoid wasting energy, or pick up all the bullets?
+- Shoot everything on sight, or only shoot in dire situations?
+- Use ammo early, or hoard for later?
 
 With all the mechanics in place, I played through a few times for balance. I tweaked the level generator parameters for number of enemies, amount of health/ammo/batteries per level, number of walls, and movement cost. The game got too hard after level 8, so I added a win condition at level 8. And that was it!
 

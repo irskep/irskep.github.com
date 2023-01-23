@@ -2,7 +2,7 @@ Title: gw0rp
 Tags: games
 Date: 2009-12-01
 
-[![Screenshot](|filename|/img/gw0rp_thumb.jpg)](|filename|/img/gw0rp.jpg)
+[![Screenshot](|static|/img/gw0rp_thumb.jpg)](|static|/img/gw0rp.jpg)
 
 Build your ship out of spare parts and blast your enemies into oblivion. Solve
 simple puzzles to reach your destination.
@@ -19,7 +19,7 @@ distant planets for strip mining purposes. When he finds an inhabited planet,
 he must defend himself against hostile forces while finding suitable mining
 strategies. Excitement! Astoundment! Stickiness! Cybernetic beings!
 
-Gw0rp was an entry in the [uDevGames 2009 contest](http://www.udevgames.com/). 
+Gw0rp was an entry in the [uDevGames 2009 contest](http://www.udevgames.com/).
 It took second place in Story and third in Originality. Calvin Eiber and I
 executed the concept with reasonable competency, but the game design is
 significantly flawed and there are a handful of major bugs. I hope to

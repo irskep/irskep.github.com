@@ -30,7 +30,7 @@ There was a Canvas Wars 1, but the code is long gone.
 
 <iframe width="560" height="400" src="https://www.youtube.com/embed/xOLhMyyxqiA" frameborder="0" allowfullscreen></iframe>
 
-[You can actually download this one!](|filename|/downloads/Artack.zip)
+[You can actually download this one!](|static|/downloads/Artack.zip)
 
 # Guy who catches on fire (2007?, demo)
 

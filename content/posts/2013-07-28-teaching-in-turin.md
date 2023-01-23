@@ -1,10 +1,10 @@
 Title: Teaching in Turin
 Date: 2013-07-28
 Tags: programming
-Summary: ![River](|filename|/img/turin/river.jpg)
-    <p>
-    A few weeks ago I returned from teaching "big data analysis with MapReduce" at Big Dive in Turin, Italy. Big Dive is a technology training program about data science (applied statistics), visualization (displaying data in an understandable way), and computer programming.
-    </p>
+Summary: ![River](|static|/img/turin/river.jpg)
+<p>
+A few weeks ago I returned from teaching "big data analysis with MapReduce" at Big Dive in Turin, Italy. Big Dive is a technology training program about data science (applied statistics), visualization (displaying data in an understandable way), and computer programming.
+</p>
 
 A few weeks ago I returned from teaching "big data analysis with MapReduce" at
 Big Dive in Turin, Italy. Big Dive is a technology training program about data
@@ -25,7 +25,7 @@ to my hotel, where I collapsed for the night.
 
 My hotel was on the river. If I walked for 60 seconds, I saw this:
 
-![River](|filename|/img/turin/river.jpg)
+![River](|static|/img/turin/river.jpg)
 
 # Monday
 
@@ -36,7 +36,7 @@ the building, and to finish my notes and slides for the day. The walk between
 my hotel and the Big Dive building (below) was consistently nice the whole
 week despite the heat.
 
-![Big Dive building](|filename|/img/turin/bigdive_building.jpg)
+![Big Dive building](|static|/img/turin/bigdive_building.jpg)
 
 Two hours later I was ready to teach, but no lesson plan survives contact with
 students. Having written much of the software they were learning, I was used to
@@ -48,7 +48,7 @@ By the end of the day, though, most students seemed to understand all the
 relevant concepts. For dinner, Alessandro took me to Eataly, a well-known
 collection of restaurants with authentic dishes from across Italy. I had this:
 
-![Pasta](|filename|/img/turin/eataly.jpg)
+![Pasta](|static|/img/turin/eataly.jpg)
 
 After dinner, we had Italian ice cream. What’s "ice cream" in Italian?
 "Gelato." I should also mention that "coffee" in Italy is straight espresso in
@@ -64,12 +64,12 @@ On Tuesday morning I went to the Egyptian museum. I enjoyed myself with an
 English audio tour and don’t have much else to say about it. Here’s a cool
 photo of a sarcophagus.
 
-![Marching band](|filename|/img/turin/egyptian_museum.jpg)
+![Marching band](|static|/img/turin/egyptian_museum.jpg)
 
 On my way out, I came across this police marching band. I think some kind of
 ceremony was beginning, but I never figured it out.
 
-![Marching band](|filename|/img/turin/marching_band.jpg)
+![Marching band](|static|/img/turin/marching_band.jpg)
 
 I had too much coffee before teaching my second class and experienced an
 intense caffeine crash at the end. I imagine the students were more than a
@@ -81,7 +81,7 @@ large amount of delicious beer. Afterward, we found one of his friends and
 enjoyed ourselves at a nearby bar until bed time. Here’s a quick snap of the
 inside of the tavern:
 
-![Marching band](|filename|/img/turin/taverna.jpg)
+![Marching band](|static|/img/turin/taverna.jpg)
 
 # Wednesday
 
@@ -92,11 +92,11 @@ dessert. Then I resumed my tourist activities by going to the Mole
 Antonelliana, which houses the Museum of Cinema. It’s the tallest brick
 building in the world. Here’s the outside:
 
-![Mole Antonelliana](|filename|/img/turin/mole_antonelliana.jpg)
+![Mole Antonelliana](|static|/img/turin/mole_antonelliana.jpg)
 
 I took the elevator to the top:
 
-![Mole Antonelliana](|filename|/img/turin/mole_antonelliana_view.jpg)
+![Mole Antonelliana](|static|/img/turin/mole_antonelliana_view.jpg)
 
 I didn’t get any photographs of the inside of the museum, but it’s amazing.
 Most of the interior is a single huge room stretching up into the spire. The
@@ -123,7 +123,7 @@ students were there) and had a lot of interesting discussions about sports,
 culture, movies, and personal lives. At the end of the night, I finally felt
 like I had actual new friends.
 
-![Most of the students](|filename|/img/turin/all_the_students.jpg)
+![Most of the students](|static|/img/turin/all_the_students.jpg)
 
 Seth, a friend of a student, was visiting and needed something to do on Friday.
 We agreed to be tourists together. His family moved to Canada from Bulgaria
@@ -135,11 +135,11 @@ I can't remember.
 Seth and I met at 11 to see the royal palace. I can confirm that it was both
 royal and palacious.
 
-![Palace dining room](|filename|/img/turin/palace_dining_room.jpg)
+![Palace dining room](|static|/img/turin/palace_dining_room.jpg)
 
 Here’s a cheesy tourist shot of me outside a different palace:
 
-![Cheesy tourist shot](|filename|/img/turin/cheesy_tourist_shot.jpg)
+![Cheesy tourist shot](|static|/img/turin/cheesy_tourist_shot.jpg)
 
 After the palace, we visited the Royal Armory and the Archaeology Museum. We
 weren’t allowed to take photos, so…there aren’t any photos.
@@ -150,7 +150,7 @@ cream on top. Our stomachs full, Seth and I crossed the river to walk up a big
 hill to a church. The view from there should give a better idea of the size of
 the Mole Antonelliana, and how few really tall buildings there are in Turin.
 
-![View from across the river](|filename|/img/turin/across_the_river.jpg)
+![View from across the river](|static|/img/turin/across_the_river.jpg)
 
 Having just hiked up and down a big hill, lesser travelers might have gone for
 a nap. But Seth and I are urbanites accustomed to hoofing it across the city at
@@ -163,10 +163,10 @@ recreation of a medieval village, we got gelato and then parted ways.
 Later that evening, I boarded a tram. But it wasn't an ordinary tram; it was a
 moving gourmet restaurant!
 
-![The magic tram](|filename|/img/turin/magic_tram.jpg)
+![The magic tram](|static|/img/turin/magic_tram.jpg)
 
 Even though no one on the train spoke English, I managed to order red wine and
 enjoyed my dinner immensely. (One of the reasons I chose this event in the
 first place was its fixed menu.) It was an appropriate end to a great week.
 
-![On top of the world](|filename|/img/turin/return_trip.jpg)
+![On top of the world](|static|/img/turin/return_trip.jpg)

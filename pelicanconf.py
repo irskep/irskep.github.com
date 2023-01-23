@@ -22,9 +22,7 @@ STATIC_PATHS = [
     "js",
     "css/style.css",
     "CNAME",
-    "rogue_basement_post",
     "rexpaint_manual.html",
-    "oscillator_posts",
 ]
 
 AUTHOR = "Steve Landey"

@@ -2,7 +2,7 @@ Title: Home audio with OS X and cheap consumer electronics
 Category: Articles
 Slug: home-audio-with-os-x-and-cheap-consumer-electronics
 Tags: audio
-Summary: ![The switch](|filename|/img/home_audio_adventures/reference_card.jpg)
+Summary: ![The switch](|static|/img/home_audio_adventures/reference_card.jpg)
 
 Since moving into our current house, Casey and I have been trying to make our living room audio setup seamless. This is a silly story with a lot of unnecessary detail about my adventures and choices in home audio setup.
 
@@ -32,7 +32,7 @@ Find an out-of-the-way location. Plug the laptop into the speakers and power. We
 
 Open System Preferences. Select Sharing. Check the “Remote Management” box, and when the drop-down opens, select “Observe” and “Control.”
 
-![Sharing preference pane](|filename|/img/home_audio_adventures/prefpane_sharing.png)
+![Sharing preference pane](|static|/img/home_audio_adventures/prefpane_sharing.png)
 
 Set or remember the “Computer Name” field at the top. A nice, short name you could use would be `media-server`. Going forward, I’m going to assume you used that name.
 
@@ -48,7 +48,7 @@ On Mac number two, open a Finder window. In the Finder menu bar, select Go > Net
 
 You should see a list with `media-server` init. Click it. There should be a “Share Screen…” button. Click it. Enter your username and password from `media-server`.
 
-![Network folder in Finder](|filename|/img/home_audio_adventures/finder_network.png)
+![Network folder in Finder](|static|/img/home_audio_adventures/finder_network.png)
 ￼
 (I call mine “fiona.”)
 
@@ -62,7 +62,7 @@ Spotify is easy to set up but limited to one user. Install Spotify on the media 
 
 Your devices can now control Spotify on the media server, but you have to be logged in as you. Even with family sharing, there’s no way to share a device among multiple user accounts without going for a super-technical solution like [mopidy-mopify](https://github.com/dirkgroenen/mopidy-mopify).
 
-In our case, this means one of us has to use aux or Bluetooth to play Spotify through the speakers.	
+In our case, this means one of us has to use aux or Bluetooth to play Spotify through the speakers.
 
 ## MP3s
 
@@ -72,13 +72,13 @@ The best-documented ways to share an MP3 library are [mpd](https://www.musicpd.o
 
 I prefer to use my own project, [Summertunes](https://github.com/irskep/summertunes). It glues together the [beets](http://beets.io) extensible music library manager and [mpv](https://mpv.io) player in an iTunes-like web interface. That means Casey and I can control the same library and playlist from any web browser on any device, including our phones. It’s responsive and reliable.
 
-![Summertunes](|filename|/img/home_audio_adventures/summertunes.png)
+![Summertunes](|static|/img/home_audio_adventures/summertunes.png)
 
 I use [LaunchControl](http://www.soma-zone.com/LaunchControl/) with some shell scripts to run `mpd` and Summertunes on login, so I never need to mess with them manually unless they break.
 
 I recommend [Cantata](https://github.com/CDrummond/cantata/releases) as an MPD client. It’s not very Mac-like, but it’s easy enough to find your way around.
 
-![Cantata](|filename|/img/home_audio_adventures/cantata.png)
+![Cantata](|static|/img/home_audio_adventures/cantata.png)
 
 We only use MPD if I’m actively working on Summertunes and have temporarily hosed the installation. So about once per month.
 
@@ -90,7 +90,7 @@ We could have the Mac output to a switch, but I’d rather just have everything 
 
 Buy SoundSource, run it, select “Open Play-Thru Window” in the menu, and click “Start Play-Thru.” You’ll need to hit this button after every reboot, unfortunately. If you use SoundSource for this purpose, please join me in sending feature request via their [support form](https://rogueamoeba.com/support/knowledgebase/?showCategory=SoundSource) asking them to let us auto-enable it.
 
-![SoundSource](|filename|/img/home_audio_adventures/soundsource.png)
+![SoundSource](|static|/img/home_audio_adventures/soundsource.png)
 
 ## Audio switching
 
@@ -100,7 +100,7 @@ I spent _hours_ on Amazon trying to find a device that does nothing but switch b
 
 I found exactly one device that fits my requirements: [“iKKEGOL 5 Ways 4 Port IN 1 Out Video Audio S-Video Game AV Switch Box Selector with Remote Control Av-666d Black”](https://www.amazon.com/gp/product/B01HGISAOQ/). It was twenty bucks and its remote has five buttons: four for input selection, one for power.
 
-![The switch](|filename|/img/home_audio_adventures/switch.jpg)
+![The switch](|static|/img/home_audio_adventures/switch.jpg)
 
 ## Bluetooth
 
@@ -112,11 +112,11 @@ We use Bluetooth a lot less now that Summertunes is working and populated, so I 
 
 Every home across America with more than one audio source has a unique and probably awful system for getting audio from point A to point B. Ours is particularly unique! So I designed this handy reference card, and Casey printed it out on our brand new [Cricut](https://cricut.com):
 
-![The switch](|filename|/img/home_audio_adventures/reference_card.jpg)
- 
+![The switch](|static|/img/home_audio_adventures/reference_card.jpg)
+
 Casey also gave the switcher remote the Cricut-assisted personal touch:
 
-![The switch](|filename|/img/home_audio_adventures/remote.jpg)
+![The switch](|static|/img/home_audio_adventures/remote.jpg)
 
 We’re still left with a minor cable nest, but the volume of the whole setup is only about two Macbook Pros.
 

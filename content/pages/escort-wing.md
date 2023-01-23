@@ -3,7 +3,7 @@ Tags: games
 Category: Games
 Date: 2005-11-01
 
-[![Screenshot](|filename|/img/escort_wing_thumb.jpg)](http://owoho.com/EscortWing/page3/files/page3-1001-full.html)
+[![Screenshot](|static|/img/escort_wing_thumb.jpg)](http://owoho.com/EscortWing/page3/files/page3-1001-full.html)
 
 Escort a convoy of supply ships across hostile waters with your futuristic
 airborne fighter. The original game was made for a 3-month [iDevGames](http://www.idevgames.com/) contest.

@@ -10,4 +10,4 @@ Therefore, these links are only for the brave:
 
 [Defense slides](https://www.dropbox.com/s/4hrruvrj88sb9jv/slides.pdf?dl=1)
 
-[![Screenshot](|filename|/img/ipathcase-kegg-thumb.png)](|filename|/img/ipathcase-kegg.png)
+[![Screenshot](|static|/img/ipathcase-kegg-thumb.png)](|static|/img/ipathcase-kegg.png)

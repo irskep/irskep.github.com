@@ -3,16 +3,16 @@ Category: Articles
 Tags: games
 Slug: space-train-postmortem
 
-![Space Train logo](|filename|/img/content/space_train_logo.png)
+![Space Train logo](|static|/img/content/space_train_logo.png)
 
 With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
-called *[Space Train: Terror on the Mustachio
-Express](|filename|/pages/space-train.md)*, developed by a team of
+called _[Space Train: Terror on the Mustachio
+Express](|filename|/pages/space-train.md)_, developed by a team of
 students from the [Cleveland Institute of Art](http:/www.cia.edu/) and [Case
 Western Reserve University](http:/www.case.edu). Its technical components
 include an event-driven level scripting system, characters, items, inventory,
-dialogue, and more.  The engine is written in Python using my game programming
+dialogue, and more. The engine is written in Python using my game programming
 weapon of choice, the [pyglet](http:/www.pyglet.org) library. The plot:
 
 > Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
@@ -79,17 +79,17 @@ slick demo.
 
 Here are some screenshots of the game:
 
-[![Screenshot 1](|filename|/img/content/space_train_thumb_1.png)](|filename|/img/content/space_train_screenshot_1.png)
-[![Screenshot 2](|filename|/img/content/space_train_thumb_2.png)](|filename|/img/content/space_train_screenshot_2.png)
-[![Screenshot 3](|filename|/img/content/space_train_thumb_3.png)](|filename|/img/content/space_train_screenshot_3.png)
+[![Screenshot 1](|static|/img/content/space_train_thumb_1.png)](|static|/img/content/space_train_screenshot_1.png)
+[![Screenshot 2](|static|/img/content/space_train_thumb_2.png)](|static|/img/content/space_train_screenshot_2.png)
+[![Screenshot 3](|static|/img/content/space_train_thumb_3.png)](|static|/img/content/space_train_screenshot_3.png)
 
 Here are some of the stages of the game's artistic development:
 
-[![Concept Art](|filename|/img/content/space_train_art_1_thumb.png)](|filename|/img/content/space_train_art_1.png)
-[![Line Art](|filename|/img/content/space_train_art_2_thumb.png)](|filename|/img/content/space_train_art_2.png)
-[![Flat Color](|filename|/img/content/space_train_art_3_thumb.png)](|filename|/img/content/space_train_art_3.png)
-[![Object/Furniture Design](|filename|/img/content/space_train_art_4_thumb.png)](|filename|/img/content/space_train_art_4.png)
-[![Rendered Art](|filename|/img/content/space_train_art_5_thumb.png)](|filename|/img/content/space_train_art_5.png)
+[![Concept Art](|static|/img/content/space_train_art_1_thumb.png)](|static|/img/content/space_train_art_1.png)
+[![Line Art](|static|/img/content/space_train_art_2_thumb.png)](|static|/img/content/space_train_art_2.png)
+[![Flat Color](|static|/img/content/space_train_art_3_thumb.png)](|static|/img/content/space_train_art_3.png)
+[![Object/Furniture Design](|static|/img/content/space_train_art_4_thumb.png)](|static|/img/content/space_train_art_4.png)
+[![Rendered Art](|static|/img/content/space_train_art_5_thumb.png)](|static|/img/content/space_train_art_5.png)
 
 ## Lessons Learned
 
@@ -155,18 +155,17 @@ worked well enough for us.
 
 ## The Team
 
-* **Steve Johnson**: Lead programmer, screenplay, music, engine, UI
-* **[Kelsey Bass](http:/taxidermyrobot.blogspot.com/)**: Lead artist, character design/line work/animation
-* **[Fred Hatfull](http:/www.fredhatfull.com/)**: Level scripting, engine, UI
-* **[Liz Keegan](http://www.ekeegan.com/)**: Environments, objects
-* **Tyler Goeringer**: Level scripting, engine
-* **Susie Kim**: Objects
-* **Drew Carrow**: Character design, environment/objects
-* **Sean Murphy**: Sound, pause screen
-* **Dylan Carrow**: Coloring, objects
-* **Vincent Pizarski**: Character design, coloring, exteriors
+- **Steve Johnson**: Lead programmer, screenplay, music, engine, UI
+- **[Kelsey Bass](http:/taxidermyrobot.blogspot.com/)**: Lead artist, character design/line work/animation
+- **[Fred Hatfull](http:/www.fredhatfull.com/)**: Level scripting, engine, UI
+- **[Liz Keegan](http://www.ekeegan.com/)**: Environments, objects
+- **Tyler Goeringer**: Level scripting, engine
+- **Susie Kim**: Objects
+- **Drew Carrow**: Character design, environment/objects
+- **Sean Murphy**: Sound, pause screen
+- **Dylan Carrow**: Coloring, objects
+- **Vincent Pizarski**: Character design, coloring, exteriors
 
 Kelsey did caricatures of the team for the credit sequence. Here's mine for:
 
-![Caricature](|filename|/img/content/space_train_caricature.png)
-
+![Caricature](|static|/img/content/space_train_caricature.png)

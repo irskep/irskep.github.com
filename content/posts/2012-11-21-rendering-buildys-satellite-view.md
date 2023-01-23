@@ -3,7 +3,7 @@ Category: Articles
 Slug: rendering-buildys-satellite-view
 Tags: programming
 
-![Screenshot of Buildy](|filename|/img/buildy.png)
+![Screenshot of Buildy](|static|/img/buildy.png)
 
 A world in Buildy can be hundreds of square miles. I [wrote about the
 combination of technologies we use to render and display enormous zoomed out

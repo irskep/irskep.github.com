@@ -7,4 +7,4 @@ I made this Galaxian clone in a 4-hour [iDevGames Mini Contest](http://www.idevg
 
 <iframe width="560" height="400" src="https://www.youtube.com/embed/z2du6zxYmcM" frameborder="0" allowfullscreen></iframe>
 
-[Download for OS X](|filename|/downloads/Walaga.zip)
+[Download for OS X](|static|/downloads/Walaga.zip)

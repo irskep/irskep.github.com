@@ -6,7 +6,7 @@ Slug: we-dreamers-postmortem
 We Dreamers is an abstract online sandbox that placed sixth in the Innovation
 category of Ludum Dare 26.
 
-![Screenshot of We Dreamers](|filename|/img/content/we_dreamers.jpg)
+![Screenshot of We Dreamers](|static|/img/content/we_dreamers.jpg)
 
 <!-- PELICAN_END_SUMMARY -->
 
@@ -36,13 +36,13 @@ You can do a few things:
 
 1. Move with the arrow keys or WASD.
 2. Harvest color with space.
-3. Dig out new rooms by bumping into walls. You need color to do this. The new 
-   room will be the color of your dot, which is affected by the color in your 
+3. Dig out new rooms by bumping into walls. You need color to do this. The new
+   room will be the color of your dot, which is affected by the color in your
    bucket.
 4. Dump color with r, g, and b (or 1, 2, and 3) to change the color of your dot.
-5. Leave notes on rooms (if you are level 2) that appear at the bottom of the 
+5. Leave notes on rooms (if you are level 2) that appear at the bottom of the
    screen when you enter the room.
-6. Put down big block letters (if you are level 3) that you can use to spell 
+6. Put down big block letters (if you are level 3) that you can use to spell
    [sometimes naughty] words.
 
 You gain levels by adding content. If anyone else is online at the same time as
@@ -56,16 +56,16 @@ It placed 6th in the Innovation category out of 2,346 games. The rest of the
 category scores aren't as impressive as raw numbers but are still nice in terms
 of the number of games:
 
-Category   | Ranking | Score
----------- | --------|------
-Innovation | #6      | 4.38
-Mood       | #210    | 3.36
-Overall    | #238    | 3.51
-Audio      | #464    | 2.85
-Theme      | #492    | 3.60
-Humor      | #549    | 2.23
-Graphics   | #650    | 2.92
-Fun        | #769    | 2.75
+| Category   | Ranking | Score |
+| ---------- | ------- | ----- |
+| Innovation | #6      | 4.38  |
+| Mood       | #210    | 3.36  |
+| Overall    | #238    | 3.51  |
+| Audio      | #464    | 2.85  |
+| Theme      | #492    | 3.60  |
+| Humor      | #549    | 2.23  |
+| Graphics   | #650    | 2.92  |
+| Fun        | #769    | 2.75  |
 
 People tend to have one of two viewpoints. They’re either like
 [wrongcoder](http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&uid=22915):
@@ -137,7 +137,7 @@ brought out the same tools we use to make Buildy: HTML5, CSS,
 [SoundManager2](http://www.schillmania.com/projects/soundmanager2/),
 [jQuery](http://jquery.com/), [Mousetrap](http://craig.is/killing/mice), and
 [underscore.js](http://underscorejs.org/). The whole game is a bunch of static
-files hosted on Github Pages, just like the rest of steveasleep.com.  To
+files hosted on Github Pages, just like the rest of steveasleep.com. To
 deploy, all I had to do was push to the `gh-pages` branch.
 
 I didn’t do anything I hadn’t done before. All of the rendering is just styled
@@ -148,7 +148,7 @@ pieces, I spent almost no time debugging simple (or even complicated) issues.
 
 If you’re looking for advice about how to do Ludum Dare well, here’s mine:
 **learn your tools.** Make sure you know how to write, run, and deploy your
-game.  Don’t give yourself any surprises. (Python developers have a
+game. Don’t give yourself any surprises. (Python developers have a
 particularly tough time with this one. There are still a few that ask you to
 install PyGame to play and rate their game. I sympathize, having used py2app
 for LD19.)
@@ -208,7 +208,7 @@ another round in August for LD27.
 > Ooh, collaborative art! I liked the idea and of course took the liberty of leaving my mark on the world. Makes me happy! Thanks!
 > -semi
 
-> I really enjoyed my play session. Had a good time reading all kind of different messages and just messing around. 
+> I really enjoyed my play session. Had a good time reading all kind of different messages and just messing around.
 > I love the collaborative stuff and the openness. Art is cool and the sound is charming. It is also a nice piece of tech.
 > -PsenFilip
 
@@ -221,23 +221,23 @@ another round in August for LD27.
 > This is beautiful. Found some really awesome messages, had fun following a huge tunnel dug by Lies, and then spent some time extending it even further myself. Tried to make sure to leave some inspiration bits around too. Amazing stuff, I love it.
 > -SnoringFrog
 
-> As someone else pointed out, this is an awesomely artsy guestbook. A very neat idea, and a technical prowess for the time constraints, that shows you've got some deadly programming chops. 
+> As someone else pointed out, this is an awesomely artsy guestbook. A very neat idea, and a technical prowess for the time constraints, that shows you've got some deadly programming chops.
 >
-> All in all, a nice collaborative experience, very fitting of the theme. I'm just not too much into games without any gameplay to them - yeah, the ages old debate about games as art :) 
+> All in all, a nice collaborative experience, very fitting of the theme. I'm just not too much into games without any gameplay to them - yeah, the ages old debate about games as art :)
 > -TenTonToon
 
-> That is a very interesting entry, and I loved the technical details. 
+> That is a very interesting entry, and I loved the technical details.
 >
-> I think it would be kind of cool if there was some sort of "decay", so that after a few days, some of the painted cells would go white and then fill again - as to keep the instalation fresh. 
+> I think it would be kind of cool if there was some sort of "decay", so that after a few days, some of the painted cells would go white and then fill again - as to keep the instalation fresh.
 >
-> Also, having some sort of minimap or full view mode would be really great. (The browser's native zoom doesn't go very far...) 
+> Also, having some sort of minimap or full view mode would be really great. (The browser's native zoom doesn't go very far...)
 >
 > Thanks for the game!
 > -caranha
 
-> I just had the most interesting conversation with a wall, containing soul fragments of past dreamers. 
-> It's like a dream: you cannot predict what you will find, but you'll always walk on the path of an interesting weird journey. 
-> THANK YOU stevejohnson. 
+> I just had the most interesting conversation with a wall, containing soul fragments of past dreamers.
+> It's like a dream: you cannot predict what you will find, but you'll always walk on the path of an interesting weird journey.
+> THANK YOU stevejohnson.
 >
 > Oh. And too bad that the sound reacts sometimes badly when travelling to many successive tiles of various colors. It makes it hard to create music :D
 > -Chronodrax
@@ -254,12 +254,12 @@ another round in August for LD27.
 > Neat. Quite unique. Technologically a marvel for the available time. To be honest, though, I don't get the purpose of it.
 > -wrongcoder
 
-> WrongCoder I left you a bunch of messages in rooms but you didn't reply :( 
+> WrongCoder I left you a bunch of messages in rooms but you didn't reply :(
 >
 > This was fantastic. How did you even put this together in the time available?
 > -StuStutheBloo
 
-> Cool stuff with Firebase! 
+> Cool stuff with Firebase!
 > I have just started checking out BaaSes myself and this just reinforces my idea of just how fast you can get up and running to prototype new concepts. Haven't seen Bacon.js before, looks interesting. Would be nice to see some more in-depth post-mortem on this :)
 > -Legogris
 

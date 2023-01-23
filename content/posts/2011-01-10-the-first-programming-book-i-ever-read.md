@@ -43,12 +43,12 @@ and information about computers in general.
 Here's a quick example to refresh your BASIC memory:
 
     NEW
-    10 FOR J = 1 TO 5 
-    20 PRINT "JUMP";J 
-    30 FOR C = 1 TO 3 
-    40 PRINT "CLAP";C 
-    50 NEXT C 
-    60 NEXT J 
+    10 FOR J = 1 TO 5
+    20 PRINT "JUMP";J
+    30 FOR C = 1 TO 3
+    40 PRINT "CLAP";C
+    50 NEXT C
+    60 NEXT J
     RUN
 
 After rereading the book cover to cover, I have only two new thoughts. First,
@@ -63,16 +63,14 @@ example that follows a description of what variables are:
 
 > You can put variables in a program, like this:
 >
->
 >     NEW
 >     10 N = 2
 >     20 X = 5
 >     30 PRINT N + X
 >
-> 
 > What will that program print? Run it and see if you guessed correctly. Notice
 > that lines 10 and 20 don't make anything happen on the screen when you run
-> the program. They tell the program to do something *inside* the computer, but
+> the program. They tell the program to do something _inside_ the computer, but
 > only the word PRINT makes a message appear on the screen.
 >
 > Now change lines 10 and 20 to give the variables some different values.
@@ -89,13 +87,13 @@ So yes, it's a good book. But about this BASIC thing...
 ## BASIC Sucked, But Worse Was Better
 
 Seriously, what is this crap? Specifying a line number for each statement
-before the program is finished? REM? *No proper functions?* How did anyone
+before the program is finished? REM? _No proper functions?_ How did anyone
 survive this?
 
 Oh, the alternative was to use assembly, or to slip into an AI laboratory. Right.
 
 The two great things about BASIC as it existed in personal computers was that
-it was *extremely* simple, and it was *everywhere*. Ault was able to describe
+it was _extremely_ simple, and it was _everywhere_. Ault was able to describe
 almost the entire language with extensive examples in a hundred pages of large
 print, and those pages covered the vast majority of PCs on the market at the
 time.
@@ -162,12 +160,12 @@ tools, write more books and tutorials.
 ## Resources
 
 [Invent Your Own Computer Games with Python](http://www.inventwithpython.com/)
-is comparable to *BASIC Programming for Kids*. Better, even. Python's tools are
+is comparable to _BASIC Programming for Kids_. Better, even. Python's tools are
 not ideal for children, but they are good enough to teach programming with.
 
 Here are some ways to create games with a good write/run/distribute tool, but
 not necessarily with good documentation for those new to programming:
 
-* [Processing](http://www.processing.org/)
-* [BlitzMax](http://blitzmax.com/)
-* [GameMaker](http://www.yoyogames.com/make)
+- [Processing](http://www.processing.org/)
+- [BlitzMax](http://blitzmax.com/)
+- [GameMaker](http://www.yoyogames.com/make)

@@ -3,7 +3,7 @@ Tags: games
 Category: Games
 Date: 2010-12-13
 
-<img class="center" src="|filename|/img/content/space_train_logo.png"/>
+<img class="center" src="|static|/img/content/space_train_logo.png"/>
 
 Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
 Stanislov Slavinsky, is reading his poetry live on the nearby Planet Deux, a
@@ -16,7 +16,7 @@ postmortem](|filename|/posts/2010-12-13-space-train-postmortem.md)**
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/EbnmXJOJUT4" frameborder="0" allowfullscreen></iframe>
 
-<img class="right" src="|filename|/img/content/space_train_inga.png"/>
+<img class="right" src="|static|/img/content/space_train_inga.png"/>
 Space Train is a short point-and-click adventure game developed over the course
 of a semester by students at the [Cleveland Institute of
 Art](http://www.cia.edu/) and [Case Western Reserve
@@ -32,10 +32,9 @@ characters.
 The project was supervised by Dr. Marc Buchner, Case Western Reserve University
 and Knut Hybinette, Cleveland Institute of Art.
 
-The Team
---------
+## The Team
 
-<img class="right" src="|filename|/img/content/space_train_workman.png"/>
+<img class="right" src="|static|/img/content/space_train_workman.png"/>
 
 - **Steve Johnson**: Lead programmer, screenplay, music, engine, UI
 - **[Kelsey Bass](http://taxidermyrobot.blogspot.com/)**: Lead artist,

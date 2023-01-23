@@ -8,7 +8,7 @@ This year I participated in [Ludum Dare 38](https://ldjam.com), a 48-hour game p
 
 In this article, I'll cover the game design decisions I made, how they affect the player's experience, and a bit of how they're implemented. [The source code](https://github.com/irskep/rogue_basement) is extensively commented as well.
 
-![screenshot](|filename|/img/rogue_basement/screenshot2.png)
+![screenshot](|static|/img/rogue_basement/screenshot2.png)
 
 <!-- PELICAN_END_SUMMARY -->
 
@@ -16,16 +16,16 @@ In this article, I'll cover the game design decisions I made, how they affect th
 
 A "roguelike" is a game that is "like Rogue," a text-based game from the 1980s that looks like this:
 
-![Rogue_Screen_Shot_CAR.png](|filename|/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png)
+![Rogue_Screen_Shot_CAR.png](|static|/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png)
 
 Typical features of these games include:
 
-*   Procedurally generated levels
-*   Permadeath (one life)
-*   Turn-based action
-*   Top-down 2D graphics, often just text
-*   Simulation-oriented; interesting stories arise from the game's rules and behavior
-*   Very difficult to win without lots of practice
+- Procedurally generated levels
+- Permadeath (one life)
+- Turn-based action
+- Top-down 2D graphics, often just text
+- Simulation-oriented; interesting stories arise from the game's rules and behavior
+- Very difficult to win without lots of practice
 
 The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you're always facing new situations. You have to use your wits to survive.
 
@@ -109,7 +109,7 @@ Divide some more...
 
 When the cells get too small, stop dividing. Inside each cell, decide how to use the space. The most basic strategy is to just completely fill each cell. Here's a screenshot I took when I got to this point:
 
-![Screenshot 2017-04-21 21.00.42.png](|filename|/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png)
+![Screenshot 2017-04-21 21.00.42.png](|static|/img/rogue_basement/F883885B86DCA6D8BD0F58083AB16166.png)
 
 But it's more interesting to mix it up with different sizes of rectangles.
 
@@ -183,16 +183,15 @@ And finally we'll do it again to the top-level pair:
 +----------------------------------------+
 ```
 
-
 And here's how it looked during development:
 
-![Screenshot 2017-04-21 21.50.39.png](|filename|/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png)
+![Screenshot 2017-04-21 21.50.39.png](|static|/img/rogue_basement/B74AF325D250255EA7B86A64BE1AAFD0.png)
 
 We now have a few guarantees:
 
-*   All rooms are reachable from all other rooms.
-*   No rooms intersect.
-*   For a given pair of room groups (everything under `a` vs everything under `b`, for example), there is exactly one path between them.
+- All rooms are reachable from all other rooms.
+- No rooms intersect.
+- For a given pair of room groups (everything under `a` vs everything under `b`, for example), there is exactly one path between them.
 
 That last point has some good and bad ramifications. On the bad side, it worsens replayability, because the corridors are roughly organized the same way from game to game. I noticed this while playtesting; after 3 games it's obvious that the rooms generally have the same layout.
 
@@ -216,20 +215,19 @@ I split up the map like this:
 +----------------------------------------+
 ```
 
-
 The player starts in `aa` and moves to `ab`, then `bb`, then `ba`, where the goal is.
 
 Here's another map from early development, which splits the map in this way:
 
-![Screenshot 2017-04-22 10.54.30.png](|filename|/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png)
+![Screenshot 2017-04-22 10.54.30.png](|static|/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png)
 
 And here's one with just the first two partition lines, so you can see how the map is divided:
 
-![Screenshot 2017-04-22 10.56.58.png](|filename|/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png)
+![Screenshot 2017-04-22 10.56.58.png](|static|/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png)
 
 And finally, here are the hallways that mark the transitions between each section:
 
-![Screenshot 2017-04-22 11.40.44.png](|filename|/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png)
+![Screenshot 2017-04-22 11.40.44.png](|static|/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png)
 
 Originally the colors were just for debugging, but I ended up leaving them in place because they signal specialness.
 
@@ -291,8 +289,8 @@ I attached this behavior to a new enemy type, the `wibble` (`w`). But a monster 
 
 Items have simple characteristics:
 
-*   Monsters (including the player) can hold them in an unlimited inventory.
-*   When a monster dies, its items are dropped on the ground.
+- Monsters (including the player) can hold them in an unlimited inventory.
+- When a monster dies, its items are dropped on the ground.
 
 I only had time to add one kind of item: the rock (`*`). The rock has one use: you can throw it. When you do, the game spawns a new enemy with this definition:
 
@@ -338,10 +336,10 @@ The simulation has a few features I didn't intend, but that I don't regret—tha
 
 These features mainly have to do with rocks, and the fact that when you throw them, they become monsters. Specifically:
 
-* You can punch rocks out of the air.
-* If you throw a rock, and then walk in its direction, you will punch it dead before it has a chance to move.
-* If two wibbles throw rocks at you at the same time, they may collide in midair and die.
-* You can embed rocks in walls. (Okay, not so happy about this one.)
+- You can punch rocks out of the air.
+- If you throw a rock, and then walk in its direction, you will punch it dead before it has a chance to move.
+- If two wibbles throw rocks at you at the same time, they may collide in midair and die.
+- You can embed rocks in walls. (Okay, not so happy about this one.)
 
 # Atmosphere
 
@@ -355,22 +353,22 @@ The music fades down when you're in a colored hallway and fades up again when yo
 
 I made this adorable title screen, and reused the ASCII art in the manual:
 
-![title screen](|filename|/img/rogue_basement/screenshot1.png)
+![title screen](|static|/img/rogue_basement/screenshot1.png)
 
 # Final scores
 
 There were 1,104 "compo" (48-hour, one person) games, of which 549 had enough ratings to get scored and ranked. Here are the scores for Rogue Basement. Percentiles are within the 549 ranked games.
 
-Category   | Rank | Percentile | Score | # ratings
----------- | ---- | ---------- | ----- | ---------
-Overall    | 135  | 75.4       | 3.667 | 47
-Fun        | 179  | 67.4       | 3.409 | 46
-Innovation | 379  | 31.0       | 2.841 | 46
-Theme      | 398  | 25.5       | 2.977 | 46
-Graphics   | 374  | 31.9       | 2.932 | 46
-Audio      | 24   | 95.7       | 4.000 | 44
-Humor      | 157  | 71.5       | 3.000 | 42
-Mood       | 94   | 82.9       | 3.659 | 43
+| Category   | Rank | Percentile | Score | # ratings |
+| ---------- | ---- | ---------- | ----- | --------- |
+| Overall    | 135  | 75.4       | 3.667 | 47        |
+| Fun        | 179  | 67.4       | 3.409 | 46        |
+| Innovation | 379  | 31.0       | 2.841 | 46        |
+| Theme      | 398  | 25.5       | 2.977 | 46        |
+| Graphics   | 374  | 31.9       | 2.932 | 46        |
+| Audio      | 24   | 95.7       | 4.000 | 44        |
+| Humor      | 157  | 71.5       | 3.000 | 42        |
+| Mood       | 94   | 82.9       | 3.659 | 43        |
 
 I'm most interested in ratings as a measurement of how well-spent my effort
 was in each area of the game. When you only have 48 hours to make a game, you
@@ -402,10 +400,10 @@ a part.)
 
 Features I had planned to add but didn't:
 
-*   Multiple basements and an overworld
-*   Health potions
-*   Fire/ice missiles
-*   2 more enemy types to use those missiles
+- Multiple basements and an overworld
+- Health potions
+- Fire/ice missiles
+- 2 more enemy types to use those missiles
 
 From past experience, I knew that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech demo.
 
