@@ -163,12 +163,6 @@ CATEGORY_URL = "{slug}"
 CATEGORY_SAVE_AS = "%s/index.html" % CATEGORY_URL
 TAG_URL = "{slug}"
 TAG_SAVE_AS = "%s/index.html" % TAG_URL
-MD_EXTENSIONS = [
-    "codehilite(css_class=highlight)",
-    "extra",
-    "sane_lists",
-    "toc",
-]
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False

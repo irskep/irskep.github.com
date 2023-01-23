@@ -7,7 +7,7 @@ Over the holidays someone gave me a copy of the first programming book I ever
 read. In rereading it, I found almost as much as when I first experienced it at
 nine years old.
 
-![Book cover](|filename|/img/content/basic_programming_for_kids.jpg "**BASIC
+![Book cover](|static|/img/content/basic_programming_for_kids.jpg "**BASIC
 Programming for Kids** by Roz Ault")
 
 The first thing you need to know is that since it was published in 1983, I

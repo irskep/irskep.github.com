@@ -22,8 +22,10 @@ serve:
 scss: $(INPUTDIR)/css/style.scss 
 	sassc -m $(INPUTDIR)/css/style.scss $(INPUTDIR)/css/style.css --style=compressed --omit-map-comment
 
-publish: scss
+pelican:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+
+publish: scss pelican
 	cd timeline && yarn build && cd ..
 	cp output/css/style.css.map output/style.css.map
 	cp resume/resume.html resume/resume*.html output/
