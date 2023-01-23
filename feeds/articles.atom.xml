@@ -336,7 +336,7 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;p&gt;Now that I’ve baked the portrait/landscape duality into the game, I think I’ll just do it for every iOS game I make going forward. The patterns are easy to understand and implement. In the future, though, I’m going to just make games with scrolling or square maps so I don’t have to rotate the playing&amp;nbsp;field.&lt;/p&gt;
 &lt;h2&gt;Saving and&amp;nbsp;loading&lt;/h2&gt;
 &lt;p&gt;Power-Q is a simple game without an explicit save system, but on iOS it’s important not to lose the player’s game when the app is kicked out of &lt;span class="caps"&gt;RAM&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;That means my hacky, often thoughtless Ludum Dare code had to be refactored &lt;em&gt;a lot&lt;/em&gt;. The main issue was that the map generator gave you a fully connected object graph with lots of references between objects, instead of a flat data structure that was easy to&amp;nbsp;serialize. &lt;/p&gt;
+&lt;p&gt;That means my hacky, often thoughtless Ludum Dare code had to be refactored &lt;em&gt;a lot&lt;/em&gt;. The main issue was that the map generator gave you a fully connected object graph with lots of references between objects, instead of a flat data structure that was easy to&amp;nbsp;serialize.&lt;/p&gt;
 &lt;p&gt;There was no shortcut, so I just dove in. It took about 500 lines of new code, but it worked the very first time I ran it. (I have a lot of practice writing serialization code from working on &lt;a href="https://itunes.apple.com/us/app/hipmunk-travel-hotels-flights/id419950680"&gt;Hipmunk&lt;/a&gt;!)&lt;/p&gt;
 &lt;p&gt;PowerRL/Power-Q uses an &lt;a href="https://developer.apple.com/library/content/documentation/General/Conceptual/GameplayKit_Guide/EntityComponent.html#//apple_ref/doc/uid/TP40015172-CH6-SW1"&gt;entity-component system&lt;/a&gt;. The main change I made was to add serialization code to every component possible. I also introduced new components whose only job is to hold information used to reconstruct more complex components when the game is loaded from a&amp;nbsp;file.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://gist.github.com/irskep/624d8edb0007e796d6ba0fdd2a5cb9ea"&gt;Here’s what the save file looks like.&lt;/a&gt; It’s written at the beginning of each level and loaded when the app&amp;nbsp;launches.&lt;/p&gt;
@@ -877,7 +877,7 @@ a&amp;nbsp;part.)&lt;/p&gt;
 &lt;h2&gt;Spotify&lt;/h2&gt;
 &lt;p&gt;Spotify is easy to set up but limited to one user. Install Spotify on the media server, sign in to it, and ask it to launch itself on login. (Menu -&amp;gt; Spotify -&amp;gt; Preferences, Show Advanced Settings, Open Spotify automatically after you log in to the&amp;nbsp;computer.)&lt;/p&gt;
 &lt;p&gt;Your devices can now control Spotify on the media server, but you have to be logged in as you. Even with family sharing, there’s no way to share a device among multiple user accounts without going for a super-technical solution like &lt;a href="https://github.com/dirkgroenen/mopidy-mopify"&gt;mopidy-mopify&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In our case, this means one of us has to use aux or Bluetooth to play Spotify through the&amp;nbsp;speakers. &lt;/p&gt;
+&lt;p&gt;In our case, this means one of us has to use aux or Bluetooth to play Spotify through the&amp;nbsp;speakers.&lt;/p&gt;
 &lt;h2&gt;MP3s&lt;/h2&gt;
 &lt;p&gt;All of my solutions to the &lt;span class="caps"&gt;MP3&lt;/span&gt; library problem are, unfortunately, pretty technical. I don’t have any recommendations for people who are not comfortable with the&amp;nbsp;terminal.&lt;/p&gt;
 &lt;p&gt;The best-documented ways to share an &lt;span class="caps"&gt;MP3&lt;/span&gt; library are &lt;a href="https://www.musicpd.org"&gt;mpd&lt;/a&gt; and &lt;a href="https://www.mopidy.com"&gt;mopidy&lt;/a&gt;. Both solutions mostly work but are broken in some annoying way and don’t have any truly great&amp;nbsp;clients.&lt;/p&gt;
@@ -991,12 +991,12 @@ the rest as I went&amp;nbsp;along.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Move with the arrow keys or &lt;span class="caps"&gt;WASD&lt;/span&gt;.&lt;/li&gt;
 &lt;li&gt;Harvest color with&amp;nbsp;space.&lt;/li&gt;
-&lt;li&gt;Dig out new rooms by bumping into walls. You need color to do this. The new 
+&lt;li&gt;Dig out new rooms by bumping into walls. You need color to do this. The new
    room will be the color of your dot, which is affected by the color in your&amp;nbsp;bucket.&lt;/li&gt;
 &lt;li&gt;Dump color with r, g, and b (or 1, 2, and 3) to change the color of your&amp;nbsp;dot.&lt;/li&gt;
-&lt;li&gt;Leave notes on rooms (if you are level 2) that appear at the bottom of the 
+&lt;li&gt;Leave notes on rooms (if you are level 2) that appear at the bottom of the
    screen when you enter the&amp;nbsp;room.&lt;/li&gt;
-&lt;li&gt;Put down big block letters (if you are level 3) that you can use to spell 
+&lt;li&gt;Put down big block letters (if you are level 3) that you can use to spell
    [sometimes naughty]&amp;nbsp;words.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;You gain levels by adding content. If anyone else is online at the same time as
@@ -1117,7 +1117,7 @@ brought out the same tools we use to make Buildy: &lt;span class="caps"&gt;HTML5
 &lt;a href="http://www.schillmania.com/projects/soundmanager2/"&gt;SoundManager2&lt;/a&gt;,
 &lt;a href="http://jquery.com/"&gt;jQuery&lt;/a&gt;, &lt;a href="http://craig.is/killing/mice"&gt;Mousetrap&lt;/a&gt;, and
 &lt;a href="http://underscorejs.org/"&gt;underscore.js&lt;/a&gt;. The whole game is a bunch of static
-files hosted on Github Pages, just like the rest of steveasleep.com.  To
+files hosted on Github Pages, just like the rest of steveasleep.com. To
 deploy, all I had to do was push to the &lt;code&gt;gh-pages&lt;/code&gt; branch.&lt;/p&gt;
 &lt;p&gt;I didn’t do anything I hadn’t done before. All of the rendering is just styled
 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; elements. I’m familiar with each of those Javascript libraries. I’m
@@ -1126,7 +1126,7 @@ deploy and serve without paying a dime. As a result of using all these familiar
 pieces, I spent almost no time debugging simple (or even complicated)&amp;nbsp;issues.&lt;/p&gt;
 &lt;p&gt;If you’re looking for advice about how to do Ludum Dare well, here’s mine:
 &lt;strong&gt;learn your tools.&lt;/strong&gt; Make sure you know how to write, run, and deploy your
-game.  Don’t give yourself any surprises. (Python developers have a
+game. Don’t give yourself any surprises. (Python developers have a
 particularly tough time with this one. There are still a few that ask you to
 install PyGame to play and rate their game. I sympathize, having used py2app
 for &lt;span class="caps"&gt;LD19&lt;/span&gt;.)&lt;/p&gt;
@@ -1174,28 +1174,28 @@ another round in August for &lt;span class="caps"&gt;LD27&lt;/span&gt;.&lt;/p&gt
 &lt;h1&gt;Appendix: my favorite&amp;nbsp;reviews&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Ooh, collaborative art! I liked the idea and of course took the liberty of leaving my mark on the world. Makes me happy! Thanks!&amp;nbsp;-semi&lt;/p&gt;
-&lt;p&gt;I really enjoyed my play session. Had a good time reading all kind of different messages and just messing around. 
+&lt;p&gt;I really enjoyed my play session. Had a good time reading all kind of different messages and just messing around.
 I love the collaborative stuff and the openness. Art is cool and the sound is charming. It is also a nice piece of tech.&amp;nbsp;-PsenFilip&lt;/p&gt;
 &lt;p&gt;There is something very cheerful about this game. As far as I can tell you don&amp;#8217;t &amp;#8220;win&amp;#8221; you just smile :)&amp;nbsp;-BlennosoftGames&lt;/p&gt;
 &lt;p&gt;I love open-ended and creative games! I had fun just wandering around reading everyone else&amp;#8217;s notes. I might have to come back later to do some more exploring ;)&amp;nbsp;-cardboard&lt;/p&gt;
 &lt;p&gt;This is beautiful. Found some really awesome messages, had fun following a huge tunnel dug by Lies, and then spent some time extending it even further myself. Tried to make sure to leave some inspiration bits around too. Amazing stuff, I love it.&amp;nbsp;-SnoringFrog&lt;/p&gt;
-&lt;p&gt;As someone else pointed out, this is an awesomely artsy guestbook. A very neat idea, and a technical prowess for the time constraints, that shows you&amp;#8217;ve got some deadly programming&amp;nbsp;chops. &lt;/p&gt;
+&lt;p&gt;As someone else pointed out, this is an awesomely artsy guestbook. A very neat idea, and a technical prowess for the time constraints, that shows you&amp;#8217;ve got some deadly programming&amp;nbsp;chops.&lt;/p&gt;
 &lt;p&gt;All in all, a nice collaborative experience, very fitting of the theme. I&amp;#8217;m just not too much into games without any gameplay to them - yeah, the ages old debate about games as art :)&amp;nbsp;-TenTonToon&lt;/p&gt;
-&lt;p&gt;That is a very interesting entry, and I loved the technical&amp;nbsp;details. &lt;/p&gt;
-&lt;p&gt;I think it would be kind of cool if there was some sort of &amp;#8220;decay&amp;#8221;, so that after a few days, some of the painted cells would go white and then fill again - as to keep the instalation&amp;nbsp;fresh. &lt;/p&gt;
-&lt;p&gt;Also, having some sort of minimap or full view mode would be really great. (The browser&amp;#8217;s native zoom doesn&amp;#8217;t go very&amp;nbsp;far&amp;#8230;) &lt;/p&gt;
+&lt;p&gt;That is a very interesting entry, and I loved the technical&amp;nbsp;details.&lt;/p&gt;
+&lt;p&gt;I think it would be kind of cool if there was some sort of &amp;#8220;decay&amp;#8221;, so that after a few days, some of the painted cells would go white and then fill again - as to keep the instalation&amp;nbsp;fresh.&lt;/p&gt;
+&lt;p&gt;Also, having some sort of minimap or full view mode would be really great. (The browser&amp;#8217;s native zoom doesn&amp;#8217;t go very&amp;nbsp;far&amp;#8230;)&lt;/p&gt;
 &lt;p&gt;Thanks for the game!&amp;nbsp;-caranha&lt;/p&gt;
-&lt;p&gt;I just had the most interesting conversation with a wall, containing soul fragments of past dreamers. 
-It&amp;#8217;s like a dream: you cannot predict what you will find, but you&amp;#8217;ll always walk on the path of an interesting weird journey. 
-&lt;span class="caps"&gt;THANK&lt;/span&gt; &lt;span class="caps"&gt;YOU&lt;/span&gt;&amp;nbsp;stevejohnson. &lt;/p&gt;
+&lt;p&gt;I just had the most interesting conversation with a wall, containing soul fragments of past dreamers.
+It&amp;#8217;s like a dream: you cannot predict what you will find, but you&amp;#8217;ll always walk on the path of an interesting weird journey.
+&lt;span class="caps"&gt;THANK&lt;/span&gt; &lt;span class="caps"&gt;YOU&lt;/span&gt;&amp;nbsp;stevejohnson.&lt;/p&gt;
 &lt;p&gt;Oh. And too bad that the sound reacts sometimes badly when travelling to many successive tiles of various colors. It makes it hard to create music :D&amp;nbsp;-Chronodrax&lt;/p&gt;
 &lt;p&gt;So this is a unique world for all players? Like an artistic &lt;span class="caps"&gt;MMO&lt;/span&gt;? This is extra-cool, a piece of art made by people around the world&amp;nbsp;-atraxgames&lt;/p&gt;
 &lt;p&gt;Nice bit of minimalist brain rot. Have some upstars.&amp;nbsp;-swizzcheez&lt;/p&gt;
 &lt;p&gt;this is a good gam&amp;nbsp;-evelyn-jolli&lt;/p&gt;
 &lt;p&gt;Neat. Quite unique. Technologically a marvel for the available time. To be honest, though, I don&amp;#8217;t get the purpose of it.&amp;nbsp;-wrongcoder&lt;/p&gt;
-&lt;p&gt;WrongCoder I left you a bunch of messages in rooms but you didn&amp;#8217;t reply&amp;nbsp;:( &lt;/p&gt;
+&lt;p&gt;WrongCoder I left you a bunch of messages in rooms but you didn&amp;#8217;t reply&amp;nbsp;:(&lt;/p&gt;
 &lt;p&gt;This was fantastic. How did you even put this together in the time available?&amp;nbsp;-StuStutheBloo&lt;/p&gt;
-&lt;p&gt;Cool stuff with Firebase! 
+&lt;p&gt;Cool stuff with Firebase!
 I have just started checking out BaaSes myself and this just reinforces my idea of just how fast you can get up and running to prototype new concepts. Haven&amp;#8217;t seen Bacon.js before, looks interesting. Would be nice to see some more in-depth post-mortem on this :)&amp;nbsp;-Legogris&lt;/p&gt;
 &lt;p&gt;It might be cool to make a way for people to have a local version of this for their own social group. I don&amp;#8217;t know what that would achieve, it just seems like it would work somehow.&amp;nbsp;-nintendoeats&lt;/p&gt;
 &lt;p&gt;Wow, beautiful. Defies definition. Thank you!&amp;nbsp;-CherryNukaCola&lt;/p&gt;
@@ -1214,7 +1214,7 @@ Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
 students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case
 Western Reserve University&lt;/a&gt;. Its technical components
 include an event-driven level scripting system, characters, items, inventory,
-dialogue, and more.  The engine is written in Python using my game programming
+dialogue, and more. The engine is written in Python using my game programming
 weapon of choice, the &lt;a href="http:/www.pyglet.org"&gt;pyglet&lt;/a&gt; library. The&amp;nbsp;plot:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
@@ -1238,7 +1238,7 @@ Express&lt;/a&gt;&lt;/em&gt;, developed by a team of
 students from the &lt;a href="http:/www.cia.edu/"&gt;Cleveland Institute of Art&lt;/a&gt; and &lt;a href="http:/www.case.edu"&gt;Case
 Western Reserve University&lt;/a&gt;. Its technical components
 include an event-driven level scripting system, characters, items, inventory,
-dialogue, and more.  The engine is written in Python using my game programming
+dialogue, and more. The engine is written in Python using my game programming
 weapon of choice, the &lt;a href="http:/www.pyglet.org"&gt;pyglet&lt;/a&gt; library. The&amp;nbsp;plot:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Inga Borga is a poetry-loving senior citizen. One of her favorite authors,
