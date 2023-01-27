@@ -1,7 +1,264 @@
-<!DOCTYPE html><html lang=en> <head><title>Steve Landey – The Design and Implementation of Rogue&nbsp;Basement</title><meta name=viewport content="width=device-width"><meta charset=UTF-8><meta charset=utf-8><link href=https://steveasleep.com/feeds/all.atom.xml type=application/atom+xml rel=alternate title="Steve Landey Full Atom Feed"><link href=https://steveasleep.com/feeds/all.rss.xml type=application/rss+xml rel=alternate title="Steve Landey Full RSS Feed"><script src=https://steveasleep.com/js/hyphenate.js defer></script><script src=https://steveasleep.com/js/main.js defer></script><style type=text/css>
-      ﻿html,body,body div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,menu,nav,section,time,mark,audio,video,details,summary{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent}article,aside,figure,footer,header,nav,section,details,summary{display:block}img,object,embed{max-width:100%}html{overflow-y:scroll}ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}th{font-weight:bold;vertical-align:bottom}td{font-weight:normal;vertical-align:top}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}pre{white-space:pre;word-wrap:break-word}input[type="radio"]{vertical-align:text-bottom}input[type="checkbox"]{vertical-align:bottom}.ie7 input[type="checkbox"]{vertical-align:baseline}.ie6 input{vertical-align:text-bottom}select,input,textarea{font:99% sans-serif}table{font-size:inherit;font:100%}small{font-size:85%}strong{font-weight:bold}td,td img{vertical-align:top}sub,sup{font-size:75%;line-height:0;position:relative}sup{top:-0.5em}sub{bottom:-0.25em}pre,code,kbd,samp{font-family:monospace, sans-serif}.clickable,label,input[type=button],input[type=submit],input[type=file],button{cursor:pointer}button,input,select,textarea{margin:0}button{width:auto;overflow:visible}.ie7 img{-ms-interpolation-mode:bicubic}.ie6 html{filter:expression(document.execCommand("BackgroundImageCache", false, true))}.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden}.clearfix:after{clear:both}.clearfix{zoom:1}.hll{background-color:#ffffcc}.c{color:#999988;font-style:italic}.err{color:#a61717;background-color:#e3d2d2}.k{color:#000000;font-weight:bold}.o{color:#000000;font-weight:bold}.cm{color:#999988;font-style:italic}.cp{color:#999999;font-weight:bold;font-style:italic}.c1{color:#999988;font-style:italic}.cs{color:#999999;font-weight:bold;font-style:italic}.gd{color:#000000;background-color:#ffdddd}.ge{color:#000000;font-style:italic}.gr{color:#aa0000}.gh{color:#999999}.gi{color:#000000;background-color:#ddffdd}.go{color:#888888}.gp{color:#555555}.gs{font-weight:bold}.gu{color:#aaaaaa}.gt{color:#aa0000}.kc{color:#000000;font-weight:bold}.kd{color:#000000;font-weight:bold}.kn{color:#000000;font-weight:bold}.kp{color:#000000;font-weight:bold}.kr{color:#000000;font-weight:bold}.kt{color:#445588;font-weight:bold}.m{color:#009999}.s{color:#d01040}.na{color:#008080}.nb{color:#0086B3}.nc{color:#445588;font-weight:bold}.no{color:#008080}.nd{color:#3c5d5d;font-weight:bold}.ni{color:#800080}.ne{color:#990000;font-weight:bold}.nf{color:#990000;font-weight:bold}.nl{color:#990000;font-weight:bold}.nn{color:#555555}.nt{color:#000080}.nv{color:#008080}.ow{color:#000000;font-weight:bold}.w{color:#bbbbbb}.mf{color:#009999}.mh{color:#009999}.mi{color:#009999}.mo{color:#009999}.sb{color:#d01040}.sc{color:#d01040}.sd{color:#d01040}.s2{color:#d01040}.se{color:#d01040}.sh{color:#d01040}.si{color:#d01040}.sx{color:#d01040}.sr{color:#009926}.s1{color:#d01040}.ss{color:#990073}.bp{color:#999999}.vc{color:#008080}.vg{color:#008080}.vi{color:#008080}.il{color:#009999}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}canvas{display:none}html{line-height:160%;font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;background-color:#fafafa;color:#282828}a,a:visited,a:active{color:#3c3c50}a:hover{color:#5050fa}h1,h2,h3,h4,h5,h6{font-family:"Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:normal;margin-top:1em;margin-bottom:.75em;line-height:1.5em}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#3c3c50;text-decoration:none}h1 a:visited,h1 a:active,h1 a:hover,h2 a:visited,h2 a:active,h2 a:hover,h3 a:visited,h3 a:active,h3 a:hover,h4 a:visited,h4 a:active,h4 a:hover,h5 a:visited,h5 a:active,h5 a:hover,h6 a:visited,h6 a:active,h6 a:hover{color:#3c3c50;text-decoration:underline}h1,h2{font-size:1.5rem}h3,h4{font-size:1.2rem}h5,h6{font-size:1.0rem}h1,h3,h5{font-weight:bold}h2,h4,h6{font-weight:normal}p,ul,ol,pre{margin-bottom:1.5rem}pre,code,kbd,samp{font-family:Menlo, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, monospace;background-color:#fff}code{color:#505050}pre{font-size:0.8rem;line-height:1rem;margin-left:-.5rem;margin-right:-.5rem;padding:.5rem .5rem}article ul{list-style-type:disc}article li{padding-left:0.5rem;margin-left:1rem;margin-bottom:.5rem}article li>ul,article li>ol{margin-top:.5rem}article iframe,table{margin-bottom:1.5rem}table th{text-align:left;font-weight:normal;padding-right:2rem;border-bottom:1px solid #dbdbdb}table td{padding-right:2rem}p{text-rendering:optimizeLegibility}article blockquote{margin-left:2em;font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;font-size:.9rem;line-height:1.2rem}iframe{max-width:100%}.left{float:left;padding-right:1rem}.right{float:right;padding-left:1rem}.center{display:block;margin:auto}a.implied-link{text-decoration:none}a.implied-link:hover{text-decoration:underline}.entry-content a{color:#3c3c8c}.entry-content a:hover{color:#5050fa}#pagecontainer{width:100%;max-width:50rem;max-width:calc($pageWidth - 2rem);margin-left:auto;margin-right:auto;padding:0rem 1rem 1rem 1rem}nav#menu,section#content,footer#pagefooter{width:100%}#sidebar{padding-left:1rem}#sidebar h3{font-size:1em}header#banner{box-sizing:border-box;line-height:2.3625rem;padding:0.75em 0}header#banner h1{font-size:1.75rem;font-family:"Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;margin:.75rem 0;display:inline-block}header#banner .header-links{line-height:2.3625rem;margin-top:.75rem}header#banner .header-links a{margin-right:0.5rem}@media (min-width: 50rem){header#banner .header-links{display:block;float:right}}@media (min-width: 78rem){#layoutcontainer{display:flex;flex-direction:row-reverse;justify-content:stretch;align-items:stretch}#menu{display:none}#sidebar{flex-grow:0;flex-shrink:0;width:12rem;padding-right:1rem}#sidebar h1:first-child,#sidebar h2:first-child,#sidebar h3:first-child{margin-top:0}}#menu{margin-bottom:2rem}#menu ul:after{clear:both;content:".";display:block;height:0;visibility:hidden}#menu li a,#menu li strong{margin-right:0.5rem}article.home-page ul.article-summary-list{margin:0;padding:0}article.home-page ul.article-summary-list>li{list-style-type:none;margin:0;padding:0;padding-top:2rem;margin-bottom:2rem;border-top:1px solid #dbdbdb}article.home-page ul.article-summary-list>li:first-child{border-top:none;padding-top:0}article.home-page ul.article-summary-list>li:first-child .entry-title{margin-top:0}article.home-page ul.article-summary-list>li .read-more{text-align:right}#pagefooter{margin-top:4rem;margin-bottom:3rem;padding-top:1rem}#pagefooter .social-links{text-align:right;font-size:0.8rem;float:right}.article-header{margin-bottom:1rem}.article-header:after{clear:both;content:".";display:block;height:0;visibility:hidden}.article-header .entry-title{margin-top:0;margin-bottom:1rem}.article-header.article-header__index h1{font-size:3rem;font-weight:bold;margin:0}.article-header .post-info time{display:block;font-family:"Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;font-weight:normal}.promo .promo-group{margin-bottom:2rem}.promo .promo-group h2{width:100%;margin:0 0 1rem 0;padding:0}.promo .promo-group .promo-group__outerlist{margin:0;padding:0}.promo .promo-group .promo-group__outerlist>li{list-style-type:none}.promo .promo-group .promo-item__logo{display:block;margin:0 auto 1rem auto;max-width:64px;max-height:64px;border-radius:5px}.promo .promo-group__opensource .promo-item,.promo .promo-group__othergoodstuff .promo-item{padding:0;margin:0}.promo .promo-group__writing .promo-item{padding:0;margin:0}.promo .promo-group__writing .promo-item__title{font-size:1.2rem}.promo .promo-group__writing .promo-item__blog{color:#6749e3}.promo .promo-group__writing .promo-item__twitter{color:#1da1f2}.promo .promo-group__writing .promo-item__oldblog,.promo .promo-group__writing .promo-item__résumé{color:#8e8e8e}.promo .promo-group__games .promo-group__outerlist,.promo .promo-group__apps .promo-group__outerlist{display:flex;flex-flow:row wrap;justify-content:flex-start;margin-right:-2rem}@media (max-width: 50rem){.promo .promo-group__games .promo-group__outerlist,.promo .promo-group__apps .promo-group__outerlist{justify-content:space-around}}.promo .promo-group__games .promo-item,.promo .promo-group__apps .promo-item{flex-grow:0;margin:0 2rem 1rem 0;padding:0;text-align:center}@media (max-width: 50rem){.promo .promo-group__games .promo-item,.promo .promo-group__apps .promo-item{flex-grow:1;flex-basis:40%}}.promo-special{float:right}.promo-special h2{text-align:right}.promo-special img{max-height:128px}.resume-image{image-rendering:-moz-crisp-edges;image-rendering:-webkit-crisp-edges;image-rendering:pixelated;image-rendering:crisp-edges;transform:translateY(8px)}
-/*# sourceMappingURL=css/style.css.map */
-    </style></head> <body> <div id=layoutcontainer> <div id=pagecontainer> <header id=banner class=body> <h1> <a href=https://steveasleep.com> Steve Landey </a> </h1> <div class=header-links> <a href=mailto:randos@steve.steveasleep.com>Email</a> <a href=https://github.com/irskep>GitHub</a> <a href=https://www.youtube.com/channel/UC0lx9IhbHiM5XTcdISqttWQ>YouTube</a> <a href=https://slamjamsen.bandcamp.com>Bandcamp</a> <a href=https://irskep.itch.io>itch.io</a> </div> </header> <section id=content class=body><article class=article> <header class=article-header> <h1 class=entry-title> <a href=https://steveasleep.com/the-design-and-implementation-of-rogue-basement.html rel=bookmark title="Permalink to The Design and Implementation of Rogue Basement"> The Design and Implementation of Rogue&nbsp;Basement </a> </h1> <div class=post-info> <time class=published datetime=2017-05-04T00:00:00-07:00> May 4, 2017 </time> </div> </header> <div class="entry-content hyphenate"><p>This year I participated in <a href=https://ldjam.com>Ludum Dare 38</a>, a 48-hour game programming &#8220;competition.&#8221; I&#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href=https://ldjam.com/events/ludum-dare/38/rogue-basement>Rogue Basement</a>, a bare-bones, single-level game with <span class=caps>ASCII</span>&nbsp;graphics.</p> <p>In this article, I&#8217;ll cover the game design decisions I made, how they affect the player&#8217;s experience, and a bit of how they&#8217;re implemented. <a href=https://github.com/irskep/rogue_basement>The source code</a> is extensively commented as&nbsp;well.</p> <p><img alt=screenshot src=https://steveasleep.com/img/rogue_basement/screenshot2.png></p> <h1>What is a&nbsp;roguelike?</h1> <p>A &#8220;roguelike&#8221; is a game that is &#8220;like Rogue,&#8221; a text-based game from the 1980s that looks like&nbsp;this:</p> <p><img alt=Rogue_Screen_Shot_CAR.png src=https://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png></p> <p>Typical features of these games&nbsp;include:</p> <ul> <li>Procedurally generated&nbsp;levels</li> <li>Permadeath (one&nbsp;life)</li> <li>Turn-based&nbsp;action</li> <li>Top-down 2D graphics, often just&nbsp;text</li> <li>Simulation-oriented; interesting stories arise from the game&#8217;s rules and&nbsp;behavior</li> <li>Very difficult to win without lots of&nbsp;practice</li> </ul> <p>The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you&#8217;re always facing new situations. You have to use your wits to&nbsp;survive.</p> <h1>Environment</h1> <p>I started on Friday night with a level generator. When you&#8217;re time-constrained, you have to make very careful decisions about where to innovate, and I chose to stick to a roguelike trope for my basic layout: boxy rooms connected by narrow corridors, with doors where corridors meet&nbsp;rooms.</p> <p>I could have placed a bunch of rooms randomly and made sure each one was connected to another, but it&#8217;s tricky to use space efficiently that way. A common way to avoid this problem is to use a <strong>binary space partitioning&nbsp;tree.</strong></p> <p>The basic idea here is that you take a rectangular area, like&nbsp;this:</p> <div class=highlight><pre><span></span><code>+----------------------------------------+
+<!DOCTYPE html><html lang=en> <head><title>Steve Landey – The Design and Implementation of Rogue&nbsp;Basement</title><meta name=viewport content="width=device-width"><meta charset=UTF-8><meta charset=utf-8><link href=https://steveasleep.com/feeds/all.atom.xml type=application/atom+xml rel=alternate title="Steve Landey Full Atom Feed"><link href=https://steveasleep.com/feeds/all.rss.xml type=application/rss+xml rel=alternate title="Steve Landey Full RSS Feed"><script src=https://steveasleep.com/js/hyphenate.js defer></script><style type=text/css>
+      /* CSS Micro Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+img,
+iframe {
+  border: 0;
+}
+
+/* vars */
+
+body {
+  --bg-1: rgb(253, 254, 255);
+  --bg-container: rgb(237, 237, 252);
+  --fg-1: rgb(40, 40, 40);
+  --fg-weak: rgb(68, 68, 68);
+  --fg-separator: rgb(194, 194, 234);
+  --fg-link-2: rgb(60, 60, 80);
+  --fg-link: rgb(60, 60, 200);
+  --fg-link-hover: rgb(80, 80, 250);
+  --fg-callout: #f7601b;
+  --fg-accent: #6749e3;
+
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+
+  background-color: var(--bg-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* headings */
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited {
+  text-decoration: none;
+  color: var(--fg-1);
+}
+
+h1,
+h2 {
+  font-size: 1.5rem;
+}
+h3,
+h4 {
+  font-size: 1.2rem;
+}
+h5,
+h6 {
+  font-size: 1rem;
+}
+h1,
+h3,
+h5 {
+  font-weight: bold;
+}
+h2,
+h4,
+h6 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+  line-height: 1.5em;
+}
+
+/* links */
+
+a {
+  color: var(--fg-link);
+}
+a:hover {
+  color: var(--fg-link-hover);
+}
+
+/* other base styles */
+
+p {
+  line-height: 1.3em;
+}
+
+/* layout */
+
+.PageContainer {
+  width: 40rem;
+  padding: 0 1rem 1rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+@media (max-width: 40rem) {
+  .PageContainer {
+    width: 100%;
+  }
+}
+
+.Toolbar {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+.Toolbar > h1 {
+  flex-shrink: 0;
+  flex-grow: 0;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.Toolbar_Subsection {
+  flex-grow: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.Toolbar_Subsection ul {
+  padding-left: 0;
+  margin: 0.5rem 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Toolbar_Subsection li {
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+.Toolbar_Subsection li:first-child {
+  margin-left: 0;
+}
+
+/* components */
+
+.FlexSpace {
+  flex-grow: 1;
+}
+
+.Admonition {
+  padding: 1rem;
+  border: 4px dotted var(--fg-separator);
+  border-radius: 8px;
+}
+
+.Project {
+  display: grid;
+  grid-template-columns: 10rem auto;
+
+  margin-bottom: 1rem;
+}
+
+.Project_Image {
+  flex-grow: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-container);
+  /* border: 2px dotted var(--fg-separator); */
+}
+
+.Project_Image.m-margins {
+  padding: 1rem;
+}
+
+.Project_Image {
+  display: contents;
+}
+
+.Project_Image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Project_Description {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.Project_Description h3 {
+  margin-top: 0;
+}
+
+article ul {
+  padding: 0;
+}
+
+article li {
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+ul.article-summary-list {
+  list-style-type: none;
+}
+ul.article-summary-list > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entry-content img {
+  max-width: 100%;
+}
+
+    </style></head> <body> <div class=PageContainer> <header class=Toolbar> <h1><a href=https://steveasleep.com>Steve Landey</a></h1> <div class=FlexSpace></div> <nav class=Toolbar_Subsection> <ul> <li><a href=mailto:randos@steve.steeasleep.com>Email</a></li> <li><a href=https://blog.steveasleep.com/ >Blog</a></li> <li> <a href=https://irskep.omg.lol>irskep.omg.lol (more links)</a> </li> </ul> </nav> </header> <main> <section id=content class=body><article class=article> <header class=article-header> <h1 class=entry-title> <a href=https://steveasleep.com/the-design-and-implementation-of-rogue-basement.html rel=bookmark title="Permalink to The Design and Implementation of Rogue Basement"> The Design and Implementation of Rogue&nbsp;Basement </a> </h1> <div class=post-info> <time class=published datetime=2017-05-04T00:00:00-07:00> May 4, 2017 </time> </div> </header> <div class="entry-content hyphenate"><p>This year I participated in <a href=https://ldjam.com>Ludum Dare 38</a>, a 48-hour game programming &#8220;competition.&#8221; I&#8217;ve been thinking about trying my hand at a roguelike for a while now, and it seemed like the perfect opportunity to give it a shot. I made <a href=https://ldjam.com/events/ludum-dare/38/rogue-basement>Rogue Basement</a>, a bare-bones, single-level game with <span class=caps>ASCII</span>&nbsp;graphics.</p> <p>In this article, I&#8217;ll cover the game design decisions I made, how they affect the player&#8217;s experience, and a bit of how they&#8217;re implemented. <a href=https://github.com/irskep/rogue_basement>The source code</a> is extensively commented as&nbsp;well.</p> <p><img alt=screenshot src=https://steveasleep.com/img/rogue_basement/screenshot2.png></p> <h1>What is a&nbsp;roguelike?</h1> <p>A &#8220;roguelike&#8221; is a game that is &#8220;like Rogue,&#8221; a text-based game from the 1980s that looks like&nbsp;this:</p> <p><img alt=Rogue_Screen_Shot_CAR.png src=https://steveasleep.com/img/rogue_basement/257BD0D6AB2E10E523C6F74028CBC005.png></p> <p>Typical features of these games&nbsp;include:</p> <ul> <li>Procedurally generated&nbsp;levels</li> <li>Permadeath (one&nbsp;life)</li> <li>Turn-based&nbsp;action</li> <li>Top-down 2D graphics, often just&nbsp;text</li> <li>Simulation-oriented; interesting stories arise from the game&#8217;s rules and&nbsp;behavior</li> <li>Very difficult to win without lots of&nbsp;practice</li> </ul> <p>The combination of these features makes the games fun to play over and over again. You have to play a lot to get good, but since the game is procedurally generated, you&#8217;re always facing new situations. You have to use your wits to&nbsp;survive.</p> <h1>Environment</h1> <p>I started on Friday night with a level generator. When you&#8217;re time-constrained, you have to make very careful decisions about where to innovate, and I chose to stick to a roguelike trope for my basic layout: boxy rooms connected by narrow corridors, with doors where corridors meet&nbsp;rooms.</p> <p>I could have placed a bunch of rooms randomly and made sure each one was connected to another, but it&#8217;s tricky to use space efficiently that way. A common way to avoid this problem is to use a <strong>binary space partitioning&nbsp;tree.</strong></p> <p>The basic idea here is that you take a rectangular area, like&nbsp;this:</p> <div class=highlight><pre><span></span><code>+----------------------------------------+
 |                                        |
 |                                        |
 |                                        |
@@ -139,7 +396,7 @@ rock_in_flight, *,    #c1a073,  -1,         0,      path_until_hit,   2,      2,
 wibble, w,    #90582c,  0.00,       20,     range_5_visible     10,     2,        ROCKx1
                                               |throw_rock_slow
                                               |sleep,
-</code></pre></div> <p>I added a &#8220;sleep&#8221; behavior to differentiate wibbles from verps. When the player isn&#8217;t around, verps are hyperactive and run around randomly; wibbles sit and meditate. It seemed in keeping with their fighting&nbsp;styles.</p> <p>That all worked great, but when wibbles ran out of rocks, the game got really easy! So I added another behavior, <code>pick_up_rocks</code>, which makes a wibble either move toward any adjacent rocks, or pick them up if it&#8217;s standing on&nbsp;one.</p> <p>The &#8220;conservation of rocks&#8221; principle introduces a new tactic into the game: players can pick up all the rocks to deprive the wibbles of their ammunition. Fortunately the player&#8217;s backpack is infinitely&nbsp;large!</p> <h2>Stun&nbsp;effect</h2> <p>At this point, combat consisted of punching verps and dodging or punching rocks. (Yeah, you can punch rocks! They are just monsters after all!) I wanted to make it possible to avoid almost all damage, though, by understanding the game&#8217;s systems, and the verps made it too hard to do that by being&nbsp;relentless.</p> <p>So I made every hit by the player stun the target monster for 2 turns. This is done using a behavior called <code>stunnable</code>, which just says &#8220;if I&#8217;ve been hit within the last 2 turns, turn blue and do&nbsp;nothing.&#8221;</p> <p>For experienced roguelike players this makes the game easy once you figure it out, but I believe it&#8217;s still a rewarding experience to figure it out in the first place. It is very, very difficult to make a game by yourself in 48 hours that has more than a few minutes of worthwhile gameplay, so I was aiming to just make those few minutes as good as possible and then let players feel like they could put it down after a good&nbsp;experience.</p> <h2>Healing</h2> <p>To make each section its own challenge, I decided to have the colored hallways between sections heal the player completely. This is another difficulty decrease that I could probably have left out, but I decided to err on the side of easy because I knew I had some user interface issues and wanted to be &#8220;extra&#8221; fair to&nbsp;players.</p> <h1>Unintended&nbsp;consequences</h1> <p>The simulation has a few features I didn&#8217;t intend, but that I don&#8217;t regret—that&#8217;s half the&nbsp;fun!</p> <p>These features mainly have to do with rocks, and the fact that when you throw them, they become monsters.&nbsp;Specifically:</p> <ul> <li>You can punch rocks out of the&nbsp;air.</li> <li>If you throw a rock, and then walk in its direction, you will punch it dead before it has a chance to&nbsp;move.</li> <li>If two wibbles throw rocks at you at the same time, they may collide in midair and&nbsp;die.</li> <li>You can embed rocks in walls. (Okay, not so happy about this&nbsp;one.)</li> </ul> <h1>Atmosphere</h1> <h2>Music</h2> <p>I took 90 minutes to write 4 tracks, adding up to 11 minutes of music. Each map quadrant plays one of the tracks. <a href=https://soundcloud.com/irskep/sets/rogue-basement-ost>You can listen to them&nbsp;here.</a></p> <p>The music fades down when you&#8217;re in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get&nbsp;tougher.</p> <h2>Title&nbsp;screen</h2> <p>I made this adorable title screen, and reused the <span class=caps>ASCII</span> art in the&nbsp;manual:</p> <p><img alt="title screen" src=https://steveasleep.com/img/rogue_basement/screenshot1.png></p> <h1>Final&nbsp;scores</h1> <p>There were 1,104 &#8220;compo&#8221; (48-hour, one person) games, of which 549 had enough ratings to get scored and ranked. Here are the scores for Rogue Basement. Percentiles are within the 549 ranked&nbsp;games.</p> <table> <thead> <tr> <th>Category</th> <th>Rank</th> <th>Percentile</th> <th>Score</th> <th># ratings</th> </tr> </thead> <tbody> <tr> <td>Overall</td> <td>135</td> <td>75.4</td> <td>3.667</td> <td>47</td> </tr> <tr> <td>Fun</td> <td>179</td> <td>67.4</td> <td>3.409</td> <td>46</td> </tr> <tr> <td>Innovation</td> <td>379</td> <td>31.0</td> <td>2.841</td> <td>46</td> </tr> <tr> <td>Theme</td> <td>398</td> <td>25.5</td> <td>2.977</td> <td>46</td> </tr> <tr> <td>Graphics</td> <td>374</td> <td>31.9</td> <td>2.932</td> <td>46</td> </tr> <tr> <td>Audio</td> <td>24</td> <td>95.7</td> <td>4.000</td> <td>44</td> </tr> <tr> <td>Humor</td> <td>157</td> <td>71.5</td> <td>3.000</td> <td>42</td> </tr> <tr> <td>Mood</td> <td>94</td> <td>82.9</td> <td>3.659</td> <td>43</td> </tr> </tbody> </table> <p>I&#8217;m most interested in ratings as a measurement of how well-spent my effort was in each area of the game. When you only have 48 hours to make a game, you get on a path early and it&#8217;s hard to get off of it if something isn&#8217;t working. That adds an enormous luck factor to things like &#8220;Fun&#8221; and&nbsp;&#8220;Innovation.&#8221;</p> <p>It looks like the soundtrack was my secret weapon. Audio got a great score, and I&#8217;m guessing that gave me a boost in Mood and&nbsp;Overall.</p> <p>The Theme score is very low, which I&#8217;m a little surprised at but also don&#8217;t care&nbsp;about.</p> <p>Innovation was one of my dump stats this round, so its low score makes sense too. I did make a very by-the-book&nbsp;roguelike.</p> <p>Graphics was my other dump stat in that I used <span class=caps>ASCII</span>, but I&#8217;m a little hurt that people didn&#8217;t appreciate the aesthetic&nbsp;more.</p> <p>Humor was a wildcard. I mostly use humor in my games to <a href=http://tvtropes.org/pmwiki/pmwiki.php/Main/LampshadeHanging>lampshade</a> silly situations or mechanics. Rogue Basement just has some flavor text and <span class=caps>ASCII</span> art to justify your situation. I guess people appreciated it. (There&#8217;s also some not-so-great English in the log messages, and that might have played a&nbsp;part.)</p> <h1>Takeaways</h1> <h2>Scope</h2> <p>Features I had planned to add but&nbsp;didn&#8217;t:</p> <ul> <li>Multiple basements and an&nbsp;overworld</li> <li>Health&nbsp;potions</li> <li>Fire/ice&nbsp;missiles</li> <li>2 more enemy types to use those&nbsp;missiles</li> </ul> <p>From past experience, I knew that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech&nbsp;demo.</p> <h2>Difficulty is&nbsp;hard</h2> <p>It&#8217;s very difficult to tune for difficulty without time to playtest and fix things! I kept making the game easier because developers almost always make games too hard on the first pass, and I wanted to overcompensate to make it more likely that people would finish it in one&nbsp;sitting.</p> <p>The feedback so far seems to indicate that the difficulty is just about right. No one says it&#8217;s too hard, and some people say they&#8217;ve been playing for 25 minutes(!!!) and haven&#8217;t beaten it&nbsp;yet.</p> <h2>CSVs and roguelikes are best&nbsp;friends</h2> <p>Every time I moved some data out of Python code into a <span class=caps>CSV</span> file, it got 10x easier to add new content, but not for the reason you might thing. Yes, copy/pasting <span class=caps>CSV</span> rows is an easy way to add new things, but the act of <em>designing</em> the file format made me think about how the whole program worked and put flexible systems in place that would let me do more cool stuff&nbsp;later.</p> <p>I can already see the limitations of <span class=caps>CSV</span>, so I think next I&#8217;m going to switch to <span class=caps>CSV</span>, but with <span class=caps>YAML</span> values for each column. I really like the efficiency of editing <span class=caps>CSV</span>, but it&#8217;s not flexible enough to do what I&nbsp;want.</p> <h2>Preparation&nbsp;matters</h2> <p>The week before Ludum Dare 38, I worked on an <span class=caps>ASCII</span> user interface and roguelike development framework. I didn&#8217;t want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important&nbsp;stuff.</p> <h2>Music makes a&nbsp;difference</h2> <p>The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&#8217;t working anymore. Most of the positive reviews mention the&nbsp;music.</p> <h2><span class=caps>ASCII</span> helps you focus on mechanics but has a score&nbsp;cost</h2> <p>Since <span class=caps>ASCII</span> is traditional for roguelikes, I thought I wouldn&#8217;t lose too many points in graphics. In my opinion, good <span class=caps>ASCII</span> is better than bad pixel art. But I was wrong, and I was ranked in the bottom 35% of scored&nbsp;games.</p> <p>Even though I lost points on graphics, I&#8217;m glad I went with <span class=caps>ASCII</span>, because it gave me a lot more time to focus on mechanics and the design of my engine. I would consider using <span class=caps>ASCII</span> again next time, graphics score be&nbsp;damned.</p> <h2>Making videos ameliorates&nbsp;loneliness</h2> <p>Whenever I felt like I hit a milestone, I did a quick <a href="https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr">video update</a>. I didn&#8217;t really expect anyone to watch them, but it helped give me perspective on my progress. And it simulated human interaction a little bit, which was nice because I was alone in the house for the entire&nbsp;weekend.</p> <h2>The tech stack&nbsp;works</h2> <p>I wrote the game in Python 3. For graphics, I used <a href=http://foo.wyrd.name/en:bearlibterminal>BearLibTerminal</a>. I played the music with <a href=https://pyglet.org>pyglet</a>. And for assorted algorithms, state management, and user interface features, I used my own <a href=https://steveasleep.com/clubsandwich/ >clubsandwich</a> library. To package the game for <span class=caps>OS</span> X and Windows, I used <a href=http://www.pyinstaller.org/ >PyInstaller</a>.</p> <p>This combination works really well. The main downside is that calling C libraries from Python is slow, and I had to do some optimiziation work to get a decent frame rate. In the future, I might switch the graphics over to use pyglet entirely, but I really like using BearLibTerminal because of its limitations. You get a grid of tiles and nothing else. It&#8217;s&nbsp;liberating.</p> <h1>Conclusion</h1> <p>This is probably the most fun game I have ever made, and ties for most fun making a game alongside my last Ludum Dare&nbsp;success.</p> <p>Thanks for reading! You can watch all this happen at super-speed in this timelapse&nbsp;video:</p> <iframe width=560 height=315 src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder=0 allowfullscreen></iframe></div> </article></section> </div> </div> <script type=text/javascript>
+</code></pre></div> <p>I added a &#8220;sleep&#8221; behavior to differentiate wibbles from verps. When the player isn&#8217;t around, verps are hyperactive and run around randomly; wibbles sit and meditate. It seemed in keeping with their fighting&nbsp;styles.</p> <p>That all worked great, but when wibbles ran out of rocks, the game got really easy! So I added another behavior, <code>pick_up_rocks</code>, which makes a wibble either move toward any adjacent rocks, or pick them up if it&#8217;s standing on&nbsp;one.</p> <p>The &#8220;conservation of rocks&#8221; principle introduces a new tactic into the game: players can pick up all the rocks to deprive the wibbles of their ammunition. Fortunately the player&#8217;s backpack is infinitely&nbsp;large!</p> <h2>Stun&nbsp;effect</h2> <p>At this point, combat consisted of punching verps and dodging or punching rocks. (Yeah, you can punch rocks! They are just monsters after all!) I wanted to make it possible to avoid almost all damage, though, by understanding the game&#8217;s systems, and the verps made it too hard to do that by being&nbsp;relentless.</p> <p>So I made every hit by the player stun the target monster for 2 turns. This is done using a behavior called <code>stunnable</code>, which just says &#8220;if I&#8217;ve been hit within the last 2 turns, turn blue and do&nbsp;nothing.&#8221;</p> <p>For experienced roguelike players this makes the game easy once you figure it out, but I believe it&#8217;s still a rewarding experience to figure it out in the first place. It is very, very difficult to make a game by yourself in 48 hours that has more than a few minutes of worthwhile gameplay, so I was aiming to just make those few minutes as good as possible and then let players feel like they could put it down after a good&nbsp;experience.</p> <h2>Healing</h2> <p>To make each section its own challenge, I decided to have the colored hallways between sections heal the player completely. This is another difficulty decrease that I could probably have left out, but I decided to err on the side of easy because I knew I had some user interface issues and wanted to be &#8220;extra&#8221; fair to&nbsp;players.</p> <h1>Unintended&nbsp;consequences</h1> <p>The simulation has a few features I didn&#8217;t intend, but that I don&#8217;t regret—that&#8217;s half the&nbsp;fun!</p> <p>These features mainly have to do with rocks, and the fact that when you throw them, they become monsters.&nbsp;Specifically:</p> <ul> <li>You can punch rocks out of the&nbsp;air.</li> <li>If you throw a rock, and then walk in its direction, you will punch it dead before it has a chance to&nbsp;move.</li> <li>If two wibbles throw rocks at you at the same time, they may collide in midair and&nbsp;die.</li> <li>You can embed rocks in walls. (Okay, not so happy about this&nbsp;one.)</li> </ul> <h1>Atmosphere</h1> <h2>Music</h2> <p>I took 90 minutes to write 4 tracks, adding up to 11 minutes of music. Each map quadrant plays one of the tracks. <a href=https://soundcloud.com/irskep/sets/rogue-basement-ost>You can listen to them&nbsp;here.</a></p> <p>The music fades down when you&#8217;re in a colored hallway and fades up again when you enter a room in a map quadrant. My intention is to build tension and give the player a clue, in addition to the different colors, that the monsters are about to get&nbsp;tougher.</p> <h2>Title&nbsp;screen</h2> <p>I made this adorable title screen, and reused the <span class=caps>ASCII</span> art in the&nbsp;manual:</p> <p><img alt="title screen" src=https://steveasleep.com/img/rogue_basement/screenshot1.png></p> <h1>Final&nbsp;scores</h1> <p>There were 1,104 &#8220;compo&#8221; (48-hour, one person) games, of which 549 had enough ratings to get scored and ranked. Here are the scores for Rogue Basement. Percentiles are within the 549 ranked&nbsp;games.</p> <table> <thead> <tr> <th>Category</th> <th>Rank</th> <th>Percentile</th> <th>Score</th> <th># ratings</th> </tr> </thead> <tbody> <tr> <td>Overall</td> <td>135</td> <td>75.4</td> <td>3.667</td> <td>47</td> </tr> <tr> <td>Fun</td> <td>179</td> <td>67.4</td> <td>3.409</td> <td>46</td> </tr> <tr> <td>Innovation</td> <td>379</td> <td>31.0</td> <td>2.841</td> <td>46</td> </tr> <tr> <td>Theme</td> <td>398</td> <td>25.5</td> <td>2.977</td> <td>46</td> </tr> <tr> <td>Graphics</td> <td>374</td> <td>31.9</td> <td>2.932</td> <td>46</td> </tr> <tr> <td>Audio</td> <td>24</td> <td>95.7</td> <td>4.000</td> <td>44</td> </tr> <tr> <td>Humor</td> <td>157</td> <td>71.5</td> <td>3.000</td> <td>42</td> </tr> <tr> <td>Mood</td> <td>94</td> <td>82.9</td> <td>3.659</td> <td>43</td> </tr> </tbody> </table> <p>I&#8217;m most interested in ratings as a measurement of how well-spent my effort was in each area of the game. When you only have 48 hours to make a game, you get on a path early and it&#8217;s hard to get off of it if something isn&#8217;t working. That adds an enormous luck factor to things like &#8220;Fun&#8221; and&nbsp;&#8220;Innovation.&#8221;</p> <p>It looks like the soundtrack was my secret weapon. Audio got a great score, and I&#8217;m guessing that gave me a boost in Mood and&nbsp;Overall.</p> <p>The Theme score is very low, which I&#8217;m a little surprised at but also don&#8217;t care&nbsp;about.</p> <p>Innovation was one of my dump stats this round, so its low score makes sense too. I did make a very by-the-book&nbsp;roguelike.</p> <p>Graphics was my other dump stat in that I used <span class=caps>ASCII</span>, but I&#8217;m a little hurt that people didn&#8217;t appreciate the aesthetic&nbsp;more.</p> <p>Humor was a wildcard. I mostly use humor in my games to <a href=http://tvtropes.org/pmwiki/pmwiki.php/Main/LampshadeHanging>lampshade</a> silly situations or mechanics. Rogue Basement just has some flavor text and <span class=caps>ASCII</span> art to justify your situation. I guess people appreciated it. (There&#8217;s also some not-so-great English in the log messages, and that might have played a&nbsp;part.)</p> <h1>Takeaways</h1> <h2>Scope</h2> <p>Features I had planned to add but&nbsp;didn&#8217;t:</p> <ul> <li>Multiple basements and an&nbsp;overworld</li> <li>Health&nbsp;potions</li> <li>Fire/ice&nbsp;missiles</li> <li>2 more enemy types to use those&nbsp;missiles</li> </ul> <p>From past experience, I knew that scope was always a problem, so I tackled the highest-priority mechanics first, which means I ended up with a real game instead of a tech&nbsp;demo.</p> <h2>Difficulty is&nbsp;hard</h2> <p>It&#8217;s very difficult to tune for difficulty without time to playtest and fix things! I kept making the game easier because developers almost always make games too hard on the first pass, and I wanted to overcompensate to make it more likely that people would finish it in one&nbsp;sitting.</p> <p>The feedback so far seems to indicate that the difficulty is just about right. No one says it&#8217;s too hard, and some people say they&#8217;ve been playing for 25 minutes(!!!) and haven&#8217;t beaten it&nbsp;yet.</p> <h2>CSVs and roguelikes are best&nbsp;friends</h2> <p>Every time I moved some data out of Python code into a <span class=caps>CSV</span> file, it got 10x easier to add new content, but not for the reason you might thing. Yes, copy/pasting <span class=caps>CSV</span> rows is an easy way to add new things, but the act of <em>designing</em> the file format made me think about how the whole program worked and put flexible systems in place that would let me do more cool stuff&nbsp;later.</p> <p>I can already see the limitations of <span class=caps>CSV</span>, so I think next I&#8217;m going to switch to <span class=caps>CSV</span>, but with <span class=caps>YAML</span> values for each column. I really like the efficiency of editing <span class=caps>CSV</span>, but it&#8217;s not flexible enough to do what I&nbsp;want.</p> <h2>Preparation&nbsp;matters</h2> <p>The week before Ludum Dare 38, I worked on an <span class=caps>ASCII</span> user interface and roguelike development framework. I didn&#8217;t want to spend a bunch of time making a crappy title screen, I wanted to focus on gameplay! By writing and releasing the framework, I had all the relevant APIs in memory as soon as the competition started, and I could get going immediately on the important&nbsp;stuff.</p> <h2>Music makes a&nbsp;difference</h2> <p>The music is really simple, but it adds a huge amount of atmosphere and is a strong signal of progression. It was time well spent, especially since when I made it (the middle of the night) my programmer brain wasn&#8217;t working anymore. Most of the positive reviews mention the&nbsp;music.</p> <h2><span class=caps>ASCII</span> helps you focus on mechanics but has a score&nbsp;cost</h2> <p>Since <span class=caps>ASCII</span> is traditional for roguelikes, I thought I wouldn&#8217;t lose too many points in graphics. In my opinion, good <span class=caps>ASCII</span> is better than bad pixel art. But I was wrong, and I was ranked in the bottom 35% of scored&nbsp;games.</p> <p>Even though I lost points on graphics, I&#8217;m glad I went with <span class=caps>ASCII</span>, because it gave me a lot more time to focus on mechanics and the design of my engine. I would consider using <span class=caps>ASCII</span> again next time, graphics score be&nbsp;damned.</p> <h2>Making videos ameliorates&nbsp;loneliness</h2> <p>Whenever I felt like I hit a milestone, I did a quick <a href="https://www.youtube.com/playlist?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr">video update</a>. I didn&#8217;t really expect anyone to watch them, but it helped give me perspective on my progress. And it simulated human interaction a little bit, which was nice because I was alone in the house for the entire&nbsp;weekend.</p> <h2>The tech stack&nbsp;works</h2> <p>I wrote the game in Python 3. For graphics, I used <a href=http://foo.wyrd.name/en:bearlibterminal>BearLibTerminal</a>. I played the music with <a href=https://pyglet.org>pyglet</a>. And for assorted algorithms, state management, and user interface features, I used my own <a href=https://steveasleep.com/clubsandwich/ >clubsandwich</a> library. To package the game for <span class=caps>OS</span> X and Windows, I used <a href=http://www.pyinstaller.org/ >PyInstaller</a>.</p> <p>This combination works really well. The main downside is that calling C libraries from Python is slow, and I had to do some optimiziation work to get a decent frame rate. In the future, I might switch the graphics over to use pyglet entirely, but I really like using BearLibTerminal because of its limitations. You get a grid of tiles and nothing else. It&#8217;s&nbsp;liberating.</p> <h1>Conclusion</h1> <p>This is probably the most fun game I have ever made, and ties for most fun making a game alongside my last Ludum Dare&nbsp;success.</p> <p>Thanks for reading! You can watch all this happen at super-speed in this timelapse&nbsp;video:</p> <iframe width=560 height=315 src="https://www.youtube.com/embed/Jo8d34N3tdY?list=PLuzdytAQSpVhUCVgJvtgDNEQ2DI41KiKr" frameborder=0 allowfullscreen></iframe></div> </article></section> </main> </div> <script type=text/javascript>
       var _gaq = _gaq || [];
       _gaq.push(["_setAccount", "UA-4517625-1"]);
       _gaq.push(["_trackPageview"]);

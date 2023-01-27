@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Steve Landey</title><link>https://steveasleep.com/</link><description></description><lastBuildDate>Sat, 29 Sep 2018 00:00:00 -0700</lastBuildDate><item><title>The blog has a new home</title><link>https://steveasleep.com/the-blog-has-a-new-home.html</link><description>&lt;p&gt;I&amp;#8217;ve started blogging at
-&lt;a href="https://blog.steveasleep.com"&gt;blog.steveasleep.com&lt;/a&gt;, hosted on
-&lt;a href="https://write.as"&gt;write.as&lt;/a&gt;. I expect to keep the blog there going forward.
-This site runs on &lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican&lt;/a&gt;, which is
-great for making static sites, but I&amp;#8217;ve been doing a much better job of
-writing consistently now that I can do it all from a web&amp;nbsp;browser.&lt;/p&gt;
+<rss version="2.0"><channel><title>Steve Landey</title><link>https://steveasleep.com/</link><description></description><lastBuildDate>Sat, 29 Sep 2018 00:00:00 -0700</lastBuildDate><item><title>The blog has a new home</title><link>https://steveasleep.com/the-blog-has-a-new-home.html</link><description>&lt;p&gt;This blog continues at &lt;a href="https://blog.steveasleep.com"&gt;blog.steveasleep.com&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.steveasleep.com/"&gt;New&amp;nbsp;blog&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.steveasleep.com/feed/"&gt;&lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feed&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="/articles/"&gt;Old&amp;nbsp;blog&lt;/a&gt;&lt;/p&gt;
@@ -13,13 +8,11 @@ writing consistently now that I can do it all from a web&amp;nbsp;browser.&lt;/p
 &lt;li&gt;&lt;a href="https://blog.steveasleep.com/usernames"&gt;Usernames&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.steveasleep.com/community-conferences"&gt;Big and little&amp;nbsp;conferences&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.steveasleep.com/questions-i-asked-myself-while-writing-a-simple-web-forum"&gt;The web development decision&amp;nbsp;firehose&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;A series on things I found on a web site I made when I was 12. These are good!&lt;ul&gt;
+&lt;li&gt;A series on things I found on a web site I made when I was 12. These are&amp;nbsp;good!&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-1"&gt;Autoarchaeology Part 1: Web&amp;nbsp;Sites&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-2-early-games"&gt;Autoarchaeology Part 2: Early&amp;nbsp;Games&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-3-mac-software"&gt;Autoarchaeology Part 3: Mac&amp;nbsp;Software&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.steveasleep.com/autoarchaeology-part-4-media"&gt;Autoarchaeology Part 4:&amp;nbsp;Media&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Landey</dc:creator><pubDate>Sat, 29 Sep 2018 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:steveasleep.com,2018-09-29:/the-blog-has-a-new-home.html</guid><category>Articles</category><category>blog</category></item><item><title>PCG32: The Perfect PRNG for Roguelikes</title><link>https://steveasleep.com/pcg32-the-perfect-prng-for-roguelikes.html</link><description>&lt;p&gt;&lt;em&gt;Hello, Hacker News. You found a post I wrote in 2018 that in hindsight has some issues. Please don&amp;#8217;t judge me too harshly. Instead, check out my free online whiteboard &lt;a href="https://browserboard.com"&gt;Browserboard&lt;/a&gt; or read &lt;a href="https://blog.steveasleep.com"&gt;some of my newer posts&lt;/a&gt;, such as &lt;a href="https://blog.steveasleep.com/lets-generate-some-imaginary-guitar-pedals"&gt;Let’s generate some imaginary guitar pedals&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Roguelikes are games that, among other things, have a lot of procedurally
 generated content. To generate content, we need random numbers. And to get
@@ -153,7 +146,7 @@ interspersed with content, but my willpower wanes with each passing month.
 Therefore, these links are only for the&amp;nbsp;brave:&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.dropbox.com/s/wfi8aezy5zcx3nf/iPathCase.pdf?dl=1"&gt;150 pages of&amp;nbsp;insanity&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.dropbox.com/s/4hrruvrj88sb9jv/slides.pdf?dl=1"&gt;Defense&amp;nbsp;slides&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://steveasleep.com/img/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="https://steveasleep.com/img/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Landey</dc:creator><pubDate>Mon, 16 Apr 2012 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:steveasleep.com,2012-04-16:/my-masters-thesis.html</guid><category>Side Channel</category><category>programming</category></item><item><title>Space Train Postmortem</title><link>https://steveasleep.com/space-train-postmortem.html</link><description>&lt;p&gt;&lt;img alt="Space Train logo" src="|static|/img/content/space_train_logo.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://steveasleep.com/img/ipathcase-kegg.png"&gt;&lt;img alt="Screenshot" src="https://steveasleep.com/img/ipathcase-kegg-thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Steve Landey</dc:creator><pubDate>Mon, 16 Apr 2012 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:steveasleep.com,2012-04-16:/my-masters-thesis.html</guid><category>Side Channel</category><category>programming</category></item><item><title>Space Train Postmortem</title><link>https://steveasleep.com/space-train-postmortem.html</link><description>&lt;p&gt;&lt;img alt="Space Train logo" src="/img/content/space_train_logo.png"&gt;&lt;/p&gt;
 &lt;p&gt;With the end of a semester just past, my course projects are all bubbling up in
 various states of completion. One of these is a point-and-click adventure game
 called &lt;em&gt;&lt;a href="|filename|/pages/space-train.md"&gt;Space Train: Terror on the Mustachio
