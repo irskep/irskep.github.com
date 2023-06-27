@@ -287,12 +287,21 @@ export default {
         [
           "September-December 2022",
           "Cut build times by 80% using modules",
-          `I led efforts by the Mobile Foundations team to leverage Tuist to
+          `I led efforts by the Mobile Foundations team to leverage <a href="https://tuist.io">Tuist</a> to
           split our app into feature modules, by refactoring code, writing
           developer-facing tools, and helping educate the wider mobile team.
           As a result, most engineers wait 5 seconds instead of 45 seconds for
           rebuilds when making incremental changes, and make new feature
-          modules on their own.`,
+          modules on their own. I blogged about it—<a href="https://blog.asana.com/2023/02/scaling-a-mature-ios-codebase-with-tuist/">Read more here!</a>`,
+          "m-right",
+        ],
+        [
+          "February-July 2023",
+          "Drove the redesign of the iOS Home tab",
+          `I worked with a small team in a hackathon to present a new vision
+          for how to use one of our top 3 most visited tabs in the mobile app.
+          This kicked off a project to take the concept to production, which
+          is still in progress.`,
           "m-right",
         ],
       ],
