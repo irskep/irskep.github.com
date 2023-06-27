@@ -256,3 +256,7 @@ ul.article-summary-list > li {
 .entry-content img {
   max-width: 100%;
 }
+
+.page-content p {
+  line-height: 1.5;
+}
