@@ -1,4 +1,4 @@
-Title: Mr. Professional Software Engineer Man
+Title: The part of my web site that’s about jobs
 Slug: professional
 
 Thank you for clicking the link!
