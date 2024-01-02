@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang=en> <head><title>Steve Landey - Power-Q privacy&nbsp;policy</title><meta name=viewport content="width=device-width"><meta charset=UTF-8><meta charset=utf-8><link href=https://steveasleep.com/feeds/all.atom.xml type=application/atom+xml rel=alternate title="Steve Landey Full Atom Feed"><link href=https://steveasleep.com/feeds/all.rss.xml type=application/rss+xml rel=alternate title="Steve Landey Full RSS Feed"><script src=https://steveasleep.com/js/hyphenate.js defer></script><style type=text/css>
+      /* CSS Micro Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+img,
+iframe {
+  border: 0;
+}
+
+/* vars */
+
+body {
+  --bg-1: rgb(253, 254, 255);
+  --bg-container: rgb(237, 237, 252);
+  --fg-1: rgb(40, 40, 40);
+  --fg-weak: rgb(68, 68, 68);
+  --fg-separator: rgb(194, 194, 234);
+  --fg-link-2: rgb(60, 60, 80);
+  --fg-link: rgb(60, 60, 200);
+  --fg-link-hover: rgb(80, 80, 250);
+  --fg-callout: #f7601b;
+  --fg-accent: #6749e3;
+
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+
+  background-color: var(--bg-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* headings */
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited {
+  text-decoration: none;
+  color: var(--fg-1);
+}
+
+h1,
+h2 {
+  font-size: 1.5rem;
+}
+h3,
+h4 {
+  font-size: 1.2rem;
+}
+h5,
+h6 {
+  font-size: 1rem;
+}
+h1,
+h3,
+h5 {
+  font-weight: bold;
+}
+h2,
+h4,
+h6 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+  line-height: 1.5em;
+}
+
+/* links */
+
+a {
+  color: var(--fg-link);
+}
+a:hover {
+  color: var(--fg-link-hover);
+}
+
+/* other base styles */
+
+p {
+  line-height: 1.3em;
+}
+
+/* layout */
+
+.PageContainer {
+  width: 40rem;
+  padding: 0 1rem 1rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+@media (max-width: 40rem) {
+  .PageContainer {
+    width: 100%;
+  }
+}
+
+.Toolbar {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+.Toolbar > h1 {
+  flex-shrink: 0;
+  flex-grow: 0;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.Toolbar_Subsection {
+  flex-grow: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.Toolbar_Subsection ul {
+  padding-left: 0;
+  margin: 0.5rem 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Toolbar_Subsection li {
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+.Toolbar_Subsection li:first-child {
+  margin-left: 0;
+}
+
+/* components */
+
+.FlexSpace {
+  flex-grow: 1;
+}
+
+.Admonition {
+  padding: 1rem;
+  border: 4px dotted var(--fg-separator);
+  border-radius: 8px;
+}
+
+.Project {
+  display: grid;
+  grid-template-columns: 10rem auto;
+
+  margin-bottom: 1rem;
+}
+
+.Project_Image {
+  flex-grow: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-container);
+  /* border: 2px dotted var(--fg-separator); */
+}
+
+.Project_Image.m-margins {
+  padding: 1rem;
+}
+
+.Project_Image {
+  display: contents;
+}
+
+.Project_Image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Project_Description {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.Project_Description h3 {
+  margin-top: 0;
+}
+
+article ul {
+  padding: 0;
+}
+
+article li {
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+ul.article-summary-list {
+  list-style-type: none;
+}
+ul.article-summary-list > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entry-content img {
+  max-width: 100%;
+}
+
+.page-content p {
+  line-height: 1.5;
+}
+    </style></head> <body> <div class=PageContainer> <header class=Toolbar> <h1><a href=https://steveasleep.com>Steve Landey</a></h1> <div class=FlexSpace></div> <nav class=Toolbar_Subsection> <ul> <li><a href=mailto:randos@steve.steeasleep.com>Email</a></li> <li><a href=https://blog.steveasleep.com/ >Blog</a></li> <li> <a href=https://irskep.omg.lol>irskep.omg.lol (more links)</a> </li> </ul> </nav> </header> <main> <section id=content class=body> <article class=page> <header class=article-header> <h1 class=entry-title> <a href=https://steveasleep.com/power-q-privacy-policy.html rel=bookmark title="Permalink to Power-Q privacy policy"> Power-Q privacy&nbsp;policy </a> </h1> <div class=post-info> <time class=published datetime=2023-01-01T00:00:00-08:00> January 1, 2023 </time> </div> </header> <div class="page-content hyphenate"> <h1>Power-Q privacy&nbsp;policy</h1> <p>This app collects no data about you. All data is stored on your device and is never sent anywhere else. Your data will never be used for any reason without your&nbsp;permission.</p> </div> </article> </section> </main> </div> <script type=text/javascript>
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-4517625-1"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script> </body> </html>
