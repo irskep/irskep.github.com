@@ -5,7 +5,7 @@ description = ""
 authors = ["Steve Landey <steve@steveasleep.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.12"
 MarkupSafe = "^1.1.1"
 appdirs = "^1.4.4"
 blinker = "^1.4"
@@ -27,10 +27,10 @@ Pygments = "^2.8.1"
 Unidecode = "^1.2.0"
 attrs = "^21.2.0"
 html5lib = "^1.1"
-html5print = "^0.1.2"
 hyphenate = "^1.1.0"
 xmljson = "^0.2.1"
 prettyprinter = "^0.18.0"
+pyyaml = "^6.0.1"
 
 [tool.poetry.dev-dependencies]
 

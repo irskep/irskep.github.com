@@ -1,0 +1,81 @@
+#set par(justify: true, leading: 8pt)
+#set text(font: "Charter", size: 11pt)
+
+#show heading.where(
+  level: 2
+): it => block(width: 100%)[
+  #line(length: 100%)
+  #text(font: "Fira Sans", size: 12pt, weight: "regular", it.body)
+]
+
+#show heading.where(
+  level: 3
+): it => block(width: 100%)[
+  #text(font: "Charter", size: 14pt, weight: "extralight", it.body)
+]
+
+#show heading.where(
+  level: 4
+): it => block(width: 100%, above: 0pt, below: 11pt)[
+  #text(font: "Charter", size: 11pt, weight: "extralight", style: "italic", it.body)
+]
+
+#let split(_l, _r) = grid(columns: (1fr, auto), align(left, _l), align(right, _r))
+#let split2(_l, _r) = grid(columns: (1fr, auto), align(left, _l), align(right, text(size: 12pt, _r)))
+
+#grid(
+  columns: (1fr, auto),
+    align(left)[= #text(font: "Fira Sans", size: 22pt, weight: "regular")[Steve Landey]],
+  align(right)[
+    San Francisco, CA \
+    #link("mailto:steve@steveasleep.com")[steve\@steveasleep.com] \
+    #link("https://steveasleep.com")[https://steveasleep.com]  
+  ])
+
+== Role Fit <role-fit>
+For a better look at the shape of my current role and what I’m looking for in my next one, please click here: #link("https://steveasleep.com/professional.html")
+
+== Work History <work-history>
+=== #split("Asana", "2018-Present")
+==== Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024) <engineering-manager-2018-2020-staff-mobile-engineer-2020-2024-ai-workflows-2024>
+As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided to switch to a Staff Engineer role. I helped transform the iOS developer experience at Asana and shipped a lot of features.
+
+Throughout this time, I have been responsible for a few org-wide areas like maintaining the engineering blog, helping people release open source software, and running a tech talk series.
+
+After nine years of doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. So far, the shape of this work is writing TypeScript business logic and writing services in Python to support our AI efforts.
+
+=== #split("Hipmunk", "2015–2018")
+==== iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018) <ios-engineer-2015-mobile-team-lead-2016-engineering-manager-2017-2018>
+I helped move Hipmunk’s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 engineers.
+
+=== #split("Graffiti Labs", "2012–2015")
+==== Full Stack Engineer, Game Designer <full-stack-engineer-game-designer>
+As one of two engineers, I helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. I worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React, and Python.
+
+=== #split("Yelp", "2011–2012")
+==== Software Engineer on the Spam Team <software-engineer-on-the-spam-team>
+I worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. I also maintained mrjob, a popular framework that runs Python code on Hadoop.
+
+=== #split("Apple", "2010")
+==== Intern on Obj-C Runtime Team <intern-on-obj-c-runtime-team>
+I implemented an early prototype of the Xcode visual object graph debugging tool.
+
+=== #split("MIM Software", "2009")
+==== Intern <intern>
+I built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing.
+
+== Personal Projects
+
+=== #split2("Locheck", emph[https://github.com/asana/locheck (2021)])
+#emph[A linter for iOS and Android localization. Used by Asana and other companies, including GitHub.]
+
+=== #split2("Browserboard", emph[https://browserboard.com (2020)])
+A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company.
+
+=== #split2("Oscillator Drum Loops", emph[https://oscillatordrums.com (2019)])
+An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. The app is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.
+
+== Education
+
+=== #split("Case Western Reserve University", "2007-2012")
+B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community.
