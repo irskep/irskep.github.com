@@ -130,6 +130,27 @@
         <p>{{ p|safe }}</p>
         {% endfor %} {% endfor %}
       </section>
+
+      <section class="Skills">
+        <h2>Skills for the Keyword Filters</h2>
+
+        {% for skillset in skills %}
+        <div class="SplitHeading">
+          <h3>{{ skillset.name|safe }}</h3>
+        </div>
+        <p>{{ skillset.keywords|typst_comma_list }}</p>
+        {% if skillset.text %} {% for p in skillset.text|split_into_paragraphs
+        %}
+        <p>{{ p|safe }}</p>
+        {% endfor %}{% endif %}{% endfor %}
+      </section>
+
+      <section class="Location">
+        <h2>Location Requirements</h2>
+        {% for p in location|split_into_paragraphs %}
+        <p>{{ p|safe }}</p>
+        {% endfor %}
+      </section>
     </article>
 
     <article>

@@ -81,4 +81,33 @@ A linter for iOS and Android localization. Used by Asana and other companies, in
 #split_project([=== Browserboard], emph[https://browserboard.com (2020–2023)])
 A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company.
 #split_project([=== Oscillator Drum Loops], emph[https://oscillatordrums.com (2019–2020)])
-An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. The app is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.
+An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. It is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.
+
+
+== Skills for the Keyword Filters
+
+#show heading.where(
+  level: 3
+): it => block(width: 100%, below: 11pt)[
+  #text(font: "Charter", size: 11pt, weight: "bold", it.body)
+]
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 11pt,
+[
+  === Mobile
+  Swift, Objective-C, UIKit, ReactiveSwift, Combine, Core Data, Tuist, AudioKit
+
+  I have very limited SwiftUI experience, but getting up to speed is the fun part.],
+[
+  === Web
+  JavaScript, TypeScript, Python, React, Vue, Django, Flask, Pyramid, CSS (I'm serious), Node.js, websockets
+
+  ],
+
+)
+
+== Location Requirements
+
+I will work remotely, or within a 45 minute bike or transit commute from my home in San Francisco.

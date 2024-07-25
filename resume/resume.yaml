@@ -75,7 +75,7 @@ projects:
     startDate: "2019"
     endDate: "2020"
     description: >
-      An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. The app is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.
+      An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. It is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.
 
 education:
   - institution: Case Western Reserve University
@@ -85,3 +85,37 @@ education:
     endDate: "2012"
     summary: >
       B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community.
+
+"skills":
+  - name: "Mobile"
+    keywords:
+      [
+        "Swift",
+        "Objective-C",
+        "UIKit",
+        "ReactiveSwift",
+        "Combine",
+        "Core Data",
+        "Tuist",
+        "AudioKit",
+      ]
+    text: >
+      I have very limited SwiftUI experience, but getting up to speed is the fun part.
+  - name: "Web"
+    keywords:
+      [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "React",
+        "Vue",
+        "Django",
+        "Flask",
+        "Pyramid",
+        "CSS (I'm serious)",
+        "Node.js",
+        "websockets",
+      ]
+
+location: >
+  I will work remotely, or within a 45 minute bike or transit commute from my home in San Francisco.
