@@ -25,10 +25,10 @@
   width: 100%,
   below: 6pt,
   grid(columns: (1fr, auto), align(left, _l), align(bottom, _r)))
-#let split2(_l, _r) = grid(
+#let split_project(_l, _r) = grid(
   columns: (1fr, auto),
   align(left, _l),
-  align(bottom, text(size: 12pt, _r)))
+  align(bottom, text(size: 11pt, _r)))
 
 #grid(
   columns: (1fr, auto),
@@ -76,9 +76,9 @@ B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a
 
 #pagebreak()
 == Personal Projects
-#split2([=== Locheck], emph[https://github.com/asana/locheck (2021–2024)])
+#split_project([=== Locheck], emph[https://github.com/asana/locheck (2021–2024)])
 A linter for iOS and Android localization. Used by Asana and other companies, including GitHub.
-#split2([=== Browserboard], emph[https://browserboard.com (2020–2023)])
+#split_project([=== Browserboard], emph[https://browserboard.com (2020–2023)])
 A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company.
-#split2([=== Oscillator Drum Loops], emph[https://oscillatordrums.com (2019–2020)])
+#split_project([=== Oscillator Drum Loops], emph[https://oscillatordrums.com (2019–2020)])
 An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. The app is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.

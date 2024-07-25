@@ -25,10 +25,10 @@
   width: 100%,
   below: 6pt,
   grid(columns: (1fr, auto), align(left, _l), align(bottom, _r)))
-#let split2(_l, _r) = grid(
+#let split_project(_l, _r) = grid(
   columns: (1fr, auto),
   align(left, _l),
-  align(bottom, text(size: 12pt, _r)))
+  align(bottom, text(size: 11pt, _r)))
 
 #grid(
   columns: (1fr, auto),
@@ -63,6 +63,6 @@
 #pagebreak()
 == Personal Projects
 {% for project in projects -%}
-#split2([=== {{ project.name}}], emph[{{ project.url }} ({{ project|date_range }})])
+#split_project([=== {{ project.name}}], emph[{{ project.url }} ({{ project|date_range }})])
 {{ project.description|typst_text }}
 {% endfor %}
