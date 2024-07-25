@@ -1,6 +1,17 @@
-# .PHONY: resume.html
+.PHONY: run
+
+run:
+	poetry run python yaml2outputs.py
+	typst compile resume.typst resume.pdf
+
 
 all: resume.html resume2.html resume3.html resume4.html
+
+resume.typst: yaml2outputs.py typst_template.jinja2 resume.yaml
+	poetry run python yaml2outputs.py
+
+resume.pdf: resume.typst
+	typst compile resume.typst resume.pdf
 
 resume.html: theme1.css template.html json2html.py resume.json
 	poetry run ./json2html.py 4 1 resume.json theme1.css resume.html

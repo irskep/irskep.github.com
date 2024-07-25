@@ -8,6 +8,11 @@ import yaml
 
 data_dir = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
 
+OUTPUTS = [
+  ('typst_template.jinja2', 'resume.typst'),
+  ('html_template.html', 'resume.html'),
+]
+
 def main():
   p = argparse.ArgumentParser()
   p.add_argument("-f", "--file", default=str(data_dir / "resume.yaml"))
@@ -16,7 +21,7 @@ def main():
   args = p.parse_args()
 
   in_path = pathlib.Path(args.file)
-  out_path = pathlib.Path(args.output)
+  out_path = data_dir / "resume.typst"
 
   with in_path.open('r') as f:
     data = yaml.safe_load(f)
@@ -24,11 +29,41 @@ def main():
   env = jinja2.Environment(loader=jinja2.FileSystemLoader(str(data_dir)))
   env.filters['date_range'] = date_range
   env.filters['typst_text'] = typst_text
-  template = env.get_template("typst_template.jinja2")
+  env.filters['split_into_paragraphs'] = split_into_paragraphs
 
-  result = template.render(**data)
-
+  typst_src = env.get_template("typst_template.jinja2").render(**data)
   with out_path.open('w') as f:
+    f.write(typst_src)
+
+  for i in range(4):
+    write_html(i + 1, 4, data, env)  
+
+
+def write_html(n, total, data, env):
+  def filename(nn):
+    if nn == 1:
+      return "resume.html"
+    else:
+      return f"resume{nn}.html"
+
+  with (data_dir / f"theme{n}.css").open('r') as f:
+    css = f.read()
+
+  prev_url = None
+  next_url = None
+  if n > 1:
+    prev_url = filename(n - 1)
+  if n < total:
+    next_url = filename(n + 1)
+
+  result = env.get_template("html_template.html").render(
+    css=css,
+    next_url=next_url,
+    prev_url=prev_url,
+    total=total,
+    n=n,
+    **data)
+  with (data_dir / filename(n)).open('w') as f:
     f.write(result)
 
   
@@ -47,6 +82,9 @@ def date_range(s):
     return s["startDate"]
   else:
     return f'{s["startDate"]}{en_dash}{s["endDate"]}'
+
+def split_into_paragraphs(s):
+  return s.split("\n")
 
 
 if __name__ == "__main__":

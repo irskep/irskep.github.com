@@ -17,7 +17,7 @@ work:
 
       Throughout this time, I have been responsible for a few org-wide areas like maintaining the engineering blog, helping people release open source software, and running a tech talk series.
 
-      After nine years of doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. So far, the shape of this work is writing TypeScript business logic and writing services in Python to support our AI efforts.
+      After nine years doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. So far, the shape of this work is writing TypeScript business logic and writing services in Python to support our AI efforts.
 
   - name: Hipmunk
     position: iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018) <ios-engineer-2015-mobile-team-lead-2016-engineering-manager-2017-2018>
@@ -25,6 +25,7 @@ work:
     endDate: "2018"
     summary: >
       I helped move Hipmunk’s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 engineers.
+    breakAfter: true
 
   - name: Graffiti Labs
     position: Full Stack Engineer, Game Designer

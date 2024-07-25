@@ -1,18 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Steve Landey's Résumé</title>
     <!-- <meta name="description" content=""> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <!-- <link rel="apple-touch-icon" href="icon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       footer {
@@ -21,9 +27,13 @@
         height: 4rem;
       }
 
-      footer nav, footer nav ul {
+      footer nav,
+      footer nav ul {
         position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
 
       footer nav ul {
@@ -40,7 +50,8 @@
         text-align: center;
       }
 
-      footer nav li.Previous, footer nav li.Next {
+      footer nav li.Previous,
+      footer nav li.Next {
         width: 33%;
       }
 
@@ -54,7 +65,7 @@
     </style>
 
     <style>
-      /* reset */
+            /* reset */
       html {
         --bg: #034;
         --fg: #ddf;
@@ -175,139 +186,161 @@
   </head>
 
   <body>
-    
-      <article class="Resume">
+    <article class="Resume">
+      <div class="SplitHeading">
+        <h1>Steve Landey</h1>
+        <address>
+          San Francisco, CA
+          <br />
+          <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a>
+          <br />
+          <a href="https://steveasleep.com">https://steveasleep.com</a>
+        </address>
+      </div>
+
+      <section class="RoleFit">
+        <h2>Role Fit</h2>
+        <p>For a better look at the shape of my current role and what I’m looking for in my next one, please click here: <a href="https://steveasleep.com/professional.html">https://steveasleep.com/professional.html</a>
+</p>
+      </section>
+
+      <section class="WorkHistory">
+        <h2>Work History</h2>
+
+        
         <div class="SplitHeading">
-          <h1>Steve Landey</h1>
-          <address>
-            San Francisco, CA
-            <br>
-            <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a>
-            <br>
-            <a href="https://steveasleep.com">https://steveasleep.com</a>
-          </address>
+          <h3>Asana</h3>
+          <aside>2018–2024</aside>
         </div>
+        <h4>Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024)</h4>
+        
+        <p>As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided to switch to a Staff Engineer role. I helped transform the iOS developer experience at Asana and shipped a lot of features.</p>
+        
+        <p>Throughout this time, I have been responsible for a few org-wide areas like maintaining the engineering blog, helping people release open source software, and running a tech talk series.</p>
+        
+        <p>After nine years doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. So far, the shape of this work is writing TypeScript business logic and writing services in Python to support our AI efforts.</p>
+        
+        <p></p>
+         
+        <div class="SplitHeading">
+          <h3>Hipmunk</h3>
+          <aside>2015–2018</aside>
+        </div>
+        <h4>iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018) <ios-engineer-2015-mobile-team-lead-2016-engineering-manager-2017-2018></h4>
+        
+        <p>I helped move Hipmunk’s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 engineers.</p>
+        
+        <p></p>
+         
+        <div class="SplitHeading">
+          <h3>Graffiti Labs</h3>
+          <aside>2012–2015</aside>
+        </div>
+        <h4>Full Stack Engineer, Game Designer</h4>
+        
+        <p>As one of two engineers, I helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. I worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React, and Python.</p>
+        
+        <p></p>
+         
+        <div class="SplitHeading">
+          <h3>Yelp</h3>
+          <aside>2011–2012</aside>
+        </div>
+        <h4>Software Engineer on the Spam Team</h4>
+        
+        <p>I worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. I also maintained mrjob, a popular framework that runs Python code on Hadoop.</p>
+        
+        <p></p>
+         
+        <div class="SplitHeading">
+          <h3>Apple</h3>
+          <aside>2010</aside>
+        </div>
+        <h4>Intern on Obj-C Runtime Team</h4>
+        
+        <p>I implemented an early prototype of the Xcode visual object graph debugging tool.</p>
+        
+        <p></p>
+         
+        <div class="SplitHeading">
+          <h3>MIM Software</h3>
+          <aside>2009</aside>
+        </div>
+        <h4>Intern</h4>
+        
+        <p>I built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing.</p>
+        
+        <p></p>
+         
+      </section>
 
-        <section class="WorkHistory">
-          <h2>Work History</h2>
+      <section class="PersonalProjects">
+        <h2>Personal Projects</h2>
 
-          
-            <div class="SplitHeading">
-              <h3>Asana</h3>
-              <aside>2018–Present</aside>
-            </div>
-            <h4>Engineering Manager (2018-2020), Staff Mobile Engineer (2020-Present)</h4>
-            
-              <p>As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided to switch to a Staff Engineer role. Now I’m on the Mobile Foundations team and I’m responsible for many aspects of mobile architecture at Asana, helping engineers on four teams work as effectively as possible.</p>
-            
-              <p>In addition to my work with the iOS and Android teams, I’ve also helped the engineering intern program run smoothly, edited most Asana Engineering blog posts, and facilitated the release of open source software. I also helped design and build a complex web-based text editor that’s also used in the mobile apps.</p>
-            
-          
-            <div class="SplitHeading">
-              <h3>Hipmunk</h3>
-              <aside>2015–2018</aside>
-            </div>
-            <h4>iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018)</h4>
-            
-              <p>I helped move Hipmunk’s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 solid engineers.</p>
-            
-          
-            <div class="SplitHeading">
-              <h3>Graffiti Labs</h3>
-              <aside>2012–2015</aside>
-            </div>
-            <h4>Full Stack Engineer, Game Designer</h4>
-            
-              <p>As one of two engineers, I helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. I worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React.JS, and Python.</p>
-            
-          
-            <div class="SplitHeading">
-              <h3>Yelp</h3>
-              <aside>2011–2012</aside>
-            </div>
-            <h4>Software Engineer on the Spam Team</h4>
-            
-              <p>I worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. Maintained mrjob, a popular framework that runs Python code on Hadoop.</p>
-            
-          
-            <div class="SplitHeading">
-              <h3>Apple</h3>
-              <aside>2010</aside>
-            </div>
-            <h4>Intern on Obj-C Runtime Team</h4>
-            
-              <p>I implemented an early prototype of the Xcode visual object graph debugging tool.</p>
-            
-          
-            <div class="SplitHeading">
-              <h3>MIM Software</h3>
-              <aside>2009</aside>
-            </div>
-            <h4>Intern</h4>
-            
-              <p>I built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing.</p>
-            
-          
-        </section>
+        
+        <div class="SplitHeading">
+          <h3>Locheck</h3>
+          <aside>
+            <a href="https://github.com/asana/locheck"
+              >https://github.com/asana/locheck</a
+            >
+            (2021–2024)
+          </aside>
+        </div>
+        
+        <p>A linter for iOS and Android localization. Used by Asana and other companies, including GitHub.</p>
+        
+        <p></p>
+         
+        <div class="SplitHeading">
+          <h3>Browserboard</h3>
+          <aside>
+            <a href="https://browserboard.com"
+              >https://browserboard.com</a
+            >
+            (2020–2023)
+          </aside>
+        </div>
+        
+        <p>A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company.</p>
+        
+        <p></p>
+         
+        <div class="SplitHeading">
+          <h3>Oscillator Drum Loops</h3>
+          <aside>
+            <a href="https://oscillatordrums.com"
+              >https://oscillatordrums.com</a
+            >
+            (2019–2020)
+          </aside>
+        </div>
+        
+        <p>An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. The app is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.</p>
+        
+        <p></p>
+         
+      </section>
 
-        <section class="PersonalProjects">
-          <h2>Personal Projects</h2>
-
-          
-            <div class="SplitHeading">
-              <h3>Browserboard</h3>
-              <aside><a href="https://browserboard.com">https://browserboard.com</a> (2020)</aside>
-            </div>
-            
-              <p>A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets.</p>
-            
-          
-            <div class="SplitHeading">
-              <h3>Oscillator Drum Loops</h3>
-              <aside><a href="https://oscillatordrums.com">https://oscillatordrums.com</a> (2019)</aside>
-            </div>
-            
-              <p>An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. The app is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.</p>
-            
-          
-            <div class="SplitHeading">
-              <h3>Literally Canvas</h3>
-              <aside><a href="http://literallycanvas.com">http://literallycanvas.com</a> (2012)</aside>
-            </div>
-            
-              <p>An extensible JavaScript library for embedding an MS Paint-like drawing widget in web pages. This project has been used in many surprising places over its long lifetime.</p>
-            
-          
-            <div class="SplitHeading">
-              <h3>Hobbyist Game Development</h3>
-              <aside>(2003–Present)</aside>
-            </div>
-            
-              <p>20+ small games in BASIC, Python, JavaScript, and Swift.</p>
-            
-              <p>Art and music of uneven quality.</p>
-            
-          
-        </section>
-
-        <section class="Education">
-          <h2>Education</h2>
-          
-            <div class="SplitHeading">
-              <h3>Case Western Reserve University</h3>
-              <aside>2007–2012</aside>
-            </div>
-            
-              <p>B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community. Pianist for IMPROVment comedy troupe.</p>
-            
-          
-        </section>
-
-      
+      <section class="Education">
+        <h2>Education</h2>
+        
+        <div class="SplitHeading">
+          <h3>Case Western Reserve University</h3>
+          <aside>2007–2012</aside>
+        </div>
+        
+        <p>B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community.</p>
+        
+        <p></p>
+         
+      </section>
     </article>
 
     <article>
-      <a href="/downloads/Steve_Landey_resume.pdf">PDF version of this résumé</a>
+      <a href="/downloads/Steve_Landey_resume.pdf"
+        >PDF version of this résumé</a
+      >
     </article>
 
     <footer>
