@@ -1,0 +1,127 @@
+{
+  "basics": {
+    "name": "Steve Landey",
+    "email": "steve@steveasleep.com",
+    "url": "https://steveasleep.com",
+    "location": {
+      "city": "San Francisco, CA"
+    },
+    "summary": "I will work remotely, or within a 45 minute bike or transit commute from where I live in SF. For a better look at the shape of my current role and what I\u2019m looking for in my next one, please click here: <br> <a href=\"https://steveasleep.com/professional.html\">https://steveasleep.com/professional.html</a>\n"
+  },
+  "work": [
+    {
+      "name": "Asana",
+      "position": "Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024)",
+      "startDate": "2018",
+      "endDate": "2024",
+      "summary": "As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided to switch to a Staff Engineer role. I helped transform the iOS developer experience at Asana and shipped a lot of features.\n\nThroughout this time, I have been responsible for a few org-wide areas like maintaining the engineering blog, helping people release open source software, and running a tech talk series.\n\nAfter nine years doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. So far, the shape of this work is writing TypeScript business logic and writing services in Python to support our AI efforts.\n\nThere is more detailed information about my time at Asana on the next page.\n"
+    },
+    {
+      "name": "Hipmunk",
+      "position": "iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018) <ios-engineer-2015-mobile-team-lead-2016-engineering-manager-2017-2018>",
+      "startDate": "2015",
+      "endDate": "2018",
+      "summary": "I helped move Hipmunk\u2019s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 engineers.\n",
+      "breakAfter": true
+    },
+    {
+      "name": "Graffiti Labs",
+      "position": "Full Stack Engineer, Game Designer",
+      "startDate": "2012",
+      "endDate": "2015",
+      "summary": "As one of two engineers, I helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. I worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React, and Python.\n"
+    },
+    {
+      "name": "Yelp",
+      "position": "Software Engineer on the Spam Team",
+      "startDate": "2011",
+      "endDate": "2012",
+      "summary": "I worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. I also maintained mrjob, a popular framework that runs Python code on Hadoop.\n"
+    },
+    {
+      "name": "Apple",
+      "position": "Intern on Obj-C Runtime Team",
+      "startDate": "2010",
+      "endDate": "2010",
+      "summary": "I implemented an early prototype of the Xcode visual object graph debugging tool.\n"
+    },
+    {
+      "name": "MIM Software",
+      "position": "Intern",
+      "startDate": "2009",
+      "endDate": "2009",
+      "summary": "I built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing.\n"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Locheck",
+      "url": "https://github.com/asana/locheck",
+      "startDate": "2021",
+      "endDate": "2024",
+      "description": "A linter for iOS and Android localization. Used by Asana and other companies, including GitHub.\n"
+    },
+    {
+      "name": "Browserboard",
+      "url": "https://browserboard.com",
+      "startDate": "2020",
+      "endDate": "2023",
+      "description": "A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company.\n"
+    },
+    {
+      "name": "Oscillator Drum Loops",
+      "url": "https://oscillatordrums.com",
+      "startDate": "2019",
+      "endDate": "2020",
+      "description": "An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. It is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.\n"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Case Western Reserve University",
+      "area": "Computer Science",
+      "studyType": "B.S. & M.S.",
+      "startDate": "2007",
+      "endDate": "2012",
+      "summary": "B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community.\n"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Mobile",
+      "keywords": [
+        "Swift",
+        "Objective-C",
+        "UIKit",
+        "ReactiveSwift",
+        "Combine",
+        "Core Data",
+        "Tuist",
+        "AudioKit"
+      ],
+      "text": "I have very limited SwiftUI experience, but getting up to speed is the fun part.\n"
+    },
+    {
+      "name": "Web",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "React",
+        "Vue",
+        "Django",
+        "Flask",
+        "Pyramid",
+        "CSS (I\u2019m serious)",
+        "Node.js",
+        "websockets"
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Details About Asana",
+      "text": "As a manager, I:\n\n- Managed both the iOS and Android teams\n- Briefly ran the engineering internship program\n- Defined how mobile teams collaborated with web partner teams on features\n- Coached an experienced engineer through defining the next version of the iOS app architecture\n\nAs an engineer, I:\n\n- Redesigned the Asana rich text editor as a hybrid web view to enable shipping rich text features on all platforms at once while maintaining native UX\n- Wrote a code generator for the iOS and Android datastores\n- Built an internal HTML mirror of our Markdown documentation, used daily by dozens of engineers\n- Drove another iteration of our iOS architecture, and a successful years-long effort to migrate everything\n- Migrated our Xcode project to Tuist\n- Drove a successful effort to split our code into modules to improve build times by 80%\n- Gained a deep understanding of Xcode\u2019s localization tools in order to migrate from a good translation management system to a worse but cheaper one\n- Collaborated with leaders across Asana Mobile to guide technical strategy, prioritize features, and improve processes\n- Mentored other engineers in exercising agency and leadership in the Asana R&D org\n- Built and shipped too many new features and screen redesigns to list here\n- Generally served as the go-to expert on any given topic and a pinch hitter for arbitrary responsibilities\n"
+    }
+  ]
+}
