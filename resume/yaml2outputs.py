@@ -11,7 +11,6 @@ import yaml
 data_dir = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
 
 OUTPUTS = [
-    ("typst_template.jinja2", "resume.typst"),
     ("html_template.html", "resume.html"),
 ]
 
@@ -24,21 +23,14 @@ def main():
     args = p.parse_args()
 
     in_path = pathlib.Path(args.file)
-    out_path = data_dir / "resume.typst"
 
     with in_path.open("r") as f:
         data = yaml.safe_load(f)
 
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(str(data_dir)))
+    env.filters["comma_list"] = comma_list
     env.filters["date_range"] = date_range
     env.filters["md"] = md
-    env.filters["typst_comma_list"] = typst_comma_list
-    env.filters["typst_text"] = typst_text
-    env.filters["split_into_paragraphs"] = split_into_paragraphs
-
-    typst_src = env.get_template("typst_template.jinja2").render(**data)
-    with out_path.open("w") as f:
-        f.write(typst_src)
 
     for i in range(4):
         write_html(i + 1, 4, data, env)
@@ -71,20 +63,6 @@ def write_html(n, total, data, env):
 LINK_RE = re.compile(r'\<a href="([^"]+)"\>(.*?)\</a\>')
 
 
-def typst_text(s, literal_linebreaks=False):
-    def link_sub(m):
-        return f'#link("{m.group(1)}")[{m.group(2)}]'
-
-    s = LINK_RE.sub(link_sub, s)
-    s = s.replace("@", r"\@")
-    s = s.replace("<br>", " \\")
-    if literal_linebreaks:
-        return s
-    else:
-        s = s.replace("\n", "\n\n")
-        return s.strip()
-
-
 def date_range(s):
     en_dash = "–"
     if s["startDate"] == s["endDate"]:
@@ -93,16 +71,12 @@ def date_range(s):
         return f'{s["startDate"]}{en_dash}{s["endDate"]}'
 
 
-def split_into_paragraphs(s):
-    return s.split("\n")
-
-
-def typst_comma_list(vals):
-    return ", ".join(vals)
-
-
 def md(s):
     return Markup(markdown.markdown(s))
+
+
+def comma_list(vals):
+    return ", ".join(vals)
 
 
 if __name__ == "__main__":

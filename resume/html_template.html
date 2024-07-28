@@ -96,9 +96,7 @@
           <aside>{{ job|date_range }}</aside>
         </div>
         <h4>{{ job.position|safe }}</h4>
-        {% for p in job.summary|split_into_paragraphs %}
-        <p>{{ p|safe }}</p>
-        {% endfor %} {% endfor %}
+        {{ job.summary|md }} {% endfor %}
       </section>
 
       <section class="PersonalProjects">
@@ -114,9 +112,7 @@
             {% endif %}({{ project|date_range }})
           </aside>
         </div>
-        {% for p in project.description|split_into_paragraphs %}
-        <p>{{ p|safe }}</p>
-        {% endfor %} {% endfor %}
+        {{ project.description|md }} {% endfor %}
       </section>
 
       <section class="Education">
@@ -126,9 +122,7 @@
           <h3>{{ ed.institution|safe }}</h3>
           <aside>{{ ed|date_range }}</aside>
         </div>
-        {% for p in ed.summary|split_into_paragraphs %}
-        <p>{{ p|safe }}</p>
-        {% endfor %} {% endfor %}
+        {{ ed.summary|md }} {% endfor %}
       </section>
 
       <section class="Skills">
@@ -138,11 +132,8 @@
         <div class="SplitHeading">
           <h3>{{ skillset.name|safe }}</h3>
         </div>
-        <p>{{ skillset.keywords|typst_comma_list }}</p>
-        {% if skillset.text %} {% for p in skillset.text|split_into_paragraphs
-        %}
-        <p>{{ p|safe }}</p>
-        {% endfor %}{% endif %}{% endfor %}
+        <p>{{ skillset.keywords|comma_list }}</p>
+        {% if skillset.text %}{{ skillset.text|md }}{% endif %}{% endfor %}
       </section>
 
       {% for appendix in appendices %}

@@ -35,4 +35,4 @@ devserver:
 	$(PELICAN) -lr --port 8001
 
 resume:
-	cd resume && make all
+	cd resume && ./build.sh
