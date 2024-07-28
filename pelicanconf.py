@@ -25,6 +25,7 @@ STATIC_PATHS = [
     "timeline",
     "rexpaint_manual.html",
     "resume.html",
+    "resume.json",
 ]
 
 AUTHOR = "Steve Landey"

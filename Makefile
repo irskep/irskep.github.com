@@ -25,6 +25,9 @@ pelican:
 resume-html:
 	poetry run python -m resume.yaml2html -f resume/resume.yaml -o content/resume.html
 
+resume-json:
+	poetry run python -m resume.yaml2json -f resume/resume.yaml -o content/resume.json	
+
 resume-pdf:
 	typst compile resume/resume.typ content/downloads/Steve_Landey_resume.pdf
 
