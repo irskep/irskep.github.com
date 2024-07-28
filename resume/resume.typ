@@ -1,5 +1,9 @@
 #let data = yaml("resume.yaml");
 
+// FUNCTIONS
+
+// Jankyparse the tiniest subset of HTML so I can render the same data as HTML very easily.
+// Just converts <a> to #link and <br> to \.
 #let html2typst = (text) => {
   let text = text
     .replace(regex("<br>\s+"), s => "\\\n")
@@ -15,6 +19,7 @@
   return eval("[" + text + "]")
 }
 
+// If an item has the same startDate and endDate, return a range string. Otherwise just return startDate.
 #let date_range = (obj) => {
   if obj.startDate == obj.endDate {
     return obj.startDate
@@ -23,9 +28,7 @@
   }
 }
 
-#let comma_list = (obj) => {
-  return obj.join(", ")
-}
+// GLOBAL STYLES
 
 #set par(justify: true, leading: 4pt)
 #set text(font: "Charter", size: 10pt)
@@ -50,6 +53,8 @@
   #text(font: "Charter", size: 10pt, weight: "extralight", style: "italic", it.body)
 ]
 
+// LAYOUT HELPERS
+
 #let split(_l, _r) = block(
   width: 100%,
   below: 6pt,
@@ -67,6 +72,8 @@
     #link("mailto:#data.basics.email", data.basics.email) \
     #link(data.basics.url, data.basics.url)
   ])
+
+// CONTENT
 
 == Role Fit <role-fit>
 #html2typst(data.basics.summary)
@@ -96,7 +103,6 @@
 ]
 
 == Skills for the Keyword Filters
-
 #show heading.where(
   level: 3
 ): it => block(width: 100%, below: 11pt)[
@@ -109,7 +115,7 @@
   ..data.skills.map(skillset => [
     === #skillset.name
     
-    #comma_list(skillset.keywords)
+    #skillset.keywords.join(", ")
     
     #if "text" in skillset {
       [#html2typst(skillset.at("text"))]
