@@ -3,7 +3,9 @@ import os
 import pathlib
 import re
 
+import markdown
 import jinja2
+from markupsafe import Markup
 import yaml
 
 data_dir = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
@@ -29,7 +31,9 @@ def main():
 
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(str(data_dir)))
     env.filters["date_range"] = date_range
+    env.filters["md"] = md
     env.filters["typst_comma_list"] = typst_comma_list
+    env.filters["remove_typst_linebreaks"] = remove_typst_linebreaks
     env.filters["typst_text"] = typst_text
     env.filters["split_into_paragraphs"] = split_into_paragraphs
 
@@ -68,14 +72,17 @@ def write_html(n, total, data, env):
 LINK_RE = re.compile(r'\<a href="([^"]+)"\>(.*?)\</a\>')
 
 
-def typst_text(s):
+def typst_text(s, literal_linebreaks=False):
     def link_sub(m):
         return f'#link("{m.group(1)}")[{m.group(2)}]'
 
     transformed_links = LINK_RE.sub(link_sub, s)
     transformed_chars = transformed_links.replace("@", r"\@")
-    transformed_linebreaks = transformed_chars.replace("\n", "\n\n")
-    return transformed_linebreaks.strip()
+    if literal_linebreaks:
+        return transformed_chars
+    else:
+        transformed_linebreaks = transformed_chars.replace("\n", "\n\n")
+        return transformed_linebreaks.strip()
 
 
 def date_range(s):
@@ -92,6 +99,18 @@ def split_into_paragraphs(s):
 
 def typst_comma_list(vals):
     return ", ".join(vals)
+
+
+TYPST_LB_RE = re.compile(r"[\\]")
+
+
+def remove_typst_linebreaks(s):
+    result = TYPST_LB_RE.sub("", s)
+    return Markup(result)
+
+
+def md(s):
+    return Markup(markdown.markdown(s))
 
 
 if __name__ == "__main__":

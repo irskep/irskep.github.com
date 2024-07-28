@@ -17,18 +17,32 @@ html {
   color: var(--fg);
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
-  list-style: none;
+ul {
+  list-style-type: disc;
+  margin-top: 1em;
+  padding-left: 1.5em;
+  line-height: 145%;
 }
 
 img {
@@ -49,13 +63,17 @@ body {
   transform: rotate(1deg);
 }
 
-h1, h2, address {
+h1,
+h2,
+address {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
 }
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   color: var(--link);
 }
 
@@ -94,7 +112,10 @@ p {
 
 /* layout */
 
-h3, aside, p, address {
+h3,
+aside,
+p,
+address {
   margin-top: 1rem;
 }
 
@@ -135,7 +156,7 @@ article {
   max-width: calc(100% - 8rem);
 }
 
-@media(min-width: 30rem) {
+@media (min-width: 30rem) {
   .SplitHeading {
     display: flex;
     width: 100%;
@@ -146,27 +167,49 @@ article {
 /* rainbow links */
 
 a {
-  text-decoration:none;
-  animation:rainbow 2s linear infinite alternate;
+  text-decoration: none;
+  animation: rainbow 2s linear infinite alternate;
 }
 a:hover {
   display: inline-block;
-  transform: scale(2.0, 2.0);
+  transform: scale(2, 2);
   text-decoration: underline;
 }
 
 @keyframes rainbow {
-    0%   {color:red;        }
-    10%  {color:orange;     }
-    20%  {color:gold;       }
-    30%  {color:yellow;     }
-    40%  {color:yellowgreen;}
-    50%  {color:green;      }
-    60%  {color:cyan;       }
-    70%  {color:blue;       }
-    80%  {color:violet;     }
-    90%  {color:magenta;    }
-    100% {color:indigo;     }
+  0% {
+    color: red;
+  }
+  10% {
+    color: orange;
+  }
+  20% {
+    color: gold;
+  }
+  30% {
+    color: yellow;
+  }
+  40% {
+    color: yellowgreen;
+  }
+  50% {
+    color: green;
+  }
+  60% {
+    color: cyan;
+  }
+  70% {
+    color: blue;
+  }
+  80% {
+    color: violet;
+  }
+  90% {
+    color: magenta;
+  }
+  100% {
+    color: indigo;
+  }
 }
 
 /* wiggle paragraphs */
@@ -212,9 +255,15 @@ p:nth-of-type(12) {
 }
 
 @keyframes wiggle {
-  0% {transform: translateX(-10px);}
-  50% {transform: translateX(10px);}
-  100% {transform: translateX(-10px);}
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
 }
 
 /* marquee subtitles */

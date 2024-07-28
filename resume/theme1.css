@@ -5,18 +5,39 @@ html {
   --footer-border: black;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
+footer ol,
+footer ul {
+  margin-top: 0;
+  padding-left: 0;
   list-style: none;
+}
+
+ul {
+  list-style-type: disc;
+  margin-top: 1em;
+  line-height: 145%;
+  padding-left: 1.5em;
 }
 
 img {
@@ -29,14 +50,17 @@ img {
 body {
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga" 1, "kern" 1;
-  font-family: "Lora", "Palatino", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Lora", "Palatino", "Baskerville Old Face", Garamond,
+    "Times New Roman", serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
   font-size: 14px;
 }
 
-h1, h2, address {
+h1,
+h2,
+address {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-variant: normal;
@@ -60,10 +84,12 @@ h2 {
   line-height: 2em;
 }
 
-h3, section.WorkHistory aside, section.Education aside {
+h3,
+section.WorkHistory aside,
+section.Education aside {
   font-size: 1.4rem;
   line-height: 1em;
-  margin-top: 1.4rem
+  margin-top: 1.4rem;
 }
 
 section.PersonalProjects aside {
@@ -88,7 +114,7 @@ p {
 
 article {
   margin: 2rem auto 4rem 0;
-  max-width: 40rem;
+  max-width: 41rem;
   padding: 0 2rem;
 }
 

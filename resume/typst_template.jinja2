@@ -88,6 +88,10 @@
 {% endfor %}
 )
 
-== Location Requirements
+{% for appendix in appendices -%}
+== {{ appendix.title }}
 
-{{ location|typst_text }}
+#columns(2)[
+{{ appendix.text|typst_text(literal_linebreaks=True) }}
+]
+{% endfor %}

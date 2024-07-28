@@ -84,7 +84,7 @@
 
       <section class="RoleFit">
         <h2>Role Fit</h2>
-        <p>{{ basics.summary }}</p>
+        <p>{{ basics.summary|remove_typst_linebreaks }}</p>
       </section>
 
       <section class="WorkHistory">
@@ -145,12 +145,12 @@
         {% endfor %}{% endif %}{% endfor %}
       </section>
 
+      {% for appendix in appendices %}
       <section class="Location">
-        <h2>Location Requirements</h2>
-        {% for p in location|split_into_paragraphs %}
-        <p>{{ p|safe }}</p>
-        {% endfor %}
+        <h2>{{ appendix.title }}</h2>
+        {{ appendix.text|md }}
       </section>
+      {% endfor %}
     </article>
 
     <article>

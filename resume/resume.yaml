@@ -5,7 +5,9 @@ basics:
   location:
     city: San Francisco, CA
   summary: >
-    For a better look at the shape of my current role and what I’m looking for in my next one, please click here: <a href="https://steveasleep.com/professional.html">https://steveasleep.com/professional.html</a>
+    I will work remotely, or within a 45 minute bike or transit commute from where I live in SF.
+    For a better look at the shape of my current role and what I’m looking for in my next one, please click here: \
+    <a href="https://steveasleep.com/professional.html">https://steveasleep.com/professional.html</a>
 
 work:
   - name: Asana
@@ -18,6 +20,8 @@ work:
       Throughout this time, I have been responsible for a few org-wide areas like maintaining the engineering blog, helping people release open source software, and running a tech talk series.
 
       After nine years doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. So far, the shape of this work is writing TypeScript business logic and writing services in Python to support our AI efforts.
+
+      There is more detailed information about my time at Asana on the next page.
 
   - name: Hipmunk
     position: iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018) <ios-engineer-2015-mobile-team-lead-2016-engineering-manager-2017-2018>
@@ -112,10 +116,31 @@ education:
         "Django",
         "Flask",
         "Pyramid",
-        "CSS (I'm serious)",
+        "CSS (I’m serious)",
         "Node.js",
         "websockets",
       ]
 
-location: >
-  I will work remotely, or within a 45 minute bike or transit commute from my home in San Francisco.
+appendices:
+  - title: "Details About Asana"
+    text: |
+      As a manager, I:
+
+      - Managed both the iOS and Android teams
+      - Briefly ran the engineering internship program
+      - Defined how mobile teams collaborated with web partner teams on features
+      - Coached an experienced engineer through defining the next version of the iOS app architecture
+
+      As an engineer, I:
+
+      - Redesigned the Asana rich text editor as a hybrid web view to enable shipping rich text features on all platforms at once while maintaining native UX
+      - Wrote a code generator for the iOS and Android datastores
+      - Built an internal HTML mirror of our Markdown documentation, used daily by dozens of engineers
+      - Drove another iteration of our iOS architecture, and a successful years-long effort to migrate everything
+      - Migrated our Xcode project to Tuist
+      - Drove a successful effort to split our code into modules to improve build times by 80%
+      - Gained a deep understanding of Xcode’s localization tools in order to migrate from a good translation management system to a worse but cheaper one
+      - Collaborated with leaders across Asana Mobile to guide technical strategy, prioritize features, and improve processes
+      - Mentored other engineers in exercising agency and leadership in the Asana R&D org
+      - Built and shipped too many new features and screen redesigns to list here
+      - Generally served as the go-to expert on any given topic and a pinch hitter for arbitrary responsibilities
