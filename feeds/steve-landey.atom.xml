@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Landey - Steve Landey</title><link href="https://steveasleep.com/" rel="alternate"></link><link href="https://steveasleep.com/feeds/steve-landey.atom.xml" rel="self"></link><id>https://steveasleep.com/</id><updated>2018-09-29T00:00:00-07:00</updated><subtitle></subtitle><entry><title>The blog has a new home</title><link href="https://steveasleep.com/the-blog-has-a-new-home.html" rel="alternate"></link><published>2018-09-29T00:00:00-07:00</published><updated>2018-09-29T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2018-09-29:/the-blog-has-a-new-home.html</id><content type="html">&lt;p&gt;This blog continues at &lt;a href="https://blog.steveasleep.com"&gt;blog.steveasleep.com&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Steve Landey - Steve Landey</title><link href="https://steveasleep.com/" rel="alternate"></link><link href="https://steveasleep.com/feeds/steve-landey.atom.xml" rel="self"></link><id>https://steveasleep.com/</id><updated>2018-09-29T00:00:00-07:00</updated><entry><title>The blog has a new home</title><link href="https://steveasleep.com/the-blog-has-a-new-home.html" rel="alternate"></link><published>2018-09-29T00:00:00-07:00</published><updated>2018-09-29T00:00:00-07:00</updated><author><name>Steve Landey</name></author><id>tag:steveasleep.com,2018-09-29:/the-blog-has-a-new-home.html</id><content type="html">&lt;p&gt;This blog continues at &lt;a href="https://blog.steveasleep.com"&gt;blog.steveasleep.com&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.steveasleep.com/"&gt;New&amp;nbsp;blog&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://blog.steveasleep.com/feed/"&gt;&lt;span class="caps"&gt;RSS&lt;/span&gt;&amp;nbsp;feed&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="/articles/"&gt;Old&amp;nbsp;blog&lt;/a&gt;&lt;/p&gt;
@@ -645,10 +645,10 @@ pixel art&amp;nbsp;tool.&lt;/p&gt;
 &lt;p&gt;To add variety, I created a &lt;code&gt;rooms.csv&lt;/code&gt; file to define a few room&amp;nbsp;types:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;                                                      Monster   Item
 Shape,      Difficulty, Monsters,   Chance, Color,    Density,  Density
-box_random, 0.00,       *,          1.00,   #666666,  5.00,     5.00
-box_random, 1.00,       *,          1.00,   #886666,  5.00,     4.00
-box_random, 2.00,       *,          1.00,   #668866,  5.00,     3.00
-box_random, 3.00,       *,          1.00,   #886688,  5.00,     2.00
+box_random, 0.00,       &lt;span class="gs"&gt;*,          1.00,   #666666,  5.00,     5.00&lt;/span&gt;
+&lt;span class="gs"&gt;box_random, 1.00,       *&lt;/span&gt;,          1.00,   #886666,  5.00,     4.00
+box_random, 2.00,       &lt;span class="gs"&gt;*,          1.00,   #668866,  5.00,     3.00&lt;/span&gt;
+&lt;span class="gs"&gt;box_random, 3.00,       *&lt;/span&gt;,          1.00,   #886688,  5.00,     2.00
 box_full,   *,          verp_1      0.20,   #6666ff,  2.00,     4.00
                           |verp_2
                           |verp_3

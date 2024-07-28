@@ -380,10 +380,10 @@ ul.article-summary-list > li {
 <span class=o>+----------------------------------------+</span>
 </code></pre></div> <p>The player starts in <code>aa</code> and moves to <code>ab</code>, then <code>bb</code>, then <code>ba</code>, where the goal&nbsp;is.</p> <p>Here&#8217;s another map from early development, which splits the map in this&nbsp;way:</p> <p><img alt="Screenshot 2017-04-22 10.54.30.png" src=https://steveasleep.com/img/rogue_basement/2EE2A79C08555276A852AAEA4DBEA9C7.png></p> <p>And here&#8217;s one with just the first two partition lines, so you can see how the map is&nbsp;divided:</p> <p><img alt="Screenshot 2017-04-22 10.56.58.png" src=https://steveasleep.com/img/rogue_basement/6F0FA752B4F575565A46B67ABF9120B6.png></p> <p>And finally, here are the hallways that mark the transitions between each&nbsp;section:</p> <p><img alt="Screenshot 2017-04-22 11.40.44.png" src=https://steveasleep.com/img/rogue_basement/360C018F2FCC756A1A59049EB36E67AA.png></p> <p>Originally the colors were just for debugging, but I ended up leaving them in place because they signal&nbsp;specialness.</p> <p>To add variety, I created a <code>rooms.csv</code> file to define a few room&nbsp;types:</p> <div class=highlight><pre><span></span><code>                                                      Monster   Item
 Shape,      Difficulty, Monsters,   Chance, Color,    Density,  Density
-box_random, 0.00,       *,          1.00,   #666666,  5.00,     5.00
-box_random, 1.00,       *,          1.00,   #886666,  5.00,     4.00
-box_random, 2.00,       *,          1.00,   #668866,  5.00,     3.00
-box_random, 3.00,       *,          1.00,   #886688,  5.00,     2.00
+box_random, 0.00,       <span class=gs>*,          1.00,   #666666,  5.00,     5.00</span>
+<span class=gs>box_random, 1.00,       *</span>,          1.00,   #886666,  5.00,     4.00
+box_random, 2.00,       <span class=gs>*,          1.00,   #668866,  5.00,     3.00</span>
+<span class=gs>box_random, 3.00,       *</span>,          1.00,   #886688,  5.00,     2.00
 box_full,   *,          verp_1      0.20,   #6666ff,  2.00,     4.00
                           |verp_2
                           |verp_3
