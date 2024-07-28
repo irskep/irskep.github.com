@@ -8,9 +8,9 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-.PHONY: watch publish serve devserver stopserver resume
+.PHONY: watch serve devserver stopserver
 
-html: content/**
+output: content/** resume/** timeline
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --verbose
 
 clean:
@@ -22,17 +22,19 @@ serve:
 pelican:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-publish: pelican
-	cd timeline && yarn build && cd ..
-	cp resume/resume.html resume/resume*.html output/
-	cp -r timeline/dist output/timeline
+resume-html:
+	poetry run python -m resume.yaml2html -f resume/resume.yaml -o content/resume.html
 
-deploy: publish
+resume-pdf:
+	typst compile resume/resume.typ content/downloads/Steve_Landey_resume.pdf
+
+timeline: timeline/**
+	cd timeline && yarn build && cd ..
+	cp -r timeline/dist content/timeline
+
+deploy: output
 	poetry run ghp-import $(OUTPUTDIR) -b master
 	git push origin master:master
 
 devserver:
 	$(PELICAN) -lr --port 8001
-
-resume:
-	cd resume && ./build.sh

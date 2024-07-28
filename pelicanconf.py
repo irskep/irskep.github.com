@@ -22,7 +22,9 @@ STATIC_PATHS = [
     "js",
     "css/style.css",
     "CNAME",
+    "timeline",
     "rexpaint_manual.html",
+    "resume.html",
 ]
 
 AUTHOR = "Steve Landey"
