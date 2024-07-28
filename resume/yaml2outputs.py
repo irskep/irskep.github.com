@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 import pathlib
 import re
@@ -8,61 +9,48 @@ import jinja2
 from markupsafe import Markup
 import yaml
 
-data_dir = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
+JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader(str(DATA_DIR)))
 
-OUTPUTS = [
-    ("html_template.html", "resume.html"),
-]
+
+def filter(fn):
+    JINJA2_ENV.filters[fn.__name__] = fn
+    return fn
 
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("-f", "--file", default=str(data_dir / "resume.yaml"))
-    p.add_argument("-o", "--output", default=str(data_dir / "resume.typst"))
+    p.add_argument("-f", "--file", default=str(DATA_DIR / "resume.yaml"))
+    p.add_argument("-o", "--output", default=str(DATA_DIR / "resume.html"))
 
     args = p.parse_args()
 
     in_path = pathlib.Path(args.file)
+    out_path = pathlib.Path(args.output)
 
     with in_path.open("r") as f:
         data = yaml.safe_load(f)
 
-    env = jinja2.Environment(loader=jinja2.FileSystemLoader(str(data_dir)))
-    env.filters["comma_list"] = comma_list
-    env.filters["date_range"] = date_range
-    env.filters["md"] = md
-
-    for i in range(4):
-        write_html(i + 1, 4, data, env)
-
-
-def write_html(n, total, data, env):
-    def filename(nn):
-        if nn == 1:
-            return "resume.html"
+    stylesheets = []
+    for path in sorted((DATA_DIR / "themes").iterdir()):
+        name = path.stem
+        default_suffix = " - default"
+        stylesheet = {"name": name, "css": path.read_text()}
+        if name.endswith(default_suffix):
+            name = name[: -len(default_suffix)]
+            stylesheet["name"] = name
+            stylesheets.insert(0, stylesheet)
         else:
-            return f"resume{nn}.html"
+            stylesheets.append(stylesheet)
 
-    with (data_dir / f"theme{n}.css").open("r") as f:
-        css = f.read()
-
-    prev_url = None
-    next_url = None
-    if n > 1:
-        prev_url = filename(n - 1)
-    if n < total:
-        next_url = filename(n + 1)
-
-    result = env.get_template("html_template.html").render(
-        css=css, next_url=next_url, prev_url=prev_url, total=total, n=n, **data
+    out_path.write_text(
+        JINJA2_ENV.get_template("html_template.html").render(
+            stylesheets=stylesheets, **data
+        )
     )
-    with (data_dir / filename(n)).open("w") as f:
-        f.write(result)
 
 
-LINK_RE = re.compile(r'\<a href="([^"]+)"\>(.*?)\</a\>')
-
-
+@filter
 def date_range(s):
     en_dash = "–"
     if s["startDate"] == s["endDate"]:
@@ -71,12 +59,19 @@ def date_range(s):
         return f'{s["startDate"]}{en_dash}{s["endDate"]}'
 
 
+@filter
 def md(s):
     return Markup(markdown.markdown(s))
 
 
+@filter
 def comma_list(vals):
     return ", ".join(vals)
+
+
+@filter
+def as_json(val):
+    return Markup(json.dumps(val))
 
 
 if __name__ == "__main__":

@@ -125,6 +125,10 @@ aside {
 
 /* layout */
 
+header {
+  padding: 1rem 2rem 0 2rem;
+}
+
 article {
   margin: 2rem auto 4rem 0;
   max-width: 45rem;
