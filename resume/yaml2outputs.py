@@ -33,7 +33,6 @@ def main():
     env.filters["date_range"] = date_range
     env.filters["md"] = md
     env.filters["typst_comma_list"] = typst_comma_list
-    env.filters["remove_typst_linebreaks"] = remove_typst_linebreaks
     env.filters["typst_text"] = typst_text
     env.filters["split_into_paragraphs"] = split_into_paragraphs
 
@@ -76,13 +75,14 @@ def typst_text(s, literal_linebreaks=False):
     def link_sub(m):
         return f'#link("{m.group(1)}")[{m.group(2)}]'
 
-    transformed_links = LINK_RE.sub(link_sub, s)
-    transformed_chars = transformed_links.replace("@", r"\@")
+    s = LINK_RE.sub(link_sub, s)
+    s = s.replace("@", r"\@")
+    s = s.replace("<br>", " \\")
     if literal_linebreaks:
-        return transformed_chars
+        return s
     else:
-        transformed_linebreaks = transformed_chars.replace("\n", "\n\n")
-        return transformed_linebreaks.strip()
+        s = s.replace("\n", "\n\n")
+        return s.strip()
 
 
 def date_range(s):
@@ -99,14 +99,6 @@ def split_into_paragraphs(s):
 
 def typst_comma_list(vals):
     return ", ".join(vals)
-
-
-TYPST_LB_RE = re.compile(r"[\\]")
-
-
-def remove_typst_linebreaks(s):
-    result = TYPST_LB_RE.sub("", s)
-    return Markup(result)
 
 
 def md(s):
