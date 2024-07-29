@@ -8,7 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-.PHONY: watch serve devserver stopserver
+.PHONY: watch serve devserver stopserver deploy-resume
 
 output: content/** resume/** timeline
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --verbose
@@ -35,10 +35,13 @@ timeline: timeline/**
 	cd timeline && yarn build && cd ..
 	cp -r timeline/dist content/timeline
 
+deploy-resume: resume-json
+	zsh update_resume_json_gist.sh
+
 deploy: output
 	poetry run ghp-import $(OUTPUTDIR) -b master
 	git push origin master:master
-	./update_resome_json_gist.sh
+	./update_resume_json_gist.sh
 
 devserver:
 	$(PELICAN) -lr --port 8001

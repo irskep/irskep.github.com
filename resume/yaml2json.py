@@ -45,6 +45,10 @@ def main():
               item[k] = fix_spacing(item[k])
     args.output.write_text(json.dumps(data, indent=2))
 
+    (DATA_DIR / "resume.github.json").write_text(json.dumps({
+        "description": "Automatic update","files":{"resume.json":{"content":args.output.read_text()}}
+    }))
+
 
 if __name__ == "__main__":
     main()
