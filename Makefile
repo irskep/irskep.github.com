@@ -38,6 +38,7 @@ timeline: timeline/**
 deploy: output
 	poetry run ghp-import $(OUTPUTDIR) -b master
 	git push origin master:master
+	./update_resome_json_gist.sh
 
 devserver:
 	$(PELICAN) -lr --port 8001
