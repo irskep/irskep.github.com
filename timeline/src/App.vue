@@ -310,7 +310,7 @@ export default {
           `I rebuilt one of our oldest and most critical screens from the ground up
           to provide a better user experience and a better platform for us to
           iterate on.`,
-          null,
+          "m-right",
         ],
         [
           "June 2024",
