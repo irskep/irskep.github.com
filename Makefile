@@ -33,7 +33,7 @@ resume-pdf:
 
 timeline: timeline/**
 	cd timeline && yarn build && cd ..
-	cp -r timeline/dist content/timeline
+	rsync -a timeline/dist content/timeline
 
 deploy-resume: resume-json
 	zsh update_resume_json_gist.sh
