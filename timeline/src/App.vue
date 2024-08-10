@@ -301,8 +301,24 @@ export default {
           `I worked with a small team in a hackathon to present a new vision
           for how to use one of our top 3 most visited tabs in the mobile app.
           This kicked off a project to take the concept to production, which
-          is still in progress.`,
+          is now complete.`,
           "m-right",
+        ],
+        [
+          "January-February 2024",
+          "Rewrote the OS task screen",
+          `I rebuilt one of our oldest and most critical screens from the ground up
+          to provide a better user experience and a better platform for us to
+          iterate on.`,
+          null,
+        ],
+        [
+          "June 2024",
+          "Moved to AI Workflows team",
+          `I decided it was time to change stacks for a while. I joined an “AI” team
+          not because I’m in love with LLMs, but because it presented the biggest
+          opportunity to do a wide variety of things.`,
+          null,
         ],
       ],
     };
