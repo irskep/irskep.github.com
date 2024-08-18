@@ -306,7 +306,7 @@ export default {
         ],
         [
           "January-February 2024",
-          "Rewrote the OS task screen",
+          "Rewrote the iOS task screen",
           `I rebuilt one of our oldest and most critical screens from the ground up
           to provide a better user experience and a better platform for us to
           iterate on.`,
