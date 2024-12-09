@@ -10,7 +10,7 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 .PHONY: watch serve devserver stopserver deploy-resume
 
-output: content/** resume/** timeline
+output-debug: content/** resume/** timeline
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) --verbose
 
 clean:
@@ -19,7 +19,7 @@ clean:
 serve:
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server 8001
 
-pelican:
+output-release:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 resume-html:
@@ -38,7 +38,7 @@ timeline: timeline/**
 deploy-resume: resume-json
 	zsh update_resume_json_gist.sh
 
-deploy: output
+deploy: output-release
 	poetry run ghp-import $(OUTPUTDIR) -b master
 	git push origin master:master
 	./update_resume_json_gist.sh
