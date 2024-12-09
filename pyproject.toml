@@ -3,16 +3,15 @@ name = "steveasleep"
 version = "0.1.0"
 description = ""
 authors = ["Steve Landey <steve@steveasleep.com>"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
 appdirs = "^1.4.4"
 blinker = "^1.4"
 ghp-import = "^1.1.0"
-htmlmin = "^0.1.12"
 hyphenator = "^0.6.0"
 joblib = "^1.0.1"
-pelican-minify = "^0.9"
 pyparsing = "^2.4.7"
 python-dateutil = "^2.8.1"
 smartypants = "^2.0.1"

@@ -8,12 +8,7 @@ sys.path.append(".")
 
 PLUGINS = [
     "minchin.pelican.plugins.summary",
-    "minify",
 ]
-
-MINIFY = {
-    "remove_comments": True,
-}
 
 STATIC_PATHS = [
     "img",
@@ -64,7 +59,11 @@ MENUITEMS = (
             ("Old blog", "/articles/", None),
             # ('Pyglet tutorial', '/pyglettutorial.html'),
             ("Résumé", "/resume.html", None),
-            ("Why you'd want to hire me", "https://periodic-patio-e0c.notion.site/Why-you-d-want-to-hire-me-a2acc41e9928470994640911831dc990", None),
+            (
+                "Why you'd want to hire me",
+                "https://periodic-patio-e0c.notion.site/Why-you-d-want-to-hire-me-a2acc41e9928470994640911831dc990",
+                None,
+            ),
             # ('Game jam CV', '/game-jam-cv.html'),
         ],
     ),
@@ -188,4 +187,3 @@ JINJA_FILTERS = {
     "to_css_class": lambda s: s.lower().replace(" ", ""),
     "inline": inline_fn,
 }
-
