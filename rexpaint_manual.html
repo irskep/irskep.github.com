@@ -1,11 +1,20 @@
-<!DOCTYPE html><html xmlns=http://www.w3.org/1999/xhtml lang xml:lang> <head><meta charset=utf-8><meta name=generator content=pandoc><meta name=viewport content="width=device-width, initial-scale=1.0, user-scalable=yes"><title>REXPaint Manual</title><style type=text/css>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>REXPaint Manual</title>
+  <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style><!--[if lt IE 9]>
+  </style>
+  <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]--><style type=text/css>
+  <![endif]-->
+  <style type="text/css">
   /*
    * https://gist.github.com/killercup/5917178
    */
@@ -356,7 +365,878 @@
       padding-right: 1rem;
     }
   }
-  </style></head> <body> <nav id=TOC> <ul> <li><a href=#rexpaint-v1.04---manual>REXPaint v1.04 - Manual</a><ul> <li><a href=#background>Background</a></li> <li><a href=#features>Features</a></li> </ul></li> <li><a href=#canvas>Canvas</a><ul> <li><a href=#resizing>Resizing</a></li> <li><a href=#shifting>Shifting</a></li> </ul></li> <li><a href=#drawing>Drawing</a><ul> <li><a href=#apply>Apply</a></li> <li><a href=#draw-modes>Draw Modes</a></li> <li><a href=#preview>Preview</a></li> </ul></li> <li><a href=#undo>Undo</a></li> <li><a href=#fonts>Fonts</a><ul> <li><a href=#glyphs>Glyphs</a></li> <li><a href=#glyph-swapping>Glyph Swapping</a></li> </ul></li> <li><a href=#palette>Palette</a><ul> <li><a href=#selection-&-editing>Selection &amp; Editing</a></li> <li><a href=#color-picker>Color Picker</a></li> <li><a href=#palette-files>Palette Files</a></li> <li><a href=#extraction>Extraction</a></li> <li><a href=#adding>Adding</a></li> <li><a href=#organization>Organization</a></li> <li><a href=#palette-swapping>Palette Swapping</a></li> <li><a href=#color-shifting>Color Shifting</a></li> <li><a href=#transparency>Transparency</a></li> </ul></li> <li><a href=#layers>Layers</a><ul> <li><a href=#control>Control</a></li> <li><a href=#active-layer>Active Layer</a></li> <li><a href=#order>Order</a></li> <li><a href=#visibility-&-locking>Visibility &amp; Locking</a></li> <li><a href=#merging>Merging</a></li> <li><a href=#extended-layers-mode>Extended Layers Mode</a></li> </ul></li> <li><a href=#browsing>Browsing</a><ul> <li><a href=#file/image-control>File/Image Control</a></li> <li><a href=#viewing-&-editing>Viewing &amp; Editing</a></li> <li><a href=#saving>Saving</a></li> <li><a href=#exporting>Exporting</a></li> </ul></li> <li><a href=#customization>Customization</a><ul> <li><a href=#options>Options</a></li> <li><a href=#skins>Skins</a></li> <li><a href=#additional-resources>Additional Resources</a></li> </ul></li> <li><a href=#commands>Commands</a><ul> <li><a href=#font>Font</a></li> <li><a href=#palette-1>Palette</a></li> <li><a href=#drawing-1>Drawing</a></li> <li><a href=#text-tool>Text Tool</a></li> <li><a href=#apply-1>Apply</a></li> <li><a href=#canvas-1>Canvas</a></li> <li><a href=#layers-1>Layers</a></li> <li><a href=#info>Info</a></li> <li><a href=#color-picker-1>Color Picker</a></li> <li><a href=#browse>Browse</a></li> <li><a href=#image>Image</a></li> <li><a href=#resize>Resize</a></li> <li><a href=#general>General</a></li> </ul></li> <li><a href=#appendix-a:-known-issues>Appendix A: Known Issues</a></li> <li><a href=#appendix-b:-.xp-format-specification-(and-import-libraries)>Appendix B: .xp Format Specification (and Import Libraries)</a></li> <li><a href=#appendix-c:-external-libraries-and-tools>Appendix C: External Libraries and Tools</a></li> <li><a href=#appendix-d:-ansi-art-(.ans)>Appendix D: ANSI Art (.ans)</a></li> <li><a href=#appendix-e:-exportable-text-formats-(.txt,-.csv,-.xml,-bbcode)>Appendix E: Exportable Text Formats (.txt, .csv, .xml, BBCode)</a><ul> <li><a href=#csv>CSV</a></li> <li><a href=#xml>XML</a></li> <li><a href=#bbcode>BBCode</a></li> </ul></li> <li><a href=#appendix-f:-importing-text-files>Appendix F: Importing Text Files</a></li> <li><a href=#appendix-g:-importing-pngs>Appendix G: Importing PNGs</a></li> </ul> </nav> <h1 id=rexpaint-v1.04---manual>REXPaint v1.04 - Manual</h1> <h2 id=background>Background</h2> <p>There are a number of ASCII art editors available on the web, but most suffer from poor usability or small feature sets (one notable exception being eigenbom's awesome fork of ASCII Paint). For development of my own projects, I needed an application equipped with a wide range of tools for quickly drawing and manipulating ASCII art, as well as the ability to easily browse the images created as stored in their native format. Thus REXPaint was born.</p> <p>Over the years since its first public release, REXPaint has found use as a general purpose ASCII art editor, as well as a roguelike development tool for mockups, mapping, and design. I love seeing what people create with this program, so send me a link/copy if you've made something cool! (Or share it with us on the <a href="https://www.gridsagegames.com/forums/index.php?board=8.0">forums</a>)</p> <h2 id=features>Features</h2> <p>An overview of REXPaint's major features:</p> <ul> <li>Edit characters, foreground, and background colors separately</li> <li>Draw shapes and text</li> <li>Copy/cut/paste areas</li> <li>Undo/redo changes</li> <li>Preview effects simply by hovering the cursor over the canvas</li> <li>Palette manipulation</li> <li>Image-wide color tweaking and palette swaps</li> <li>True-color RGB/HSV color picker</li> <li>Create multi-layered images</li> <li>Zooming: Scale an image by changing font size on the fly</li> <li>Browse art assets and begin editing at the press of a button</li> <li>Images highly compressed</li> <li>Export PNGs for use in other programs or on the web</li> <li>Export .ANS files for ANSI art</li> <li>Other exportable formats: TXT, CSV, XML, XPM, BBCode</li> <li>Import .TXT files</li> <li>Skinnable interface</li> </ul> <h1 id=canvas>Canvas</h1> <p>The black area to the right of the tool menus is the canvas view where all image editing occurs, and the image itself initially appears as a box outline that defaults to the size of the entire canvas view.</p> <h2 id=resizing>Resizing</h2> <p>Resize the image as necessary (Ctrl-r), ideally before starting to draw so that later changes are not affected by a change in image dimensions. Resizing can be done at any time, but the dimensions are always based from the top-left corner of an image, so make sure the portion of a larger image you wish to retain is based in the top-left corner before shrinking it (move the relevant section with the copy tool).</p> <h2 id=shifting>Shifting</h2> <p>To view different parts of a large image (or reposition a smaller one), hold spacebar while left-clicking on the image and moving the mouse to drag it (Photoshop style). The numpad can also be used for eight-directional shifting of the image, Enter resets its location, and Ctrl-Enter centers it.</p> <h1 id=drawing>Drawing</h1> <h2 id=apply>Apply</h2> <p>The apply menu determines what is actually produced by the current draw mode when you left-click on the image. Glyphs (characters), foreground color, and background color are each drawn/edited separately, and can be individually toggled on and off via the menu buttons or 'g', 'f', and 'b'. Thus if you activate &quot;glyph&quot; and deactivate &quot;fore&quot; and &quot;back,&quot; when you draw only the current glyph will be applied, while the image's colors remain unchanged. Activating all modes will overwrite the glyph and both foreground and background colors when drawing. (Turning all apply modes off would draw... nothing, and be completely pointless!)</p> <p>The colors to be applied are shown to the right of their button, and the current glyph is that highlighted/chosen among the characters in the font box. Change the glyph by left-clicking on a different one in the font box, and change the colors by either left-clicking on the color square (see Color Picker explanation further below) or chosing a color from the palette (LMB choses a color for the foreground, RMB for the background).</p> <h2 id=draw-modes>Draw Modes</h2> <p>Drawing modes define the shape and area of the image affected while drawing. Only one mode can be active at a time, and some modes have an alternate setting that changes their behavior (left-click on the active mode to toggle its secondary feature, or cycle through them if more than one).</p> <ul> <li><p>Cell ('c'): Applies the effect to a single &quot;cell&quot; (space) on the image. Hold LMB and move the cursor to keep drawing. Alternate mode: Auto-wall/auto-box drawing. While the current glyph is any of the single or double line characters (but not a single-double intersection), drawn lines and all adjacent lines of the same type (single/double) will be automatically reoriented to connect with one another. This is useful for creating map walls or boxes. Has no effect for other (non-line) glyphs, which will be drawn normally.</p></li> <li><p>Line ('l'): Applies the effect to a line. Left-click at the line's start and release the button at its end, or press RMB/ESC before releasing the button to cancel the line.</p></li> <li><p>Rect ('r'): Applies the effect to a rectangular area. Left-click at one corner of the rectangle and release the button at the opposite corner, or press RMB/ESC before releasing the button to cancel the rectangle. Alternate mode: Fills the entire rectangle instead of drawing an outline. Non-filled rects drawn with any line glyph will automatically create a properly oriented ASCII box.</p></li> <li><p>Oval ('o'): Like rect mode, but draws ovals. Alternate mode fills the oval. By default ovals are centered on the point chosen; to instead draw from any corner switch the oval drawing method via Alt-o.</p></li> <li><p>Fill ('i'): Applies the effect to all like cells attached to the one under the cursor. When comparing cells, fill mode only checks the attributes for which the apply mode is currently active. For example, if foreground color is the only active apply mode then fill mode propagates to all those attached cells with the same foreground color, regardless of their glyph or background color. Alternate Mode: Fill search is performed in 8 directions rather than 4, allowing the fill to travel along diagonals through obstacles.</p></li> <li><p>Text ('t'): Types text onto the image. See the Text Input section below for a list of valid commands.</p></li> <li><p>Copy (Ctrl-c): Copies a rectangular area of the image into the clipboard for later pasting. Always copies all attributes (glyph and colors) of the regardless of current apply settings. Alternate mode: Cut (Ctrl-x). Cut mode erases everything in a certain area after storing it to the clipboard.</p></li> <li><p>Paste (Ctrl-v): Paste the clipboard contents to the image. While the copy/cut command stores all glyph and color information, only those attributes for which the apply mode is currently active will by pasted. Alternate modes: Flip clipboard contents horizontally, vertically, or both (by default this also automatically converts any non-symmetrical glyphs with mirror images; to flip by position only and leave glyphs unchanged set &quot;Paste-flip ASCII&quot; to No in the options menu).</p></li> </ul> <h2 id=preview>Preview</h2> <p>While the cursor is hovering over the image, applicable draw modes (cell, fill, paste) will show a preview of what the image will look like assuming a left-click at that location. Remember this is true even for fill mode, which may cause the image to appear quite different, but is great for quickly visualizating changes without having to do a lot of applying and undo-ing. To temporarily hide the preview and see the image as it is, hold Shift or Alt.</p> <h1 id=undo>Undo</h1> <p>All image manipulation actions can be undone/redone (Ctrl-z/Ctrl-y, or just z/y). Undo histories are also saved separately for each image, thus you can freely switch between images in the browser and still come back to undo changes from a previous image. (Closing the program, however, will forget all undo states!)</p> <h1 id=fonts>Fonts</h1> <p>Images themselves do not store font information, instead remembering only what glyph/character index belongs at each position. This means you can dynamically change the size and/or appearance of an image by simply switching the font (Ctrl-PgUp/Dn or '&lt;'/'&gt;').</p> <p>By default, both the GUI and images use a standard 256-character code page 437 font. REXPaint makes this same font available at several sizes (and changes #254 and #255 to radio boxes). You can edit these fonts (in the &quot;data/fonts/&quot; directory), and/or add new ones by creating a new .png bitmap and listing it in the &quot;data/fonts/_config.xt&quot; text file. Fonts do not require square glyphs (rectangles are okay), but both the GUI and Art font must use the same dimensions.</p> <p>When creating a custom font you could even replace some or all of the glyphs/characters/symbols, though you should leave the GUI font unchanged so the interface appears as expected (notice how _config.xt defines the GUI and art fonts separately—they do not have to use the same font!).</p> <p>One supported feature not used by the included fonts is alpha transparency. Font bitmaps are drawn as white on black, but know that using shades of gray will cause the foreground color to be semi-transparent to a degree equal to the shade of gray (e.g., pixels drawn using 128,128,128 gray will apear as 50% transparent). Also, even though they may only use two colors, bitmaps must be saved as 32-bit pngs (using 8-bit pngs will crash REXPaint). The font bitmap can use any background color, where REXPaint will automatically detect it by checking the upper leftmost pixel (at 0,0). By extension, if the character at the first position wants to use that pixel, REXPaint will not be able to automagically detect the background color; in this situation, you can override the background color key with a specific RGB color in REXPaint.cfg via fontKeyColorOverride.</p> <h2 id=glyphs>Glyphs</h2> <p>Select a glyph to draw with by clicking on it in the font window. Once you have a partially-drawn image the fastest way to load a previously used glyph, including even its foreground/background colors, is to simply right-click on it in the image.</p> <p>For reference you can toggle highlighting of all used glyphs by pressing 'u' (the highlights are updated only every five seconds, and will be slow in the case of massive images since the entire image must be searched for matches—not recommended to leave this mode on when editing especially large images). To see where a specific glyph has been used in the image's currently active layer, hold Alt while hovering the cursor over it in the font window.</p> <h2 id=glyph-swapping>Glyph Swapping</h2> <p>To replace every occurence of a glyph in all visible unlocked layers of an image, Ctrl-LMB on it in the font window, then Ctrl-LMB on the new glyph to replace it with. After selecting a source glyph, the swap can be cancelled by again pressing Ctrl-LMB on the same glyph.</p> <h1 id=palette>Palette</h1> <p>Palettes in REXPaint are tools intended purely for color selection and organization, thus images themselves do not store palettes (i.e., image colors are not &quot;indexed&quot;) and you can edit images without ever touching the palette. That said, palettes provide a convenient way to unify/standardize colors across multiple images, along with a variety of other color manipulation features.</p> <h2 id=selection-&-editing>Selection &amp; Editing</h2> <p>Left-clicking on a palette color (including an &quot;empty&quot; space, which is actually black) will select it as the foreground color; right-clicking selects it as the background color. Clicking on the same color again will allow you to edit it in the color picker (see below). Shift-clicking will also open the color picker, but once the new color is confirmed will also replace all matching colors in the image (applied to foreground and/or background, depending on which apply modes are active at the time, NOT whether LMB/RMB used).</p> <p>To see where a specific color has been used in the image's currently active layer, hold Alt while hovering the cursor over it in the palette window.</p> <h2 id=color-picker>Color Picker</h2> <p>The color picker is fairly straightforward—its features and layout are taken from Photoshop for those familiar with it. Left-click on a color to select it (you can also hold LMB and move the cursor to watch the new color and its values change), and click on it again to accept it (or press the OK button or Enter key). Alternatively, choose a precise color by specifying HSV/RGB number values (click on the number, or press 'h'/'s'/'v'/'r'/'g'/'b' for faster entry).</p> <p>By default the slider will be in hue mode, but you can set it to saturation or brightness mode by left-clicking on the corresponding box seen next to the S/V values.</p> <h2 id=palette-files>Palette Files</h2> <p>Any number of palettes can be created by clicking on the '+' button (switch between them with the buttons or '['/']' keys). New palettes are unnamed until saved (click on the 'S'), when they are stored in a text format in the &quot;data/palettes/&quot; directory. The files can be modified in any text editor (turn off line wrapping), though editing is generally most conveniently handled directly in the editor itself. Knowing where the palettes are stored can be useful for making copies or saving them to another location for safe-keeping. (You can also rename them, as the file name is the name displayed in REXPaint.)</p> <p>Remember to save a palette again after making any changes you want to keep (palettes are not automatically saved). Palette changes are NOT recorded as part of the undo history, so changes are permanent unless you previously saved a copy of the palette file.</p> <p>Colors can of course be edited directly in the palette file, using and of the four color formats described in the skins.xt file: named colors, RGB, HSV, or HEX (individual colors can even used different formats).</p> <h2 id=extraction>Extraction</h2> <p>Pressing Ctrl-Shift-e will create a new empty palette, then add to it all unique foreground and background colors found in the current image.</p> <h2 id=adding>Adding</h2> <p>Right-clicking on the foreground or background color shown in the apply menu will add it to the palette at the first empty (black) space found, if available. This can be useful when colors were created using the color picker through the apply menu before later deciding to add them to the palette.</p> <h2 id=organization>Organization</h2> <p>There are several commands that enable you to manipulate the palette itself for organizational purposes:</p> <ul> <li><p>Ctrl-Shift-o: Organize. Rearranges the palette colors by moving them into hue-major order. It doesn't always look perfect, but it's better than nothing if you have a horribly messy palette (and is a good place to start from when manually organizing such a palette).</p></li> <li><p>Ctrl-Shift-p: Purge. Removes from the palette all colors not found in the current image.</p></li> <li><p>Ctrl-LMB: Manual relocation. Control-click on two different palette positions to swap those two colors. As empty palette positions are actually black, you can safely &quot;move&quot; colors to these empty positions as well.</p></li> <li><p>CMB: Click on a source color, then on a target position (may be in the same or a different palette) to copy the source color. Useful for more quickly creating different variations/shades of a color when building a palette.</p></li> </ul> <h2 id=palette-swapping>Palette Swapping</h2> <p>You can mimic a &quot;palette swap&quot; in the traditional sense by opening the target image and source palette and pressing Ctrl-Shift-w, then opening the target palette and pressing Ctrl-w. This will change all colors found in both the image and source palette to those colors found at the same position in the target palette. After setting the source palette you can apply the target palette to any number of other images.</p> <p>To swap all instances of a single color throughout an image (foreground and background, all layers) with another in the same palette, Shift-LMB on the first color and then Shift-LMB on the color you want to change it to.</p> <h2 id=color-shifting>Color Shifting</h2> <p>Having a properly set up palette (ideally with shades of colors listed by row) also enables you to easily shift individual colors directly on an image to quickly get/test the right color/shade without manually selecting them in the palette every time. Hold Shift and use the left and right mouse buttons on the image to shift the foreground color based on its position in the palette (black and white palette positions are skipped); use Alt instead for background color. This only works for colors found in the current palette.</p> <p>Alternatively, press Ctrl-h/s/v to activate the respective HSV shifting mode, in which using the left/right mouse buttons and Shift/Alt as indicated above will instead tweak that characteristic of the target cell's foreground/background, completely ignoring palette colors. Return to palette-based shifting mode by toggling the current HSV shifting mode again.</p> <h2 id=transparency>Transparency</h2> <p>You'll notice the default palette appears to have a missing color, as does the color picker's hue slider. The color is actually there, but it's a background color set to 255,0,255 (hot pink) which REXPaint uses to identify transparent cells. This means two things: 1) It is impossible to use 255,0,255 as a background color in an image (as a foreground color it's okay), and 2) You can create mult-layered images where upper layers contain transparent sections through which lower layers are visible. Draw using the transparent background color to create a transparent cell/area, but know that the glyph and foreground must not be applied (deactivate them) because a transparent background will be automatically converted to black in order to make sure the foreground is visible in that case.</p> <h1 id=layers>Layers</h1> <p>Use of layers is completely optional, and a majority of users will probably do just fine with the single layer automatically created for an image. Layer functionality exists mostly for the workflow/editing benefits of keeping different components of an image on separate layers, or perhaps having alternate versions of a certain part of the image. Other advantages are limited since layers cannot currently be blended (REXPaint could support color blending and filtering modes, though this feature hasn't been added yet since there probably isn't a huge demand for it).</p> <h2 id=control>Control</h2> <p>Each image automatically comes with one base layer (required). More can be created with Ctrl-l or by clicking on the layer window's '+' button. A single image can have up to nine separate layers, and all newly created layers are automatically filled with transparent cells (255,0,255). Press the &quot;X&quot; button to delete a layer (deletion is not possible if there is only one layer remaining).</p> <h2 id=active-layer>Active Layer</h2> <p>The &quot;active layer&quot; is the one which effects are applied to when drawing to the image—its number will appear highlighted. Change the active layer by clicking on a different number, pressing 1~9, or using the mouse wheel while the cursor is over the canvas area.</p> <h2 id=order>Order</h2> <p>Layers are listed in top to bottom order, and their order determines which are drawn on top, so opaque parts of higher layers will obscure those portions of lower layers. The relative order of layers can be changed by clicking on the arrow buttons.</p> <h2 id=visibility-&-locking>Visibility &amp; Locking</h2> <p>Individual layers can be hidden from view, but the active layer must always be visible. (To hide the active layer, select a different layer first.) Note that while hidden layers are always saved as normal with the image data, they are NOT drawn when the image is exported, so make sure the image appears as intended before exporting.</p> <p>Any layer can be locked (Shift-# or the &quot;Lck&quot; button), which prevents editing it even by accident.</p> <h2 id=merging>Merging</h2> <p>Use the Ctrl-Shift-m command to merge the active layer downward, permanently combining it with the one below. Only the base layer cannot be merged (as there is nothing under it). This action is irreversible, so use it carefully.</p> <h2 id=extended-layers-mode>Extended Layers Mode</h2> <p>While a single image may include up to nine layers, normally only the lowest four of those will be listed in the Layers window. To view more than that, click the 'E' or press Ctrl-Shift-l to toggle Extended Layers Mode, which will cover the Info window but allow as many as nine layers to be listed at once. If you're using hotkeys for layer control, those will still work as usual even if those layers are not currently visible in the list.</p> <p>An '*' appears at the top right of the Layers window if an image contains more layers than currently listed, or it will instead show the layer number if a non-listed layer is currently active.</p> <p>Note that while Extended Layers Mode is active, the options and help menus are inaccessible, as they are normally opened via the Info window, which will be covered.</p> <h1 id=browsing>Browsing</h1> <p>Switch between paint mode and browse mode by clicking on the buttons at the top of the menu area or with the tab key. Browse mode allows you to view all the images created by REXPaint as found in the <code>images/</code> directory and any of its subdirectories (use Windows to add any subdirectories you need for organizational purposes, though note that file tree branches will be ignored beyond/deeper than four levels).</p> <h2 id=file/image-control>File/Image Control</h2> <p>You'll notice there is always one unnamed image created on startup; you don't have to modify or save it unless you want to. Additional new/empty images can be created by pressing Ctrl-n or through the New button in paint mode—these are added to the base path (<code>images/</code> by default). To create an empty image in a specific subdirectory, simply left-click the directory name.</p> <p>Realize that browse mode is mostly an image browser, not a full-featured file manager, so actions like image moving, directory operations, etc. should be performed through Windows. You can, however, rename (RMB), duplicate (Shift-LMB) and delete (Ctrl-Shift-Alt-LMB) images from here. Image deletion is permanent, so be careful with it!</p> <p>Feel free to create additional subdirectories under REXPaint's <code>images/</code> directory, as those will also be shown in the browser, and may be collapsed/expanded as well.</p> <h2 id=viewing-&-editing>Viewing &amp; Editing</h2> <p>Images do not need to be explicitly opened in REXPaint. When the program starts, all images are loaded into memory and you can browse through them by clicking on their name in the browser or pressing up/down (see Commands below for more list controls), then edit any of them immediately by switching over to paint mode. Copy-paste also works normally between different images (i.e. you can copy from one image to another).</p> <h2 id=saving>Saving</h2> <p>When changes are made to an image, an indicator will appear next to its name in the browser, as well as in the top-left corner of the paint mode window. The browser menu also shows the total number of unsaved images to the top left. Save the image to remove the indicator. Saving can be done from either browse or paint mode with Ctrl-s or the Save button.</p> <h2 id=exporting>Exporting</h2> <p>Unless you're drawing art for my game you'll probably want to use your image elsewhere, and REXPaint's compressed .xp format won't be very useful. Use the Export button (or Ctrl-e) to save the current image as a .png file (can be done from either paint or browse mode). By default, the new file can be found in the <code>images/</code> directory.</p> <p>When exporting, remember that 1) font size matters and 2) hidden layers are not exported; essentially, the image will be exported exactly as you see it (minus any draw preview seen when the cursor is hovering over the image).</p> <p>Exporting to .ans is also possible (see Appendix D).</p> <p>Export as an .xpm image (X PixMap) by pressing Ctrl-p (see <a href=http://en.wikipedia.org/wiki/X_PixMap>http://en.wikipedia.org/wiki/X_PixMap</a>).</p> <p>Other exportable formats include TXT (ctrl-t), CSV (ctrl-k), XML (ctrl-m), and BBCode (ctrl-b) (see Appendix E).</p> <h1 id=customization>Customization</h1> <h2 id=options>Options</h2> <p>The first time REXPaint is run, it will create a new REXPaint.cfg file using the default options. It's generally not necessary to edit this file directly, as options may be modified through an in-program options menu (F3), and all changes are saved when the program is closed. Delete the file while REXPaint is not running to have it reset all values to defaults when next started.</p> <p>There are currently several options not mentioned elsewhere in the manual, implemented by request, which require editing REXPaint.cfg to take advantage of:</p> <ul> <li>unlimitedFontSize: Setting this value to 1 loads all fonts, even those which will allow extreme zooming where it produces a window which doesn't fit on the screen! This is far from ideal usage of REXPaint, but may be helpful in special circumstances.</li> <li>txtOutputUTF8: TXT export</li> <li>baseImagePath: Set to the base path from which to load images into the browser, relative to the .exe location. As a relative path it can use &quot;../&quot; to move to higher directories.</li> <li>exportsToBase: Whether exported files are always placed in the base image path, rather than to the same path as their source image which may be in a subdirectory.</li> <li>ignorePath: Use this to specify one or more paths (relative to the baseImagePath) which will be ignored by the image loader so that even those directories (and all subdirectories and their contents) will not appear in the file browser. You can list as many separate paths as you like by using ignorePath on a separate line for each.</li> </ul> <h2 id=skins>Skins</h2> <p>REXPaint comes with several different skins; press F4 to cycle through them. You can edit them, or add more, by setting the colors in &quot;data/skins.xt&quot; (open as a text file).</p> <h2 id=additional-resources>Additional Resources</h2> <p>See the online resource repository (<a href=http://www.gridsagegames.com/rexpaint/resources.html>http://www.gridsagegames.com/rexpaint/resources.html</a>) for additional user-submitted resources like fonts and palettes, and feel free to send in your own if you feel you've created something that would benefit the community. There you'll also find palettes and fonts for a large number of legacy systems like the Apple II, Atari 2600, Commodore 64, NES, ZX Spectrum, and many more.</p> <p>A guide to using REXPaint for mockups, art, prefabs and more, with specific techniques and plenty of reference images, can be found here: <a href=http://www.gridsagegames.com/blog/2015/07/roguelike-development-rexpaint/ >http://www.gridsagegames.com/blog/2015/07/roguelike-development-rexpaint/</a></p> <p>Developers see Appendix C for links to existing libraries and tools capable of interfacing with REXPaint files.</p> <h1 id=commands>Commands</h1> <p>Many commands that are either obvious or too advanced are not listed in REXPaint's F1/? help screen. Below is a complete list of all currently supported commands (advanced commands are explained in the relevant section of the manual above):</p> <h2 id=font>Font</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>Ctrl-PgUp/Dn / &lt;/&gt;</td> <td>Change Font (Scale Image/UI)</td> </tr> <tr class=even> <td>Ctrl-Wheel</td> <td>Change Font (Scale Image/UI)</td> </tr> <tr class=odd> <td>LMB</td> <td>Select Glyph</td> </tr> <tr class=even> <td>Arrows</td> <td>Shift Selection</td> </tr> <tr class=odd> <td>u</td> <td>Toggle Used Glyph Highlighting (slow for massive images)</td> </tr> <tr class=even> <td>Alt (hold)</td> <td>Highlight Hovered Glyph in Current Layer</td> </tr> <tr class=odd> <td>Shift-LMB x2</td> <td>Swap Occurences of Glyph 1 with Glyph 2</td> </tr> </tbody> </table> <h2 id=palette-1>Palette</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>[/]</td> <td>Change Palette</td> </tr> <tr class=even> <td>LMB (x2)</td> <td>Set (Edit) Foreground Color</td> </tr> <tr class=odd> <td>RMB (x2)</td> <td>Set (Edit) Background Color</td> </tr> <tr class=even> <td>Shift-LMB x2</td> <td>Swap Occurences of Color 1 with Color 2</td> </tr> <tr class=odd> <td>Alt-LMB (x2)</td> <td>Edit and Replace Foreground Color in Image</td> </tr> <tr class=even> <td>Alt-RMB (x2)</td> <td>Edit and Replace Background Color in Image</td> </tr> <tr class=odd> <td>Ctrl-Shift-o</td> <td>Organize Palette</td> </tr> <tr class=even> <td>Ctrl-Shift-e</td> <td>Extract Image Palette</td> </tr> <tr class=odd> <td>Ctrl-Shift-p</td> <td>Purge Unused Colors</td> </tr> <tr class=even> <td>Ctrl-LMB x2</td> <td>Swap Palette Colors (source -&gt; target)</td> </tr> <tr class=odd> <td>Ctrl-Shift-w</td> <td>Set Palette Swap Source</td> </tr> <tr class=even> <td>Ctrl-w</td> <td>Swap Image Palette</td> </tr> <tr class=odd> <td>CMB</td> <td>Set Color Copy Source/Target</td> </tr> <tr class=even> <td>Alt (hold)</td> <td>Highlight Hovered Color in Current Layer</td> </tr> </tbody> </table> <h2 id=drawing-1>Drawing</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>c (x2)</td> <td>Cell (Auto-walls)</td> </tr> <tr class=even> <td>l</td> <td>Line</td> </tr> <tr class=odd> <td>r (x2)</td> <td>Rectangle (Filled)</td> </tr> <tr class=even> <td>o (x2)</td> <td>Oval (Filled)</td> </tr> <tr class=odd> <td>Alt-o</td> <td>Toggle oval drawing method (center/corner)</td> </tr> <tr class=even> <td>i (x2)</td> <td>Fill (8-direction)</td> </tr> <tr class=odd> <td>t</td> <td>Text</td> </tr> <tr class=even> <td>Ctrl-c</td> <td>Copy</td> </tr> <tr class=odd> <td>Ctrl-x</td> <td>Cut</td> </tr> <tr class=even> <td>Ctrl-v (x2)</td> <td>Paste (Flip)</td> </tr> <tr class=odd> <td>ESC / RMB</td> <td>Stop/Cancel</td> </tr> </tbody> </table> <h2 id=text-tool>Text Tool</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>Enter</td> <td>Confirm</td> </tr> <tr class=even> <td>Ctrl-Enter</td> <td>Confirm current text and start new line directly below it</td> </tr> <tr class=odd> <td>Escape</td> <td>Cancel</td> </tr> <tr class=even> <td>Left/Right Arrow</td> <td>Move caret left/right (insert characters anywhere in text)</td> </tr> <tr class=odd> <td>Ctrl-Left/Right Arrow</td> <td>Move caret to beginning/end of text</td> </tr> <tr class=even> <td>Home/End</td> <td>Move caret to beginning/end of text</td> </tr> <tr class=odd> <td>Backspace</td> <td>Delete character before caret</td> </tr> <tr class=even> <td>Ctrl-Backspace</td> <td>Delete all text before before caret</td> </tr> <tr class=odd> <td>Delete</td> <td>Delete character at caret position</td> </tr> <tr class=even> <td>Ctrl-Delete</td> <td>Delete all text from caret to the end</td> </tr> <tr class=odd> <td>Up/Down</td> <td>Cycle through text history (previously confirmed text) for reuse/editing</td> </tr> </tbody> </table> <h2 id=apply-1>Apply</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>g (G)</td> <td>Toggle (Solo) Glyph</td> </tr> <tr class=even> <td>f (F)</td> <td>Toggle (Solo) Foreground Color</td> </tr> <tr class=odd> <td>b (B)</td> <td>Toggle (Solo) Background Color</td> </tr> <tr class=even> <td>LMB</td> <td>Edit Color</td> </tr> <tr class=odd> <td>RMB</td> <td>Add Color to Palette</td> </tr> <tr class=even> <td>Alt-w</td> <td>Swap Foreground/Background Colors</td> </tr> <tr class=odd> <td>Shift-Alt-r/g/b</td> <td>Toggle Foreground Color Channel Application (all tools)</td> </tr> <tr class=even> <td>Ctrl-Shift-Alt-r/g/b</td> <td>Toggle Background Color Channel Application (all tools)</td> </tr> </tbody> </table> <h2 id=canvas-1>Canvas</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>Spacebar (hold)</td> <td>Enter Drag Mode</td> </tr> <tr class=even> <td>LMB</td> <td>Hold Canvas to Drag</td> </tr> <tr class=odd> <td>Numpad</td> <td>Shift Canvas</td> </tr> <tr class=even> <td>Shift-Wheel</td> <td>Scroll Image Up/Down</td> </tr> <tr class=odd> <td>Enter</td> <td>Reset Image Location</td> </tr> <tr class=even> <td>Ctrl-Enter</td> <td>Center Image</td> </tr> <tr class=odd> <td>RMB</td> <td>Copy Cell Contents (Applied Modes Only), where source is current layer</td> </tr> <tr class=even> <td>Ctrl-RMB</td> <td>As RMB, but from uppermost visible layer (useful for reference layers)</td> </tr> <tr class=odd> <td>Shift/Alt (hold)</td> <td>Hide Preview</td> </tr> <tr class=even> <td>Ctrl-Arrow/Numpad</td> <td>Shift all layers in indicated direction (wraps)</td> </tr> <tr class=odd> <td>Shift-Ctrl-Arrow/Numpad</td> <td>Shift active layer in indicated direction (wraps)</td> </tr> <tr class=even> <td>Ctrl-h/s/v</td> <td>Switch Color Shift Mode (repeat same to restore to P mode)</td> </tr> <tr class=odd> <td>Shift-LMB/RMB</td> <td>Apply Color Shift to Foreground (Prev/Next or Down/Up, whichever appropriate)</td> </tr> <tr class=even> <td>Alt-LMB/RMB</td> <td>Apply Color Shift to Background (Prev/Next or Down/Up, whichever appropriate)</td> </tr> <tr class=odd> <td>Shift-Alt-w</td> <td>Swap foreground/background colors throughout active layer</td> </tr> <tr class=even> <td>Ctrl-Shift-Alt-w</td> <td>Swap foreground/background colors throughout image</td> </tr> <tr class=odd> <td>Ctrl-Shift-c</td> <td>Copy Entire Active Layer (to clipboard)</td> </tr> <tr class=even> <td>z/Ctrl-z</td> <td>Undo</td> </tr> <tr class=odd> <td>y/Ctrl-y</td> <td>Redo</td> </tr> <tr class=even> <td>Ctrl-d</td> <td>Toggle Rect Dimension Display (for drawing/selecting a rectangle; also &quot;RDim&quot; button)</td> </tr> <tr class=odd> <td>Ctrl-g</td> <td>Toggle Grid</td> </tr> <tr class=even> <td>Alt-Wheel</td> <td>Change Grid Resolution</td> </tr> <tr class=odd> <td>Alt-g</td> <td>Toggle Grid Under Mode (Show in Undrawn Areas Only)</td> </tr> <tr class=even> <td>Ctrl-Tab</td> <td>Switch between current/previous image</td> </tr> </tbody> </table> <h2 id=layers-1>Layers</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>Ctrl-l</td> <td>New Layer</td> </tr> <tr class=even> <td>Wheel</td> <td>Cycle Active Layer</td> </tr> <tr class=odd> <td>1~9</td> <td>Activate Layer</td> </tr> <tr class=even> <td>Ctrl-1~9</td> <td>Toggle Layer Hide</td> </tr> <tr class=odd> <td>Shift-1~9</td> <td>Toggle Layer Lock</td> </tr> <tr class=even> <td>Ctrl-Shift-m</td> <td>Merge Active Layer</td> </tr> <tr class=odd> <td>Ctrl-Shift-l</td> <td>Toggle Extended Layers Mode</td> </tr> </tbody> </table> <h2 id=info>Info</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>q</td> <td>Toggle Mode: RGB/HSV</td> </tr> </tbody> </table> <h2 id=color-picker-1>Color Picker</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>h/s/v</td> <td>Edit Value</td> </tr> <tr class=even> <td>r/g/b</td> <td>Edit Value</td> </tr> <tr class=odd> <td># or x</td> <td>Edit Hex</td> </tr> <tr class=even> <td>LMB (x2)</td> <td>Set (Accept) Color</td> </tr> <tr class=odd> <td>Enter</td> <td>Accept New Color</td> </tr> <tr class=even> <td>ESC</td> <td>Cancel</td> </tr> </tbody> </table> <h2 id=browse>Browse</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>Wheel / PgUp/Dn</td> <td>Scroll List</td> </tr> <tr class=even> <td>LMB</td> <td>View Image</td> </tr> <tr class=odd> <td>Up/Down / Shift-Wheel</td> <td>View Previous/Next Image</td> </tr> <tr class=even> <td>RMB</td> <td>Rename Image</td> </tr> <tr class=odd> <td>F2</td> <td>Rename Currently Selected Image</td> </tr> <tr class=even> <td>Shift-LMB</td> <td>Duplicate Image</td> </tr> <tr class=odd> <td>Ctrl-Shift-Alt-LMB</td> <td>Delete Image (permanent!)</td> </tr> <tr class=even> <td>Ctrl-Up/Down / L/R</td> <td>Previous/Next Directory</td> </tr> <tr class=odd> <td>Home/End</td> <td>First/Last Image</td> </tr> <tr class=even> <td>LMB (folder)</td> <td>Collapse/Expand Folder</td> </tr> <tr class=odd> <td>Shift-LMB (folder)</td> <td>Create New Image in Folder</td> </tr> <tr class=even> <td>Shift-RMB (folder)</td> <td>Export All Images as PNGs</td> </tr> <tr class=odd> <td>Ctrl-Left/Right</td> <td>Collapse/Expand All Folders</td> </tr> </tbody> </table> <h2 id=image>Image</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>Ctrl-n</td> <td>New (in Base Path)</td> </tr> <tr class=even> <td>Ctrl-r</td> <td>Resize</td> </tr> <tr class=odd> <td>Ctrl-s</td> <td>Save</td> </tr> <tr class=even> <td>Ctrl-e</td> <td>Export PNG</td> </tr> <tr class=odd> <td>Ctrl-t</td> <td>Export TXT (ASCII only, no color)</td> </tr> <tr class=even> <td>Ctrl-k</td> <td>Export CSV</td> </tr> <tr class=odd> <td>Ctrl-m</td> <td>Export XML</td> </tr> <tr class=even> <td>Ctrl-p</td> <td>Export XPM</td> </tr> <tr class=odd> <td>Ctrl-b</td> <td>Export BBCode (ASCII w/fgd color, no bkg)</td> </tr> </tbody> </table> <h2 id=resize>Resize</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>LMB / w/h</td> <td>Width/Height</td> </tr> <tr class=even> <td>Enter</td> <td>Accept</td> </tr> <tr class=odd> <td>ESC</td> <td>Cancel</td> </tr> </tbody> </table> <h2 id=general>General</h2> <table> <thead> <tr class=header> <th>Key</th> <th>Result</th> </tr> </thead> <tbody> <tr class=odd> <td>Tab</td> <td>Toggle Paint/Browse</td> </tr> <tr class=even> <td>F1 / ?</td> <td>Commands</td> </tr> <tr class=odd> <td>F3</td> <td>Options</td> </tr> <tr class=even> <td>F4</td> <td>Change Skin</td> </tr> <tr class=odd> <td>F5</td> <td>Toggle FPS</td> </tr> <tr class=even> <td>Ctrl-F5</td> <td>Uncap FPS</td> </tr> <tr class=odd> <td>PrtScn</td> <td>Screenshot</td> </tr> <tr class=even> <td>Alt-F4</td> <td>Exit</td> </tr> <tr class=odd> <td>Alt-Enter</td> <td>Fullscreen</td> </tr> </tbody> </table> <h1 id=appendix-a:-known-issues>Appendix A: Known Issues</h1> <ol> <li><p>Capslock has no affect on text entry. This is because the library is unable to detect key state changes outside the program itself, which would lead to confusion when the capslock effect is out of sync with the key state, thus capslock support was removed completely.</p></li> <li><p>Any font change commands (Shift-&lt;/&gt; and Ctrl-PgUp/Dn) cannot be repeated without released the shift/ctrl key. This is due to an underlying library limitation on command processing when changing the video mode, and workarounds would have other undesirable side effects.</p></li> <li><p>When exporting a PNG or taking a screenshot of the application, all foreground colors drawn on non-black background colors will have one or more of their RGB component values shifted by a tiny amount dependent on the background color (never by more than a value of 1, however). This issue is due to how the potential for alpha transparency of foreground colors is handled internally by the library, and cannot be corrected for at this time.</p></li> <li><p>If you run REXPaint off a thumb drive, DO NOT remove the drive while the program is running, as file operations will seem to continue working when they are actually quietly failing in the background.</p></li> </ol> <h1 id=appendix-b:-.xp-format-specification-(and-import-libraries)>Appendix B: .xp Format Specification (and Import Libraries)</h1> <p>If you are making a console/grid-based game with ASCII graphics, such as a traditional roguelike, by importing .xp files directly you will save both development time and huge amounts of space due to the highly compressed format (even smaller than PNGs of the same image/dimensions). This is the original intent behind REXPaint's design: a tool for drawing lots of ASCII art or maps for use in roguelikes.</p> <p>The .xp files are deflated with zlib (specifically they are gzipped files created via gzofstream); once decompressed the format is binary, and data is stored in the following order (bit size in parenthesis, 32 referring to integers and 8 to unsigned chars):</p> <pre><code>#-----xp format version (32)
+  </style>
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="#rexpaint-v1.04---manual">REXPaint v1.04 - Manual</a><ul>
+<li><a href="#background">Background</a></li>
+<li><a href="#features">Features</a></li>
+</ul></li>
+<li><a href="#canvas">Canvas</a><ul>
+<li><a href="#resizing">Resizing</a></li>
+<li><a href="#shifting">Shifting</a></li>
+</ul></li>
+<li><a href="#drawing">Drawing</a><ul>
+<li><a href="#apply">Apply</a></li>
+<li><a href="#draw-modes">Draw Modes</a></li>
+<li><a href="#preview">Preview</a></li>
+</ul></li>
+<li><a href="#undo">Undo</a></li>
+<li><a href="#fonts">Fonts</a><ul>
+<li><a href="#glyphs">Glyphs</a></li>
+<li><a href="#glyph-swapping">Glyph Swapping</a></li>
+</ul></li>
+<li><a href="#palette">Palette</a><ul>
+<li><a href="#selection-&amp;-editing">Selection &amp; Editing</a></li>
+<li><a href="#color-picker">Color Picker</a></li>
+<li><a href="#palette-files">Palette Files</a></li>
+<li><a href="#extraction">Extraction</a></li>
+<li><a href="#adding">Adding</a></li>
+<li><a href="#organization">Organization</a></li>
+<li><a href="#palette-swapping">Palette Swapping</a></li>
+<li><a href="#color-shifting">Color Shifting</a></li>
+<li><a href="#transparency">Transparency</a></li>
+</ul></li>
+<li><a href="#layers">Layers</a><ul>
+<li><a href="#control">Control</a></li>
+<li><a href="#active-layer">Active Layer</a></li>
+<li><a href="#order">Order</a></li>
+<li><a href="#visibility-&amp;-locking">Visibility &amp; Locking</a></li>
+<li><a href="#merging">Merging</a></li>
+<li><a href="#extended-layers-mode">Extended Layers Mode</a></li>
+</ul></li>
+<li><a href="#browsing">Browsing</a><ul>
+<li><a href="#file/image-control">File/Image Control</a></li>
+<li><a href="#viewing-&amp;-editing">Viewing &amp; Editing</a></li>
+<li><a href="#saving">Saving</a></li>
+<li><a href="#exporting">Exporting</a></li>
+</ul></li>
+<li><a href="#customization">Customization</a><ul>
+<li><a href="#options">Options</a></li>
+<li><a href="#skins">Skins</a></li>
+<li><a href="#additional-resources">Additional Resources</a></li>
+</ul></li>
+<li><a href="#commands">Commands</a><ul>
+<li><a href="#font">Font</a></li>
+<li><a href="#palette-1">Palette</a></li>
+<li><a href="#drawing-1">Drawing</a></li>
+<li><a href="#text-tool">Text Tool</a></li>
+<li><a href="#apply-1">Apply</a></li>
+<li><a href="#canvas-1">Canvas</a></li>
+<li><a href="#layers-1">Layers</a></li>
+<li><a href="#info">Info</a></li>
+<li><a href="#color-picker-1">Color Picker</a></li>
+<li><a href="#browse">Browse</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#resize">Resize</a></li>
+<li><a href="#general">General</a></li>
+</ul></li>
+<li><a href="#appendix-a:-known-issues">Appendix A: Known Issues</a></li>
+<li><a href="#appendix-b:-.xp-format-specification-(and-import-libraries)">Appendix B: .xp Format Specification (and Import Libraries)</a></li>
+<li><a href="#appendix-c:-external-libraries-and-tools">Appendix C: External Libraries and Tools</a></li>
+<li><a href="#appendix-d:-ansi-art-(.ans)">Appendix D: ANSI Art (.ans)</a></li>
+<li><a href="#appendix-e:-exportable-text-formats-(.txt,-.csv,-.xml,-bbcode)">Appendix E: Exportable Text Formats (.txt, .csv, .xml, BBCode)</a><ul>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#xml">XML</a></li>
+<li><a href="#bbcode">BBCode</a></li>
+</ul></li>
+<li><a href="#appendix-f:-importing-text-files">Appendix F: Importing Text Files</a></li>
+<li><a href="#appendix-g:-importing-pngs">Appendix G: Importing PNGs</a></li>
+</ul>
+</nav>
+<h1 id="rexpaint-v1.04---manual">REXPaint v1.04 - Manual</h1>
+<h2 id="background">Background</h2>
+<p>There are a number of ASCII art editors available on the web, but most suffer from poor usability or small feature sets (one notable exception being eigenbom's awesome fork of ASCII Paint). For development of my own projects, I needed an application equipped with a wide range of tools for quickly drawing and manipulating ASCII art, as well as the ability to easily browse the images created as stored in their native format. Thus REXPaint was born.</p>
+<p>Over the years since its first public release, REXPaint has found use as a general purpose ASCII art editor, as well as a roguelike development tool for mockups, mapping, and design. I love seeing what people create with this program, so send me a link/copy if you've made something cool! (Or share it with us on the <a href="https://www.gridsagegames.com/forums/index.php?board=8.0">forums</a>)</p>
+<h2 id="features">Features</h2>
+<p>An overview of REXPaint's major features:</p>
+<ul>
+<li>Edit characters, foreground, and background colors separately</li>
+<li>Draw shapes and text</li>
+<li>Copy/cut/paste areas</li>
+<li>Undo/redo changes</li>
+<li>Preview effects simply by hovering the cursor over the canvas</li>
+<li>Palette manipulation</li>
+<li>Image-wide color tweaking and palette swaps</li>
+<li>True-color RGB/HSV color picker</li>
+<li>Create multi-layered images</li>
+<li>Zooming: Scale an image by changing font size on the fly</li>
+<li>Browse art assets and begin editing at the press of a button</li>
+<li>Images highly compressed</li>
+<li>Export PNGs for use in other programs or on the web</li>
+<li>Export .ANS files for ANSI art</li>
+<li>Other exportable formats: TXT, CSV, XML, XPM, BBCode</li>
+<li>Import .TXT files</li>
+<li>Skinnable interface</li>
+</ul>
+<h1 id="canvas">Canvas</h1>
+<p>The black area to the right of the tool menus is the canvas view where all image editing occurs, and the image itself initially appears as a box outline that defaults to the size of the entire canvas view.</p>
+<h2 id="resizing">Resizing</h2>
+<p>Resize the image as necessary (Ctrl-r), ideally before starting to draw so that later changes are not affected by a change in image dimensions. Resizing can be done at any time, but the dimensions are always based from the top-left corner of an image, so make sure the portion of a larger image you wish to retain is based in the top-left corner before shrinking it (move the relevant section with the copy tool).</p>
+<h2 id="shifting">Shifting</h2>
+<p>To view different parts of a large image (or reposition a smaller one), hold spacebar while left-clicking on the image and moving the mouse to drag it (Photoshop style). The numpad can also be used for eight-directional shifting of the image, Enter resets its location, and Ctrl-Enter centers it.</p>
+<h1 id="drawing">Drawing</h1>
+<h2 id="apply">Apply</h2>
+<p>The apply menu determines what is actually produced by the current draw mode when you left-click on the image. Glyphs (characters), foreground color, and background color are each drawn/edited separately, and can be individually toggled on and off via the menu buttons or 'g', 'f', and 'b'. Thus if you activate &quot;glyph&quot; and deactivate &quot;fore&quot; and &quot;back,&quot; when you draw only the current glyph will be applied, while the image's colors remain unchanged. Activating all modes will overwrite the glyph and both foreground and background colors when drawing. (Turning all apply modes off would draw... nothing, and be completely pointless!)</p>
+<p>The colors to be applied are shown to the right of their button, and the current glyph is that highlighted/chosen among the characters in the font box. Change the glyph by left-clicking on a different one in the font box, and change the colors by either left-clicking on the color square (see Color Picker explanation further below) or chosing a color from the palette (LMB choses a color for the foreground, RMB for the background).</p>
+<h2 id="draw-modes">Draw Modes</h2>
+<p>Drawing modes define the shape and area of the image affected while drawing. Only one mode can be active at a time, and some modes have an alternate setting that changes their behavior (left-click on the active mode to toggle its secondary feature, or cycle through them if more than one).</p>
+<ul>
+<li><p>Cell ('c'): Applies the effect to a single &quot;cell&quot; (space) on the image. Hold LMB and move the cursor to keep drawing. Alternate mode: Auto-wall/auto-box drawing. While the current glyph is any of the single or double line characters (but not a single-double intersection), drawn lines and all adjacent lines of the same type (single/double) will be automatically reoriented to connect with one another. This is useful for creating map walls or boxes. Has no effect for other (non-line) glyphs, which will be drawn normally.</p></li>
+<li><p>Line ('l'): Applies the effect to a line. Left-click at the line's start and release the button at its end, or press RMB/ESC before releasing the button to cancel the line.</p></li>
+<li><p>Rect ('r'): Applies the effect to a rectangular area. Left-click at one corner of the rectangle and release the button at the opposite corner, or press RMB/ESC before releasing the button to cancel the rectangle. Alternate mode: Fills the entire rectangle instead of drawing an outline. Non-filled rects drawn with any line glyph will automatically create a properly oriented ASCII box.</p></li>
+<li><p>Oval ('o'): Like rect mode, but draws ovals. Alternate mode fills the oval. By default ovals are centered on the point chosen; to instead draw from any corner switch the oval drawing method via Alt-o.</p></li>
+<li><p>Fill ('i'): Applies the effect to all like cells attached to the one under the cursor. When comparing cells, fill mode only checks the attributes for which the apply mode is currently active. For example, if foreground color is the only active apply mode then fill mode propagates to all those attached cells with the same foreground color, regardless of their glyph or background color. Alternate Mode: Fill search is performed in 8 directions rather than 4, allowing the fill to travel along diagonals through obstacles.</p></li>
+<li><p>Text ('t'): Types text onto the image. See the Text Input section below for a list of valid commands.</p></li>
+<li><p>Copy (Ctrl-c): Copies a rectangular area of the image into the clipboard for later pasting. Always copies all attributes (glyph and colors) of the regardless of current apply settings. Alternate mode: Cut (Ctrl-x). Cut mode erases everything in a certain area after storing it to the clipboard.</p></li>
+<li><p>Paste (Ctrl-v): Paste the clipboard contents to the image. While the copy/cut command stores all glyph and color information, only those attributes for which the apply mode is currently active will by pasted. Alternate modes: Flip clipboard contents horizontally, vertically, or both (by default this also automatically converts any non-symmetrical glyphs with mirror images; to flip by position only and leave glyphs unchanged set &quot;Paste-flip ASCII&quot; to No in the options menu).</p></li>
+</ul>
+<h2 id="preview">Preview</h2>
+<p>While the cursor is hovering over the image, applicable draw modes (cell, fill, paste) will show a preview of what the image will look like assuming a left-click at that location. Remember this is true even for fill mode, which may cause the image to appear quite different, but is great for quickly visualizating changes without having to do a lot of applying and undo-ing. To temporarily hide the preview and see the image as it is, hold Shift or Alt.</p>
+<h1 id="undo">Undo</h1>
+<p>All image manipulation actions can be undone/redone (Ctrl-z/Ctrl-y, or just z/y). Undo histories are also saved separately for each image, thus you can freely switch between images in the browser and still come back to undo changes from a previous image. (Closing the program, however, will forget all undo states!)</p>
+<h1 id="fonts">Fonts</h1>
+<p>Images themselves do not store font information, instead remembering only what glyph/character index belongs at each position. This means you can dynamically change the size and/or appearance of an image by simply switching the font (Ctrl-PgUp/Dn or '&lt;'/'&gt;').</p>
+<p>By default, both the GUI and images use a standard 256-character code page 437 font. REXPaint makes this same font available at several sizes (and changes #254 and #255 to radio boxes). You can edit these fonts (in the &quot;data/fonts/&quot; directory), and/or add new ones by creating a new .png bitmap and listing it in the &quot;data/fonts/_config.xt&quot; text file. Fonts do not require square glyphs (rectangles are okay), but both the GUI and Art font must use the same dimensions.</p>
+<p>When creating a custom font you could even replace some or all of the glyphs/characters/symbols, though you should leave the GUI font unchanged so the interface appears as expected (notice how _config.xt defines the GUI and art fonts separately—they do not have to use the same font!).</p>
+<p>One supported feature not used by the included fonts is alpha transparency. Font bitmaps are drawn as white on black, but know that using shades of gray will cause the foreground color to be semi-transparent to a degree equal to the shade of gray (e.g., pixels drawn using 128,128,128 gray will apear as 50% transparent). Also, even though they may only use two colors, bitmaps must be saved as 32-bit pngs (using 8-bit pngs will crash REXPaint). The font bitmap can use any background color, where REXPaint will automatically detect it by checking the upper leftmost pixel (at 0,0). By extension, if the character at the first position wants to use that pixel, REXPaint will not be able to automagically detect the background color; in this situation, you can override the background color key with a specific RGB color in REXPaint.cfg via fontKeyColorOverride.</p>
+<h2 id="glyphs">Glyphs</h2>
+<p>Select a glyph to draw with by clicking on it in the font window. Once you have a partially-drawn image the fastest way to load a previously used glyph, including even its foreground/background colors, is to simply right-click on it in the image.</p>
+<p>For reference you can toggle highlighting of all used glyphs by pressing 'u' (the highlights are updated only every five seconds, and will be slow in the case of massive images since the entire image must be searched for matches—not recommended to leave this mode on when editing especially large images). To see where a specific glyph has been used in the image's currently active layer, hold Alt while hovering the cursor over it in the font window.</p>
+<h2 id="glyph-swapping">Glyph Swapping</h2>
+<p>To replace every occurence of a glyph in all visible unlocked layers of an image, Ctrl-LMB on it in the font window, then Ctrl-LMB on the new glyph to replace it with. After selecting a source glyph, the swap can be cancelled by again pressing Ctrl-LMB on the same glyph.</p>
+<h1 id="palette">Palette</h1>
+<p>Palettes in REXPaint are tools intended purely for color selection and organization, thus images themselves do not store palettes (i.e., image colors are not &quot;indexed&quot;) and you can edit images without ever touching the palette. That said, palettes provide a convenient way to unify/standardize colors across multiple images, along with a variety of other color manipulation features.</p>
+<h2 id="selection-&amp;-editing">Selection &amp; Editing</h2>
+<p>Left-clicking on a palette color (including an &quot;empty&quot; space, which is actually black) will select it as the foreground color; right-clicking selects it as the background color. Clicking on the same color again will allow you to edit it in the color picker (see below). Shift-clicking will also open the color picker, but once the new color is confirmed will also replace all matching colors in the image (applied to foreground and/or background, depending on which apply modes are active at the time, NOT whether LMB/RMB used).</p>
+<p>To see where a specific color has been used in the image's currently active layer, hold Alt while hovering the cursor over it in the palette window.</p>
+<h2 id="color-picker">Color Picker</h2>
+<p>The color picker is fairly straightforward—its features and layout are taken from Photoshop for those familiar with it. Left-click on a color to select it (you can also hold LMB and move the cursor to watch the new color and its values change), and click on it again to accept it (or press the OK button or Enter key). Alternatively, choose a precise color by specifying HSV/RGB number values (click on the number, or press 'h'/'s'/'v'/'r'/'g'/'b' for faster entry).</p>
+<p>By default the slider will be in hue mode, but you can set it to saturation or brightness mode by left-clicking on the corresponding box seen next to the S/V values.</p>
+<h2 id="palette-files">Palette Files</h2>
+<p>Any number of palettes can be created by clicking on the '+' button (switch between them with the buttons or '['/']' keys). New palettes are unnamed until saved (click on the 'S'), when they are stored in a text format in the &quot;data/palettes/&quot; directory. The files can be modified in any text editor (turn off line wrapping), though editing is generally most conveniently handled directly in the editor itself. Knowing where the palettes are stored can be useful for making copies or saving them to another location for safe-keeping. (You can also rename them, as the file name is the name displayed in REXPaint.)</p>
+<p>Remember to save a palette again after making any changes you want to keep (palettes are not automatically saved). Palette changes are NOT recorded as part of the undo history, so changes are permanent unless you previously saved a copy of the palette file.</p>
+<p>Colors can of course be edited directly in the palette file, using and of the four color formats described in the skins.xt file: named colors, RGB, HSV, or HEX (individual colors can even used different formats).</p>
+<h2 id="extraction">Extraction</h2>
+<p>Pressing Ctrl-Shift-e will create a new empty palette, then add to it all unique foreground and background colors found in the current image.</p>
+<h2 id="adding">Adding</h2>
+<p>Right-clicking on the foreground or background color shown in the apply menu will add it to the palette at the first empty (black) space found, if available. This can be useful when colors were created using the color picker through the apply menu before later deciding to add them to the palette.</p>
+<h2 id="organization">Organization</h2>
+<p>There are several commands that enable you to manipulate the palette itself for organizational purposes:</p>
+<ul>
+<li><p>Ctrl-Shift-o: Organize. Rearranges the palette colors by moving them into hue-major order. It doesn't always look perfect, but it's better than nothing if you have a horribly messy palette (and is a good place to start from when manually organizing such a palette).</p></li>
+<li><p>Ctrl-Shift-p: Purge. Removes from the palette all colors not found in the current image.</p></li>
+<li><p>Ctrl-LMB: Manual relocation. Control-click on two different palette positions to swap those two colors. As empty palette positions are actually black, you can safely &quot;move&quot; colors to these empty positions as well.</p></li>
+<li><p>CMB: Click on a source color, then on a target position (may be in the same or a different palette) to copy the source color. Useful for more quickly creating different variations/shades of a color when building a palette.</p></li>
+</ul>
+<h2 id="palette-swapping">Palette Swapping</h2>
+<p>You can mimic a &quot;palette swap&quot; in the traditional sense by opening the target image and source palette and pressing Ctrl-Shift-w, then opening the target palette and pressing Ctrl-w. This will change all colors found in both the image and source palette to those colors found at the same position in the target palette. After setting the source palette you can apply the target palette to any number of other images.</p>
+<p>To swap all instances of a single color throughout an image (foreground and background, all layers) with another in the same palette, Shift-LMB on the first color and then Shift-LMB on the color you want to change it to.</p>
+<h2 id="color-shifting">Color Shifting</h2>
+<p>Having a properly set up palette (ideally with shades of colors listed by row) also enables you to easily shift individual colors directly on an image to quickly get/test the right color/shade without manually selecting them in the palette every time. Hold Shift and use the left and right mouse buttons on the image to shift the foreground color based on its position in the palette (black and white palette positions are skipped); use Alt instead for background color. This only works for colors found in the current palette.</p>
+<p>Alternatively, press Ctrl-h/s/v to activate the respective HSV shifting mode, in which using the left/right mouse buttons and Shift/Alt as indicated above will instead tweak that characteristic of the target cell's foreground/background, completely ignoring palette colors. Return to palette-based shifting mode by toggling the current HSV shifting mode again.</p>
+<h2 id="transparency">Transparency</h2>
+<p>You'll notice the default palette appears to have a missing color, as does the color picker's hue slider. The color is actually there, but it's a background color set to 255,0,255 (hot pink) which REXPaint uses to identify transparent cells. This means two things: 1) It is impossible to use 255,0,255 as a background color in an image (as a foreground color it's okay), and 2) You can create mult-layered images where upper layers contain transparent sections through which lower layers are visible. Draw using the transparent background color to create a transparent cell/area, but know that the glyph and foreground must not be applied (deactivate them) because a transparent background will be automatically converted to black in order to make sure the foreground is visible in that case.</p>
+<h1 id="layers">Layers</h1>
+<p>Use of layers is completely optional, and a majority of users will probably do just fine with the single layer automatically created for an image. Layer functionality exists mostly for the workflow/editing benefits of keeping different components of an image on separate layers, or perhaps having alternate versions of a certain part of the image. Other advantages are limited since layers cannot currently be blended (REXPaint could support color blending and filtering modes, though this feature hasn't been added yet since there probably isn't a huge demand for it).</p>
+<h2 id="control">Control</h2>
+<p>Each image automatically comes with one base layer (required). More can be created with Ctrl-l or by clicking on the layer window's '+' button. A single image can have up to nine separate layers, and all newly created layers are automatically filled with transparent cells (255,0,255). Press the &quot;X&quot; button to delete a layer (deletion is not possible if there is only one layer remaining).</p>
+<h2 id="active-layer">Active Layer</h2>
+<p>The &quot;active layer&quot; is the one which effects are applied to when drawing to the image—its number will appear highlighted. Change the active layer by clicking on a different number, pressing 1~9, or using the mouse wheel while the cursor is over the canvas area.</p>
+<h2 id="order">Order</h2>
+<p>Layers are listed in top to bottom order, and their order determines which are drawn on top, so opaque parts of higher layers will obscure those portions of lower layers. The relative order of layers can be changed by clicking on the arrow buttons.</p>
+<h2 id="visibility-&amp;-locking">Visibility &amp; Locking</h2>
+<p>Individual layers can be hidden from view, but the active layer must always be visible. (To hide the active layer, select a different layer first.) Note that while hidden layers are always saved as normal with the image data, they are NOT drawn when the image is exported, so make sure the image appears as intended before exporting.</p>
+<p>Any layer can be locked (Shift-# or the &quot;Lck&quot; button), which prevents editing it even by accident.</p>
+<h2 id="merging">Merging</h2>
+<p>Use the Ctrl-Shift-m command to merge the active layer downward, permanently combining it with the one below. Only the base layer cannot be merged (as there is nothing under it). This action is irreversible, so use it carefully.</p>
+<h2 id="extended-layers-mode">Extended Layers Mode</h2>
+<p>While a single image may include up to nine layers, normally only the lowest four of those will be listed in the Layers window. To view more than that, click the 'E' or press Ctrl-Shift-l to toggle Extended Layers Mode, which will cover the Info window but allow as many as nine layers to be listed at once. If you're using hotkeys for layer control, those will still work as usual even if those layers are not currently visible in the list.</p>
+<p>An '*' appears at the top right of the Layers window if an image contains more layers than currently listed, or it will instead show the layer number if a non-listed layer is currently active.</p>
+<p>Note that while Extended Layers Mode is active, the options and help menus are inaccessible, as they are normally opened via the Info window, which will be covered.</p>
+<h1 id="browsing">Browsing</h1>
+<p>Switch between paint mode and browse mode by clicking on the buttons at the top of the menu area or with the tab key. Browse mode allows you to view all the images created by REXPaint as found in the <code>images/</code> directory and any of its subdirectories (use Windows to add any subdirectories you need for organizational purposes, though note that file tree branches will be ignored beyond/deeper than four levels).</p>
+<h2 id="file/image-control">File/Image Control</h2>
+<p>You'll notice there is always one unnamed image created on startup; you don't have to modify or save it unless you want to. Additional new/empty images can be created by pressing Ctrl-n or through the New button in paint mode—these are added to the base path (<code>images/</code> by default). To create an empty image in a specific subdirectory, simply left-click the directory name.</p>
+<p>Realize that browse mode is mostly an image browser, not a full-featured file manager, so actions like image moving, directory operations, etc. should be performed through Windows. You can, however, rename (RMB), duplicate (Shift-LMB) and delete (Ctrl-Shift-Alt-LMB) images from here. Image deletion is permanent, so be careful with it!</p>
+<p>Feel free to create additional subdirectories under REXPaint's <code>images/</code> directory, as those will also be shown in the browser, and may be collapsed/expanded as well.</p>
+<h2 id="viewing-&amp;-editing">Viewing &amp; Editing</h2>
+<p>Images do not need to be explicitly opened in REXPaint. When the program starts, all images are loaded into memory and you can browse through them by clicking on their name in the browser or pressing up/down (see Commands below for more list controls), then edit any of them immediately by switching over to paint mode. Copy-paste also works normally between different images (i.e. you can copy from one image to another).</p>
+<h2 id="saving">Saving</h2>
+<p>When changes are made to an image, an indicator will appear next to its name in the browser, as well as in the top-left corner of the paint mode window. The browser menu also shows the total number of unsaved images to the top left. Save the image to remove the indicator. Saving can be done from either browse or paint mode with Ctrl-s or the Save button.</p>
+<h2 id="exporting">Exporting</h2>
+<p>Unless you're drawing art for my game you'll probably want to use your image elsewhere, and REXPaint's compressed .xp format won't be very useful. Use the Export button (or Ctrl-e) to save the current image as a .png file (can be done from either paint or browse mode). By default, the new file can be found in the <code>images/</code> directory.</p>
+<p>When exporting, remember that 1) font size matters and 2) hidden layers are not exported; essentially, the image will be exported exactly as you see it (minus any draw preview seen when the cursor is hovering over the image).</p>
+<p>Exporting to .ans is also possible (see Appendix D).</p>
+<p>Export as an .xpm image (X PixMap) by pressing Ctrl-p (see <a href="http://en.wikipedia.org/wiki/X_PixMap">http://en.wikipedia.org/wiki/X_PixMap</a>).</p>
+<p>Other exportable formats include TXT (ctrl-t), CSV (ctrl-k), XML (ctrl-m), and BBCode (ctrl-b) (see Appendix E).</p>
+<h1 id="customization">Customization</h1>
+<h2 id="options">Options</h2>
+<p>The first time REXPaint is run, it will create a new REXPaint.cfg file using the default options. It's generally not necessary to edit this file directly, as options may be modified through an in-program options menu (F3), and all changes are saved when the program is closed. Delete the file while REXPaint is not running to have it reset all values to defaults when next started.</p>
+<p>There are currently several options not mentioned elsewhere in the manual, implemented by request, which require editing REXPaint.cfg to take advantage of:</p>
+<ul>
+<li>unlimitedFontSize: Setting this value to 1 loads all fonts, even those which will allow extreme zooming where it produces a window which doesn't fit on the screen! This is far from ideal usage of REXPaint, but may be helpful in special circumstances.</li>
+<li>txtOutputUTF8: TXT export</li>
+<li>baseImagePath: Set to the base path from which to load images into the browser, relative to the .exe location. As a relative path it can use &quot;../&quot; to move to higher directories.</li>
+<li>exportsToBase: Whether exported files are always placed in the base image path, rather than to the same path as their source image which may be in a subdirectory.</li>
+<li>ignorePath: Use this to specify one or more paths (relative to the baseImagePath) which will be ignored by the image loader so that even those directories (and all subdirectories and their contents) will not appear in the file browser. You can list as many separate paths as you like by using ignorePath on a separate line for each.</li>
+</ul>
+<h2 id="skins">Skins</h2>
+<p>REXPaint comes with several different skins; press F4 to cycle through them. You can edit them, or add more, by setting the colors in &quot;data/skins.xt&quot; (open as a text file).</p>
+<h2 id="additional-resources">Additional Resources</h2>
+<p>See the online resource repository (<a href="http://www.gridsagegames.com/rexpaint/resources.html">http://www.gridsagegames.com/rexpaint/resources.html</a>) for additional user-submitted resources like fonts and palettes, and feel free to send in your own if you feel you've created something that would benefit the community. There you'll also find palettes and fonts for a large number of legacy systems like the Apple II, Atari 2600, Commodore 64, NES, ZX Spectrum, and many more.</p>
+<p>A guide to using REXPaint for mockups, art, prefabs and more, with specific techniques and plenty of reference images, can be found here: <a href="http://www.gridsagegames.com/blog/2015/07/roguelike-development-rexpaint/">http://www.gridsagegames.com/blog/2015/07/roguelike-development-rexpaint/</a></p>
+<p>Developers see Appendix C for links to existing libraries and tools capable of interfacing with REXPaint files.</p>
+<h1 id="commands">Commands</h1>
+<p>Many commands that are either obvious or too advanced are not listed in REXPaint's F1/? help screen. Below is a complete list of all currently supported commands (advanced commands are explained in the relevant section of the manual above):</p>
+<h2 id="font">Font</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ctrl-PgUp/Dn / &lt;/&gt;</td>
+<td>Change Font (Scale Image/UI)</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Wheel</td>
+<td>Change Font (Scale Image/UI)</td>
+</tr>
+<tr class="odd">
+<td>LMB</td>
+<td>Select Glyph</td>
+</tr>
+<tr class="even">
+<td>Arrows</td>
+<td>Shift Selection</td>
+</tr>
+<tr class="odd">
+<td>u</td>
+<td>Toggle Used Glyph Highlighting (slow for massive images)</td>
+</tr>
+<tr class="even">
+<td>Alt (hold)</td>
+<td>Highlight Hovered Glyph in Current Layer</td>
+</tr>
+<tr class="odd">
+<td>Shift-LMB x2</td>
+<td>Swap Occurences of Glyph 1 with Glyph 2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="palette-1">Palette</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[/]</td>
+<td>Change Palette</td>
+</tr>
+<tr class="even">
+<td>LMB (x2)</td>
+<td>Set (Edit) Foreground Color</td>
+</tr>
+<tr class="odd">
+<td>RMB (x2)</td>
+<td>Set (Edit) Background Color</td>
+</tr>
+<tr class="even">
+<td>Shift-LMB x2</td>
+<td>Swap Occurences of Color 1 with Color 2</td>
+</tr>
+<tr class="odd">
+<td>Alt-LMB (x2)</td>
+<td>Edit and Replace Foreground Color in Image</td>
+</tr>
+<tr class="even">
+<td>Alt-RMB (x2)</td>
+<td>Edit and Replace Background Color in Image</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-Shift-o</td>
+<td>Organize Palette</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Shift-e</td>
+<td>Extract Image Palette</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-Shift-p</td>
+<td>Purge Unused Colors</td>
+</tr>
+<tr class="even">
+<td>Ctrl-LMB x2</td>
+<td>Swap Palette Colors (source -&gt; target)</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-Shift-w</td>
+<td>Set Palette Swap Source</td>
+</tr>
+<tr class="even">
+<td>Ctrl-w</td>
+<td>Swap Image Palette</td>
+</tr>
+<tr class="odd">
+<td>CMB</td>
+<td>Set Color Copy Source/Target</td>
+</tr>
+<tr class="even">
+<td>Alt (hold)</td>
+<td>Highlight Hovered Color in Current Layer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="drawing-1">Drawing</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>c (x2)</td>
+<td>Cell (Auto-walls)</td>
+</tr>
+<tr class="even">
+<td>l</td>
+<td>Line</td>
+</tr>
+<tr class="odd">
+<td>r (x2)</td>
+<td>Rectangle (Filled)</td>
+</tr>
+<tr class="even">
+<td>o (x2)</td>
+<td>Oval (Filled)</td>
+</tr>
+<tr class="odd">
+<td>Alt-o</td>
+<td>Toggle oval drawing method (center/corner)</td>
+</tr>
+<tr class="even">
+<td>i (x2)</td>
+<td>Fill (8-direction)</td>
+</tr>
+<tr class="odd">
+<td>t</td>
+<td>Text</td>
+</tr>
+<tr class="even">
+<td>Ctrl-c</td>
+<td>Copy</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-x</td>
+<td>Cut</td>
+</tr>
+<tr class="even">
+<td>Ctrl-v (x2)</td>
+<td>Paste (Flip)</td>
+</tr>
+<tr class="odd">
+<td>ESC / RMB</td>
+<td>Stop/Cancel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="text-tool">Text Tool</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enter</td>
+<td>Confirm</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Enter</td>
+<td>Confirm current text and start new line directly below it</td>
+</tr>
+<tr class="odd">
+<td>Escape</td>
+<td>Cancel</td>
+</tr>
+<tr class="even">
+<td>Left/Right Arrow</td>
+<td>Move caret left/right (insert characters anywhere in text)</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-Left/Right Arrow</td>
+<td>Move caret to beginning/end of text</td>
+</tr>
+<tr class="even">
+<td>Home/End</td>
+<td>Move caret to beginning/end of text</td>
+</tr>
+<tr class="odd">
+<td>Backspace</td>
+<td>Delete character before caret</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Backspace</td>
+<td>Delete all text before before caret</td>
+</tr>
+<tr class="odd">
+<td>Delete</td>
+<td>Delete character at caret position</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Delete</td>
+<td>Delete all text from caret to the end</td>
+</tr>
+<tr class="odd">
+<td>Up/Down</td>
+<td>Cycle through text history (previously confirmed text) for reuse/editing</td>
+</tr>
+</tbody>
+</table>
+<h2 id="apply-1">Apply</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>g (G)</td>
+<td>Toggle (Solo) Glyph</td>
+</tr>
+<tr class="even">
+<td>f (F)</td>
+<td>Toggle (Solo) Foreground Color</td>
+</tr>
+<tr class="odd">
+<td>b (B)</td>
+<td>Toggle (Solo) Background Color</td>
+</tr>
+<tr class="even">
+<td>LMB</td>
+<td>Edit Color</td>
+</tr>
+<tr class="odd">
+<td>RMB</td>
+<td>Add Color to Palette</td>
+</tr>
+<tr class="even">
+<td>Alt-w</td>
+<td>Swap Foreground/Background Colors</td>
+</tr>
+<tr class="odd">
+<td>Shift-Alt-r/g/b</td>
+<td>Toggle Foreground Color Channel Application (all tools)</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Shift-Alt-r/g/b</td>
+<td>Toggle Background Color Channel Application (all tools)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="canvas-1">Canvas</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Spacebar (hold)</td>
+<td>Enter Drag Mode</td>
+</tr>
+<tr class="even">
+<td>LMB</td>
+<td>Hold Canvas to Drag</td>
+</tr>
+<tr class="odd">
+<td>Numpad</td>
+<td>Shift Canvas</td>
+</tr>
+<tr class="even">
+<td>Shift-Wheel</td>
+<td>Scroll Image Up/Down</td>
+</tr>
+<tr class="odd">
+<td>Enter</td>
+<td>Reset Image Location</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Enter</td>
+<td>Center Image</td>
+</tr>
+<tr class="odd">
+<td>RMB</td>
+<td>Copy Cell Contents (Applied Modes Only), where source is current layer</td>
+</tr>
+<tr class="even">
+<td>Ctrl-RMB</td>
+<td>As RMB, but from uppermost visible layer (useful for reference layers)</td>
+</tr>
+<tr class="odd">
+<td>Shift/Alt (hold)</td>
+<td>Hide Preview</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Arrow/Numpad</td>
+<td>Shift all layers in indicated direction (wraps)</td>
+</tr>
+<tr class="odd">
+<td>Shift-Ctrl-Arrow/Numpad</td>
+<td>Shift active layer in indicated direction (wraps)</td>
+</tr>
+<tr class="even">
+<td>Ctrl-h/s/v</td>
+<td>Switch Color Shift Mode (repeat same to restore to P mode)</td>
+</tr>
+<tr class="odd">
+<td>Shift-LMB/RMB</td>
+<td>Apply Color Shift to Foreground (Prev/Next or Down/Up, whichever appropriate)</td>
+</tr>
+<tr class="even">
+<td>Alt-LMB/RMB</td>
+<td>Apply Color Shift to Background (Prev/Next or Down/Up, whichever appropriate)</td>
+</tr>
+<tr class="odd">
+<td>Shift-Alt-w</td>
+<td>Swap foreground/background colors throughout active layer</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Shift-Alt-w</td>
+<td>Swap foreground/background colors throughout image</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-Shift-c</td>
+<td>Copy Entire Active Layer (to clipboard)</td>
+</tr>
+<tr class="even">
+<td>z/Ctrl-z</td>
+<td>Undo</td>
+</tr>
+<tr class="odd">
+<td>y/Ctrl-y</td>
+<td>Redo</td>
+</tr>
+<tr class="even">
+<td>Ctrl-d</td>
+<td>Toggle Rect Dimension Display (for drawing/selecting a rectangle; also &quot;RDim&quot; button)</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-g</td>
+<td>Toggle Grid</td>
+</tr>
+<tr class="even">
+<td>Alt-Wheel</td>
+<td>Change Grid Resolution</td>
+</tr>
+<tr class="odd">
+<td>Alt-g</td>
+<td>Toggle Grid Under Mode (Show in Undrawn Areas Only)</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Tab</td>
+<td>Switch between current/previous image</td>
+</tr>
+</tbody>
+</table>
+<h2 id="layers-1">Layers</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ctrl-l</td>
+<td>New Layer</td>
+</tr>
+<tr class="even">
+<td>Wheel</td>
+<td>Cycle Active Layer</td>
+</tr>
+<tr class="odd">
+<td>1~9</td>
+<td>Activate Layer</td>
+</tr>
+<tr class="even">
+<td>Ctrl-1~9</td>
+<td>Toggle Layer Hide</td>
+</tr>
+<tr class="odd">
+<td>Shift-1~9</td>
+<td>Toggle Layer Lock</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Shift-m</td>
+<td>Merge Active Layer</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-Shift-l</td>
+<td>Toggle Extended Layers Mode</td>
+</tr>
+</tbody>
+</table>
+<h2 id="info">Info</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>q</td>
+<td>Toggle Mode: RGB/HSV</td>
+</tr>
+</tbody>
+</table>
+<h2 id="color-picker-1">Color Picker</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>h/s/v</td>
+<td>Edit Value</td>
+</tr>
+<tr class="even">
+<td>r/g/b</td>
+<td>Edit Value</td>
+</tr>
+<tr class="odd">
+<td># or x</td>
+<td>Edit Hex</td>
+</tr>
+<tr class="even">
+<td>LMB (x2)</td>
+<td>Set (Accept) Color</td>
+</tr>
+<tr class="odd">
+<td>Enter</td>
+<td>Accept New Color</td>
+</tr>
+<tr class="even">
+<td>ESC</td>
+<td>Cancel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browse">Browse</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wheel / PgUp/Dn</td>
+<td>Scroll List</td>
+</tr>
+<tr class="even">
+<td>LMB</td>
+<td>View Image</td>
+</tr>
+<tr class="odd">
+<td>Up/Down / Shift-Wheel</td>
+<td>View Previous/Next Image</td>
+</tr>
+<tr class="even">
+<td>RMB</td>
+<td>Rename Image</td>
+</tr>
+<tr class="odd">
+<td>F2</td>
+<td>Rename Currently Selected Image</td>
+</tr>
+<tr class="even">
+<td>Shift-LMB</td>
+<td>Duplicate Image</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-Shift-Alt-LMB</td>
+<td>Delete Image (permanent!)</td>
+</tr>
+<tr class="even">
+<td>Ctrl-Up/Down / L/R</td>
+<td>Previous/Next Directory</td>
+</tr>
+<tr class="odd">
+<td>Home/End</td>
+<td>First/Last Image</td>
+</tr>
+<tr class="even">
+<td>LMB (folder)</td>
+<td>Collapse/Expand Folder</td>
+</tr>
+<tr class="odd">
+<td>Shift-LMB (folder)</td>
+<td>Create New Image in Folder</td>
+</tr>
+<tr class="even">
+<td>Shift-RMB (folder)</td>
+<td>Export All Images as PNGs</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-Left/Right</td>
+<td>Collapse/Expand All Folders</td>
+</tr>
+</tbody>
+</table>
+<h2 id="image">Image</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ctrl-n</td>
+<td>New (in Base Path)</td>
+</tr>
+<tr class="even">
+<td>Ctrl-r</td>
+<td>Resize</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-s</td>
+<td>Save</td>
+</tr>
+<tr class="even">
+<td>Ctrl-e</td>
+<td>Export PNG</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-t</td>
+<td>Export TXT (ASCII only, no color)</td>
+</tr>
+<tr class="even">
+<td>Ctrl-k</td>
+<td>Export CSV</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-m</td>
+<td>Export XML</td>
+</tr>
+<tr class="even">
+<td>Ctrl-p</td>
+<td>Export XPM</td>
+</tr>
+<tr class="odd">
+<td>Ctrl-b</td>
+<td>Export BBCode (ASCII w/fgd color, no bkg)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="resize">Resize</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LMB / w/h</td>
+<td>Width/Height</td>
+</tr>
+<tr class="even">
+<td>Enter</td>
+<td>Accept</td>
+</tr>
+<tr class="odd">
+<td>ESC</td>
+<td>Cancel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="general">General</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tab</td>
+<td>Toggle Paint/Browse</td>
+</tr>
+<tr class="even">
+<td>F1 / ?</td>
+<td>Commands</td>
+</tr>
+<tr class="odd">
+<td>F3</td>
+<td>Options</td>
+</tr>
+<tr class="even">
+<td>F4</td>
+<td>Change Skin</td>
+</tr>
+<tr class="odd">
+<td>F5</td>
+<td>Toggle FPS</td>
+</tr>
+<tr class="even">
+<td>Ctrl-F5</td>
+<td>Uncap FPS</td>
+</tr>
+<tr class="odd">
+<td>PrtScn</td>
+<td>Screenshot</td>
+</tr>
+<tr class="even">
+<td>Alt-F4</td>
+<td>Exit</td>
+</tr>
+<tr class="odd">
+<td>Alt-Enter</td>
+<td>Fullscreen</td>
+</tr>
+</tbody>
+</table>
+<h1 id="appendix-a:-known-issues">Appendix A: Known Issues</h1>
+<ol>
+<li><p>Capslock has no affect on text entry. This is because the library is unable to detect key state changes outside the program itself, which would lead to confusion when the capslock effect is out of sync with the key state, thus capslock support was removed completely.</p></li>
+<li><p>Any font change commands (Shift-&lt;/&gt; and Ctrl-PgUp/Dn) cannot be repeated without released the shift/ctrl key. This is due to an underlying library limitation on command processing when changing the video mode, and workarounds would have other undesirable side effects.</p></li>
+<li><p>When exporting a PNG or taking a screenshot of the application, all foreground colors drawn on non-black background colors will have one or more of their RGB component values shifted by a tiny amount dependent on the background color (never by more than a value of 1, however). This issue is due to how the potential for alpha transparency of foreground colors is handled internally by the library, and cannot be corrected for at this time.</p></li>
+<li><p>If you run REXPaint off a thumb drive, DO NOT remove the drive while the program is running, as file operations will seem to continue working when they are actually quietly failing in the background.</p></li>
+</ol>
+<h1 id="appendix-b:-.xp-format-specification-(and-import-libraries)">Appendix B: .xp Format Specification (and Import Libraries)</h1>
+<p>If you are making a console/grid-based game with ASCII graphics, such as a traditional roguelike, by importing .xp files directly you will save both development time and huge amounts of space due to the highly compressed format (even smaller than PNGs of the same image/dimensions). This is the original intent behind REXPaint's design: a tool for drawing lots of ASCII art or maps for use in roguelikes.</p>
+<p>The .xp files are deflated with zlib (specifically they are gzipped files created via gzofstream); once decompressed the format is binary, and data is stored in the following order (bit size in parenthesis, 32 referring to integers and 8 to unsigned chars):</p>
+<pre><code>#-----xp format version (32)
 A-----number of layers (32)
  /----image width (32)
  |    image height (32)
@@ -367,4 +1247,91 @@ B|  | foreground color red (8)
  | C| background color red (8)
  |  | background color green (8)
  \--\-background color blue (8)
-</code></pre> <p>The file begins with the internal .xp format version number, You can ignore this value, as it is only used by REXPaint itself (in case future changes to the format are required). Note that because pre-R9 versions of REXPaint did not include an .xp version number, it's actually stored as a negative value to differentiate old image files (which begin with a positive layer count) in order to detect and automatically update them.</p> <p>The actual image data begins with <code>A</code>, the number of image layers (always a number from 1 to 9 in the current version), followed by a section <code>B</code> for each layer (the image width/height is stored for every layer due to the method of serialization used, but will always be the same values for every layer). Section <code>C</code> is then repeated for each cell in the image, storing the image's 2D matrix in 1D array format. I.e., the length of that matrix would equal width*height, and if you need them you can get the x-value with <code>index / height</code>, and y-value with <code>index % height</code> (my own matrix class stores its data in a 1D array so I just read all the cells straight in). Note that this means the image data happens to be stored in column-major order!</p> <p>One thing to remember about directly reading .xp files is that undrawn (empty) cells on any layer (even the base layer) are considered transparent, which is identified by the background color 255,0,255. Thus to rebuild the image as seen in REXPaint, always first test a cell's background color and skip drawing those cells which are transparent, while converting any visible (i.e., non-covered) transparent cells on the lowest layer to black.</p> <p>If you don't like working with binary, an alternative is to export images to one of the available text-based formats: TXT, CSV, or XML (see Appendix E).</p> <h1 id=appendix-c:-external-libraries-and-tools>Appendix C: External Libraries and Tools</h1> <p>If you'd like to use (or at least reference) some pre-existing code for reading .xp files into your own game/software and converting them to an easy to use format, a number of generous devs have shared their solutions for input/output of REXPaint's native .xp format.</p> <ul> <li>C#: SadRex by Thraka, a library for importing .xp files.<br> <a href=https://github.com/Thraka/SadRex>https://github.com/Thraka/SadRex</a></li> <li>C++: REXReader-C++ by Tim Stoddard, a C++ version of BaconSoap's importer.<br> <a href=https://github.com/gamepopper/REXReader-CPlusPlus/ >https://github.com/gamepopper/REXReader-CPlusPlus/</a></li> <li>C++: REXSpeeder by pyridine, a fast xp loader that that also supports resaving<br> <a href=https://github.com/pyridine/REXSpeeder>https://github.com/pyridine/REXSpeeder</a></li> <li>C++: mini-REXSpeeder by Mreuwu, a REXSpeeder alternative compatible with emscripten<br> <a href="http://www.gridsagegames.com/forums/index.php?topic=492.0">http://www.gridsagegames.com/forums/index.php?topic=492.0</a></li> <li>C++: RLTK by thebracket, a multifeature roguelike toolkit including xp support<br> <a href=https://github.com/thebracket/rltk>https://github.com/thebracket/rltk</a></li> <li>SFML 2.0: XPText by Tim Stoddard, an SFML entity for rendering xp images.<br> <a href=https://github.com/gamepopper/REXReader-CPlusPlus/ >https://github.com/gamepopper/REXReader-CPlusPlus/</a></li> <li>Python: XPLoader by RCIX (includes libtcod support!).<br> <a href=https://github.com/RCIX/XPLoader>https://github.com/RCIX/XPLoader</a></li> <li>Python 3 + TDL: XPLoaderPy3 by Edern76 <a href=https://github.com/Edern76/XPLoaderPy3>https://github.com/Edern76/XPLoaderPy3</a></li> <li>Python 3 without dependencies: xp_loader by irskep<br> <a href=https://github.com/irskep/clubsandwich/blob/master/clubsandwich/xp_loader.py>https://github.com/irskep/clubsandwich/blob/master/clubsandwich/xp_loader.py</a></li> <li>Java: xpreader by Stinus Petersen. <a href=https://github.com/biscon/xpreader>https://github.com/biscon/xpreader</a></li> <li>Javascript: rex_sprite by chiguireitor, a Node.js module for loading and drawing REXPaint sprites.<br> <a href=http://www.gridsagegames.com/blogs/files/rex_sprite.js>http://www.gridsagegames.com/blogs/files/rex_sprite.js</a></li> <li>Haxe: REXPaintLoaderHaxe by Matt Johnson.<br> <a href=http://lib.haxe.org/p/REXPaintLoaderHaxe/ >http://lib.haxe.org/p/REXPaintLoaderHaxe/</a></li> <li>Clojure: rockpick by Aaron Santos, an .xp import library. <a href=https://github.com/aaron-santos/rockpick>https://github.com/aaron-santos/rockpick</a></li> <li>C#: RexReader by BaconSoap, the original C# .xp reader (though it has some issues). <a href=https://github.com/BaconSoap/RexReader>https://github.com/BaconSoap/RexReader</a></li> <li>Swift: REXPaintImage by irskep <a href=https://gist.github.com/irskep/1830b1255c1d73c8dd28da8b83998433>https://gist.github.com/irskep/1830b1255c1d73c8dd28da8b83998433</a></li> </ul> <p>Other tools:</p> <ul> <li>png2rex: utility for converting PNGs to .xp, by thebracket <a href=https://github.com/thebracket/png2rex>https://github.com/thebracket/png2rex</a></li> <li>image2xp: python script to convert an image file to ASCII or .xp (sample output), by mtvee. <a href=https://gist.github.com/mtvee/5629a2caa34dbf3ece95>https://gist.github.com/mtvee/5629a2caa34dbf3ece95</a> (sample output: <a href=https://i.imgur.com/rAwIWeu.jpg>https://i.imgur.com/rAwIWeu.jpg</a>)</li> <li>txt2xp: python script to convert a txt file to .xp, by mtvee. <a href=https://gist.github.com/mtvee/d7a4bd450e3cd6766580>https://gist.github.com/mtvee/d7a4bd450e3cd6766580</a></li> <li>txt to .xp: C code to convert a txt file to .xp (minus the gzip step), by gumix. <a href="http://www.gridsagegames.com/forums/index.php?topic=416.msg3677#msg3677">http://www.gridsagegames.com/forums/index.php?topic=416.msg3677#msg3677</a></li> </ul> <h1 id=appendix-d:-ansi-art-(.ans)>Appendix D: ANSI Art (.ans)</h1> <p>For the ANSI artists out there, REXPaint also supports exporting to .ans.</p> <p>Creating ANSI art is a little bit different from REXPaint's normal use, so you'll want to follow some basic guidelines:</p> <ul> <li>Before starting, copy the contents of the data/ansi directory to their respective data folders: copy all files in data/ansi/fonts to data/fonts (overwrite _config.xt when prompted), all files in data/ansi/palettes to data/palettes, and copy REXPaint.cfg to the main directory (overwrite). Copying these files gives you access to the proper palette and an alternate set of more appropriate fonts, but you can always edit _config.xt to make even the square fonts accessible again if preferred.</li> <li>Open REXPaint, make your masterpiece, and when done press Ctrl-a to create the .ans file (there is no button for .ans export—it's a &quot;secret&quot; :).</li> </ul> <p>Miscellaneous Notes:</p> <ul> <li>Separate layers can be used in the editing process, and any that are visible (not hidden) when the .ans is exported will be merged together, so you always get what you see.</li> <li>REXPaint does not currently import .ans files, so make sure you keep the .xp files as well for later editing should you need them (.xp files are compressed and extremely tiny, so size certainly won't be an issue).</li> <li>ANSI palette colors are identified by their position in the palette, not the actual color. Therefore, you can create any other ANSI palette you like (or modify the existing one), so long as it follows the same positioning: black, red, green, yellow, blue, magenta, cyan, then white (with normal colors in the first row, and bright/bold text colors in the second row). A table of color values for common ANSI palettes on different system can be found on this page: <a href=http://en.wikipedia.org/wiki/ANSI_escape_code>http://en.wikipedia.org/wiki/ANSI_escape_code</a></li> <li>Do NOT use a different palette with an image after it has already been created (without doing a full palette-based color swap) because REXPaint needs to find the image colors in the palette when exporting the .ans file to determine which color type it is. This means that when exporting an .ans file, the same palette used to make the image must be showing.</li> </ul> <p>Further Explanation:</p> <ul> <li>The alternate cfg file sets the defaultImageWidth value to 80. You can use a different view width (canvasWidth) if you like, but always leave the image width at 80, the value which REXPaint will set in the .ans file. Image height can be resized to anything you want in REXPaint, but leave the view height something reasonable for your screen size.</li> <li>It also changes startPalette from &quot;Palette&quot; to &quot;ANSI VGA&quot;.</li> <li>Most importantly it changes ansiMode to 1, an option only available by editing the cfg manually (i.e. not listed in the options menu). This prevents all but the first 8 colors from being set as the background (a standard ANSI limitation), so if you want to use REXPaint for normal true color painting you'll have to close the program and set this value back to 0. ANSI mode also makes the color picker inaccessible through the brush color, forcing you to use the palette.</li> </ul> <h1 id=appendix-e:-exportable-text-formats-(.txt,-.csv,-.xml,-bbcode)>Appendix E: Exportable Text Formats (.txt, .csv, .xml, BBCode)</h1> <p>Export an image as pure text by pressing Ctrl-t. This will only output the glyphs, thus no color information is stored in the file. By default, TXT export uses UTF8 encoding, but this includes unicode hard space encoding so anyone who wants pure ASCII characters should set txtOutputUTF8=0 in REXPaint.cfg.</p> <p>While .xp is the ideal format for use in other programs (see Appendix B/C), if you don't want (or are unable) to work with a binary file there are other export options that produce files both human readable and potentially useful in other applications. Naturally all other formats will create files significantly larger than their .xp counterparts, but some users may still prefer or need them for transferring or converting the data. Unlike .xp files, these formats do not store each layer separately, instead merging all visible layers into a single image and storing that.</p> <h2 id=csv>CSV</h2> <p>The first line stores header information, and all following lines contain the image data in the following format: X,Y,ASCII,Foreground,Background. ASCII values are stored in integer form, and colors are stored as hex values.</p> <h2 id=xml>XML</h2> <p>All image rows are enclosed in <code>&lt;data&gt;&lt;/data&gt;</code> tags, each row of image data is enclosed in <code>&lt;row&gt;&lt;/row&gt;</code> tags, and there will be <code>&lt;height&gt;</code> number of rows, each with <code>&lt;length&gt;</code> number of cell data. Within each row, each cell is enlosed in <code>&lt;cell&gt;&lt;/cell&gt;</code> tags, and contains <code>&lt;ascii&gt;</code>, <code>&lt;fgd&gt;</code>, and <code>&lt;bkg&gt;</code> tags indicating that cell's ASCII index (stored as an integer, not a character), foreground, and backgroun colors, respectively. Colors are stored as hex values.</p> <p>XML files are quite bulky due to the amount of markup required.</p> <h2 id=bbcode>BBCode</h2> <p>Properly formatted monospaced is output to a text file from where you can copy it to a forum. Mostly a novelty--though I'm sure creative users will find some interesting uses for it.</p> <p>Unlike pure text output, BBCode retains both the ASCII (stored as unicode) and foreground color. Since most forums do not support background colors, those in the image will be ignored. (I could add it as a configurable option if there's any demand, since some forums do have background color tags.)</p> <p>For now, if you plan to export BBCode I suggest filling the background with whatever color the forum uses, so you have an idea of what the image will actually look like; that and load up a taller narrow font more like what a website will use (also to have a better perspective). REXPaint only comes with square fonts right now, but others can be found on the web.</p> <p>Another difference you'll notice when copying BBCode to a forum is that line spacing will cause a divide between each row, which may or may not impact the image's appearance depending on what glyphs are used.</p> <p>IMPORTANT: Space characters are usually collapsed when entered into a web browser. To avoid this issue and ensure that glyphs are arranged/indented properly in an image, a &quot;hard space&quot; unicode character is used in place of each normal space. Copying the BBCode from the output text file will also copy these hard space characters normally and maintain the image's appearance, but it seems that secondary copying from within a forum itself does <em>not</em> retain the proper spacing--it converts them to normal spaces, which will then collapse. The only way around this seems to be always copy the BBCode content from the original source text file. An alternative is to fill unused image space with the &quot;full block&quot; ASCII character (this is easy to do with the fill tool, and can be done before starting to draw). This method can also be used to create makeshift &quot;backgrounds.&quot;</p> <h1 id=appendix-f:-importing-text-files>Appendix F: Importing Text Files</h1> <p>REXPaint normally only edits its native .xp format, but it is also possible to use command line instructions to convert an existing .txt file into an .xp file for editing. While the process is not incredibly convenient since REXPaint wasn't really meant for this purpose, it can be helpful in some situations and was therefore added by request :D.</p> <p>To convert a .txt file to .xp, simply put it in the <code>/images/</code> directory and run REXPaint with the command line argument <code>-txt2xp:XXX</code>, where XXX is the name of the file to convert. The file name as provided can include or exclude the extension (e.g. <code>image.txt</code> or just <code>image</code>), but the file itself is expected to have a proper .txt extension. The width of the image produced will be determined by the longest line in the .txt file, and by default will use black glyphs on a white background, but once in REXPaint you can easily swap the colors or perform any other normal edits.</p> <p>Note that only plain text files are supported (glyphs 0~127, no UTF encoding), and if an .xp file of the same name already exists, IT WILL BE OVERWRITTEN!</p> <p>See also Appendix C for some third-party tools/code also capable of converting .txt files to .xp.</p> <h1 id=appendix-g:-importing-pngs>Appendix G: Importing PNGs</h1> <p>REXPaint is capable of partially converting .png images to .xp files for editing. This is a special feature developed for my own use in roguelike development, which I've included for the heck of it in case someone else finds it useful. Like .txt imports, it requires use of the command line.</p> <p>To convert a .png file to .xp, put it in the <code>/images/</code> directory and run REXPaint with the argument <code>-png2xp:XXX</code>, where XXX is the name of the file to convert. The file name as provided can include or exclude the .png extension, but the file itself is expected to have a proper .png extension. Moreover, the file name must include <code>_WWWxHHH</code> at the end, where WWW and HHH are the pixel width and height of an individual cell in the image. E.g. a Nethack screenshot using an 8x16 monospaced font should be named something like <code>NetHack_8x16.</code> (This feature was intended to read in images of grid-based terminal output, such as roguelike screenshots.)</p> <p>While the resulting .xp image will properly assign all foreground and background colors, it cannot actually identify glyphs for what they are. Instead any glyph-containing cell will simply use '?' (in the proper color) to represent a glyph at that location. (Actually identifying glyphs would be a far more complex process requiring OCR etc.) You can also add the <code>-uniqueGlyphs</code> switch to the command line, which instead of representing glyphs as '?', will at least distinguish between glyphs within the image that are different from each other and use a unique glyph to represent each one (but the same unique glyph for those that match). Because this was originally developed to as a roguelike screenshot reader, it will also automatically use '.' to represent the most commonly found glyph in the original image.</p> <p>A wider application of this feature would be for simple pixelwise conversion of any .png image into an .xp file, where each pixel represents the background color for a single cell. In that case, either specify that is the intent by appending <code>_1x1</code> to the filename (basically &quot;each pixel is a cell&quot;), or simply append nothing and it will be assumed this is the purpose.</p> <p>It is assumed the .png source has no transparency layer.</p> </body> </html> 
+</code></pre>
+<p>The file begins with the internal .xp format version number, You can ignore this value, as it is only used by REXPaint itself (in case future changes to the format are required). Note that because pre-R9 versions of REXPaint did not include an .xp version number, it's actually stored as a negative value to differentiate old image files (which begin with a positive layer count) in order to detect and automatically update them.</p>
+<p>The actual image data begins with <code>A</code>, the number of image layers (always a number from 1 to 9 in the current version), followed by a section <code>B</code> for each layer (the image width/height is stored for every layer due to the method of serialization used, but will always be the same values for every layer). Section <code>C</code> is then repeated for each cell in the image, storing the image's 2D matrix in 1D array format. I.e., the length of that matrix would equal width*height, and if you need them you can get the x-value with <code>index / height</code>, and y-value with <code>index % height</code> (my own matrix class stores its data in a 1D array so I just read all the cells straight in). Note that this means the image data happens to be stored in column-major order!</p>
+<p>One thing to remember about directly reading .xp files is that undrawn (empty) cells on any layer (even the base layer) are considered transparent, which is identified by the background color 255,0,255. Thus to rebuild the image as seen in REXPaint, always first test a cell's background color and skip drawing those cells which are transparent, while converting any visible (i.e., non-covered) transparent cells on the lowest layer to black.</p>
+<p>If you don't like working with binary, an alternative is to export images to one of the available text-based formats: TXT, CSV, or XML (see Appendix E).</p>
+<h1 id="appendix-c:-external-libraries-and-tools">Appendix C: External Libraries and Tools</h1>
+<p>If you'd like to use (or at least reference) some pre-existing code for reading .xp files into your own game/software and converting them to an easy to use format, a number of generous devs have shared their solutions for input/output of REXPaint's native .xp format.</p>
+<ul>
+<li>C#: SadRex by Thraka, a library for importing .xp files.<br />
+<a href="https://github.com/Thraka/SadRex">https://github.com/Thraka/SadRex</a></li>
+<li>C++: REXReader-C++ by Tim Stoddard, a C++ version of BaconSoap's importer.<br />
+<a href="https://github.com/gamepopper/REXReader-CPlusPlus/">https://github.com/gamepopper/REXReader-CPlusPlus/</a></li>
+<li>C++: REXSpeeder by pyridine, a fast xp loader that that also supports resaving<br />
+<a href="https://github.com/pyridine/REXSpeeder">https://github.com/pyridine/REXSpeeder</a></li>
+<li>C++: mini-REXSpeeder by Mreuwu, a REXSpeeder alternative compatible with emscripten<br />
+<a href="http://www.gridsagegames.com/forums/index.php?topic=492.0">http://www.gridsagegames.com/forums/index.php?topic=492.0</a></li>
+<li>C++: RLTK by thebracket, a multifeature roguelike toolkit including xp support<br />
+<a href="https://github.com/thebracket/rltk">https://github.com/thebracket/rltk</a></li>
+<li>SFML 2.0: XPText by Tim Stoddard, an SFML entity for rendering xp images.<br />
+<a href="https://github.com/gamepopper/REXReader-CPlusPlus/">https://github.com/gamepopper/REXReader-CPlusPlus/</a></li>
+<li>Python: XPLoader by RCIX (includes libtcod support!).<br />
+<a href="https://github.com/RCIX/XPLoader">https://github.com/RCIX/XPLoader</a></li>
+<li>Python 3 + TDL: XPLoaderPy3 by Edern76 <a href="https://github.com/Edern76/XPLoaderPy3">https://github.com/Edern76/XPLoaderPy3</a></li>
+<li>Python 3 without dependencies: xp_loader by irskep<br />
+<a href="https://github.com/irskep/clubsandwich/blob/master/clubsandwich/xp_loader.py">https://github.com/irskep/clubsandwich/blob/master/clubsandwich/xp_loader.py</a></li>
+<li>Java: xpreader by Stinus Petersen. <a href="https://github.com/biscon/xpreader">https://github.com/biscon/xpreader</a></li>
+<li>Javascript: rex_sprite by chiguireitor, a Node.js module for loading and drawing REXPaint sprites.<br />
+<a href="http://www.gridsagegames.com/blogs/files/rex_sprite.js">http://www.gridsagegames.com/blogs/files/rex_sprite.js</a></li>
+<li>Haxe: REXPaintLoaderHaxe by Matt Johnson.<br />
+<a href="http://lib.haxe.org/p/REXPaintLoaderHaxe/">http://lib.haxe.org/p/REXPaintLoaderHaxe/</a></li>
+<li>Clojure: rockpick by Aaron Santos, an .xp import library. <a href="https://github.com/aaron-santos/rockpick">https://github.com/aaron-santos/rockpick</a></li>
+<li>C#: RexReader by BaconSoap, the original C# .xp reader (though it has some issues). <a href="https://github.com/BaconSoap/RexReader">https://github.com/BaconSoap/RexReader</a></li>
+<li>Swift: REXPaintImage by irskep <a href="https://gist.github.com/irskep/1830b1255c1d73c8dd28da8b83998433">https://gist.github.com/irskep/1830b1255c1d73c8dd28da8b83998433</a></li>
+</ul>
+<p>Other tools:</p>
+<ul>
+<li>png2rex: utility for converting PNGs to .xp, by thebracket <a href="https://github.com/thebracket/png2rex">https://github.com/thebracket/png2rex</a></li>
+<li>image2xp: python script to convert an image file to ASCII or .xp (sample output), by mtvee. <a href="https://gist.github.com/mtvee/5629a2caa34dbf3ece95">https://gist.github.com/mtvee/5629a2caa34dbf3ece95</a> (sample output: <a href="https://i.imgur.com/rAwIWeu.jpg">https://i.imgur.com/rAwIWeu.jpg</a>)</li>
+<li>txt2xp: python script to convert a txt file to .xp, by mtvee. <a href="https://gist.github.com/mtvee/d7a4bd450e3cd6766580">https://gist.github.com/mtvee/d7a4bd450e3cd6766580</a></li>
+<li>txt to .xp: C code to convert a txt file to .xp (minus the gzip step), by gumix. <a href="http://www.gridsagegames.com/forums/index.php?topic=416.msg3677#msg3677">http://www.gridsagegames.com/forums/index.php?topic=416.msg3677#msg3677</a></li>
+</ul>
+<h1 id="appendix-d:-ansi-art-(.ans)">Appendix D: ANSI Art (.ans)</h1>
+<p>For the ANSI artists out there, REXPaint also supports exporting to .ans.</p>
+<p>Creating ANSI art is a little bit different from REXPaint's normal use, so you'll want to follow some basic guidelines:</p>
+<ul>
+<li>Before starting, copy the contents of the data/ansi directory to their respective data folders: copy all files in data/ansi/fonts to data/fonts (overwrite _config.xt when prompted), all files in data/ansi/palettes to data/palettes, and copy REXPaint.cfg to the main directory (overwrite). Copying these files gives you access to the proper palette and an alternate set of more appropriate fonts, but you can always edit _config.xt to make even the square fonts accessible again if preferred.</li>
+<li>Open REXPaint, make your masterpiece, and when done press Ctrl-a to create the .ans file (there is no button for .ans export—it's a &quot;secret&quot; :).</li>
+</ul>
+<p>Miscellaneous Notes:</p>
+<ul>
+<li>Separate layers can be used in the editing process, and any that are visible (not hidden) when the .ans is exported will be merged together, so you always get what you see.</li>
+<li>REXPaint does not currently import .ans files, so make sure you keep the .xp files as well for later editing should you need them (.xp files are compressed and extremely tiny, so size certainly won't be an issue).</li>
+<li>ANSI palette colors are identified by their position in the palette, not the actual color. Therefore, you can create any other ANSI palette you like (or modify the existing one), so long as it follows the same positioning: black, red, green, yellow, blue, magenta, cyan, then white (with normal colors in the first row, and bright/bold text colors in the second row). A table of color values for common ANSI palettes on different system can be found on this page: <a href="http://en.wikipedia.org/wiki/ANSI_escape_code">http://en.wikipedia.org/wiki/ANSI_escape_code</a></li>
+<li>Do NOT use a different palette with an image after it has already been created (without doing a full palette-based color swap) because REXPaint needs to find the image colors in the palette when exporting the .ans file to determine which color type it is. This means that when exporting an .ans file, the same palette used to make the image must be showing.</li>
+</ul>
+<p>Further Explanation:</p>
+<ul>
+<li>The alternate cfg file sets the defaultImageWidth value to 80. You can use a different view width (canvasWidth) if you like, but always leave the image width at 80, the value which REXPaint will set in the .ans file. Image height can be resized to anything you want in REXPaint, but leave the view height something reasonable for your screen size.</li>
+<li>It also changes startPalette from &quot;Palette&quot; to &quot;ANSI VGA&quot;.</li>
+<li>Most importantly it changes ansiMode to 1, an option only available by editing the cfg manually (i.e. not listed in the options menu). This prevents all but the first 8 colors from being set as the background (a standard ANSI limitation), so if you want to use REXPaint for normal true color painting you'll have to close the program and set this value back to 0. ANSI mode also makes the color picker inaccessible through the brush color, forcing you to use the palette.</li>
+</ul>
+<h1 id="appendix-e:-exportable-text-formats-(.txt,-.csv,-.xml,-bbcode)">Appendix E: Exportable Text Formats (.txt, .csv, .xml, BBCode)</h1>
+<p>Export an image as pure text by pressing Ctrl-t. This will only output the glyphs, thus no color information is stored in the file. By default, TXT export uses UTF8 encoding, but this includes unicode hard space encoding so anyone who wants pure ASCII characters should set txtOutputUTF8=0 in REXPaint.cfg.</p>
+<p>While .xp is the ideal format for use in other programs (see Appendix B/C), if you don't want (or are unable) to work with a binary file there are other export options that produce files both human readable and potentially useful in other applications. Naturally all other formats will create files significantly larger than their .xp counterparts, but some users may still prefer or need them for transferring or converting the data. Unlike .xp files, these formats do not store each layer separately, instead merging all visible layers into a single image and storing that.</p>
+<h2 id="csv">CSV</h2>
+<p>The first line stores header information, and all following lines contain the image data in the following format: X,Y,ASCII,Foreground,Background. ASCII values are stored in integer form, and colors are stored as hex values.</p>
+<h2 id="xml">XML</h2>
+<p>All image rows are enclosed in <code>&lt;data&gt;&lt;/data&gt;</code> tags, each row of image data is enclosed in <code>&lt;row&gt;&lt;/row&gt;</code> tags, and there will be <code>&lt;height&gt;</code> number of rows, each with <code>&lt;length&gt;</code> number of cell data. Within each row, each cell is enlosed in <code>&lt;cell&gt;&lt;/cell&gt;</code> tags, and contains <code>&lt;ascii&gt;</code>, <code>&lt;fgd&gt;</code>, and <code>&lt;bkg&gt;</code> tags indicating that cell's ASCII index (stored as an integer, not a character), foreground, and backgroun colors, respectively. Colors are stored as hex values.</p>
+<p>XML files are quite bulky due to the amount of markup required.</p>
+<h2 id="bbcode">BBCode</h2>
+<p>Properly formatted monospaced is output to a text file from where you can copy it to a forum. Mostly a novelty--though I'm sure creative users will find some interesting uses for it.</p>
+<p>Unlike pure text output, BBCode retains both the ASCII (stored as unicode) and foreground color. Since most forums do not support background colors, those in the image will be ignored. (I could add it as a configurable option if there's any demand, since some forums do have background color tags.)</p>
+<p>For now, if you plan to export BBCode I suggest filling the background with whatever color the forum uses, so you have an idea of what the image will actually look like; that and load up a taller narrow font more like what a website will use (also to have a better perspective). REXPaint only comes with square fonts right now, but others can be found on the web.</p>
+<p>Another difference you'll notice when copying BBCode to a forum is that line spacing will cause a divide between each row, which may or may not impact the image's appearance depending on what glyphs are used.</p>
+<p>IMPORTANT: Space characters are usually collapsed when entered into a web browser. To avoid this issue and ensure that glyphs are arranged/indented properly in an image, a &quot;hard space&quot; unicode character is used in place of each normal space. Copying the BBCode from the output text file will also copy these hard space characters normally and maintain the image's appearance, but it seems that secondary copying from within a forum itself does <em>not</em> retain the proper spacing--it converts them to normal spaces, which will then collapse. The only way around this seems to be always copy the BBCode content from the original source text file. An alternative is to fill unused image space with the &quot;full block&quot; ASCII character (this is easy to do with the fill tool, and can be done before starting to draw). This method can also be used to create makeshift &quot;backgrounds.&quot;</p>
+<h1 id="appendix-f:-importing-text-files">Appendix F: Importing Text Files</h1>
+<p>REXPaint normally only edits its native .xp format, but it is also possible to use command line instructions to convert an existing .txt file into an .xp file for editing. While the process is not incredibly convenient since REXPaint wasn't really meant for this purpose, it can be helpful in some situations and was therefore added by request :D.</p>
+<p>To convert a .txt file to .xp, simply put it in the <code>/images/</code> directory and run REXPaint with the command line argument <code>-txt2xp:XXX</code>, where XXX is the name of the file to convert. The file name as provided can include or exclude the extension (e.g. <code>image.txt</code> or just <code>image</code>), but the file itself is expected to have a proper .txt extension. The width of the image produced will be determined by the longest line in the .txt file, and by default will use black glyphs on a white background, but once in REXPaint you can easily swap the colors or perform any other normal edits.</p>
+<p>Note that only plain text files are supported (glyphs 0~127, no UTF encoding), and if an .xp file of the same name already exists, IT WILL BE OVERWRITTEN!</p>
+<p>See also Appendix C for some third-party tools/code also capable of converting .txt files to .xp.</p>
+<h1 id="appendix-g:-importing-pngs">Appendix G: Importing PNGs</h1>
+<p>REXPaint is capable of partially converting .png images to .xp files for editing. This is a special feature developed for my own use in roguelike development, which I've included for the heck of it in case someone else finds it useful. Like .txt imports, it requires use of the command line.</p>
+<p>To convert a .png file to .xp, put it in the <code>/images/</code> directory and run REXPaint with the argument <code>-png2xp:XXX</code>, where XXX is the name of the file to convert. The file name as provided can include or exclude the .png extension, but the file itself is expected to have a proper .png extension. Moreover, the file name must include <code>_WWWxHHH</code> at the end, where WWW and HHH are the pixel width and height of an individual cell in the image. E.g. a Nethack screenshot using an 8x16 monospaced font should be named something like <code>NetHack_8x16.</code> (This feature was intended to read in images of grid-based terminal output, such as roguelike screenshots.)</p>
+<p>While the resulting .xp image will properly assign all foreground and background colors, it cannot actually identify glyphs for what they are. Instead any glyph-containing cell will simply use '?' (in the proper color) to represent a glyph at that location. (Actually identifying glyphs would be a far more complex process requiring OCR etc.) You can also add the <code>-uniqueGlyphs</code> switch to the command line, which instead of representing glyphs as '?', will at least distinguish between glyphs within the image that are different from each other and use a unique glyph to represent each one (but the same unique glyph for those that match). Because this was originally developed to as a roguelike screenshot reader, it will also automatically use '.' to represent the most commonly found glyph in the original image.</p>
+<p>A wider application of this feature would be for simple pixelwise conversion of any .png image into an .xp file, where each pixel represents the background color for a single cell. In that case, either specify that is the intent by appending <code>_1x1</code> to the filename (basically &quot;each pixel is a cell&quot;), or simply append nothing and it will be assumed this is the purpose.</p>
+<p>It is assumed the .png source has no transparency layer.</p>
+</body>
+</html>

@@ -1,4 +1,29 @@
-<!DOCTYPE html><html lang=en> <head><title>Steve Landey – How I use&nbsp;git</title><meta name=viewport content="width=device-width"><meta charset=UTF-8><meta charset=utf-8><link href=http://localhost:8001/feeds/all.atom.xml type=application/atom+xml rel=alternate title="Steve Landey Full Atom Feed"><link href=http://localhost:8001/feeds/all.rss.xml type=application/rss+xml rel=alternate title="Steve Landey Full RSS Feed"><script src=http://localhost:8001/js/hyphenate.js defer></script><style type=text/css>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+Steve Landey – How I use&nbsp;git    </title>
+
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+
+    <meta charset="utf-8" />
+    <link
+      href="https://steveasleep.com/feeds/all.atom.xml"
+      type="application/atom+xml"
+      rel="alternate"
+      title="Steve Landey Full Atom Feed"
+    />
+     <link
+      href="https://steveasleep.com/feeds/all.rss.xml"
+      type="application/rss+xml"
+      rel="alternate"
+      title="Steve Landey Full RSS Feed"
+    />
+
+    <script src="https://steveasleep.com/js/hyphenate.js" defer></script>
+
+    <style type="text/css">
       /* CSS Micro Reset */
 
 * {
@@ -261,66 +286,234 @@ ul.article-summary-list > li {
 .page-content p {
   line-height: 1.5;
 }
-    </style></head> <body> <div class=PageContainer> <header class=Toolbar> <h1><a href=http://localhost:8001>Steve Landey</a></h1> <div class=FlexSpace></div> <nav class=Toolbar_Subsection> <ul> <li><a href=mailto:randos@steve.steveasleep.com>Email</a></li> <li><a href=https://blog.steveasleep.com/ >Blog</a></li> <li> <a href=https://irskep.omg.lol>irskep.omg.lol (more links)</a> </li> </ul> </nav> </header> <main> <section id=content class=body><article class=article> <header class=article-header> <h1 class=entry-title> <a href=http://localhost:8001/drafts/how-i-use-git.html rel=bookmark title="Permalink to How I use git"> How I use&nbsp;git </a> </h1> <div class=post-info> <time class=published datetime=2017-11-17T00:00:00-08:00> November 17, 2017 </time> </div> </header> <div class="entry-content hyphenate"><p>When you use a tool for a long time, it can be easy to forget what it was like to learn it for the first time. It becomes routine. As someone who passed this point with git long ago, I thought it might be helpful to share my day-to-day workflow in case someone wandering around the internet finds it&nbsp;helpful.</p> <h1>Vocabulary</h1> <p>To understand this post you need to know what these words mean in the git&nbsp;universe:</p> <ul> <li>Staging&nbsp;area</li> <li>Commit</li> <li>Amend</li> <li>Rebase</li> <li>Clone</li> <li>Branch</li> <li>Checkout</li> </ul> <h1>My employer&#8217;s git&nbsp;workflow</h1> <p>I work at Hipmunk. We use a rebase-and-squash workflow. This means that when a pull request has been reviewed, the tests pass, and it&#8217;s ready to go &#8220;into production,&#8221; all the commits from the branch are combined into one and added as a single commit on the master branch, with the pull request description as the commit&nbsp;message.</p> <p>So&nbsp;this:</p> <div class=highlight><pre><span></span><code><span class=nl>master</span><span class=p>:</span><span class=w>         </span><span class=o>[</span><span class=n>a</span><span class=o>]---&gt;[</span><span class=n>b</span><span class=o>]---&gt;[</span><span class=n>c</span><span class=o>]---&gt;[</span><span class=n>d</span><span class=o>]</span>
-<span class=w>                   </span><span class=err>\</span>
-<span class=n>feature</span><span class=w> </span><span class=nl>branch</span><span class=p>:</span><span class=w>     </span><span class=err>\</span><span class=o>-&gt;[</span><span class=n>e</span><span class=o>]</span><span class=c1>---&gt;[f]</span>
-</code></pre></div> <p>Becomes&nbsp;this:</p> <div class=highlight><pre><span></span><code><span class=nl>master</span><span class=p>:</span><span class=w>         </span><span class=o>[</span><span class=n>a</span><span class=o>]</span><span class=c1>---&gt;[b]---&gt;[c]---&gt;[d]---&gt;[ef]</span>
-</code></pre></div> <p>Most people use merges&nbsp;instead:</p> <div class=highlight><pre><span></span><code><span class=nl>master</span><span class=p>:</span><span class=w>         </span><span class=o>[</span><span class=n>a</span><span class=o>]---&gt;[</span><span class=n>b</span><span class=o>]---&gt;[</span><span class=n>c</span><span class=o>]---&gt;[</span><span class=n>d</span><span class=o>]--&gt;[</span><span class=n>g</span><span class=o>]</span>
-<span class=w>                   </span><span class=err>\</span><span class=w>                     </span><span class=o>/</span>
-<span class=n>feature</span><span class=w> </span><span class=nl>branch</span><span class=p>:</span><span class=w>     </span><span class=err>\</span><span class=o>-&gt;[</span><span class=n>e</span><span class=o>]</span><span class=c1>---&gt;[f]-------/</span>
-</code></pre></div> <p>But we&nbsp;don&#8217;t.</p> <h1>Git remote&nbsp;setup</h1> <p>There are three git clones I care&nbsp;about:</p> <ul> <li>The canonical one at <code>github.com/Hipmunk/blah</code>. This is <code>upstream</code>.</li> <li>My GitHub clone at <code>github.com/irskep/blah</code>. This is <code>origin</code>.</li> <li>My local&nbsp;clone.</li> </ul> <h1>Starting work on a new&nbsp;feature</h1> <p>The very first thing I do every time is <code>git fetch upstream</code>, to make sure I make my new branch from the latest <code>master</code>. Then I <code>git clone upstream/master -b BRANCH_NAME</code>.</p> <p>For features, I name my branches like <code>pr/feature-name</code>. The <code>pr/</code> prefix means this branch is meant to eventually be a pull request on GitHub, as opposed to a scratchpad, merge of some unfinished demo code, or release&nbsp;branch.</p> <p>Example:</p> <div class=highlight><pre><span></span><code>git<span class=w> </span>fetch<span class=w> </span>upstream<span class=w> </span><span class=o>&amp;&amp;</span><span class=w> </span>git<span class=w> </span>clone<span class=w> </span>upstream/master<span class=w> </span>-b<span class=w> </span>pr/fix-the-bug
-<span class=c1># I actually have that command aliased to &quot;gbn&quot;, so in reality I type:</span>
-<span class=c1># gbn pr/fix-the-bug</span>
-</code></pre></div> <h2>Git command&nbsp;recap</h2> <ul> <li><code>git fetch upstream</code> to make sure local clone of <code>upstream</code> is up to&nbsp;date</li> <li><code>git checkout upstream/master -b BRANCH</code> creates a new branch starting from the <code>HEAD</code> of the <code>master</code> branch of the local <code>upstream</code> clone</li> </ul> <h1>Working on the&nbsp;feature</h1> <p>I commit frequently, and I amend my commits frequently. My rules for committing&nbsp;are:</p> <ul> <li>Always read the entire diff before staging. This means either running <code>git diff</code> before <code>git add .</code>, or staging with <code>git add -p .</code> to get only the changes I&nbsp;want.</li> <li>If code is for testing or debugging only, commit it without any other changes in the same commit. When I no longer need it, revert the&nbsp;commit.</li> <li>If I have written out a complete idea, and the code compiles, commit without executing it. Try to give commits descriptive names that define what should and should not be in the&nbsp;commit.</li> <li>If I run the code and it doesn&#8217;t work, and I then fix the bug, then either amend the commit that introduced the bug immediately, or create a commit that refers to the buggy commit in its&nbsp;description.</li> <li>Commits containing unit tests should only contain the new tests, or fixes for bugs found by those tests. I don&#8217;t have a good reason for doing this, it&#8217;s just what I do most&nbsp;often.</li> <li>Code review feedback is in bite-sized pieces at the&nbsp;end.</li> </ul> <p>When I feel like I&#8217;m ready to step back and either do somethinking or open a pull request, I run <code>git rebase -i upstream/dev</code> to fix any issues with my commit&nbsp;history.</p> <p>Here&#8217;s an example&nbsp;workflow:</p> <div class=highlight><pre><span></span><code><span class=c1># gbn = git fetch upstream &amp;&amp; git checkout -b upstream/master $1</span>
-gbn<span class=w> </span>pr/account-settings-loading-state
-<span class=c1># ... work ...</span>
-git<span class=w> </span>add<span class=w> </span>-p<span class=w> </span>.<span class=w>  </span><span class=c1># stage everything relevant. I alias this to `gap`.</span>
-git<span class=w> </span>commit<span class=w> </span>-m<span class=w> </span><span class=s2>&quot;Add loading state to account settings screen&quot;</span>
-<span class=c1># ... run, find bug ...</span>
-git<span class=w> </span>add<span class=w> </span>-p<span class=w> </span>.<span class=w>  </span><span class=c1># stage the bug fix</span>
-<span class=c1># this amends the most recent commit without prompting to change</span>
-<span class=c1># the message:</span>
-git<span class=w> </span>commit<span class=w> </span>--amend<span class=w> </span>-CHEAD<span class=w> </span><span class=c1># I alias this to `gcaa`.</span>
-<span class=c1># ... write tests ...</span>
-git<span class=w> </span>commit<span class=w> </span>-am<span class=w> </span><span class=s2>&quot;Write tests&quot;</span><span class=w>  </span><span class=c1># I admit this is what I really write.</span>
-<span class=c1># I alias gcam to `git commit -am` to save typing.</span>
-<span class=c1># ... run tests, find bug, fix bug</span>
-git<span class=w> </span>diff<span class=w>    </span><span class=c1># check diff</span>
-git<span class=w> </span>add<span class=w> </span>.<span class=w>   </span><span class=c1># diff was fine, stage everything</span>
-git<span class=w> </span>commit<span class=w> </span>-m<span class=w> </span><span class=s1>&#39;Fix initial implementation&#39;</span>
-<span class=c1># Done, tests pass! Now to fix the history:</span>
-git<span class=w> </span>rebase<span class=w> </span>-i<span class=w> </span>upstream/master
-<span class=w>    </span><span class=c1># That will open a text editor containing these lines:</span>
-<span class=w>    </span>pick<span class=w> </span>0abc<span class=w> </span>Add<span class=w> </span>loading<span class=w> </span>state<span class=w> </span>to<span class=w> </span>account<span class=w> </span>settings<span class=w> </span>screen
-<span class=w>    </span>pick<span class=w> </span>5xyz<span class=w> </span>Write<span class=w> </span>tests
-<span class=w>    </span>pick<span class=w> </span>qrs4<span class=w> </span>Fix<span class=w> </span>initial<span class=w> </span>implementation
+    </style>
 
-<span class=w>    </span><span class=c1># I edit it to look like this:</span>
-<span class=w>    </span>pick<span class=w> </span>0abc<span class=w> </span>Add<span class=w> </span>loading<span class=w> </span>state<span class=w> </span>to<span class=w> </span>account<span class=w> </span>settings<span class=w> </span>screen
-<span class=w>    </span>fixup<span class=w> </span>qrs4<span class=w> </span>Fix<span class=w> </span>initial<span class=w> </span>implementation
-<span class=w>    </span>pick<span class=w> </span>5xyz<span class=w> </span>Write<span class=w> </span>tests
+  </head>
 
-<span class=w>    </span><span class=c1># Save and quit.</span>
-<span class=w>    </span><span class=c1># Now my commit history looks like this:</span>
-<span class=w>    </span>e351<span class=w> </span>Add<span class=w> </span>loading<span class=w> </span>state<span class=w> </span>to<span class=w> </span>account<span class=w> </span>settings<span class=w> </span>screen
-<span class=w>    </span>facb<span class=w> </span>Write<span class=w> </span>tests
-</code></pre></div> <h2>Git command&nbsp;recap</h2> <ul> <li><code>git add -p</code> opens an interactive interface for adding lines to the staging&nbsp;area.</li> <li><code>git commit -m</code> turns the staging area into a commit with the given&nbsp;message.</li> <li><code>git commit --amend -CHEAD</code> amends the latest commit to include the changes in the staging area without altering the commit&nbsp;message.</li> <li><code>git commit -am</code> adds all change to the staging area (except untracked files) and creates a new commit with the given&nbsp;message.</li> <li><code>git diff</code> shows all unstaged changes (except untracked&nbsp;files).</li> <li><code>git add .</code> adds all changes, including untracked files, to the staging&nbsp;area.</li> <li><code>git rebase -i ANCESTOR</code> lets you interactively reorder, omit, and combine all commits in the current branch back to <code>ANCESTOR</code>.</li> </ul> <h1>Getting&nbsp;sidetracked</h1> <p>If I&#8217;m working on a task but notice something else that needs to be done, I&#8217;m not always disciplined about staying on track. If I do decided to wander out of scope for my current branch, here&#8217;s what I&nbsp;do:</p> <div class=highlight><pre><span></span><code><span class=c1># starting on pr/original-branch...</span>
-git<span class=w> </span>add<span class=w> </span>-p<span class=w> </span>.<span class=w>  </span><span class=c1># stage everything that matters to this branch</span>
-git<span class=w> </span>checkout<span class=w> </span>-b<span class=w> </span>pr/distraction
-<span class=c1># Develop pr/distraction using normal workflow</span>
-git<span class=w> </span>rebase<span class=w> </span>-i<span class=w> </span>upstream/master
-<span class=w>    </span><span class=c1># Using interactive rebase, I remove all commits from pr/original-branch,</span>
-<span class=w>    </span><span class=c1># keeping only the ones I added after creating pr/distraction.</span>
-</code></pre></div> <p>Now I can open a pull request containing only the changes from <code>pr/distraction</code>, and avoid creating a huge, badly-scoped diff! And I can <code>git checkout pr/original-branch</code> to keep working on what I was&nbsp;before.</p> <h1>Keeping up to&nbsp;date</h1> <p>When working quickly on a small team, it&#8217;s not uncommon to need to rebase on <code>upstream/master</code> to get the latest version of an <span class=caps>API</span> or fix a conflict. The first step of this process is just <code>git rebase upstream master</code>.</p> <p>But what if there&#8217;s a conflict? Forget opening a text editor and dealing with all those <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> garbage lines. Instead, I do&nbsp;this:</p> <div class=highlight><pre><span></span><code>git<span class=w> </span>mergetool<span class=w> </span>-t<span class=w> </span>opendiff<span class=w>  </span><span class=c1># aliased to `gmto`</span>
-</code></pre></div> <p>This uses Apple&#8217;s graphical diff tool. Press Command+D to scroll to the next conflict. Use the bottom right option control to choose different resolutions, or manually edit the bottom area&nbsp;yourself.</p> <h1>Getting ahead of&nbsp;myself</h1> <p>At Hipmunk, we try to keep patches small so that reviewers can do their best work. But I&#8217;m an impatient person, so I&#8217;ll often write the first half of a feature, like the data models, open a pull request for that, and start working on the second half, like the <span class=caps>UI</span>, before the first pull request has been reviewed and&nbsp;committed.</p> <p>Let&#8217;s say the first pull request is for <code>pr/account-page-data-models</code>. There are two&nbsp;commits:</p> <div class=highlight><pre><span></span><code><span class=n>aaa</span><span class=o>:</span><span class=w> </span><span class=n>Account</span><span class=w> </span><span class=n>page</span><span class=w> </span><span class=n>data</span><span class=w> </span><span class=n>models</span>
-<span class=n>bbb</span><span class=o>:</span><span class=w> </span><span class=n>Account</span><span class=w> </span><span class=n>page</span><span class=w> </span><span class=n>data</span><span class=w> </span><span class=n>model</span><span class=w> </span><span class=n>tests</span>
-</code></pre></div> <p>On a branch starting at that point, <code>pr/account-page-ui</code>, we add three&nbsp;commits:</p> <div class=highlight><pre><span></span><code><span class=n>ccc</span><span class=o>:</span><span class=w> </span><span class=n>Account</span><span class=w> </span><span class=n>page</span><span class=w> </span><span class=n>view</span><span class=w> </span><span class=n>controller</span>
-<span class=n>ddd</span><span class=o>:</span><span class=w> </span><span class=n>Account</span><span class=w> </span><span class=n>page</span><span class=w> </span><span class=n>content</span>
-<span class=n>eee</span><span class=o>:</span><span class=w> </span><span class=n>Account</span><span class=w> </span><span class=n>page</span><span class=w> </span><span class=n>UI</span><span class=w> </span><span class=n>tests</span>
-</code></pre></div> <p>At this point, we check our email and see that <code>pr/account-page-data-models</code> has some code review feedback we need to address. So take care of&nbsp;that:</p> <div class=highlight><pre><span></span><code>git<span class=w> </span>checkout<span class=w> </span>pr/account-page-data-models
-<span class=c1># type type type</span>
-git<span class=w> </span>commit<span class=w> </span>-am<span class=w> </span><span class=s2>&quot;Address code review feedback&quot;</span>
-</code></pre></div> <p>At that point, the reviewer approves the pull request, and we commit <code>pr/account-page-data-models</code> to <code>upstream/master</code>.</p> <p>Now we are in a pickle, because <code>upstream/master</code> has <span class=caps>ONE</span> commit for the first set of changes, but our branch <code>pr/account-page-ui</code> has <span class=caps>TWO</span> commits for the same changes! If we <code>git fetch upstream &amp;&amp; git rebase upstream/master</code>, we will almost certainly have&nbsp;conflicts.</p> <div class=highlight><pre><span></span><code>upstream/master:
+  <body>
+    <div class="PageContainer">
+      <header class="Toolbar">
+        <h1><a href="https://steveasleep.com">Steve Landey</a></h1>
+        <div class="FlexSpace"></div>
+        <nav class="Toolbar_Subsection">
+          <ul>
+            <li><a href="mailto:randos@steve.steveasleep.com">Email</a></li>
+            <li><a href="https://blog.steveasleep.com/">Blog</a></li>
+            <li>
+              <a href="https://irskep.omg.lol">irskep.omg.lol (more links)</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>  <section id="content" class="body"><article class="article">
+      <header class="article-header">
+    <h1 class="entry-title">
+      <a href="https://steveasleep.com/drafts/how-i-use-git.html" rel="bookmark" title="Permalink to How I use git">
+        How I use&nbsp;git
+      </a>
+    </h1>
+    <div class="post-info">
+        <time class="published" datetime="2017-11-17T00:00:00-08:00">
+          November 17, 2017
+        </time>
+    </div>
+  </header>
+
+    <div class="entry-content hyphenate"><p>When you use a tool for a long time, it can be easy to forget what it was like
+to learn it for the first time. It becomes routine. As someone who passed this
+point with git long ago, I thought it might be helpful to share my day-to-day
+workflow in case someone wandering around the internet finds it&nbsp;helpful.</p>
+<h1>Vocabulary</h1>
+<p>To understand this post you need to know what these words mean in the git&nbsp;universe:</p>
+<ul>
+<li>Staging&nbsp;area</li>
+<li>Commit</li>
+<li>Amend</li>
+<li>Rebase</li>
+<li>Clone</li>
+<li>Branch</li>
+<li>Checkout</li>
+</ul>
+<h1>My employer&#8217;s git&nbsp;workflow</h1>
+<p>I work at Hipmunk. We use a rebase-and-squash workflow. This means that when
+a pull request has been reviewed, the tests pass, and it&#8217;s ready to go
+&#8220;into production,&#8221; all the commits from the branch are combined into one and
+added as a single commit on the master branch, with the pull request
+description as the commit&nbsp;message.</p>
+<p>So&nbsp;this:</p>
+<div class="highlight"><pre><span></span><code><span class="nl">master</span><span class="p">:</span><span class="w">         </span><span class="o">[</span><span class="n">a</span><span class="o">]---&gt;[</span><span class="n">b</span><span class="o">]---&gt;[</span><span class="n">c</span><span class="o">]---&gt;[</span><span class="n">d</span><span class="o">]</span>
+<span class="w">                   </span><span class="err">\</span>
+<span class="n">feature</span><span class="w"> </span><span class="nl">branch</span><span class="p">:</span><span class="w">     </span><span class="err">\</span><span class="o">-&gt;[</span><span class="n">e</span><span class="o">]</span><span class="c1">---&gt;[f]</span>
+</code></pre></div>
+
+<p>Becomes&nbsp;this:</p>
+<div class="highlight"><pre><span></span><code><span class="nl">master</span><span class="p">:</span><span class="w">         </span><span class="o">[</span><span class="n">a</span><span class="o">]</span><span class="c1">---&gt;[b]---&gt;[c]---&gt;[d]---&gt;[ef]</span>
+</code></pre></div>
+
+<p>Most people use merges&nbsp;instead:</p>
+<div class="highlight"><pre><span></span><code><span class="nl">master</span><span class="p">:</span><span class="w">         </span><span class="o">[</span><span class="n">a</span><span class="o">]---&gt;[</span><span class="n">b</span><span class="o">]---&gt;[</span><span class="n">c</span><span class="o">]---&gt;[</span><span class="n">d</span><span class="o">]--&gt;[</span><span class="n">g</span><span class="o">]</span>
+<span class="w">                   </span><span class="err">\</span><span class="w">                     </span><span class="o">/</span>
+<span class="n">feature</span><span class="w"> </span><span class="nl">branch</span><span class="p">:</span><span class="w">     </span><span class="err">\</span><span class="o">-&gt;[</span><span class="n">e</span><span class="o">]</span><span class="c1">---&gt;[f]-------/</span>
+</code></pre></div>
+
+<p>But we&nbsp;don&#8217;t.</p>
+<h1>Git remote&nbsp;setup</h1>
+<p>There are three git clones I care&nbsp;about:</p>
+<ul>
+<li>The canonical one at <code>github.com/Hipmunk/blah</code>. This is <code>upstream</code>.</li>
+<li>My GitHub clone at <code>github.com/irskep/blah</code>. This is <code>origin</code>.</li>
+<li>My local&nbsp;clone.</li>
+</ul>
+<h1>Starting work on a new&nbsp;feature</h1>
+<p>The very first thing I do every time is <code>git fetch upstream</code>, to make sure I
+make my new branch from the latest <code>master</code>. Then I
+<code>git clone upstream/master -b BRANCH_NAME</code>.</p>
+<p>For features, I name my branches like <code>pr/feature-name</code>. The <code>pr/</code> prefix
+means this branch is meant to eventually be a pull request on GitHub, as
+opposed to a scratchpad, merge of some unfinished demo code, or release&nbsp;branch.</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>fetch<span class="w"> </span>upstream<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>upstream/master<span class="w"> </span>-b<span class="w"> </span>pr/fix-the-bug
+<span class="c1"># I actually have that command aliased to &quot;gbn&quot;, so in reality I type:</span>
+<span class="c1"># gbn pr/fix-the-bug</span>
+</code></pre></div>
+
+<h2>Git command&nbsp;recap</h2>
+<ul>
+<li><code>git fetch upstream</code> to make sure local clone of <code>upstream</code> is up to&nbsp;date</li>
+<li><code>git checkout upstream/master -b BRANCH</code> creates a new branch starting from
+  the <code>HEAD</code> of the <code>master</code> branch of the local <code>upstream</code> clone</li>
+</ul>
+<h1>Working on the&nbsp;feature</h1>
+<p>I commit frequently, and I amend my commits frequently. My rules for committing&nbsp;are:</p>
+<ul>
+<li>Always read the entire diff before staging. This means either running
+  <code>git diff</code> before <code>git add .</code>, or staging with <code>git add -p .</code> to get only
+  the changes I&nbsp;want.</li>
+<li>If code is for testing or debugging only, commit it without any other
+  changes in the same commit. When I no longer need it, revert the&nbsp;commit.</li>
+<li>If I have written out a complete idea, and the code compiles, commit without
+  executing it. Try to give commits descriptive names that define what should
+  and should not be in the&nbsp;commit.</li>
+<li>If I run the code and it doesn&#8217;t work, and I then fix the bug, then either
+  amend the commit that introduced the bug immediately, or create a commit that
+  refers to the buggy commit in its&nbsp;description.</li>
+<li>Commits containing unit tests should only contain the new tests, or fixes for
+  bugs found by those tests. I don&#8217;t have a good reason for doing this, it&#8217;s
+  just what I do most&nbsp;often.</li>
+<li>Code review feedback is in bite-sized pieces at the&nbsp;end.</li>
+</ul>
+<p>When I feel like I&#8217;m ready to step back and either do somethinking or open a
+pull request, I run <code>git rebase -i upstream/dev</code> to fix any issues with my
+commit&nbsp;history.</p>
+<p>Here&#8217;s an example&nbsp;workflow:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># gbn = git fetch upstream &amp;&amp; git checkout -b upstream/master $1</span>
+gbn<span class="w"> </span>pr/account-settings-loading-state
+<span class="c1"># ... work ...</span>
+git<span class="w"> </span>add<span class="w"> </span>-p<span class="w"> </span>.<span class="w">  </span><span class="c1"># stage everything relevant. I alias this to `gap`.</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add loading state to account settings screen&quot;</span>
+<span class="c1"># ... run, find bug ...</span>
+git<span class="w"> </span>add<span class="w"> </span>-p<span class="w"> </span>.<span class="w">  </span><span class="c1"># stage the bug fix</span>
+<span class="c1"># this amends the most recent commit without prompting to change</span>
+<span class="c1"># the message:</span>
+git<span class="w"> </span>commit<span class="w"> </span>--amend<span class="w"> </span>-CHEAD<span class="w"> </span><span class="c1"># I alias this to `gcaa`.</span>
+<span class="c1"># ... write tests ...</span>
+git<span class="w"> </span>commit<span class="w"> </span>-am<span class="w"> </span><span class="s2">&quot;Write tests&quot;</span><span class="w">  </span><span class="c1"># I admit this is what I really write.</span>
+<span class="c1"># I alias gcam to `git commit -am` to save typing.</span>
+<span class="c1"># ... run tests, find bug, fix bug</span>
+git<span class="w"> </span>diff<span class="w">    </span><span class="c1"># check diff</span>
+git<span class="w"> </span>add<span class="w"> </span>.<span class="w">   </span><span class="c1"># diff was fine, stage everything</span>
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s1">&#39;Fix initial implementation&#39;</span>
+<span class="c1"># Done, tests pass! Now to fix the history:</span>
+git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>upstream/master
+<span class="w">    </span><span class="c1"># That will open a text editor containing these lines:</span>
+<span class="w">    </span>pick<span class="w"> </span>0abc<span class="w"> </span>Add<span class="w"> </span>loading<span class="w"> </span>state<span class="w"> </span>to<span class="w"> </span>account<span class="w"> </span>settings<span class="w"> </span>screen
+<span class="w">    </span>pick<span class="w"> </span>5xyz<span class="w"> </span>Write<span class="w"> </span>tests
+<span class="w">    </span>pick<span class="w"> </span>qrs4<span class="w"> </span>Fix<span class="w"> </span>initial<span class="w"> </span>implementation
+
+<span class="w">    </span><span class="c1"># I edit it to look like this:</span>
+<span class="w">    </span>pick<span class="w"> </span>0abc<span class="w"> </span>Add<span class="w"> </span>loading<span class="w"> </span>state<span class="w"> </span>to<span class="w"> </span>account<span class="w"> </span>settings<span class="w"> </span>screen
+<span class="w">    </span>fixup<span class="w"> </span>qrs4<span class="w"> </span>Fix<span class="w"> </span>initial<span class="w"> </span>implementation
+<span class="w">    </span>pick<span class="w"> </span>5xyz<span class="w"> </span>Write<span class="w"> </span>tests
+
+<span class="w">    </span><span class="c1"># Save and quit.</span>
+<span class="w">    </span><span class="c1"># Now my commit history looks like this:</span>
+<span class="w">    </span>e351<span class="w"> </span>Add<span class="w"> </span>loading<span class="w"> </span>state<span class="w"> </span>to<span class="w"> </span>account<span class="w"> </span>settings<span class="w"> </span>screen
+<span class="w">    </span>facb<span class="w"> </span>Write<span class="w"> </span>tests
+</code></pre></div>
+
+<h2>Git command&nbsp;recap</h2>
+<ul>
+<li><code>git add -p</code> opens an interactive interface for adding lines to the staging&nbsp;area.</li>
+<li><code>git commit -m</code> turns the staging area into a commit with the given&nbsp;message.</li>
+<li><code>git commit --amend -CHEAD</code> amends the latest commit to include the changes
+  in the staging area without altering the commit&nbsp;message.</li>
+<li><code>git commit -am</code> adds all change to the staging area (except untracked files)
+  and creates a new commit with the given&nbsp;message.</li>
+<li><code>git diff</code> shows all unstaged changes (except untracked&nbsp;files).</li>
+<li><code>git add .</code> adds all changes, including untracked files, to the staging&nbsp;area.</li>
+<li><code>git rebase -i ANCESTOR</code> lets you interactively reorder, omit, and
+  combine all commits in the current branch back to <code>ANCESTOR</code>.</li>
+</ul>
+<h1>Getting&nbsp;sidetracked</h1>
+<p>If I&#8217;m working on a task but notice something else that needs to be done, I&#8217;m
+not always disciplined about staying on track. If I do decided to wander out of
+scope for my current branch, here&#8217;s what I&nbsp;do:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># starting on pr/original-branch...</span>
+git<span class="w"> </span>add<span class="w"> </span>-p<span class="w"> </span>.<span class="w">  </span><span class="c1"># stage everything that matters to this branch</span>
+git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>pr/distraction
+<span class="c1"># Develop pr/distraction using normal workflow</span>
+git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>upstream/master
+<span class="w">    </span><span class="c1"># Using interactive rebase, I remove all commits from pr/original-branch,</span>
+<span class="w">    </span><span class="c1"># keeping only the ones I added after creating pr/distraction.</span>
+</code></pre></div>
+
+<p>Now I can open a pull request containing only the changes from
+<code>pr/distraction</code>, and avoid creating a huge, badly-scoped diff! And I can
+<code>git checkout pr/original-branch</code> to keep working on what I was&nbsp;before.</p>
+<h1>Keeping up to&nbsp;date</h1>
+<p>When working quickly on a small team, it&#8217;s not uncommon to need to rebase
+on <code>upstream/master</code> to get the latest version of an <span class="caps">API</span> or fix a conflict.
+The first step of this process is just <code>git rebase upstream master</code>.</p>
+<p>But what if there&#8217;s a conflict? Forget opening a text editor and dealing
+with all those <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> garbage lines. Instead, I do&nbsp;this:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>mergetool<span class="w"> </span>-t<span class="w"> </span>opendiff<span class="w">  </span><span class="c1"># aliased to `gmto`</span>
+</code></pre></div>
+
+<p>This uses Apple&#8217;s graphical diff tool. Press Command+D to scroll to the next
+conflict. Use the bottom right option control to choose different resolutions,
+or manually edit the bottom area&nbsp;yourself.</p>
+<h1>Getting ahead of&nbsp;myself</h1>
+<p>At Hipmunk, we try to keep patches small so that reviewers can do their best
+work. But I&#8217;m an impatient person, so I&#8217;ll often write the first half of a
+feature, like the data models, open a pull request for that, and start working
+on the second half, like the <span class="caps">UI</span>, before the first pull request has been
+reviewed and&nbsp;committed.</p>
+<p>Let&#8217;s say the first pull request is for <code>pr/account-page-data-models</code>. There
+are two&nbsp;commits:</p>
+<div class="highlight"><pre><span></span><code><span class="n">aaa</span><span class="o">:</span><span class="w"> </span><span class="n">Account</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">models</span>
+<span class="n">bbb</span><span class="o">:</span><span class="w"> </span><span class="n">Account</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="n">tests</span>
+</code></pre></div>
+
+<p>On a branch starting at that point, <code>pr/account-page-ui</code>, we add three&nbsp;commits:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ccc</span><span class="o">:</span><span class="w"> </span><span class="n">Account</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="n">view</span><span class="w"> </span><span class="n">controller</span>
+<span class="n">ddd</span><span class="o">:</span><span class="w"> </span><span class="n">Account</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="n">content</span>
+<span class="n">eee</span><span class="o">:</span><span class="w"> </span><span class="n">Account</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="n">UI</span><span class="w"> </span><span class="n">tests</span>
+</code></pre></div>
+
+<p>At this point, we check our email and see that <code>pr/account-page-data-models</code>
+has some code review feedback we need to address. So take care of&nbsp;that:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>pr/account-page-data-models
+<span class="c1"># type type type</span>
+git<span class="w"> </span>commit<span class="w"> </span>-am<span class="w"> </span><span class="s2">&quot;Address code review feedback&quot;</span>
+</code></pre></div>
+
+<p>At that point, the reviewer approves the pull request, and we commit
+<code>pr/account-page-data-models</code> to <code>upstream/master</code>.</p>
+<p>Now we are in a pickle, because <code>upstream/master</code> has <span class="caps">ONE</span> commit for the
+first set of changes, but our branch <code>pr/account-page-ui</code> has <span class="caps">TWO</span> commits for
+the same changes! If we <code>git fetch upstream &amp;&amp; git rebase upstream/master</code>,
+we will almost certainly have&nbsp;conflicts.</p>
+<div class="highlight"><pre><span></span><code>upstream/master:
     fff: PR #1234 Account page data models + tests
 pr/account-page-ui:
     aaa: Account page data models
@@ -328,14 +521,52 @@ pr/account-page-ui:
     ccc: Account page view controller
     ddd: Account page content
     eee: Account page UI tests
-</code></pre></div> <p>I have two strategies for dealing with this situation. One is more straightforward and has more steps. The other is more confusing and has fewer&nbsp;steps.</p> <h2>The straightforward&nbsp;version</h2> <div class=highlight><pre><span></span><code>git<span class=w> </span>checkout<span class=w> </span>pr/account-page-ui
-git<span class=w> </span>rebase<span class=w> </span>-i<span class=w> </span>aaa^<span class=w>  </span><span class=c1># rebase starting at aaa&#39;s parent</span>
-<span class=w>    </span>pick<span class=w> </span>aaa
-<span class=w>    </span>fixup<span class=w> </span>bbb
-<span class=w>    </span>pick<span class=w> </span>ccc
-<span class=w>    </span>pick<span class=w> </span>ddd
-<span class=w>    </span>pick<span class=w> </span>eee:<span class=w> </span>Account<span class=w> </span>page<span class=w> </span>UI<span class=w> </span>tests
-</code></pre></div> <p>By squashing all commits from the first pull request, we end up with a commit whose diff is identical to the one in <code>upstream/master</code>, so a rebase no longer reports&nbsp;conflicts.</p> <h2>The confusing&nbsp;version</h2> <p>When <code>git rebase upstream/master</code> reports conflicts, simply <code>git rebase --skip</code> until it&nbsp;succeeds!</p> <p>This works because conflicts will only appear on commits that ended up as part of the combined&nbsp;commit.</p> <h1>A final note about&nbsp;aliases</h1> <p>Almost every command I use daily has an alias. There is no reason to keep recalling the arcane interface of git. By using aliases, I no longer think of these commands as &#8220;git commant plus necessary options.&#8221; Instead, I think of them as single verbs. Who the heck wants to remember &#8220;amend the latest commit with my changes&#8221; as <code>git commit --amend -CHEAD</code>? What a&nbsp;pain!</p> <p>Exceptions to the rule for me are <code>git add</code> and <code>git rebase</code>, which make sense on their&nbsp;own.</p> <ul> <li><code>gfu</code>: <code>git fetch upstream</code></li> <li><code>gcb</code>: <code>git checkout upstream/master -b BRANCH</code></li> <li><code>gap</code>: <code>git add -p</code></li> <li><code>gcm</code>: <code>git commit -m</code></li> <li><code>gcaa</code>: <code>git commit --amend -CHEAD</code></li> <li><code>gcam</code>: <code>git commit -am</code></li> <li><code>gd</code>: <code>git diff</code></li> <li><code>gbn</code>: <code>git fetch upstream &amp;&amp; gcb $1</code></li> </ul></div> </article></section> </main> </div> <script type=text/javascript>
+</code></pre></div>
+
+<p>I have two strategies for dealing with this situation. One is more
+straightforward and has more steps. The other is more confusing and has
+fewer&nbsp;steps.</p>
+<h2>The straightforward&nbsp;version</h2>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>pr/account-page-ui
+git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>aaa^<span class="w">  </span><span class="c1"># rebase starting at aaa&#39;s parent</span>
+<span class="w">    </span>pick<span class="w"> </span>aaa
+<span class="w">    </span>fixup<span class="w"> </span>bbb
+<span class="w">    </span>pick<span class="w"> </span>ccc
+<span class="w">    </span>pick<span class="w"> </span>ddd
+<span class="w">    </span>pick<span class="w"> </span>eee:<span class="w"> </span>Account<span class="w"> </span>page<span class="w"> </span>UI<span class="w"> </span>tests
+</code></pre></div>
+
+<p>By squashing all commits from the first pull request, we end up with a commit
+whose diff is identical to the one in <code>upstream/master</code>, so a rebase no longer
+reports&nbsp;conflicts.</p>
+<h2>The confusing&nbsp;version</h2>
+<p>When <code>git rebase upstream/master</code> reports conflicts, simply <code>git rebase --skip</code>
+until it&nbsp;succeeds!</p>
+<p>This works because conflicts will only appear on commits that ended up as part
+of the combined&nbsp;commit.</p>
+<h1>A final note about&nbsp;aliases</h1>
+<p>Almost every command I use daily has an alias. There is no reason to keep
+recalling the arcane interface of git. By using aliases, I no longer think of
+these commands as &#8220;git commant plus necessary options.&#8221; Instead, I think of
+them as single verbs. Who the heck wants to remember &#8220;amend the latest commit
+with my changes&#8221; as <code>git commit --amend -CHEAD</code>? What a&nbsp;pain!</p>
+<p>Exceptions to the rule for me are <code>git add</code> and <code>git rebase</code>, which make sense
+on their&nbsp;own.</p>
+<ul>
+<li><code>gfu</code>: <code>git fetch upstream</code></li>
+<li><code>gcb</code>: <code>git checkout upstream/master -b BRANCH</code></li>
+<li><code>gap</code>: <code>git add -p</code></li>
+<li><code>gcm</code>: <code>git commit -m</code></li>
+<li><code>gcaa</code>: <code>git commit --amend -CHEAD</code></li>
+<li><code>gcam</code>: <code>git commit -am</code></li>
+<li><code>gd</code>: <code>git diff</code></li>
+<li><code>gbn</code>: <code>git fetch upstream &amp;&amp; gcb $1</code></li>
+</ul></div>
+  </article></section>
+</main>
+    </div>
+
+    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(["_setAccount", "UA-4517625-1"]);
       _gaq.push(["_trackPageview"]);
@@ -351,4 +582,6 @@ git<span class=w> </span>rebase<span class=w> </span>-i<span class=w> </span>aaa
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(ga, s);
       })();
-    </script> </body> </html>
+    </script>
+  </body>
+</html>
