@@ -1,0 +1,53 @@
+[tools]
+uv = "latest"
+python = { version = "3.13", virtualenv='.venv' }
+
+[vars]
+inputdir = "content"
+outputdir = "output"
+conf_dev = "pelicanconf.py"
+conf_prod = "publishconf.py"
+resume_yaml = "resume/resume.yaml"
+
+[tasks."deps:install"]
+run = "uv sync"
+
+[tasks.clean]
+run = "[ ! -d '{{vars.outputdir}}' ] || find '{{vars.outputdir}}' -mindepth 1 -delete"
+
+[tasks."resume:html"]
+run = "python -m resume.yaml2html -f '{{vars.resume_yaml}}' -o '{{vars.inputdir}}'/resume.html"
+
+[tasks."resume:json"]
+run = "python -m resume.yaml2html -f '{{vars.resume_yaml}}' -o '{{vars.inputdir}}'/resume.json"
+
+[tasks."resume:pdf"]
+run = "typst compile resume/resume.typ '{{vars.inputdir}}'/downloads/Steve_Landey_resume.pdf"
+sources = ["resume/**/*"]
+outputs = ["{{vars.inputdir}}/downloads/Steve_Landey_resume.pdf"]
+
+[tasks.timeline]
+sources = ["timeline/src/**/*"]
+outputs = ["'{{vars.inputdir}}'/timeline/**/*"]
+run = [
+  "cd timeline && yarn build && cd ..",
+	"rsync -av timeline/dist/ '{{vars.inputdir}}'/timeline",
+  "rm -rf timeline/dist",
+]
+
+[tasks."pelican:output:prod"]
+alias = "default"
+depends = ["clean", "timeline", "resume:html", "resume:pdf", "clean"]
+run = "pelican '{{vars.inputdir}}' -o '{{vars.outputdir}}' -s '{{vars.conf_prod}}'"
+
+[tasks."pelican:output:dev"]
+depends = [] # don't depend on non-pelican things for dev mode
+run = "pelican '{{vars.inputdir}}' -o '{{vars.outputdir}}' -s '{{vars.conf_dev}}'"
+
+[tasks.serve]
+depends = ["pelican:output:dev"]
+run = "pelican -lr --port 8001"
+
+[tasks.deploy]
+depends = ["pelican:output:prod", "resume-gist"]
+run = "ghp-import '{{vars.outputdir}}' -b master"
