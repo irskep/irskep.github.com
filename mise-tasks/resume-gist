@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 #MISE alias="resume:gist"
 #MISE sources=["resume/**/*"]
+#MISE depends=["resume:json"]
 source .env
 curl -L \
   -X PATCH \
