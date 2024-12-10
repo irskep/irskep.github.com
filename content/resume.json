@@ -1,372 +1,119 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Steve Landey's Résumé</title>
-    <!-- <meta name="description" content=""> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <!-- <link rel="apple-touch-icon" href="icon.png"> -->
-    <!-- Place favicon.ico in the root directory -->
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,400i&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      header,
-      footer {
-        position: relative;
-        width: 100%;
-      }
-    </style>
-
-    <style id="style">
-            /* reset */
-      html {
-        box-sizing: border-box;
-        font-size: 16px;
-        --footer-border: black;
-      }
-
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-      }
-
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      ol,
-      ul {
-        margin: 0;
-        padding: 0;
-        font-weight: normal;
-      }
-
-      footer ol,
-      footer ul {
-        margin-top: 0;
-        padding-left: 0;
-        list-style: none;
-      }
-
-      ul {
-        list-style-type: disc;
-        margin-top: 1em;
-        line-height: 145%;
-        padding-left: 1.5em;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      /* basic fonts */
-
-      body {
-        text-rendering: optimizeLegibility;
-        font-feature-settings: "liga" 1, "kern" 1;
-        font-family: "Lora", "Palatino", "Baskerville Old Face", Garamond,
-          "Times New Roman", serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 400;
-        font-size: 14px;
-      }
-
-      h1,
-      h2,
-      address {
-        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 400;
-      }
-
-      /* specific fonts */
-
-      address {
-        font-size: 14px;
-        line-height: 1.4em;
-      }
-
-      h1 {
-        font-size: 1.8rem;
-        line-height: 2em;
-      }
-
-      h2 {
-        font-size: 1rem;
-        line-height: 2em;
-      }
-
-      h3,
-      section.WorkHistory aside,
-      section.Education aside {
-        font-size: 1.4rem;
-        line-height: 1em;
-        margin-top: 1.4rem;
-      }
-
-      section.PersonalProjects aside {
-        margin-top: 1.6rem;
-      }
-
-      h4 {
-        font-style: italic;
-        font-size: 1.1em;
-        margin-top: 0.5rem;
-      }
-
-      p {
-        margin-top: 1rem;
-        line-height: 145%;
-        hyphens: auto;
-        -webkit-hyphens: auto;
-        text-align: justify;
-      }
-
-      /* layout */
-
-      header {
-        padding: 1rem 2rem 0 2rem;
-      }
-
-      article {
-        margin: 2rem auto 4rem 0;
-        max-width: 41rem;
-        padding: 0 2rem;
-      }
-
-      section {
-        margin-top: 2rem;
-        border-top: 0.5px solid black;
-      }
-
-      aside {
-        text-align: right;
-        padding-left: 1rem;
-      }
-
-      .SplitHeading {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-      }
-
-    </style>
-
-    <script>
-      // [{name: string, css: string}]
-      window.STYLESHEETS = [{"name": "classy", "css": "/* reset */\nhtml {\n  box-sizing: border-box;\n  font-size: 16px;\n  --footer-border: black;\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit;\n}\n\nbody,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nol,\nul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n}\n\nfooter ol,\nfooter ul {\n  margin-top: 0;\n  padding-left: 0;\n  list-style: none;\n}\n\nul {\n  list-style-type: disc;\n  margin-top: 1em;\n  line-height: 145%;\n  padding-left: 1.5em;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n/* basic fonts */\n\nbody {\n  text-rendering: optimizeLegibility;\n  font-feature-settings: \"liga\" 1, \"kern\" 1;\n  font-family: \"Lora\", \"Palatino\", \"Baskerville Old Face\", Garamond,\n    \"Times New Roman\", serif;\n  font-style: normal;\n  font-variant: normal;\n  font-weight: 400;\n  font-size: 14px;\n}\n\nh1,\nh2,\naddress {\n  font-family: \"Montserrat\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-style: normal;\n  font-variant: normal;\n  font-weight: 400;\n}\n\n/* specific fonts */\n\naddress {\n  font-size: 14px;\n  line-height: 1.4em;\n}\n\nh1 {\n  font-size: 1.8rem;\n  line-height: 2em;\n}\n\nh2 {\n  font-size: 1rem;\n  line-height: 2em;\n}\n\nh3,\nsection.WorkHistory aside,\nsection.Education aside {\n  font-size: 1.4rem;\n  line-height: 1em;\n  margin-top: 1.4rem;\n}\n\nsection.PersonalProjects aside {\n  margin-top: 1.6rem;\n}\n\nh4 {\n  font-style: italic;\n  font-size: 1.1em;\n  margin-top: 0.5rem;\n}\n\np {\n  margin-top: 1rem;\n  line-height: 145%;\n  hyphens: auto;\n  -webkit-hyphens: auto;\n  text-align: justify;\n}\n\n/* layout */\n\nheader {\n  padding: 1rem 2rem 0 2rem;\n}\n\narticle {\n  margin: 2rem auto 4rem 0;\n  max-width: 41rem;\n  padding: 0 2rem;\n}\n\nsection {\n  margin-top: 2rem;\n  border-top: 0.5px solid black;\n}\n\naside {\n  text-align: right;\n  padding-left: 1rem;\n}\n\n.SplitHeading {\n  display: flex;\n  width: 100%;\n  justify-content: space-between;\n}\n", "is_default": true}, {"name": "chaos", "css": "/* reset */\nhtml {\n  --bg: white;\n  --fg: black;\n  --link: red;\n  --h1: var(--fg);\n  --h2: var(--fg);\n  --h3: var(--fg);\n  --h4: var(--fg);\n  --year: var(--h4);\n  --leftw: var(20vw);\n  --footer-border: var(--fg);\n\n  box-sizing: border-box;\n  font-size: 16px;\n  background-color: var(--bg);\n  color: var(--fg);\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit;\n}\n\nbody,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nol,\nul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n}\n\nul {\n  list-style-type: disc;\n  margin-top: 1em;\n  padding-left: 1.5em;\n  line-height: 145%;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n/* basic fonts */\n\nbody {\n  font-family: \"Comic Sans MS\", \"Comic Sans\", sans-serif;\n  text-rendering: optimizeLegibility;\n  font-feature-settings: \"liga\" 1, \"kern\" 1;\n  font-style: normal;\n  font-variant: normal;\n  font-weight: 400;\n\n  transform: rotate(1deg);\n}\n\nh1,\nh2,\naddress {\n  font-style: normal;\n  font-variant: normal;\n  font-weight: 400;\n}\n\na,\na:visited,\na:active {\n  color: var(--link);\n}\n\n/* specific fonts */\n\nh1 {\n  color: var(--h1);\n  font-weight: bolder;\n  font-size: 4rem;\n}\n\nh2 {\n  color: var(--h2);\n  font-size: 1rem;\n}\n\nh3 {\n  color: var(--h3);\n}\n\nh4 {\n  color: var(--h4);\n  font-style: italic;\n}\n\naside {\n  color: var(--year);\n}\n\np {\n  line-height: 145%;\n  hyphens: auto;\n  -webkit-hyphens: auto;\n  text-align: justify;\n}\n\n/* layout */\n\nh3,\naside,\np,\naddress {\n  margin-top: 1rem;\n}\n\nh1 {\n  max-width: calc(100% - 8rem);\n}\n\nh2 {\n  border-bottom: 1px solid black;\n  padding-bottom: 2px;\n  margin-bottom: 2rem;\n}\n\nsection {\n  margin-top: 4rem;\n}\n\nsection:first-of-type {\n  margin-top: 2rem;\n}\n\np {\n  margin-bottom: 2rem;\n}\n\nh3 {\n  font-size: 1rem;\n  font-weight: 700;\n}\n\nh4 {\n  margin-top: 0.5rem;\n}\n\nheader {\n  padding: 2rem 4rem 0 4rem;\n}\n\narticle {\n  margin: 2rem 4rem 4rem 4rem;\n  width: 40rem;\n  max-width: calc(100% - 8rem);\n}\n\n@media (min-width: 30rem) {\n  .SplitHeading {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n  }\n}\n\n/* rainbow links */\n\na {\n  text-decoration: none;\n  animation: rainbow 2s linear infinite alternate;\n}\na:hover {\n  display: inline-block;\n  transform: scale(2, 2);\n  text-decoration: underline;\n}\n\n@keyframes rainbow {\n  0% {\n    color: red;\n  }\n  10% {\n    color: orange;\n  }\n  20% {\n    color: gold;\n  }\n  30% {\n    color: yellow;\n  }\n  40% {\n    color: yellowgreen;\n  }\n  50% {\n    color: green;\n  }\n  60% {\n    color: cyan;\n  }\n  70% {\n    color: blue;\n  }\n  80% {\n    color: violet;\n  }\n  90% {\n    color: magenta;\n  }\n  100% {\n    color: indigo;\n  }\n}\n\n/* wiggle paragraphs */\n\np {\n  animation-name: wiggle;\n  animation-duration: 4000ms;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n}\np:nth-of-type(2) {\n  animation-delay: 250ms;\n}\np:nth-of-type(3) {\n  animation-delay: 500ms;\n}\np:nth-of-type(4) {\n  animation-delay: 750ms;\n}\np:nth-of-type(5) {\n  animation-delay: 1000ms;\n}\np:nth-of-type(6) {\n  animation-delay: 1250ms;\n}\np:nth-of-type(7) {\n  animation-delay: 1500ms;\n}\np:nth-of-type(8) {\n  animation-delay: 1750ms;\n}\np:nth-of-type(9) {\n  animation-delay: 2000ms;\n}\np:nth-of-type(10) {\n  animation-delay: 2250ms;\n}\np:nth-of-type(11) {\n  animation-delay: 2500ms;\n}\np:nth-of-type(12) {\n  animation-delay: 2750ms;\n}\n\n@keyframes wiggle {\n  0% {\n    transform: translateX(-10px);\n  }\n  50% {\n    transform: translateX(10px);\n  }\n  100% {\n    transform: translateX(-10px);\n  }\n}\n\n/* marquee subtitles */\n\nh4 {\n  height: 1em;\n  animation: marquee 15s linear infinite;\n  animation-delay: -2000ms;\n  display: inline-block;\n}\nh4::after {\n  display: block;\n  content: \" \";\n}\n\n@keyframes marquee {\n  0% {\n    transform: translate(100vw, 0);\n  }\n  100% {\n    transform: translate(-200%, 0);\n  }\n}\n", "is_default": false}, {"name": "handout", "css": "/* reset */\nhtml {\n  --bg: white;\n  --fg: black;\n  --link: red;\n  --h1: var(--fg);\n  --h2: var(--fg);\n  --h3: var(--fg);\n  --h4: var(--fg);\n  --year: var(--h4);\n  --leftw: var(20vw);\n  --footer-border: var(--fg);\n\n  box-sizing: border-box;\n  font-size: 16px;\n  background-color: var(--bg);\n  color: var(--fg);\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit;\n}\n\nbody,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nol,\nul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n}\n\nfooter ol,\nfooter ul {\n  margin-top: 0;\n  padding-left: 0;\n  list-style: none;\n}\n\nul {\n  list-style-type: disc;\n  margin-top: 1em;\n  padding-left: 1.5em;\n  line-height: 145%;\n}\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n/* basic fonts */\n\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica,\n    Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  text-rendering: optimizeLegibility;\n  font-feature-settings: \"liga\" 1, \"kern\" 1;\n  font-style: normal;\n  font-variant: normal;\n  font-weight: 400;\n}\n\nh1,\nh2,\naddress {\n  font-style: normal;\n  font-variant: normal;\n  font-weight: 400;\n}\n\na,\na:visited,\na:active {\n  color: var(--link);\n}\n\n/* specific fonts */\n\nh1 {\n  color: var(--h1);\n  font-weight: bolder;\n  font-size: 4rem;\n}\n\nh2 {\n  color: var(--h2);\n  font-size: 1rem;\n}\n\nh3 {\n  color: var(--h3);\n}\n\nh4 {\n  color: var(--h4);\n  font-style: italic;\n}\n\naside {\n  color: var(--year);\n}\n\np {\n  line-height: 145%;\n  hyphens: auto;\n  -webkit-hyphens: auto;\n  text-align: justify;\n}\n\n/* layout */\n\nh3,\naside,\np,\naddress {\n  margin-top: 1rem;\n}\n\nh1 {\n  width: 30rem;\n}\n\nh2 {\n  border-bottom: 1px solid black;\n  padding-bottom: 2px;\n  margin-bottom: 2rem;\n}\n\nsection {\n  margin-top: 4rem;\n}\n\nsection:first-of-type {\n  margin-top: 2rem;\n}\n\np {\n  margin-bottom: 2rem;\n}\n\nh3 {\n  font-size: 1rem;\n  font-weight: 700;\n}\n\nh4 {\n  margin-top: 0.5rem;\n}\n\nheader {\n  padding: 1rem 1rem 0 1rem;\n}\n\narticle {\n  padding: 1rem;\n  width: 100%;\n}\n\n.SplitHeading {\n  display: flex;\n  width: 100%;\n  justify-content: space-between;\n}\n\n@media (min-width: 55rem) {\n  section {\n    margin-top: 0;\n  }\n\n  h2 {\n    margin-left: -10rem;\n    padding: 0 45rem 0.5rem 0;\n    width: 53rem;\n  }\n\n  article {\n    margin-left: 10rem;\n    width: 45rem;\n  }\n}\n", "is_default": false}, {"name": "terminal", "css": "/* reset */\nhtml {\n  --bg: #034;\n  --fg: #ddf;\n  --link: #fff;\n  /* --h1: #fce; */\n  --h1: var(--fg);\n  --h2: #fce;\n  --h3: #f64;\n  --h4: #aac;\n  --year: var(--h4);\n  --h3shadow: rgba(255, 255, 128, 0.4);\n  --footer-border: var(--fg);\n\n  box-sizing: border-box;\n  font-size: 16px;\n  background-color: var(--bg);\n  color: var(--fg);\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: inherit;\n}\n\nbody,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nol,\nul {\n  margin: 0;\n  padding: 0;\n  font-weight: normal;\n}\n\nfooter ol,\nfooter ul {\n  margin-top: 0;\n  padding-left: 0;\n  list-style: none;\n}\n\nul {\n  list-style-type: disc;\n  margin-top: 1em;\n  padding-left: 1.5em;\n}\n\nimg {\n  max-width: 100%;\n  height: auto;\n}\n\n/* basic fonts */\n\nbody {\n  text-rendering: optimizeLegibility;\n  /* font-feature-settings: \"liga\" 1, \"kern\" 1; */\n  font-family: Menlo, monospace;\n  font-style: normal;\n  font-variant: normal;\n  font-weight: 400;\n}\n\nh1,\nh2,\naddress {\n  /* font-family: \"Montserrat\", \"Helvetica Neue\", Helvetica, Arial, sans-serif; */\n  font-style: normal;\n  font-variant: normal;\n  font-weight: 400;\n}\n\nh1,\nh2,\nh3,\nh4 {\n  font-size: 1rem;\n}\n\na,\na:visited,\na:active {\n  color: var(--link);\n}\n\n/* specific fonts */\n\nh1::before,\nh1::after {\n  content: \"**\";\n}\n\nh2::before {\n  content: \"# \";\n}\n\nh3::before {\n  content: \"## \";\n}\n\nh1 {\n  color: var(--h1);\n}\nh2 {\n  color: var(--h2);\n}\nh3 {\n  color: var(--h3);\n  font-weight: bold;\n  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);\n}\nh4 {\n  color: var(--h4);\n}\naside {\n  color: var(--year);\n}\n\n/* layout */\n\nheader {\n  padding: 1rem 2rem 0 2rem;\n}\n\narticle {\n  margin: 2rem auto 4rem 0;\n  max-width: 45rem;\n  padding: 0 2rem;\n}\n\nh2 {\n  margin-top: 3em;\n}\n\nh3,\nh4,\naside,\naddress,\np {\n  margin-top: 1rem;\n}\n\n@media (min-width: 430px) {\n  address {\n    margin-top: 0;\n  }\n\n  aside {\n    text-align: right;\n    padding-left: 1rem;\n  }\n\n  .SplitHeading {\n    display: flex;\n    width: 100%;\n    justify-content: space-between;\n  }\n}\n", "is_default": false}];
-    </script>
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        CSS theme:
-        <select name="theme" id="theme-select"></select>
-      </nav>
-    </header>
-
-    <script>
-      const themeSelectEl = document.querySelector("#theme-select");
-      const styleEl = document.querySelector("#style");
-      themeSelectEl.innerHTML = window.STYLESHEETS.map((ss, i) => {
-        return `<option value="${ss.name}">${ss.name}</option>\n`;
-      }).join("\n");
-
-      function setStylesheet(stylesheet) {
-        styleEl.innerHTML = stylesheet.css;
-        window.location.hash = stylesheet.name;
-        themeSelectEl.value = stylesheet.name;
-      }
-
-      themeSelectEl.addEventListener("change", (e) => {
-        const ss = window.STYLESHEETS.find((s) => s.name === e.target.value);
-        if (!ss) return;
-        setStylesheet(ss);
-      });
-
-      for (const stylesheet of window.STYLESHEETS) {
-        if (`#${stylesheet.name}` === window.location.hash) {
-          setStylesheet(stylesheet);
-        }
-      }
-    </script>
-
-    <article class="Resume">
-      <div class="SplitHeading">
-        <h1>Steve Landey</h1>
-        <address>
-          San Francisco, CA
-          <br />
-          <a href="mailto:steve@steveasleep.com">steve@steveasleep.com</a>
-          <br />
-          <a href="https://steveasleep.com">https://steveasleep.com</a>
-        </address>
-      </div>
-
-      <section class="RoleFit">
-        <h2>Role Fit</h2>
-        <p>I currently live in SF but I plan to move to Seattle, WA in 2025. For a better look at the shape of my current role and what I’m looking for in my next one, please click here: <br> <a href="https://steveasleep.com/professional.html">https://steveasleep.com/professional.html</a>
-</p>
-      </section>
-
-      <section class="WorkHistory">
-        <h2>Work History</h2>
-
-        
-        <div class="SplitHeading">
-          <h3>Asana</h3>
-          <aside>2018–2024</aside>
-        </div>
-        <h4>Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024)</h4>
-        <p>As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided to switch to a Staff Engineer role. I helped transform the iOS developer experience at Asana and shipped a lot of features.</p>
-<p>Throughout this time, I have been responsible for a few org-wide areas like maintaining the engineering blog, helping people release open source software, and running a tech talk series.</p>
-<p>After nine years doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. I built the infrastructure to let our brand-new AI Studio product read content from arbitrary file attachments.</p>
-<p>There is more detailed information about my time at Asana on the next page.</p> 
-        <div class="SplitHeading">
-          <h3>Hipmunk</h3>
-          <aside>2015–2018</aside>
-        </div>
-        <h4>iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018)</h4>
-        <p>I helped move Hipmunk’s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 engineers.</p> 
-        <div class="SplitHeading">
-          <h3>Graffiti Labs</h3>
-          <aside>2012–2015</aside>
-        </div>
-        <h4>Full Stack Engineer, Game Designer</h4>
-        <p>As one of two engineers, I helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. I worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React, and Python.</p> 
-        <div class="SplitHeading">
-          <h3>Yelp</h3>
-          <aside>2011–2012</aside>
-        </div>
-        <h4>Software Engineer on the Spam Team</h4>
-        <p>I worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. I also maintained mrjob, a popular framework that runs Python code on Hadoop.</p> 
-        <div class="SplitHeading">
-          <h3>Apple</h3>
-          <aside>2010</aside>
-        </div>
-        <h4>Intern on Obj-C Runtime Team</h4>
-        <p>I implemented an early prototype of the Xcode visual object graph debugging tool.</p> 
-        <div class="SplitHeading">
-          <h3>MIM Software</h3>
-          <aside>2009</aside>
-        </div>
-        <h4>Intern</h4>
-        <p>I built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing.</p> 
-      </section>
-
-      <section class="PersonalProjects">
-        <h2>Personal Projects</h2>
-
-        
-        <div class="SplitHeading">
-          <h3>Locheck</h3>
-          <aside>
-            <a href="https://github.com/asana/locheck"
-              >https://github.com/asana/locheck</a
-            >
-            (2021–2024)
-          </aside>
-        </div>
-        <p>A linter for iOS and Android localization. Used by Asana and other companies, including GitHub.</p> 
-        <div class="SplitHeading">
-          <h3>Browserboard</h3>
-          <aside>
-            <a href="https://browserboard.com"
-              >https://browserboard.com</a
-            >
-            (2020–2023)
-          </aside>
-        </div>
-        <p>A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company.</p> 
-        <div class="SplitHeading">
-          <h3>Oscillator Drum Loops</h3>
-          <aside>
-            <a href="https://oscillatordrums.com"
-              >https://oscillatordrums.com</a
-            >
-            (2019–2020)
-          </aside>
-        </div>
-        <p>An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. It is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro.</p> 
-      </section>
-
-      <section class="Education">
-        <h2>Education</h2>
-        
-        <div class="SplitHeading">
-          <h3>Case Western Reserve University</h3>
-          <aside>2007–2012</aside>
-        </div>
-        <p>B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community.</p> 
-      </section>
-
-      <section class="Skills">
-        <h2>Skills for the Keyword Filters</h2>
-
-        
-        <div class="SplitHeading">
-          <h3>Mobile</h3>
-        </div>
-        <p>Swift, Objective-C, UIKit, ReactiveSwift, Combine, Core Data, Tuist, AudioKit</p>
-        <p>I have very limited SwiftUI experience, but getting up to speed is the fun part.</p>
-        <div class="SplitHeading">
-          <h3>Web</h3>
-        </div>
-        <p>JavaScript, TypeScript, Python, React, Vue, Django, Flask, Pyramid, CSS (I’m serious), Node.js, websockets</p>
-        
-      </section>
-
-      
-      <section class="Location">
-        <h2>Details About Asana</h2>
-        <p>As a manager, I:</p>
-<ul>
-<li>Managed both the iOS and Android teams</li>
-<li>Briefly ran the engineering internship program</li>
-<li>Defined how mobile teams collaborated with web partner teams on features</li>
-<li>Coached an experienced engineer through defining the next version of the iOS app architecture</li>
-</ul>
-<p>As an engineer, I:</p>
-<ul>
-<li>Redesigned the Asana rich text editor as a hybrid web view to enable shipping rich text features on all platforms at once while maintaining native UX</li>
-<li>Wrote a code generator for the iOS and Android datastores</li>
-<li>Built an internal HTML mirror of our Markdown documentation, used daily by dozens of engineers</li>
-<li>Drove another iteration of our iOS architecture, and a successful years-long effort to migrate everything</li>
-<li>Migrated our Xcode project to Tuist</li>
-<li>Drove a successful effort to split our code into modules to improve build times by 80%</li>
-<li>Gained a deep understanding of Xcode’s localization tools in order to migrate from a good translation management system to a worse but cheaper one</li>
-<li>Collaborated with leaders across Asana Mobile to guide technical strategy, prioritize features, and improve processes</li>
-<li>Mentored other engineers in exercising agency and leadership in the Asana R&amp;D org</li>
-<li>Built and shipped too many new features and screen redesigns to list here</li>
-<li>Generally served as the go-to expert on any given topic and a pinch hitter for arbitrary responsibilities</li>
-</ul>
-      </section>
-      
-    </article>
-
-    <article>
-      <a href="/downloads/Steve_Landey_resume.pdf"
-        >PDF version of this résumé</a
-      >
-    </article>
-  </body>
-</html>
+{
+  "basics": {
+    "name": "Steve Landey",
+    "email": "steve@steveasleep.com",
+    "url": "https://steveasleep.com",
+    "location": {
+      "city": "San Francisco, CA"
+    },
+    "summary": "I currently live in SF but I plan to move to Seattle, WA in 2025. For a better look at the shape of my current role and what I\u2019m looking for in my next one, please click here: https://steveasleep.com/professional.html"
+  },
+  "work": [
+    {
+      "name": "Asana",
+      "position": "Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024)",
+      "startDate": "2018-01-01",
+      "endDate": "2024-01-01",
+      "summary": "As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided to switch to a Staff Engineer role. I helped transform the iOS developer experience at Asana and shipped a lot of features.\n\nThroughout this time, I have been responsible for a few org-wide areas like maintaining the engineering blog, helping people release open source software, and running a tech talk series.\n\nAfter nine years doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. I built the infrastructure to let our brand-new AI Studio product read content from arbitrary file attachments.\n\nThere is more detailed information about my time at Asana on the next page."
+    },
+    {
+      "name": "Hipmunk",
+      "position": "iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018)",
+      "startDate": "2015-01-01",
+      "endDate": "2018-01-01",
+      "summary": "I helped move Hipmunk\u2019s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 engineers."
+    },
+    {
+      "name": "Graffiti Labs",
+      "position": "Full Stack Engineer, Game Designer",
+      "startDate": "2012-01-01",
+      "endDate": "2015-01-01",
+      "summary": "As one of two engineers, I helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. I worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React, and Python."
+    },
+    {
+      "name": "Yelp",
+      "position": "Software Engineer on the Spam Team",
+      "startDate": "2011-01-01",
+      "endDate": "2012-01-01",
+      "summary": "I worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. I also maintained mrjob, a popular framework that runs Python code on Hadoop."
+    },
+    {
+      "name": "Apple",
+      "position": "Intern on Obj-C Runtime Team",
+      "startDate": "2010-01-01",
+      "endDate": "2010-01-01",
+      "summary": "I implemented an early prototype of the Xcode visual object graph debugging tool."
+    },
+    {
+      "name": "MIM Software",
+      "position": "Intern",
+      "startDate": "2009-01-01",
+      "endDate": "2009-01-01",
+      "summary": "I built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Locheck",
+      "url": "https://github.com/asana/locheck",
+      "startDate": "2021-01-01",
+      "endDate": "2024-01-01",
+      "description": "A linter for iOS and Android localization. Used by Asana and other companies, including GitHub."
+    },
+    {
+      "name": "Browserboard",
+      "url": "https://browserboard.com",
+      "startDate": "2020-01-01",
+      "endDate": "2023-01-01",
+      "description": "A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company."
+    },
+    {
+      "name": "Oscillator Drum Loops",
+      "url": "https://oscillatordrums.com",
+      "startDate": "2019-01-01",
+      "endDate": "2020-01-01",
+      "description": "An iPhone and iPad app companion to a drum instruction book. The app contains over 140 exercises with sheet music and music loops that can be played back at variable tempos with a metronome. It is fully VoiceOver-accessible, and its layout works in portrait and landscape mode all the way from iPhone SE up to iPad Pro."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Case Western Reserve University",
+      "area": "Computer Science",
+      "studyType": "B.S. & M.S.",
+      "startDate": "2007-01-01",
+      "endDate": "2012-01-01",
+      "summary": "B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Mobile",
+      "keywords": [
+        "Swift",
+        "Objective-C",
+        "UIKit",
+        "ReactiveSwift",
+        "Combine",
+        "Core Data",
+        "Tuist",
+        "AudioKit"
+      ]
+    },
+    {
+      "name": "Web",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "React",
+        "Vue",
+        "Django",
+        "Flask",
+        "Pyramid",
+        "CSS (I\u2019m serious)",
+        "Node.js",
+        "websockets"
+      ]
+    }
+  ]
+}

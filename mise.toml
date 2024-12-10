@@ -19,7 +19,7 @@ run = "[ ! -d '{{vars.outputdir}}' ] || find '{{vars.outputdir}}' -mindepth 1 -d
 run = "python -m resume.yaml2html -f '{{vars.resume_yaml}}' -o '{{vars.inputdir}}'/resume.html"
 
 [tasks."resume:json"]
-run = "python -m resume.yaml2html -f '{{vars.resume_yaml}}' -o '{{vars.inputdir}}'/resume.json"
+run = "python -m resume.yaml2json -f '{{vars.resume_yaml}}' -o '{{vars.inputdir}}'/resume.json"
 
 [tasks."resume:pdf"]
 run = "typst compile resume/resume.typ '{{vars.inputdir}}'/downloads/Steve_Landey_resume.pdf"
