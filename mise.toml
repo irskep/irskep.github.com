@@ -50,4 +50,4 @@ run = "pelican -lr --port 8001"
 
 [tasks.deploy]
 depends = ["pelican:output:prod", "resume:gist"]
-run = "ghp-import '{{vars.outputdir}}' -b master"
+run = "ghp-import '{{vars.outputdir}}' -b master -p"
