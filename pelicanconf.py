@@ -60,7 +60,7 @@ MENUITEMS = (
             # ('Pyglet tutorial', '/pyglettutorial.html'),
             ("Résumé", "/resume.html", None),
             (
-                "Why you'd want to hire me",
+                "Steve Landey’s Universal Cover Letter",
                 "https://periodic-patio-e0c.notion.site/Why-you-d-want-to-hire-me-a2acc41e9928470994640911831dc990",
                 None,
             ),
