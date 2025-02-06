@@ -1,7 +1,11 @@
-Title: The part of my web site that’s about jobs
+Title: Steve Landey, Software Engineer
 Slug: professional
 
 Thank you for clicking the link!
+
+I’m a broadly-experienced software engineer soon to be based out of **Seattle, WA**. I want to join a small or small-ish company and build a great product.
+
+Some job titles I am often a good fit for at the senior or staff level include "iOS engineer," "fullstack engineer," and "frontend engineer." I am open to management roles given the right circumstances.
 
 [Resume](/resume.html)
 
