@@ -24,7 +24,7 @@ def main():
     args = p.parse_args()
 
     data = yaml.safe_load(args.file.read_text())
-    del data["appendices"]
+    data.pop("appendices", None)
 
     data["basics"]["summary"] = fix_spacing(flatten_links(data["basics"]["summary"]))
 

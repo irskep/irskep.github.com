@@ -1,27 +1,32 @@
 basics:
   name: Steve Landey
-  email: steve@steveasleep.com
-  url: https://steveasleep.com
+  email: steve@stevelandey.com
+  url: https://stevelandey.com
   location:
-    city: San Francisco, CA
+    city: Kirkland, WA
   summary: >
-    I currently live in SF but I plan to move to Seattle, WA in 2025.
-    For a better look at the shape of my current role and what I’m looking for in my next one, please click here: <br>
-    <a href="https://steveasleep.com/professional.html">https://steveasleep.com/professional.html</a>
+    Staff Engineer with a passion for helping engineering teams move fast and fix things. Not open to relocation.
 
 work:
+  - name: Descript
+    position: Staff Engineer, Client Platform Engineering
+    startDate: "2025"
+    endDate: "present"
+    summary: |
+      I joined a two-person platform team responsible for CI, client architecture (React/Redux), the design system, monorepo health, and the Electron app. The team had recently lost most of its institutional knowledge, and the monorepo had significant consistency problems across 150+ packages.
+
+      I've been the driver for engineer quality-of-life. I've done overdue major version upgrades to React, Node, Storybook, Turborepo, and pnpm. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I've built tools that everyone uses and extends to get their work done, including some that are now open source.
+
   - name: Asana
     position: Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024)
     startDate: "2018"
     endDate: "2024"
     summary: |
-      As a manager, I supported the iOS and Android teams by coaching, mentoring, improving processes, and getting my hands dirty in code. In 2020, I decided to switch to a Staff Engineer role. I helped transform the iOS developer experience at Asana and shipped a lot of features.
+      During my long and rewarding time at Asana, I held multiple roles. I joined in 2018 as the manager of the iOS and Android teams. In 2020 I pivoted to Staff Engineer on Mobile Foundations doing core architecture and developer experience work, transforming the startup-grade single-module ObjC codebase into a scalable, multi-module Swift codebase. Some of my hackathon prototypes are now prominent surfaces in the app, such as the Home tab.
 
-      Throughout this time, I have been responsible for a few org-wide areas like maintaining the engineering blog, helping people release open source software, and running a tech talk series.
+      While at Asana, I released the open source project Locheck, a localization linter now used by many companies, including GitHub. I was also responsible for managing the engineering blog for most of 2018-2025.
 
-      After nine years doing iOS development, I switched stacks to be on the AI Workflows team in June 2024. I built the infrastructure to let our brand-new AI Studio product read content from arbitrary file attachments.
-
-      There is more detailed information about my time at Asana on the next page.
+      In 2024, I pivoted out of mobile to work on the AI Workflows feature, solving tricky prompt engineering problems and helping ship a new product fast at a critical time in the industry. I built internal tools that are still in use across the company.
 
   - name: Hipmunk
     position: iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018)
@@ -120,27 +125,3 @@ skills:
         "Node.js",
         "websockets",
       ]
-
-appendices:
-  - title: "Details About Asana"
-    text: |
-      As a manager, I:
-
-      - Managed both the iOS and Android teams
-      - Briefly ran the engineering internship program
-      - Defined how mobile teams collaborated with web partner teams on features
-      - Coached an experienced engineer through defining the next version of the iOS app architecture
-
-      As an engineer, I:
-
-      - Redesigned the Asana rich text editor as a hybrid web view to enable shipping rich text features on all platforms at once while maintaining native UX
-      - Wrote a code generator for the iOS and Android datastores
-      - Built an internal HTML mirror of our Markdown documentation, used daily by dozens of engineers
-      - Drove another iteration of our iOS architecture, and a successful years-long effort to migrate everything
-      - Migrated our Xcode project to Tuist
-      - Drove a successful effort to split our code into modules to improve build times by 80%
-      - Gained a deep understanding of Xcode’s localization tools in order to migrate from a good translation management system to a worse but cheaper one
-      - Collaborated with leaders across Asana Mobile to guide technical strategy, prioritize features, and improve processes
-      - Mentored other engineers in exercising agency and leadership in the Asana R&D org
-      - Built and shipped too many new features and screen redesigns to list here
-      - Generally served as the go-to expert on any given topic and a pinch hitter for arbitrary responsibilities

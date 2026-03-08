@@ -123,8 +123,10 @@
   ])
 )
 
-#for appendix in data.appendices [
-  == #appendix.title
-  
-  #columns(2)[#html2typst(appendix.text)]
+#if "appendices" in data [
+  #for appendix in data.appendices [
+    == #appendix.title
+
+    #columns(2)[#html2typst(appendix.text)]
+  ]
 ]
