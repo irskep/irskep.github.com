@@ -39,7 +39,7 @@ def main():
 
     for item in data["work"] + data["projects"] + data["education"]:
         item["startDate"] = item["startDate"] + "-01-01"
-        item["endDate"] = item["endDate"] + "-01-01"
+        item["endDate"] = item["endDate"] if item["endDate"] == "present" else item["endDate"] + "-01-01"
         for k in ["description", "summary"]:
             if k in item:
               item[k] = fix_spacing(item[k])
