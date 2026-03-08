@@ -15,8 +15,10 @@ JINJA2_ENV.filters.update(
         "as_json": lambda val: Markup(json.dumps(val)),
         "comma_list": lambda vals: ", ".join(vals),
         "date_range": lambda s: (
-            s["startDate"]
-            if s["startDate"] == s["endDate"]
+            ""
+            if "startDate" not in s
+            else s["startDate"]
+            if s.get("endDate") is None or s["startDate"] == s["endDate"]
             else f'{s["startDate"]}–{s["endDate"]}'
         ),
         "md": lambda s: Markup(markdown.markdown(s)),

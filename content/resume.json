@@ -13,8 +13,7 @@
       "name": "Descript",
       "position": "Staff Engineer, Client Platform Engineering",
       "startDate": "2025-01-01",
-      "endDate": "present",
-      "summary": "I joined a two-person platform team responsible for CI, client architecture (React/Redux), the design system, monorepo health, and the Electron app. The team had recently lost most of its institutional knowledge, and the monorepo had significant consistency problems across 150+ packages.\n\nI've been the driver for engineer quality-of-life. I've done overdue major version upgrades to React, Node, Storybook, Turborepo, and pnpm. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I've built tools that everyone uses and extends to get their work done, including some that are now open source."
+      "summary": "I joined a two-person platform team responsible for CI, client architecture (React/Redux), the design system, monorepo health, and the Electron app. The team had recently lost most of its institutional knowledge, and the monorepo had significant consistency problems across 150+ packages.\n\nI\u2019ve been the driver for engineer quality-of-life. I\u2019ve done overdue major version upgrades to React, Node, Storybook, Turborepo, and pnpm. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I\u2019ve built tools that everyone uses and extends to get their work done, including some that are now open source."
     },
     {
       "name": "Asana",
@@ -61,6 +60,12 @@
   ],
   "projects": [
     {
+      "name": "autowt",
+      "url": "https://steveasleep.com/autowt",
+      "startDate": "2025-01-01",
+      "description": "A configurable git worktree manager with automatic terminal management."
+    },
+    {
       "name": "Locheck",
       "url": "https://github.com/asana/locheck",
       "startDate": "2021-01-01",
@@ -69,10 +74,9 @@
     },
     {
       "name": "Browserboard",
-      "url": "https://browserboard.com",
       "startDate": "2020-01-01",
       "endDate": "2023-01-01",
-      "description": "A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company."
+      "description": "A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company. No longer available online."
     },
     {
       "name": "Oscillator Drum Loops",
@@ -87,12 +91,24 @@
       "institution": "Case Western Reserve University",
       "area": "Computer Science",
       "studyType": "B.S. & M.S.",
-      "startDate": "2007-01-01",
-      "endDate": "2012-01-01",
       "summary": "B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community."
     }
   ],
   "skills": [
+    {
+      "name": "Web",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "React",
+        "Vue",
+        "CSS",
+        "Node.js",
+        "Bun",
+        "websockets"
+      ]
+    },
     {
       "name": "Mobile",
       "keywords": [
@@ -104,22 +120,6 @@
         "Core Data",
         "Tuist",
         "AudioKit"
-      ]
-    },
-    {
-      "name": "Web",
-      "keywords": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "React",
-        "Vue",
-        "Django",
-        "Flask",
-        "Pyramid",
-        "CSS (I\u2019m serious)",
-        "Node.js",
-        "websockets"
       ]
     }
   ]

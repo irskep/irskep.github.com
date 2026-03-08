@@ -21,7 +21,9 @@
 
 // If an item has the same startDate and endDate, return a range string. Otherwise just return startDate.
 #let date_range = (obj) => {
-  if obj.startDate == obj.endDate {
+  if "endDate" not in obj {
+    return obj.startDate
+  } else if obj.startDate == obj.endDate {
     return obj.startDate
   } else {
     return [#obj.startDate–#obj.endDate]
