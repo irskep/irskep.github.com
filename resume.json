@@ -13,53 +13,56 @@
       "name": "Descript",
       "position": "Staff Engineer, Client Platform Engineering",
       "startDate": "2025-01-01",
-      "endDate": "present",
-      "summary": "I joined a two-person platform team responsible for CI, client architecture (React/Redux), the design system, monorepo health, and the Electron app. The team had recently lost most of its institutional knowledge, and the monorepo had significant consistency problems across 150+ packages.\n\nI've been the driver for engineer quality-of-life. I've done overdue major version upgrades to React, Node, Storybook, Turborepo, and pnpm. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I've built tools that everyone uses and extends to get their work done, including some that are now open source."
+      "summary": "I'm on a small platform team with a wide scope: CI, client architecture (React/Redux), the design system, monorepo health (150+ packages), and the Electron app.\n\nI\u2019ve been the driver for engineer quality-of-life. I\u2019ve done major version upgrades to React, Node, Storybook, Turborepo, and pnpm. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I\u2019ve built tools that everyone uses and extends to get their work done, including some that are now open source."
     },
     {
       "name": "Asana",
       "position": "Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024)",
       "startDate": "2018-01-01",
       "endDate": "2025-01-01",
-      "summary": "During my long and rewarding time at Asana, I held multiple roles. I joined in 2018 as the manager of the iOS and Android teams. In 2020 I pivoted to Staff Engineer on Mobile Foundations doing core architecture and developer experience work, transforming the startup-grade single-module ObjC codebase into a scalable, multi-module Swift codebase. Some of my hackathon prototypes are now prominent surfaces in the app, such as the Home tab.\n\nWhile at Asana, I released the open source project Locheck, a localization linter now used by many companies, including GitHub. I was also responsible for managing the engineering blog for most of 2018-2025.\n\nIn 2024, I pivoted out of mobile to work on the AI Workflows feature, solving tricky prompt engineering problems and helping ship a new product fast at a critical time in the industry. I built internal tools that are still in use across the company."
+      "summary": "During my long and rewarding time at Asana, I held multiple roles. I joined in 2018 as the manager of the iOS and Android teams. In 2020 I pivoted to Staff Engineer on Mobile Foundations doing core architecture and developer experience work, transforming the startup-grade single-module ObjC codebase into a scalable, multi-module Swift codebase using modern UIKit design patterns. Some of my hackathon prototypes are now prominent surfaces in the app, such as the Home tab.\n\nI released the open source project Locheck, a localization linter now used by many companies, including GitHub. I was also responsible for maintaining the engineering blog for most of 2018-2025.\n\nIn 2024, I pivoted out of mobile to work on the AI Workflows feature, solving tricky prompt engineering problems and helping ship a new product fast at a critical time in the industry. I built internal tools that are still in use across the company."
     },
     {
       "name": "Hipmunk",
       "position": "iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018)",
       "startDate": "2015-01-01",
       "endDate": "2018-01-01",
-      "summary": "I helped move Hipmunk\u2019s iOS codebase from startup spaghetti to MVVM while keeping a fast pace shipping features. I rewrote the mobile web flight search UI on a tight deadline to support acquisition by Concur, and integrated it seamlessly into the mobile apps to replace the native flight search UIs, while maintaining great UX. As a manager, I owned the mobile recruiting pipeline and hired 3 engineers."
+      "summary": "Owned the Hipmunk iOS codebase, and rewrote most of the mobile web site on a tight deadline to help Hipmunk's acquisition by Concur go smoothly. Hired and managed mobile engineers."
     },
     {
       "name": "Graffiti Labs",
       "position": "Full Stack Engineer, Game Designer",
       "startDate": "2012-01-01",
       "endDate": "2015-01-01",
-      "summary": "As one of two engineers, I helped design and build a realtime browser-based multiplayer sandbox building game played by thousands of people. I worked with performance-sensitive JavaScript, websockets, iOS (Swift and Obj-C), React, and Python."
+      "summary": "Early-stage YC startup building a massively multiplayer browser game using websockets, perf-sensitive JavaScript, iOS, React, and Python."
     },
     {
       "name": "Yelp",
       "position": "Software Engineer on the Spam Team",
       "startDate": "2011-01-01",
       "endDate": "2012-01-01",
-      "summary": "I worked on systems that ensure yelp.com only shows authentic reviews, including algorithms and internal tools. I also maintained mrjob, a popular framework that runs Python code on Hadoop."
+      "summary": "Worked on review recommendation systems and internal tools. Maintained the open source framework mrjob, which runs Python code on Hadoop."
     },
     {
       "name": "Apple",
       "position": "Intern on Obj-C Runtime Team",
       "startDate": "2010-01-01",
-      "endDate": "2010-01-01",
-      "summary": "I implemented an early prototype of the Xcode visual object graph debugging tool."
+      "endDate": "2010-01-01"
     },
     {
       "name": "MIM Software",
       "position": "Intern",
       "startDate": "2009-01-01",
-      "endDate": "2009-01-01",
-      "summary": "I built the first prototype of MIMcloud, a web site for HIPAA-compliant medical image sharing."
+      "endDate": "2009-01-01"
     }
   ],
   "projects": [
+    {
+      "name": "autowt",
+      "url": "https://steveasleep.com/autowt",
+      "startDate": "2025-01-01",
+      "description": "A configurable, friendly git worktree manager with automatic terminal tab management."
+    },
     {
       "name": "Locheck",
       "url": "https://github.com/asana/locheck",
@@ -69,10 +72,9 @@
     },
     {
       "name": "Browserboard",
-      "url": "https://browserboard.com",
       "startDate": "2020-01-01",
       "endDate": "2023-01-01",
-      "description": "A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company."
+      "description": "A multiuser whiteboard web app with thousands of users built with Django, Node.js, Vue, and websockets. Built from scratch and sold to an Australian education company. No longer available online."
     },
     {
       "name": "Oscillator Drum Loops",
@@ -87,39 +89,33 @@
       "institution": "Case Western Reserve University",
       "area": "Computer Science",
       "studyType": "B.S. & M.S.",
-      "startDate": "2007-01-01",
-      "endDate": "2012-01-01",
       "summary": "B.S. and M.S. in Computer Science. Organizer for CWRU Hacker Society, which is a series of tech talks and a touchpoint for the student community."
     }
   ],
   "skills": [
+    {
+      "name": "Web",
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "React",
+        "Vue",
+        "CSS",
+        "Node.js",
+        "Bun",
+        "websockets"
+      ]
+    },
     {
       "name": "Mobile",
       "keywords": [
         "Swift",
         "Objective-C",
         "UIKit",
-        "ReactiveSwift",
-        "Combine",
         "Core Data",
         "Tuist",
         "AudioKit"
-      ]
-    },
-    {
-      "name": "Web",
-      "keywords": [
-        "JavaScript",
-        "TypeScript",
-        "Python",
-        "React",
-        "Vue",
-        "Django",
-        "Flask",
-        "Pyramid",
-        "CSS (I\u2019m serious)",
-        "Node.js",
-        "websockets"
       ]
     }
   ]
