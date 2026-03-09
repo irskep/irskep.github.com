@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -97,7 +97,8 @@
           <aside>{{ job|date_range }}</aside>
         </div>
         <h4>{{ job.position|safe }}</h4>
-        {{ job.summary|md }} {% endfor %}
+        {% if job.summary is defined %}{{ job.summary|md }}{% endif %}
+        {% endfor %}
       </section>
 
       <section class="PersonalProjects">
@@ -127,7 +128,7 @@
       </section>
 
       <section class="Skills">
-        <h2>Skills for the Keyword Filters</h2>
+        <h2>Skills</h2>
 
         {% for skillset in skills %}
         <div class="SplitHeading">

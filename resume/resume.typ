@@ -21,7 +21,9 @@
 
 // If an item has the same startDate and endDate, return a range string. Otherwise just return startDate.
 #let date_range = (obj) => {
-  if "endDate" not in obj {
+  if "startDate" not in obj {
+    return []
+  } else if "endDate" not in obj {
     return obj.startDate
   } else if obj.startDate == obj.endDate {
     return obj.startDate
@@ -77,34 +79,30 @@
 
 // CONTENT
 
-== Role Fit <role-fit>
-#html2typst(data.basics.summary)
+// == Role Fit <role-fit>
+// #html2typst(data.basics.summary)
 
 == Work History <work-history>
-#columns(2)[
-  #for job in data.work [
-    #split([=== #job.name], date_range(job))
-    ==== #html2typst(job.position)
-    #html2typst(job.summary)
-    #if "breakAfter" in job and job.at("breakAfter") [#colbreak()]
-  ]
-
-  == Education
-  #for ed in data.education [
-    #split([=== #ed.institution], date_range(ed))
-    #html2typst(ed.summary)
-  ]
+#for job in data.work [
+  #split([=== #job.name], date_range(job))
+  ==== #html2typst(job.position)
+  #if "summary" in job { html2typst(job.summary) }
+  #if "breakAfter" in job and job.at("breakAfter") [#colbreak()]
 ]
 
-#pagebreak()
+== Education
+#for ed in data.education [
+  #split([=== #ed.institution], date_range(ed))
+  #html2typst(ed.summary)
+]
 
 == Personal Projects
 #for project in data.projects [
-  #split_project([=== #project.name], emph[#project.url (#date_range(project))])
+  #split_project([=== #project.name], emph[#if "url" in project { [#project.url ] } (#date_range(project))])
   #html2typst(project.description)
 ]
 
-== Skills for the Keyword Filters
+== Skills
 #show heading.where(
   level: 3
 ): it => block(width: 100%, below: 11pt)[

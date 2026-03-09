@@ -31,7 +31,8 @@ def main():
     for item in data["work"]:
         if "breakAfter" in item:
             del item["breakAfter"]
-        item["summary"] = fix_spacing(item["summary"])
+        if "summary" in item:
+            item["summary"] = fix_spacing(item["summary"])
 
     for item in data["skills"]:
       if "text" in item:
