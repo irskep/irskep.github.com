@@ -12,9 +12,9 @@ work:
     position: Staff Engineer, Client Platform Engineering
     startDate: "2025"
     summary: |
-      I'm on a small platform team with a wide scope: CI, client architecture (React/Redux), the design system, monorepo health (150+ packages), and the Electron app.
+      I'm on a small platform team with a wide scope: CI, web frontend frameworks, the design system, the health of the monorepo, and the Electron app.
 
-      I try to be the driver for engineer quality-of-life. I’ve done major version upgrades to React, Node, Storybook, Turborepo, and pnpm. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I’ve built tools that everyone uses and extends to get their work done, including some that are now open source.
+      I try to be the driver for engineer quality-of-life. I’ve led major version upgrades to React, Node, and other major dependencies. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I’ve built tools that everyone uses and extends to get their work done, including some that are now open source.
 
   - name: Asana
     position: Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024)
@@ -25,7 +25,7 @@ work:
 
       I released the open source project Locheck, a localization linter now used by many companies, including GitHub. I was also responsible for maintaining the engineering blog for most of 2018-2025.
 
-      In 2024, I pivoted out of mobile to work on the AI Workflows feature, solving tricky prompt engineering problems and helping ship a new product fast at a critical time in the industry. I built internal tools that are still in use across the company.
+      In 2024, I pivoted out of mobile to work on the AI Workflows feature, solving tricky prompt engineering problems and helping ship a new product fast at a critical time in the industry. I built web-based internal tools that are still in use across the company.
 
   - name: Hipmunk
     position: iOS Engineer (2015), Mobile Team Lead (2016), Engineering Manager (2017-2018)

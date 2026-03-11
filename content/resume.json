@@ -13,7 +13,7 @@
       "name": "Descript",
       "position": "Staff Engineer, Client Platform Engineering",
       "startDate": "2025-01-01",
-      "summary": "I'm on a small platform team with a wide scope: CI, client architecture (React/Redux), the design system, monorepo health (150+ packages), and the Electron app.\n\nI\u2019ve been the driver for engineer quality-of-life. I\u2019ve done major version upgrades to React, Node, Storybook, Turborepo, and pnpm. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I\u2019ve built tools that everyone uses and extends to get their work done, including some that are now open source."
+      "summary": "I'm on a small platform team with a wide scope: CI, web frontend frameworks, the design system, the health of the monorepo, and the Electron app.\n\nI try to be the driver for engineer quality-of-life. I\u2019ve led major version upgrades to React, Node, and other major dependencies. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I\u2019ve built tools that everyone uses and extends to get their work done, including some that are now open source."
     },
     {
       "name": "Asana",
