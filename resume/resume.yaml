@@ -9,12 +9,14 @@ basics:
 
 work:
   - name: Descript
-    position: Staff Engineer, Client Platform Engineering
+    position: Tech Lead, Client Platform Engineering
     startDate: "2025"
     summary: |
-      I'm on a small platform team with a wide scope: CI, web frontend frameworks, the design system, the health of the monorepo, and the Electron app.
+      I lead a small platform team with a wide scope: CI, web frontend frameworks, the design system, the health of the monorepo, and the Electron app.
 
-      I try to be the driver for engineer quality-of-life. I’ve led major version upgrades to React, Node, and other major dependencies. I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I’ve built tools that everyone uses and extends to get their work done, including some that are now open source.
+      I set the pace for developer productivity.  I've resolved tragedy-of-the-commons issues like dependency governance and flaky tests through tooling, collaboration, and just getting things done. I’ve built tools other engineers use and extend to get their work done, including some that are now open source.
+
+      I make sure our codebase works on all major coding agent sandboxes like Claude, Codex, and Cursor, and that the agentic coding experience is great. I’ve led major version upgrades to React, Node, and other major dependencies.
 
   - name: Asana
     position: Engineering Manager (2018-2020), Staff Mobile Engineer (2020-2024), AI Workflows (2024)
@@ -60,6 +62,12 @@ work:
     endDate: "2009"
 
 projects:
+  - name: Dependicus
+    url: https://descriptinc.github.io/dependicus/
+    startDate: "2026"
+    description: |
+      Monorepo dependency governance tool which gives a broad overview of every package, and creates actionable, agent-friendly tickets.
+
   - name: autowt
     url: https://steveasleep.com/autowt
     startDate: "2025"
@@ -106,6 +114,7 @@ skills:
         "Node.js",
         "Bun",
         "websockets",
+        "Mise",
       ]
 
   - name: "Mobile"

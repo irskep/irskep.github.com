@@ -36,7 +36,6 @@ run = [
 ]
 
 [tasks."pelican:output:prod"]
-alias = "default"
 depends = ["clean", "timeline", "resume:html", "resume:pdf", "clean"]
 run = "pelican '{{vars.inputdir}}' -o '{{vars.outputdir}}' -s '{{vars.conf_prod}}'"
 
